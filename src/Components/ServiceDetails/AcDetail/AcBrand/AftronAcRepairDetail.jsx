@@ -13,7 +13,6 @@ import FAJACPrice from "../../../Miscellaneous/FAJACPrice";
 import Testimonial1 from "../../../Testimonial/Testimonial1";
 import AcBrandBenifit from "./ACBrandComponents/ACBrandBenifit";
 import PriceCard from "../AcLocation/PriceCard";
-import BeforeAfterSlider from "@johanaarstein/react-before-after-slider-component";
 import BeforeAfter from "../../../BeforeAfter/BeforeAfter";
 
 const CDN = 'https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA';
