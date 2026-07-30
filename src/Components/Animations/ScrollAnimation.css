@@ -1,0 +1,79 @@
+.scroll-animation {
+  --scroll-animation-delay: 0s;
+  --scroll-animation-distance: 30px;
+  opacity: 0;
+  transition:
+    opacity 650ms cubic-bezier(0.16, 1, 0.3, 1) var(--scroll-animation-delay),
+    transform 650ms cubic-bezier(0.16, 1, 0.3, 1) var(--scroll-animation-delay);
+  will-change: opacity, transform;
+}
+
+.scroll-animation--zoom {
+  transform: scale(1.12);
+}
+
+.scroll-animation--up {
+  transform: translate3d(0, var(--scroll-animation-distance), 0);
+}
+
+.scroll-animation--down {
+  transform: translate3d(0, calc(var(--scroll-animation-distance) * -1), 0);
+}
+
+.scroll-animation--left {
+  transform: translate3d(var(--scroll-animation-distance), 0, 0);
+}
+
+.scroll-animation--right {
+  transform: translate3d(calc(var(--scroll-animation-distance) * -1), 0, 0);
+}
+
+.scroll-animation[data-visible="true"] {
+  opacity: 1;
+  transform: none;
+}
+
+.scroll-animation__shutter {
+  position: relative;
+  overflow: hidden;
+}
+
+.scroll-animation__shutter-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(1.15);
+  transition:
+    opacity 900ms cubic-bezier(0.16, 1, 0.3, 1) var(--scroll-animation-delay),
+    transform 900ms cubic-bezier(0.16, 1, 0.3, 1) var(--scroll-animation-delay);
+}
+
+.scroll-animation__shutter-panel {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  transform: scaleY(1);
+  transform-origin: top;
+  transition: transform 750ms cubic-bezier(0.16, 1, 0.3, 1) var(--scroll-animation-delay);
+}
+
+.scroll-animation__shutter[data-visible="true"] .scroll-animation__shutter-image {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.scroll-animation__shutter[data-visible="true"] .scroll-animation__shutter-panel {
+  transform: scaleY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-animation,
+  .scroll-animation__shutter-image,
+  .scroll-animation__shutter-panel {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

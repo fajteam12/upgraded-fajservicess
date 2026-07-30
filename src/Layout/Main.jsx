@@ -1,9 +1,10 @@
 import { useEffect } from 'react';
 import { Outlet } from 'react-router-dom';
 import Header1 from '../Components/Header/Header1';
-import Footer1 from '../Components/Footer/Footer1';
+import Footer from '../Components/Footer/Footer';
 import ScrollToTop from "../Components/ScrollToTop";
 import { preloadCommonRoutes } from "../Routes/preloadRoutes";
+import ContactSidebar from "../Components/ContactSidebar/ContactSidebar";
 
 const Main = () => {
   useEffect(() => {
@@ -35,7 +36,8 @@ const Main = () => {
           <div className="page-content-loader" style={{ minHeight: '70vh' }}>
             <Outlet />
           </div>
-          <Footer1 />
+          <Footer />
+          <ContactSidebar />
         </div>
     </>
   );

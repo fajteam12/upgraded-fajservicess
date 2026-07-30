@@ -1,0 +1,555 @@
+.contact-sidebar {
+	--contact-sidebar-width: min(100vw, 390px);
+	--contact-sidebar-dark: #092835;
+	--contact-sidebar-deep: #061e29;
+	--contact-sidebar-accent: #12b8d3;
+	--contact-sidebar-text: #162e39;
+	--contact-sidebar-muted: #748993;
+	--contact-sidebar-border: #dbe7eb;
+	--contact-sidebar-surface: #ffffff;
+	--contact-sidebar-soft: #f1f6f8;
+	--contact-sidebar-whatsapp: #20d77a;
+
+	position: relative;
+	z-index: 9999;
+}
+
+.contact-sidebar__trigger {
+	position: fixed;
+	z-index: 10001;
+	top: 48%;
+	right: 0;
+	display: flex;
+	min-height: 7.5rem;
+	align-items: center;
+	justify-content: center;
+	gap: 0.45rem;
+	padding: 0.65rem 0.45rem;
+	border: 1px solid rgb(255 255 255 / 18%);
+	border-right: 0;
+	border-radius: 0.55rem 0 0 0.55rem;
+	background: #0799c4;
+	color: #ffffff;
+	box-shadow: 0 10px 30px rgb(0 0 0 / 18%);
+	cursor: pointer;
+	writing-mode: vertical-rl;
+	transform: translateY(-50%);
+	transition:
+		background-color 180ms ease,
+		box-shadow 180ms ease,
+		opacity 180ms ease,
+		transform 180ms ease;
+}
+
+.contact-sidebar--open
+	.contact-sidebar__trigger {
+	opacity: 0;
+	pointer-events: none;
+	transform:
+		translateY(-50%)
+		translateX(100%);
+}
+
+.contact-sidebar__trigger-icon {
+	display: grid;
+	width: 1.15rem;
+	height: 1.15rem;
+	place-items: center;
+}
+
+.contact-sidebar__trigger-icon svg {
+	width: 100%;
+	height: 100%;
+}
+
+.contact-sidebar__trigger-text {
+	font-size: 0.62rem;
+	font-weight: 850;
+	line-height: 1;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+
+.contact-sidebar__trigger:hover {
+	background: var(--contact-sidebar-dark);
+	box-shadow: 0 14px 36px rgb(0 0 0 / 24%);
+}
+
+.contact-sidebar__backdrop {
+	position: fixed;
+	z-index: 9998;
+	inset: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	border: 0;
+	background: rgb(0 20 29 / 56%);
+	cursor: default;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 240ms ease;
+}
+
+.contact-sidebar--open
+	.contact-sidebar__backdrop {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.contact-sidebar__panel {
+	position: fixed;
+	z-index: 10000;
+	top: 0;
+	right: 0;
+	display: flex;
+	width: var(--contact-sidebar-width);
+	max-width: 100%;
+	height: 100dvh;
+	flex-direction: column;
+	overflow: hidden;
+	background: var(--contact-sidebar-surface);
+	box-shadow: -18px 0 50px rgb(0 0 0 / 22%);
+	visibility: hidden;
+	transform: translateX(100%);
+	transition:
+		transform 280ms
+			cubic-bezier(0.22, 0.75, 0.25, 1),
+		visibility 280ms;
+}
+
+.contact-sidebar--open
+	.contact-sidebar__panel {
+	visibility: visible;
+	transform: translateX(0);
+}
+
+.contact-sidebar__header {
+	display: grid;
+	grid-template-columns:
+		auto
+		minmax(0, 1fr)
+		auto;
+	align-items: center;
+	gap: 0.65rem;
+	min-height: 4.25rem;
+	padding: 0.75rem 1rem;
+	background: var(--contact-sidebar-deep);
+	color: #ffffff;
+}
+
+.contact-sidebar__brand-mark {
+	display: grid;
+	width: 2.1rem;
+	height: 2.1rem;
+	place-items: center;
+	border: 1px solid rgb(18 184 211 / 55%);
+	border-radius: 0.35rem;
+	background: #07384c;
+	color: #ffffff;
+	font-size: 0.68rem;
+	font-weight: 900;
+	letter-spacing: 0.04em;
+}
+
+.contact-sidebar__brand-copy {
+	min-width: 0;
+}
+
+.contact-sidebar__brand-copy p {
+	margin: 0;
+	color: #ffffff;
+	font-size: 0.73rem;
+	font-weight: 850;
+	line-height: 1.25;
+	letter-spacing: 0.025em;
+	text-transform: uppercase;
+}
+
+.contact-sidebar__brand-copy span {
+	display: block;
+	margin-top: 0.1rem;
+	color: #8fb4c1;
+	font-size: 0.51rem;
+	font-weight: 700;
+	line-height: 1.3;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+
+.contact-sidebar__close {
+	display: grid;
+	width: 2.25rem;
+	height: 2.25rem;
+	place-items: center;
+	padding: 0;
+	border: 1px solid rgb(255 255 255 / 16%);
+	border-radius: 0.35rem;
+	background: rgb(255 255 255 / 5%);
+	color: #c8d9df;
+	cursor: pointer;
+	transition:
+		background-color 180ms ease,
+		border-color 180ms ease,
+		color 180ms ease;
+}
+
+.contact-sidebar__close svg {
+	width: 1rem;
+	height: 1rem;
+}
+
+.contact-sidebar__close:hover {
+	border-color: rgb(18 184 211 / 55%);
+	background: rgb(18 184 211 / 14%);
+	color: #ffffff;
+}
+
+.contact-sidebar__body {
+	display: flex;
+	min-height: 0;
+	flex: 1;
+	flex-direction: column;
+	overflow-y: auto;
+	padding:
+		1rem
+		1rem
+		max(1rem, env(safe-area-inset-bottom));
+	overscroll-behavior: contain;
+	scrollbar-width: thin;
+	scrollbar-color:
+		#b9ccd3
+		transparent;
+}
+
+.contact-sidebar__introduction {
+	margin-bottom: 0.9rem;
+}
+
+.contact-sidebar__eyebrow {
+	margin: 0 0 0.25rem;
+	color: #1481a0;
+	font-size: 0.58rem;
+	font-weight: 850;
+	line-height: 1.3;
+	letter-spacing: 0.13em;
+	text-transform: uppercase;
+}
+
+.contact-sidebar__title {
+	margin: 0;
+	color: var(--contact-sidebar-text);
+	font-size: clamp(1.05rem, 3vw, 1.25rem);
+	font-weight: 900;
+	line-height: 1.15;
+	letter-spacing: -0.025em;
+	text-transform: uppercase;
+}
+
+.contact-sidebar__options,
+.contact-sidebar__notes {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.contact-sidebar__options {
+	display: grid;
+	gap: 0.55rem;
+}
+
+.contact-sidebar__option {
+	display: grid;
+	grid-template-columns:
+		auto
+		minmax(0, 1fr)
+		auto;
+	align-items: center;
+	gap: 0.65rem;
+	min-height: 3.65rem;
+	padding: 0.58rem 0.65rem;
+	border: 1px solid var(--contact-sidebar-border);
+	border-radius: 0.55rem;
+	background: var(--contact-sidebar-soft);
+	color: inherit;
+	text-decoration: none;
+	transition:
+		background-color 180ms ease,
+		border-color 180ms ease,
+		box-shadow 180ms ease,
+		transform 180ms ease;
+}
+
+.contact-sidebar__option--featured {
+	border-color: #aee9ca;
+	background: #effcf5;
+}
+
+.contact-sidebar__option:hover {
+	border-color: #a4dce7;
+	background: #ffffff;
+	box-shadow: 0 8px 22px rgb(9 40 53 / 8%);
+	transform: translateY(-1px);
+}
+
+.contact-sidebar__option--featured:hover {
+	border-color: #68daa1;
+	background: #f7fffa;
+}
+
+.contact-sidebar__option-icon {
+	display: grid;
+	width: 2rem;
+	height: 2rem;
+	place-items: center;
+	border-radius: 0.42rem;
+	background: #deedf2;
+	color: #2287a6;
+}
+
+.contact-sidebar__option--featured
+	.contact-sidebar__option-icon {
+	background: #d5f8e5;
+	color: var(--contact-sidebar-whatsapp);
+}
+
+.contact-sidebar__option-icon svg {
+	width: 1rem;
+	height: 1rem;
+}
+
+.contact-sidebar__option-copy {
+	display: flex;
+	min-width: 0;
+	flex-direction: column;
+}
+
+.contact-sidebar__option-label {
+	color: var(--contact-sidebar-muted);
+	font-size: 0.5rem;
+	font-weight: 850;
+	line-height: 1.25;
+	letter-spacing: 0.035em;
+	text-transform: uppercase;
+}
+
+.contact-sidebar__option--featured
+	.contact-sidebar__option-label {
+	color: #4fa777;
+}
+
+.contact-sidebar__option-value {
+	margin-top: 0.08rem;
+	overflow: hidden;
+	color: var(--contact-sidebar-text);
+	font-size: 0.74rem;
+	font-weight: 850;
+	line-height: 1.25;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.contact-sidebar__option-action {
+	display: inline-flex;
+	min-width: 2.7rem;
+	min-height: 1.65rem;
+	align-items: center;
+	justify-content: center;
+	padding: 0.35rem 0.5rem;
+	border-radius: 0.36rem;
+	background: var(--contact-sidebar-dark);
+	color: #ffffff;
+	font-size: 0.7rem;
+	font-weight: 850;
+	line-height: 1;
+	letter-spacing: 0.035em;
+	text-transform: uppercase;
+}
+
+.contact-sidebar__option--featured
+	.contact-sidebar__option-action {
+	background: var(--contact-sidebar-whatsapp);
+	color: #073c25;
+}
+
+.contact-sidebar__spacer {
+	min-height: 3rem;
+	flex: 1;
+}
+
+.contact-sidebar__notes {
+	display: grid;
+	gap: 0.55rem;
+	padding: 0.8rem 0;
+	border-top: 1px solid #e8eff2;
+	border-bottom: 1px solid #e8eff2;
+}
+
+.contact-sidebar__notes li {
+	display: flex;
+	align-items: center;
+	gap: 0.45rem;
+	color: #304650;
+	font-size: 0.62rem;
+	font-weight: 700;
+	line-height: 1.4;
+}
+
+.contact-sidebar__notes span {
+	display: grid;
+	width: 1rem;
+	height: 1rem;
+	flex: 0 0 1rem;
+	place-items: center;
+	color: #159fc0;
+}
+
+.contact-sidebar__notes svg {
+	width: 0.85rem;
+	height: 0.85rem;
+}
+
+.contact-sidebar__footer {
+	padding-top: 1rem;
+}
+
+.contact-sidebar__primary-action {
+	display: flex;
+	width: 100%;
+	min-height: 3rem;
+	align-items: center;
+	justify-content: center;
+	gap: 0.55rem;
+	padding: 0.8rem 1rem;
+	border-radius: 0.55rem;
+	background: var(--contact-sidebar-deep);
+	color: #ffffff;
+	font-size: 0.62rem;
+	font-weight: 900;
+	line-height: 1;
+	letter-spacing: 0.04em;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	box-shadow: 0 8px 20px rgb(6 30 41 / 16%);
+	transition:
+		background-color 180ms ease,
+		box-shadow 180ms ease,
+		transform 180ms ease;
+}
+
+.contact-sidebar__primary-action svg {
+	width: 0.85rem;
+	height: 0.85rem;
+	transition: transform 180ms ease;
+}
+
+.contact-sidebar__primary-action:hover {
+	background: #0b5069;
+	box-shadow: 0 12px 26px rgb(6 30 41 / 24%);
+	transform: translateY(-1px);
+}
+
+.contact-sidebar__primary-action:hover svg {
+	transform: translateX(3px);
+}
+
+.contact-sidebar__disclaimer {
+	margin: 0.5rem 0 0;
+	color: #82959d;
+	font-size: 0.46rem;
+	font-weight: 700;
+	line-height: 1.4;
+	letter-spacing: 0.025em;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.contact-sidebar__trigger:focus-visible,
+.contact-sidebar__close:focus-visible,
+.contact-sidebar__backdrop:focus-visible,
+.contact-sidebar__option:focus-visible,
+.contact-sidebar__primary-action:focus-visible {
+	outline: 3px solid rgb(18 184 211 / 38%);
+	outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+	.contact-sidebar {
+		--contact-sidebar-width: min(100vw, 360px);
+	}
+
+	.contact-sidebar__trigger {
+		top: auto;
+		right: 0.75rem;
+		bottom:
+			max(
+				0.75rem,
+				env(safe-area-inset-bottom)
+			);
+		min-height: 2.85rem;
+		flex-direction: row;
+		padding: 0.6rem 0.8rem;
+		border: 0;
+		border-radius: 999px;
+		writing-mode: initial;
+		transform: none;
+	}
+
+	.contact-sidebar--open
+		.contact-sidebar__trigger {
+		transform: translateY(5rem);
+	}
+
+	.contact-sidebar__trigger-icon {
+		width: 1rem;
+		height: 1rem;
+	}
+
+	.contact-sidebar__panel {
+		width: 100%;
+		max-width: 100%;
+	}
+
+	.contact-sidebar__body {
+		padding-inline: 0.85rem;
+	}
+}
+
+@media (max-width: 380px) {
+	.contact-sidebar__option {
+		gap: 0.5rem;
+		padding-inline: 0.55rem;
+	}
+
+	.contact-sidebar__option-icon {
+		width: 1.8rem;
+		height: 1.8rem;
+	}
+
+	.contact-sidebar__option-action {
+		min-width: 2.5rem;
+		padding-inline: 0.4rem;
+	}
+
+	.contact-sidebar__option-value {
+		font-size: 0.68rem;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.contact-sidebar__trigger,
+	.contact-sidebar__backdrop,
+	.contact-sidebar__panel,
+	.contact-sidebar__close,
+	.contact-sidebar__option,
+	.contact-sidebar__primary-action,
+	.contact-sidebar__primary-action svg {
+		transition: none;
+	}
+
+	.contact-sidebar__option:hover,
+	.contact-sidebar__primary-action:hover {
+		transform: none;
+	}
+}
