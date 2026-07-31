@@ -353,6 +353,7 @@ function Header1({
   ctaLabel = "Book a Service",
   ctaPath = "/contact-us/",
   hideOnScroll = true,
+  overlay = false,
 }) {
   const { pathname } = useLocation();
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -360,8 +361,8 @@ function Header1({
   const [isVisible, setIsVisible] = useState(true);
   const previousY = useRef(window.scrollY);
   const frameId = useRef(0);
-  const isHome = normalizePath(pathname) === "/";
-  const solid = !isHome || isScrolled || mobileOpen;
+  const solid =
+  !overlay || isScrolled || mobileOpen;
 
   useEffect(() => {
     setMobileOpen(false);
@@ -419,48 +420,62 @@ function Header1({
   const closeMenu = () => setMobileOpen(false);
 
   return (
-    <>
-      <header
-        className={[
-          "faj-header",
-          solid ? "faj-header--solid" : "faj-header--transparent",
-          isVisible ? "faj-header--visible" : "faj-header--hidden",
-        ].join(" ")}
-      >
-        <div className="faj-header__inner">
-          <DesktopNavigation pathname={pathname} services={services} aboutItems={aboutItems} />
+		<>
+			<header
+				className={[
+					"faj-header",
+					solid ? "faj-header--solid" : "faj-header--transparent",
+					isVisible ? "faj-header--visible" : "faj-header--hidden",
+				].join(" ")}
+			>
+				<div className="faj-header__inner">
+					<DesktopNavigation
+						pathname={pathname}
+						services={services}
+						aboutItems={aboutItems}
+					/>
 
-          <HeaderLink to="/" className="faj-header__logo" aria-label="FAJ Technical Services home">
-            <FAJLogoSVG />
-          </HeaderLink>
+					<HeaderLink
+						to="/"
+						className="faj-header__logo"
+						aria-label="FAJ Technical Services home"
+					>
+						<FAJLogoSVG />
+					</HeaderLink>
 
-          <HeaderLink to={ctaPath} className="faj-header__desktop-cta">
-            {ctaLabel}
-            <ArrowIcon />
-          </HeaderLink>
+					<HeaderLink to={ctaPath} className="faj-header__desktop-cta">
+						{ctaLabel}
+						<ArrowIcon />
+					</HeaderLink>
 
-          <button
-            type="button"
-            className="faj-header__menu-toggle"
-            onClick={() => setMobileOpen((open) => !open)}
-            aria-label={mobileOpen ? "Close navigation menu" : "Open navigation menu"}
-            aria-expanded={mobileOpen}
-            aria-controls="faj-mobile-navigation"
-          >
-            {mobileOpen ? <CloseIcon /> : <MenuIcon />}
-          </button>
-        </div>
+					<button
+						type="button"
+						className="faj-header__menu-toggle"
+						onClick={() => setMobileOpen((open) => !open)}
+						aria-label={
+							mobileOpen ? "Close navigation menu" : "Open navigation menu"
+						}
+						aria-expanded={mobileOpen}
+						aria-controls="faj-mobile-navigation"
+					>
+						{mobileOpen ? <CloseIcon /> : <MenuIcon />}
+					</button>
+				</div>
 
-        <div id="faj-mobile-navigation">
-          {mobileOpen && (
-            <MobileNavigation services={services} aboutItems={aboutItems} closeMenu={closeMenu} />
-          )}
-        </div>
-      </header>
+				<div id="faj-mobile-navigation">
+					{mobileOpen && (
+						<MobileNavigation
+							services={services}
+							aboutItems={aboutItems}
+							closeMenu={closeMenu}
+						/>
+					)}
+				</div>
+			</header>
 
-      {!isHome && <div className="faj-header__spacer" aria-hidden="true" />}
-    </>
-  );
+			{!overlay && <div className="faj-header__spacer" aria-hidden="true" />}
+		</>
+	);
 }
 
 export default React.memo(Header1);

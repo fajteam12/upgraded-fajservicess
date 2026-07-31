@@ -1,0 +1,129 @@
+.faj-page-hero,
+.faj-page-hero *,
+.faj-page-hero *::before,
+.faj-page-hero *::after {
+  box-sizing: border-box;
+}
+
+.faj-page-hero {
+  --page-hero-overlay: 0.78;
+
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  min-height: clamp(420px, 48vw, 590px);
+  overflow: hidden;
+  background: #0b1f2a;
+  color: #ffffff;
+}
+
+.faj-page-hero__media,
+.faj-page-hero__overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.faj-page-hero__media {
+  z-index: -2;
+  background: #0b1f2a;
+}
+
+.faj-page-hero__media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.faj-page-hero__overlay {
+  z-index: -1;
+  background: rgba(11, 31, 42, var(--page-hero-overlay));
+}
+
+.faj-page-hero__container {
+  display: grid;
+  place-items: center;
+  width: min(100% - 32px, 1180px);
+  min-height: clamp(420px, 48vw, 590px);
+  margin-inline: auto;
+  padding: 132px 0 70px;
+}
+
+.faj-page-hero__content {
+  width: min(100%, 1020px);
+  margin-inline: auto;
+  text-align: center;
+}
+
+.faj-page-hero__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 34px;
+  margin: 0 0 20px;
+  padding: 7px 17px;
+  border: 1px solid rgba(79, 195, 216, 0.55);
+  border-radius: 999px;
+  background: rgba(0, 127, 163, 0.24);
+  color: #4fc3d8;
+  font-size: 0.72rem;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.faj-page-hero__title {
+  max-width: 980px;
+  margin: 0 auto;
+  color: #ffffff;
+  font-size: clamp(2rem, 4.5vw, 3.55rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  text-wrap: balance;
+}
+
+.faj-page-hero__description {
+  max-width: 880px;
+  margin: 24px auto 0;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: clamp(0.95rem, 1.5vw, 1.12rem);
+  line-height: 1.55;
+  text-wrap: balance;
+}
+
+@media (max-width: 767px) {
+  .faj-page-hero {
+    min-height: 440px;
+  }
+
+  .faj-page-hero__container {
+    width: min(100% - 24px, 680px);
+    min-height: 440px;
+    padding: 122px 0 52px;
+  }
+
+  .faj-page-hero__eyebrow {
+    margin-bottom: 18px;
+    font-size: 0.67rem;
+  }
+
+  .faj-page-hero__title {
+    font-size: clamp(1.9rem, 9vw, 2.8rem);
+    line-height: 1.12;
+  }
+
+  .faj-page-hero__description {
+    margin-top: 18px;
+    font-size: 0.94rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .faj-page-hero__media img {
+    transition: none;
+  }
+}

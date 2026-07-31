@@ -29,12 +29,13 @@
 }
 
 .faj-header--transparent {
-  color: #fff;
+  color: #ffffff;
   background: transparent;
 }
 
 .faj-header--solid {
   color: var(--faj-dark);
+  background: rgba(255, 255, 255, 0);
 }
 
 .faj-header__inner {

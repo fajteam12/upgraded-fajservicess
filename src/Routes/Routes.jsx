@@ -8,6 +8,9 @@ export const router = createBrowserRouter([
       {
         path: "/",
         element: <Components.Home />,
+        handle: {
+          headerMode: "overlay",
+        },
       },
       {
         path: "/about-us/",
@@ -44,6 +47,9 @@ export const router = createBrowserRouter([
       {
         path: "/services/",
         element: <Components.ServicesPage />,
+        handle: {
+          headerMode: "overlay",
+        },
       },
       {
         path: "/faj-price-list/",
