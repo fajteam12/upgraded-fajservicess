@@ -19,6 +19,7 @@ function PageHero({
   description = "",
   backgroundImage = defaultBackgroundImage,
   overlay = 0.78,
+  minHeight = "clamp(320px, 34vw, 420px)",
   className = "",
 }) {
   const [useFallback, setUseFallback] = useState(false);
@@ -49,7 +50,10 @@ function PageHero({
     <section
       className={`faj-page-hero ${className}`.trim()}
       aria-labelledby={hasTitle ? titleId : undefined}
-      style={{ "--page-hero-overlay": overlay }}
+      style={{
+        "--page-hero-overlay": overlay,
+        "--page-hero-min-height": minHeight,
+     }}
     >
       <div className="faj-page-hero__media" aria-hidden="true">
         {imageSrc && (

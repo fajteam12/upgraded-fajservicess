@@ -12,6 +12,7 @@ import {
 	coffeeMachinesData,
 } from "../Components/ServiceContractCard/serviceContractsData";
 import CorePrinciples from "../Components/CorePrinciples/CorePrinciples";
+import { homeCorePrinciplesData } from "../data/corePrinciplesData";
 import TradingSection from "../Components/TradingSection/TradingSection";
 import { tradingSectionData } from "../Components/TradingSection/tradingSectionData";
 import NewsUpdates from "../Components/NewsUpdates/NewsUpdates";
@@ -266,7 +267,7 @@ const Home = ({
 					contentWidth={55}
 				/>
 
-				<CorePrinciples />
+				<CorePrinciples {...homeCorePrinciplesData} />
 
 				<TradingSection
 					{...tradingSectionData}

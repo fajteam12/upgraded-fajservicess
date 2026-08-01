@@ -136,7 +136,7 @@
 }
 
 .faj-header__mobile-primary-link,
-.faj-header__mobile-group > summary {
+.faj-header__mobile-group>summary {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -150,18 +150,18 @@
   list-style: none;
 }
 
-.faj-header__mobile-group > summary::-webkit-details-marker,
-.faj-header__mobile-subgroup > summary::-webkit-details-marker {
+.faj-header__mobile-group>summary::-webkit-details-marker,
+.faj-header__mobile-subgroup>summary::-webkit-details-marker {
   display: none;
 }
 
-.faj-header__mobile-group[open] > summary,
+.faj-header__mobile-group[open]>summary,
 .faj-header__mobile-primary-link:hover {
   color: var(--faj-accent);
 }
 
-.faj-header__mobile-group[open] > summary svg,
-.faj-header__mobile-subgroup[open] > summary > svg {
+.faj-header__mobile-group[open]>summary svg,
+.faj-header__mobile-subgroup[open]>summary>svg {
   transform: rotate(180deg);
 }
 
@@ -222,7 +222,7 @@
   border-radius: 12px;
 }
 
-.faj-header__mobile-subgroup > summary {
+.faj-header__mobile-subgroup>summary {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -360,7 +360,7 @@
     transition: color 160ms ease, background-color 160ms ease;
   }
 
-  .faj-header__nav-item > .faj-header__nav-link[aria-haspopup="true"]::after {
+  .faj-header__nav-item>.faj-header__nav-link[aria-haspopup="true"]::after {
     position: absolute;
     top: 100%;
     right: -12px;
@@ -391,29 +391,37 @@
     transition: transform 160ms ease;
   }
 
-  .faj-header__nav-item:hover > .faj-header__nav-link .faj-header__chevron,
-  .faj-header__nav-item.is-open > .faj-header__nav-link .faj-header__chevron,
-  .faj-header__nav-item:focus-within > .faj-header__nav-link .faj-header__chevron {
+  .faj-header__nav-item:hover>.faj-header__nav-link .faj-header__chevron,
+  .faj-header__nav-item.is-open>.faj-header__nav-link .faj-header__chevron,
+  .faj-header__nav-item:focus-within>.faj-header__nav-link .faj-header__chevron {
     transform: rotate(180deg);
   }
 
   .faj-header__logo-space {
-    width: 126px;
     height: 36px;
-    flex: 0 0 126px;
+  }
+
+  .faj-header__logo-space--left {
+    width: 90px;
+    flex: 0 0 90px;
+  }
+
+  .faj-header__logo-space--right {
+    width: 18px;
+    flex: 0 0 18px;
   }
 
   .faj-header__logo {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 51%;
     max-width: 168px;
-    transform: translate(-50%, -50%);
+    transform: translate(-40%, -50%);
   }
 
   .faj-header__logo:hover,
   .faj-header__logo:focus-visible {
-    transform: translate(-50%, calc(-50% - 2px)) scale(1.04);
+    transform: translate(-40%, calc(-50% - 2px)) scale(1.04);
   }
 
   .faj-header__logo svg {
@@ -477,9 +485,9 @@
     content: "";
   }
 
-  .faj-header__nav-item:hover > .faj-header__popover,
-  .faj-header__nav-item.is-open > .faj-header__popover,
-  .faj-header__nav-item:focus-within > .faj-header__popover {
+  .faj-header__nav-item:hover>.faj-header__popover,
+  .faj-header__nav-item.is-open>.faj-header__popover,
+  .faj-header__nav-item:focus-within>.faj-header__popover {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
@@ -495,9 +503,9 @@
     transform: translate(-50%, -8px);
   }
 
-  .faj-header__nav-item:hover > .faj-header__popover--services,
-  .faj-header__nav-item.is-open > .faj-header__popover--services,
-  .faj-header__nav-item:focus-within > .faj-header__popover--services {
+  .faj-header__nav-item:hover>.faj-header__popover--services,
+  .faj-header__nav-item.is-open>.faj-header__popover--services,
+  .faj-header__nav-item:focus-within>.faj-header__popover--services {
     transform: translate(-50%, 0);
   }
 
@@ -509,9 +517,9 @@
     transform: translate(-50%, -8px);
   }
 
-  .faj-header__nav-item:hover > .faj-header__popover--about,
-  .faj-header__nav-item.is-open > .faj-header__popover--about,
-  .faj-header__nav-item:focus-within > .faj-header__popover--about {
+  .faj-header__nav-item:hover>.faj-header__popover--about,
+  .faj-header__nav-item.is-open>.faj-header__popover--about,
+  .faj-header__nav-item:focus-within>.faj-header__popover--about {
     transform: translate(-50%, 0);
   }
 
@@ -671,6 +679,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   .faj-header,
   .faj-header *,
   .faj-header *::before,

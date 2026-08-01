@@ -11,7 +11,7 @@
   position: relative;
   isolation: isolate;
   display: grid;
-  min-height: clamp(420px, 48vw, 590px);
+  min-height: var(--page-hero-min-height);
   overflow: hidden;
   background: #0b1f2a;
   color: #ffffff;
@@ -46,7 +46,7 @@
   display: grid;
   place-items: center;
   width: min(100% - 32px, 1180px);
-  min-height: clamp(420px, 48vw, 590px);
+  min-height: var(--page-hero-min-height);
   margin-inline: auto;
   padding: 132px 0 70px;
 }
@@ -97,12 +97,12 @@
 
 @media (max-width: 767px) {
   .faj-page-hero {
-    min-height: 440px;
+    min-height: var(--page-hero-min-height);
   }
 
   .faj-page-hero__container {
     width: min(100% - 24px, 680px);
-    min-height: 440px;
+    min-height: var(--page-hero-min-height);
     padding: 122px 0 52px;
   }
 

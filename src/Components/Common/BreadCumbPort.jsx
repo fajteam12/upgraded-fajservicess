@@ -1,43 +1,37 @@
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation } from "react-router-dom";
 
 const Breadcrumb = () => {
   const location = useLocation();
-  const isArabic = /[\u0600-\u06FF]/.test(decodeURIComponent(location.pathname));
-  const CDN = 'https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA';
+  const isArabic = /[\u0600-\u06FF]/.test(
+    decodeURIComponent(location.pathname)
+  );
 
-const getImageSrc = (imgPath) => {
-  if (!imgPath) return '';
-  if (imgPath.startsWith('https')) return imgPath;
-  let variant = 'mobile';
-  if (typeof window !== 'undefined') {
-    const width = window.innerWidth;
-    const realWidth = width;
-    if (realWidth > 1200) {
-      variant = 'large';
-    } else if (realWidth > 768) {
-      variant = 'desktop';
-    } else if (realWidth > 480) {
-      variant = 'tablet';
-    } else {
-      variant = 'mobile';
-    }
-  }
-  return `${CDN}/${imgPath}/${variant}`;
-};
   const generateBreadcrumbs = () => {
-    const pathnames = location.pathname.split('/').filter((x) => x);
-    
+    const pathnames = location.pathname.split("/").filter(Boolean);
+
     const formatLabel = (segment) => {
       const decoded = decodeURIComponent(segment);
-      
-      if (/[\u0600-\u06FF]/.test(decoded)) {
-        return decoded.replace(/-/g, ' ');
-      }
-      
-      // For English, apply capitalization rules
-      const acronyms = ["ac", "jvc", "jvt", "lg", "dip", "jafza", "difc", "impz", "jlt", "jge", "aeg", "ifb", "jbr"];
 
-      // Words that must keep exact casing (brands, special names)
+      if (/[\u0600-\u06FF]/.test(decoded)) {
+        return decoded.replace(/-/g, " ");
+      }
+
+      const acronyms = [
+        "ac",
+        "jvc",
+        "jvt",
+        "lg",
+        "dip",
+        "jafza",
+        "difc",
+        "impz",
+        "jlt",
+        "jge",
+        "aeg",
+        "ifb",
+        "jbr",
+      ];
+
       const customWords = {
         kitchenaid: "KitchenAid",
         delonghi: "DeLonghi",
@@ -50,7 +44,7 @@ const getImageSrc = (imgPath) => {
         daikin: "Daikin",
         hitachi: "Hitachi",
         panasonic: "Panasonic",
-        sharp: "Sharp"
+        sharp: "Sharp",
       };
 
       return decoded
@@ -58,36 +52,34 @@ const getImageSrc = (imgPath) => {
         .map((word) => {
           const lower = word.toLowerCase();
 
-          // keep special casing
           if (customWords[lower]) {
             return customWords[lower];
           }
 
-          // Acronyms uppercase
           if (acronyms.includes(lower)) {
             return word.toUpperCase();
           }
 
-          // Normal word capitalization
           return word.charAt(0).toUpperCase() + word.slice(1);
         })
         .join(" ");
     };
 
     const breadcrumbs = [
-      { label: isArabic ? 'الرئيسية' : 'Home', path: '/' }
+      {
+        label: isArabic ? "\u0627\u0644\u0631\u0626\u064a\u0633\u064a\u0629" : "Home",
+        path: "/",
+      },
     ];
 
-    let currentPath = '';
-    const appendSegment = (segment) => {
-      currentPath = `${currentPath.replace(/\/$/, '')}/${segment}/`;
-      return currentPath;
-    };
+    let currentPath = "";
 
     pathnames.forEach((segment) => {
+      currentPath = `${currentPath.replace(/\/$/, "")}/${segment}/`;
+
       breadcrumbs.push({
         label: formatLabel(segment),
-        path: appendSegment(segment)
+        path: currentPath,
       });
     });
 
@@ -97,99 +89,90 @@ const getImageSrc = (imgPath) => {
   const breadcrumbs = generateBreadcrumbs();
 
   return (
-    <div className="portfolio-banner">
-      <nav 
-        className="breadcrumb-nav" 
-        aria-label="breadcrumb"
-        dir={isArabic ? 'rtl' : 'ltr'}
-      >
-        <div className="container">
-          <ol className="breadcrumb-list">
-            {breadcrumbs.map((crumb, index) => {
-              const isLast = index === breadcrumbs.length - 1;
-              
-              return (
-                <li key={crumb.path} className="breadcrumb-item">
-                  {!isLast ? (
-                    <>
-                      <Link to={crumb.path} className="breadcrumb-link">
-                        {crumb.label}
-                      </Link>
-                      <span className="breadcrumb-separator">
-                        {isArabic ? '‹' : '›'}
-                      </span>
-                    </>
-                  ) : (
-                    <span className="breadcrumb-current">{crumb.label}</span>
-                  )}
-                </li>
-              );
-            })}
-          </ol>
-        </div>
-        
+    <nav
+      className="breadcrumb-nav"
+      aria-label="Breadcrumb"
+      dir={isArabic ? "rtl" : "ltr"}
+    >
+      <div className="container">
+        <ol className="breadcrumb-list">
+          {breadcrumbs.map((crumb, index) => {
+            const isLast = index === breadcrumbs.length - 1;
 
-        <style>{`
-          .breadcrumb-nav {
-            padding: 10px 0px 6px;
-            background-color: #fff;
-        } 
-          .breadcrumb-list {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-          }
-          
-          .breadcrumb-nav[dir="rtl"] .breadcrumb-list {
-            flex-direction: row;
-          }
-          
-          .breadcrumb-item {
-            display: flex;
-            align-items: center;
-            font-size: 14px;
-          }
-          
-          .breadcrumb-link {
-            color: #5DB3CD;
-            text-decoration: none;
-            transition: color 0.2s ease;
-          }
-          
-          .breadcrumb-link:hover {
-            color: #5DB3CD;
-            text-decoration: underline;
-          }
-          
-          .breadcrumb-separator {
-            color: #5DB3CD;
-            margin: 0 8px;
-            font-size: 12px;
-          }
-          
-          .breadcrumb-current {
-            color: #666;
-          }
-          
-          @media (max-width: 576px) {
-            .breadcrumb-item {
-              font-size: 13px;
-            }
-            
-            .breadcrumb-separator {
-              margin: 0 5px;
-            }
-          }
-        `}</style>
-      </nav>
-      <div className="portfolio-banner-wrap pt-0">
-          <img className='d-none d-md-block w-100' src={getImageSrc('portfoliobanner')} alt='Portfolio Banner'/>
-          <img className='d-md-none' src={getImageSrc('portfolio-mobile-banner')} alt='Portfolio Mobile Banner'/>
+            return (
+              <li key={crumb.path} className="breadcrumb-item">
+                {isLast ? (
+                  <span className="breadcrumb-current">{crumb.label}</span>
+                ) : (
+                  <>
+                    <Link to={crumb.path} className="breadcrumb-link">
+                      {crumb.label}
+                    </Link>
+
+                    <span className="breadcrumb-separator" aria-hidden="true">
+                      {isArabic ? "\u2039" : "\u203A"}
+                    </span>
+                  </>
+                )}
+              </li>
+            );
+          })}
+        </ol>
       </div>
-    </div>
+
+      <style>{`
+        .breadcrumb-nav {
+          padding: 10px 0 6px;
+          background-color: #ffffff;
+        }
+
+        .breadcrumb-list {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          list-style: none;
+          margin: 0;
+          padding: 0;
+        }
+
+        .breadcrumb-item {
+          display: flex;
+          align-items: center;
+          font-size: 14px;
+        }
+
+        .breadcrumb-link {
+          color: #5db3cd;
+          text-decoration: none;
+          transition: color 0.2s ease;
+        }
+
+        .breadcrumb-link:hover {
+          color: #078db2;
+          text-decoration: underline;
+        }
+
+        .breadcrumb-separator {
+          margin: 0 8px;
+          color: #5db3cd;
+          font-size: 12px;
+        }
+
+        .breadcrumb-current {
+          color: #666666;
+        }
+
+        @media (max-width: 576px) {
+          .breadcrumb-item {
+            font-size: 13px;
+          }
+
+          .breadcrumb-separator {
+            margin: 0 5px;
+          }
+        }
+      `}</style>
+    </nav>
   );
 };
 

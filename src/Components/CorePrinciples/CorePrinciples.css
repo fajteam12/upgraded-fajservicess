@@ -237,6 +237,32 @@
   width: 100%;
 }
 
+.core-principles__card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.core-principles__year {
+  padding: 0.38rem 0.55rem;
+  border-radius: 0.3rem;
+  background: #edf7fa;
+  color: var(--principles-primary);
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  line-height: 1;
+  transition:
+    background-color 180ms ease,
+    color 180ms ease;
+}
+
+.core-principles__card:hover .core-principles__year {
+  background: rgba(255, 255, 255, 0.14);
+  color: #d9f3f8;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .core-principles__timeline > .scroll-animation {
     opacity: 1;

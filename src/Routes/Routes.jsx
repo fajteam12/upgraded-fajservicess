@@ -19,14 +19,17 @@ export const router = createBrowserRouter([
       {
         path: "/who-we-are/",
         element: <Components.WhoWeArePage />,
+        handle: { headerMode: "overlay" },
       },
       {
         path: "/our-vision-and-mission/",
         element: <Components.OurVisionAndMissionPage />,
+        handle: { headerMode: "overlay" },
       },
       {
         path: "/our-history/",
         element: <Components.OurHistoryPage />,
+        handle: { headerMode: "overlay" },
       },
       {
         path: "/our-team/",
@@ -146,6 +149,7 @@ export const router = createBrowserRouter([
       {
         path: "/our-portfolio/",
         element: <Components.PortfolioPage />,
+        handle: { headerMode: "overlay" },
       },
       {
         path: "/b2b-services/",
