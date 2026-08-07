@@ -12,3 +12,18 @@ export const calloutSectionData = {
     to: "/contact-us/",
   },
 };
+
+export const calloutContactSectionData = {
+  eyebrow: "",
+
+  title: "Need Emergency Support?",
+  highlightedTitle: "",
+
+  description:
+    "Our technicians are available 24/7 for urgent residential & commercial appliance breakdowns. Call our support desk now.",
+
+  action: {
+    label: "Call Now: +971 50 746 4712",
+    to: "/tel:+971507464712/",
+  },
+};

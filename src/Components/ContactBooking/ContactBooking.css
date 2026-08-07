@@ -1,0 +1,421 @@
+.contact-booking {
+  padding: clamp(56px, 7vw, 96px) 0;
+  background: #f4f8fa;
+  color: #092f43
+}
+
+.contact-booking__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(420px, 520px);
+  gap: clamp(32px, 7vw, 84px);
+  align-items: start
+}
+
+.contact-booking__intro {
+  padding-top: 2px
+}
+
+.contact-booking__eyebrow,
+.contact-booking__card-eyebrow {
+  margin: 0 0 8px;
+  color: #079ec0;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .14em;
+  text-transform: uppercase
+}
+
+.contact-booking h2 {
+  margin: 0;
+  color: #092d40;
+  font-size: clamp(28px, 3vw, 40px);
+  line-height: 1.08;
+  font-weight: 800
+}
+
+.contact-booking__description {
+  max-width: 430px;
+  margin: 22px 0 26px;
+  color: #536d79;
+  font-size: 14px;
+  line-height: 1.6
+}
+
+.contact-booking__details {
+  max-width: 520px;
+  padding: 18px 20px;
+  border: 1px solid #d8e5ea;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(10, 48, 64, .04)
+}
+
+.contact-booking__detail {
+  display: flex;
+  gap: 13px;
+  align-items: flex-start;
+  padding: 10px 0
+}
+
+.contact-booking__detail+.contact-booking__detail {
+  border-top: 1px solid #edf2f4
+}
+
+.contact-booking__detail>span,
+.contact-booking__stat>span {
+  display: grid;
+  place-items: center;
+  flex: 0 0 34px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #eff8fa;
+  color: #007fa2
+}
+
+.contact-booking svg {
+  width: 17px;
+  height: 17px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round
+}
+
+.contact-booking__detail strong {
+  display: block;
+  margin-bottom: 3px;
+  font-size: 12px
+}
+
+.contact-booking__detail small,
+.contact-booking__detail a {
+  display: block;
+  color: #627984;
+  font-size: 12px;
+  line-height: 1.45;
+  text-decoration: none
+}
+
+.contact-booking__detail a:hover {
+  color: #008eae
+}
+
+.contact-booking__stat {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  max-width: 290px;
+  margin-top: 54px;
+  padding: 18px 20px;
+  border-radius: 8px;
+  background: #082b39;
+  color: #fff;
+  box-shadow: 0 10px 22px rgba(8, 43, 57, .18)
+}
+
+.contact-booking__stat>span {
+  background: #103f4e;
+  color: #2bc1df;
+  border: 1px solid #16748b
+}
+
+.contact-booking__stat strong {
+  display: block;
+  font-size: 24px;
+  line-height: 1
+}
+
+.contact-booking__stat small {
+  display: block;
+  margin-top: 5px;
+  color: #7dd8e9;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase
+}
+
+.contact-booking__card {
+  padding: 24px 20px 20px;
+  border: 1px solid #e0eaee;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 12px 28px rgba(14, 49, 63, .08)
+}
+
+.contact-booking__card h2 {
+  font-size: clamp(24px, 2.3vw, 31px);
+  text-transform: uppercase
+}
+
+.contact-booking__card-note {
+  margin: 7px 0 19px;
+  color: #627984;
+  font-size: 12px;
+  line-height: 1.45
+}
+
+.contact-booking__card form {
+  display: grid;
+  gap: 13px
+}
+
+.contact-booking__card label {
+  display: grid;
+  gap: 6px;
+  color: #092f43;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase
+}
+
+.contact-booking__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 11px
+}
+
+.contact-booking input,
+.contact-booking select,
+.contact-booking textarea {
+  width: 100%;
+  border: 1px solid #d8e2e7;
+  border-radius: 6px;
+  background: #fbfdfe;
+  color: #143b4b;
+  font: inherit;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+  outline: 0;
+  transition: border-color .2s, box-shadow .2s
+}
+
+.contact-booking input,
+.contact-booking select {
+  height: 38px;
+  padding: 0 11px
+}
+
+.contact-booking textarea {
+  min-height: 76px;
+  padding: 11px;
+  resize: vertical
+}
+
+.contact-booking input:focus,
+.contact-booking select:focus,
+.contact-booking textarea:focus {
+  border-color: #1ab1d0;
+  box-shadow: 0 0 0 3px rgba(26, 177, 208, .13)
+}
+
+.contact-booking button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 40px;
+  border: 0;
+  border-radius: 6px;
+  background: #06394d;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background .2s, transform .2s
+}
+
+.contact-booking button svg {
+  width: 15px
+}
+
+.contact-booking button:hover:not(:disabled) {
+  background: #087d9c;
+  transform: translateY(-2px)
+}
+
+.contact-booking button:disabled {
+  cursor: wait;
+  opacity: .65
+}
+
+.contact-booking__alert {
+  padding: 9px 11px;
+  border-radius: 5px;
+  background: #e8f8ee;
+  color: #18733a;
+  font-size: 11px
+}
+
+.contact-booking__alert.is-error {
+  background: #fff0f0;
+  color: #a62b2b
+}
+
+#contact-recaptcha {
+  min-height: 0
+}
+
+.contact-booking__reveal {
+  animation: contact-booking-fade-up .7s cubic-bezier(.22, .61, .36, 1) both
+}
+
+.contact-booking__reveal--left {
+  animation-name: contact-booking-slide-left
+}
+
+.contact-booking__reveal--right {
+  animation-name: contact-booking-slide-right;
+  animation-delay: .12s
+}
+
+.contact-booking__reveal--delay-1 {
+  animation-delay: .18s
+}
+
+.contact-booking__reveal--delay-2 {
+  animation-delay: .3s
+}
+
+.contact-booking__detail {
+  transition: transform .25s ease, background-color .25s ease
+}
+
+.contact-booking__detail:hover {
+  transform: translateX(5px);
+  border-radius: 6px;
+  background: #f7fbfc
+}
+
+.contact-booking__detail:hover>span {
+  background: #dff5f9;
+  transform: scale(1.08)
+}
+
+.contact-booking__detail>span {
+  transition: background-color .25s ease, transform .25s ease
+}
+
+.contact-booking__stat {
+  transition: transform .25s ease, box-shadow .25s ease
+}
+
+.contact-booking__stat:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 30px rgba(8, 43, 57, .25)
+}
+
+.contact-booking__card {
+  transition: transform .3s ease, box-shadow .3s ease
+}
+
+.contact-booking__card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 36px rgba(14, 49, 63, .13)
+}
+
+.contact-booking__card input:hover,
+.contact-booking__card select:hover,
+.contact-booking__card textarea:hover {
+  border-color: #9bcbd6
+}
+
+@keyframes contact-booking-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px)
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0)
+  }
+}
+
+@keyframes contact-booking-slide-left {
+  from {
+    opacity: 0;
+    transform: translateX(-28px)
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0)
+  }
+}
+
+@keyframes contact-booking-slide-right {
+  from {
+    opacity: 0;
+    transform: translateX(28px)
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0)
+  }
+}
+
+@media(max-width:900px) {
+  .contact-booking__grid {
+    grid-template-columns: 1fr;
+    max-width: 680px
+  }
+
+  .contact-booking__description {
+    max-width: 600px
+  }
+
+  .contact-booking__stat {
+    margin-top: 28px
+  }
+}
+
+@media(max-width:520px) {
+  .contact-booking {
+    padding: 48px 0
+  }
+
+  .contact-booking__grid {
+    padding: 0 16px
+  }
+
+  .contact-booking__row {
+    grid-template-columns: 1fr
+  }
+
+  .contact-booking__card {
+    padding: 21px 16px
+  }
+
+  .contact-booking h2 {
+    font-size: 30px
+  }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  .contact-booking__reveal {
+    animation: none
+  }
+
+  .contact-booking__detail,
+  .contact-booking__detail>span,
+  .contact-booking__stat,
+  .contact-booking__card,
+  .contact-booking button {
+    transition: none
+  }
+
+  .contact-booking__detail:hover,
+  .contact-booking__stat:hover,
+  .contact-booking__card:hover {
+    transform: none
+  }
+}

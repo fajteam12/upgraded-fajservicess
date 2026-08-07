@@ -8,9 +8,7 @@ export const router = createBrowserRouter([
       {
         path: "/",
         element: <Components.Home />,
-        handle: {
-          headerMode: "overlay",
-        },
+        handle: { headerMode: "overlay" },
       },
       {
         path: "/about-us/",
@@ -498,6 +496,7 @@ export const router = createBrowserRouter([
       {
         path: "/contact-us/",
         element: <Components.ContactPage />,
+        handle: { headerMode: "overlay" },
       },
       {
         path: "/privacy-policy/",
