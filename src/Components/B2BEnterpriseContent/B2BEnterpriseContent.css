@@ -1,0 +1,274 @@
+.b2b-enterprise {
+  padding: clamp(48px, 5vw, 96px) 0;
+  background: #f5f9fb;
+  color: #5f7680
+}
+
+.b2b-enterprise__card {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: clamp(20px, 4vw, 48px);
+  border: 1px solid #dce8ec;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(8, 46, 63, .06)
+}
+
+.b2b-enterprise__header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #edf2f4
+}
+
+.b2b-enterprise__header-icon {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 9px;
+  background: #e7f7fa;
+  color: #078eac
+}
+
+.b2b-enterprise svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round
+}
+
+.b2b-enterprise__header p {
+  margin: 0;
+  color: #092f43;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: .02em;
+  text-transform: uppercase
+}
+
+.b2b-enterprise__header small {
+  display: block;
+  margin-top: 3px;
+  color: #73868d;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase
+}
+
+.b2b-enterprise__banner {
+  margin: 24px 0;
+  padding: 20px 22px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #063b50, #075068);
+  color: #fff;
+  box-shadow: 0 8px 18px rgba(6, 59, 80, .14)
+}
+
+.b2b-enterprise__banner h2 {
+  margin: 0 0 8px;
+  color: #fff;
+  font-size: clamp(20px, 2.5vw, 29px);
+  line-height: 1.16
+}
+
+.b2b-enterprise__banner p {
+  margin: 0;
+  color: #d9eef1;
+  font-size: 12px;
+  line-height: 1.55
+}
+
+.b2b-enterprise__introduction {
+  margin: 0 0 24px;
+  font-size: 13px;
+  line-height: 1.7
+}
+
+.b2b-enterprise__sections {
+  display: grid;
+  gap: 20px
+}
+
+.b2b-enterprise__section h3 {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 0 0 8px;
+  color: #09354a;
+  font-size: 16px
+}
+
+.b2b-enterprise__section h3::before {
+  content: "";
+  width: 5px;
+  height: 20px;
+  border-radius: 3px;
+  background: #16b3d0
+}
+
+.b2b-enterprise__section>p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.7
+}
+
+.b2b-enterprise__callout {
+  margin-top: 14px;
+  padding: 13px 15px;
+  border: 1px solid #c9e5ea;
+  border-radius: 7px;
+  background: #eefafd;
+  color: #07506a;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.55
+}
+
+.b2b-enterprise__details {
+  display: grid;
+  gap: 10px;
+  margin-top: 15px;
+  padding: 16px;
+  border: 1px solid #e2ecef;
+  border-radius: 8px;
+  background: #fbfdfe
+}
+
+.b2b-enterprise__details p {
+  margin: 0;
+  padding-left: 17px;
+  font-size: 12px;
+  line-height: 1.55
+}
+
+.b2b-enterprise__details p::before {
+  content: "✓";
+  margin-left: -17px;
+  margin-right: 8px;
+  color: #08a6c3;
+  font-weight: 900
+}
+
+.b2b-enterprise__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 26px;
+  padding: 16px;
+  border: 1px solid #edf1f3;
+  border-radius: 8px;
+  background: #f8fafb
+}
+
+.b2b-enterprise__action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 38px;
+  padding: 0 13px;
+  border-radius: 5px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .03em;
+  text-decoration: none;
+  transition: transform .2s ease, background .2s ease, box-shadow .2s ease
+}
+
+.b2b-enterprise__action:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(8, 46, 63, .13)
+}
+
+.b2b-enterprise__action--primary {
+  background: #063b50;
+  color: #fff
+}
+
+.b2b-enterprise__action--primary:hover {
+  background: #075e77
+}
+
+.b2b-enterprise__action--secondary {
+  border: 1px solid #d3e1e5;
+  background: #fff;
+  color: #09374d
+}
+
+.b2b-enterprise__action--secondary:hover {
+  background: #eef7f9
+}
+
+.b2b-enterprise__action--whatsapp {
+  background: #25d366;
+  color: #fff
+}
+
+.b2b-enterprise__action--whatsapp:hover {
+  background: #20b95a
+}
+
+.b2b-enterprise__action svg {
+  width: 15px;
+  height: 15px
+}
+
+.b2b-enterprise__reveal {
+  animation: b2b-enterprise-reveal .7s cubic-bezier(.22, .61, .36, 1) both
+}
+
+@keyframes b2b-enterprise-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(24px)
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0)
+  }
+}
+
+@media(max-width:680px) {
+  .b2b-enterprise {
+    padding: 42px 0
+  }
+
+  .b2b-enterprise__card {
+    padding: 20px 16px;
+    border-radius: 11px
+  }
+
+  .b2b-enterprise__actions {
+    display: grid
+  }
+
+  .b2b-enterprise__action {
+    width: 100%
+  }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  .b2b-enterprise__reveal {
+    animation: none
+  }
+
+  .b2b-enterprise__action {
+    transition: none
+  }
+
+  .b2b-enterprise__action:hover {
+    transform: none
+  }
+}
+
+.b2b-enterprise__header small,
+.b2b-enterprise__action {
+  font-size: 11px
+}

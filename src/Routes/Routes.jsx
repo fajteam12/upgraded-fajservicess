@@ -152,6 +152,7 @@ export const router = createBrowserRouter([
       {
         path: "/b2b-services/",
         element: <Components.B2bServicesPage />,
+        handle: { headerMode: "overlay" },
       },
       {
         path: "/services/home-appliances-repair/oven-repair-service/",
@@ -1588,6 +1589,12 @@ export const router = createBrowserRouter([
       {
         path: "/career/",
         element: <Components.Career />,
+        handle: { headerMode: "overlay" },
+      },
+      {
+        path: "/career/:jobSlug/",
+        element: <Components.CareerJobDetails />,
+        handle: { headerMode: "overlay" },
       },
       {
         path: "/testimonials/",
