@@ -22,7 +22,7 @@ const maintenanceBenefitsData = {
       title: "Improved Cooling Efficiency",
       description:
         "Keep your system running at peak performance, ensuring quick and optimal cooling across all rooms.",
-      icon: "✦",
+      icon: "snowflake",
     },
     {
       id: "lower-electricity-bills",
@@ -30,7 +30,7 @@ const maintenanceBenefitsData = {
       title: "Lower Electricity Bills",
       description:
         "An efficiently serviced unit consumes less power, directly reducing your monthly utility costs.",
-      icon: "$",
+      icon: "dollar-sign",
     },
     {
       id: "ac-lifespan",
@@ -38,7 +38,7 @@ const maintenanceBenefitsData = {
       title: "AC Lifespan",
       description:
         "Routine servicing prevents wear and tear, significantly extending the service life of your AC system.",
-      icon: "◷",
+      icon: "clock",
     },
     {
       id: "indoor-air-quality",
@@ -46,7 +46,7 @@ const maintenanceBenefitsData = {
       title: "Better Indoor Air Quality",
       description:
         "Clean filters and sanitized vents remove dust, pollen, and bacteria for healthier indoor breathing.",
-      icon: "✣",
+      icon: "sparkles",
     },
     {
       id: "fewer-breakdowns",
@@ -54,7 +54,7 @@ const maintenanceBenefitsData = {
       title: "Fewer Breakdowns",
       description:
         "Early diagnostics and proactive part checks prevent unexpected system failures during hot weather.",
-      icon: "◉",
+      icon: "shield-check",
     },
     {
       id: "stable-airflow",
@@ -62,7 +62,7 @@ const maintenanceBenefitsData = {
       title: "Stable Airflow and Comfort",
       description:
         "Properly balanced vents and calibrated fans deliver consistent, uninterrupted comfort all day.",
-      icon: "↗",
+      icon: "wind",
     },
   ],
 };

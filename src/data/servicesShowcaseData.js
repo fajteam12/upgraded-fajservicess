@@ -9,7 +9,17 @@ const servicesShowcaseData = [
     tags: ["Espresso", "Grinders"],
     description:
       "Keep your commercial coffee machines in top condition with expert maintenance, deep cleaning, and fast repairs.",
-    path: "/services/commercial-coffee-machine/",
+    path: "/services/coffee-machine/coffee-machine-repairs/",
+    subpages: [
+      {
+        title: "Coffee Machine Services Needed",
+        path: "/services/coffee-machine/coffee-machine-service-center/",
+      },
+      {
+        title: "Commercial Coffee Machine Repair Services",
+        path: "/services/coffee-machine/coffee-machine-repairs/",
+      },
+    ],
     icon: "☕",
     image: {
       id: `${SERVICES_CLOUDFLARE_BASE}/commercial-coffee-machine-services`,
@@ -25,7 +35,7 @@ const servicesShowcaseData = [
     tags: ["Ovens", "Stoves"],
     description:
       "Expert repair and maintenance for commercial ovens, stoves, fryers, and grills used in busy kitchens.",
-    path: "/services/commercial-cooking-appliance/",
+    path: "/services/kitchen-equipment-maintenance/commercial-cooking-appliances-repair-service/",
     icon: "♨",
     image: {
       id: `${SERVICES_CLOUDFLARE_BASE}/commercial-cooking-appliance-services`,
@@ -41,7 +51,21 @@ const servicesShowcaseData = [
     tags: ["Walk-in Freezers", "Chillers"],
     description:
       "Prevent costly stock losses with professional refrigeration repair for chillers, freezers, and display cases.",
-    path: "/services/commercial-refrigeration/",
+    path: "/services/refrigeration-equipment/",
+    subpages: [
+      {
+        title: "Ice Maker Repair",
+        path: "/services/refrigeration-equipment/ice-maker-repair/",
+      },
+      {
+        title: "Refrigeration AMC Services",
+        path: "/services/refrigeration-equipment/commercial-refrigeration-maintenance-contract-services/",
+      },
+      {
+        title: "Commercial Refrigeration Maintenance",
+        path: "/services/refrigeration-equipment/commercial-refrigeration-maintenance/",
+      },
+    ],
     icon: "❄",
     image: {
       id: `${SERVICES_CLOUDFLARE_BASE}/commercial-refrigeration-services`,
@@ -57,7 +81,7 @@ const servicesShowcaseData = [
     tags: ["Undercounter", "Conveyor"],
     description:
       "Maintain reliable cleaning performance with expert commercial dishwasher repair and maintenance.",
-    path: "/services/commercial-dishwasher/",
+    path: "/services/commercial-dishwasher-repair/",
     icon: "▣",
     image: {
       id: `${SERVICES_CLOUDFLARE_BASE}/commercial-dishwasher-services`,
@@ -89,7 +113,7 @@ const servicesShowcaseData = [
     tags: ["Sharpening", "Motor Repair"],
     description:
       "Keep meat grinders operating safely and efficiently with professional maintenance and repairs.",
-    path: "/services/meat-grinder/",
+    path: "/services/kitchen-equipment-maintenance/meat-grinder-repair/",
     icon: "⚙",
     image: {
       id: `${SERVICES_CLOUDFLARE_BASE}/meat-grinder-services`,
@@ -105,7 +129,7 @@ const servicesShowcaseData = [
     tags: ["Refrigerators", "Washing Machines"],
     description:
       "Same-day home appliance repairs for refrigerators, washing machines, ovens, cookers, and dryers.",
-    path: "/services/home-appliances/",
+    path: "/services/home-appliances-repair/appliances-repair-service/",
     icon: "⌂",
     image: {
       id: `${SERVICES_CLOUDFLARE_BASE}/appliances-repair-service`,
@@ -122,6 +146,28 @@ const servicesShowcaseData = [
     description:
       "Rapid commercial kitchen repairs for gas lines, exhaust hoods, food machinery, and stainless-steel systems.",
     path: "/services/kitchen-equipment-maintenance/",
+    subpages: [
+      {
+        title: "Commercial Oven Repair",
+        path: "/services/kitchen-equipment-maintenance/oven-repair/",
+      },
+      {
+        title: "Commercial Meat Grinder Repair",
+        path: "/services/kitchen-equipment-maintenance/meat-grinder-repair/",
+      },
+      {
+        title: "Kitchen Equipment AMC",
+        path: "/services/kitchen-equipment-maintenance/commercial-kitchen-equipment-amc/",
+      },
+      {
+        title: "Kitchen Equipment Repair",
+        path: "/services/kitchen-equipment-maintenance/commercial-kitchen-equipment-maintenance-services/",
+      },
+      {
+        title: "Cooking Equipment Service",
+        path: "/services/kitchen-equipment-maintenance/commercial-cooking-appliances-repair-service/",
+      },
+    ],
     icon: "♨",
     image: {
       id: `${SERVICES_CLOUDFLARE_BASE}/kitchen-equipment-services`,
@@ -138,6 +184,16 @@ const servicesShowcaseData = [
     description:
       "Professional AC repair, cleaning, installation, and maintenance contract services across Dubai.",
     path: "/services/air-conditioning-repair/",
+    subpages: [
+      {
+        title: "AC Services",
+        path: "/services/air-conditioning-repair/ac-service/",
+      },
+      {
+        title: "AMC Maintenance Contract",
+        path: "/services/air-conditioning-repair/ac-annual-maintenance-contract/",
+      },
+    ],
     icon: "✣",
     image: {
       id: `${SERVICES_CLOUDFLARE_BASE}/air-conditioning-services`,
@@ -153,7 +209,7 @@ const servicesShowcaseData = [
     tags: ["Espresso", "Descaling"],
     description:
       "Precision espresso diagnostics, deep descaling, gasket replacement, and coffee machine servicing.",
-    path: "/services/commercial-coffee-machine/",
+    path: "/services/coffee-machine/",
     icon: "☕",
     image: {
       id: `${SERVICES_CLOUDFLARE_BASE}/coffee-machine-services`,
@@ -169,7 +225,7 @@ const servicesShowcaseData = [
     tags: ["Bags", "Motors"],
     description:
       "Reliable vacuum cleaner maintenance, filter replacement, diagnostics, and repair for homes and businesses.",
-    path: "/services/vacuum-cleaner/",
+    path: "/services/home-appliances-repair/robot-vacuum-cleaner-repair/",
     icon: "✦",
     image: {
       id: `${SERVICES_CLOUDFLARE_BASE}/vacuum-cleaner-services`,
@@ -185,7 +241,7 @@ const servicesShowcaseData = [
     tags: ["Kettles", "Blenders"],
     description:
       "Professional repair and servicing for small kitchen appliances and household equipment.",
-    path: "/services/small-appliances/",
+    path: "/services/home-appliances-repair/small-home-appliances-service-center-in-dubai/",
     icon: "⌘",
     image: {
       id: `${SERVICES_CLOUDFLARE_BASE}/small-appliances-services`,
@@ -201,7 +257,7 @@ const servicesShowcaseData = [
     tags: ["Cubers", "Flakers"],
     description:
       "Professional ice maker repair, cleaning, maintenance, water-filter service, and condenser checks.",
-    path: "/services/ice-maker/",
+    path: "/services/refrigeration-equipment/ice-maker-repair/",
     icon: "❄",
     image: {
       id: `${SERVICES_CLOUDFLARE_BASE}/ice-maker-services`,
@@ -217,7 +273,7 @@ const servicesShowcaseData = [
     tags: ["Humidity Control", "Sensors"],
     description:
       "Expert repair, calibration, humidity control, and maintenance for cigar humidors and coolers.",
-    path: "/services/cigar-humidor/",
+    path: "/services/home-appliances-repair/cigar-humidor-repair/",
     icon: "◌",
     image: {
       id: `${SERVICES_CLOUDFLARE_BASE}/cigar-humidor-services`,
@@ -233,12 +289,82 @@ const servicesShowcaseData = [
     tags: ["Gas Burners", "Igniters"],
     description:
       "Reliable barbecue repair, detailed cleaning, gas-burner service, igniter repair, and maintenance.",
-    path: "/services/barbecue/",
+    path: "/services/home-appliances-repair/barbeque-repair-in-dubai-barbeque-maintenance-in-dubai-bbq-service-in-dubai/",
     icon: "♨",
     image: {
       id: `${SERVICES_CLOUDFLARE_BASE}/barbecue-repair-services`,
       src: `${SERVICES_IMAGE_BASE}/barbecue-repair-services.webp`,
       alt: "Barbecue repair service",
+      width: 1200,
+      height: 900,
+    },
+  },
+  {
+    id: "home-appliances-services",
+    title: "Home Appliances Services",
+    tags: ["Hobs & Ovens", "Refrigerators", "Washing Machines", "AMC Contracts"],
+    description:
+      "Certified home appliance installation, repair, and maintenance for hobs, ovens, gas ranges, washers, refrigerators, and small cooking equipment.",
+    path: "/services/home-appliances-repair/",
+    icon: "\u2302",
+    subpages: [
+      {
+        title: "Hob Repair",
+        path: "/services/home-appliances-repair/hob-repair-service/",
+      },
+      {
+        title: "Oven Repair",
+        path: "/services/home-appliances-repair/oven-repair-service/",
+      },
+      {
+        title: "Gas Range Repair",
+        path: "/services/home-appliances-repair/gas-cooker-repair-service/",
+      },
+      {
+        title: "Refrigerator Repair",
+        path: "/services/home-appliances-repair/refrigerator-repair-service/",
+      },
+      {
+        title: "Dishwasher Repair",
+        path: "/services/home-appliances-repair/dishwasher-repair-service/",
+      },
+      {
+        title: "BBQ Repair Service",
+        path: "/services/home-appliances-repair/barbeque-repair-in-dubai-barbeque-maintenance-in-dubai-bbq-service-in-dubai/",
+      },
+      {
+        title: "Cigar Humidor Repair",
+        path: "/services/home-appliances-repair/cigar-humidor-repair/",
+      },
+      {
+        title: "Vacuum Repair",
+        path: "/services/home-appliances-repair/robot-vacuum-cleaner-repair/",
+      },
+      {
+        title: "Small Appliances Repair",
+        path: "/services/home-appliances-repair/small-home-appliances-service-center-in-dubai/",
+      },
+      {
+        title: "Washing Machine Repair",
+        path: "/services/home-appliances-repair/washing-machine-repair-service-dubai/",
+      },
+      {
+        title: "Integrated Appliances Repair",
+        path: "/services/home-appliances-repair/built-in-appliances-repair-service/",
+      },
+      {
+        title: "Free Standing Appliances Repair",
+        path: "/services/home-appliances-repair/appliances-repair-service/",
+      },
+      {
+        title: "AMC Contract",
+        path: "/services/home-appliances-repair/appliances-amc-service/",
+      },
+    ],
+    image: {
+      id: `${SERVICES_CLOUDFLARE_BASE}/appliances-repair-service`,
+      src: `${SERVICES_IMAGE_BASE}/appliances-repair-service.webp`,
+      alt: "Home appliances repair and maintenance service",
       width: 1200,
       height: 900,
     },

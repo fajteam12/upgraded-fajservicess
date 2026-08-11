@@ -1,28 +1,20 @@
-import React, { memo, useId, useState } from "react";
+import { memo, useId, useState } from "react";
 import {
   getCloudflareImageSrcSet,
   getCloudflareImageUrl,
 } from "../../utils/cloudflareImages";
 import "./PageHero.css";
 
-const defaultBackgroundImage = {
-  id: "services-page-hero",
-  src: "/img/services-page-hero.webp",
-  alt: "",
-  width: 1920,
-  height: 700,
-};
-
 function PageHero({
   eyebrow = "",
   title = "",
   description = "",
-  backgroundImage = defaultBackgroundImage,
+  backgroundImage = null,
   overlay = 0.78,
   minHeight = "clamp(320px, 34vw, 420px)",
   className = "",
 }) {
-  const [useFallback, setUseFallback] = useState(false);
+  const [failedSources, setFailedSources] = useState(() => new Set());
   const generatedId = useId();
   const titleId = `page-hero-title-${generatedId.replace(/:/g, "")}`;
 
@@ -38,13 +30,20 @@ function PageHero({
     ? getCloudflareImageSrcSet(backgroundImage.id)
     : undefined;
 
-  const imageSrc = useFallback
-    ? backgroundImage?.src
-    : cloudflareSrc || backgroundImage?.src;
+  const fallbackSrc = backgroundImage?.src || "";
+  const canUseCloudflare =
+    Boolean(cloudflareSrc) && !failedSources.has(cloudflareSrc);
+  const canUseFallback =
+    Boolean(fallbackSrc) && !failedSources.has(fallbackSrc);
+  const imageSrc = canUseCloudflare
+    ? cloudflareSrc
+    : canUseFallback
+      ? fallbackSrc
+      : "";
 
-  const imageSrcSet = useFallback
-    ? backgroundImage?.srcSet
-    : cloudflareSrcSet || backgroundImage?.srcSet || undefined;
+  const imageSrcSet = canUseCloudflare
+    ? cloudflareSrcSet || backgroundImage?.srcSet || undefined
+    : backgroundImage?.srcSet || undefined;
 
   return (
     <section
@@ -68,9 +67,11 @@ function PageHero({
             fetchPriority="high"
             decoding="async"
             onError={() => {
-              if (!useFallback && backgroundImage?.src) {
-                setUseFallback(true);
-              }
+              setFailedSources((currentSources) => {
+                const nextSources = new Set(currentSources);
+                nextSources.add(imageSrc);
+                return nextSources;
+              });
             }}
           />
         )}

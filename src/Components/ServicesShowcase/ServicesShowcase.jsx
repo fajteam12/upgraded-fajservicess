@@ -109,6 +109,8 @@ function ServicesShowcase({
     return null;
   }
 
+  const splitIndex = Math.ceil(services.length / 2);
+
   const cloudflareSrc = activeService.image?.id
     ? getCloudflareImageUrl(
         activeService.image.id,
@@ -272,7 +274,7 @@ function ServicesShowcase({
           >
             <div className="services-showcase__column">
               {services
-                .slice(0, 7)
+                .slice(0, splitIndex)
                 .map((service, index) => (
                   <ServiceItem
                     key={service.id}
@@ -331,6 +333,38 @@ function ServicesShowcase({
                   <p>{activeService.description}</p>
                 )}
 
+                {activeService.subpages?.length > 0 && (
+                  <div className="services-showcase__subservices">
+                    <span className="services-showcase__subservices-label">
+                      Available Specialized Services
+                    </span>
+
+                    <div className="services-showcase__subservices-grid">
+                      {activeService.subpages.map(
+                        (subpage) => (
+                          <Link
+                            key={subpage.path}
+                            to={subpage.path}
+                            className="services-showcase__subservice-link"
+                          >
+                            <span
+                              className="services-showcase__subservice-dot"
+                              aria-hidden="true"
+                            />
+                            <span>{subpage.title}</span>
+                            <span
+                              className="services-showcase__subservice-arrow"
+                              aria-hidden="true"
+                            >
+                              {"\u2192"}
+                            </span>
+                          </Link>
+                        )
+                      )}
+                    </div>
+                  </div>
+                )}
+
                 <Link
                   to={activeService.path}
                   className="services-showcase__button"
@@ -358,9 +392,10 @@ function ServicesShowcase({
           >
             <div className="services-showcase__column">
               {services
-                .slice(7)
+                .slice(splitIndex)
                 .map((service, index) => {
-                  const globalIndex = index + 7;
+                  const globalIndex =
+                    index + splitIndex;
 
                   return (
                     <ServiceItem

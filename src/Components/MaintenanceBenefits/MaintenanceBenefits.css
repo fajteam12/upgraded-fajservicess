@@ -6,9 +6,12 @@
 }
 
 .maintenance-benefits {
+  --maintenance-min-font-size: 11px;
+
   position: relative;
-  overflow: hidden;
+  overflow: clip;
   padding: 104px 0;
+  color: #0b1f2a;
   background:
     radial-gradient(
       circle at 90% 20%,
@@ -21,7 +24,6 @@
       transparent 28%
     ),
     #f5f8fa;
-  color: #0b1f2a;
 }
 
 .maintenance-benefits__container {
@@ -31,7 +33,9 @@
 
 .maintenance-benefits__layout {
   display: grid;
-  grid-template-columns: minmax(250px, 0.8fr) minmax(0, 1.7fr);
+  grid-template-columns:
+    minmax(250px, 0.8fr)
+    minmax(0, 1.7fr);
   gap: 64px;
   align-items: start;
 }
@@ -46,10 +50,11 @@
   padding: 6px 12px;
   border: 1px solid rgba(0, 127, 163, 0.2);
   border-radius: 999px;
-  background: rgba(0, 127, 163, 0.08);
   color: #007fa3;
-  font-size: 0.61rem;
+  background: rgba(0, 127, 163, 0.08);
+  font-size: var(--maintenance-min-font-size);
   font-weight: 800;
+  line-height: 1.2;
   letter-spacing: 0.18em;
   text-transform: uppercase;
 }
@@ -69,13 +74,17 @@
   max-width: 330px;
   margin: 0;
   color: #5d707a;
-  font-size: 0.78rem;
+  font-size: max(
+    var(--maintenance-min-font-size),
+    0.78rem
+  );
   line-height: 1.65;
 }
 
 .maintenance-benefits__stats {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
   gap: 24px;
   max-width: 330px;
   margin-top: 28px;
@@ -90,103 +99,186 @@
 
 .maintenance-benefits__stat strong {
   color: #007fa3;
-  font-size: 1.7rem;
+  font-size: max(
+    var(--maintenance-min-font-size),
+    1.7rem
+  );
   line-height: 1;
 }
 
 .maintenance-benefits__stat span {
   margin-top: 6px;
   color: #6c7d85;
-  font-size: 0.53rem;
+  font-size: var(--maintenance-min-font-size);
   font-weight: 800;
+  line-height: 1.3;
   letter-spacing: 0.11em;
   text-transform: uppercase;
 }
 
 .maintenance-benefits__grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
   gap: 16px;
 }
 
 .maintenance-benefits__card {
   position: relative;
+  isolation: isolate;
   display: flex;
   flex-direction: column;
-  min-height: 190px;
-  padding: 22px;
+  min-height: 210px;
+  padding: 24px;
   overflow: hidden;
   border: 1px solid #dbe7ec;
-  border-radius: 9px;
+  border-radius: 12px;
+  color: #0b1f2a;
   background: #ffffff;
   box-shadow: 0 4px 10px rgba(0, 48, 72, 0.04);
   transition:
-    border-color 0.25s ease,
-    box-shadow 0.25s ease,
-    transform 0.25s ease;
+    border-color 300ms ease,
+    background-color 300ms ease,
+    box-shadow 300ms ease,
+    transform 300ms ease;
 }
 
-.maintenance-benefits__card:hover {
-  border-color: rgba(0, 127, 163, 0.5);
-  box-shadow: 0 12px 24px rgba(0, 48, 72, 0.1);
-  transform: translateY(-4px);
+.maintenance-benefits__card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+  width: 100px;
+  height: 100px;
+  pointer-events: none;
+  opacity: 0;
+  background:
+    linear-gradient(
+      225deg,
+      rgba(0, 127, 163, 0.09),
+      transparent 70%
+    );
+  transition: opacity 300ms ease;
+}
+
+.maintenance-benefits__card > * {
+  position: relative;
+  z-index: 1;
 }
 
 .maintenance-benefits__card-top {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .maintenance-benefits__icon {
   display: grid;
   place-items: center;
-  width: 32px;
-  height: 32px;
-  border: 1px solid #cfe1e8;
-  border-radius: 6px;
-  background: #f5f8fa;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #dbe7ec;
+  border-radius: 12px;
   color: #007fa3;
-  font-size: 0.85rem;
-  font-weight: 800;
+  background: #f5f8fa;
+  box-shadow:
+    inset 0 1px 2px rgba(0, 48, 72, 0.04);
+  transition:
+    color 300ms ease,
+    background-color 300ms ease,
+    border-color 300ms ease,
+    box-shadow 300ms ease,
+    transform 300ms ease;
+}
+
+.maintenance-benefits__icon svg {
+  display: block;
+  width: 22px;
+  height: 22px;
 }
 
 .maintenance-benefits__number {
-  color: #dce7eb;
-  font-size: 0.72rem;
+  color: rgba(0, 48, 72, 0.18);
+  font-size: max(
+    var(--maintenance-min-font-size),
+    0.875rem
+  );
   font-weight: 800;
+  line-height: 1;
+  transition: color 300ms ease;
 }
 
 .maintenance-benefits__card h3 {
-  margin: 0 0 8px;
+  margin: 0 0 10px;
   color: #003048;
-  font-size: 0.92rem;
+  font-size: max(
+    var(--maintenance-min-font-size),
+    1.05rem
+  );
   line-height: 1.3;
+  transition: color 300ms ease;
 }
 
 .maintenance-benefits__card p {
-  max-width: 300px;
+  max-width: 320px;
   margin: 0;
   color: #60737c;
-  font-size: 0.80rem;
-  line-height: 1.55;
+  font-size: max(
+    var(--maintenance-min-font-size),
+    0.8rem
+  );
+  line-height: 1.6;
 }
 
 .maintenance-benefits__accent {
   display: block;
   width: 32px;
-  height: 1px;
+  height: 2px;
   margin-top: auto;
   padding: 0;
   border: 0;
   background: #d7e5ea;
-  transition: width 0.25s ease;
+  transition:
+    width 300ms ease,
+    background-color 300ms ease;
 }
 
-.maintenance-benefits__card:hover .maintenance-benefits__accent {
-  width: 56px;
-  background: #4fc3d8;
+@media (hover: hover) and (pointer: fine) {
+  .maintenance-benefits__card:hover {
+    border-color: rgba(0, 127, 163, 0.4);
+    background: #f5f8fa;
+    box-shadow:
+      0 20px 36px rgba(0, 48, 72, 0.12);
+    transform: translateY(-6px);
+  }
+
+  .maintenance-benefits__card:hover::before {
+    opacity: 1;
+  }
+
+  .maintenance-benefits__card:hover
+    .maintenance-benefits__icon {
+    border-color: #003048;
+    color: #ffffff;
+    background: #003048;
+    box-shadow:
+      0 10px 20px rgba(0, 48, 72, 0.18);
+    transform: scale(1.1);
+  }
+
+  .maintenance-benefits__card:hover
+    .maintenance-benefits__number,
+  .maintenance-benefits__card:hover h3 {
+    color: #007fa3;
+  }
+
+  .maintenance-benefits__card:hover
+    .maintenance-benefits__accent {
+    width: 64px;
+    background: #007fa3;
+  }
 }
 
 @media (max-width: 900px) {
@@ -230,13 +322,23 @@
   }
 
   .maintenance-benefits__card {
-    min-height: 170px;
+    min-height: 190px;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .maintenance-benefits__card,
+  .maintenance-benefits__card::before,
+  .maintenance-benefits__icon,
+  .maintenance-benefits__number,
+  .maintenance-benefits__card h3,
   .maintenance-benefits__accent {
     transition: none;
+  }
+
+  .maintenance-benefits__card:hover,
+  .maintenance-benefits__card:hover
+    .maintenance-benefits__icon {
+    transform: none;
   }
 }

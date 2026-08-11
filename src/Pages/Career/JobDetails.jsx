@@ -73,13 +73,7 @@ const JobDetails = () => {
         title={job.title}
         description={job.summary}
         minHeight="clamp(330px, 34vw, 440px)"
-        backgroundImage={{
-          id: "new-career-page-images/job-detail-hero",
-          src: "/img/new-career-page-images/job-detail-hero.webp",
-          alt: `${job.title} career opportunity at FAJ Technical Services`,
-          width: 1920,
-          height: 760,
-        }}
+        backgroundImage={job.heroImage}
         overlay={0.86}
       />
       <Breadcrumb />
