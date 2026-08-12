@@ -25,7 +25,10 @@ function PricingCardsSection({ content, onAction }) {
                   <h3>{item.title}</h3>
                   {item.subtitle && <small>{item.subtitle}</small>}
                   <strong className="service-landing__price">
-                    {content.pricePrefix} <em>{item.price}</em>
+                    {(item.pricePrefix ?? content.pricePrefix) && (
+                      <>{item.pricePrefix ?? content.pricePrefix}{" "}</>
+                    )}
+                    <em>{item.price}</em>
                   </strong>
                   <p>{item.description}</p>
                 </div>

@@ -101,6 +101,7 @@ export default function CookingEquipmentService() {
         <BookingSection
           content={pageData.booking}
           bookingState={bookingState}
+          tone="white"
         />
       </main>
 

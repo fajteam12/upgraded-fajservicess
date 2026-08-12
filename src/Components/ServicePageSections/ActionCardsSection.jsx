@@ -61,6 +61,31 @@ function ActionCardsSection({
             </ScrollSlide>
           ))}
         </div>
+
+        {content.footerCard && (
+          <ScrollSlide direction="up">
+            <aside className="service-landing__action-footer-card">
+              <div>
+                <h3>{content.footerCard.title}</h3>
+                <p>{content.footerCard.description}</p>
+              </div>
+              {content.footerCard.actionLabel && onAction && (
+                <button
+                  type="button"
+                  className="service-landing__button"
+                  onClick={() =>
+                    onAction(
+                      content.footerCard.bookingLabel ||
+                        content.footerCard.title
+                    )
+                  }
+                >
+                  {content.footerCard.actionLabel}
+                </button>
+              )}
+            </aside>
+          </ScrollSlide>
+        )}
       </div>
     </section>
   );

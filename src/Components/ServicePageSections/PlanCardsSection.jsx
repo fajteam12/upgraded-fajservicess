@@ -10,6 +10,7 @@ function PlanCardsSection({ content, onAction, dark = true }) {
       className={`service-landing__section service-landing__contracts ${
         dark ? "is-dark" : "is-white"
       }`}
+      id={content.id}
     >
       {dark && <div className="service-landing__dark-glow" aria-hidden="true" />}
       <div className="service-landing__container">

@@ -20,7 +20,7 @@ const servicesShowcaseData = [
         path: "/services/coffee-machine/coffee-machine-repairs/",
       },
     ],
-    icon: "☕",
+    icon: "coffee",
     image: {
       id: `${SERVICES_CLOUDFLARE_BASE}/commercial-coffee-machine-services`,
       src: `${SERVICES_IMAGE_BASE}/commercial-coffee-machine-services.webp`,
@@ -36,7 +36,7 @@ const servicesShowcaseData = [
     description:
       "Expert repair and maintenance for commercial ovens, stoves, fryers, and grills used in busy kitchens.",
     path: "/services/kitchen-equipment-maintenance/commercial-cooking-appliances-repair-service/",
-    icon: "♨",
+    icon: "flame",
     image: {
       id: `${SERVICES_CLOUDFLARE_BASE}/commercial-cooking-appliance-services`,
       src: `${SERVICES_IMAGE_BASE}/commercial-cooking-appliance-services.webp`,
@@ -66,7 +66,7 @@ const servicesShowcaseData = [
         path: "/services/refrigeration-equipment/commercial-refrigeration-maintenance/",
       },
     ],
-    icon: "❄",
+    icon: "refrigerator",
     image: {
       id: `${SERVICES_CLOUDFLARE_BASE}/commercial-refrigeration-services`,
       src: `${SERVICES_IMAGE_BASE}/commercial-refrigeration-services.webp`,
@@ -82,7 +82,7 @@ const servicesShowcaseData = [
     description:
       "Maintain reliable cleaning performance with expert commercial dishwasher repair and maintenance.",
     path: "/services/commercial-dishwasher-repair/",
-    icon: "▣",
+    icon: "droplets",
     image: {
       id: `${SERVICES_CLOUDFLARE_BASE}/commercial-dishwasher-services`,
       src: `${SERVICES_IMAGE_BASE}/commercial-dishwasher-services.webp`,
@@ -97,8 +97,8 @@ const servicesShowcaseData = [
     tags: ["Washers", "Dryers"],
     description:
       "Minimize downtime with diagnostics, repair, and breakdown support for industrial laundry equipment.",
-    path: "/services/commercial-laundry-equipment/",
-    icon: "▤",
+    path: "/services/laundry-equipment-repair/",
+    icon: "washing-machine",
     image: {
       id: `${SERVICES_CLOUDFLARE_BASE}/laundry-equipment-services`,
       src: `${SERVICES_IMAGE_BASE}/laundry-equipment-services.webp`,
@@ -114,7 +114,7 @@ const servicesShowcaseData = [
     description:
       "Keep meat grinders operating safely and efficiently with professional maintenance and repairs.",
     path: "/services/kitchen-equipment-maintenance/meat-grinder-repair/",
-    icon: "⚙",
+    icon: "chef-hat",
     image: {
       id: `${SERVICES_CLOUDFLARE_BASE}/meat-grinder-services`,
       src: `${SERVICES_IMAGE_BASE}/meat-grinder-services.webp`,
@@ -130,7 +130,7 @@ const servicesShowcaseData = [
     description:
       "Same-day home appliance repairs for refrigerators, washing machines, ovens, cookers, and dryers.",
     path: "/services/home-appliances-repair/appliances-repair-service/",
-    icon: "⌂",
+    icon: "wrench",
     image: {
       id: `${SERVICES_CLOUDFLARE_BASE}/appliances-repair-service`,
       src: `${SERVICES_IMAGE_BASE}/appliances-repair-service.webp`,
@@ -168,7 +168,7 @@ const servicesShowcaseData = [
         path: "/services/kitchen-equipment-maintenance/commercial-cooking-appliances-repair-service/",
       },
     ],
-    icon: "♨",
+    icon: "chef-hat",
     image: {
       id: `${SERVICES_CLOUDFLARE_BASE}/kitchen-equipment-services`,
       src: `${SERVICES_IMAGE_BASE}/kitchen-equipment-services.webp`,
@@ -194,7 +194,7 @@ const servicesShowcaseData = [
         path: "/services/air-conditioning-repair/ac-annual-maintenance-contract/",
       },
     ],
-    icon: "✣",
+    icon: "fan",
     image: {
       id: `${SERVICES_CLOUDFLARE_BASE}/air-conditioning-services`,
       src: `${SERVICES_IMAGE_BASE}/air-conditioning-services.webp`,
@@ -210,7 +210,7 @@ const servicesShowcaseData = [
     description:
       "Precision espresso diagnostics, deep descaling, gasket replacement, and coffee machine servicing.",
     path: "/services/coffee-machine/",
-    icon: "☕",
+    icon: "coffee",
     image: {
       id: `${SERVICES_CLOUDFLARE_BASE}/coffee-machine-services`,
       src: `${SERVICES_IMAGE_BASE}/coffee-machine-services.webp`,
@@ -226,7 +226,7 @@ const servicesShowcaseData = [
     description:
       "Reliable vacuum cleaner maintenance, filter replacement, diagnostics, and repair for homes and businesses.",
     path: "/services/home-appliances-repair/robot-vacuum-cleaner-repair/",
-    icon: "✦",
+    icon: "sparkles",
     image: {
       id: `${SERVICES_CLOUDFLARE_BASE}/vacuum-cleaner-services`,
       src: `${SERVICES_IMAGE_BASE}/vacuum-cleaner-services.webp`,
@@ -242,7 +242,7 @@ const servicesShowcaseData = [
     description:
       "Professional repair and servicing for small kitchen appliances and household equipment.",
     path: "/services/home-appliances-repair/small-home-appliances-service-center-in-dubai/",
-    icon: "⌘",
+    icon: "plug",
     image: {
       id: `${SERVICES_CLOUDFLARE_BASE}/small-appliances-services`,
       src: `${SERVICES_IMAGE_BASE}/small-appliances-services.webp`,
@@ -258,7 +258,7 @@ const servicesShowcaseData = [
     description:
       "Professional ice maker repair, cleaning, maintenance, water-filter service, and condenser checks.",
     path: "/services/refrigeration-equipment/ice-maker-repair/",
-    icon: "❄",
+    icon: "snowflake",
     image: {
       id: `${SERVICES_CLOUDFLARE_BASE}/ice-maker-services`,
       src: `${SERVICES_IMAGE_BASE}/ice-maker-services.webp`,
@@ -274,7 +274,7 @@ const servicesShowcaseData = [
     description:
       "Expert repair, calibration, humidity control, and maintenance for cigar humidors and coolers.",
     path: "/services/home-appliances-repair/cigar-humidor-repair/",
-    icon: "◌",
+    icon: "gauge",
     image: {
       id: `${SERVICES_CLOUDFLARE_BASE}/cigar-humidor-services`,
       src: `${SERVICES_IMAGE_BASE}/cigar-humidor-services.webp`,
@@ -290,7 +290,7 @@ const servicesShowcaseData = [
     description:
       "Reliable barbecue repair, detailed cleaning, gas-burner service, igniter repair, and maintenance.",
     path: "/services/home-appliances-repair/barbeque-repair-in-dubai-barbeque-maintenance-in-dubai-bbq-service-in-dubai/",
-    icon: "♨",
+    icon: "flame",
     image: {
       id: `${SERVICES_CLOUDFLARE_BASE}/barbecue-repair-services`,
       src: `${SERVICES_IMAGE_BASE}/barbecue-repair-services.webp`,
@@ -306,7 +306,7 @@ const servicesShowcaseData = [
     description:
       "Certified home appliance installation, repair, and maintenance for hobs, ovens, gas ranges, washers, refrigerators, and small cooking equipment.",
     path: "/services/home-appliances-repair/",
-    icon: "\u2302",
+    icon: "wrench",
     subpages: [
       {
         title: "Hob Repair",

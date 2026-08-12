@@ -1,32 +1,91 @@
-import { useEffect, useState } from "react";
 import BreadCumb from "../Components/Common/BreadCumb";
-import AirConditioningCatg from "../Components/Services/aircondtioning/AirConditioningCatg";
+import {
+  AccordionSection,
+  ActionCardsSection,
+  BookingModal,
+  BookingSection,
+  EmbeddedVideoSection,
+  PageMetadata,
+  PlanCardsSection,
+  SplitHeroSection,
+  SpotlightSection,
+  useBookingRequest,
+} from "../Components/ServicePageSections";
+import "../Components/ServicePageSections/ServicePageSections.css";
+import pageData from "../data/servicePages/airConditioning";
 
-const AirConditioning = () => {
-  const [ServicesPageData, setServicesPageData] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
+export default function AirConditioning() {
+  const {
+    modalOpen,
+    selectedItem,
+    openBooking,
+    closeBooking,
+    bookingState,
+  } = useBookingRequest({
+    content: pageData.booking,
+    contact: pageData.contact,
+  });
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch(`${import.meta.env.BASE_URL}data/ServicesPageContent.json`);
-        const data = await response.json();
-        setServicesPageData(data);
-      } catch (error) {
-        console.error('Error fetching data:', error);
-      } finally {
-        setIsLoading(false);
-      }
-    };
-
-    fetchData();
-  }, []);
   return (
-    <div className="serviceDetails">
-      <BreadCumb></BreadCumb>
-      <AirConditioningCatg />
-    </div>
-  )
-}
+    <>
+      <PageMetadata
+        seo={pageData.seo}
+        contact={pageData.contact}
+        faqItems={pageData.faqs.items}
+      />
 
-export default AirConditioning
+      <main className="service-landing">
+        <SplitHeroSection
+          content={pageData.hero}
+          contact={pageData.contact}
+          onPrimaryAction={openBooking}
+        />
+
+        <BreadCumb />
+
+        <SpotlightSection content={pageData.introduction} />
+
+        <PlanCardsSection
+          content={pageData.contracts}
+          onAction={openBooking}
+        />
+
+        <EmbeddedVideoSection content={pageData.video} tone="soft" />
+
+        <ActionCardsSection
+          content={pageData.problems}
+          tone="white"
+          columns="two"
+        />
+
+        <ActionCardsSection
+          content={pageData.services}
+          onAction={openBooking}
+          tone="soft"
+          columns="three"
+        />
+
+        <ActionCardsSection
+          content={pageData.benefits}
+          tone="dark"
+          columns="three"
+        />
+
+        <AccordionSection content={pageData.faqs} tone="white" />
+
+        <BookingSection
+          content={pageData.booking}
+          bookingState={bookingState}
+        />
+      </main>
+
+      <BookingModal
+        content={pageData.booking}
+        open={modalOpen}
+        onClose={closeBooking}
+        selectedItem={selectedItem}
+        bookingState={bookingState}
+      />
+    </>
+  );
+}

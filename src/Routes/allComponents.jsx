@@ -168,7 +168,6 @@ export const AcRepairInOldTown = withSuspense(React.lazy(() => import("../Pages/
 export const MeatGrinderRepair = withSuspense(React.lazy(() => import("../Pages/KitchenEquipPages/MeatGrinderRepair")));
 export const CommercialDishwasherServices = withSuspense(React.lazy(() => import("../Pages/CommercialDishwasherServices")));
 export const CommercialWashingMachineRepair = withSuspense(React.lazy(() => import("../Pages/CommercialLaundryEquipPages/CommercialWashingMachineRepair")));
-export const CommercialLaundryEquipmentService = withSuspense(React.lazy(() => import("../Pages/CommercialLaundryEquipPages/CommercialLaundryEquipmentService")));
 export const AcRepairInDubaiInternationalFinancialCenter = withSuspense(React.lazy(() => import("../Pages/AcPages/AcLocation/AcRepairInDubaiInternationalFinancialCenter")));
 export const AcRepairInBurDubai = withSuspense(React.lazy(() => import("../Pages/AcPages/AcLocation/AcRepairInBurDubai")));
 export const AcRepairInDubailandMazayaQueue = withSuspense(React.lazy(() => import("../Pages/AcPages/AcLocation/AcRepairInDubailandMazayaQueue")));

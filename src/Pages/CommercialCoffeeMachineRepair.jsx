@@ -93,6 +93,7 @@ export default function CommercialCoffeeMachineRepair() {
         <BookingSection
           content={pageData.booking}
           bookingState={bookingState}
+          tone="white"
         />
       </main>
 

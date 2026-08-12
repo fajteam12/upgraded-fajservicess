@@ -1,0 +1,25 @@
+const videoData = {
+  id: "meat-grinder-service-video",
+  eyebrow: "Service Video",
+  title: "Professional Meat Grinder Service in Action",
+  description:
+    "See how professional inspection and maintenance help protect the performance, hygiene and reliability of commercial food-preparation equipment.",
+  videoId: "boj7h-gOf7M",
+  variant: "framed",
+  blockInteraction: true,
+  allowFullScreen: false,
+  parameters: {
+    autoplay: "1",
+    mute: "1",
+    controls: "0",
+    modestbranding: "1",
+    rel: "0",
+    showinfo: "0",
+    loop: "1",
+    playlist: "boj7h-gOf7M",
+    playsinline: "1",
+    cc_load_policy: "0",
+  },
+};
+
+export default videoData;

@@ -1,19 +1,107 @@
 import BreadCumb from "../../Components/Common/BreadCumb";
-import CigarcabnitServiceDetail from "../../Components/ServiceDetails/HomeAppDetails/CigarcabnitServiceDetail";
+import MaintenanceBenefits from "../../Components/MaintenanceBenefits/MaintenanceBenefits";
+import {
+  AccordionSection,
+  ActionCardsSection,
+  BookingModal,
+  BookingSection,
+  CalloutBannerSection,
+  EmbeddedVideoSection,
+  MetricCardsSection,
+  NumberedGridSection,
+  PageMetadata,
+  PlanCardsSection,
+  SearchableDirectorySection,
+  SplitHeroSection,
+  TwoColumnInfoSection,
+  useBookingRequest,
+} from "../../Components/ServicePageSections";
+import "../../Components/ServicePageSections/ServicePageSections.css";
+import pageData from "../../data/servicePages/cigarHumidorRepair";
 
-const CigarcabnitService = () => {
-    return (
-        <div className="serviceDetails">
-            <BreadCumb
-                // bgImg="img/page_heading_1.avif"
-                bgImg="img/banners/cigar-cabnit-repair.avif"
-                mobileBgImg="img/banners/cigar-cabnit-repair-mob.avif"
-                Title="Cigar Cabinet Humidifier Repair Across Dubai - Sharjah - Abu Dhabi"
-            ></BreadCumb>
-            <CigarcabnitServiceDetail></CigarcabnitServiceDetail>
+export default function CigarcabnitService() {
+  const {
+    modalOpen,
+    selectedItem,
+    openBooking,
+    closeBooking,
+    bookingState,
+  } = useBookingRequest({
+    content: pageData.booking,
+    contact: pageData.contact,
+  });
 
-        </div>
-    );
-};
+  return (
+    <>
+      <PageMetadata
+        seo={pageData.seo}
+        contact={pageData.contact}
+        faqItems={pageData.faqs.items}
+      />
 
-export default CigarcabnitService;
+      <main className="service-landing">
+        <SplitHeroSection
+          content={pageData.hero}
+          contact={pageData.contact}
+          onPrimaryAction={openBooking}
+        />
+
+        <BreadCumb />
+
+        <TwoColumnInfoSection content={pageData.serviceOverview} />
+
+        <PlanCardsSection content={pageData.contracts} onAction={openBooking} />
+
+        <EmbeddedVideoSection content={pageData.video} tone="soft" />
+
+        <MetricCardsSection content={pageData.maintenanceImportance} />
+
+        <NumberedGridSection
+          content={pageData.commonProblems}
+          tone="white"
+          columns="four"
+        />
+
+        <ActionCardsSection
+          content={pageData.servicesOffered}
+          onAction={openBooking}
+          tone="dark"
+          columns="three"
+        />
+
+        <MaintenanceBenefits {...pageData.benefits} />
+
+        <ActionCardsSection
+          content={pageData.whyChooseUs}
+          tone="dark"
+          columns="three"
+        />
+
+        <SearchableDirectorySection
+          content={pageData.brands}
+          onAction={openBooking}
+        />
+
+        <CalloutBannerSection content={pageData.warranty} />
+
+        <ActionCardsSection
+          content={pageData.testimonials}
+          tone="soft"
+          columns="three"
+        />
+
+        <AccordionSection content={pageData.faqs} tone="white" />
+
+        <BookingSection content={pageData.booking} bookingState={bookingState} />
+      </main>
+
+      <BookingModal
+        content={pageData.booking}
+        open={modalOpen}
+        onClose={closeBooking}
+        selectedItem={selectedItem}
+        bookingState={bookingState}
+      />
+    </>
+  );
+}

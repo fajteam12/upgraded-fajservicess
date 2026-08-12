@@ -13,8 +13,16 @@ const commonProps = {
 
 function ServiceIcon({ name = "wrench" }) {
   switch (name) {
+    case "coffee":
+      return <svg {...commonProps}><path d="M5 8h11v6a5 5 0 0 1-5 5H10a5 5 0 0 1-5-5V8Z"/><path d="M16 10h1.5a2.5 2.5 0 0 1 0 5H16M8 2v3M12 2v3M4 22h14"/></svg>;
+    case "washing-machine":
+      return <svg {...commonProps}><rect x="3" y="2" width="18" height="20" rx="2"/><path d="M3 7h18M7 4.5h.01M10 4.5h.01"/><circle cx="12" cy="14" r="5"/><path d="M9.5 13.5c1.3 1.1 3.7 1.1 5 0"/></svg>;
+    case "dryer":
+      return <svg {...commonProps}><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M4 7h16M8 4.5h.01M11 4.5h.01"/><circle cx="12" cy="14" r="5"/><path d="M9 15c1.5-2 4.5-2 6 0"/></svg>;
     case "snowflake":
       return <svg {...commonProps}><path d="M12 2v20M4.2 6.5l15.6 11M4.2 17.5l15.6-11M8.5 4 12 7.5 15.5 4M8.5 20l3.5-3.5 3.5 3.5M3.5 10.5 8 12l-4.5 1.5M20.5 10.5 16 12l4.5 1.5"/></svg>;
+    case "sparkles":
+      return <svg {...commonProps}><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z"/><path d="M5 3v4M3 5h4M19 17v4M17 19h4"/></svg>;
     case "refrigerator":
       return <svg {...commonProps}><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M6 9h12M9 5v1M9 12v2"/></svg>;
     case "warehouse":
@@ -41,6 +49,12 @@ function ServiceIcon({ name = "wrench" }) {
       return <svg {...commonProps}><path d="M12 2s6 6.3 6 12a6 6 0 0 1-12 0c0-5.7 6-12 6-12Z"/></svg>;
     case "award":
       return <svg {...commonProps}><circle cx="12" cy="8" r="5"/><path d="m8.5 12-1 9 4.5-2 4.5 2-1-9"/></svg>;
+    case "clock":
+      return <svg {...commonProps}><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>;
+    case "calendar":
+      return <svg {...commonProps}><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/></svg>;
+    case "dollar":
+      return <svg {...commonProps}><circle cx="12" cy="12" r="9"/><path d="M16 8.5c-.8-1-2-1.5-3.6-1.5-2 0-3.4 1-3.4 2.5 0 3.8 7 1.2 7 5 0 1.5-1.4 2.5-3.6 2.5-1.8 0-3.2-.6-4-1.7M12 5v14"/></svg>;
     default:
       return <svg {...commonProps}><path d="M14.7 6.3a4 4 0 0 0-5-5L12 3.6 8.4 7.2 6.1 4.9a4 4 0 0 0 5 5L20 18.8 18.8 20l-8.9-8.9a4 4 0 0 0-5-5L7.2 9.4 3.6 13 1.3 10.7a4 4 0 0 0 5 5Z"/></svg>;
   }

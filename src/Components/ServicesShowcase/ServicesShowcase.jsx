@@ -1,4 +1,4 @@
-import React, {
+import {
   memo,
   useEffect,
   useRef,
@@ -14,6 +14,7 @@ import {
   ScrollZoomText,
 } from "../Animations/ScrollAnimation";
 import servicesShowcaseData from "../../data/servicesShowcaseData";
+import ServicesShowcaseIcon from "./ServicesShowcaseIcon";
 import "./ServicesShowcase.css";
 
 function ServiceItem({
@@ -39,7 +40,7 @@ function ServiceItem({
         className="services-showcase__item-icon"
         aria-hidden="true"
       >
-        {service.icon}
+        <ServicesShowcaseIcon name={service.icon} />
       </span>
 
       <span className="services-showcase__item-content">
@@ -204,7 +205,7 @@ function ServicesShowcase({
                   className="services-showcase__mobile-trigger-icon"
                   aria-hidden="true"
                 >
-                  {activeService.icon}
+                  <ServicesShowcaseIcon name={activeService.icon} />
                 </span>
 
                 <span className="services-showcase__mobile-trigger-title">
@@ -251,7 +252,7 @@ function ServicesShowcase({
                         className="services-showcase__mobile-option-icon"
                         aria-hidden="true"
                       >
-                        {service.icon}
+                        <ServicesShowcaseIcon name={service.icon} />
                       </span>
 
                       <span className="services-showcase__mobile-option-title">
@@ -316,6 +317,13 @@ function ServicesShowcase({
 
                 <span className="services-showcase__image-label">
                   Maintenance &amp; Repair
+                </span>
+
+                <span
+                  className="services-showcase__image-icon"
+                  aria-hidden="true"
+                >
+                  <ServicesShowcaseIcon name={activeService.icon} />
                 </span>
               </div>
 

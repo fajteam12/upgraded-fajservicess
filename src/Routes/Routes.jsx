@@ -82,7 +82,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/services/commercial-laundry-equipment/",
-        element: <Components.CommercialLaundaryEquipmentPage />,
+        element: <Navigate to="/services/laundry-equipment-repair/" replace />,
       },
       {
         path: "/services/air-conditioning-repair/تصليح-مكيفات-الهواء-خدمة-وصيانة-دبي/",
@@ -188,7 +188,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/services/laundry-equipment-repair/",
-        element: <Components.CommercialLaundryEquipmentService />,
+        element: <Components.CommercialLaundaryEquipmentPage />,
       },
       {
         path: "/services/kitchen-equipment-maintenance/commercial-kitchen-equipment-amc/",
@@ -481,6 +481,10 @@ export const router = createBrowserRouter([
       {
         path: "/services/home-appliances-repair/",
         element: <Components.HomeAppliancesPage />,
+      },
+      {
+        path: "/services/home-appliances/",
+        element: <Navigate to="/services/home-appliances-repair/" replace />,
       },
       {
         path: "/blogs/",

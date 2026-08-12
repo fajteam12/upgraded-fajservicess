@@ -1,17 +1,113 @@
 import BreadCumb from "../../Components/Common/BreadCumb";
-import SmallAppliancesRepairDetail from "../../Components/ServiceDetails/HomeAppDetails/SmallAppliancesRepairDetail.jsx";
+import MaintenanceBenefits from "../../Components/MaintenanceBenefits/MaintenanceBenefits";
+import {
+  AccordionSection,
+  ActionCardsSection,
+  BookingModal,
+  BookingSection,
+  CalloutBannerSection,
+  EmbeddedVideoSection,
+  NumberedGridSection,
+  PageMetadata,
+  PlanCardsSection,
+  SearchableDirectorySection,
+  SplitHeroSection,
+  SplitListSection,
+  StackedServicesPanelSection,
+  TwoColumnInfoSection,
+  useBookingRequest,
+} from "../../Components/ServicePageSections";
+import "../../Components/ServicePageSections/ServicePageSections.css";
+import pageData from "../../data/servicePages/smallAppliances";
 
-const SmallAppliancesRepair = () => {
-    return (
-        <div className="serviceDetails">
-            <BreadCumb
-                bgImg="img/banners/small-home.avif"
-                Title="Small Home Appliances Service Center in Dubai"
-            ></BreadCumb>
-            <SmallAppliancesRepairDetail></SmallAppliancesRepairDetail>
+export default function SmallAppliancesRepair() {
+  const {
+    modalOpen,
+    selectedItem,
+    openBooking,
+    closeBooking,
+    bookingState,
+  } = useBookingRequest({
+    content: pageData.booking,
+    contact: pageData.contact,
+  });
 
-        </div>
-    );
-};
+  return (
+    <>
+      <PageMetadata
+        seo={pageData.seo}
+        contact={pageData.contact}
+        faqItems={pageData.faqs.items}
+      />
 
-export default SmallAppliancesRepair;
+      <main className="service-landing">
+        <SplitHeroSection
+          content={pageData.hero}
+          contact={pageData.contact}
+          onPrimaryAction={openBooking}
+        />
+
+        <BreadCumb />
+
+        <TwoColumnInfoSection content={pageData.serviceOverview} />
+
+        <PlanCardsSection
+          content={pageData.contracts}
+          onAction={openBooking}
+        />
+
+        <EmbeddedVideoSection content={pageData.video} tone="soft" />
+
+        <SplitListSection content={pageData.maintenanceImportance} tone="dark" />
+
+        <NumberedGridSection
+          content={pageData.commonProblems}
+          tone="soft"
+          columns="four"
+        />
+
+        <StackedServicesPanelSection
+          content={pageData.servicesOffered}
+          onAction={openBooking}
+          tone="white"
+        />
+
+        <MaintenanceBenefits {...pageData.benefits} />
+
+        <ActionCardsSection
+          content={pageData.whyChooseUs}
+          tone="dark"
+          columns="three"
+        />
+
+        <SearchableDirectorySection
+          content={pageData.applianceTypes}
+          onAction={openBooking}
+        />
+
+        <CalloutBannerSection content={pageData.warranty} />
+
+        <ActionCardsSection
+          content={pageData.testimonials}
+          tone="soft"
+          columns="three"
+        />
+
+        <AccordionSection content={pageData.faqs} tone="white" />
+
+        <BookingSection
+          content={pageData.booking}
+          bookingState={bookingState}
+        />
+      </main>
+
+      <BookingModal
+        content={pageData.booking}
+        open={modalOpen}
+        onClose={closeBooking}
+        selectedItem={selectedItem}
+        bookingState={bookingState}
+      />
+    </>
+  );
+}

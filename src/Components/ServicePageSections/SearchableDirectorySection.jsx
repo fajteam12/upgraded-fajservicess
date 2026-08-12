@@ -1,4 +1,6 @@
 import { memo, useMemo, useState } from "react";
+import { Link } from "react-router-dom";
+import getBrandServiceRoute from "../../data/servicePages/brandServiceRoutes";
 import { ScrollSlide } from "../Animations/ScrollAnimation";
 import SectionHeader from "./SectionHeader";
 
@@ -49,28 +51,41 @@ function SearchableDirectorySection({
         </label>
 
         <div className="service-landing__brand-grid">
-          {visibleItems.map((item, index) => (
-            <ScrollSlide
-              direction="up"
-              delay={(index % 3) * 0.04}
-              key={item.name}
-            >
-              <article className="service-landing__brand-card">
-                <h3>{item.name}</h3>
-                <p>{item.description}</p>
-                {content.actionLabel && onAction && (
-                  <button
-                    type="button"
-                    className="service-landing__action-link"
-                    onClick={() => onAction(item.name)}
-                  >
-                    {content.actionLabel}
-                    <span aria-hidden="true">{"\u2192"}</span>
-                  </button>
-                )}
-              </article>
-            </ScrollSlide>
-          ))}
+          {visibleItems.map((item, index) => {
+            const brandPath = getBrandServiceRoute(
+              item.name,
+              item.href || item.path
+            );
+
+            return (
+              <ScrollSlide
+                direction="up"
+                delay={(index % 3) * 0.04}
+                key={item.name}
+              >
+                <article className="service-landing__brand-card">
+                  <h3>
+                    {brandPath ? (
+                      <Link to={brandPath}>{item.name}</Link>
+                    ) : (
+                      item.name
+                    )}
+                  </h3>
+                  <p>{item.description}</p>
+                  {content.actionLabel && onAction && (
+                    <button
+                      type="button"
+                      className="service-landing__action-link"
+                      onClick={() => onAction(item.name)}
+                    >
+                      {content.actionLabel}
+                      <span aria-hidden="true">{"\u2192"}</span>
+                    </button>
+                  )}
+                </article>
+              </ScrollSlide>
+            );
+          })}
         </div>
 
         {!visibleItems.length && (
