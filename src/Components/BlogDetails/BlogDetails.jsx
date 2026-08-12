@@ -3,6 +3,8 @@ import { useEffect, useState, useMemo } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { createClient } from "@supabase/supabase-js";
 import TonnageCalculator from "../TonnageCalculator";
+import BlogArticleSidebar from "./BlogArticleSidebar";
+import "./BlogDetails.css";
 const CDN = 'https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA';
 
 const supabase = createClient(
@@ -32,36 +34,6 @@ const getImageSrc = (imgPath) => {
 
   return `${CDN}/${imgPath}/${variant}`;
 };
-const CalendarIcon = ({ size = 24, color = "currentColor" }) => (
-  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-    <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
-    <line x1="16" y1="2" x2="16" y2="6" />
-    <line x1="8" y1="2" x2="8" y2="6" />
-    <line x1="3" y1="10" x2="21" y2="10" />
-  </svg>
-);
-
-const CalendarAltIcon = ({ size = 16, color = "currentColor" }) => (
-  <svg width={size} height={size} viewBox="0 0 448 512" fill={color}>
-    <path d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192H400V448c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V192z" />
-  </svg>
-);
-
-const CommentIcon = ({ size = 24, color = "currentColor" }) => (
-  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
-  </svg>
-);
-
-const PeopleIcon = ({ size = 24, color = "currentColor" }) => (
-  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-    <circle cx="9" cy="7" r="4" />
-    <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
-    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-  </svg>
-);
-
 const FacebookIcon = ({ size = 14, color = "currentColor" }) => (
   <svg width={size} height={size} viewBox="0 0 320 512" fill={color}>
     <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
@@ -86,95 +58,20 @@ const WhatsAppIcon = ({ size = 14, color = "currentColor" }) => (
   </svg>
 );
 
-const ArrowRightIcon = ({ size = 28, color = "currentColor" }) => (
-  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <line x1="5" y1="12" x2="19" y2="12" />
-    <polyline points="12 5 19 12 12 19" />
+const BookOpenIcon = () => (
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M2.5 4.5h5.25A4.25 4.25 0 0 1 12 8.75V21a4.25 4.25 0 0 0-4.25-4.25H2.5Z" />
+    <path d="M21.5 4.5h-5.25A4.25 4.25 0 0 0 12 8.75V21a4.25 4.25 0 0 1 4.25-4.25h5.25Z" />
   </svg>
 );
-const getPlainTextFromValue = (value) => {
-  if (!value) return '';
-  if (typeof value === 'string') return value;
-  if (Array.isArray(value)) {
-    return value.map(item => getPlainTextFromValue(item)).join(' ');
-  }
-  if (typeof value === 'object') {
-    // Handle bullet objects with .text and .desc
-    if (value.text) return getPlainTextFromValue(value.text) + ' ' + (value.desc ? getPlainTextFromValue(value.desc) : '');
-    // Fallback: stringify all values
-    return Object.values(value).map(v => getPlainTextFromValue(v)).join(' ');
-  }
-  return String(value);
-};
 
-// Extract all meaningful text from the blogPost object
-const extractAllTextFromBlogPost = (post) => {
-  if (!post) return '';
-  const textParts = [];
-
-  // Known fields that contain readable content
-  const fieldsToExtract = [
-    'title', 'content', 'sec_concln_h2_p', 'sec_faq_h2_p',
-    // sec_two through sec_twenty dynamic fields
-    ...Array.from({ length: 20 }, (_, i) => `sec_${['two','three','four','five','six','seven','eight','nine','ten','eleven','tweleve','thirteen','fourteen','fifteen','sixteen','seventeen','eighteen','nineteen','twenty'][i] || `_${i+2}`}_h2_p`),
-    ...Array.from({ length: 20 }, (_, i) => `sec_${['two','three','four','five','six','seven','eight','nine','ten','eleven','tweleve','thirteen','fourteen','fifteen','sixteen','seventeen','eighteen','nineteen','twenty'][i] || `_${i+2}`}_bullets`),
-    ...Array.from({ length: 20 }, (_, i) => `sec_${['two','three','four','five','six','seven','eight','nine','ten','eleven','tweleve','thirteen','fourteen','fifteen','sixteen','seventeen','eighteen','nineteen','twenty'][i] || `_${i+2}`}_h2_points`),
-  ];
-
-  // Extract from main fields
-  fieldsToExtract.forEach(field => {
-    if (post[field]) textParts.push(getPlainTextFromValue(post[field]));
-  });
-
-  // Extract from h3/h4 subsections (sec_two to sec_twenty)
-  const sectionNames = ['two','three','four','five','six','seven','eight','nine','ten','eleven','tweleve','thirteen','fourteen','fifteen','sixteen','seventeen','eighteen','nineteen','twenty'];
-  sectionNames.forEach(sec => {
-    for (let i = 1; i <= 13; i++) {
-      const h3Key = `sec_${sec}_h3_${i}`;
-      const h3ContentKey = `sec_${sec}_h3_content_${i}`;
-      const h3BulletsKey = `sec_${sec}_h3_${i}_bullets`;
-      const h3PointsKey = `sec_${sec}_h3_${i}_points`;
-      if (post[h3Key]) textParts.push(getPlainTextFromValue(post[h3Key]));
-      if (post[h3ContentKey]) textParts.push(getPlainTextFromValue(post[h3ContentKey]));
-      if (post[h3BulletsKey]) textParts.push(getPlainTextFromValue(post[h3BulletsKey]));
-      if (post[h3PointsKey]) textParts.push(getPlainTextFromValue(post[h3PointsKey]));
-
-      const h4Key = `sec_${sec}_h4_${i}`;
-      const h4ContentKey = `sec_${sec}_h4_content_${i}`;
-      const h4BulletsKey = `sec_${sec}_h4_${i}_bullets`;
-      const h4PointsKey = `sec_${sec}_h4_${i}_points`;
-      if (post[h4Key]) textParts.push(getPlainTextFromValue(post[h4Key]));
-      if (post[h4ContentKey]) textParts.push(getPlainTextFromValue(post[h4ContentKey]));
-      if (post[h4BulletsKey]) textParts.push(getPlainTextFromValue(post[h4BulletsKey]));
-      if (post[h4PointsKey]) textParts.push(getPlainTextFromValue(post[h4PointsKey]));
-    }
-  });
-
-  // Extract FAQ h3 questions and answers
-  for (let i = 1; i <= 10; i++) {
-    const faqH3 = `sec_faq_h3_${i}`;
-    const faqP = `sec_faq_h3_p_${i}`;
-    if (post[faqH3]) textParts.push(getPlainTextFromValue(post[faqH3]));
-    if (post[faqP]) textParts.push(getPlainTextFromValue(post[faqP]));
-  }
-
-  return textParts.join(' ');
-};
-// Compute reading time from plain text (assumes 200 words per minute)
-const computeReadingTime = (text) => {
-  if (!text) return '0 min read';
-  const words = text.trim().split(/\s+/).filter(w => w.length > 0).length;
-  const minutes = Math.ceil(words / 200);
-  return `${minutes} min read`;
-};
-
-// Clock icon component
-const ClockIcon = ({ size = 24, color = "currentColor" }) => (
-  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-    <circle cx="12" cy="12" r="10" />
-    <polyline points="12 6 12 12 16 14" />
+const TagIcon = () => (
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L3.4 13.4A2 2 0 0 1 3 12V5a2 2 0 0 1 2-2h7a2 2 0 0 1 1.4.6l7.2 7.2a2 2 0 0 1 0 2.6Z" />
+    <circle cx="8" cy="8" r="1.25" />
   </svg>
 );
+
 const renderBannerImg = (imgValue, altText) => {
   if (!imgValue) return null;
   const images = Array.isArray(imgValue) ? imgValue : [imgValue];
@@ -195,11 +92,19 @@ const renderBannerImg = (imgValue, altText) => {
   );
 };
 
-const BlogDetails = ({ titleSeo, description, Author, Keyword, URL }) => {
+const BlogDetails = ({
+  titleSeo,
+  description,
+  Author,
+  Keyword,
+  URL,
+  blogPostData = null,
+  allPostsData = [],
+}) => {
   const { slug } = useParams();
-  const [blogPost, setBlogPost] = useState(null);
-  const [allPosts, setAllPosts] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [blogPost, setBlogPost] = useState(blogPostData);
+  const [allPosts, setAllPosts] = useState(allPostsData);
+  const [loading, setLoading] = useState(!blogPostData);
   const [error, setError] = useState(null);
 
   // Comments state
@@ -218,7 +123,7 @@ const BlogDetails = ({ titleSeo, description, Author, Keyword, URL }) => {
   );
 
   const blogTitle = useMemo(() =>
-    blogPost?.sec_one_h2 || '',
+    blogPost?.sec_one_h2 || blogPost?.title || '',
     [blogPost]
   );
 
@@ -226,12 +131,15 @@ const BlogDetails = ({ titleSeo, description, Author, Keyword, URL }) => {
     `Hello FAJ Services! Check this out: ${blogTitle} - ${shareUrl}`,
     [blogTitle, shareUrl]
   );
-  const readingTime = useMemo(() => {
-    if (!blogPost) return '';
-    const plainText = extractAllTextFromBlogPost(blogPost);
-    return computeReadingTime(plainText);
-  }, [blogPost]);
   useEffect(() => {
+    if (blogPostData) {
+      setBlogPost(blogPostData);
+      setAllPosts(allPostsData);
+      setError(null);
+      setLoading(false);
+      return;
+    }
+
     const fetchData = async () => {
       try {
         const response = await fetch(`${import.meta.env.BASE_URL}data/blog.json`);
@@ -255,7 +163,7 @@ const BlogDetails = ({ titleSeo, description, Author, Keyword, URL }) => {
       }
     };
     fetchData();
-  }, [slug]);
+  }, [allPostsData, blogPostData, slug]);
 
   useEffect(() => {
     if (!slug) return;
@@ -706,6 +614,11 @@ const BlogDetails = ({ titleSeo, description, Author, Keyword, URL }) => {
   const metaKeyword = String(Keyword || "");
   const metaURL = String(URL || `https://www.fajservices.ae/blog/${blogPost.slug}/`);
   const metaImage = blogPost.img ? getImageSrc(blogPost.img) : '';
+  const articleTags = Array.isArray(blogPost.sec_tag_content)
+    ? blogPost.sec_tag_content.filter(Boolean)
+    : blogPost.sec_tag_content
+      ? [blogPost.sec_tag_content]
+      : [];
 
   return (
     <>
@@ -729,36 +642,12 @@ const BlogDetails = ({ titleSeo, description, Author, Keyword, URL }) => {
         </Helmet>
       </HelmetProvider>
 
-      <section>
+      <section className="blog-article-content">
         
         <div className="container">
           <div className="row cs_row_gap_30 cs_gap_y_60">
             <div className="col-xl-8 col-lg-7">
               <div className="cs_post_details">
-                {blogPost.img && (
-                  <img src={getImageSrc(blogPost.img)} alt={blogPost.title} fetchpriority="high" decoding="async" width="100%" height="auto" />
-                )}
-
-                <div className="cs_post_meta_wrapper cs_mb_20">
-                  <div className="cs_post_meta">
-                    <span className="cs_accent_color"><CalendarIcon size={24} /></span>
-                    <span className="cs_heading_color">{blogPost.date}</span>
-                  </div>
-                  <div className="cs_post_meta">
-                    <span className="cs_accent_color"><CommentIcon size={24} /></span>
-                    <span className="cs_heading_color">{comments.length} Comments</span>
-                  </div>
-                  <div className="cs_post_meta">
-                    <span className="cs_accent_color"><PeopleIcon size={24} /></span>
-                    <span className="cs_heading_color">{blogPost.admin}</span>
-                  </div>
-                  <div className="cs_post_meta">
-                    <span className="cs_accent_color"><ClockIcon size={24} /></span>
-                    <span className="cs_heading_color">{blogPost.readtime}</span>
-                  </div>
-                </div>
-
-                <h1 className="cs_fs_36">{blogPost.title}</h1>
                 {renderContent(blogPost.content)}
 
                 {['sec_two', 'sec_three', 'sec_four', 'sec_five', 'sec_six', 'sec_seven', 'sec_eight', 'sec_nine', 'sec_ten', 'sec_eleven', 'sec_tweleve', 'sec_thirteen', 'sec_fourteen', 'sec_fifteen', 'sec_sixteen', 'sec_seventeen', 'sec_eighteen', 'sec_nineteen', 'sec_twenty'].map(sectionName => (
@@ -769,13 +658,6 @@ const BlogDetails = ({ titleSeo, description, Author, Keyword, URL }) => {
                     )}
                   </div>
                 ))}
-
-                {blogPost.sec_concln_h2 && (
-                  <div className="row">
-                    <h2>{blogPost.sec_concln_h2}</h2>
-                    {renderContent(blogPost.sec_concln_h2_p)}
-                  </div>
-                )}
 
                 {blogPost.sec_faq_h2 && (
                   <div className="row mt-4">
@@ -794,18 +676,38 @@ const BlogDetails = ({ titleSeo, description, Author, Keyword, URL }) => {
                     })}
                   </div>
                 )}
+
+                {blogPost.sec_concln_h2 && (
+                  <div className="blog-article-conclusion">
+                    <span className="blog-article-conclusion__icon">
+                      <BookOpenIcon />
+                    </span>
+                    <div className="blog-article-conclusion__content">
+                      <h2>{blogPost.sec_concln_h2}</h2>
+                      <div className="blog-article-conclusion__content-text">
+                      {renderContent(blogPost.sec_concln_h2_p)}
+                      </div>
+                    </div>
+                  </div>
+                )}
               </div>
 
               {/* Share section */}
-              <div className="cs_post_share_wrapper">
-                <div className="cs_post_tags cs_style_1">
-                  <h3 className="cs_fs_24 mt-0">Tags:</h3>
-                  <div className="cs_tags_links cs_fs_14 cs_heading_font">
-                    {renderContent(blogPost.sec_tag_content)}
+              <div className="cs_post_share_wrapper blog-article-share">
+                {articleTags.length > 0 && (
+                  <div className="blog-article-tags">
+                    <h3>Tags</h3>
+                    <div className="blog-article-tags__list">
+                      {articleTags.map((tag, index) => (
+                        <span key={`${tag}-${index}`}>
+                          <TagIcon />{tag}
+                        </span>
+                      ))}
+                    </div>
                   </div>
-                </div>
+                )}
                 <div className="cs_post_socials">
-                  <h3 className="cs_fs_24 mt-0">Share:</h3>
+                  <h3 className="cs_fs_24 mt-0">Share</h3>
                   <div className="cs_social_btns cs_style_1">
                     <a href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`} target="_blank" rel="noopener noreferrer" className="cs_center cs_radius_50" aria-label="Share on Facebook">
                       <FacebookIcon size={14} />
@@ -867,13 +769,9 @@ const BlogDetails = ({ titleSeo, description, Author, Keyword, URL }) => {
                 </form>
               </div>
               <div style={{ marginTop: "40px" }}>
-                <h3>Comments ({comments.length})</h3>
+                {comments.length > 0 && <h3>Comments ({comments.length})</h3>}
 
                 {commentsLoading && <p>Loading comments...</p>}
-
-                {!commentsLoading && comments.length === 0 && (
-                  <p>No comments yet.</p>
-                )}
 
                 {comments.map((c) => (
                   <div key={c.id} style={{
@@ -888,42 +786,8 @@ const BlogDetails = ({ titleSeo, description, Author, Keyword, URL }) => {
             </div>
 
             {/* Sidebar */}
-            <aside className="col-xl-4 col-lg-5">
-              <div className="cs_sidebar cs_style_1">
-                <div className="cs_sidebar_widget cs_accent_bg_light position-relative">
-                  <div className="cs_separator"></div>
-                  <h3 className="cs_sidebar_title cs_fs_30 cs_mb_43">All Services</h3>
-                  <ul className="cs_categories cs_fs_18 cs_semibold cs_mp_0">
-                    <li><Link to="/services/air-conditioning-repair/ac-service/"><span>Air Conditioning Services</span><span><ArrowRightIcon size={28} /></span></Link></li>
-                    <li><Link to="/services/home-appliances-repair/appliances-repair-service/"><span>Home Appliances Repair Services</span><span><ArrowRightIcon size={28} /></span></Link></li>
-                    <li><Link to="/services/laundry-equipment-repair/"><span>Laundry Equipment Service</span><span><ArrowRightIcon size={28} /></span></Link></li>
-                    <li><Link to="/services/coffee-machine/coffee-machine-service-center/"><span>Coffee Machine Services</span><span><ArrowRightIcon size={28} /></span></Link></li>
-                    <li><Link to="/services/kitchen-equipment-maintenance/commercial-cooking-appliances-repair-service/"><span>Kitchen Equipment Repair</span><span><ArrowRightIcon size={28} /></span></Link></li>
-                  </ul>
-                </div>
-
-                <div className="cs_sidebar_widget cs_accent_bg_light position-relative">
-                  <div className="cs_separator"></div>
-                  <h3 className="cs_sidebar_title cs_fs_30 cs_mb_43">Recent Posts</h3>
-                  <div className="cs_recent_post_wrapper">
-                    {allPosts && allPosts.length > 0 && allPosts.slice(0, 10).map((post, index) => (
-                      <div className="cs_recent_post" key={index}>
-                        <Link to={`/blog/${post.slug}/`} className="cs_recent_post_thumb">
-                          <img src={getImageSrc(post.img)} alt="Recent FAJ Technical Services L.L.C" fetchpriority="high" decoding="async" width="100%" height="auto" />
-                        </Link>
-                        <div className="cs_recent_post_right">
-                          <p className="cs_recent_posted_by cs_fs_14">
-                            <CalendarAltIcon size={16} />{post.date}
-                          </p>
-                          <h3 className="cs_fs_14 mb-0">
-                            <Link to={`/blog/${post.slug}/`}>{post.title}</Link>
-                          </h3>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
+            <aside className="col-xl-4 col-lg-5 blog-article-sidebar">
+              <BlogArticleSidebar currentPost={blogPost} posts={allPosts} />
             </aside>
           </div>
         </div>

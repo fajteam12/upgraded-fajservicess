@@ -489,10 +489,12 @@ export const router = createBrowserRouter([
       {
         path: "/blogs/",
         element: <Components.BlogPage />,
+        handle: { headerMode: "overlay" },
       },
       {
         path: "/blog/:slug",
         element: <Components.BlogDetailsPage />,
+        handle: { headerMode: "overlay" },
       },
       // {
       //   path: "/ac-calculator",

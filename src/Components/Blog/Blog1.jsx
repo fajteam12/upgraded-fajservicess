@@ -1,173 +1,219 @@
-import { Link } from 'react-router-dom';
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Helmet } from "react-helmet-async";
-import { useState, useEffect, useMemo } from 'react';
-
-const CDN = 'https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA';
-
-const getImageSrc = (imgPath) => {
-  if (!imgPath) return '';
-  if (imgPath.startsWith('https')) return imgPath;
-
-  let variant = 'mobile';
-
-  if (typeof window !== 'undefined') {
-    const width = window.innerWidth;
-    const realWidth = width;
-    if (realWidth > 1200) {
-      variant = 'large';
-    } else if (realWidth > 768) {
-      variant = 'desktop';
-    } else if (realWidth > 480) {
-      variant = 'tablet';
-    } else {
-      variant = 'mobile';
-    }
-  }
-
-  return `${CDN}/${imgPath}/${variant}`;
-};
-
-const CommentIcon = ({ size = 16, color = "currentColor" }) => (
-  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
-  </svg>
-);
-
-const PeopleIcon = ({ size = 16, color = "currentColor" }) => (
-  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-    <circle cx="9" cy="7" r="4"/>
-    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-  </svg>
-);
-
-const ArrowRightIcon = ({ size = 24, color = "currentColor" }) => (
-  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-    <line x1="5" y1="12" x2="19" y2="12"/>
-    <polyline points="12 5 19 12 12 19"/>
-  </svg>
-);
+import { Link } from "react-router-dom";
+import {
+  getCloudflareImageSrcSet,
+  getCloudflareImageUrl,
+} from "../../utils/cloudflareImages";
+import "./Blog1.css";
 
 const POSTS_PER_PAGE = 20;
 
-const Blog1 = ({ titleSeo, description, Author, Keyword, URL }) => {
-  const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [selectedCat, setSelectedCat] = useState("All");
-  const [currentPage, setCurrentPage] = useState(1);
-  const [searchQuery, setSearchQuery] = useState("");
-
-  useEffect(() => {
-    fetch('/data/blog.json')
-      .then(res => res.json())
-      .then(blogs => {
-        setData(blogs);
-        setLoading(false);
-      })
-      .catch(err => {
-        console.error('Error loading blogs:', err);
-        setLoading(false);
-      });
-  }, []);
-
-  // All unique categories from original data (for filter buttons)
-  const categories = useMemo(() => {
-    const cats = data.map(p => p.blogcat).filter(Boolean);
-    return ["All", ...new Set(cats)];
-  }, [data]);
-
-  // Filter by search term (title, shortdesc, blogcat)
-  const searchFiltered = useMemo(() => {
-    if (!searchQuery.trim()) return data;
-    const lowerQuery = searchQuery.toLowerCase();
-    return data.filter(item => {
-      return (
-        item.title?.toLowerCase().includes(lowerQuery) ||
-        item.shortdesc?.toLowerCase().includes(lowerQuery) ||
-        item.blogcat?.toLowerCase().includes(lowerQuery)
-      );
-    });
-  }, [data, searchQuery]);
-
-  // Then filter by category (if not "All")
-  const filteredData = useMemo(() => {
-    if (selectedCat === "All") return searchFiltered;
-    return searchFiltered.filter(item => item.blogcat === selectedCat);
-  }, [searchFiltered, selectedCat]);
-
-  const totalPages = Math.ceil(filteredData.length / POSTS_PER_PAGE);
-
-  const paginatedData = useMemo(() => {
-    const start = (currentPage - 1) * POSTS_PER_PAGE;
-    return filteredData.slice(start, start + POSTS_PER_PAGE);
-  }, [filteredData, currentPage]);
-
-  // Reset page when search or category changes
-  useEffect(() => {
-    setCurrentPage(1);
-  }, [searchQuery, selectedCat]);
-
-  const handleCategoryChange = (cat) => {
-    setSelectedCat(cat);
-  };
-const ClockIcon = ({ size = 24, color = "currentColor" }) => (
-  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-    <circle cx="12" cy="12" r="10" />
-    <polyline points="12 6 12 12 16 14" />
+const SearchIcon = () => (
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <circle cx="11" cy="11" r="7" />
+    <path d="m20 20-4-4" />
   </svg>
 );
-  const handleSearchChange = (e) => {
-    setSearchQuery(e.target.value);
-  };
 
-  const clearSearch = () => {
-    setSearchQuery("");
-  };
+const CalendarIcon = () => (
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <rect x="3" y="5" width="18" height="16" rx="2" />
+    <path d="M16 3v4M8 3v4M3 10h18" />
+  </svg>
+);
 
-  const handlePageChange = (page) => {
+const UserIcon = () => (
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <circle cx="12" cy="8" r="4" />
+    <path d="M4 21a8 8 0 0 1 16 0" />
+  </svg>
+);
+
+const CommentIcon = () => (
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4Z" />
+  </svg>
+);
+
+const ClockIcon = () => (
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <circle cx="12" cy="12" r="9" />
+    <path d="M12 7v5l3 2" />
+  </svg>
+);
+
+const ArrowRightIcon = () => (
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M5 12h14M13 6l6 6-6 6" />
+  </svg>
+);
+
+const BlogCard = ({ post }) => {
+  const postUrl = `/blog/${post.slug}/`;
+  const imageSrc = getCloudflareImageUrl(post.img, "desktop");
+  const imageSrcSet = getCloudflareImageSrcSet(post.img);
+
+  return (
+    <article className="blog-archive__card">
+      <Link
+        to={postUrl}
+        className="blog-archive__image-link"
+        aria-label={`Read ${post.title}`}
+      >
+        <img
+          src={imageSrc}
+          srcSet={imageSrcSet}
+          sizes="(max-width: 767px) calc(100vw - 32px), (max-width: 1099px) calc(100vw - 64px), 420px"
+          alt={post.title}
+          width="800"
+          height="450"
+          loading="lazy"
+          decoding="async"
+        />
+        {post.blogcat && (
+          <span className="blog-archive__category-badge">
+            {post.blogcat}
+          </span>
+        )}
+      </Link>
+
+      <div className="blog-archive__card-content">
+        <div className="blog-archive__meta" aria-label="Article details">
+          {post.date && (
+            <span><CalendarIcon />{post.date}</span>
+          )}
+          {post.admin && (
+            <span><UserIcon />{post.admin}</span>
+          )}
+          {post.comments !== undefined && (
+            <span><CommentIcon />{post.comments} Comments</span>
+          )}
+          {post.readtime && (
+            <span><ClockIcon />{post.readtime}</span>
+          )}
+        </div>
+
+        <h2>
+          <Link to={postUrl}>{post.title}</Link>
+        </h2>
+
+        {post.shortdesc && <p>{post.shortdesc}</p>}
+
+        <Link to={postUrl} className="blog-archive__read-more">
+          Read More <ArrowRightIcon />
+        </Link>
+      </div>
+    </article>
+  );
+};
+
+const Blog1 = ({ titleSeo, description, Author, Keyword, URL }) => {
+  const [posts, setPosts] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [loadError, setLoadError] = useState(false);
+  const [selectedCategory, setSelectedCategory] = useState("All");
+  const [currentPage, setCurrentPage] = useState(1);
+  const [searchQuery, setSearchQuery] = useState("");
+  const archiveRef = useRef(null);
+
+  useEffect(() => {
+    const controller = new AbortController();
+
+    fetch("/data/blog.json", { signal: controller.signal })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`Unable to load blog data (${response.status})`);
+        }
+        return response.json();
+      })
+      .then((blogPosts) => {
+        setPosts(Array.isArray(blogPosts) ? blogPosts : []);
+        setLoadError(false);
+      })
+      .catch((error) => {
+        if (error.name !== "AbortError") {
+          console.error("Error loading blogs:", error);
+          setLoadError(true);
+        }
+      })
+      .finally(() => {
+        if (!controller.signal.aborted) {
+          setLoading(false);
+        }
+      });
+
+    return () => controller.abort();
+  }, []);
+
+  const categories = useMemo(() => {
+    const categoryCounts = posts.reduce((counts, post) => {
+      if (post.blogcat) {
+        counts.set(post.blogcat, (counts.get(post.blogcat) || 0) + 1);
+      }
+      return counts;
+    }, new Map());
+
+    return [
+      { name: "All", count: posts.length },
+      ...Array.from(categoryCounts, ([name, count]) => ({ name, count })),
+    ];
+  }, [posts]);
+
+  const filteredPosts = useMemo(() => {
+    const normalizedQuery = searchQuery.trim().toLowerCase();
+
+    return posts.filter((post) => {
+      const matchesCategory =
+        selectedCategory === "All" || post.blogcat === selectedCategory;
+      const matchesSearch =
+        !normalizedQuery ||
+        post.title?.toLowerCase().includes(normalizedQuery) ||
+        post.shortdesc?.toLowerCase().includes(normalizedQuery) ||
+        post.blogcat?.toLowerCase().includes(normalizedQuery);
+
+      return matchesCategory && matchesSearch;
+    });
+  }, [posts, searchQuery, selectedCategory]);
+
+  const totalPages = Math.ceil(filteredPosts.length / POSTS_PER_PAGE);
+  const paginatedPosts = useMemo(() => {
+    const startIndex = (currentPage - 1) * POSTS_PER_PAGE;
+    return filteredPosts.slice(startIndex, startIndex + POSTS_PER_PAGE);
+  }, [currentPage, filteredPosts]);
+
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [searchQuery, selectedCategory]);
+
+  const changePage = (page) => {
     setCurrentPage(page);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    const reduceMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
+    archiveRef.current?.scrollIntoView({
+      behavior: reduceMotion ? "auto" : "smooth",
+      block: "start",
+    });
   };
 
-  const getPageNumbers = () => {
+  const pageNumbers = useMemo(() => {
     if (totalPages <= 7) {
-      return Array.from({ length: totalPages }, (_, i) => i + 1);
+      return Array.from({ length: totalPages }, (_, index) => index + 1);
     }
     if (currentPage <= 4) {
-      return [1, 2, 3, 4, 5, '...', totalPages];
+      return [1, 2, 3, 4, 5, "end-gap", totalPages];
     }
     if (currentPage >= totalPages - 3) {
-      return [1, '...', totalPages - 4, totalPages - 3, totalPages - 2, totalPages - 1, totalPages];
+      return [1, "start-gap", totalPages - 4, totalPages - 3, totalPages - 2, totalPages - 1, totalPages];
     }
-    return [1, '...', currentPage - 1, currentPage, currentPage + 1, '...', totalPages];
-  };
+    return [1, "start-gap", currentPage - 1, currentPage, currentPage + 1, "end-gap", totalPages];
+  }, [currentPage, totalPages]);
 
   const metatitle = String(titleSeo || "Discover The Ultimate Guide To Home Maintenance - FAJ Blogs");
   const metadescription = String(description || "Welcome to FAJ Services blog! Expert insights, tips, and tricks for homeowners.");
   const metaAuthor = String(Author || "FAJ Technical Services L.L.C.");
   const metaKeyword = String(Keyword || "Latest Blogs");
   const metaURL = String(URL || "https://www.fajservices.ae/blogs/");
-  const metaImage = `${CDN}/page_heading_1/public`;
-
-  const pageBtnStyle = (isActive, isDisabled = false) => ({
-    minWidth: '40px',
-    height: '40px',
-    padding: '0 12px',
-    borderRadius: '6px',
-    border: `2px solid ${isDisabled ? '#ddd' : 'var(--cs-accent, #0066cc)'}`,
-    backgroundColor: isActive ? 'var(--cs-accent, #0066cc)' : 'transparent',
-    color: isActive ? '#fff' : isDisabled ? '#bbb' : 'var(--cs-accent, #0066cc)',
-    fontSize: '14px',
-    fontWeight: '600',
-    cursor: isDisabled ? 'not-allowed' : 'pointer',
-    transition: 'all 0.2s ease',
-    fontFamily: 'inherit',
-    display: 'inline-flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    gap: '4px',
-  });
+  const metaImage = getCloudflareImageUrl("page_heading_1", "public");
 
   return (
     <>
@@ -189,254 +235,128 @@ const ClockIcon = ({ size = 24, color = "currentColor" }) => (
         <meta name="twitter:image" content={metaImage} />
       </Helmet>
 
-      <section className="position-relative">
-        <div className="container">
-          {loading ? (
-            <div className="text-center py-5">Loading blogs...</div>
-          ) : (
-            <>
-              <div className='row'>
-                <div className='col-md-3'>
-                   {/* Search Bar */}
-                  <div style={{ margin: '10px 0 20px 0' }}>
-                    <label
-                      htmlFor="blog-search"
-                      style={{
-                        display: 'block',
-                        marginBottom: '8px',
-                        fontWeight: '700',
-                        fontSize: '18px',
-                        color: '#333',
-                      }}
-                    >
-                      Search
-                    </label>
-                    <div style={{ position: 'relative', maxWidth: '400px' }}>
-                      {/* Search Icon (left) */}
-                      <svg
-                        style={{
-                          position: 'absolute',
-                          left: '14px',
-                          top: '50%',
-                          transform: 'translateY(-50%)',
-                          width: '16px',
-                          height: '16px',
-                          color: '#aaa',
-                          pointerEvents: 'none',
-                        }}
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                        />
-                      </svg>
+      <section className="blog-archive" ref={archiveRef} aria-labelledby="blog-archive-title">
+        <div className="blog-archive__container">
+          <aside className="blog-archive__sidebar" aria-label="Filter blog articles">
+            <div className="blog-archive__sidebar-inner">
+              <p className="blog-archive__eyebrow">Explore Our Journal</p>
+              <h2 id="blog-archive-title">Topics</h2>
 
-                      <input
-                        id="blog-search"
-                        type="text"
-                        placeholder="Search by title or keyword..."
-                        value={searchQuery}
-                        onChange={handleSearchChange}
-                        style={{
-                          width: '100%',
-                          padding: '10px 40px 10px 38px', // extra left padding for icon
-                          borderRadius: '30px',
-                          border: '2px solid #e0e0e0',
-                          fontSize: '14px',
-                          fontFamily: 'inherit',
-                          outline: 'none',
-                          transition: 'border 0.2s',
-                        }}
-                        onFocus={(e) => (e.target.style.borderColor = 'var(--cs-accent, #0066cc)')}
-                        onBlur={(e) => (e.target.style.borderColor = '#e0e0e0')}
-                      />
+              <label className="blog-archive__search" htmlFor="blog-search">
+                <span className="visually-hidden">Search articles</span>
+                <SearchIcon />
+                <input
+                  id="blog-search"
+                  type="search"
+                  value={searchQuery}
+                  onChange={(event) => setSearchQuery(event.target.value)}
+                  placeholder="Search articles..."
+                />
+              </label>
 
-                      {searchQuery && (
-                        <button
-                          onClick={clearSearch}
-                          style={{
-                            position: 'absolute',
-                            right: '12px',
-                            top: '50%',
-                            transform: 'translateY(-50%)',
-                            background: 'none',
-                            border: 'none',
-                            fontSize: '18px',
-                            cursor: 'pointer',
-                            color: '#888',
-                            padding: 0,
-                          }}
-                          aria-label="Clear search"
-                        >
-                          ✕
-                        </button>
-                      )}
-                    </div>
-                  </div>
-
-                  {/* Category Filter Buttons */}
-                  <div
-                    style={{
-                      display: 'flex',
-                      flexWrap: 'wrap',
-                      gap: '10px',
-                      margin: '10px 0 30px 0',
-                      alignItems: 'center',
-                    }}
+              <nav className="blog-archive__categories" aria-label="Blog topics">
+                {categories.map((category) => (
+                  <button
+                    type="button"
+                    key={category.name}
+                    className={selectedCategory === category.name ? "is-active" : ""}
+                    onClick={() => setSelectedCategory(category.name)}
+                    aria-pressed={selectedCategory === category.name}
                   >
-                    {categories.map((cat) => (
-                      <button
-                        key={cat}
-                        onClick={() => handleCategoryChange(cat)}
-                        style={{
-                          padding: '8px 20px',
-                          borderRadius: '25px',
-                          border: '2px solid var(--cs-accent, #0066cc)',
-                          backgroundColor: selectedCat === cat ? 'var(--cs-accent, #0066cc)' : 'transparent',
-                          color: selectedCat === cat ? '#fff' : 'var(--cs-accent, #0066cc)',
-                          fontSize: '14px',
-                          fontWeight: '600',
-                          cursor: 'pointer',
-                          transition: 'all 0.25s ease',
-                          whiteSpace: 'nowrap',
-                          fontFamily: 'inherit',
-                        }}
-                        aria-pressed={selectedCat === cat}
-                      >
-                        {cat}
-                      </button>
-                    ))}
-                  </div>
-                </div>
-                <div className='col-md-9'>
-                    {/* Blog Posts Grid */}
-                    
-                    {/* Results count */}
-                    {filteredData.length > 0 && (
-                      <p style={{ color: '#888', fontSize: '14px', marginBottom: '20px' }}>
-                        Showing {(currentPage - 1) * POSTS_PER_PAGE + 1}–{Math.min(currentPage * POSTS_PER_PAGE, filteredData.length)} of {filteredData.length} articles
-                      </p>
-                    )}
+                    <span>{category.name === "All" ? "All Articles" : category.name}</span>
+                    <strong>{category.count}</strong>
+                  </button>
+                ))}
+              </nav>
+            </div>
+          </aside>
 
-                    {/* Blog Cards Grid */}
-                    {paginatedData.length === 0 ? (
-                      <p style={{ textAlign: 'center', color: '#888', padding: '40px 0' }}>
-                        No posts match your search.
-                      </p>
-                    ) : (
-                      <div className="row cs_row_gap_30 cs_gap_y_30">
-                        {paginatedData.map((item, i) => (
-                          <div key={item.slug || i} className="col-lg-6">
-                            <div className="cs_post cs_style_1 cs_type_1">
-                              <Link to={`/blog/${item.slug}/`} className="cs_post_thumbnail cs_mb_16 position-relative">
-                                <img
-                                  src={getImageSrc(item.img)}
-                                  alt={item.title}
-                                  loading="lazy"
-                                  decoding="async"
-                                />
-                                <div className="cs_post_date cs_accent_bg cs_fs_18 cs_semibold cs_white_color cs_center position-absolute">
-                                  {item.date}
-                                </div>
-                              </Link>
-                              <div className="cs_post_content_wrapper">
-                                <div className="cs_post_content">
-                                  <div className="cs_post_meta_wrapper cs_mb_11">
-                                    <div className="cs_post_meta">
-                                      <span className="cs_accent_color"><CommentIcon size={16} /></span>
-                                      <span className="cs_heading_color">{item.comments} Comments</span>
-                                    </div>
-                                    <div className="cs_post_meta">
-                                      <span className="cs_accent_color"><PeopleIcon size={16} /></span>
-                                      <span className="cs_heading_color">{item.admin}</span>
-                                    </div>
-                                    <div className="cs_post_meta">
-                                      <span className="cs_accent_color"><ClockIcon size={16} /></span>
-                                      <span className="cs_heading_color">{item.readtime}</span>
-                                    </div>
-                                  </div>
-                                  <h3 className="cs_fs_20 cs_mb_5">
-                                    <Link to={`/blog/${item.slug}/`}>{item.title}</Link>
-                                  </h3>
-                                  <p className="cs_mb_15">{item.shortdesc}</p>
-                                  <Link to={`/blog/${item.slug}/`} className="cs_text_btn cs_style_1 cs_logo_blue cs_white_color">
-                                    <ArrowRightIcon size={24} />
-                                  </Link>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        ))}
-                      </div>
-                    )}
-
-                    {/* Pagination */}
-                    {totalPages > 1 && (
-                      <div
-                        style={{
-                          display: 'flex',
-                          justifyContent: 'center',
-                          alignItems: 'center',
-                          gap: '8px',
-                          marginTop: '50px',
-                          flexWrap: 'wrap',
-                        }}
-                      >
-                        <button
-                          onClick={() => handlePageChange(currentPage - 1)}
-                          disabled={currentPage === 1}
-                          style={pageBtnStyle(false, currentPage === 1)}
-                          aria-label="Previous page"
-                        >
-                          ‹ Prev
-                        </button>
-
-                        {getPageNumbers().map((page, idx) =>
-                          page === '...' ? (
-                            <span
-                              key={`ellipsis-${idx}`}
-                              style={{ padding: '0 4px', color: '#888', fontSize: '18px', lineHeight: '40px' }}
-                            >
-                              …
-                            </span>
-                          ) : (
-                            <button
-                              key={page}
-                              onClick={() => handlePageChange(page)}
-                              style={pageBtnStyle(currentPage === page)}
-                              aria-label={`Page ${page}`}
-                              aria-current={currentPage === page ? 'page' : undefined}
-                            >
-                              {page}
-                            </button>
-                          )
-                        )}
-
-                        <button
-                          onClick={() => handlePageChange(currentPage + 1)}
-                          disabled={currentPage === totalPages}
-                          style={pageBtnStyle(false, currentPage === totalPages)}
-                          aria-label="Next page"
-                        >
-                          Next ›
-                        </button>
-                      </div>
-                    )}
-                </div>
+          <div className="blog-archive__main">
+            <div className="blog-archive__heading">
+              <div>
+                <p className="blog-archive__eyebrow">Expert Advice</p>
+                <h2>{selectedCategory === "All" ? "Latest Articles" : selectedCategory}</h2>
               </div>
-          
-              
+              {!loading && !loadError && (
+                <p className="blog-archive__result-count" aria-live="polite">
+                  {filteredPosts.length} {filteredPosts.length === 1 ? "article" : "articles"}
+                </p>
+              )}
+            </div>
 
-            </>
-          )}
+            {loading && (
+              <p className="blog-archive__status" role="status">Loading articles...</p>
+            )}
+
+            {!loading && loadError && (
+              <p className="blog-archive__status" role="alert">
+                Articles could not be loaded. Please refresh the page and try again.
+              </p>
+            )}
+
+            {!loading && !loadError && paginatedPosts.length === 0 && (
+              <div className="blog-archive__empty">
+                <SearchIcon />
+                <h3>No Articles Found</h3>
+                <p>Try a different keyword or reset the selected topic.</p>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setSearchQuery("");
+                    setSelectedCategory("All");
+                  }}
+                >
+                  Reset Filters
+                </button>
+              </div>
+            )}
+
+            {paginatedPosts.length > 0 && (
+              <div className="blog-archive__grid">
+                {paginatedPosts.map((post) => (
+                  <BlogCard key={post.slug || post.id} post={post} />
+                ))}
+              </div>
+            )}
+
+            {totalPages > 1 && (
+              <nav className="blog-archive__pagination" aria-label="Blog pagination">
+                <button
+                  type="button"
+                  onClick={() => changePage(currentPage - 1)}
+                  disabled={currentPage === 1}
+                >
+                  Previous
+                </button>
+
+                {pageNumbers.map((page) =>
+                  typeof page === "string" ? (
+                    <span key={page} aria-hidden="true">...</span>
+                  ) : (
+                    <button
+                      type="button"
+                      key={page}
+                      className={currentPage === page ? "is-active" : ""}
+                      onClick={() => changePage(page)}
+                      aria-current={currentPage === page ? "page" : undefined}
+                      aria-label={`Page ${page}`}
+                    >
+                      {page}
+                    </button>
+                  ),
+                )}
+
+                <button
+                  type="button"
+                  onClick={() => changePage(currentPage + 1)}
+                  disabled={currentPage === totalPages}
+                >
+                  Next
+                </button>
+              </nav>
+            )}
+          </div>
         </div>
-        <div className="cs_height_80 cs_height_lg_40"></div>
       </section>
     </>
   );
