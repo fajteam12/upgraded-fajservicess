@@ -12,12 +12,19 @@ function ActionCardsSection({
 }) {
   if (!content?.items?.length) return null;
 
+  const itemCount = content.items.length;
+  const resolvedColumns = itemCount === 3
+    ? "three"
+    : itemCount === 4
+      ? "four"
+      : columns;
+
   return (
     <section className={`service-landing__section is-${tone}`} id={content.id}>
       <div className="service-landing__container">
         <SectionHeader content={content} light={tone === "dark"} />
 
-        <div className={`service-landing__action-grid is-${columns}`}>
+        <div className={`service-landing__action-grid is-${resolvedColumns}`}>
           {content.items.map((item, index) => (
             <ScrollSlide
               direction="up"

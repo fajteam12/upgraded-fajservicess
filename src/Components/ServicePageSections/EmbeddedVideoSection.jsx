@@ -64,7 +64,7 @@ function EmbeddedVideoSection({ content, tone = "dark" }) {
             <div className="service-landing__video-frame">
               <iframe
                 src={videoSrc}
-                title={content.title}
+                title={content.frameTitle || content.title || "Service video"}
                 loading="lazy"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerPolicy="strict-origin-when-cross-origin"

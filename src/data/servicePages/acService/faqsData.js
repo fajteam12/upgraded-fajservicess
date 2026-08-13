@@ -1,0 +1,28 @@
+const faqsData = {
+  id: "ac-service-faqs", eyebrow: "Have Questions?", title: "AC Repair and Maintenance FAQs",
+  description: "Answers about AC servicing, cleaning, cooling faults and maintenance in Dubai.",
+  items: [
+    { question: "How much is AC service in Dubai?", answer: "AC service commonly ranges from about AED 230 to AED 765 depending on the unit type, condition and required cleaning or repair scope. An inspection confirms the final quotation." },
+    { question: "Why is my AC not cooling in Dubai?", answer: "Common causes include dirty filters or coils, low refrigerant, weak airflow, thermostat faults, fan problems or compressor failure. Professional diagnosis identifies the actual cause." },
+    { question: "Why can AC repair be expensive?", answer: "Costs vary with system access, fault complexity, refrigerant work and replacement components. Preventive maintenance can identify smaller issues before they become major failures." },
+    { question: "Why is my AC giving cool air but not cooling the room?", answer: "Restricted airflow, an undersized system, heat gain, duct leakage or low cooling capacity can prevent the room from reaching the selected temperature." },
+    { question: "How often should AC be cleaned in Dubai?", answer: "Filters may need frequent attention, while professional cleaning is generally planned every three to six months depending on dust, occupancy, pets and operating hours." },
+    { question: "Which company services central AC systems in Dubai?", answer: "FAJ Technical Services provides inspection, cleaning, maintenance and repair for central, ducted and other residential or commercial AC systems in Dubai." },
+    { question: "What maintenance is needed for an AC?", answer: "Routine work can include filter, coil and drain cleaning, airflow and thermostat checks, electrical inspection, refrigerant assessment and an operating-condition report." },
+    { question: "How can I maintain my AC?", answer: "Keep filters clean, avoid blocking vents, watch for leaks or unusual sounds and arrange professional inspection before peak summer use." },
+    { question: "What is routine AC maintenance?", answer: "Routine maintenance is scheduled inspection, testing and cleaning designed to maintain cooling performance and identify developing faults before a breakdown." },
+    { question: "How do I fix an air conditioner that is not cooling?", answer: "Check the thermostat and visible filter first, then book a technician if cooling does not return. Refrigerant, electrical and compressor work requires professional testing." },
+    { question: "How often should an air conditioner be serviced?", answer: "Most Dubai properties benefit from professional service at least twice a year, with more frequent visits for heavily used, commercial or sensitive systems." },
+    { question: "Is AC duct cleaning important in Dubai?", answer: "It can be important where dust, debris, odours or contamination have accumulated. Inspection should determine whether duct cleaning is actually required." },
+    { question: "Is AC duct cleaning worth it?", answer: "Duct cleaning can be worthwhile when an inspection confirms significant contamination or airflow restriction. It should be recommended according to actual system condition." },
+    { question: "How often should AC ducts be cleaned?", answer: "There is no single interval for every property. Usage, renovation dust, indoor-air concerns and inspection findings determine when cleaning is appropriate." },
+    { question: "Is emergency AC repair available in Dubai?", answer: "Yes. FAJ accepts urgent air-conditioning requests subject to technician availability, location and the nature of the fault." },
+    { question: "How quickly can an AC technician reach my home in Dubai?", answer: "Response time depends on location, traffic, technician availability and parts requirements. Share the fault and area so the scheduling team can provide the earliest slot." },
+    { question: "What is the best AC system for a villa in Dubai?", answer: "The correct system depends on villa size, insulation, zoning, available plant space and energy goals. A load assessment should guide the selection." },
+    { question: "What is a VRF air-conditioning system?", answer: "VRF uses variable refrigerant flow to serve multiple indoor units efficiently, allowing individual zone control from a connected outdoor system." },
+    { question: "What AC system is suitable for a commercial building?", answer: "VRF, packaged, ducted, chilled-water or central systems may be suitable depending on building load, zoning, occupancy and facility requirements." },
+    { question: "How do I choose an HVAC contractor near me?", answer: "Choose a contractor with relevant system experience, clear inspection and quotation terms, documented work and reliable after-service support." },
+    { question: "How do I book an AC technician near my location?", answer: "Use the booking form or WhatsApp button, share your area, unit type and fault, and the FAJ scheduling team will arrange a suitable visit." },
+  ],
+};
+export default faqsData;
