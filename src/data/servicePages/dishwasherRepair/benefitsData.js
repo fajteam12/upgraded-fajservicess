@@ -1,7 +1,7 @@
 const benefitsData = {
   eyebrow: "Service Deliverables", title: "The Benefits of Dishwasher Service in Dubai",
   description: "Preventative care supports safer operation, consistent cleaning, lower running costs and longer equipment life.",
-  stats: [{ value: "2010", label: "Serving the UAE Since" }, { value: "24/7", label: "Support Available" }],
+  stats: [{ value: "2010", label: "Serving the UAE Since" }, { value: "7-Day", label: "Support Available" }],
   benefits: [
     { id: "dishwasher-safety", number: "01", title: "Ensuring Safety", description: "Routine checks reduce electrical, water-leak and component hazards in the kitchen.", icon: "shield-check" },
     { id: "dishwasher-performance", number: "02", title: "Optimal Performance", description: "Regular maintenance supports consistent washing, rinsing, drainage and drying.", icon: "sparkles" },

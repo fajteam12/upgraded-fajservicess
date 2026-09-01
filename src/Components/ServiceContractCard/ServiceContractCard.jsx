@@ -10,6 +10,7 @@ import {
   ScrollSlide,
   ScrollZoomText,
   ShutterImage,
+  ShutterVideo,
 } from "../Animations/ScrollAnimation";
 
 import "./ServiceContractCard.css";
@@ -140,6 +141,7 @@ const ServiceContractCard = ({
   features = [],
   imageId,
   imageSrc,
+  videoSrc,
   imageSrcSet,
   imageSizes = "(max-width: 767px) calc(100vw - 32px), (max-width: 1199px) 45vw, 40vw",
   imageAlt,
@@ -296,24 +298,15 @@ const ServiceContractCard = ({
                 "--service-contract-image-position": imagePosition,
               }}
             >
-              <ShutterImage
-                className="service-contract-card__image-shutter"
-                imgClassName="service-contract-card__image"
-                src={resolvedImageSrc}
-                srcSet={resolvedImageSrcSet}
-                sizes={resolvedImageSrcSet ? imageSizes : undefined}
-                width={imageWidth}
-                height={imageHeight}
-                loading="lazy"
-                decoding="async"
-                alt={imageAlt}
-                shutterColor="#003048"
-                onError={() => {
-                  if (!useFallback && imageSrc) {
-                    setUseFallback(true);
-                  }
-                }}
-              />
+              <ShutterVideo
+              className="service-contract-card__image-shutter"
+              videoClassName="service-contract-card__image"
+              src={videoSrc}
+              poster={resolvedImageSrc}
+              width={imageWidth}
+              height={imageHeight}
+              shutterColor="#003048"
+            />
 
               <div
                 className="service-contract-card__image-overlay"

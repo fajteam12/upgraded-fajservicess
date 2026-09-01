@@ -28,8 +28,8 @@ export const b2bEnterpriseData = {
     },
   ],
   actions: {
-    email: "corporate@fajservices.ae",
-    emailHref: "mailto:corporate@fajservices.ae",
+    email: "sales@fajservices.ae",
+    emailHref: "mailto:sales@fajservices.ae",
     phone: "Call Corporate Desk: +971 4 330 0002",
     phoneHref: "tel:+97143300002",
     whatsapp: "WhatsApp Chat: +971 50 746 4712",

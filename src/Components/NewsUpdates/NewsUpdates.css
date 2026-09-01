@@ -421,10 +421,10 @@
   .news-updates__compact-card {
     grid-template-columns: 1fr;
   }
-
+/* 
   .news-updates__compact-image {
     aspect-ratio: 16 / 10;
-  }
+  } */
 
   .news-updates__compact-image-link {
     min-height: auto;
@@ -436,6 +436,9 @@
 
   .news-updates__compact-excerpt {
     display: -webkit-box;
+  }
+  .faj-header__inner {
+    height: 72px;
   }
 }
 
@@ -460,7 +463,7 @@
 
   .news-updates__featured-card
     .news-updates__image-wrapper {
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 4 / 1.6;
   }
 }
 

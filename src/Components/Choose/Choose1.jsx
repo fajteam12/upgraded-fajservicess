@@ -39,7 +39,7 @@ const STATIC_DATA = [
   },
   {
     img: "icon/whychoose3",
-    title: "24/7 Support",
+    title: "7-Day Support",
     desc: "Round the clock assistance for emergencies"
   }
 ];

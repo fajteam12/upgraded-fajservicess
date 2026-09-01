@@ -21,7 +21,7 @@ const TeamDetails = () => {
                 <li>Best Quality Services</li>
                 <li>Meet the Dad-lines</li>
                 <li>Time Saving</li>
-                <li>24/7 Customer Support</li>
+                <li>7-Day Customer Support</li>
               </ul>
               <div className="cs_height_30 cs_height_lg_30"></div>
               <div className="cs_iconbox_wrapper cs_mb_34">

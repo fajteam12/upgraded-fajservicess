@@ -31,7 +31,7 @@ export const aboutCompanyFeatures = [
   },
   {
     id: "rapid-response",
-    title: "24/7 Rapid Response",
+    title: "7-Day Rapid Response",
     description: "Quick assistance across Dubai",
     icon: "phone",
   },

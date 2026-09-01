@@ -1,8 +1,33 @@
 {
-  "success": [],
+  "success": [
+    {
+      "originalPath": "ac-repair-new-design-images/ac-service-top-image",
+      "cdnUrl": "https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/ac-repair-new-design-images/ac-service-top-image/large",
+      "id": "ac-repair-new-design-images/ac-service-top-image",
+      "success": true
+    },
+    {
+      "originalPath": "ac-repair-new-design-images/air-conditioning-amc-services-top-hero",
+      "cdnUrl": "https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/ac-repair-new-design-images/air-conditioning-amc-services-top-hero/tablet",
+      "id": "ac-repair-new-design-images/air-conditioning-amc-services-top-hero",
+      "success": true
+    },
+    {
+      "originalPath": "coffee-machine-service-page-new-design-images/coffee-machine-service-center-top-image",
+      "cdnUrl": "https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/coffee-machine-service-page-new-design-images/coffee-machine-service-center-top-image/desktop",
+      "id": "coffee-machine-service-page-new-design-images/coffee-machine-service-center-top-image",
+      "success": true
+    },
+    {
+      "originalPath": "refrigeration-equipment-service-page-new-design-images/ice-maker-services-top",
+      "cdnUrl": "https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/refrigeration-equipment-service-page-new-design-images/ice-maker-services-top/full",
+      "id": "refrigeration-equipment-service-page-new-design-images/ice-maker-services-top",
+      "success": true
+    }
+  ],
   "failed": [
     {
-      "originalPath": "blog/best-ac-maintenance-tips-hot-summer-dubai-2026",
+      "originalPath": "new-homepage-design-images/barbeque-repair-services-top",
       "error": [
         {
           "code": 5409,
@@ -12,7 +37,37 @@
       "success": false
     },
     {
-      "originalPath": "blog/survive-hottest-summer-uae-dubai-2026",
+      "originalPath": "new-homepage-design-images/faj-logo",
+      "error": [
+        {
+          "code": 5409,
+          "message": "Resource already exists. Verify the resource information and try again."
+        }
+      ],
+      "success": false
+    },
+    {
+      "originalPath": "new-homepage-design-images/hero-image-desktop",
+      "error": [
+        {
+          "code": 5409,
+          "message": "Resource already exists. Verify the resource information and try again."
+        }
+      ],
+      "success": false
+    },
+    {
+      "originalPath": "new-homepage-design-images/home-speedy-services",
+      "error": [
+        {
+          "code": 5409,
+          "message": "Resource already exists. Verify the resource information and try again."
+        }
+      ],
+      "success": false
+    },
+    {
+      "originalPath": "new-homepage-design-images/premium-services/domestic-appliances-1024",
       "error": [
         {
           "code": 5409,
@@ -22,5 +77,10 @@
       "success": false
     }
   ],
-  "mapping": {}
+  "mapping": {
+    "ac-repair-new-design-images/ac-service-top-image": "https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/ac-repair-new-design-images/ac-service-top-image/large",
+    "ac-repair-new-design-images/air-conditioning-amc-services-top-hero": "https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/ac-repair-new-design-images/air-conditioning-amc-services-top-hero/tablet",
+    "coffee-machine-service-page-new-design-images/coffee-machine-service-center-top-image": "https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/coffee-machine-service-page-new-design-images/coffee-machine-service-center-top-image/desktop",
+    "refrigeration-equipment-service-page-new-design-images/ice-maker-services-top": "https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/refrigeration-equipment-service-page-new-design-images/ice-maker-services-top/full"
+  }
 }

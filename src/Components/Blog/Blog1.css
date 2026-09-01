@@ -215,7 +215,7 @@
   position: relative;
   z-index: 1;
   display: block;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 16 / 6;
   overflow: hidden;
   background: #dfe9ed;
   cursor: pointer;
@@ -438,7 +438,9 @@
   .blog-archive__container {
     grid-template-columns: 1fr;
   }
-
+  .blog-archive__image-link {
+      aspect-ratio: 16 / 7;
+  }
   .blog-archive__sidebar {
     position: static;
     height: auto;

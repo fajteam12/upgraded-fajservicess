@@ -47,6 +47,7 @@ export const annualMaintenanceData = {
 
   imageId: "new-homepage-design-images/home-annual-ac-maintenance",
   imageSrc: "/img/new-homepage-design-images/home-annual-ac-maintenance.webp",
+  videoSrc: "/img/new-homepage-design-images/home-annual-ac-maintenance.mp4",
   imageAlt:
     "FAJ technician carrying out annual air-conditioning maintenance in Dubai",
   imageWidth: 1200,
@@ -102,6 +103,7 @@ export const refrigerationServicesData = {
 
   imageId: "new-homepage-design-images/home-refrigeration-services",
   imageSrc: "/img/new-homepage-design-images/home-refrigeration-services.webp",
+videoSrc: "/img/new-homepage-design-images/home-refrigeration-services.mp4",
   imageAlt:
     "FAJ technician servicing commercial refrigeration equipment in Dubai",
   imageWidth: 1200,
@@ -156,6 +158,7 @@ export const kitchenEquipmentData = {
 
   imageId: "new-homepage-design-images/home-kitchen-equipment-maintenance",
   imageSrc: "/img/new-homepage-design-images/home-kitchen-equipment-maintenance.webp",
+videoSrc: "/img/new-homepage-design-images/home-kitchen-equipment-maintenance.mp4",
   imageAlt:
     "FAJ technician maintaining professional commercial kitchen equipment",
   imageWidth: 1200,
@@ -210,6 +213,7 @@ export const coffeeMachinesData = {
 
   imageId: "new-homepage-design-images/home-coffee-machine-maintenance",
   imageSrc: "/img/new-homepage-design-images/home-coffee-machine-maintenance.webp",
+videoSrc: "/img/new-homepage-design-images/home-coffee-machine-maintenance.mp4",
   imageAlt:
     "FAJ technician servicing a professional commercial coffee machine",
   imageWidth: 1200,

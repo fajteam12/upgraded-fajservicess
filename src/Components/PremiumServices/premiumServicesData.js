@@ -77,7 +77,7 @@ export const premiumServices = [
 ];
 
 export const premiumServicesUrgentCard = {
-  eyebrow: "Dubai standby 24/7",
+  eyebrow: "Dubai standby 7-Day",
   title: "Need Urgent Assistance?",
   description:
     "Our certified engineering team is on standby across Dubai. Contact us for prompt troubleshooting and responsive technical support.",

@@ -1,7 +1,7 @@
 const seoData = {
-  title: "AC Repair and Air Conditioning Maintenance Dubai | FAJ",
+  title: "AC Repair Service and HVAC Maintenance خدمات صيانة وتصليح المكيفات",
   description:
-    "Professional AC repair, cleaning, gas charging and air conditioning maintenance in Dubai and Sharjah for split, ducted, VRF and central systems.",
+    "FAJ has been providing the best AC repair service in Dubai since 2010. Get fast AC maintenance, servicing & AC cleaning from expert technician near you",
   keywords:
     "AC repair Dubai, air conditioning maintenance Dubai, AC cleaning Dubai, AC gas refill, HVAC service Dubai, AC maintenance contract UAE",
   author: "FAJ Technical Services L.L.C.",

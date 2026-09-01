@@ -229,7 +229,7 @@ const YouTubeFacade = memo(({ videoId, title }) => {
         width="100%" height="350"
         src={`https://www.youtube.com/embed/${videoId}?autoplay=1&si=b-4PWehpy2R_jztH`}
         title={title}
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowFullScreen
         style={{ display: 'block' }}
       />
@@ -406,8 +406,8 @@ const FAQSection = memo(({ data, openItemIndex, onItemClick }) => {
 });
 
 const AcServiceInDubai = ({ subtitle, title, reviewsbg, titleSeo, description, Author, Keyword, URL }) => {
-  const metatitle       = String(titleSeo    || "AC Repair Dubai | Best HVAC Maintenance & AC Service");
-  const metadescription = String(description || "FAJ has been providing the best AC service in Dubai since 2010. Get fast AC repair, maintenance, servicing & AC cleaning from expert technician near you");
+  const metatitle       = String(titleSeo    || "Best AC Repair | HVAC Maintenance & AC Service in Dubai");
+  const metadescription = String(description || "Top AC Service and AC Repair - FAJ has been providing fast air conditioning maintenance, servicing & cleaning from expert technicians near you in Dubai");
   const metaAuthor      = String(Author  || "FAJ Technical Services L.L.C");
   const metaURL         = String(URL     || "https://www.fajservices.ae/services/air-conditioning-repair/ac-service/");
   const metaImage       = "https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/What-is-covered-in-an-AC-Maintenance-Contract/public";
@@ -480,7 +480,7 @@ const AcServiceInDubai = ({ subtitle, title, reviewsbg, titleSeo, description, A
         {/* Hero */}
         <section className="section cs_py_30">
           <div className="container">
-            <h1 className="cs_fs_30">Trusted AC Service and Maintenance | Licensed AC Repair Contractor Dubai, UAE</h1>
+            <h1 className="cs_fs_30">Best AC Repair and Maintenance Services</h1>
             <p>
               Improve the comfort of your home and business premises with air conditioning cooling.
               Maintain a perfect temperature year-round with our expert AC technicians.<br />

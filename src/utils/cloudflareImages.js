@@ -4,7 +4,7 @@ export const CLOUDFLARE_IMAGE_DELIVERY_URL =
 export const DEFAULT_CLOUDFLARE_VARIANTS = {
   mobile: 480,
   tablet: 768,
-  desktop: 1200,
+  full: 1200,
   large: 1600,
 };
 

@@ -26,7 +26,7 @@ const DEFAULT_SEO = {
 	title:
 		"FAJ | Installation, Repair and Maintenance Company in Dubai",
 	description:
-		"FAJ Technical Services has provided air conditioning, refrigeration, kitchen equipment and appliance installation, repair and maintenance services in Dubai since 2010.",
+		"FAJ Established in 2010, / with experts Air Conditioner, Refrigeration, Kitchen Equipment, Appliances installation, Repair & Maintenance Services in Dubai.",
 	author: "FAJ Technical Services L.L.C",
 	keywords:
 		"AC repair Dubai, AC service Dubai, washing machine repair, refrigerator repair, freezer repair, appliance repair Dubai, appliance maintenance, appliance installation",
@@ -238,7 +238,7 @@ const Home = ({
 					imageWidth={1200}
 					imageHeight={1500}
 					imagePosition="center center"
-					experienceValue="14+"
+					experienceValue="16+"
 					experienceTitle="Years"
 					experienceLabel="Experience"
 					ctaLabel="Discover More"

@@ -10,7 +10,7 @@ const maintenanceBenefitsData = {
       label: "Years of Trust",
     },
     {
-      value: "24/7",
+      value: "7-Day",
       label: "Rapid Dispatch",
     },
   ],

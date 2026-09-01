@@ -5,7 +5,7 @@ const benefitsData = {
     "Preventive care supports safe use, efficient operation and a longer useful life for frequently used appliances.",
   stats: [
     { value: "2010", label: "Serving the UAE Since" },
-    { value: "24/7", label: "Support Available" },
+    { value: "7-Day", label: "Support Available" },
   ],
   benefits: [
     {

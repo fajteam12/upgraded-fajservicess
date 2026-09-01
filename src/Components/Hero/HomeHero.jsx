@@ -55,15 +55,15 @@ function HomeHero({
     id: "new-homepage-design-images/hero-image-desktop",
     src: "/img/new-homepage-design-images/hero-image-desktop.webp",
     alt: "FAJ Technical Services technician in Dubai",
-    width: 1600,
-    height: 900,
+    width: 2700,
+    height: 1500,
   },
   primaryAction = {
     label: "Book a Service Today",
     to: "/contact-us/",
   },
   secondaryAction = {
-    label: "Call 24/7 Hotline",
+    label: "7-Day Call Response",
     href: "tel:+971507464712",
   },
 }) {
@@ -77,20 +77,17 @@ function HomeHero({
     ? getCloudflareImageSrcSet(image.id)
     : undefined;
 
-  const imageSrc = useFallback
-    ? image.src
-    : cloudflareSrc || image.src;
+  const imageSrc = image.src || (useFallback ? image.src : cloudflareSrc) || "";
 
-  const imageSrcSet = useFallback
-    ? image.srcSet
-    : cloudflareSrcSet || image.srcSet || undefined;
+  const imageSrcSet =
+    image.srcSet || (useFallback ? image.srcSet : cloudflareSrcSet) || undefined;
 
   return (
     <section className="faj-home-hero" aria-labelledby="faj-home-hero-title">
       <div className="faj-home-hero__media">
         <img
-          src={imageSrc}
-          srcSet={imageSrcSet}
+          src="https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/new-homepage-design-images/hero-image-desktop/full"
+          srcSet="https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/new-homepage-design-images/hero-image-desktop/full"
           sizes="100vw"
           alt={image.alt}
           width={image.width}

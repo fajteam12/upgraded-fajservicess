@@ -54,7 +54,7 @@
 
 .site-footer__logo {
 	display: inline-flex;
-	width: clamp(3.8rem, 5vw, 4.8rem);
+	width: 135px;
 	margin-bottom: 1.35rem;
 	color: #ffffff;
 	text-decoration: none;

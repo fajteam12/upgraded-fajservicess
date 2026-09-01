@@ -224,7 +224,7 @@ const Footer = ({
 							to="/"
 							aria-label="FAJ Technical Services home"
 						>
-							<FAJLogoSVG />
+							<img src="https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/6f6a67bf-cd1a-4aff-bc10-6ed4b5017700/full" alt="FAJ LOGO" />
 						</Link>
 
 						<p className="site-footer__description">

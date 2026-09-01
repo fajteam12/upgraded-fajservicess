@@ -5,7 +5,7 @@ const benefitsData = {
     "Professional preventative care supports safer operation, dependable heating and a longer hob service life.",
   stats: [
     { value: "2010", label: "Serving the UAE Since" },
-    { value: "24/7", label: "Support Available" },
+    { value: "7-Day", label: "Support Available" },
   ],
   benefits: [
     {

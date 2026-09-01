@@ -13,7 +13,7 @@ import { calloutSectionData } from "../Components/CalloutSection/calloutSectionD
 const SEO_DEFAULTS = {
   title: "HVAC, Refrigeration, Kitchen Equipment Maintenance Company in Dubai",
   description:
-    "FAJ has been the best maintenance company in Dubai since 2010, providing services for HVAC, appliances, refrigeration, kitchen equipment, and annual maintenance contracts.",
+    "FAJ has been the best maintenance company in Dubai since 2010, providing services for HVAC, appliances, refrigeration, & kitchen equipment & contract.",
   author: "FAJ Technical Services L.L.C",
   keywords: "HVAC maintenance company Dubai, appliance repair Dubai, refrigeration repair Dubai",
   url: "https://www.fajservices.ae/services/",
@@ -44,21 +44,17 @@ function ServicesPage({
 		<>
 			<Helmet>
 				<title>{metaTitle}</title>
-
 				<meta name="description" content={metaDescription} />
 				<meta name="keywords" content={metaKeywords} />
 				<meta name="author" content={metaAuthor} />
 				<meta name="robots" content="index, follow" />
-
 				<link rel="canonical" href={metaUrl} />
-
 				<meta property="og:type" content="website" />
 				<meta property="og:locale" content="en_US" />
 				<meta property="og:title" content={metaTitle} />
 				<meta property="og:description" content={metaDescription} />
 				<meta property="og:url" content={metaUrl} />
 				<meta property="og:image" content={metaImage} />
-
 				<meta name="twitter:card" content="summary_large_image" />
 				<meta name="twitter:title" content={metaTitle} />
 				<meta name="twitter:description" content={metaDescription} />

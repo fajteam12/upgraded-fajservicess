@@ -23,7 +23,7 @@ export const contactSidebarData = {
 		{
 			id: "mobile",
 			type: "mobile",
-			label: "Mobile 24/7",
+			label: "Mobile 7-Day",
 			value: "+971 50 746 4712",
 			href: "tel:+971507464712",
 			actionLabel: "Call",
@@ -50,7 +50,7 @@ export const contactSidebarData = {
 		{
 			id: "response",
 			icon: "clock",
-			text: "Fast 24-Hour Response",
+			text: "Fast 7 Day Response",
 		},
 		{
 			id: "areas",

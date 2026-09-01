@@ -66,13 +66,13 @@ function EmbeddedVideoSection({ content, tone = "dark" }) {
                 src={videoSrc}
                 title={content.frameTitle || content.title || "Service video"}
                 loading="lazy"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerPolicy="strict-origin-when-cross-origin"
                 allowFullScreen={content.allowFullScreen}
               />
-              {!isInteractive && (
+              {/* {!isInteractive && (
                 <div className="service-landing__video-overlay" aria-hidden="true" />
-              )}
+              )} */}
             </div>
           </div>
         </ScrollSlide>

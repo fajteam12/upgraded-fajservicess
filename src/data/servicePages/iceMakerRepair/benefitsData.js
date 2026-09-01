@@ -5,7 +5,7 @@ const benefitsData = {
     "Professional preventive care supports safe operation, clean ice, efficient production and a longer equipment life.",
   stats: [
     { value: "2010", label: "Serving the UAE Since" },
-    { value: "24/7", label: "Support Available" },
+    { value: "7-Day", label: "Support Available" },
   ],
   benefits: [
     {

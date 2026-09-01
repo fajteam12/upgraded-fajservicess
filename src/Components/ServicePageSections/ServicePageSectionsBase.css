@@ -603,7 +603,7 @@
   width: 102%;
   height: 102%;
   border: 0;
-  pointer-events: none;
+  /* pointer-events: none; */
 }
 
 .service-landing__video-overlay {

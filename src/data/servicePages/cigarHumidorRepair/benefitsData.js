@@ -5,7 +5,7 @@ const benefitsData = {
     "Preventive care supports safe operation, stable storage conditions, lower operating costs and longer equipment life.",
   stats: [
     { value: "2010", label: "Serving the UAE Since" },
-    { value: "24/7", label: "Support Available" },
+    { value: "7-Day", label: "Support Available" },
   ],
   benefits: [
     {

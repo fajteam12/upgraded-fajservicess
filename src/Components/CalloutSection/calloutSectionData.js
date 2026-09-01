@@ -20,7 +20,7 @@ export const calloutContactSectionData = {
   highlightedTitle: "",
 
   description:
-    "Our technicians are available 24/7 for urgent residential & commercial appliance breakdowns. Call our support desk now.",
+    "Our technicians are available 7-Day for urgent residential & commercial appliance breakdowns. Call our support desk now.",
 
   action: {
     label: "Call Now: +971 50 746 4712",

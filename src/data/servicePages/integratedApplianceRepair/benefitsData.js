@@ -1,7 +1,7 @@
 const benefitsData = {
   eyebrow: "Service Deliverables", title: "The Benefits of Built-In Appliance Service in Dubai",
   description: "Preventative care supports safer operation, reliable performance, lower running costs and longer appliance life.",
-  stats: [{ value: "2010", label: "Serving the UAE Since" }, { value: "24/7", label: "Support Available" }],
+  stats: [{ value: "2010", label: "Serving the UAE Since" }, { value: "7-Day", label: "Support Available" }],
   benefits: [
     { id: "built-in-safety", number: "01", title: "Ensuring Safety", description: "Routine checks reduce electrical, gas, water-leak and component hazards around cabinetry.", icon: "shield-check" },
     { id: "built-in-performance", number: "02", title: "Optimal Performance", description: "Regular maintenance helps integrated appliances operate smoothly and consistently.", icon: "sparkles" },

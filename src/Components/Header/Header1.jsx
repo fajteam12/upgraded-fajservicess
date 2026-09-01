@@ -511,7 +511,7 @@ function Header1({
 						className="faj-header__logo"
 						aria-label="FAJ Technical Services home"
 					>
-						<FAJLogoSVG />
+						<img src="https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/97537e02-f71c-42f9-4ccb-d0ff689a8600/full" alt="FAJ LOGO" />
 					</HeaderLink>
 
 					<HeaderLink to={ctaPath} className="faj-header__desktop-cta">

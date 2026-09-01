@@ -6,11 +6,11 @@ export const newsUpdatesData = {
   viewAllTo: "/blogs/",
 
   featuredArticle: {
-    id: "new-homepage-design-images/refrigerator-repair-near-me",
+    id: "blogs/Refrigerator-Repair-Near-Me",
     category: "Refrigeration",
 
     imageSrc:
-      "/img/new-homepage-design-images/refrigerator-repair-near-me.webp",
+      "/blogs/Refrigerator-Repair-Near-Me",
     imageSrcSet: "",
     imageSizes:
       "(max-width: 767px) calc(100vw - 32px), (max-width: 1199px) calc(100vw - 48px), 58vw",
@@ -31,16 +31,16 @@ export const newsUpdatesData = {
       "A malfunctioning refrigerator demands prompt expert intervention to protect your inventory. Discover key diagnostic causes, quick-fix strategies, and when to hire an HVAC refrigeration specialist in Dubai.",
 
     ctaLabel: "Read Full Article",
-    to: "/blogs/refrigerator-repair-near-me/",
+    to: "/blog/swift-solutions-refrigerator-repair-near-me-for-quick-fixes/",
   },
 
   sideArticles: [
     {
-      id: "new-homepage-design-images/hvac-contractor-dubai",
+      id: "HVAC-Contractor",
       category: "Air Conditioning",
 
       imageSrc:
-        "/img/new-homepage-design-images/hvac-contractor-dubai.webp",
+        "/HVAC-Contractor",
       imageSrcSet: "",
       imageSizes:
         "(max-width: 767px) calc(100vw - 32px), (max-width: 1199px) 45vw, 220px",
@@ -60,15 +60,15 @@ export const newsUpdatesData = {
         "Everything you need to know when choosing an HVAC contractor in Dubai.",
 
       ctaLabel: "Read Article",
-      to: "/blogs/hvac-contractor-in-dubai/",
+      to: "/blog/hvac-contractor-in-dubai-your-ultimate-guide-2023/",
     },
 
     {
-      id: "new-homepage-design-images/top-loading-washing-machine",
+      id: "blogs/Top-Load-Washing-Machine",
       category: "Home Appliances",
 
       imageSrc:
-        "/img/new-homepage-design-images/top-loading-washing-machine.webp",
+        "/blogs/Top-Load-Washing-Machine",
       imageSrcSet: "",
       imageSizes:
         "(max-width: 767px) calc(100vw - 32px), (max-width: 1199px) 45vw, 220px",
@@ -88,7 +88,7 @@ export const newsUpdatesData = {
         "Everything you need to know about top-loading washing machines and maintenance.",
 
       ctaLabel: "Read Article",
-      to: "/blogs/top-loading-washing-machine/",
+      to: "/blog/top-loading-washing-machines-a-complete-guidelines/",
     },
   ],
 };

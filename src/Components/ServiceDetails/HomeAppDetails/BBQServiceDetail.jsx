@@ -38,8 +38,8 @@ const getImageSrc = (imgPath) => {
 const BBQServiceDetail = ({ subtitle, title, reviewsbg, titleSeo, description, Author, Keyword, URL, Image }) => {
 
   // For SEO
-  const metatitle = String(titleSeo || "Barbeque Repair in Dubai | BBQ Grill Cleaning Service Near You");
-  const metadescription = String(description || "Professional barbecue repair in Dubai. Book now for BBQ grill cleaning, built-in gas grill burner service, oven & electric BBQ deep cleaning & maintenance");
+  const metatitle = String(titleSeo || "Cigar Humidor Repair | Cigar Cabinet Service Center Near You");
+  const metadescription = String(description || "FAJ specialises in cigar humidor repair. Contact us for built-in cabinet humidor, cigar fridge cooler & electric cigar cabinet maintenance and service in UAE");
   const metaAuthor = String(Author || "FAJ Technical Services L.L.C");
   const metaKeyword = String(Keyword || "BBQ Repair, BBQ Grill Cleaning Service, Barbeque Repair Dubai, Weber Repair, Electric BBQ Grill Repair Dubai");
   const metaURL = String(URL || "https://www.fajservices.ae/services/home-appliances-repair/barbeque-repair-in-dubai-barbeque-maintenance-in-dubai-bbq-service-in-dubai/");
@@ -373,7 +373,7 @@ const BBQServiceDetail = ({ subtitle, title, reviewsbg, titleSeo, description, A
                   src="https://www.youtube.com/embed/-9QrAXOJkRY?si=Godeo3hC2uCVihx8"
                   title="YouTube video player"
                   frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
                 ></iframe>
 

@@ -2,7 +2,7 @@ const benefitsData = {
   eyebrow: "Service Deliverables",
   title: "The Benefits of Cooking Range Service in Dubai",
   description: "Preventative care supports safe gas use, dependable heating, efficient cooking and longer equipment life.",
-  stats: [{ value: "2010", label: "Serving the UAE Since" }, { value: "24/7", label: "Support Available" }],
+  stats: [{ value: "2010", label: "Serving the UAE Since" }, { value: "7-Day", label: "Support Available" }],
   benefits: [
     { id: "range-safety", number: "01", title: "Ensuring Safety", description: "Routine checks reduce electrical, gas and ignition hazards to protect the household.", icon: "shield-check" },
     { id: "range-performance", number: "02", title: "Optimal Performance", description: "Regular care helps the cooking range operate smoothly and deliver consistent results.", icon: "sparkles" },

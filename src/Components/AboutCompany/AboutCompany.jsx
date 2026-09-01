@@ -112,7 +112,7 @@ const AboutCompany = ({
   imageHeight = 1500,
   imagePosition = "center center",
 
-  experienceValue = "14+",
+  experienceValue = "16+",
   experienceTitle = "Years",
   experienceLabel = "Experience",
 

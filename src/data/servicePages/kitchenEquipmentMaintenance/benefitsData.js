@@ -5,7 +5,7 @@ const benefitsData = {
     "Preventive service protects operational reliability, repair budgets and the long-term value of professional kitchen equipment.",
   stats: [
     { value: "2010", label: "Serving the UAE Since" },
-    { value: "24/7", label: "Support Available" },
+    { value: "7-Day", label: "Support Available" },
   ],
   benefits: [
     {

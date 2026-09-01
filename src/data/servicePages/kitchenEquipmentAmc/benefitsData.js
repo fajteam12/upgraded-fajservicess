@@ -5,7 +5,7 @@ const benefitsData = {
     "Professional planned care supports dependable equipment, informed decisions and predictable operating costs.",
   stats: [
     { value: "2010", label: "Serving the UAE Since" },
-    { value: "24/7", label: "Support Available" },
+    { value: "7-Day", label: "Support Available" },
   ],
   benefits: [
     {

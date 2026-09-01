@@ -24,7 +24,7 @@ export const footerData = {
 		{
 			id: "portfolio",
 			label: "Our Portfolio",
-			to: "/portfolio/",
+			to: "/our-portfolio/",
 		},
 		{
 			id: "career",

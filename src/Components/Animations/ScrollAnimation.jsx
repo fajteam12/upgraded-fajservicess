@@ -132,3 +132,52 @@ export function ShutterImage({
     </div>
   );
 }
+export function ShutterVideo({
+  src,
+  videoSrc,
+  imageSrc,
+  imageWidth,
+  imageHeight,
+  poster,
+  className = "",
+  videoClassName = "",
+  shutterColor = "#003048",
+  delay = 0,
+  width,
+  height,
+  autoPlay = true,
+  muted = true,
+  loop = true,
+  playsInline = true,
+  preload = "metadata",
+}) {
+  const [ref, visible] = useScrollVisible({ rootMargin: "-8% 0px" });
+
+  return (
+    <div
+      ref={ref}
+      className={`scroll-animation__shutter ${className}`.trim()}
+      data-visible={visible ? "true" : "false"}
+      style={{ "--scroll-animation-delay": `${delay}s` }}
+    >
+      <video
+        src={src}
+        poster={poster}
+        width={width}
+        height={height}
+        autoPlay={autoPlay}
+        muted={muted}
+        loop={loop}
+        playsInline={playsInline}
+        preload={preload}
+        className={`scroll-animation__shutter-image ${videoClassName}`.trim()}
+      />
+
+      <span
+        className="scroll-animation__shutter-panel"
+        style={{ backgroundColor: shutterColor }}
+        aria-hidden="true"
+      />
+    </div>
+  );
+}

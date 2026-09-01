@@ -435,7 +435,7 @@ const coffeemachineServicesData = [
                   height="350"
                   src="https://www.youtube.com/embed/u3cvf6mkJ1k?si=kmFZRvyU0zbmeorF"
                   title="FAJ Videos"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
                 ></iframe>
               </div>

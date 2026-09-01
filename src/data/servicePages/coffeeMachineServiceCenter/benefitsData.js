@@ -1,7 +1,7 @@
 const benefitsData = {
   eyebrow: "High Performance", title: "The Benefits of Professional Coffee Machine Service",
   description: "Preventive care supports consistent taste, safe operation, energy efficiency and longer equipment life.",
-  stats: [{ value: "2010", label: "Serving the UAE Since" }, { value: "24/7", label: "Support Available" }],
+  stats: [{ value: "2010", label: "Serving the UAE Since" }, { value: "7-Day", label: "Support Available" }],
   benefits: [
     { id: "coffee-safety", number: "01", title: "Ensuring Safety", description: "Routine inspection identifies electrical, heating, pressure and water-leak risks.", icon: "shield-check" },
     { id: "coffee-performance", number: "02", title: "Optimal Performance", description: "Correct cleaning, pressure and temperature support reliable extraction and steam.", icon: "sparkles" },

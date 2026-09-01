@@ -11,8 +11,8 @@ const heroData = {
   secondaryAction: "WhatsApp Now",
   bookingLabel: "BBQ Technical Inspection",
   image: {
-    id: "home-appliances-repair-new-design-images/barbeque-repair-services-top",
-    src: "/img/home-appliances-repair-new-design-images/barbeque-repair-services-top.webp",
+    id: "new-home-appliances-repair-new-design-images/barbeque-repair-services-top",
+    src: "https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/new-homepage-design-images/barbeque-repair-services-top/full",
     alt: "FAJ technician servicing a barbecue grill in Dubai",
     width: 853,
     height: 853,

@@ -5,7 +5,7 @@ const benefitsData = {
     "Professional care supports safer operation, dependable performance and better long-term equipment value.",
   stats: [
     { value: "2010", label: "Serving the UAE Since" },
-    { value: "24/7", label: "Support Available" },
+    { value: "7-Day", label: "Support Available" },
   ],
   benefits: [
     { id: "appliance-safety", number: "01", title: "Ensuring Safety", description: "Routine checks can identify electrical, gas, water and overheating risks before failure.", icon: "shield-check" },

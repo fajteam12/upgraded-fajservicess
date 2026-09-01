@@ -2,7 +2,7 @@ const whoWeAreStatsData = {
   cards: [
     {
       id: "experience",
-      value: "14+",
+      value: "16+",
       label: "Years Experience",
       description:
         "Delivering consistent, elite technical excellence across the UAE since 2010.",
@@ -29,7 +29,7 @@ const whoWeAreStatsData = {
       value: "100%",
       label: "Satisfaction",
       description:
-        "Backed by 24/7 support, certified parts, and elite master technicians.",
+        "Backed by 7-Day Support, certified parts, and elite master technicians.",
       icon: "shield",
     },
   ],

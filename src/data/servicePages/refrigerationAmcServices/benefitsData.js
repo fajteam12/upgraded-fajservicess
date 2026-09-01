@@ -5,7 +5,7 @@ const benefitsData = {
     "Planned professional service supports safer equipment, responsive help, predictable maintenance and improved operational efficiency.",
   stats: [
     { value: "2010", label: "Serving the UAE Since" },
-    { value: "24/7", label: "Support Available" },
+    { value: "7-Day", label: "Support Available" },
   ],
   benefits: [
     {

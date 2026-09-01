@@ -8,7 +8,7 @@ export const contactBookingData = {
     lines: ["Warehouse F-5 02, Gate 35 Street 18B,", "Al Quoz 1st Fourth, Dubai"],
   },
   phone: {
-    label: "Call Us 24/7",
+    label: "Call Us 7-Day",
     lines: ["+971 4 330 0002", "+971 50 746 4712"],
     href: "tel:+971507464712",
   },

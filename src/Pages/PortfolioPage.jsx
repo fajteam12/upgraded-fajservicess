@@ -11,6 +11,8 @@ import { calloutSectionData } from "../Components/CalloutSection/calloutSectionD
 const PortfolioPage = () => {
 	return (
 		<div className="detail-page-portfolio">
+			{/* SEO meta for portfolio page */}
+			<PortfolioDetail />
 			<PageHero
 				eyebrow="Our Work"
 				title="Our Portfolio"

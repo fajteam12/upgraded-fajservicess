@@ -2,7 +2,7 @@ export const servicesNavigation = [
   {
     label: "Air Conditioning",
     path: "/services/air-conditioning-repair/",
-    description: "AC repair, servicing and maintenance contracts",
+    description: "",
     children: [
       {
         label: "AC Service",
@@ -17,7 +17,7 @@ export const servicesNavigation = [
   {
     label: "Coffee Machine",
     path: "/services/coffee-machine/",
-    description: "Domestic and commercial coffee machine support",
+    description: "",
     children: [
       {
         label: "Coffee Machine Services",
@@ -29,10 +29,35 @@ export const servicesNavigation = [
       },
     ],
   },
+ 
+  {
+    label: "Refrigeration Equipment",
+    path: "/services/refrigeration-equipment/",
+    description: "",
+    children: [
+      {
+        label: "Ice Maker Repair",
+        path: "/services/refrigeration-equipment/ice-maker-repair/",
+      },
+      {
+        label: "Refrigeration AMC Services",
+        path: "/services/refrigeration-equipment/commercial-refrigeration-maintenance-contract-services/",
+      },
+      {
+        label: "Commercial Refrigeration Maintenance",
+        path: "/services/refrigeration-equipment/commercial-refrigeration-maintenance/",
+      },
+    ],
+  },
+  {
+    label: "PCB Repair Services",
+    path: "/services/pcb-repair-services/",
+    description: "",
+  },
   {
     label: "Home Appliances",
     path: "/services/home-appliances-repair/",
-    description: "Repair and maintenance for home appliances",
+    description: "",
     children: [
       {
         label: "Hob Repair",
@@ -88,44 +113,10 @@ export const servicesNavigation = [
       },
     ],
   },
-  {
-    label: "PCB Repair Services",
-    path: "/services/pcb-repair-services/",
-    description: "Professional electronic control board diagnostics",
-  },
-  {
-    label: "Refrigeration Equipment",
-    path: "/services/refrigeration-equipment/",
-    description: "Commercial refrigeration repair and maintenance",
-    children: [
-      {
-        label: "Ice Maker Repair",
-        path: "/services/refrigeration-equipment/ice-maker-repair/",
-      },
-      {
-        label: "Refrigeration AMC Services",
-        path: "/services/refrigeration-equipment/commercial-refrigeration-maintenance-contract-services/",
-      },
-      {
-        label: "Commercial Refrigeration Maintenance",
-        path: "/services/refrigeration-equipment/commercial-refrigeration-maintenance/",
-      },
-    ],
-  },
-  {
-    label: "Commercial Dishwasher",
-    path: "/services/commercial-dishwasher-repair/",
-    description: "Commercial dishwasher diagnosis and repair",
-  },
-  {
-    label: "Laundry Equipment",
-    path: "/services/laundry-equipment-repair/",
-    description: "Commercial laundry equipment services",
-  },
-  {
+   {
     label: "Kitchen Equipment",
     path: "/services/kitchen-equipment-maintenance/",
-    description: "Commercial kitchen repair and maintenance",
+    description: "",
     children: [
       {
         label: "Oven Repair",
@@ -149,32 +140,43 @@ export const servicesNavigation = [
       },
     ],
   },
+  {
+    label: "Laundry Equipment",
+    path: "/services/laundry-equipment-repair/",
+    description: "",
+  },
+  
+  {
+    label: "Commercial Dishwasher",
+    path: "/services/commercial-dishwasher-repair/",
+    description: "",
+  },
 ];
 
 export const aboutNavigation = [
   {
     label: "Who We Are",
     path: "/who-we-are/",
-    description: "Our team, expertise and commitment",
+    description: "",
   },
   {
     label: "Our History",
     path: "/our-history/",
-    description: "Trusted technical services since 2010",
+    description: "",
   },
   {
     label: "Our Vision & Mission",
     path: "/our-vision-and-mission/",
-    description: "Quality, safety and customer care",
+    description: "",
   },
   {
     label: "Our Portfolio",
     path: "/our-portfolio/",
-    description: "Recent repair and installation work",
+    description: "",
   },
   {
     label: "Careers",
     path: "/career/",
-    description: "Join the FAJ Technical Services team",
+    description: "",
   },
 ];

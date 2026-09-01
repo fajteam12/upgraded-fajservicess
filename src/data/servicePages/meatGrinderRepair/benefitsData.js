@@ -9,7 +9,7 @@ const benefitsData = {
       label: "Serving the UAE Since",
     },
     {
-      value: "24/7",
+      value: "7-Day",
       label: "Support Available",
     },
   ],

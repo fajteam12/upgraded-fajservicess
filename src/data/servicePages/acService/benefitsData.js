@@ -1,7 +1,7 @@
 const benefitsData = {
   eyebrow: "Preventive Maintenance Outcomes", title: "Benefits of Regular AC Service and Maintenance in Dubai",
   description: "Professional testing, cleaning and feedback help air-conditioning systems deliver dependable cooling performance.",
-  stats: [{ value: "2010", label: "Serving the UAE Since" }, { value: "24/7", label: "Support Available" }],
+  stats: [{ value: "2010", label: "Serving the UAE Since" }, { value: "7-Day", label: "Support Available" }],
   benefits: [
     { id: "ac-cooling", number: "01", title: "Cooling Efficiency", description: "A complete performance assessment helps verify that the system is delivering effective cooling.", icon: "snowflake" },
     { id: "ac-air-quality", number: "02", title: "Improved Air Quality", description: "Cleaning filters and coils removes accumulated dust and supports healthier indoor air.", icon: "shield-check" },

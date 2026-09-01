@@ -1,7 +1,7 @@
 const benefitsData = {
   eyebrow: "Service Optimisation", title: "Benefits of Regular Appliance Service and Maintenance in Dubai",
   description: "Planned care improves equipment uptime and protects long-term value across domestic and commercial appliances.",
-  stats: [{ value: "2010", label: "Serving the UAE Since" }, { value: "24/7", label: "Priority Support Options" }],
+  stats: [{ value: "2010", label: "Serving the UAE Since" }, { value: "7-Day", label: "Priority Support Options" }],
   benefits: [
     { id: "amc-routine", number: "01", title: "Routine Service", description: "Scheduled visits reduce hazards and keep key appliances under regular professional observation.", icon: "shield-check" },
     { id: "amc-on-call", number: "02", title: "Priority Callout Services", description: "Selected plans provide faster support when a covered appliance develops an unexpected fault.", icon: "clock" },

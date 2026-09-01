@@ -1,7 +1,7 @@
 const benefitsData = {
   eyebrow: "Service Deliverables", title: "The Benefits of Washing Machine Service in Dubai",
   description: "Preventative care supports safer operation, consistent cleaning, lower utility costs and longer appliance life.",
-  stats: [{ value: "2010", label: "Serving the UAE Since" }, { value: "24/7", label: "Support Available" }],
+  stats: [{ value: "2010", label: "Serving the UAE Since" }, { value: "7-Day", label: "Support Available" }],
   benefits: [
     { id: "washer-safety", number: "01", title: "Ensuring Safety", description: "Routine checks reduce electrical, water-leak and component hazards in the laundry area.", icon: "shield-check" },
     { id: "washer-performance", number: "02", title: "Optimal Performance", description: "Regular care supports smooth filling, washing, draining and spinning cycles.", icon: "sparkles" },

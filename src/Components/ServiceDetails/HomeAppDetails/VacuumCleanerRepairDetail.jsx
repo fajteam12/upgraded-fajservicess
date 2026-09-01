@@ -34,8 +34,8 @@ const getImageSrc = (imgPath) => {
 
 const VacuumCleanerRepairDetail = ({ subtitle, title, reviewsbg, titleSeo, description, Author, Keyword, URL }) => {
   // For SEO
-  const metatitle = String(titleSeo || "Best Robot Vacuum Cleaner Repair and Vacuum Service Center");
-  const metadescription = String(description || "Affordable Robot vacuum cleaner repair and service in Dubai. Call us for upright, canister & wet-dry vacuum cleaner fix near you تصليح وخدمات مكنسة كهربائية");
+  const metatitle = String(titleSeo || "Best Robot Vacuum Cleaner Repair | Top Vacuum Service Center");
+  const metadescription = String(description || "Affordable Robot vacuum cleaner repair and service in Dubai. Call FAJ for upright, canister & wet-dry vacuum cleaner fix near you تصليح وخدمات مكنسة كهربائية");
   const metaAuthor = String(Author || "FAJ Technical Services L.L.C");
   const metaKeyword = String(Keyword || "Robot vacuum cleaner repair, vacuum cleaner service, Xiaomi vacuum repair, Roomba vacuum service, TP-Link vacuum cleaner repair, Eufy vacuum cleaner service, Anker vacuum repair");
   const metaURL = String(URL || "https://www.fajservices.ae/services/home-appliances-repair/robot-vacuum-cleaner-repair/");
@@ -332,7 +332,7 @@ const VacuumCleanerRepairDetail = ({ subtitle, title, reviewsbg, titleSeo, descr
         <section className="section cs_py_30">
           <div className="container">
 
-            <h1 className="cs_fs_30">Cost-Effective Robot Vacuum Cleaner Repair & Vacuum Cleaner Service Center Near You, Dubai UAE</h1>
+            <h1 className="cs_fs_30">Best Robot Vacuum Cleaner Repair and Service Center in Dubai, UAE</h1>
             <p>FAJ is a reliable company established in 2010. We provide all types of vacuum cleaners. At FAJ, we are committed to your right to repair your robotic vacuum cleaner by offering affordable repair and servicing options.
               <br />We aim to help you avoid costly replacements and reduce waste. We provide comprehensive error fixing, repair, and servicing for robot vacuum cleaners, along with the necessary parts and products throughout Dubai, Abu Dhabi, and Sharjah. FAJ offers all your <a href="https://www.facebook.com/reel/947263921164922">robot vacuum cleaner repair</a> and maintenance needs under one roof.
             </p>
@@ -372,7 +372,7 @@ const VacuumCleanerRepairDetail = ({ subtitle, title, reviewsbg, titleSeo, descr
                   src="https://www.youtube.com/embed/M9ghmjMAJ3E"
                   title="YouTube video player"
                   frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
                 ></iframe>
 
