@@ -38,7 +38,7 @@ export default function CoffeeMachineServiceCenterInDubai() {
         <MaintenanceBenefits {...pageData.benefits} />
         <ActionCardsSection content={pageData.whyChooseUs} tone="dark" columns="three" />
         <SearchableDirectorySection content={pageData.brands} tone="soft" onAction={openBooking} />
-        <ActionCardsSection content={pageData.testimonials} tone="dark" columns="three" />
+        <ActionCardsSection content={pageData.testimonials} tone="dark" columns="three" slider={true} autoplay={true} loop={true} />
         <AccordionSection content={pageData.faqs} tone="white" />
         <BookingSection content={pageData.booking} bookingState={bookingState} tone="soft" />
       </main>

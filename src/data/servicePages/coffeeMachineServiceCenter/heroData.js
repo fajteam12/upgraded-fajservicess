@@ -1,10 +1,10 @@
 const heroData = {
   eyebrow: "FAJ Technical Services L.L.C.® · Elite Coffee Care",
-  title: "Affordable Coffee Machine Service Center and Repair in Dubai, Sharjah and Abu Dhabi",
-  subtitle: "Domestic, Office, Cafe and Restaurant Coffee Equipment",
+  title: "Affordable Coffee Machine Service Center and Repair in Dubai, Sharjah & Abu Dhabi, UAE",
+  subtitle: "Since 2010, FAJ has been providing reliable and trusted expertise in installation, best coffee machine service and maintenance, specialising in coffee machine repair in Dubai, serving home coffee machine service, office coffee machine repair, restaurant coffee machine maintenance, and cafes.",
   paragraphs: [
-    "Since 2010, FAJ has provided installation, repair and maintenance for home, office, restaurant and cafe coffee machines across the UAE.",
-    "Our technicians service espresso machines, automatic systems, vending machines, grinders and brewers through cleaning, descaling, diagnosis and parts replacement.",
+    "We work with a variety of coffee equipment, including tea & coffee vending machine repair, espresso machine maintenance, coffee grinders cleaning service, descaling professional coffee machine and automatic coffee machine error fix.",
+    "Our expert team understands the importance of functioning coffee machine servicing, aand we prioritise timely maintenance.As specialists in espresso machines, we are committed to managing and maintaining your equipment throughout its lifespan, ensuring that you enjoy reliable, great-tasting coffee every day.",
   ],
   primaryAction: "Get a Quick Quote", secondaryAction: "WhatsApp Expert", bookingLabel: "Coffee Machine Technical Inspection",
   image: { id: "coffee-machine-service-page-new-design-images/coffee-machine-service-center-top-image", src: "/img/coffee-machine-service-page-new-design-images/coffee-machine-service-center-top-image.webp", alt: "Coffee machine service center and espresso machine repair in Dubai", width: 1024, height: 1024 },

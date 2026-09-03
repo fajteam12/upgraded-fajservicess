@@ -1,13 +1,34 @@
 const serviceOverviewData = {
-  eyebrow: "Proven HVAC Expertise", title: "Our AC Repair and Service",
-  description: "Qualified technicians diagnose air-conditioning faults and maintain efficient cooling for residential and commercial properties.",
+  eyebrow: "Proven HVAC Expertise",
+  title: "Our AC Repair and Service",
+  description:
+    "When looking for AC repair & service in Dubai, choose a qualified and reputable company that meets your residential or commercial needs.",
   paragraphs: [
-    "When choosing AC repair and service in Dubai, work with a qualified company that understands the requirements of your home or business.",
-    "FAJ technicians diagnose faults, restore dependable cooling and improve system efficiency to support indoor comfort and control avoidable DEWA costs.",
+    "FAJ Skilled AC technicians can quickly diagnose issues, providing your HVAC system runs efficiently. This improves comfort during hot months and reduces Dewa bill costs, providing peace of mind with your AC cooling solutions.",
   ],
   cards: [
-    { title: "Signs Your AC Needs Attention", paragraphs: ["Arrange an inspection when the AC is not cooling, the motor or thermostat is not working, water is leaking, the compressor is struggling or electricity bills have increased."] },
-    { title: "Express and Emergency AC Repair", featured: true, paragraphs: ["Unexpected AC problems can severely affect a property during summer. Same-day and urgent requests are accepted subject to technician availability.", "Share the unit type, location and symptoms so the scheduling team can arrange suitable support."] },
+    {
+      title: "Top Common Signs That You Need AC Maintenance",
+      paragraphs: [
+        "If you notice any of these AC signs, please contact us via phone or WhatsApp chat. We are here to assist your AC cooling system in getting optimal efficiency.",
+      ],
+      bullets: [
+        { text: "AC Not Cooling Signs" },
+        { text: "Water Leaking from your AC" },
+        { text: "AC Motor not working" },
+        { text: "AC compressor is not cooling" },
+        { text: "AC Thermostat not working" },
+        { text: "High AC Electricity (DEWA) bills", strong: true },
+      ],
+    },
+    {
+      title: "Our Express and Emergency AC Repair Service in Dubai",
+      featured: true,
+      paragraphs: [
+        "If you are facing any problem in your air conditioning service at home or in your business, especially during the summer time, our same day and express AC repair service is here to help. Get the fastest best AC repair service in Dubai today. Contact us for a quote or to schedule your emergency AC repair appointment.",
+      ],
+    },
   ],
 };
+
 export default serviceOverviewData;

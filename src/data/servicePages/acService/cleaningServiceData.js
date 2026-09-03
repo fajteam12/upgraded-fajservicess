@@ -1,13 +1,48 @@
 const cleaningServiceData = {
-  eyebrow: "Top-Rated Choice", title: "Best AC Cleaning and Service in Dubai and Sharjah",
-  description: "Professional AC cleaning, maintenance and repair solutions help keep residential and commercial spaces cool and comfortable.",
-  paragraphs: [
-    "Residential and office AC cleaning removes dust, bacteria and allergens from filters, coils and accessible components to support cleaner air.",
-    "Commercial HVAC cleaning addresses larger systems, air-handling equipment and ductwork according to system condition and ventilation requirements.",
-  ],
+  eyebrow: "Top-Rated Choice",
+  title: "Best AC Cleaning & AC Service in Dubai and Sharjah",
+  description:
+    "Discover top-rated AC cleaning, maintenance, and air conditioner repair services in Dubai. Keep your space cool and comfortable with professional solutions tailored to your needs.",
+
   cards: [
-    { title: "Key Cleaning Benefits", paragraphs: ["Regular coil, filter, drain and duct cleaning can lower electricity consumption, extend equipment life, prevent avoidable breakdowns and reduce unpleasant odours."] },
-    { title: "AC Maintenance Services", featured: true, paragraphs: ["FAJ supports split, ducted, package, central, VRV, VRF, AHU and FAHU systems.", "Service scope is confirmed after inspection so the work matches the equipment and property requirements."] },
+    {
+      title: "Key to the Best AC Cleaning Services Near You",
+      paragraphs: [
+        "If you are looking for the best AC deep cleaning and services in Dubai and Sharjah, consider the following key aspects:",
+      ],
+      bulletColumns: 1,
+      bullets: [
+        {
+          title: "Residential & Office AC Cleaning and Service",
+          text:
+            "Regular, professional maintenance is essential for stopping dust, bacteria, and allergens to provide safe, breathable air.",
+        },
+        {
+          title: "Commercial / HVAC Cleaning",
+          text:
+            "Specialised cleaning for large systems involves removing debris from ductwork and air handling units, often in accordance with ventilation hygiene standards.",
+        },
+      ],
+    },
+    {
+      title: "Key Benefits",
+      paragraphs: [
+        "Regular coils cleaning, air filter cleaning, duct cleaning lowers electricity bills, extends the lifespan of equipment, prevents breakdowns, and eliminates unpleasant odours.",
+      ],
+      sections: [
+        {
+          title: "Signs Your AC Needs Cleaning",
+          bulletColumns: 1,
+          bullets: [
+            "Noticeably reduced airflow.",
+            "Visible dust accumulation around vents.",
+            "Unusual or musty odors.",
+            "Increased DEWA bills.",
+          ],
+        },
+      ],
+    },
   ],
 };
+
 export default cleaningServiceData;

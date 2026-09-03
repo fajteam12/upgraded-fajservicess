@@ -16,11 +16,14 @@ function SearchableDirectorySection({
     const normalizedQuery = query.trim().toLowerCase();
     if (!normalizedQuery) return content?.items || [];
 
-    return content.items.filter((item) =>
-      `${item.name} ${item.description}`
+    return content.items.filter((item) => {
+      const itemDescription =
+        item.description || content.defaultItemDescription || "";
+
+      return `${item.name} ${itemDescription}`
         .toLowerCase()
-        .includes(normalizedQuery)
-    );
+        .includes(normalizedQuery);
+    });
   }, [content, query]);
 
   if (!content?.items?.length) return null;
@@ -71,7 +74,11 @@ function SearchableDirectorySection({
                       item.name
                     )}
                   </h3>
-                  <p>{item.description}</p>
+                  {(item.description || content.defaultItemDescription) && (
+                    <p>
+                      {item.description || content.defaultItemDescription}
+                    </p>
+                  )}
                   {content.actionLabel && onAction && (
                     <button
                       type="button"
