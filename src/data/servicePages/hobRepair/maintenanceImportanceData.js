@@ -1,45 +1,45 @@
 const maintenanceImportanceData = {
   id: "induction-hob-maintenance-importance",
   eyebrow: "Preventative Calibration",
-  title: "Why Is Induction Hob Maintenance Service Important in Dubai?",
+  title: "Why is Induction Hob Maintenance Service Important in Dubai?",
   description:
-    "Professional care supports hob safety, efficiency and service life while reducing the risk of major faults.",
+    "Proper induction hob maintenance is essential for extending its lifespan and enhancing efficiency, especially in Dubai's climate. Here are the main benefits:",
   items: [
     {
       icon: "clock",
-      title: "Extended Hob Lifespan",
+      title: "Hob Extended Lifespan",
       description:
-        "Regular maintenance helps induction and electric hobs last longer, delaying replacement costs.",
+        "Regular maintenance helps the induction hob last longer, saving on replacement costs.",
     },
     {
       icon: "zap",
-      title: "Improved Stove Efficiency",
+      title: "Stove Improved Efficiency",
       description:
-        "A correctly maintained hob avoids unnecessary energy use and supports lower utility bills.",
+        "A well-maintained induction hob uses less energy, leading to lower utility bills, which is essential in Dubai.",
     },
     {
       icon: "dollar",
-      title: "Prevent Costly Repairs",
+      title: "Hob Preventing Costly Repair",
       description:
-        "Detecting minor faults early can stop them from developing into expensive component failures.",
+        "Catching minor issues early prevents them from escalating into expensive repairs.",
     },
     {
       icon: "shield",
-      title: "Preserve Hob Integrity",
+      title: "Stove Preserving induction hob Integrity",
       description:
-        "Regular cleaning controls residue and dust buildup that can affect hob performance and cooling.",
+        "Regular cleaning prevents dust buildup that affects performance.",
     },
     {
       icon: "alert",
-      title: "Early Problem Detection",
+      title: "Cooker Early Problem Detection",
       description:
-        "Routine technical checks identify wiring, sensor and control problems before they become serious.",
+        "Routine checks help identify potential issues before they become serious.",
     },
     {
       icon: "award",
-      title: "Cost-Effective Care",
+      title: "Hob Cost-Effective",
       description:
-        "Preventative hob care generally costs less than early replacement or major emergency repair.",
+        "Maintenance costs are lower than early replacements or major repairs. Investing in induction hob care ensures safety and efficiency and is a smart economic choice in Dubai.",
     },
   ],
 };

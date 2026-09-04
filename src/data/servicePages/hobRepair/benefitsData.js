@@ -1,8 +1,8 @@
 const benefitsData = {
   eyebrow: "Service Deliverables",
-  title: "The Benefits of Hob Service in Dubai",
+  title: "The Benefits of Hob Service Dubai",
   description:
-    "Professional preventative care supports safer operation, dependable heating and a longer hob service life.",
+    "",
   stats: [
     { value: "2010", label: "Serving the UAE Since" },
     { value: "7-Day", label: "Support Available" },
@@ -13,7 +13,7 @@ const benefitsData = {
       number: "01",
       title: "Ensuring Safety",
       description:
-        "Routine checks reduce electrical, gas and component hazards to help protect the household.",
+        "Routine checks reduce the risk of electrical faults, gas leaks, and other hazards, keeping your home and family safe..",
       icon: "shield-check",
     },
     {
@@ -21,7 +21,7 @@ const benefitsData = {
       number: "02",
       title: "Optimal Performance",
       description:
-        "Regular maintenance helps the hob operate smoothly and deliver consistent cooking results.",
+        "Regular maintenance helps your hob run smoothly and efficiently, consistently delivering the best results every time.",
       icon: "sparkles",
     },
     {
@@ -29,7 +29,7 @@ const benefitsData = {
       number: "03",
       title: "Lower Energy Bills",
       description:
-        "An efficient induction hob avoids wasted energy and can reduce monthly utility costs.",
+        "Energy efficient induction hob translate to monthly savings on utility bills, putting more money back in your pocket.",
       icon: "wind",
     },
     {
@@ -37,7 +37,7 @@ const benefitsData = {
       number: "04",
       title: "Saving Money on Repair",
       description:
-        "Preventative attention catches problems early and reduces the risk of expensive breakdowns.",
+        "Preventive maintenance catches issues early, reducing the risk of major breakdowns and expensive repair costs.",
       icon: "dollar-sign",
     },
     {
@@ -45,7 +45,7 @@ const benefitsData = {
       number: "05",
       title: "Extending Hob Lifespan",
       description:
-        "Correct cleaning and timely repair can significantly delay premature hob replacement.",
+        "Proper care and timely servicing can significantly increase life of your hob, delaying the need for replacements.",
       icon: "clock",
     },
     {
@@ -53,7 +53,7 @@ const benefitsData = {
       number: "06",
       title: "Peace of Mind",
       description:
-        "Knowing the hob is in good condition reduces the stress of unexpected cooking-appliance failure.",
+        "Knowing your hobs are in top condition gives you confidence and removes the stress of unexpected failures.",
       icon: "shield-check",
     },
   ],

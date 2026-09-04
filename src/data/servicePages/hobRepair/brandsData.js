@@ -3,49 +3,49 @@ const featuredBrands = [
     name: "Smeg Hob Repair",
     href: "/services/home-appliances-repair/brands/smeg/",
     description:
-      "Electric, induction and gas hob repair for Smeg cooking appliances across Dubai and Sharjah.",
+      "FAJ is here to support you when things go wrong. We understand that your Smeg induction hob is essential for daily life, helping you prepare meals quickly and efficiently. We are here to help you with electric and gas hob repairs near me in Dubai and Sharjah.",
   },
   {
     name: "Siemens Induction Hob Repair",
     href: "/services/home-appliances-repair/brands/siemens/",
     description:
-      "Diagnosis and repair for Siemens induction hobs and related built-in cooking appliances.",
+      " If you are facing any problems with your Siemens hob, oven, stove, refrigerator, washer dryer, or dishwasher, contact the FAJ team for induction hob repair near me and service in Dubai.",
   },
   {
     name: "La Germania Hob Repair",
     href: "/services/home-appliances-repair/brands/la-germania/",
     description:
-      "Qualified technicians provide La Germania cooker, stove and gas-hob repair in Dubai.",
+      "When you need La Germania hob repair in Dubai, we have a team of professional and qualified technicians to provide hob repair near me service, and gas stove repair services are available throughout the Dubai.",
   },
   {
     name: "Bosch Hob Repair",
     href: "/services/home-appliances-repair/brands/bosch/",
     description:
-      "Professional Bosch induction, ceramic and electric hob diagnostics and repair.",
+      "If you are looking for the best Bosch induction hob repair company in Dubai, FAJ is the ideal choice. They are known for providing exceptional service for all Bosch home appliance and are recognized as the leading Bosch hob service provider in the area.",
   },
   {
     name: "Viking Gas Range Repair",
     href: "/services/home-appliances-repair/brands/viking/",
     description:
-      "Specialist support for Viking gas ranges, ovens and other premium cooking appliances.",
+      "Your Viking appliances repair or maintenance, and we can help. For high-quality Viking gas range repair, Viking fridge freezer service, and oven maintenance in Dubai, rely on FAJ.",
   },
   {
     name: "Daewoo Hob Repair",
     href: "/services/home-appliances-repair/brands/daewoo/",
     description:
-      "Electric and gas hob service from technicians experienced with Daewoo appliances.",
+      "We provide expert services for Daewoo electric hob repair near me in Dubai. Our skilled technicians have the knowledge and expertise to diagnose and fix issues with Daewoo gas hob service, cooking range fix, refrigerator, washing machine, dryer, and more. ",
   },
   {
     name: "Neff Gas Hob Repair",
     href: "/services/home-appliances-repair/brands/neff/",
     description:
-      "Same-day options for Neff induction, gas-cooker and built-in hob repair in Dubai.",
+      "Are you concerned about your Neff induction hob malfunctioning and searching for a reliable Neff induction hob repair and service company in Dubai? Contact us for same-day gas cooker service and cooker hob repair in Dubai!",
   },
   {
     name: "Teka Induction Hob Repair",
     href: "/services/home-appliances-repair/brands/teka/",
     description:
-      "Professional repair support for Teka induction hobs, gas stoves and cooking appliances.",
+      "If you're searching for the best Teka induction hob repair in Dubai, FAJ is the ideal choice. They are renowned for delivering exceptional service for Teka gas stove service and repair, refrigerators, washing machines, and oven repairs. FAJ is recognized as the leading Teka appliance service provider in the area.",
   },
 ];
 
@@ -98,9 +98,8 @@ const additionalBrandNames = [
 
 const brandsData = {
   eyebrow: "Approved Brand Partners",
-  title: "Hob Brands We Service",
-  description:
-    "Search supported domestic and premium cooker-hob brands. Available dedicated service pages are linked from their titles.",
+  title: "We specialise in Hob services for the following brands",
+  description:"",
   searchLabel: "Search hob brands",
   searchPlaceholder: "Search cooker or hob brand",
   emptyMessage: "No matching hob brand was found. Contact us with the model details.",

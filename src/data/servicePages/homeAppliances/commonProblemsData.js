@@ -1,17 +1,15 @@
 const commonProblemsData = {
   eyebrow: "Diagnostic and Issues Guide",
-  title: "The Most Common Problems with Home Appliances",
+  title: "Common Appliance Repair Issues We Fix",
   description:
-    "Common cooling, drainage, heating and electrical symptoms that may require professional diagnosis.",
+    "At FAJ Technical Services L.L.C we provide expert home appliance repair services for a wide range of issues. If you're experiencing any of the following problems, our expert technicians are ready to assist you.",
   items: [
-    { title: "Refrigerator Problems", description: "Cooling faults can involve the defrost system, fan motor, compressor, sensors or condenser coils." },
-    { title: "Dishwasher Problems", description: "Poor cleaning, drying, leaks and drainage faults may involve filters, pumps, valves, heaters or controls." },
-    { title: "Washing Machine Problems", description: "Drainage, leaks, spinning and starting problems can involve pumps, belts, door switches, motors or control boards." },
-    { title: "Tumble Dryer Problems", description: "A dryer may tumble without heating, fail to rotate or make unusual noise because of heating, belt, motor or control faults." },
-    { title: "Stove Problems", description: "Uneven heating and flame faults may come from burner elements, switches, valves, ignition parts or electrical controls." },
-    { title: "Oven Problems", description: "Heating, ignition, thermostat, controller and valve faults can stop an oven reaching or maintaining temperature." },
-    { title: "Freezer Problems", description: "Leaks, weak cooling and ice-maker failures can involve sensors, fans, motors, controls or the refrigeration system." },
-    { title: "Coffee Machine Problems", description: "Slow or absent water flow may result from scale, pump, valve, heater or control-system faults." },
+    { title: "Washing Machine Repair", description: "Drum not rotating · Door locked defect · No power or display error · Unusual noise during operation · Drain blockage & water leakage · No spinning or excessive vibration" },
+    { title: "Tumble Dryer Repair", description: "Drum not rotating · Not drying clothes properly · Loud noise & excessive vibration · Display error or system malfunction" },
+    { title: "Dishwasher Repair", description: "No water intake · Soap dispenser not working · No steam during wash cycles · White patches left on utensils · Bad odor inside the dishwasher" },
+    { title: "Refrigerator Repair", description: "No power · Not cooling properly · Excessive ice formation · Loud compressor noise" },
+    { title: "Washer Dryer Repair", description: "Drum rotation failure · Display error messages · Clothes not drying properly · Unusual noise & excessive vibration" },
+    { title: "Freezer Repair", description: "No power · Not cooling efficiently · Ice buildup and frost issues · Compressor is making loud noises" },
   ],
 };
 

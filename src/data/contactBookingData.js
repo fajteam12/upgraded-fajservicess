@@ -5,7 +5,7 @@ export const contactBookingData = {
     "Whether you need immediate appliance repair, want to discuss an annual maintenance contract, or have a general inquiry, our team is ready to assist you.",
   location: {
     label: "Our Location",
-    lines: ["Warehouse F-5 02, Gate 35 Street 18B,", "Al Quoz 1st Fourth, Dubai"],
+    lines: ["Warehouse # S-02, Gate 35 Street 18B,", "Al Quoz Industrial Area 4, Dubai"],
   },
   phone: {
     label: "Call Us 7-Day",

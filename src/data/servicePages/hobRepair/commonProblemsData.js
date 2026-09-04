@@ -1,48 +1,48 @@
 const commonProblemsData = {
   eyebrow: "Troubleshooting Guide",
-  title: "The Most Common Problems with Induction Hobs",
+  title: "The Most Common Problems with Induction / Hob",
   description:
-    "Common error codes and operating symptoms checked by FAJ hob diagnostic technicians.",
+    "",
   items: [
     {
       title: "E8 Error Code",
       description:
-        "An E8 code can indicate a communication fault caused by loose wiring or a defective control board.",
+        "This indicates a communication issue in the stove/hob, often related to loose wiring or a faulty control board (PCB).",
     },
     {
       title: "Incorrect Cookware",
       description:
-        "Induction hobs require magnetic cookware; unsuitable pans may not be detected or heated.",
+        "Induction electric hobs require magnetic cookware to function correctly, and non-magnetic cookware may not heat properly.",
     },
     {
       title: "Burner Discoloration",
       description:
-        "Burnt food, cookware residue and heat marks can discolour ceramic or induction-hob surfaces.",
+        "This can be caused by burnt-on food from the induction hob, stubborn cookware residue, or unsightly heat marks.",
     },
     {
-      title: "Burners Cannot Share Power",
+      title: "Error Code",
       description:
-        "Difficulty distributing power between zones may indicate a control-board or fuse problem.",
+        "Difficulty Sharing Power Between Burners: This may be indicated by an E8 error code and could mean a blown fuse on the main board.",
     },
     {
-      title: "Flashing E Symbol",
+      title: "Flashing \"E\" Symbol",
       description:
-        "A flashing E can point to a stuck electronic switch, control-board fault or internal wiring problem.",
+        "This often indicates a stuck PCB electronic board, switch or button. Also, check the electrical wiring from inside the unit.",
     },
     {
       title: "Hob Not Responsive",
       description:
-        "Touch controls may stop responding because of a tripped supply, blown switch or internal wiring fault.",
+        "If the hob doesn't respond to touch, it could be due to a blown or tripped switch affecting the power supply or an inside wiring issue.",
     },
     {
       title: "Hob Not Heating Properly",
       description:
-        "Weak magnetism, uneven cookware or a faulty cooking zone can prevent correct heating.",
+        "This can occur if the cookware is not sufficiently magnetic or sits unevenly on the cooking zone or hot plate.",
     },
     {
       title: "Hob Overheating",
       description:
-        "Blocked airflow, fan problems or a defective temperature sensor can cause hob overheating.",
+        "This can happen if the heat is not circulated properly or if there's a problem with the fan or heating thermostat.",
     },
   ],
 };

@@ -1,9 +1,9 @@
 const categoriesData = {
   id: "home-appliance-categories",
   eyebrow: "Specialized Repair Categories",
-  title: "Select Home Appliance Repair Services by Category",
+  title: "Select Repair Services by Category – Easily Find the Right Appliance Repair",
   description:
-    "Choose the appliance or maintenance service you need to reach the correct specialist page quickly.",
+    "At FAJ Technical Services L.L.C. we simplify the process of selecting the right repair service for your home appliances. Whether you need washing machine repair, refrigerator repair, household appliance fixes, BBQ grill cleaning, vacuum cleaner repair, cigar humidor maintenance, or any household appliance service, our categorised repair options help you find the best solution quickly and easily.",
   items: [
     { icon: "flame", title: "Hob Repair", description: "Gas and electric hob diagnosis and repair.", href: "/services/home-appliances-repair/hob-repair-service/", actionLabel: "View Service" },
     { icon: "thermometer", title: "Oven Repair", description: "Heating, control and ignition repair for ovens.", href: "/services/home-appliances-repair/oven-repair-service/", actionLabel: "View Service" },

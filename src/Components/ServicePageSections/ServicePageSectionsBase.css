@@ -2065,3 +2065,34 @@
     scroll-behavior: auto;
   }
 }
+
+/* Optional inline links inside TwoColumnInfoSection only */
+.service-landing__center-copy .service-landing__inline-link,
+.service-landing__info-card .service-landing__inline-link {
+  color: var(--sl-accent);
+  font-weight: 800;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition:
+    color 200ms ease,
+    text-decoration-color 200ms ease;
+  /* margin-inline: 4px; */
+}
+
+.service-landing__center-copy .service-landing__inline-link:hover,
+.service-landing__info-card .service-landing__inline-link:hover {
+  color: var(--sl-navy);
+}
+
+.service-landing__info-card.is-dark .service-landing__inline-link {
+  color: var(--sl-cyan);
+}
+
+.service-landing__info-card.is-dark .service-landing__inline-link:hover {
+  color: #fff;
+}
+
+.service-landing__info-bullet-title {
+  margin-right: 4px;
+}

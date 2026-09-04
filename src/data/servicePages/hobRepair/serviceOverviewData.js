@@ -1,25 +1,28 @@
 const serviceOverviewData = {
-  eyebrow: "Expert Cooker Care",
-  title: "Same-Day Cooking Range Repair and Service",
+  eyebrow: "Expert Hob Care",
+  title: "SSame Day Cooking Range Repair & Service",
   description:
-    "Responsive hob repair and convenient Dubai workshop support for domestic cooking appliances.",
+    "It's pretty standard to experience issues with cooking appliances from time to time. Whether your induction hob suddenly stops working, your gas stove won't stay lit when you need it, or your electric hob keeps turning on and off, it's essential to manage these problems promptly.",
   paragraphs: [
-    "Cooking appliances can develop faults without warning. An induction hob may stop working, a gas flame may not stay lit, or an electric zone may cycle incorrectly.",
-    "FAJ arranges professional cooking-range repair to diagnose and correct cooker and hob faults promptly.",
+    "FAJ offers fast Services and can assist you in arranging a professional gas range repair to fix your faulty cooker.",
   ],
   cards: [
     {
-      title: "Fast and Reliable Appliance Service",
+      title: "Fast and Reliable Appliances Service",
       paragraphs: [
-        "Qualified technicians help restore faulty appliances and reduce the cost and disruption of premature replacement.",
+        {
+          parts: ["At ", { text: "FAJ Technical Services L.L.C", href:"/" }, ", we understand that appliance breakdowns never happen at a convenient time. That's why our trained and qualified technicians are here to provide you with reliable appliance repair services. With our help, you can avoid the expense of purchasing a new appliance and get your appliance up and running again before you even have a chance to stress about it."]
+        }
       ],
     },
     {
       title: "FAJ Dubai Technical Workshop",
       featured: true,
       paragraphs: [
-        "Our workshop near Umm Suqeim Road is accessible from Al Khail Road and Sheikh Zayed Road.",
-        "Customers who drop off eligible equipment can receive promotional discounts on inspection and subsequent services.",
+        {
+          parts:["If you require repairs for your coffee machine, stand mixer, vacuum cleaner, or other domestic appliances or commercial equipment, please contact us. The ", { text: "FAJ workshop", href: "https://www.google.com/maps/dir//Warehouse+No+-+S-02+Gate+35+Street+18b+-+Al+Quoz+-+Al+Quoz+Industrial+Area+4+-+Dubai+-+United+Arab+Emirates/@25.1105958,55.1452595,22158m/data=!3m1!1e3!4m8!4m7!1m0!1m5!1m1!1s0x3e5f699a600aceeb:0xa6121b25d557aa94!2m2!1d55.227661!2d25.1106186?entry=ttu&g_ep=EgoyMDI1MDQyOS4wIKXMDSoASAFQAw%3D%3D", external: true }, " is located near the Umm Suqeim road and is easily accessible from Al Khail Road and Sheikh Zayed Road."]
+        },
+        "When you drop off your appliance at the workshop, you will receive a discount on the technical inspection fee and other services.",
       ],
     },
   ],

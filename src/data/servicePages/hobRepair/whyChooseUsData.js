@@ -1,21 +1,20 @@
 const whyChooseUsData = {
   id: "why-choose-faj-hob-repair",
   eyebrow: "FAJ Service Promise",
-  title: "Choose Us for Reliable, Exceptional Service Tailored to Your Needs",
-  description:
-    "Responsive hob support, practical scheduling and experienced appliance technicians across Dubai and Sharjah.",
+  title: "CHOOSE US FOR RELIABLE, EXCEPTIONAL SERVICE TAILORED TO YOUR NEEDS!",
+  description:"",
   items: [
     {
       icon: "zap",
-      badge: "Reliable, Priority and Quick",
-      title: "Fast, Reliable Service",
+      badge: "Fast, Reliable Service",
+      title: "Reliable, Priority, and Quick",
       description:
-        "Same-day and next-day visit options help customers receive hob support quickly.",
+        "You can count on efficient service! Our same-day repair or next-day service visits ensure that your needs are met quickly.",
     },
     {
       icon: "shield",
-      badge: "Feeling of Calm",
-      title: "We Are Experts",
+      badge: "Expert Planned Care",
+      title: "Feeling Of Calm",
       description:
         "A maintenance contract provides planned hob service throughout the year for smoother operation.",
     },
@@ -24,28 +23,28 @@ const whyChooseUsData = {
       badge: "Flexible Scheduling",
       title: "You Are in Control",
       description:
-        "Choose an appointment date and time with a practical three-to-four-hour arrival window.",
+        "Choose a day and time for your hob repair in Dubai or Sharjah. With a 3-4 hour window for when our technician will arrive.",
     },
     {
       icon: "wrench",
       badge: "Brand Experience",
       title: "We Are Experts",
       description:
-        "Major appliance brands rely on experienced technicians for hob repair and maintenance.",
+        "We are experts in hob repair this is why most major brands trust us to handle their service and maintenance needs.",
     },
     {
       icon: "dollar",
       badge: "Customer Value",
       title: "Great Value",
       description:
-        "Eligible inspection includes diagnosis, transport and reinstallation for up to two hobs at one Dubai location.",
+        "Inspection fee includes diagnosis, transport, and reinstallation upto two hob at the same location in Dubai.",
     },
     {
       icon: "award",
       badge: "Dependable Care",
       title: "Trustworthy",
       description:
-        "Trained hob technicians provide professional service for a broad range of appliance brands.",
+        "Our skilled hob technicians are highly trained, and we provide excellent service for a variety of major brands.",
     },
   ],
 };

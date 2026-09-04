@@ -1,15 +1,15 @@
 const whyChooseUsData = {
   eyebrow: "Guaranteed Satisfaction",
-  title: "Reliable, Exceptional Service Tailored to Your Needs",
+  title: "CHOOSE US FOR RELIABLE, EXCEPTIONAL SERVICE TAILORED TO YOUR NEEDS!",
   description:
-    "Practical scheduling, experienced technicians and clear appliance-repair advice across the UAE.",
+    "",
   items: [
-    { icon: "clock", badge: "Reliable and Quick", title: "Fast, Reliable Service", description: "Same-day or next-day scheduling is offered where technician and parts availability allow." },
-    { icon: "shield", badge: "Preventive Protection", title: "Year-Round Confidence", description: "Maintenance contracts help keep essential household appliances monitored through the year." },
-    { icon: "calendar", badge: "Flexible Scheduling", title: "You Are in Control", description: "Choose a suitable day and practical arrival window for service in Dubai or Sharjah." },
-    { icon: "award", badge: "Technical Specialists", title: "Appliance Experts", description: "Our technicians diagnose cooling, heating, drainage, mechanical and electrical faults." },
-    { icon: "dollar", badge: "Clear Value", title: "Transparent Inspection", description: "Diagnosis and quotation help customers make informed repair or replacement decisions." },
-    { icon: "check", badge: "Established 2010", title: "Trustworthy UAE Support", description: "FAJ supports homes and managed properties with established appliance-service expertise." },
+    { icon: "clock", badge: "Fast, Reliable Service", title: "Reliable, Priority, and Quick", description: "You can count on efficient service! Our same-day repair or next-day service visits ensure that your needs are met quickly." },
+    { icon: "shield", badge: "Preventive Protection", title: "Feeling Of Calm", description: "With a maintenance contract, you get a full year of service, ensuring your appliance runs smoothly and providing peace of mind." },
+    { icon: "calendar", badge: "Flexible Scheduling", title: "You Are in Control", description: "Choose a day and time for your appliance repair in Dubai or Sharjah. With a 3-4 hour window for when our technician will arrive." },
+    { icon: "award", badge: "Technical Specialists", title: "We Are Experts", description: "We are experts in appliance repair this is why most major brands trust us to handle their service and maintenance needs." },
+    { icon: "dollar", badge: "Clear Value", title: "Great Value", description: "Inspection fee includes diagnosis, transport, and reinstallation upto two Home Appliances at the same location in Dubai." },
+    { icon: "check", badge: "Established 2010", title: "Trustworthy", description: "Our skilled appliance technicians are highly trained, and we provide excellent service for a variety of major brands." },
   ],
 };
 

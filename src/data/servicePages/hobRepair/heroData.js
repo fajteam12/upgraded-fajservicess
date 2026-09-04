@@ -1,10 +1,9 @@
 const heroData = {
   eyebrow: "FAJ Technical Services L.L.C.®",
   title: "Same Day Hob Service Center and Gas & Electric Stove Repair Near You",
-  subtitle: "Induction, Gas and Electric Hob Repair",
+  subtitle: "Since 2010, we have been providing reliable electric hob repair services.",
   paragraphs: [
-    "Since 2010, FAJ has provided reliable electric and gas hob repair services across Dubai and Sharjah.",
-    "Our trained technicians provide practical, affordable cooker-hob diagnostics and repair at your location when unexpected faults interrupt daily cooking.",
+    "We recognise that hobs can break down unexpectedly, so we provide high-quality and affordable cooker hob repair. Our trained technicians are available throughout Dubai and Sharjah to repair your electric or gas hob and stove service at your location.",
   ],
   primaryAction: "Book Hob Repair",
   secondaryAction: "WhatsApp Now",

@@ -1,6 +1,6 @@
 const serviceCenterData = {
   eyebrow: "Expert Freestanding Care",
-  title: "Best Home Appliance Service Center",
+  title: "Best Home Appliance Service Center ",
   description:
     "Fast diagnosis, practical repair recommendations and workshop support for domestic appliances.",
   paragraphs: [

@@ -8,52 +8,52 @@ const faqsData = {
     {
       question: "How do induction hobs work?",
       answer:
-        "An induction hob creates a magnetic field that heats compatible cookware directly instead of heating a traditional exposed element.",
+        "Induction hobs generate a magnetic field that heats the cookware directly, rather than heating the hob itself.",
     },
     {
       question: "What cookware is needed for induction hobs?",
       answer:
-        "Induction hobs require magnetic cookware such as cast iron or compatible stainless steel. Aluminium, copper or glass requires a suitable induction-compatible base.",
+        "You will need cookware made of ferrous metals, such as cast iron or stainless steel, that can be attracted to a magnet.",
     },
     {
       question: "Are induction hobs safe?",
       answer:
-        "Induction hobs are generally safe because heat is generated in the pan and there is no open flame. The glass can still become hot from cookware, so normal precautions remain necessary.",
+        "Yes, induction hobs are generally considered safe because the surface remains cool, and heat is transferred directly to the pan.",
     },
     {
-      question: "Are there downsides to induction hobs?",
+      question: "Are there any downsides to induction hobs?",
       answer:
-        "They require compatible cookware and often cost more initially. People with implanted medical devices should follow their manufacturer's medical guidance regarding electromagnetic appliances.",
+        "You might need to buy new cookware, and some users find induction hobs noisy, especially at high temperatures.",
     },
     {
       question: "How long do induction hobs last?",
       answer:
-        "A quality built-in induction hob can often last 10 to 15 years with suitable cleaning, correct use and timely professional maintenance.",
+        "With proper maintenance, induction hobs can last between 10 to 15 years.",
     },
     {
-      question: "What happens if I use a non-compatible pan?",
+      question: "What happens if I use a non-compatible pan on an induction hob?",
       answer:
-        "The hob normally fails to detect the pan and does not start heating, often displaying a cookware or empty-pan symbol.",
+        "If you use a pan that is not compatible, nothing will happen; the hob will not heat the pan unless it has a magnetic base.",
     },
     {
       question: "How do I clean an induction hob?",
       answer:
-        "Allow the surface to cool, use a ceramic-glass cleaner and wipe it with a soft microfibre cloth. A suitable glass scraper can remove stubborn residue when used carefully.",
+        "Induction hobs are generally easy to clean. Many models come with a quick clean feature, allowing you to wipe away spills and stains before they set.",
     },
     {
       question: "What cannot be cooked on induction?",
       answer:
-        "Most dishes can be cooked using compatible cookware. Direct open-flame roasting or charring cannot be performed because induction does not produce a flame.",
+        "Aluminium or aluminium-clad, copper or copper-clad, aluminium foil, glass/ceramic, and some stainless steel products cannot be used (because they will not attract and hold a magnet).",
     },
     {
-      question: "Can I leave an induction hob on overnight?",
+      question: "Can I leave the induction hob on overnight?",
       answer:
-        "No. The hob should be switched off when unattended, even when automatic pan-detection and safety shut-off features are available.",
+        "As previously explained, without a pan, there is no heat; you can't leave an induction hob on unintentionally unless you also leave the pan in place.",
     },
     {
-      question: "Can eggs be boiled on an induction hob?",
+      question: "Can we boil eggs on an induction?",
       answer:
-        "Yes. Compatible cookware can boil water quickly because induction transfers energy efficiently into the pan.",
+        "Place the eggs in a pot and cover with cold water by an inch. Bring to a gentle boil over medium-high heat. Setting number 6 is good if you're using induction.",
     },
   ],
 };

@@ -1,9 +1,9 @@
 const newsData = {
   id: "home-appliance-news",
-  eyebrow: "Latest Insights",
-  title: "News and Updates",
+  eyebrow: "News and Updates",
+  title: "WE DELIVER RELIABLE, AFFORDABLE SERVICES WITH DEDICATED SUPPORT FOR SATISFACTION",
   description:
-    "Practical appliance guides and maintenance insights from the FAJ technical team.",
+    "Installation, repair, or maintenance service agreement for your home, office, or commercial needs in Dubai, Sharjah and Abu Dhabi, offers expert and affordable solutions.",
   items: [
     {
       icon: "refrigerator",

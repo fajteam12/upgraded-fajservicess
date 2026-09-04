@@ -1,30 +1,37 @@
 const servicesOfferedData = {
   id: "induction-hob-services",
   eyebrow: "Induction Solutions",
-  title: "Services We Offer for Induction Hobs",
+  title: "HERE ARE THE SERVICES WE OFFER FOR INDUCTION HOB",
   description:
-    "Installation, diagnosis and repair for built-in gas, electric, ceramic and induction hobs.",
+    "We specialise in all types and brands of induction hobs, including built-in units.",
   items: [
     {
       icon: "wrench",
       title: "Hob Installation",
       description:
-        "Professional installation of compatible hob types and brands for safe, efficient operation.",
+        "We provide professional installation of various types and brands of induction hobs to ensure optimal performance and efficiency.",
       actionLabel: "Request Installation",
     },
     {
       icon: "thermometer",
       title: "Hob Diagnostics",
       description:
-        "Comprehensive fault finding, equipment assessment and a detailed repair quotation.",
+        "Our team offers comprehensive fault-finding services to diagnose any issues effectively. We conduct eligibility assessments and provide detailed quotations to resolve any concerns with your system.",
       actionLabel: "Book Diagnostics",
     },
     {
       icon: "flame",
       title: "Hob Repair Service",
       description:
-        "Responsive component and system repairs for gas leaks, electrical failures and heating malfunctions.",
+        "We offer efficient repair services for all cooking hob components. Our team quickly addresses leaks, electrical failures, and system malfunctions.",
       actionLabel: "Request Repair",
+    },
+    {
+      icon: "clock",
+      title: "Hob Annual Maintenance Contract",
+      description:
+        "This contract outlines the terms and services covered for the yearly maintenance of your induction hob.",
+      actionLabel: "Request AMC",
     },
   ],
 };

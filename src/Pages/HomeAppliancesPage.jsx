@@ -66,10 +66,10 @@ export default function HomeAppliancesPage() {
         <NumberedGridSection
           content={pageData.commonProblems}
           tone="soft"
-          columns="four"
+          columns="three"
         />
 
-        <MetricCardsSection content={pageData.maintenanceImportance} />
+        {/* <MetricCardsSection content={pageData.maintenanceImportance} /> */}
 
         <ActionCardsSection
           content={pageData.servicesOffered}
@@ -95,13 +95,16 @@ export default function HomeAppliancesPage() {
 
         <ActionCardsSection
           content={pageData.testimonials}
-          tone="white"
+          tone="dark"
           columns="three"
+          slider
+          autoPlay
+          loop
         />
 
         <ActionCardsSection
           content={pageData.news}
-          tone="dark"
+          tone="soft"
           columns="three"
         />
 
