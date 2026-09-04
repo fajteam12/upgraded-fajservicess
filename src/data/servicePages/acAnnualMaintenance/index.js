@@ -12,6 +12,11 @@ import servicesOfferedData from "./servicesOfferedData";
 import testimonialsData from "./testimonialsData";
 import whyChooseUsData from "./whyChooseUsData";
 import contractsData from "../airConditioning/contractsData";
+import energyTipsData from "./energyTipsData";
+import amcImportanceData from "./amcImportant";
+import amcIncludedData from "./includedInAMC";
+import repairPriceData from "./repairPriceData";
+import peaceOfMindData from "./peaceOfMindData";
 
-const acAnnualMaintenanceData = { seo: seoData, contact: contactData, hero: heroData, serviceOverview: serviceOverviewData, contracts: contractsData, maintenanceImportance: maintenanceImportanceData, commonProblems: commonProblemsData, servicesOffered: servicesOfferedData, benefits: benefitsData, whyChooseUs: whyChooseUsData, brands: brandsData, testimonials: testimonialsData, faqs: faqsData, booking: bookingData };
+const acAnnualMaintenanceData = { seo: seoData, contact: contactData, hero: heroData, serviceOverview: serviceOverviewData, contracts: contractsData, maintenanceImportance: maintenanceImportanceData, commonProblems: commonProblemsData, servicesOffered: servicesOfferedData, benefits: benefitsData, whyChooseUs: whyChooseUsData, brands: brandsData, testimonials: testimonialsData, faqs: faqsData, booking: bookingData, energyTips: energyTipsData, amcImportance: amcImportanceData, amcIncluded: amcIncludedData, repairPrice: repairPriceData, peaceOfMind: peaceOfMindData };
 export default acAnnualMaintenanceData;

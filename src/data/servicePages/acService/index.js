@@ -17,6 +17,7 @@ import testimonialsData from "./testimonialsData";
 import videoData from "./videoData";
 import whyChooseUsData from "./whyChooseUsData";
 import contractsData from "../airConditioning/contractsData";
+import repairPriceData from "./repairPrice";
 
-const acServiceData = { seo: seoData, contact: contactData, hero: heroData, pricing: pricingData, contracts: contractsData, serviceOverview: serviceOverviewData, video: videoData, maintenanceImportance: maintenanceImportanceData, commonProblems: commonProblemsData, servicesOffered: servicesOfferedData, benefits: benefitsData, cleaningService: cleaningServiceData, whyChooseUs: whyChooseUsData, brands: brandsData, sparePartsRepair: sparePartsRepairData, energyTips: energyTipsData, testimonials: testimonialsData, faqs: faqsData, booking: bookingData };
+const acServiceData = { seo: seoData, contact: contactData, hero: heroData, pricing: pricingData, contracts: contractsData, serviceOverview: serviceOverviewData, video: videoData, maintenanceImportance: maintenanceImportanceData, commonProblems: commonProblemsData, servicesOffered: servicesOfferedData, benefits: benefitsData, cleaningService: cleaningServiceData, whyChooseUs: whyChooseUsData, brands: brandsData, sparePartsRepair: sparePartsRepairData, energyTips: energyTipsData, repairPrice: repairPriceData, testimonials: testimonialsData, faqs: faqsData, booking: bookingData };
 export default acServiceData;
