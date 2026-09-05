@@ -4,7 +4,7 @@ const heroData = {
   subtitle: "Dishwasher Repair and Maintenance in Dubai",
   paragraphs: [
     "Since 2010, FAJ has been a trusted name for dishwasher repair and service across Dubai and Sharjah.",
-    "Our skilled technicians service major brands with professional tools, prioritising practical repair over premature replacement.",
+    "We prioritise repairs over replacements, helping you save money and avoid the hassle of buying a new dishwasher. Rely on our experienced experts for fast and reliable dishwasher maintenance in Dubai!",
   ],
   primaryAction: "Book Dishwasher Repair",
   secondaryAction: "WhatsApp Now",

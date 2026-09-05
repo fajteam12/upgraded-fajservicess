@@ -35,7 +35,7 @@ const pricingData = {
           {
             label: "Terms & Conditions",
             text:
-              "*Starting from AED 100, callout fee applies based on the type, brand, capacity of the appliance unit, and location for each diagnosis.",
+              "*Starting from AED 157, callout fee applies based on the type, brand, capacity of the appliance unit, and location for each diagnosis.",
           },
         ],
       },
@@ -70,7 +70,7 @@ const pricingData = {
           {
             label: "Terms & Conditions",
             text:
-              "*Starting from AED 230 fee applies based on the Capacity: Based on Type, Model, and Area for each unit.",
+              "*Starting from AED 340 fee applies based on the Capacity: Based on Type, Model, and Area for each unit.",
           },
         ],
       },

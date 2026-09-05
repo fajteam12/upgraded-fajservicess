@@ -1,48 +1,48 @@
 const commonProblemsData = {
   eyebrow: "Troubleshooting Guide",
-  title: "The Most Common Refrigerator and Freezer Problems",
+  title: "The Most Common Problems with the Refrigerator and Freezer",
   description:
-    "Common cooling symptoms checked during professional fridge and freezer diagnosis.",
+    "",
   items: [
     {
       title: "Fridge Not Cooling",
       description:
-        "Gas, thermostat, airflow or coil problems can prevent a refrigerator from cooling correctly.",
+        "If the refrigerator coils are hot but the fridge isn't cooling, there may be a problem with the gas, thermostat, or the fridge coils.",
     },
     {
       title: "Water Leaking",
       description:
-        "A blocked defrost drain or faulty water-supply line commonly causes refrigerator leakage.",
+        "A common issue with refrigerators is water leakage, often caused by a blocked defrost drain or a faulty water supply line.",
     },
     {
       title: "Refrigerator Freezing Food",
       description:
-        "A faulty temperature-control thermostat or sensor can make the cabinet excessively cold.",
+        "If your refrigerator is freezing food, it's likely due to a faulty temperature control thermostat that regulates the cooling voltage.",
     },
     {
       title: "Fridge Overheating",
       description:
-        "Excess heat can stress the compressor and other parts and should be investigated promptly.",
+        "Fridge overheating can damage the compressor and other parts of your refrigerator. It is essential to address this issue promptly.",
     },
     {
       title: "Defective Thermostat",
       description:
-        "Thermostat, PCB and compressor faults generally require professional diagnosis and repair.",
+        "Defective temperature control thermostat, PCB, and compressor issues usually require a repair technician to address.",
     },
     {
-      title: "Fridge Running Constantly",
+      title: "Fridge Running Always",
       description:
-        "A faulty thermostat, relay or sensor may prevent the appliance from reaching its set temperature.",
+        "If your fridge runs constantly, a faulty thermostat, relay, or sensor might prevent it from reaching the desired temperature as set.",
     },
     {
       title: "Dirty Condenser Coils",
       description:
-        "Dusty coils reduce heat transfer, increasing compressor workload and lowering cooling efficiency.",
+        "Ensure that these condensing coils are clean, as this can affect the compressor's operation, impacting cooling and compressor efficiency.",
     },
     {
       title: "Door Seal Issues",
       description:
-        "A worn gasket allows cold air to escape, causing temperature fluctuations and energy waste.",
+        "A worn door seal can cause temperature fluctuations and energy waste. Inspect the seal regularly to ensure proper function.",
     },
   ],
 };

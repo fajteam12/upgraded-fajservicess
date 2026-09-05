@@ -64,7 +64,7 @@ const pricingData = {
           {
             label: "Terms & Conditions",
             text:
-              "*Starting from AED 230 fee applies based on the Capacity: Based on Type, Model, and Area for each unit.",
+              "*Starting from AED 340 fee applies based on the Capacity: Based on Type, Model, and Area for each unit.",
           },
         ],
       }, 

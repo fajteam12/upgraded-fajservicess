@@ -4,9 +4,9 @@ const pricingData = {
   defaultBadge: "Professional Care", pricePrefix: "Starting from", actionLabel: "Book now",
   items: [
     { 
-      title: "Dishwasher Technical Inspection", 
+      title: "Dishwasher Technical Inspection Price", 
       price: "AED 157", 
-      description: "A technician diagnoses the faulty dishwasher before providing a repair and parts quotation.",
+      description: "Just tell us about your faulty appliance, and we will provide a quote for repair / parts. Our technician will arrive at a time that is suitable for you.",
       popup: {
         title: "Inspection / Check-Up Cost scope of work",
         sections: [
@@ -30,7 +30,7 @@ const pricingData = {
           {
             label: "Terms & Conditions",
             text:
-              "*Starting from AED 100, callout fee applies based on the type, brand, capacity of the appliance unit, and location for each diagnosis.",
+              "*Starting from AED 157, callout fee applies based on the type, brand, capacity of the appliance unit, and location for each diagnosis.",
           },
         ],
       }, 
@@ -40,7 +40,7 @@ const pricingData = {
       subtitle: "50-Day Service Warranty", 
       badge: "Popular", 
       price: "AED 340", 
-      description: "Professional dishwasher cleaning with scheduled availability across Dubai.",
+      description: "Book reliable appliance cleaning professionals for your equipment. Our teams offer competitive pricing & limited-time availability across Dubai.",
       popup: {
         title: "Depending on quantities, capacity, type, model, and area",
         sections: [
@@ -57,7 +57,7 @@ const pricingData = {
           {
             label: "Terms & Conditions",
             text:
-              "*Starting from AED 230 fee applies based on the Capacity: Based on Type, Model, and Area for each unit.",
+              "*Starting from AED 340 fee applies based on the Capacity: Based on Type, Model, and Area for each unit.",
           },
         ],
       },
@@ -65,7 +65,7 @@ const pricingData = {
     { 
       title: "Dishwasher Installation", 
       price: "AED 280", 
-      description: "Professional installation with suitable positioning, plumbing and electrical connections.",
+      description: "FAJ expert technicians will provide assistance to install home appliances. Upgrade your kitchen with professional appliance installations!",
       popup: {
         title: "Depending on quantities, capacity, type, model, and area",
         sections: [

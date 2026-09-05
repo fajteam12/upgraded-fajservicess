@@ -669,7 +669,7 @@
   } */
   
   .faj-header--solid{
-    background: rgb(0 0 0 / 34%);
+    background: var(--faj-dark);
   }
 }
 @media (max-width: 420px) {
@@ -688,7 +688,7 @@
   }
 
   .faj-header__spacer {
-    height: 67px;
+    height: 66px;
   }
 }
 

@@ -1,15 +1,15 @@
 const commonProblemsData = {
   eyebrow: "Troubleshooting Guide", title: "Common Washing Machine Problems That May Require Maintenance",
-  description: "Common leaks, noise, drainage, connection and drum symptoms checked during professional diagnosis.",
+  description: "",
   items: [
-    { title: "Worn or Damaged Hoses", description: "Cracked drain or fill hoses and damaged inlet connections can cause water leakage." },
-    { title: "Loose Connections", description: "Loose wall and machine inlet connections can interrupt filling or leak during operation." },
-    { title: "Faulty Door Seals or Gaskets", description: "Cracked or distorted rubber seals around the washer door commonly allow water to escape." },
-    { title: "Faulty Drain Pump", description: "A worn or damaged pump can prevent water from draining at the end of a cycle." },
-    { title: "Clogged Drain Hose or Pump", description: "Lint and debris in the drain hose, pump or filter can cause standing water and error codes." },
-    { title: "Loud Noises", description: "Grinding, rumbling or humming may indicate motor, bearing, drum-spider or obstruction problems." },
-    { title: "Drum Does Not Rotate", description: "PCB, motor, belt or worn carbon-brush faults can stop the drum from turning." },
-    { title: "Door and Lid Switch Issues", description: "A failed latch or switch connection can prevent startup or stop a machine mid-cycle." },
+    { title: "Worn or Damaged Hoses", description: "Inspect the drain line and fill water hoses carefully for cracks in the pipe, loose inlet connections, or damaged pipe hoses." },
+    { title: "Loose Connections", description: "Ensure all water connections are tight and secure, especially at the water inlet valve from wall or from machine inlet." },
+    { title: "Faulty Door Seals or Gaskets", description: "Inspect the washing machine gasket for cracks and examine the rubber seals and gaskets around the washer door for damage." },
+    { title: "Faulty Drain Pump", description: "A faulty drain pump can prevent water from draining properly. Check for full damage or problems that could affect performance." },
+    { title: "Clogged Drain Hose or Pump", description: "Clean the washing machine's drain hose and check for clogs or blockages in the drain pump or inlet pump filter." },
+    { title: "Loud Noises", description: "Grinding, rumbling, or humming washing machine noises may indicate motor, drum spider, or both bearing damage in machine." },
+    { title: "Drum Doesn't Rotate", description: "A malfunctioning of washing machine PCB, motor or worn/faulty motor carbon brushes can prevent drum from spinning." },
+    { title: "Door and Lid Switch Issues", description: "A malfunctioning lid switch or a connection can prevent the washing machine from starting or cause it to stop mid-cycle." },
   ],
 };
 export default commonProblemsData;

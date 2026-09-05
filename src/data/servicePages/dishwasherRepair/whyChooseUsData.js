@@ -1,14 +1,14 @@
 const whyChooseUsData = {
   id: "why-choose-faj-dishwasher-repair", eyebrow: "FAJ Service Promise",
-  title: "Choose Us for Reliable, Exceptional Service Tailored to Your Needs",
-  description: "Responsive dishwasher support, practical scheduling and experienced appliance technicians across Dubai and Sharjah.",
+  title: "CHOOSE US FOR RELIABLE, EXCEPTIONAL SERVICE TAILORED TO YOUR NEEDS!",
+  description: "",
   items: [
-    { icon: "zap", badge: "Reliable, Priority and Quick", title: "Fast, Reliable Service", description: "Same-day and next-day options help customers receive dishwasher support quickly." },
-    { icon: "shield", badge: "Feeling of Calm", title: "Planned Expert Care", description: "A maintenance contract provides scheduled dishwasher service throughout the year." },
-    { icon: "calendar", badge: "Flexible Scheduling", title: "You Are in Control", description: "Choose a suitable date with a practical three-to-four-hour arrival window." },
-    { icon: "wrench", badge: "Brand Experience", title: "We Are Experts", description: "Experienced technicians diagnose and repair dishwashers from many major appliance brands." },
-    { icon: "dollar", badge: "Customer Value", title: "Great Value", description: "Eligible inspection includes diagnosis, transport and reinstallation for up to two dishwashers at one Dubai location." },
-    { icon: "award", badge: "Dependable Care", title: "Trustworthy", description: "Trained dishwasher technicians provide professional service for a broad range of models." },
+    { icon: "zap", badge: "Fast, Reliable Service", title: "Reliable, Priority, and Quick", description: "You can count on efficient service! Our same-day repair or next-day service visits ensure that your needs are met quickly." },
+    { icon: "shield", badge: "Planned Expert Care", title: "Feeling of Calm", description: "With a maintenance contract, you get a full year of service, ensuring your dishwasher runs smoothly and providing peace of mind." },
+    { icon: "calendar", badge: "Flexible Scheduling", title: "You Are in Control", description: "Choose a day and time for your dishwasher repair in Dubai or Sharjah. With a 3-4 hour window for when our technician will arrive." },
+    { icon: "wrench", badge: "Brand Experience", title: "We Are Experts", description: "We are experts in dishwasher repair this is why most major brands trust us to handle their service and maintenance needs." },
+    { icon: "dollar", badge: "Customer Value", title: "Great Value", description: "Inspection fee includes diagnosis, transport, and reinstallation upto two dishwasher at the same location in Dubai." },
+    { icon: "award", badge: "Dependable Care", title: "Trustworthy", description: "Our skilled dishwasher technicians are highly trained, and we provide excellent service for a variety of major brands." },
   ],
 };
 export default whyChooseUsData;

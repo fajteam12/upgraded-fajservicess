@@ -8,62 +8,62 @@ const faqsData = {
     {
       question: "What are the benefits of using a gas stove?",
       answer:
-        "Gas stoves offer instant heat control, cost-effective operation with natural gas and consistent heat for even cooking.",
+        "Gas stoves offer instant heat control, cost-effectiveness with natural gas, and consistent heat for even cooking.",
     },
     {
       question: "How do I clean a gas stove?",
       answer:
-        "Remove the grates and burner caps, wash them in warm soapy water, clean the stovetop with a non-abrasive sponge and mild detergent, clear burner-head blockages with a soft brush, then dry every part completely before reassembly.",
+        "Regular cleaning involves wiping the surface with a damp cloth and mild detergent. For tougher stains, use a specialised stove cleaner and scrub the grates and burners.",
     },
     {
       question: "How often should I check my gas stove for leaks?",
       answer:
-        "Gas-line connections should be checked at least annually. A certified gas technician can pressure-test the system and safely inspect the connections.",
+        "It’s advisable to check for leaks annually or whenever you smell gas near the stove.",
     },
     {
       question: "What should I do if I smell gas?",
       answer:
-        "Turn off the main gas supply, open doors and windows, avoid electrical switches, flames and sparks, evacuate the property and contact emergency services or a qualified gas technician from a safe location.",
+        "Do not light any matches or turn on any electrical switches. Open windows to ventilate, turn off the gas supply if possible, and call a professional.",
     },
     {
-      question: "What is the difference between a conventional and a convection gas oven?",
+      question: "What’s the difference between a conventional and a convection gas stove?",
       answer:
-        "A conventional oven relies on naturally circulating hot air, while a convection oven uses a fan to circulate heat for faster and more even cooking.",
+        "Convection stoves have fans that circulate hot air, cooking food more evenly and quickly than conventional stoves.",
     },
     {
       question: "How do I convert my gas stove from natural gas to propane?",
       answer:
-        "Conversion normally requires approved burner orifices, regulator changes and valve adjustment. A licensed gas technician should perform it using the manufacturer's conversion kit.",
+        "You need a conversion kit, and to ensure safety, a qualified technician should perform the conversion.",
     },
     {
       question: "Can I install a gas stove myself?",
       answer:
-        "A certified technician should connect the gas line, pressure-test for leaks and calibrate the ignition system so the installation meets local safety requirements.",
+        "It’s recommended to have your gas stove installed by an expert professional to ensure it meets safety standards.",
     },
     {
       question: "Do gas stoves provide better temperature control than electric stoves?",
       answer:
-        "Gas burners respond immediately when the flame is adjusted, while traditional electric elements take longer to heat up and cool down.",
+        "Yes, gas stoves allow for precise and immediate temperature adjustments while cooking.",
     },
     {
-      question: "What is the best way to clean gas-stove burners?",
+      question: "What is the best way to clean the burners on a gas stove?",
       answer:
-        "Soak removable caps and heads in warm water, gently brush away deposits, rinse and dry them thoroughly, and make sure the ports are clear before reinstalling them.",
+        "Remove the burners, soak them in warm water and detergent, then scrub with a non-abrasive brush.",
     },
     {
-      question: "What types of gas stoves are available?",
+      question: "What types of gas stoves are available on the market?",
       answer:
-        "Common types include freestanding gas ranges, built-in gas hobs, dual-fuel ranges and slide-in or drop-in cookers designed to sit flush with kitchen cabinetry.",
+        "Options include freestanding ranges, slide-in ranges, and built-in cooktops.",
     },
     {
       question: "How can I improve the efficiency of my gas stove?",
       answer:
-        "Use flat cookware that matches the burner size, keep burner ports clean, cover pans when appropriate and avoid flames extending beyond the cookware edges.",
+        "Regularly clean burners and use the correct size pots with lids to conserve heat.",
     },
     {
       question: "Can I cook on a gas stove during a gas leak?",
       answer:
-        "No. Do not operate burners or create any spark. Shut off the gas supply if it is safe to do so, ventilate and leave the property, then seek professional help immediately.",
+        "No, cooking or even turning on the stove is extremely dangerous if you suspect a gas leak.",
     },
   ],
 };

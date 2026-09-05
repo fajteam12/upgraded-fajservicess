@@ -1,16 +1,16 @@
 const commonProblemsData = {
   eyebrow: "Troubleshooting Guide",
-  title: "The Most Common Problems with Cooking Ranges",
-  description: "Common burner, ignition and gas-supply symptoms checked by FAJ technicians.",
+  title: "THE MOST COMMON PROBLEMS WITH THE COOKING RANGE",
+  description: "",
   items: [
-    { title: "Gas Burner Issues", description: "Uneven or partially ignited flames may result from blocked burner ports or incorrect assembly." },
-    { title: "Noisy Burners", description: "Noisy flames can indicate excessive air or gas flow and require safe professional adjustment." },
-    { title: "Low Gas Flame", description: "Blocked burner heads, pressure problems or valve faults can cause slow, frustrating heating." },
-    { title: "Gas Leaks", description: "Any suspected gas leak is serious. Turn off the supply, ventilate the area and obtain emergency professional help." },
-    { title: "Broken Door Seal", description: "A damaged range-oven seal allows heat to escape, reducing cooking efficiency and affecting nearby controls." },
-    { title: "Ignition Problem", description: "A burner may fail to light because of dirty electrodes, spark faults, wiring problems or gas interruption." },
-    { title: "Gas Smell", description: "A gas smell can indicate a burner, pipe or connection leak and must never be ignored." },
-    { title: "Gas Supply Disruption", description: "Supply valves, regulators, ignition components and burner heads require systematic safety checks." },
+    { title: "Gas Burner Issues", description: "This is another gas cooker problem. The burner has an issue where the flames are uneven or only partly ignited. They also tend to get blocked." },
+    { title: "Noisy Burners", description: "Noisy burner flames may result from too much air or gas flow through valves, which can be hazardous and affect safe operation." },
+    { title: "Low Gas Flame", description: "Whether you have a gas stove or cooktop, slow heating can be frustrating and time-consuming when preparing food or cooking meals." },
+    { title: "Gas leaks", description: "Gas leaks are serious and must not be ignored. If you smell gas even when the cooker is turned off, it may indicate a dangerous leak in the gas line or connection." },
+    { title: "Broken Door Seal", description: "A broken door seal can cause heat to escape, leading to inefficient cooking, higher energy use, and potential damage to control knobs and surfaces." },
+    { title: "Ignition Problem", description: "A common issue is when the burner won't ignite despite the igniter being activated. Other gas cooker problems also arise in Dubai." },
+    { title: "Gas Smell", description: "Gas leaks can occur from lines or pipes, posing serious safety risks. Before attempting any repairs, check if the burners are working correctly." },
+    { title: "Gas Supply Disruption", description: "To resolve issues, open the gas supply valve, reset the circuit breakers, and clean the burner heads. Also, check the igniter electrodes and spark ignitions." },
   ],
 };
 export default commonProblemsData;

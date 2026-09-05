@@ -71,6 +71,9 @@ export default function RefrigeratorRepairInDubai() {
           content={pageData.testimonials}
           tone="dark"
           columns="three"
+          slider
+          autoplay
+          loop
         />
         <AccordionSection content={pageData.faqs} tone="white" />
         <BookingSection

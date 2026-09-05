@@ -1,51 +1,51 @@
 const maintenanceImportanceData = {
   id: "refrigerator-maintenance-importance",
   eyebrow: "Preventative Diagnostics",
-  title: "Why Is Refrigerator Maintenance Service Important in Dubai?",
+  title: "Why is Refrigerator Maintenance Service Important in Dubai?",
   description:
-    "Regular care is especially valuable in Dubai's climate, supporting reliable cooling, efficient operation and longer equipment life.",
+    "Proper refrigerator maintenance is essential for extending its lifespan and improving efficiency, especially given Dubai's climate. Here are the key benefits:",
   items: [
     {
       icon: "clock",
       badge: "Fridge Repair",
-      title: "Extended Refrigerator Lifespan",
+      title: "Refrigerator Extended Lifespan",
       description:
-        "Scheduled maintenance helps prolong refrigerator life and delay costly replacement.",
+        "Regular maintenance helps prolong life of your refrigerator, ultimately saving you money on replacement costs.",
     },
     {
       icon: "zap",
       badge: "Fridge Repair",
-      title: "Improved Fridge Efficiency",
+      title: "Fridge Freezer Improved Efficiency",
       description:
-        "A maintained refrigerator consumes less energy, which can reduce household utility costs.",
+        "A well-maintained refrigerator operates more efficiently, consuming less energy and leading to lower utility bills, which is especially important in Dubai.",
     },
     {
       icon: "shield",
       badge: "Fridge Repair",
-      title: "Preventing Costly Repairs",
+      title: "Refrigerator Preventing Costly Repairs",
       description:
-        "Addressing small problems early reduces the risk of extensive component failure.",
+        "Addressing minor issues promptly can prevent them from escalating into expensive repairs.",
     },
     {
       icon: "sparkles",
       badge: "Fridge Repair",
       title: "Preserving Appliance Integrity",
       description:
-        "Routine cleaning limits dust buildup that can reduce cooling performance and airflow.",
+        "Routine cleaning prevents dust buildup, which can negatively affect performance.",
     },
     {
       icon: "alert",
       badge: "Fridge Repair",
-      title: "Early Problem Detection",
+      title: "Refrigerator Early Problem Detection",
       description:
-        "Regular checks can identify developing faults before they become serious breakdowns.",
+        "Regular checks help identify potential issues before they become significant problems.",
     },
     {
       icon: "wind",
       badge: "Fridge Repair",
       title: "Refrigerator Energy Efficiency",
       description:
-        "Clean coils, sound seals and correct settings help the refrigerator cool efficiently.",
+        "Routine maintenance can boost your refrigerator's energy efficiency, helping you save money in the long run.",
     },
   ],
 };

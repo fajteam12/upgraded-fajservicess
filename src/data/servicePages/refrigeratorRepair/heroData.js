@@ -3,8 +3,8 @@ const heroData = {
   title: "Trusted Fridge Repair, Freezer Maintenance and Refrigerator Service in Dubai",
   subtitle: "Refrigerator and Freezer Repair Near You",
   paragraphs: [
-    "Since 2010, FAJ has provided refrigerator and freezer repair across Dubai and Sharjah.",
-    "Our experienced technicians prioritise practical repair over premature replacement, helping restore dependable food storage with less disruption.",
+    "Since 2010, FAJ has established itself as the go-to reference for refrigerator repair, freezer maintenance and fridge repair near me in Dubai and Sharjah.",
+    "We prioritise refrigerator repair near you over replacements, helping you save money and avoid the bother of buying a new fridge or freezer. Rely on our experienced experts for fast and reliable refrigerator maintenance in Dubaia!",
   ],
   primaryAction: "Book Fridge Repair",
   secondaryAction: "WhatsApp Now",

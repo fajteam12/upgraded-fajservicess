@@ -13,7 +13,7 @@ const benefitsData = {
       number: "01",
       title: "Ensuring Safety",
       description:
-        "Routine checks reduce electrical and component hazards to help protect the household.",
+        "Routine checks reduce the risk of electrical faults, gas leaks, and other hazards, keeping your home and family safe.",
       icon: "shield-check",
     },
     {
@@ -21,7 +21,7 @@ const benefitsData = {
       number: "02",
       title: "Optimal Performance",
       description:
-        "Regular maintenance helps refrigerators cool consistently and operate smoothly.",
+        "Routine checks reduce the risk of electrical faults, gas leaks, and other hazards, keeping your home and family safe..",
       icon: "sparkles",
     },
     {
@@ -29,7 +29,7 @@ const benefitsData = {
       number: "03",
       title: "Lower Energy Bills",
       description:
-        "Efficient cooling reduces unnecessary compressor operation and electricity consumption.",
+        "Energy efficient refrigerator translate to monthly savings on utility bills, putting more money back in your pocket.",
       icon: "wind",
     },
     {
@@ -37,7 +37,7 @@ const benefitsData = {
       number: "04",
       title: "Saving Money on Repair",
       description:
-        "Preventative checks catch developing faults before they cause expensive breakdowns.",
+        "Preventive maintenance catches issues early, reducing the risk of major breakdowns and expensive repair costs.",
       icon: "dollar-sign",
     },
     {
@@ -45,7 +45,7 @@ const benefitsData = {
       number: "05",
       title: "Extending Refrigerator Lifespan",
       description:
-        "Proper cleaning and timely repair can significantly delay appliance replacement.",
+        "Proper care and timely servicing can significantly increase life of your refrigerator, delaying the need for replacements.",
       icon: "clock",
     },
     {
@@ -53,7 +53,7 @@ const benefitsData = {
       number: "06",
       title: "Peace of Mind",
       description:
-        "Reliable cooling reduces the risk of unexpected failure and spoiled food.",
+        "Knowing your refrigerator are in top condition gives you confidence and removes the stress of unexpected failures.",
       icon: "shield-check",
     },
   ],

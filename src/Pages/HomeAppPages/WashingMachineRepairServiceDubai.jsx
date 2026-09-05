@@ -34,7 +34,7 @@ export default function WashingMachineRepairServiceDubai() {
         <EmbeddedVideoSection content={pageData.video} tone="dark" />
         <ActionCardsSection content={pageData.maintenanceImportance} tone="white" columns="three" />
         <NumberedGridSection content={pageData.commonProblems} tone="dark" columns="four" />
-        <ActionCardsSection content={pageData.servicesOffered} tone="white" columns="three" onAction={openBooking} />
+        <ActionCardsSection content={pageData.servicesOffered} tone="white" columns="four" onAction={openBooking} />
         <MaintenanceBenefits {...pageData.benefits} />
         <ActionCardsSection content={pageData.whyChooseUs} tone="dark" columns="three" />
         <SearchableDirectorySection content={pageData.brands} tone="soft" onAction={openBooking} />
