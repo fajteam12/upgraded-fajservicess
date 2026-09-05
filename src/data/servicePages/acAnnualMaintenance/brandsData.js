@@ -13,6 +13,11 @@ const linkedBrands = [
     "Gree Electric Appliances, Inc., founded in 1991 in Zhuhai, is a key player in the global air conditioning market. Starting with air conditioners, Gree has expanded its product line to include various home appliances and became China's largest air conditioner manufacturer by 2000.",
   ],
   [
+    "Rheem AC Repair and Service",
+    "rheem",
+    "Rheem AC was founded in 1925 in California, initially making steel drums. It quickly transitioned to manufacturing water heaters and, in the 1940s and 1950s, expanded into furnaces, split, central air conditioning systems to meet the growing demand for home comfort. Today, Rheem is a leading global HVAC provider known for its innovation and diverse heating and cooling solutions.",
+  ],
+  [
     "O General AC Repair and Maintenance",
     "o-general",
     "O General AC, a brand of Fujitsu General, is renowned for its Japanese engineering and high-quality air conditioning solutions.",
@@ -41,11 +46,6 @@ const linkedBrands = [
     "Trane HVAC Repair and Maintenance",
     "trane",
     "Trane developed its first air conditioning unit in 1931.",
-  ],
-  [
-    "Rheem AC Repair and Service",
-    "rheem",
-    "Rheem AC was founded in 1925 in California, initially making steel drums. It quickly transitioned to manufacturing water heaters and, in the 1940s and 1950s, expanded into furnaces, split, central air conditioning systems to meet the growing demand for home comfort. Today, Rheem is a leading global HVAC provider known for its innovation and diverse heating and cooling solutions.",
   ],
   ["SKM AC Maintenance", "skm"],
   ["Lennox Air-Conditioning Maintenance", "lennox"],
