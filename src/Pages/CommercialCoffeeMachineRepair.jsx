@@ -58,13 +58,9 @@ export default function CommercialCoffeeMachineRepair() {
           onAction={openBooking}
         />
 
-        <ContentCardSection content={pageData.repairOverview} />
+        <TwoColumnInfoSection content={pageData.repairOverview} tone="soft" />
 
         <EmbeddedVideoSection content={pageData.video} />
-
-        <TwoColumnInfoSection
-          content={pageData.maintenanceInformation}
-        />
 
         <ChecklistSection content={pageData.maintenanceImportance} />
 

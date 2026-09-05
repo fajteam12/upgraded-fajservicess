@@ -8,7 +8,7 @@ const pricingData = {
     {
       title: "Coffee Machine Technical Inspection Price",
       price: "AED 280",
-      description: "Tell us about your faulty coffee machine and we will inspect it before providing a quotation for repair and required parts. Our technician will arrive at a suitable scheduled time.",
+      description: "Just tell us about your faulty coffee machine, and we will provide a quote for repair / parts. Our technician will arrive at a time that is suitable for you.",
       popup: {
         title: "Coffee Machine Inspection scope of work",
         sections: [
@@ -41,7 +41,7 @@ const pricingData = {
       title: "Coffee Machine Cleaning",
       subtitle: "Coffee Machine Cleaning Price",
       price: "AED 320",
-      description: "Book reliable coffee machine cleaning professionals for your equipment. Our teams offer competitive pricing and limited-time availability across Dubai.",
+      description: "Book reliable coffee machine cleaning professionals for your equipment. Our teams offer competitive pricing & limited-time availability across Dubai.",
       popup: {
         title: "Depending on quantities, capacity, type, model, and area",
         sections: [
@@ -65,7 +65,7 @@ const pricingData = {
           {
             label: "Terms & Conditions",
             text:
-              "*Starting from AAED 465 fee applies based on the Capacity: Based on Type, Model, and Area for each unit.",
+              "*Starting from AED 320 fee applies based on the Capacity: Based on Type, Model, and Area for each unit.",
           },
         ],
       },
@@ -74,7 +74,7 @@ const pricingData = {
       title: "Coffee Machine Installation",
       subtitle: "Coffee Machine Installation Price",
       price: "On request",
-      description: "FAJ technicians provide professional coffee machine installation assistance for cafés, restaurants, offices, hotels, and residential kitchens.",
+      description: "FAJ expert technicians will provide assistance to install coffee machines. Upgrade your kitchen with professional coffee machine installations!",
       popup: {
         title: "Depending on quantities, capacity, type, model, and area",
         sections: [

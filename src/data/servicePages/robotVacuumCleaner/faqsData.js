@@ -8,52 +8,79 @@ const faqsData = {
     {
       question: "Do robot vacuums work without the internet?",
       answer:
-        "Most robot vacuums can perform basic cleaning without an active internet connection. App control, remote scheduling, map editing and firmware updates normally require Wi-Fi.",
+        "Yes, most robot vacuums can perform basic cleaning functions without an active Wi-Fi or internet connection. After the initial setup, you can typically press a physical \"Clean\" button to start a cleaning cycle. However, advanced features such as app control, scheduling, and smart mapping require an internet connection.",
     },
     {
       question: "How long do robot vacuums run?",
-      answer:
-        "Many modern robot vacuums run for about 75 to 150 minutes per charge. Runtime varies with battery health, suction mode, flooring and the functions being used.",
+      answer: [
+        "Wi-Fi connected models like the 900 and S9 series can clean for up to two hours on the lowest cleaning setting, though the Power Boost feature will deplete the battery more quickly.",
+        "Wi-Fi connected models from the E, 600, and 800 series can run for up to 90 minutes, while non-Wi-Fi connected models from the 500, 600, 700, and 800 series typically last up to 60 minutes.",
+      ],
     },
     {
-      question: "Can robot vacuums work without electricity?",
+      question: "Can robots vacuum work without electricity?",
       answer:
-        "A robot vacuum can clean using stored battery power, but it requires electricity at the charging dock to recharge for future cycles.",
+        "Currently, all robots rely on electricity and computer chips to function. A robotic \"brain\" made up of algorithms and software interprets information, which is then relayed to the hardware through an encoder, allowing the robot to perform actions.",
     },
     {
-      question: "How high can a robot vacuum cleaner climb?",
-      answer:
-        "Many models can cross thresholds and floor transitions around 15 to 20 mm high. The exact limit depends on wheel design, approach angle and manufacturer specifications.",
+      question: "How high can robot vacuum cleaner climb?",
+      answer: [
+        {
+          type: "bullets",
+          items: [
+            "Typically, robot vacuums can handle a maximum door threshold height of 15-20 mm.",
+            "The thresholds used in American homes vary by manufacturer, ranging from 6 mm to 25 mm or more.",
+          ],
+        },
+      ],
     },
     {
-      question: "Which robot vacuum cleaner is best?",
+      question: "Which robot vacuum cleaner is the best?",
       answer:
-        "The best model depends on floor type, home size, pets, suction needs, navigation features and budget. Compare manufacturer specifications and locally available service support.",
+        {
+          type: "bullets",
+          items: [
+            "Best overall: Ecovacs Deebot T30S Combo",
+            "Best robot vacuum and mop combo, best for hardwood floors: Yeedi M12 Pro+",
+            "Best Shark robovac: Shark PowerDetect Never Touch Pro",
+            "Best value: Eufy 3-in-1 E20",
+            "Best Roomba: iRobot Roomba Combo J7 Plus"
+          ],
+        },
     },
     {
       question: "How do I choose a robot vacuum cleaner?",
       answer:
-        "Consider suction power, floor type, anti-tangle brushes, mapping quality, obstacle avoidance, battery runtime, dock features, parts availability and the level of app control you need.",
+        "Suction Power: Measured in Pascals (Pa), the higher the Pa, the more dirt it can collect. To choose a robot vacuum based on suction power, consider the types of flooring in your home, as different flooring types require varying suction levels; hard floors and tiles typically need less suction compared to plush carpets.",
     },
     {
       question: "What is a robot vacuum cleaner called?",
       answer:
-        "It may be called a robotic vacuum, robovac, autonomous vacuum or smart vacuum. Roomba and Deebot are brand-specific product names.",
+        "A robotic vacuum cleaner, sometimes referred to as a robovac or a Roomba (a generic trademark), is an autonomous vacuum cleaner equipped with a limited vacuum floor cleaning system, sensors, robotic drives, programmable controllers, and cleaning routines.",
     },
     {
-      question: "What features do robotic vacuum cleaners offer?",
+      question: "What are the features of robotic vacuum cleaners?",
       answer:
-        "Common features include scheduled cleaning, room mapping, obstacle avoidance, drop sensors, automatic recharging, self-emptying docks, no-go zones and integrated mopping.",
+        {
+          type: "bullets",
+          items: [
+            "Navigation Technology: Robots use various sensors for navigation. Mapping Obstacle Avoidance",
+            "Suction Power & Brushes Mopping",
+            "Object Identification Technology",
+            "Customizable Cleaning Settings",
+            "Pet Mode",
+          ]
+        },
     },
     {
       question: "Does a robot vacuum need Wi-Fi?",
       answer:
-        "Wi-Fi is not normally required for basic button-controlled cleaning, but it is needed for app-based schedules, map customisation, notifications and many smart-home functions.",
+        "Yes, a robot cleaner can operate without Wi-Fi and perform comprehensive home cleanups, spot cleanups, and return to the dock with the push of a button. Additionally, it can respond to basic voice commands.",
     },
     {
       question: "Which robot vacuums work offline?",
       answer:
-        "Most leading brands can run a basic manual cleaning cycle offline. Confirm the model instructions if fully offline setup and operation are important to you.",
+        "A standout model is the Eufy 11S, which is one of the few popular brands that offers a completely offline model. It has been tested and is recommended as a decent budget-friendly robot vacuum. If full offline functionality is important to you, this is a good choice.",
     },
   ],
 };

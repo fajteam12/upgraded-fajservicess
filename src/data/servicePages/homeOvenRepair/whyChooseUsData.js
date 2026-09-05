@@ -1,51 +1,51 @@
 const whyChooseUsData = {
   id: "why-choose-faj-home-oven-repair",
   eyebrow: "FAJ Service Promise",
-  title: "Choose Us for Reliable, Exceptional Service Tailored to Your Needs",
+  title: "CHOOSE US FOR RELIABLE, EXCEPTIONAL SERVICE TAILORED TO YOUR NEEDS!",
   description:
-    "Responsive oven support, practical scheduling and experienced appliance technicians across Dubai and Sharjah.",
+    "",
   items: [
     {
       icon: "zap",
-      badge: "Reliable, Priority and Quick",
-      title: "Fast, Reliable Service",
+      badge: "Fast, Reliable Service",
+      title: "Reliable, Priority, and Quick",
       description:
         "Same-day and next-day visit options help customers receive oven support quickly.",
     },
     {
       icon: "shield",
-      badge: "Feeling of Calm",
-      title: "We Are Experts",
+      badge: "Preventive Protection",
+      title: "Feeling Of Calm",
       description:
-        "A maintenance contract provides planned oven service throughout the year for smoother operation.",
+        "With a maintenance contract, you get a full year of service, ensuring your oven runs smoothly and providing peace of mind.",
     },
     {
       icon: "calendar",
       badge: "Flexible Scheduling",
       title: "You Are in Control",
       description:
-        "Choose an appointment date and time with a practical three-to-four-hour arrival window.",
+        "Choose a day and time for your oven repair in Dubai or Sharjah. With a 3-4 hour window for when our technician will arrive.",
     },
     {
       icon: "wrench",
       badge: "Brand Experience",
       title: "We Are Experts",
       description:
-        "Major appliance brands rely on experienced technicians for oven repair and maintenance.",
+        "We are experts in oven repair this is why most major brands trust us to handle their service and maintenance needs.",
     },
     {
       icon: "dollar",
       badge: "Customer Value",
       title: "Great Value",
       description:
-        "Eligible inspection includes diagnosis, transport and reinstallation for up to two ovens at one Dubai location.",
+        "Inspection fee includes diagnosis, transport, and reinstallation upto two oven at the same location in Dubai.",
     },
     {
       icon: "award",
       badge: "Dependable Care",
       title: "Trustworthy",
       description:
-        "Trained oven technicians provide professional service for a broad range of appliance brands.",
+        "Our skilled oven technicians are highly trained, and we provide excellent service for a variety of major brands.",
     },
   ],
 };

@@ -1,6 +1,6 @@
 const brandsData = {
   "eyebrow": "Complete Support",
-  "title": "Domestic and Professional Coffee Machine Repair Service",
+  "title": "CHOOSE US FOR RELIABLE, EXCEPTIONAL SERVICE TAILORED TO YOUR NEEDS!",
   "description": "Search our supported coffee machine, espresso machine, and vending equipment brands.",
   "searchLabel": "Search supported coffee machine brands",
   "searchPlaceholder": "Search coffee machine brands...",
@@ -11,163 +11,163 @@ const brandsData = {
   "items": [
     {
       "name": "Ascaso Coffee Machine Repair",
-      "description": "Ascaso espresso machine maintenance and cleaning services in Dubai and Sharjah."
+      "description": "Maintenance and cleaning services for Ascaso espresso coffee machine in Dubai and Sharjah."
     },
     {
       "name": "Lelit Coffee Machine Service",
-      "description": "Expert Lelit repair, maintenance, cleaning, and descaling services near you."
+      "description": "Professional Lelit coffee machine repair, maintenance, and descaling services are available in your area."
     },
     {
       "name": "Conti Coffee Machine Repair",
-      "description": "Conti espresso-machine descaling, diagnostics, repair, and cleaning services."
+      "description": "Find Conti espresso and coffee machine descaling and cleaning services near your location."
     },
     {
       "name": "Jura Coffee Machine Maintenance",
-      "description": "Jura coffee machine and espresso maintenance, repair, and descaling in Dubai."
+      "description": "We provide Jura coffee machine maintenance services and espresso maker repair in Dubai."
     },
     {
       "name": "Dr Coffee Machine Repairs",
-      "description": "Professional Dr Coffee automatic machine maintenance and descaling services."
+      "description": "You can locate professional Dr Coffee machine maintenance and descaling services near you."
     },
     {
       "name": "La Marzocco Coffee Machine Repair",
-      "description": "Premium La Marzocco espresso-machine service, cleaning, repair, and AMC support."
+      "description": "Professional maintenance and cleaning for LA Marzocco espresso machine, including AMC services."
     },
     {
       "name": "La Pavoni Espresso Maintenance",
-      "description": "La Pavoni espresso-machine repair and cleaning to keep equipment in top condition."
+      "description": "We provide espresso machine repair, including cleaning services, to keep machine in top shape."
     },
     {
       "name": "ECM Coffee Machine Servicing",
-      "description": "ECM coffee-machine maintenance, repair, cleaning, and descaling service."
+      "description": "Reach out to us for maintenance and repair services for ECM coffee machine descaling."
     },
     {
-      "name": "Franke Espresso Machine Fix",
-      "description": "Franke coffee-machine diagnostics, repairs, preventive servicing, and descaling."
+      "name": "FRANKE Espresso Machine Fix",
+      "description": "You can rely FAJ for the best Franke coffee machine repair, servicing, and descaling in Dubai"
     },
     {
       "name": "Gaggia Coffee Machine Repair",
-      "description": "Gaggia espresso-machine maintenance, repair, and cleaning service in Dubai."
+      "description": "Look for a Gaggia espresso machine maintenance and cleaning service in Dubai."
     },
     {
-      "name": "Bosch Coffee Machine Service",
-      "description": "Fast Bosch coffee-maker and built-in coffee-machine repair near your location."
+      "name": "Coffee Vending Machine Service",
+      "description": "Coffee vending machine maintenance service and annual maintenance service in Dubai."
     },
     {
-      "name": "DeLonghi Coffee Machine Repair",
-      "description": "DeLonghi coffee-machine service, espresso maintenance, cleaning, and descaling."
+      "name": "Commercial Coffee Machine Repair",
+      "description": "Reliable coffee machine service, Espresso machine maintenance, and cleaning in Dubai."
     },
     {
-      "name": "Breville Coffee Machine Repair",
-      "description": "Breville coffee-machine repair, maintenance, calibration, and cleaning in Dubai."
-    },
-    {
-      "name": "Sage Coffee Machine Service",
-      "description": "Sage coffee-machine diagnostics, repairs, maintenance, and descaling services."
-    },
-    {
-      "name": "Melitta Coffee Machine Servicing",
-      "description": "Melitta coffee-maker and automatic coffee-machine repair and maintenance."
-    },
-    {
-      "name": "Fahrenheit Epsilon Coffee Machine",
-      "description": "Reliable Fahrenheit Epsilon coffee-machine repair and servicing in the UAE."
-    },
-    {
-      "name": "Bezzera Espresso Machine Repairs",
-      "description": "Specialist Bezzera coffee-machine repairs and preventive maintenance."
-    },
-    {
-      "name": "Teka Built-In Coffee Machine",
-      "description": "Emergency repair and servicing for Teka built-in coffee machines."
-    },
-    {
-      "name": "Rocket Espresso Machine Repair",
-      "description": "Rocket Espresso maintenance, cleaning, repair, and pressure calibration."
-    },
-    {
-      "name": "Astoria Espresso Machine Service",
-      "description": "Astoria commercial espresso-machine repair and maintenance services."
-    },
-    {
-      "name": "Magister Espresso Machine Repair",
-      "description": "Magister espresso-machine maintenance, repair, and boiler servicing."
-    },
-    {
-      "name": "Orchestrale Espresso Machine Repair",
-      "description": "Repair, cleaning, and descaling for Orchestrale espresso equipment."
-    },
-    {
-      "name": "Illy Saeco Royal Coffee Machine",
-      "description": "Repair, planned servicing, and maintenance contracts for Illy and Saeco equipment."
-    },
-    {
-      "name": "Cafematic Automatic Coffee Machine",
-      "description": "Cafematic automatic coffee and espresso machine AMC services in Dubai."
-    },
-    {
-      "name": "Isomac Coffee Machine Repair",
-      "description": "Isomac coffee-machine diagnostics, servicing, and repair near you."
-    },
-    {
-      "name": "Siemens Coffee Machine Cleaning",
-      "description": "Siemens espresso and built-in coffee-machine servicing and repair."
-    },
-    {
-      "name": "Rancilio Espresso Machine Service",
-      "description": "Rancilio volumetric espresso-machine maintenance and repair services."
+      "name": "Coffee Vending Machine Repair",
+      "description": "Our team specializes in coffee vending machine maintenance and cleaning services in Dubai."
     },
     {
       "name": "Zulay Magia Coffee Machine Service",
-      "description": "Zulay Magia repair, servicing, and coffee-equipment maintenance."
+      "description": "The offer in Dubai is for espresso machine repair and maintenance, and providing descaling service."
+    },
+    {
+      "name": "Melitta Coffee Machine Servicing",
+      "description": "We are providing Melitta coffee maker repair in Dubai, offering sameday fixing coffee machine."
+    },
+    {
+      "name": "Farenheit Epsilon Coffee Machine",
+      "description": "We provide reliable Farenheit Epsilon coffee machine repairing and servicing in your area."
+    },
+    {
+      "name": "Built-in Coffee Machine Fix",
+      "description": "Express coffee machine repairs and servicing - Call now for a no-obligation quote!"
+    },
+    {
+      "name": "Bezzera Espresso Machine Repairs",
+      "description": "We are Dubai's leading specialists in Bezzera coffee machine repair, offering same-day service."
+    },
+    {
+      "name": "Rocket Espresso Machine Repair",
+      "description": "Reliable Rocket Espresso Machine maintenance service at affordable prices - specialists you can trust."
+    },
+    {
+      "name": "Astoria Loft Espresso Machine Repair",
+      "description": "We are offering trained Astoria Loft coffee machine repair and maintenance services in Dubai."
+    },
+    {
+      "name": "Magister Espresso Machine Repair",
+      "description": "FAJ technicians help with Magister espresso machine maintenance and service near your location."
+    },
+    {
+      "name": "Orhcestrale Espresso Machine Repair",
+      "description": "We are offering repair, cleaning, and descaling services for coffee machines & espresso machines."
+    },
+    {
+      "name": "Illy Saeco Royal Coffee Machine Repair",
+      "description": "FAJ services and repairs of espresso machine and offers annual maintenance contracts."
+    },
+    {
+      "name": "Cafematic Automatic Coffee Machine",
+      "description": "Automatic coffee machine and espresso machine yearly service agreement in Dubai, UAE"
+    },
+    {
+      "name": "Isomac Coffee Machine Repair",
+      "description": "If you are looking Isomac coffee machine repair, coffee machine service is available near you."
+    },
+    {
+      "name": "Professional Coffee Machine Cleaning",
+      "description": "Range of espresso machine servicing and repair, as well as coffee maker repair in Dubai."
+    },
+    {
+      "name": "Rancilio Volumetric Espresso Machine",
+      "description": "FAJ is providing fast volumetric espresso machine maintenance and repair services near you."
+    },
+    {
+      "name": "Coffee Machine Maintenance",
+      "description": "We provide repairs and servicing of coffee machines in Dubai, as well as maintaining coffee equipment."
     },
     {
       "name": "Nuova Simonelli Appia Life",
-      "description": "Nuova Simonelli espresso-machine maintenance and descaling near you."
+      "description": "Contact us today for Nuova Simonelli espresso machine service, maintenance, and descaling near me."
     },
     {
       "name": "Victoria Arduino Espresso Machine",
-      "description": "Victoria Arduino repair, cleaning, calibration, and preventive maintenance."
+      "description": "FAJ offers maintenance and cleaning services for Victoria Arduino coffee machines in Dubai."
     },
     {
       "name": "Slayer Espresso Machine Service",
-      "description": "Slayer espresso descaling, repair, and planned preventive maintenance."
+      "description": "Call us for coffee machine repair or espresso machine descaling, annual agreement services."
     },
     {
-      "name": "Profitec Espresso Machine",
-      "description": "Profitec espresso-machine servicing, repair, and maintenance contracts."
+      "name": "Profitec Ride Espresso Machine",
+      "description": "We provide Profitec Ride espresso machine servicing and repair, and service agreements in Dubai."
     },
     {
       "name": "Faema Automatic Coffee Machine",
-      "description": "Expert repair and maintenance services for Faema automatic coffee machines."
+      "description": "FAJ offers expert repair and maintenance services for Faema automatic coffee machines."
     },
     {
       "name": "CAYE Automatic Coffee Machine",
-      "description": "Automatic espresso-machine inspection, repair, cleaning, and maintenance."
+      "description": "If you need a repair service for your Gaye automatic espresso machine, please contact us today"
     },
     {
       "name": "Lavazza Office Vending Machine",
-      "description": "Lavazza coffee-machine and office vending-machine maintenance and repair."
+      "description": "Expert Lavazza coffee machine service and repair, and coffee vending machine maintenance near you."
     },
     {
       "name": "NECTA Krea Espresso Machine",
-      "description": "NECTA Krea coffee-machine repair, cleaning, and maintenance services."
+      "description": "Call now for coffee machine technician and best coffee maker repair and cleaning service."
     },
     {
-      "name": "Fracino Romano Espresso Machine",
-      "description": "Fracino Romano repair, servicing, cleaning, and AMC support."
+      "name": "FRACINO Romano Espresso Machine",
+      "description": "FAJ skilled technicians offer Fracino Romano coffee machine repair and AMC services in Dubai."
     },
     {
-      "name": "Smeg Coffee Machine Service",
-      "description": "Smeg coffee-machine repair, cleaning, descaling, and maintenance."
+      "name": "Synesso Espresso Machine",
+      "description": "Book your coffee machine repair, cleaning, and maintenance today."
     },
     {
       "name": "Jetinno Coffee Machine Repair",
-      "description": "Express Jetinno coffee-machine repair, descaling, and maintenance."
+      "description": "Get Fast Jentinno coffee machine service, with repairs, descaling, and maintenance in Dubai."
     },
     {
-      "name": "Beko Coffee Machine Maintenance",
-      "description": "Beko coffee-machine repair, cleaning, and maintenance-contract services."
+      "name": "San Marco Coffee Machine Maintenance",
+      "description": "Dubai's #1 coffee machine repair, cleaning service, and maintenance service contract."
     }
   ]
 };

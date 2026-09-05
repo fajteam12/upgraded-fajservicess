@@ -3,8 +3,8 @@ const heroData = {
   title: "Best Robot Vacuum Cleaner Repair and Service Center in Dubai, UAE",
   subtitle: "Robotic, Cordless and Conventional Vacuum Cleaner Specialists",
   paragraphs: [
-    "FAJ supports your right to repair with practical servicing options that can avoid premature replacement and reduce unnecessary waste.",
-    "Our technicians diagnose, repair and maintain robot vacuum cleaners across Dubai, Abu Dhabi and Sharjah, including navigation, battery, charging, suction and connectivity faults.",
+    "FAJ is a reliable company established in 2010. We provide all types of vacuum cleaners. At FAJ, we are committed to your right to repair your robotic vacuum cleaner by offering affordable repair and servicing options.",
+    "We aim to help you avoid costly replacements and reduce waste. We provide comprehensive error fixing, repair, and servicing for robot vacuum cleaners, along with the necessary parts and products throughout Dubai, Abu Dhabi, and Sharjah. FAJ offers all your robot vacuum cleaner repair and maintenance needs under one roof.",
   ],
   primaryAction: "Book Inspection",
   secondaryAction: "WhatsApp Now",

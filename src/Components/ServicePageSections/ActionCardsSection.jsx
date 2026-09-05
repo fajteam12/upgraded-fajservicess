@@ -177,123 +177,116 @@ function ActionCardsSection({
   );
 
   return (
-    <section
-      className={`service-landing__section is-${tone}`}
-      id={content.id}
-    >
-      <div className="service-landing__container">
-        <SectionHeader
-          content={content}
-          light={tone === "dark"}
-        />
+		<section className={`service-landing__section is-${tone}`} id={content.id}>
+			<div className="service-landing__container">
+				<SectionHeader content={content} light={tone === "dark"} />
 
-        <div
-          className={`service-landing__action-section-body ${
-            slider ? "has-slider" : ""
-          }`}
-          onMouseEnter={slider ? pauseAutoplay : undefined}
-          onMouseLeave={slider ? resumeAutoplay : undefined}
-          onFocusCapture={slider ? pauseAutoplay : undefined}
-          onBlurCapture={slider ? resumeAutoplay : undefined}
-        >
-          {shouldShowSliderArrows && (
-            <div
-              className="service-landing__action-slider-controls"
-              aria-label="Card slider controls"
-            >
-              <button
-                type="button"
-                className="service-landing__action-slider-arrow"
-                onClick={() => scrollSlider(-1)}
-                aria-label="Show previous cards"
-              >
-                <span aria-hidden="true">{"\u2190"}</span>
-              </button>
+				{content.paragraphs?.length > 0 && (
+					<div className="service-landing__action-intro-copy">
+						{content.paragraphs.map((paragraph, index) => (
+							<p key={index}>{paragraph}</p>
+						))}
+					</div>
+				)}
 
-              <button
-                type="button"
-                className="service-landing__action-slider-arrow"
-                onClick={() => scrollSlider(1)}
-                aria-label="Show next cards"
-              >
-                <span aria-hidden="true">{"\u2192"}</span>
-              </button>
-            </div>
-          )}
+				<div
+					className={`service-landing__action-section-body ${
+						slider ? "has-slider" : ""
+					}`}
+					onMouseEnter={slider ? pauseAutoplay : undefined}
+					onMouseLeave={slider ? resumeAutoplay : undefined}
+					onFocusCapture={slider ? pauseAutoplay : undefined}
+					onBlurCapture={slider ? resumeAutoplay : undefined}
+				>
+					{shouldShowSliderArrows && (
+						<div
+							className="service-landing__action-slider-controls"
+							aria-label="Card slider controls"
+						>
+							<button
+								type="button"
+								className="service-landing__action-slider-arrow"
+								onClick={() => scrollSlider(-1)}
+								aria-label="Show previous cards"
+							>
+								<span aria-hidden="true">{"\u2190"}</span>
+							</button>
 
-          {slider ? (
-            <div
-              ref={sliderRef}
-              className={`service-landing__action-grid is-${resolvedColumns} is-slider`}
-            >
-              {content.items.map((item) => (
-                <div
-                  className="service-landing__action-slide"
-                  key={item.title}
-                >
-                  {renderCard(item)}
-                </div>
-              ))}
-            </div>
-          ) : (
-            <div
-              className={`service-landing__action-grid is-${resolvedColumns}`}
-            >
-              {content.items.map((item, index) => (
-                <ScrollSlide
-                  direction="up"
-                  delay={(index % 4) * 0.06}
-                  key={item.title}
-                >
-                  {renderCard(item)}
-                </ScrollSlide>
-              ))}
-            </div>
-          )}
-        </div>
+							<button
+								type="button"
+								className="service-landing__action-slider-arrow"
+								onClick={() => scrollSlider(1)}
+								aria-label="Show next cards"
+							>
+								<span aria-hidden="true">{"\u2192"}</span>
+							</button>
+						</div>
+					)}
 
-        {(content.bottomTitle ||
-          content.bottomDescription) && (
-          <div className="service-landing__action-bottom-copy">
-            {content.bottomTitle && (
-              <h3>{content.bottomTitle}</h3>
-            )}
+					{slider ? (
+						<div
+							ref={sliderRef}
+							className={`service-landing__action-grid is-${resolvedColumns} is-slider`}
+						>
+							{content.items.map((item) => (
+								<div className="service-landing__action-slide" key={item.title}>
+									{renderCard(item)}
+								</div>
+							))}
+						</div>
+					) : (
+						<div
+							className={`service-landing__action-grid is-${resolvedColumns}`}
+						>
+							{content.items.map((item, index) => (
+								<ScrollSlide
+									direction="up"
+									delay={(index % 4) * 0.06}
+									key={item.title}
+								>
+									{renderCard(item)}
+								</ScrollSlide>
+							))}
+						</div>
+					)}
+				</div>
 
-            {content.bottomDescription && (
-              <p>{content.bottomDescription}</p>
-            )}
-          </div>
-        )}
+				{(content.bottomTitle || content.bottomDescription) && (
+					<div className="service-landing__action-bottom-copy">
+						{content.bottomTitle && <h3>{content.bottomTitle}</h3>}
 
-        {content.footerCard && (
-          <ScrollSlide direction="up">
-            <aside className="service-landing__action-footer-card">
-              <div>
-                <h3>{content.footerCard.title}</h3>
-                <p>{content.footerCard.description}</p>
-              </div>
+						{content.bottomDescription && <p>{content.bottomDescription}</p>}
+					</div>
+				)}
 
-              {content.footerCard.actionLabel &&
-                onAction && (
-                  <button
-                    type="button"
-                    className="service-landing__button"
-                    onClick={() =>
-                      onAction(
-                        content.footerCard.bookingLabel ||
-                          content.footerCard.title
-                      )
-                    }
-                  >
-                    {content.footerCard.actionLabel}
-                  </button>
-                )}
-            </aside>
-          </ScrollSlide>
-        )}
-      </div>
-    </section>
-  );
+				{content.footerCard && (
+					<ScrollSlide direction="up">
+						<aside className="service-landing__action-footer-card">
+							<div>
+								<h3>{content.footerCard.title}</h3>
+								<p>{content.footerCard.description}</p>
+							</div>
+
+							{content.footerCard.actionLabel && onAction && (
+								<button
+									type="button"
+									className="service-landing__button"
+									onClick={() =>
+										onAction(
+											content.footerCard.bookingLabel ||
+												content.footerCard.title,
+										)
+									}
+								>
+									{content.footerCard.actionLabel}
+								</button>
+							)}
+						</aside>
+					</ScrollSlide>
+				)}
+			</div>
+		</section>
+	);
 }
 
 export default memo(ActionCardsSection);

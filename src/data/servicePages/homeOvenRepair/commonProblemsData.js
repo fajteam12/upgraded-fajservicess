@@ -1,48 +1,48 @@
 const commonProblemsData = {
   eyebrow: "Troubleshooting Guide",
-  title: "The Most Common Oven Problems",
+  title: "The Most Common Problems With Oven",
   description:
-    "Common symptoms checked during professional gas and electric oven diagnosis.",
+    "",
   items: [
     {
-      title: "Oven Will Not Turn On",
+      title: "Oven won't Turn On",
       description:
-        "A tripped breaker, blown fuse, damaged control board or power-supply fault can prevent startup.",
+        "This issue may be caused by a tripped circuit breaker, a blown fuse, or problems with the oven's control board or power supply.",
     },
     {
       title: "Defective Oven Light",
       description:
-        "The bulb may have failed, although wiring, holder or power-supply issues are also possible.",
+        "This issue is often resolved by simply replacing the bulb, but it could also be caused by a power supply problem.",
     },
     {
-      title: "Oven Does Not Heat Up",
+      title: "Oven Doesn't Heat Up",
       description:
-        "A failed element, thermostat or gas-ignition component can prevent the oven from heating.",
+        "This could result from a faulty heating element, a broken thermostat, or a malfunction in the ignition system of gas ovens.",
     },
     {
-      title: "Incorrect Oven Temperature",
+      title: "Oven Doesn't Heat",
       description:
-        "Thermostat faults, calibration errors or control-panel problems can produce inaccurate temperatures.",
+        "The oven doesn't heat correctly. Possible causes include a faulty thermostat, miscalibration, or control panel issues.",
     },
     {
-      title: "Food Cooks Unevenly",
+      title: "Food Doesn't Cook Evenly",
       description:
-        "Blocked vents, incorrect rack placement, fan faults or thermostat problems can cause uneven cooking.",
+        "This can occur due to factors such as incorrect rack placement, blocked vents, or a faulty thermostat.",
     },
     {
-      title: "Oven Door Will Not Close",
+      title: "Oven Door won't Close",
       description:
-        "Damaged hinges, seals or latch mechanisms can prevent the door from closing securely.",
+        "Problems with the door hinges, seals, or latch mechanism can prevent the door from closing properly.",
     },
     {
       title: "Self-Cleaning Problems",
       description:
-        "A self-cleaning cycle may fail because of control, locking, temperature or safety-component faults.",
+        "Self-cleaning ovens sometimes have issues during the cleaning cycle, needing a reset or professional help.",
     },
     {
       title: "Broken Oven Rack",
       description:
-        "A damaged or misaligned rack reduces usable capacity and can affect safe, consistent cooking.",
+        "A broken or damaged rack can significantly reduce the oven's efficiency and hinder overall cooking capabilities.",
     },
   ],
 };

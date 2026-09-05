@@ -3,8 +3,8 @@ const heroData = {
   title: "Expert Oven Repair and Gas & Electric Oven Service Center Near You",
   subtitle: "Built-in Domestic Oven Repair in Dubai",
   paragraphs: [
-    "FAJ provides quick, effective and affordable oven repairs for homes across Dubai and Sharjah.",
-    "With more than a decade of experience since 2010, our technicians use modern diagnostic tools to repair different gas and electric oven types and brands with minimal disruption.",
+    "If you're having issues with your oven, it's important to locate a trustworthy and high-quality oven repair service. Our company in Dubai is focused on providing quick, effective, and affordable repairs for all your oven repair requirements.",
+    "With over a decade of experience since 2010 in maintenance of ovens of various types and brands, our skilled team employs the latest tools and techniques to diagnose and fix problems efficiently. This ensures you can return to your busy life in Dubai and Sharjah without much delay.",
   ],
   primaryAction: "Book Oven Repair",
   secondaryAction: "WhatsApp Now",

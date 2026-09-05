@@ -2,7 +2,7 @@ const benefitsData = {
   eyebrow: "Valued Advantages",
   title: "Key Benefits of Vacuum Cleaner Service",
   description:
-    "Professional preventive care supports safer operation, dependable cleaning and a longer useful equipment life.",
+    "",
   stats: [
     { value: "2010", label: "Serving the UAE Since" },
     { value: "7-Day", label: "Support Available" },
@@ -13,7 +13,7 @@ const benefitsData = {
       number: "01",
       title: "Ensuring Safety",
       description:
-        "Routine checks can identify developing battery, electrical and overheating risks before failure.",
+        "Routine checks reduce the risk of electrical faults and other failures, keeping your home and family safe.",
       icon: "shield-check",
     },
     {
@@ -21,15 +21,15 @@ const benefitsData = {
       number: "02",
       title: "Optimal Performance",
       description:
-        "Clean filters, brushes and sensors help the vacuum deliver reliable suction and navigation.",
+        "Regular maintenance helps your vacuum cleaner run smoothly and efficiently, delivering the best results every time.",
       icon: "sparkles",
     },
     {
       id: "energy-savings",
       number: "03",
-      title: "Lower Energy Use",
+      title: "Lower Energy Bills",
       description:
-        "Efficient charging and unrestricted airflow avoid unnecessary power use during cleaning cycles.",
+        "Energy efficient vacuum cleaner translate to monthly savings on utility bills, putting more money back in your pocket.",
       icon: "wind",
     },
     {
@@ -37,15 +37,15 @@ const benefitsData = {
       number: "04",
       title: "Saving Money on Repair",
       description:
-        "Preventive attention can catch minor wear before it damages motors, electronics or batteries.",
+        "Preventive maintenance catches issues early, reducing the risk of major breakdowns and expensive repair costs..",
       icon: "dollar-sign",
     },
     {
       id: "longer-life",
       number: "05",
-      title: "Longer Cleaner Lifespan",
+      title: "Vacuum Cleaner Lifespan",
       description:
-        "Proper care and timely parts replacement can delay premature equipment replacement.",
+        "Proper care and timely servicing can significantly increase life of your vacuum cleaner, delaying the need for replacements.",
       icon: "clock",
     },
     {
@@ -53,7 +53,7 @@ const benefitsData = {
       number: "06",
       title: "Peace of Mind",
       description:
-        "Professional diagnosis reduces the uncertainty and disruption caused by recurring faults.",
+        "Knowing your vacuum cleaner are in top condition gives you confidence and removes the stress of unexpected failures.",
       icon: "shield-check",
     },
   ],

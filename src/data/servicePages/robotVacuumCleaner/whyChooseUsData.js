@@ -1,50 +1,50 @@
 const whyChooseUsData = {
   eyebrow: "Guaranteed Satisfaction",
-  title: "Reliable, Exceptional Service Tailored to Your Needs",
+  title: "CHOOSE US FOR RELIABLE, EXCEPTIONAL SERVICE TAILORED TO YOUR NEEDS!",
   description:
-    "Practical scheduling, specialist diagnosis and clear quotations for vacuum-cleaner repair and maintenance.",
+    "",
   items: [
     {
       icon: "clock",
       badge: "Reliable and Quick",
-      title: "Fast, Reliable Service",
+      title: "Reliable, Priority, and Quick",
       description:
-        "Same-day or next-day scheduling is offered where technician and parts availability allow.",
+        "You can count on efficient service! Our same-day repair or next-day service visits ensure that your needs are met quickly.",
     },
     {
       icon: "shield",
       badge: "Planned Care",
-      title: "Maintenance Expertise",
+      title: "Feeling Of Calm",
       description:
-        "Flexible maintenance contracts help keep frequently used vacuum cleaners operating dependably.",
+        "With a maintenance contract, you get a full year of service, ensuring your vacuum cleaner runs smoothly and providing peace of mind.",
     },
     {
       icon: "calendar",
       badge: "Flexible Scheduling",
       title: "You Are in Control",
       description:
-        "Choose a suitable date and share the brand, model and symptoms so the service can be planned efficiently.",
+        "Choose a day and time for your vacuum cleaner repair in Dubai or Sharjah. With a 3-4 hour window for when our technician will arrive.",
     },
     {
       icon: "award",
       badge: "Technical Specialists",
-      title: "Vacuum Cleaner Experts",
+      title: "We Are Experts",
       description:
-        "Our technicians work with robotic navigation, batteries, suction systems and conventional vacuum faults.",
+        "We are experts in vacuum cleaner repair this is why most major brands trust us to handle their service and maintenance needs.",
     },
     {
       icon: "dollar",
       badge: "Clear Value",
-      title: "Transparent Inspection",
+      title: "Great Value",
       description:
-        "A diagnosis and quotation help you make an informed choice about repair or replacement.",
+        "Inspection fee includes diagnosis, transport, and reinstallation upto two vacuum cleaner at the same location in Dubai.",
     },
     {
       icon: "check",
       badge: "Established 2010",
-      title: "Trustworthy UAE Support",
+      title: "Trustworthy",
       description:
-        "FAJ provides professional service for homes and businesses across Dubai and surrounding emirates.",
+        "Our skilled vacuum cleaner technicians are highly trained, and we provide excellent service for a variety of major brands.",
     },
   ],
 };

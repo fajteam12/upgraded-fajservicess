@@ -8,10 +8,10 @@ const pricingData = {
   actionLabel: "Book now",
   items: [
     {
-      title: "Oven Technical Inspection",
+      title: "Oven Technical Inspection Price",
       price: "AED 157",
       description:
-        "A technician inspects the faulty oven before providing a quotation for repair and required parts.",
+        "Just tell us about your faulty appliance, and we will provide a quote for repair / parts. Our technician will arrive at a time that is suitable for you.",
       popup: {
         title: "Inspection / Check-Up Cost scope of work",
         sections: [
@@ -35,18 +35,18 @@ const pricingData = {
           {
             label: "Terms & Conditions",
             text:
-              "*Starting from AED 100, callout fee applies based on the type, brand, capacity of the appliance unit, and location for each diagnosis.",
+              "*Starting from AED 157, callout fee applies based on the type, brand, capacity of the appliance unit, and location for each diagnosis.",
           },
         ],
       },
     },
     {
-      title: "Oven Cleaning",
+      title: "Oven Cleaning Price",
       subtitle: "50-Day Service Warranty",
       badge: "Popular",
       price: "AED 340",
       description:
-        "Book professional oven cleaning with competitive pricing and scheduled availability across Dubai.",
+        "Book reliable oven cleaning professionals for your equipment. Our teams offer competitive pricing & limited-time availability across Dubai.",
       popup: {
         title: "Depending on quantities, capacity, type, model, and area",
         sections: [
@@ -63,7 +63,7 @@ const pricingData = {
           {
             label: "Terms & Conditions",
             text:
-              "*Starting from AED 230 fee applies based on the Capacity: Based on Type, Model, and Area for each unit.",
+              "*Starting from AED 340 fee applies based on the Capacity: Based on Type, Model, and Area for each unit.",
           },
         ],
       },
@@ -72,7 +72,7 @@ const pricingData = {
       title: "Oven Installation",
       price: "AED 280",
       description:
-        "FAJ technicians install compatible built-in gas and electric ovens with suitable alignment and connections.",
+        "FAJ expert technicians will provide assistance to install home appliances. Upgrade your kitchen with professional appliance installations!",
       popup: {
         title: "Depending on quantities, capacity, type, model, and area",
         sections: [

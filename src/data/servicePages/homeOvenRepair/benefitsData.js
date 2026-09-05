@@ -1,8 +1,8 @@
 const benefitsData = {
   eyebrow: "Service Deliverables",
-  title: "The Benefits of Oven Service in Dubai",
+  title: "The Benefits of Oven Service Dubai",
   description:
-    "Preventative care supports safer use, consistent cooking, lower operating costs and longer equipment life.",
+    "",
   stats: [
     { value: "2010", label: "Serving the UAE Since" },
     { value: "7-Day", label: "Support Available" },
@@ -13,7 +13,7 @@ const benefitsData = {
       number: "01",
       title: "Ensuring Safety",
       description:
-        "Routine checks reduce electrical, gas and component hazards to help protect the household.",
+        "Routine checks reduce the risk of electrical faults, gas leaks, and other hazards, keeping your home and family safe.",
       icon: "shield-check",
     },
     {
@@ -21,7 +21,7 @@ const benefitsData = {
       number: "02",
       title: "Optimal Performance",
       description:
-        "Regular maintenance helps the oven heat smoothly and deliver consistent cooking results.",
+        "Regular maintenance helps your oven run smoothly and efficiently, consistently delivering the best cooking results every time.",
       icon: "sparkles",
     },
     {
@@ -29,7 +29,7 @@ const benefitsData = {
       number: "03",
       title: "Lower Energy Bills",
       description:
-        "An efficient oven reaches temperature correctly without unnecessary energy consumption.",
+        "An energy-efficient oven translates to monthly savings on utility bills, putting more money back in your pocket.",
       icon: "wind",
     },
     {
@@ -37,15 +37,15 @@ const benefitsData = {
       number: "04",
       title: "Saving Money on Repair",
       description:
-        "Preventative attention catches faults early and reduces the risk of expensive breakdowns.",
+        "Preventive maintenance catches issues early, reducing the risk of major breakdowns and expensive repair costs.",
       icon: "dollar-sign",
     },
     {
       id: "oven-service-lifespan",
       number: "05",
-      title: "Extending Oven Lifespan",
+      title: "Extending oven Lifespan",
       description:
-        "Correct cleaning and timely repairs can significantly delay premature oven replacement.",
+        "Proper care and timely servicing can significantly increase life of your oven, delaying the need for replacements.",
       icon: "clock",
     },
     {
@@ -53,7 +53,7 @@ const benefitsData = {
       number: "06",
       title: "Peace of Mind",
       description:
-        "Knowing the oven is in good condition reduces the stress of unexpected appliance failure.",
+        "Knowing your oven are in top condition gives you confidence and removes the stress of unexpected failures.",
       icon: "shield-check",
     },
   ],

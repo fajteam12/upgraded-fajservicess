@@ -1,38 +1,38 @@
 const commonProblemsData = {
   "eyebrow": "Symptom Diagnostic",
-  "title": "The Most Common Problems of Coffee Machines",
+  "title": "The Most Common Problems with Espresso Machines",
   "items": [
     {
       "title": "Water Leaking",
-      "description": "Leakage can be caused by worn seals, loose connections, cracked reservoirs, damaged tubing, or group-head gasket failure."
+      "description": "Leaking is common in commercial coffee machines, usually from worn seals or loose fittings. Check the seals to begin troubleshooting."
     },
     {
-      "title": "Coffee Machine Descaling",
-      "description": "Mineral buildup can restrict internal water paths, reduce heating efficiency, and contribute to clogs or leaks."
+      "title": "Excessive Steam Release",
+      "description": "Steam escaping from unexpected areas of your coffee machine can be concerning and often needs attention."
     },
     {
-      "title": "Coffee Machine Cleaning",
-      "description": "Cleaning filter baskets, grinder parts, steam wands, and brewing components helps prevent blockages and poor flavour."
+      "title": "Poor Espresso Extraction",
+      "description": "If your espresso shots are consistently under-extracted or over-extracted, it can affect the flavor and quality of your coffee."
     },
     {
-      "title": "Bad Coffee Taste",
-      "description": "Stale beans, incorrect grind settings, extraction problems, dirty components, or unstable temperature can affect taste."
+      "title": "Espresso Machine Issues",
+      "description": "Espresso machines can experience various problems that affect their functionality and the quality of the coffee produced."
     },
     {
-      "title": "Loud or Unusual Noises",
-      "description": "Low water levels, pump faults, grinder blockages, vibration, or heating problems may produce unexpected noises."
+      "title": "Machine Not Running On",
+      "description": "Make sure your coffee machine is plugged in and the outlet is working. A loose connection might be the issue."
     },
     {
-      "title": "Brewing Issues",
-      "description": "Weak coffee is often caused by incorrect grind size, over-extraction, under-extraction, or stale coffee beans."
+      "title": "Coffee Tastes Bad",
+      "description": "Clean the machine regularly to prevent residue buildup that affects the taste, aroma, and quality of your coffee."
     },
     {
-      "title": "Slow Coffee Flow",
-      "description": "Restricted flow can result from limescale, incorrect grind size, blocked valves, dirty group heads, or a failing pump."
+      "title": "Coffee Grinder Malfunctions",
+      "description": "In machines with built-in grinders, malfunctions can disrupt coffee production, especially if the grinder stops working."
     },
     {
-      "title": "Professional Help",
-      "description": "Complex electrical, hydraulic, boiler, grinder, and control-board faults should be inspected by a qualified technician."
+      "title": "Brewing Quality Coffee",
+      "description": "A coffee machine that isn't brewing may have an empty water reservoir. Check that it is filled and properly seated."
     }
   ]
 };

@@ -2096,3 +2096,38 @@
 .service-landing__info-bullet-title {
   margin-right: 4px;
 }
+
+/* Optional paragraphs above ActionCardsSection cards */
+.service-landing__action-intro-copy {
+  max-width: 920px;
+  margin: -6px auto 30px;
+  text-align: center;
+}
+
+.service-landing__action-intro-copy p {
+  margin: 0;
+  color: var(--sl-body);
+  font-size: max(var(--sl-small), 0.84rem);
+  line-height: 1.75;
+}
+
+.service-landing__action-intro-copy p + p {
+  margin-top: 10px;
+}
+
+/* Dark section */
+.service-landing__section.is-dark
+  .service-landing__action-intro-copy p {
+  color: #d2dde2;
+}
+
+@media (max-width: 680px) {
+  .service-landing__action-intro-copy {
+    margin-bottom: 24px;
+  }
+}
+
+/* FAQ Style */
+.service-landing__faq-answer ul{
+  padding-left: 35px;
+}

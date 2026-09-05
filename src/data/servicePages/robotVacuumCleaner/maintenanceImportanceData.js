@@ -1,36 +1,35 @@
 const maintenanceImportanceData = {
   eyebrow: "Inspection and Cleaning",
-  title: "Why Is Vacuum Cleaner Maintenance Important?",
+  title: "Why is Maintenance and Cleaning of Vacuum Cleaner Important?",
   description:
-    "Preventive attention protects cleaning performance, device reliability and long-term operating value.",
-  intro:
-    "Small blockages, dirty sensors and worn consumables can affect the drive motor, navigation system and cleaning results if left unattended.",
-  listTitle: "Preventive maintenance advantages",
+    "Vacuum cleaner maintenance is crucial for its longevity and performance and to ensure your home is cleaned effectively and safely.",
+  intro:"",
+  listTitle: "Here's why vacuum cleaner maintenance is important:",
   items: [
     {
-      title: "Extended Lifespan",
+      title: "Vacuum Cleaner Extended Lifespan",
       description:
-        "Cleaning filters, emptying the dustbin and replacing worn consumables can extend equipment life.",
+        "Regular maintenance, like cleaning filters and emptying the dustbin, can extend your vacuum's lifespan.",
     },
     {
-      title: "Improved Performance",
+      title: "Vacuum Cleaner Improved Performance",
       description:
-        "Clear air paths, clean brushes and correctly operating sensors support reliable cleaning results.",
+        "Regularly cleaning filters and bags, and clearing the brush roll ensures the vacuum operates efficiently.",
     },
     {
-      title: "Reduced Repair Costs",
+      title: "Vacuum Cleaner Reduced Repair Costs",
       description:
-        "Addressing minor wear early can prevent secondary damage and more expensive repairs.",
+        "Addressing minor issues through routine maintenance can prevent them from escalating into costly repairs.",
     },
     {
-      title: "Quieter Operation",
+      title: "Vacuum Cleaner Quieter Operation",
       description:
-        "Removing obstructions and correcting worn moving parts can reduce avoidable operating noise.",
+        "A well-maintained vacuum runs more quietly, reducing noise disturbance.",
     },
     {
-      title: "Saves Time and Effort",
+      title: "Vacuum Cleaner Saves Time and Effort",
       description:
-        "Dependable navigation, charging and suction reduce interrupted cleaning cycles and manual rework.",
+        "Maintenance saves time and effort on cleaning and repairs by preventing breakdowns and ensuring optimal performance.",
     },
   ],
 };

@@ -14,6 +14,7 @@ import {
   SplitListSection,
   TwoColumnInfoSection,
   useBookingRequest,
+  ContentCardSection,
 } from "../../Components/ServicePageSections";
 import "../../Components/ServicePageSections/ServicePageSections.css";
 import pageData from "../../data/servicePages/robotVacuumCleaner";
@@ -79,6 +80,10 @@ export default function VacuumCleanerRepair() {
           columns="three"
         />
 
+        <ContentCardSection 
+          content={pageData.repairOverview} 
+        />
+
         <SearchableDirectorySection
           content={pageData.brands}
           onAction={openBooking}
@@ -88,6 +93,9 @@ export default function VacuumCleanerRepair() {
           content={pageData.testimonials}
           tone="soft"
           columns="three"
+          slider
+          autoplay
+          loop
         />
 
         <AccordionSection content={pageData.faqs} tone="white" />

@@ -1,30 +1,30 @@
 const whyChooseUsData = {
   "eyebrow": "Expert Team",
-  "title": "Choose Us for Reliable, Exceptional Service Tailored to Your Needs",
+  "title": "CHOOSE US FOR RELIABLE, EXCEPTIONAL SERVICE TAILORED TO YOUR NEEDS!",
   "items": [
     {
-      "title": "Fast, Reliable Service",
-      "description": "Same-day or next-day appointments help restore your equipment quickly."
+      "title": "Reliable, Priority, and Quick",
+      "description": "You can count on efficient service! Our same-day repair or next-day service visits ensure that your needs are met quickly.."
     },
     {
-      "title": "Preventive Support",
-      "description": "Maintenance plans provide scheduled care throughout the year for smoother operation."
+      "title": "Feeling Of Calm",
+      "description": "With a maintenance contract, you get a full year of service, ensuring your coffee machine runs smoothly and providing peace of mind."
     },
     {
       "title": "You Are in Control",
-      "description": "Choose a suitable service date and receive a clear technician arrival window."
+      "description": "Choose a day and time for your coffee machine repair in Dubai or Sharjah. With a 3-4 hour window for when our technician will arrive."
     },
     {
-      "title": "Coffee Machine Specialists",
-      "description": "Our technicians work across major domestic and commercial coffee-equipment brands."
+      "title": "We Are Experts",
+      "description": "We are experts in coffee machine repair this is why most major brands trust us to handle their service and maintenance needs."
     },
     {
       "title": "Great Value",
-      "description": "Inspection options can include diagnosis, transportation, and reinstallation for qualifying machines."
+      "description": "Inspection fee includes diagnosis, transport, and reinstallation upto two coffee machine at the same location in Dubai."
     },
     {
-      "title": "Trustworthy Technicians",
-      "description": "Our trained team provides clear communication and professional service standards."
+      "title": "Trustworthy",
+      "description": "Our skilled coffee machine technicians are highly trained, and we provide excellent service for a variety of major brands."
     }
   ]
 };

@@ -1,25 +1,24 @@
 const serviceOverviewData = {
   eyebrow: "Expert Cooker Care",
-  title: "Same-Day Cooking Range Repair and Service",
+  title: "Get Oven Repair & Service Near by You",
   description:
-    "Responsive domestic oven repair with convenient Dubai workshop support.",
+    "Ovens are among the most frequently used kitchen appliances, as we rely on them to cook our food.",
   paragraphs: [
-    "Cooking appliances can develop faults without warning. An oven may stop heating, cycle incorrectly, fail to ignite or cook food unevenly.",
-    "FAJ arranges professional cooking-range and oven repair to diagnose and correct faults promptly.",
+    "When an oven breaks down, it can significantly impact our daily routines. Therefore, it's essential to find an oven repair and service specialist near you as quickly as possible, whether you are in Dubai or Sharjah!",
   ],
   cards: [
     {
       title: "Fast and Reliable Appliance Service",
       paragraphs: [
-        "Qualified technicians help restore faulty ovens and reduce the cost and disruption of premature replacement.",
+        "At FAJ Technical Services L.L.C, we understand that appliance breakdowns never happen at a convenient time. That's why our trained and qualified technicians are here to provide you with reliable appliance repair services. With our help, you can avoid the expense of purchasing a new appliance and get your appliance up and running again before you even have a chance to stress about it.",
       ],
     },
     {
       title: "FAJ Dubai Technical Workshop",
       featured: true,
       paragraphs: [
-        "Our workshop near Umm Suqeim Road is accessible from Al Khail Road and Sheikh Zayed Road.",
-        "Customers dropping off eligible equipment can receive promotional discounts on inspection and subsequent services.",
+        "If you require repairs for your coffee machine, stand mixer, vacuum cleaner, or other domestic appliances or commercial equipment, please contact us. The FAJ workshop is located near the Umm Suqeim road and is easily accessible from Al Khail Road and Sheikh Zayed Road.",
+        "When you drop off your appliance at the workshop, you will receive a discount on the technical inspection fee and other services.",
       ],
     },
   ],

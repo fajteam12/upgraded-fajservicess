@@ -1,24 +1,32 @@
 const servicesOfferedData = {
   "eyebrow": "Complete Care Options",
-  "title": "Services We Offer for Coffee Machines and Espresso Machines",
-  "introTitle": "We specialise in domestic and commercial coffee machines, including espresso machines",
+  "title": "HERE ARE THE SERVICES WE OFFER FOR COFFEE AND ESPRESSO MACHINES",
+  "introTitle": "We specialise in all types and brands of coffee makers and espresso machines",
   "introText": "Our services include:",
   "items": [
     {
       "title": "Installation",
-      "description": "Expert installation of different coffee-machine types and brands, supporting safe connections and optimal operation."
+      "description": "We provide professional installation for various coffee and espresso machines, ensuring optimal performance."
     },
     {
-      "title": "Diagnostics",
-      "description": "Thorough fault finding, eligibility assessment, and clear quotations for required repairs and parts."
+      "title": "Cleaning and Maintenance",
+      "description": "Proper maintenance of your espresso or coffee machine is essential for brewing great coffee and ensuring a long service life."
+    },
+    {
+      "title": "Descaling Espresso Machine",
+      "description": "Descaling your espresso machine or coffee machine when prompted is essential. Removing limescale is necessary to maintain the machine's performance."
+    },
+    {
+      "title": "Coffee Equipment",
+      "description": "We offer coffee grinders, descalers, coffee brewers, and coffee roaster services."
     },
     {
       "title": "Repair Service",
-      "description": "Efficient repair of leaks, heating faults, electrical failures, grinder problems, pump faults, and system malfunctions."
+      "description": "We provide efficient repair services for all coffee machine components, quickly resolving leaks, errors, electrical failures, and malfunctions."
     },
     {
       "title": "Annual Maintenance Contract",
-      "description": "Planned preventive servicing designed to support performance, efficiency, hygiene, and equipment longevity."
+      "description": "This contract details the annual maintenance terms for your espresso machine. Regular maintenance is essential for optimal performance and longevity."
     }
   ]
 };

@@ -1,29 +1,32 @@
 const servicesOfferedData = {
   id: "vacuum-cleaner-services",
   eyebrow: "Service Options",
-  title: "Services We Offer for Robotic Vacuum Cleaners",
+  title: "Here Are The Services We Offer For Robotic Vacuum Cleaners",
   description:
-    "Repair, preventive servicing and comprehensive care for conventional, cordless and robotic vacuum cleaners in the UAE.",
+    "In Dubai, vacuum cleaner services provide repair, maintenance, and servicing to extend the lifespan of your vacuum cleaner.",
+  paragraphs:[
+    "These services can range from quick fixes to comprehensive overhauls, with some companies specializing specifically in robotic vacuum cleaners.","Here's a detailed overview of vacuum cleaner services offered in Dubai, UAE:"
+  ],
   items: [
     {
       icon: "wrench",
       title: "Vacuum Cleaner Repair",
       description:
-        "Diagnosis and repair for motor faults, blocked airways, battery problems, charging failures and damaged attachments.",
+        "This service addresses issues such as motor problems, hose blockages, and faulty attachments.",
       actionLabel: "Book Repair",
     },
     {
       icon: "sparkles",
       title: "Vacuum Cleaner Servicing",
       description:
-        "Cleaning, inspection and performance checks for filters, brushes, sensors, wheels and charging contacts.",
+        "Regular maintenance includes cleaning, inspecting parts, and ensuring optimal performance.",
       actionLabel: "Book Service",
     },
     {
-      icon: "shield",
+      icon: "dollar",
       title: "Comprehensive Repair Packages",
       description:
-        "Detailed diagnostics, cleaning and quoted component replacement for equipment requiring broader restoration.",
+        "These packages offer a wide range of services, including diagnostics, cleaning, and potential part replacements.",
       actionLabel: "Request Package",
     },
   ],

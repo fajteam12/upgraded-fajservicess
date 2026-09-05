@@ -2,47 +2,47 @@ const commonProblemsData = {
   eyebrow: "Troubleshooting Guide",
   title: "Top Common Vacuum Cleaner Problems You Should Know About",
   description:
-    "Device errors, mapping glitches and performance changes can indicate a fault that needs specialist diagnosis.",
+    "",
   items: [
     {
       title: "Battery Degradation",
       description:
-        "Ageing batteries gradually lose capacity, reducing cleaning time and overall automatic-vacuum performance.",
+        "Over time, batteries naturally lose their capacity to hold a full charge, which can affect the overall performance of your automatic vacuum cleaner.",
     },
     {
       title: "Connectivity Issues",
       description:
-        "Wi-Fi range, router configuration, firmware or device faults may interrupt app control and scheduling.",
+        "To fix connectivity issues, ensure supply Wi-Fi is working and the vacuum is in range. Restart both the router and the vacuum if needed.",
     },
     {
-      title: "Dirty or Faulty Sensors",
+      title: "Inspect and Clean Sensors",
       description:
-        "Dust on the front or underside sensors can interfere with obstacle, edge and drop detection.",
+        "The next step in diagnosing your robot floor cleaner is to wipe the sensors, which are primarily located on the front and bottom of the device.",
     },
     {
       title: "Navigation Mapping Errors",
       description:
-        "Sensor misalignment, LiDAR faults or corrupted maps can cause missed areas and erratic navigation.",
+        "Advanced robotic vacuums use AI algorithms for precise navigation mapping, but errors can occasionally occur due to sensor misalignment.",
     },
     {
       title: "Faulty Charging Dock",
       description:
-        "Dock, power-supply or alignment faults can prevent the vacuum from receiving a proper charge.",
+        "A faulty robot vacuum charging dock can impair the charging process, preventing the vacuum cleaner from receiving a proper charge.",
     },
     {
       title: "Loss of Suction",
       description:
-        "Clogged filters, a full dustbin, blocked airways or a worn motor can reduce suction power.",
+        "If your vacuum cleaner is losing suction power, the issue might be clogged filters, a full dustbin or bag, or a malfunction within the suction system.",
     },
     {
-      title: "Reset and Software Errors",
+      title: "Resetting Robot Vacuum",
       description:
-        "Firmware, pairing or stored-map faults may require controlled resetting and system diagnosis.",
+        "If your robot vacuum can't recognise obstacles, check to see if the sensors are clean. Dirty sensors may hinder their ability to detect obstacles properly.",
     },
     {
       title: "Dirty Charging Contacts",
       description:
-        "Dust and debris on the charging contacts can interrupt reliable docking and battery charging.",
+        "Accumulated dust and debris on the charging contacts can be a common issue. To maintain proper charging functionality, ensure you regularly clean the docking station.",
     },
   ],
 };

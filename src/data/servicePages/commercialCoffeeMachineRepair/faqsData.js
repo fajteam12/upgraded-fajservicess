@@ -4,51 +4,55 @@ const faqsData = {
   "items": [
     {
       "question": "How much power does a commercial espresso machine use?",
-      "answer": "Commercial coffee machines typically consume around 1,500 to 3,500 watts, depending on boiler size, number of groups, heating configuration, and operating mode."
+      "answer": "On average, commercial coffee machines consume between 1,500 to 3,500 watts per hour. This means that a machine running for 8 hours a day would use approximately 12,000 to 28,000 watt-hours per day, equating to around 360 to 840 kilowatt-hours per month."
     },
     {
       "question": "How long does a commercial espresso machine last?",
-      "answer": "With routine maintenance, professional descaling, and timely replacement of wear parts, a high-quality commercial espresso machine can often last 10 to 15 years."
+      "answer": "Typically, a well-maintained commercial coffee machine can last anywhere from 5 to 15 years. The lifespan varies due to differences in brands, models, and, most importantly, the level of maintenance and servicing it receives over time."
     },
     {
       "question": "Do commercial espresso machines need a drain?",
-      "answer": "Most plumbed commercial machines require a dedicated waste connection or floor drain for drip trays, rinse water, and backflushing cycles."
+      "answer": "Yes, commercial espresso machines often require drain lines. These machines generate condensation and have liquid lines designed to direct excess water into the drain."
     },
     {
       "question": "What pressure do commercial espresso machines use?",
-      "answer": "The standard extraction pressure is approximately 9 bar. Some premium machines support controlled pressure profiling at different stages of extraction."
+      "answer": "Espresso is primarily brewed at around 9 bars of pressure. However, some machines, particularly specialized espresso makers, can reach pressures of up to 20 bars. This higher pressure helps ensure consistent extraction, especially in compact or portable devices."
     },
     {
       "question": "What is the flow rate of an espresso machine?",
-      "answer": "A commercial group head may provide roughly 100 to 120 ml of unrestricted water per 10 seconds, though the exact flow depends on model and calibration."
+      "answer": "The pump in espresso machines delivers a maximum water flow, referred to as water debit. There are two types of pumps commonly used: vibration and rotary. Vibration pumps typically yield flow rates of 8 mL/s, while rotary pumps can achieve up to 30 mL/s."
     },
     {
       "question": "How often should a commercial espresso machine be cleaned?",
-      "answer": "Busy commercial machines should be rinsed and backflushed daily. Professional deep cleaning and preventive servicing are commonly recommended every three to six months."
+      "answer": "Cleaning should occur daily and weekly. it's important to clean your espresso machine daily with backflush chemicals, along with brushing down and removing any accumulated coffee grounds or oils. This maintenance significantly extends the machine's lifespan."
     },
     {
       "question": "How does a commercial espresso machine work?",
-      "answer": "The machine heats water in a pressurised boiler and uses a pump to force temperature-controlled water through finely ground coffee held in a portafilter."
+      "answer": "Key components include a pump that draws water from the reservoir, a boiler, and the portafilter, which is part of the group head. Most machines use an electric pump to force water through the compacted coffee in the portafilter."
     },
     {
       "question": "What is a common problem with coffee machines?",
-      "answer": "Common faults include leaking group-head gaskets, steam-valve leaks, failed heating elements, grinder blockages, pump problems, and limescale-restricted water lines."
+      "answer": "Insufficient water flow can be a major issue. If your coffee machine is producing weak or slow water flow, it may be due to a clogged water line or filter. Check the water reservoir for debris or mineral buildup that could be obstructing flow, and inspect the water filter, replacing it if necessary."
     },
     {
-      "question": "What temperature should a commercial coffee maker use?",
-      "answer": "Espresso brewing water is generally maintained between approximately 90°C and 96°C, while the steam boiler operates at a higher temperature."
+      "question": "What temperature should a commercial coffee maker be?",
+      "answer": "The optimal brewing temperature for coffee is between 195 degrees and 205 degrees Fahrenheit. This temperature range is crucial for ensuring the best extraction, depending on your grind consistency."
     },
     {
       "question": "Should commercial coffee machines be turned off at night?",
-      "answer": "Follow the manufacturer’s instructions. Many modern machines provide standby or eco modes that reduce energy consumption while limiting repeated thermal cycling."
+      "answer": "It is important to allow the temperatures, particularly in your brew groups, to stabilize to ensure proper brewing. If your commercial espresso machine does not have a programmed on/off feature, it is recommended that you leave it on when not in use."
     },
     {
       "question": "What happens if a coffee machine is not cleaned regularly?",
-      "answer": "Coffee oils, milk residue, and mineral scale can cause poor flavour, blocked valves, restricted flow, hygiene problems, and premature component failure."
+      "answer": "Disregarding to clean machines regularly can lead to poor-tasting coffee and puts the machine at risk of damage. Most machines have a microporous steel filter, and the buildup of coffee tannins over time can clog this filter, causing jams and potential breakdowns."
     },
     {
       "question": "Is descaling a coffee machine necessary?",
-      "answer": "Yes. Minerals from water accumulate in boilers, heating elements, valves, and internal pipes. Correct descaling protects thermal efficiency and internal components."
+      "answer": "Regular descaling of your coffee machine is essential to produce the best quality coffee. The frequency of descaling depends on how often the machine is used and the hardness of the water in your area."
+    },
+    {
+      "question": "Do coffee machines need servicing?",
+      "answer": "Yes, coffee machines experience significant wear and tear over time. Regular servicing can help identify any parts that need replacement or repair, potentially preventing major breakdowns in the future."
     }
   ]
 };

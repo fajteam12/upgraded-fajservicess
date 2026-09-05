@@ -13,6 +13,7 @@ import servicesOfferedData from "./servicesOfferedData";
 import testimonialsData from "./testimonialsData";
 import videoData from "./videoData";
 import whyChooseUsData from "./whyChooseUsData";
+import repairOverviewData from "./repairOverviewData";
 
 const robotVacuumCleanerData = {
   seo: seoData,
@@ -29,6 +30,7 @@ const robotVacuumCleanerData = {
   brands: brandsData,
   testimonials: testimonialsData,
   faqs: faqsData,
+  repairOverview: repairOverviewData,
   booking: bookingData,
 };
 
