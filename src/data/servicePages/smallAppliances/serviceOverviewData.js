@@ -2,23 +2,22 @@ const serviceOverviewData = {
   eyebrow: "Small Appliance Repair and Maintenance",
   title: "Small Appliance Repair and Maintenance",
   description:
-    "Professional diagnosis and repair for the compact appliances that support everyday home and kitchen routines.",
+    "Small appliances are important for daily use, and if they are damaged, it can affect your routine. FAJ provides expert service for kitchen appliances such as stand mixers, blenders, kettles, toasters, air fryers, microwave ovens, ice crushers, food processors, vacuum cleaners, cigar cabinet fridges, steam irons, and other electronic appliance repairs and fixes nearby in Dubai.",
   paragraphs: [
-    "FAJ services stand mixers, blenders, kettles, toasters, air fryers, microwave ovens, ice crushers, food processors, vacuum cleaners, cigar cabinet fridges, steam irons and other electronic appliances in Dubai.",
-    "Our trained technicians inspect the reported fault and explain the practical repair options so you can avoid replacing otherwise serviceable equipment.",
+    "",
   ],
   cards: [
     {
-      title: "Express and Emergency Small Appliance Repair",
+      title: "Fast and Reliable Appliances Service",
       paragraphs: [
-        "A diagnosis call-out fee from AED 50 to AED 280 applies depending on equipment capacity and service requirements. Same-day visits may be available for bookings before 12:00 PM; later bookings are normally arranged for the next available visit.",
+        "At FAJ Technical Services L.L.C we understand that appliance breakdowns never happen at a convenient time. That's why our trained and qualified technicians are here to provide you with reliable appliance repair services. With our help, you can avoid the expense of purchasing a new appliance and get your appliance up and running again before you even have a chance to stress about it.",
       ],
     },
     {
       title: "Workshop Location and Drop-Off Discount",
       featured: true,
       paragraphs: [
-        "The FAJ workshop is near Umm Suqeim Road and is accessible from Al Khail Road and Sheikh Zayed Road. Eligible workshop drop-offs receive a direct discount on technical inspection and selected services.",
+        "If you require repairs for your coffee machine, stand mixer, vacuum cleaner, or other domestic appliances or commercial equipment, please contact us. The FAJ workshop is located near the Umm Suqeim road and is easily accessible from Al Khail Road and Sheikh Zayed Road.", "When you drop off your appliance at the workshop, you will receive a discount on the technical inspection fee and other services.",
       ],
     },
   ],

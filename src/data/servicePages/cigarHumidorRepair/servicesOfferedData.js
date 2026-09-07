@@ -1,36 +1,36 @@
 const servicesOfferedData = {
   id: "cigar-humidor-services",
   eyebrow: "Services Portfolio",
-  title: "Services We Offer for All Cigar Humidors",
+  title: "HERE ARE THE SERVICES WE OFFER FOR All Cigar Humidors",
   description:
-    "Professional installation, diagnosis, repair and planned care for cabinet humidors, cigar refrigerators and walk-in cigar chillers.",
+    "We specialise in all types and brands of Cigar cabinet humidor, including cigar walk in chiller:",
   items: [
     {
       icon: "wrench",
-      title: "Cigar Humidor Installation",
+      title: "Cigar Cabinet Humidor Installation",
       description:
-        "Professional cabinet and walk-in system setup for suitable equipment, components and site requirements.",
+        "Expert installation of various types and brands of cigar walk-in chillers and spare parts, ensuring optimal performance and efficiency.",
       actionLabel: "Book Installation",
     },
     {
       icon: "thermometer",
-      title: "Cigar Humidor Diagnostics",
+      title: "Cigar Cabinet Humidor Diagnostics",
       description:
-        "Detailed assessment of cooling, humidity, airflow, sensor and electrical faults with a clear quotation.",
+        "We thoroughly diagnose issues and offer eligibility assessments with detailed quotes for your built-in cigar refrigerator.",
       actionLabel: "Book Diagnostics",
     },
     {
       icon: "alert",
-      title: "Cigar Humidor Repair Service",
+      title: "Cigar Cabinet Humidor Repair Service",
       description:
-        "Repair support for leaks, sensor errors, unstable humidity, cooling failures and electrical malfunctions.",
+        "Efficient repair services for all cigar humidifier components, ensuring quick resolution of issues such as leaks, electrical failures, and system malfunctions.",
       actionLabel: "Book Repair",
     },
   ],
   footerCard: {
-    title: "Cigar Humidor Annual Maintenance Contract",
+    title: "Cigar Cabinet Humidor Annual Maintenance Contract",
     description:
-      "Planned inspection and servicing for built-in humidors, walk-in cigar chillers and cigar refrigerators.",
+      "This contract outlines the terms and services covered for the annual maintenance of the built-in cigar humidor, cigar walk-in chiller, and cigar refrigerator.",
     actionLabel: "Request Contract Details",
     bookingLabel: "Cigar Humidor Annual Maintenance Contract",
   },

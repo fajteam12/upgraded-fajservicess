@@ -14,42 +14,42 @@ const brandsData = {
     {
       name: "Afidano Electric Cigar Humidor",
       description:
-        "Repair and maintenance support for Afidano electric humidors, cigar refrigerators and cooler systems.",
+        "Afidano specializes in cigar humidor repair, fixing electric cigar humidor, cigar refrigerator repairs, and cigar cooler maintenance. FAJ is the official Afidano electric cigar humidor service center in Dubai, UAE.",
     },
     {
       name: "Airo Fridgador Cabinet",
       description:
-        "Diagnosis and maintenance for Airo Fridgador cigar-storage cabinets in Dubai.",
+        "FAJ offers reliable Airo fridgador cabinet repair and services in Dubai, with professionals who are experts in Airo fridgador cigar cabinet maintenance. Contact us for Airo cigar cabinet repair near me and cigar humidor maintenance in Dubai.",
     },
     {
       name: "Raching Cigar Humidor",
       description:
-        "Electronic humidor diagnosis, cabinet repair and preventive service for supported Raching systems.",
+        "Located in Dubai, FAJ is your trusted destination for raching electric cigar humidor services. We specialize in electronic humidor repairs and maintenance, offering comprehensive solutions to meet your needs. Get same day Raching cigar humidor cabinet electronic maintenance near me and service in Dubai",
     },
     {
       name: "Liebherr Cigar Humidor",
       description:
-        "Professional maintenance and repair for Liebherr cigar cabinet refrigeration and storage systems.",
+        "The Liebherr cigar cabinet humidor service and repair ensures you won’t have to worry because you are in the right place. FAJ prioritizes efficiency and reliability. FAJ offers Liebherr humidor electric repair and professional cigar storage maintenance service near you in Dubai",
     },
     {
       name: "Hemingway Electric Cigar Humidor",
       description:
-        "Fault diagnosis and repair support for Hemingway premium electric cigar humidors.",
+        "Rely on our expert team to promptly resolve any issues with your Hemingway Electric Cigar Humidor repair service and restore its functionality. Hemingway Cigar Cabinet Repair Dubai. Call us for a humidor repair technician near me service in Dubai, Abu Dhabi and Sharjah.",
     },
     {
       name: "Electric Cigar Humidor",
       description:
-        "Cooling, humidity, sensor and electrical service for supported electric humidor models.",
+        "With extensive knowledge of electric cigar humidor repairing and servicing, we provide effective cigar repair to keep your unit running smoothly. Contact us today for Cigar refrigerator repair near me, cigar fridge maintenance service in Dubai",
     },
     {
       name: "Vevor Electric Cigar Humidor",
       description:
-        "Professional diagnosis and maintenance for supported Vevor electric cigar cabinets.",
+        "No matter the problem with your Vevor Electric Cigar Humidor repair and service, our experts can diagnose and fix it accurately. Reach us for cigar humidor cabinet repair near Dubai and best humidor maintenance and service near your location.",
     },
     {
       name: "Cigar Cabinet Refrigerator",
       description:
-        "Repair and preventive maintenance for cabinet refrigerators used for controlled cigar storage.",
+        "Is your Humidor Cigar Cabinet Refrigerator not working properly? Don't suffer through uncomfortable temperatures or risk losses due to faulty equipment. FAJ can restore your humidor cigar cabinet refrigerator repair and service quickly! Contact us for fix cigar fridge or cigar refrigerator service and maintenance.",
     },
   ],
 };

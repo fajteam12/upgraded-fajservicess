@@ -1,23 +1,23 @@
 const serviceOverviewData = {
   eyebrow: "Expert Grill Care",
-  title: "BBQ Repair and Grill Cleaning Service",
+  title: "BBQ Repair - BBQ Grill Cleaning Service",
   description:
-    "Professional support for premium, freestanding and built-in gas or electric barbecue grills.",
+    "We are knowledgeable about all major brands of BBQ grill equipment, including both high-end luxury models and free-standing or built-in BBQ grills. As a result, we offer BBQ grill repair services for gas and electric grills of any brand, with a special focus on quality and effectiveness.",
   paragraphs: [
-    "FAJ technicians work with major barbecue brands and provide practical inspection, cleaning and repair options focused on safe, effective grill performance.",
+    "",
   ],
   cards: [
     {
       title: "BBQ Technical Inspection Price",
       paragraphs: [
-        "Technical inspection starts from AED 157 and covers diagnosis, transportation and reinstallation in Dubai for one or two grills at the same location. The non-refundable fee excludes parts, cleaning and repair work.",
+        "The technical inspection fee covers diagnosis, transportation, and reinstallation at your location in Dubai. Please note that this fee is non-refundable. This flat rate applies to 1 or 2 appliances located in the same place. However, it does not include the cost of any parts. If you need repairs for a coffee machine, stand mixer, or robot vacuum cleaner, please contact us.",
       ],
     },
     {
       title: "FAJ Dubai Technical Workshop",
       featured: true,
       paragraphs: [
-        "Our workshop is near Umm Suqeim Road with easy access from Al Khail Road and Sheikh Zayed Road. Eligible workshop drop-offs receive a discount on inspection and selected services.",
+        "If you require repairs for your coffee machine, stand mixer, vacuum cleaner, or other domestic appliances or commercial equipment, please contact us. The FAJ workshop is located near the Umm Suqeim road and is easily accessible from Al Khail Road and Sheikh Zayed Road.","When you drop off your appliance at the workshop, you will receive a discount on the technical inspection fee and other services."
       ],
     },
   ],

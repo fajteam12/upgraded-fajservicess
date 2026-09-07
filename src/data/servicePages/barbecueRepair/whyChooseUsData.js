@@ -6,45 +6,45 @@ const whyChooseUsData = {
   items: [
     {
       icon: "clock",
-      badge: "Reliable and Quick",
-      title: "Fast, Reliable Service",
+      badge: "Fast, Reliable Service",
+      title: "Reliable, Priority, and Quick",
       description:
-        "Same-day or next-day scheduling is offered where technician and parts availability allow.",
+        "You can count on efficient service! Our same-day repair or next-day service visits ensure that your needs are met quickly.",
     },
     {
       icon: "shield",
       badge: "Preventive Protection",
-      title: "Year-Round Confidence",
+      title: "Feeling Of Calm",
       description:
-        "Maintenance contracts help keep important grill components inspected throughout the year.",
+        "With a maintenance contract, you get a full year of service, ensuring your BBQ runs smoothly and providing peace of mind.",
     },
     {
       icon: "calendar",
       badge: "Flexible Scheduling",
       title: "You Are in Control",
       description:
-        "Choose a suitable date with a practical arrival window for service in Dubai or Sharjah.",
+        "Choose a day and time for your BBQ repair in Dubai or Sharjah. With a 3-4 hour window for when our technician will arrive.",
     },
     {
       icon: "award",
       badge: "Technical Specialists",
       title: "BBQ Repair Experts",
       description:
-        "Our technicians diagnose gas, electrical, ignition and heating faults across supported brands.",
+        "We are experts in BBQ repair this is why most major brands trust us to handle their service and maintenance needs.",
     },
     {
       icon: "dollar",
       badge: "Clear Value",
-      title: "Transparent Inspection",
+      title: "Great Value",
       description:
-        "One inspection fee can cover diagnosis, transport and reinstallation for up to two grills at one Dubai location.",
+        "Inspection fee includes diagnosis, transport, and reinstallation upto two BBQ at the same location in Dubai.",
     },
     {
       icon: "check",
       badge: "Established 2010",
-      title: "Trustworthy UAE Support",
+      title: "Trustworthy",
       description:
-        "FAJ provides established barbecue repair and cleaning support for homes and businesses.",
+        "Our skilled BBQ technicians are highly trained, and we provide excellent service for a variety of major brands.",
     },
   ],
 };

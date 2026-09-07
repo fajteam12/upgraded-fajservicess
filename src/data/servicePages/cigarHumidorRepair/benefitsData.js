@@ -1,8 +1,8 @@
 const benefitsData = {
   eyebrow: "Premium Outcomes",
-  title: "Benefits of Cigar Cabinet Service in Dubai",
+  title: "The Benefits of Cigar Cabinet Service Dubai",
   description:
-    "Preventive care supports safe operation, stable storage conditions, lower operating costs and longer equipment life.",
+    "",
   stats: [
     { value: "2010", label: "Serving the UAE Since" },
     { value: "7-Day", label: "Support Available" },
@@ -13,7 +13,7 @@ const benefitsData = {
       number: "01",
       title: "Ensuring Safety",
       description:
-        "Routine checks can identify electrical and cooling-system risks before they develop into hazardous failures.",
+        "Routine checks reduce the risk of electrical faults, gas leaks, and other hazards, keeping your home and family safe.",
       icon: "shield-check",
     },
     {
@@ -21,7 +21,7 @@ const benefitsData = {
       number: "02",
       title: "Optimal Performance",
       description:
-        "Correct humidity, temperature and airflow help the cabinet preserve cigars consistently.",
+        "Regular maintenance ensures your cigar cabinet humidor operates efficiently, providing optimal results every time.",
       icon: "sparkles",
     },
     {
@@ -29,7 +29,7 @@ const benefitsData = {
       number: "03",
       title: "Lower Energy Bills",
       description:
-        "Clean and correctly adjusted systems avoid unnecessary compressor and fan operation.",
+        "Energy-efficient cigar humidors translate to monthly savings on utility bills, putting more money back in your pocket.",
       icon: "wind",
     },
     {
@@ -37,7 +37,7 @@ const benefitsData = {
       number: "04",
       title: "Saving Money on Repair",
       description:
-        "Preventive attention can stop minor faults from causing expensive secondary component damage.",
+        "Preventive maintenance catches issues early, reducing the risk of major breakdowns and expensive repair costs.",
       icon: "dollar-sign",
     },
     {
@@ -45,7 +45,7 @@ const benefitsData = {
       number: "05",
       title: "Cigar Humidor Lifespan",
       description:
-        "Timely servicing and suitable care can postpone the need for cabinet replacement.",
+        "Timely servicing and proper care can greatly extend the life of your cigar humidor, postponing the need for replacements.",
       icon: "clock",
     },
     {
@@ -53,7 +53,7 @@ const benefitsData = {
       number: "06",
       title: "Peace of Mind",
       description:
-        "Dependable storage conditions reduce concern about unexpected failures affecting a valuable collection.",
+        "Knowing that your cigar humidor is in top condition gives you confidence and removes the stress of unexpected failures.",
       icon: "shield-check",
     },
   ],

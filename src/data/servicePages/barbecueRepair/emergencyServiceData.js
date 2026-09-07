@@ -1,9 +1,12 @@
 const emergencyServiceData = {
   id: "bbq-emergency-service",
   eyebrow: "Same-Day Emergency Dispatch",
-  title: "Express BBQ Repair and Service",
+  title: "EXPRESS & EMERGENCY BBQ REPAIR SERVICE",
   description:
-    "Same-day visits may be available for bookings before 12:00 PM; later requests are arranged for the next available visit.",
+    "Terms & Conditions: There is a callout fee that applies, ranging from AED 157 to 280 depending on capacity, for each diagnosis. Same-day visits are available for bookings made before *12:00 PM. For bookings made after 12:00 PM, next-day visits may be arranged, subject to availability.",
+  paragraphs: [
+    "CHOOSE FAJ FOR YOUR PEACE OF MIND","We provide 2-month repair warranty and 3-month parts warranty as standard."
+  ],
   items: [
     {
       icon: "clock",

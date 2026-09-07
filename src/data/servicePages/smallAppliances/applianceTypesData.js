@@ -14,45 +14,45 @@ const applianceTypesData = {
     {
       name: "Vacuum Cleaner Repair and Service",
       href: "/services/home-appliances-repair/robot-vacuum-cleaner-repair/",
-      description: "Motor, switch, blocked-airway, charging and performance fault diagnosis.",
+      description: "Is your vacuum cleaner not performing as it should? Our vacuum cleaner repair near me services can help! We fix vacuum cleaner all issues, including motor problems, faulty switches, and clogged hoses.",
     },
     {
       name: "Hair Dryer Repair and Service",
-      description: "Heating, airflow, switch, cord and motor repair support.",
+      description: "Welcome to FAJ Technical Services L.L.C, your go-to for hair dryer repair and the best hair dryer service near you. We specialize in fixing issues and restoring your appliance. Contact us for reliable service today!",
     },
     {
       name: "Coffee Maker Repair",
       href: "/services/coffee-machine/",
-      description: "Coffee-machine leakage, heating, brewing and power-fault service.",
+      description: "Get reliable coffee maker repair near you in Dubai. We fix coffee machine leaks, power issues, and brewing faults for all major brands. Fast, affordable service by expert technicians.",
     },
     {
       name: "Juicer and Blender Repair",
-      description: "Jammed mechanisms, blade assemblies, motors and electrical-fault diagnosis.",
+      description: "Is your juicer noisy or not working properly? We offer affordable Juicer repair shop near me, juice kit repair and blender repair and services near you in Dubai. Our experts can fix juicer issues like jammed mechanisms and electrical glitches. Trust us to restore your appliances quickly!",
     },
     {
       name: "Steam Iron Repair",
-      description: "Heating-element, thermostat, steam, wiring and power-fault repair.",
+      description: "If your electric iron isn’t working properly, we provide Steam iron repair shop near me, iron repair and iron services in Dubai. Our expertise includes fixing iron heating elements, thermostats, and faulty wiring, so you can enjoy wrinkle-free clothes again.",
     },
     {
       name: "Toaster Repair",
-      description: "Heating element, timer, switch and wiring repair support.",
+      description: "Is your toaster not heating or burning toast? We offer expert toaster repair in Dubai. Our technicians fix heating elements, timers, and wiring to restore your toaster to full working order.",
     },
     {
       name: "Kitchen Stand Mixer Repair",
       href: "/services/home-appliances-repair/brands/kitchenaid-stand-mixer-repair/",
-      description: "Gear, motor, speed control and drive-system repair for supported mixers.",
+      description: "Welcome to premium kitchen stand mixer repair and services! Since 2010, we’ve been providing expert KitchenAid stand mixer repair, Kenwood stand mixer repairing, Cuisinart precision stand mixer repairs, Philips stand repair near me, Jano stand mixer repair near you mixer repair, Black and Decker stand mixer repairing and for stand and hand mixer service in Dubai. Let us help you get your mixer working again and keep your space tidy!",
     },
     {
       name: "Water Dispenser Repair",
-      description: "Cooling, heating, leakage, switch and water-flow repair support.",
+      description: "We provide expert water dispenser repair and service to restore your hot showers. Don’t let a broken dispenser dampen your spirits—let us help get it working perfectly again!",
     },
     {
       name: "Microwave Oven Repair",
-      description: "Heating, interlock, control-panel, turntable and power-fault diagnosis.",
+      description: "We specialize in repairing small home appliances, including microwave repair near me and service in Dubai. Our mission is to deliver quality repairs at affordable prices, fixed as quickly as possible. Enjoy hot pizzas and reheated coffee with our efficient microwave repair services!",
     },
     {
       name: "Electric Kettle Repair",
-      description: "Heating-element, thermostat, base, switch and power-connection repair.",
+      description: "If your electric kettle isn’t heating properly, you need a reliable electric kettle repair and service in Dubai. Our experts specialize in diagnosing and fixing issues like faulty heating elements and power switches, quickly restoring your kettle’s functionality.",
     },
   ],
 };

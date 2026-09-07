@@ -1,50 +1,50 @@
 const whyChooseUsData = {
   eyebrow: "Guaranteed Satisfaction",
-  title: "Reliable, Exceptional Service Tailored to Your Needs",
+  title: "CHOOSE US FOR RELIABLE, EXCEPTIONAL SERVICE TAILORED TO YOUR NEEDS!",
   description:
     "Experienced technicians, practical scheduling and clear inspection advice for household appliance repair.",
   items: [
     {
       icon: "clock",
-      badge: "Reliable and Quick",
-      title: "Fast, Reliable Service",
+      badge: "Fast, Reliable Service",
+      title: "Reliable, Priority, and Quick",
       description:
-        "Same-day or next-day scheduling is offered where technician and parts availability allow.",
+        "You can count on efficient service! Our same-day repair or next-day service visits ensure that your needs are met quickly.",
     },
     {
       icon: "shield",
       badge: "Preventive Care",
-      title: "Year-Round Confidence",
+      title: "Feeling Of Calm",
       description:
-        "Maintenance-contract options help keep frequently used appliances monitored throughout the year.",
+        "With a maintenance contract, you get a full year of service, ensuring your appliance runs smoothly and providing peace of mind.",
     },
     {
       icon: "calendar",
       badge: "Flexible Scheduling",
       title: "You Are in Control",
       description:
-        "Choose a suitable date and share appliance details so the inspection can be planned efficiently.",
+        "Choose a day and time for your appliance repair in Dubai or Sharjah. With a 3-4 hour window for when our technician will arrive.",
     },
     {
       icon: "award",
       badge: "Technical Specialists",
       title: "We Are Experts",
       description:
-        "Our technicians diagnose electrical, heating, motor and electronic-control faults across appliance types.",
+        "We are experts in appliance repair this is why most major brands trust us to handle their service and maintenance needs.",
     },
     {
       icon: "dollar",
       badge: "Clear Value",
-      title: "Transparent Inspection",
+      title: "Great Value",
       description:
-        "Diagnosis and quotation help you make an informed choice about repair or replacement.",
+        "Inspection fee includes diagnosis, transport, and reinstallation upto two appliances at the same location in Dubai.",
     },
     {
       icon: "check",
       badge: "Established 2010",
       title: "Trustworthy UAE Support",
       description:
-        "FAJ serves homes and businesses across Dubai and surrounding emirates with professional technical support.",
+        "Our skilled appliance technicians are highly trained, and we provide excellent service for a variety of major brands.",
     },
   ],
 };

@@ -1,45 +1,39 @@
 const maintenanceImportanceData = {
   id: "cigar-humidor-maintenance-importance",
   eyebrow: "Cigar Humidor Care",
-  title: "Why Is It Important to Maintain a Cigar Humidor in Dubai?",
+  title: "Why is it important to maintain a cigar humidor in Dubai?",
   description:
-    "Regular care protects cigar quality, helps the cabinet maintain stable storage conditions and reduces avoidable repair costs.",
+    "Regular maintenance of a cigar humidor is essential for your use. It ensures the quality of the cigars, extends the lifespan of the cigar cabinet fridge, and reduces repair costs.",
   items: [
     {
       icon: "alert",
-      title: "Prevent Breakdowns",
+      title: "Cigar Humidor Preventing Breakdowns",
       description:
-        "Cleaning and preventive checks help identify developing cooling, sensor and humidification faults before failure.",
+        "Regular maintenance, which includes cleaning and descaling, helps minimize expensive repairs and reduces downtime.",
     },
     {
       icon: "clock",
-      title: "Extend Cabinet Lifespan",
+      title: "Cigar Humidor Extending Lifespan",
       description:
-        "Timely maintenance reduces avoidable component wear and can delay costly equipment replacement.",
+        "Regular maintenance extends the lifespan of a cigar cabinet, which helps save on replacement costs.",
     },
     {
       icon: "dollar",
-      title: "Lower Repair Costs",
+      title: "Cigar Humidor Lowering Maintenance Costs",
       description:
-        "Correcting small performance issues early helps prevent larger and more expensive secondary damage.",
+        "Addressing small issues early can help prevent larger and more costly repairs later on.",
     },
     {
       icon: "zap",
-      title: "Maintain Efficiency",
+      title: "Cigar Humidor Maintaining Efficiency",
       description:
-        "Clean, correctly adjusted components support stable operation without unnecessary energy consumption.",
+        "Regular maintenance ensures optimal performance and helps reduce energy consumption.",
     },
     {
       icon: "shield",
-      title: "Protect Cigar Quality",
+      title: "Cigar Humidor Home Use",
       description:
-        "Consistent temperature, humidity and airflow help protect cigars from drying, mould and flavour changes.",
-    },
-    {
-      icon: "check",
-      title: "Operate with Confidence",
-      description:
-        "Professional servicing gives home and business users greater confidence in valuable stored collections.",
+        "Regular maintenance enhances the quality and lifespan of cigar cabinet refrigerators. Professional servicing is beneficial for both home and business users in Dubai.",
     },
   ],
 };

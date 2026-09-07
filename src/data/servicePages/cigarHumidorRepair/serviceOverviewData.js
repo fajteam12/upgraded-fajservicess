@@ -2,22 +2,22 @@ const serviceOverviewData = {
   eyebrow: "Premium Restoration",
   title: "Cigar Humidor Repair Service Nearby",
   description:
-    "Reliable technical support for walk-in, freestanding and built-in cigar humidors.",
+    "Experience excellent service of cigar humidors with us. We offer reliable repair to ensure your humidors are functioning at their best. Whether you have a walk-in humidor, a freestanding unit, or a built-in cigar humidor, we are here to assist you.",
   paragraphs: [
-    "FAJ provides diagnosis, repair and maintenance that helps cigar-storage equipment maintain stable temperature and humidity conditions.",
+    "",
   ],
   cards: [
     {
       title: "Express Cigar Cabinet Repair Service",
       paragraphs: [
-        "A diagnosis call-out fee from AED 230 to AED 530 applies depending on the unit. Same-day visits may be available for bookings before 12:00 PM; later bookings are arranged subject to availability.",
+        "Terms & Conditions: There is a callout fee that applies, ranging from AED 230 to 530 depending on unit, for each diagnosis. Same-day visits are available for bookings made before *12:00 PM. For bookings made after 12:00 PM, next-day visits may be arranged, subject to availability.","CHOOSE FAJ FOR YOUR PEACE OF MIND","We provide 2-month repair warranty and 3-month parts warranty as standard."
       ],
     },
     {
       title: "Workshop Drop-Off Discount",
       featured: true,
       paragraphs: [
-        "The FAJ workshop is near Umm Suqeim Road and is easily accessible from Al Khail Road and Sheikh Zayed Road. Eligible drop-offs receive a discount on technical inspection and selected services.",
+        "The FAJ workshop is located near the Umm Suqeim road and is easily accessible from Al Khail Road and Sheikh Zayed Road.","When you drop off your appliance at the workshop, you will receive a discount on the technical inspection fee and other services."
       ],
     },
   ],

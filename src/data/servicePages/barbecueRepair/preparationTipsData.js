@@ -1,49 +1,49 @@
 const preparationTipsData = {
   id: "bbq-preparation-tips",
   eyebrow: "Grillmaster Prep Guide",
-  title: "Tips for Preparing Your Ideal BBQ",
+  title: "Tips for Preparing for Your BBQ",
   description:
-    "Clean equipment, careful food preparation and correct cooking practices help create a safer outdoor meal.",
+    "",
   items: [
     {
-      title: "Clean the Grill",
+      title: "Clean the grill",
       description:
-        "Inspect, clean and dry the barbecue before use, especially after outdoor storage or a long inactive period.",
+        "Inspect and clean your barbecue if it's been outside for a while. Even after use, it's a good idea to clean and dry it. Always follow the manufacturer's maintenance instructions.",
     },
     {
-      title: "Prepare Charcoal Correctly",
+      title: "Cooking on Charcoal",
       description:
-        "Wait until charcoal is glowing red beneath a grey, powdery surface before beginning to cook.",
+        "If using charcoal instead of gas, make sure the coals are glowing red with a grey, powdery surface before cooking.",
     },
     {
-      title: "Defrost Meat Safely",
+      title: "Defrosting Meat",
       description:
-        "Defrost frozen meat in the refrigerator, keep it contained and cook it within the recommended period.",
+        "Frozen meat can cook unevenly on a BBQ. For best results, defrost it overnight in a lipped dish in the fridge. If you're short on time, use the microwave's defrost setting. Cook and eat the meat within 24 hours of defrosting.",
     },
     {
-      title: "Check Use-By Dates",
+      title: "Check the Use-by Dates",
       description:
-        "Follow food use-by dates carefully and distinguish them from best-before guidance about product quality.",
+        "The use-by date on food packaging is important for safety, as consuming food past this date can cause illness. Best before dates indicate quality; while food is safe to eat after this date, it may not taste as good.",
     },
     {
-      title: "Cook Meat Properly",
+      title: "Cook BBQ Meat Properly",
       description:
-        "Use suitable cooking times and internal temperatures for the specific meat being prepared.",
+        "Properly cooking food at the right temperature and time is crucial to eliminate harmful bacteria. Different meats have specific cooking requirements.",
     },
     {
-      title: "Serve Food Safely",
+      title: "Serving Food Safely at a BBQ",
       description:
-        "Keep raw, cooked and ready-to-eat foods separate and keep chilled items cold until serving.",
+        "To ensure food safety, use separate raw meat, cooked meat, and ready-to-eat foods, such as salads. Store these items in the fridge or in a cool bag with ice packs until it's time to serve. Keep any cool items out of direct sunlight until serving.",
     },
     {
-      title: "Prevent Cross-Contamination",
+      title: "Bacteria and Cross Contamination",
       description:
-        "Remove old food residue and use separate utensils and preparation areas for raw and cooked food.",
+        "Leftover food on your grill poses serious risks. Bacteria can grow on old residue and contaminate new food. Additionally, cross-contamination with allergenic foods, like last night’s fish, could lead to severe consequences, such as anaphylactic shock.",
     },
     {
-      title: "Prevent Rust",
+      title: "Rust Prevention",
       description:
-        "Regular cleaning, thorough drying and suitable protection help extend the life of metal grates and components.",
+        "Your grills are made of metal, so if you don’t clean them often, they will rust—especially cast iron. Regular cleaning will help prolong their lifespan.",
     },
   ],
 };

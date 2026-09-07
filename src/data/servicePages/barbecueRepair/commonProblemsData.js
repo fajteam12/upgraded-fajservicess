@@ -1,48 +1,48 @@
 const commonProblemsData = {
   eyebrow: "Expert Diagnosis",
-  title: "Common Barbecue Grill Malfunctions",
+  title: "Common Barbecue Grill Problems That May Require Maintenance",
   description:
-    "Heating, flame, ignition and gas-pressure problems should be diagnosed before the grill is used again.",
+    "",
   items: [
     {
-      title: "Grill Is Not Heating Up",
+      title: "The grill is not heating up",
       description:
-        "A grill that starts but will not heat above a low temperature may have a regulator, fuel-flow or safety-mode problem.",
+        "Does the grill start but not heat above 200-250 degrees? This often relates to a safety feature in gas grills.",
     },
     {
-      title: "Uneven Heating",
+      title: "Uneven heating",
       description:
-        "Hot and cold spots commonly result from clogged, corroded, damaged or incorrectly positioned burners.",
+        "Uneven Heating. Does your grill have hot and cold spots? This issue is often caused by clogged or damaged burners.",
     },
     {
-      title: "Yellow or Orange Flame",
+      title: "BBQ Yellow or orange flame",
       description:
-        "A gas flame that is not primarily blue may indicate a restricted burner or an incorrect air-to-gas mixture.",
+        "For a gas grill, the flame should be blue with yellow tips. Yellow or orange flames suggest a poor gas and air mixture.",
     },
     {
-      title: "Gas Leakage",
+      title: "Leaking gas",
       description:
-        "Gas odour or a suspected leak requires the fuel supply to be isolated and the grill professionally inspected before use.",
+        "Check burners of your gas grill for corrosion or blockages, as these can cause uneven heating. Ensure ignition system works properly.",
     },
     {
-      title: "Ignition Problems",
+      title: "Ignition problems",
       description:
-        "A grill that will not light may have a weak battery, damaged electrode, loose wire or blocked burner port.",
+        "Ignition Issues. If your grill won't light, it's likely due to the ignition system, possibly needing a new battery.",
     },
     {
-      title: "Defective Grill Components",
+      title: "Defective grill",
       description:
-        "Damaged controls, valves, wiring or structural components can affect cooking quality and create serious safety risks.",
+        "A defective barbecue grill can cause serious injuries, such as burns and carbon monoxide poisoning.",
     },
     {
-      title: "Low Burner Flame",
+      title: "Low flame from burners",
       description:
-        "Restricted gas flow, blocked burner ports or regulator faults can reduce heat output and cooking efficiency.",
+        "A common service issue is low flame output from grill burners, reducing heat, cooking efficiency, and overall grilling performance.",
     },
     {
-      title: "Regulator Problems",
+      title: "Regulator problems",
       description:
-        "A faulty or restricted regulator and hose assembly can cause low pressure, unstable flames or failure to heat correctly.",
+        "Blockage in the regulator hose: A reader reported issues with his Uniflame 5-burner grill, though everything else worked.",
     },
   ],
 };

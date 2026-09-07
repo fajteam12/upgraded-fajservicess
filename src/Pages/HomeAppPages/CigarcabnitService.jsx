@@ -82,12 +82,13 @@ export default function CigarcabnitService() {
           onAction={openBooking}
         />
 
-        <CalloutBannerSection content={pageData.warranty} />
-
         <ActionCardsSection
           content={pageData.testimonials}
           tone="soft"
           columns="three"
+          slider
+          autoplay
+          loop
         />
 
         <AccordionSection content={pageData.faqs} tone="white" />
