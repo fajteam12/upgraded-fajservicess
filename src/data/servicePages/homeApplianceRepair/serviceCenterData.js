@@ -1,24 +1,24 @@
 const serviceCenterData = {
   eyebrow: "Expert Freestanding Care",
-  title: "Best Home Appliance Service Center ",
+  title: "Best Home Appliance Service Center",
   description:
-    "Fast diagnosis, practical repair recommendations and workshop support for domestic appliances.",
+    "If you need appliance repair, FAJ is your best choice for fast and affordable service in Dubai and Sharjah.",
   paragraphs: [
-    "Whether a washing machine will not drain, a refrigerator has stopped cooling, an oven is not heating or a dishwasher will not start, FAJ provides prompt appliance diagnosis and repair across Dubai and Sharjah.",
+    "Our expert team is ready to tackle any issue, whether it's a washing machine that won't drain, refrigerator that's not working, an oven that isn't heating, or a dishwasher that won't switch on.","We're nearby and can get your appliances fixed quickly and efficiently."
   ],
   cards: [
     {
       title: "Fast and Reliable Appliance Service",
       featured: true,
       paragraphs: [
-        "Appliance breakdowns rarely happen at a convenient time. Our trained technicians focus on restoring safe operation quickly, helping you avoid unnecessary replacement costs and disruption.",
+        "At FAJ Technical Services L.L.C, we understand that appliance breakdowns never happen at a convenient time. That's why our trained and qualified technicians are here to provide you with reliable appliance repair services. With our help, you can avoid the expense of purchasing a new appliance and get your appliance up and running again before you even have a chance to stress about it.",
       ],
     },
     {
       title: "FAJ Technical Workshop",
       paragraphs: [
-        "Our workshop near Umm Suqeim Road supports coffee machines, stand mixers, vacuum cleaners and other domestic or commercial equipment that is suitable for workshop repair.",
-        "Customers who drop off an appliance receive a discount on the technical inspection fee and selected workshop services.",
+        "If you require repairs for your coffee machine, stand mixer, vacuum cleaner, or other domestic appliances or commercial equipment, please contact us. The FAJ workshop is located near the Umm Suqeim road and is easily accessible from Al Khail Road and Sheikh Zayed Road.",
+        "When you drop off your appliance at the workshop, you will receive a discount on the technical inspection fee and other services.",
       ],
     },
   ],

@@ -3,8 +3,8 @@ const heroData = {
   title: "Expert Home Appliances Repair and Service Center Near You in Dubai",
   subtitle: "Freestanding Appliance Specialists Since 2010",
   paragraphs: [
-    "Since 2010, FAJ has provided reliable and affordable home appliance repair services across Dubai. Our trained technicians repair large freestanding appliances at your location, including refrigerators, washers, dryers, dishwashers, ovens, stoves and freezers.",
-    "With service coverage in Dubai, Sharjah and Abu Dhabi, we focus on practical diagnosis, safe repairs and restoring everyday appliances with minimal disruption to your home.",
+    "Since 2010, we have been providing reliable appliance repair services.",
+    "We understand that appliances can break down unexpectedly, which is why we offer quality and affordable solutions. Our trained technicians are available throughout Dubai, Sharjah, and Abu Dhabi to repair large appliances at your location.",
   ],
   primaryAction: "Book Appliance Repair",
   secondaryAction: "WhatsApp Now",

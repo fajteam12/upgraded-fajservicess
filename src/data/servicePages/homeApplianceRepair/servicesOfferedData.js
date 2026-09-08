@@ -1,15 +1,15 @@
 const servicesOfferedData = {
   id: "home-appliance-services",
   eyebrow: "Freestanding Solutions",
-  title: "Services We Offer for Home Appliances",
+  title: "HERE ARE THE SERVICES WE OFFER FOR HOME APPLIANCES",
   description:
-    "Comprehensive multi-brand support for freestanding and selected built-in domestic appliances.",
+    "We specialize in all types and brands of home appliances, including built-in units.",
   items: [
     {
       icon: "check",
       title: "Installation",
       description:
-        "Professional installation of different home-appliance types and brands for safe, reliable operation.",
+        "Expert installation of various types and brands of home appliances, ensuring optimal performance and efficiency.",
       actionLabel: "Book Installation",
       bookingLabel: "Home Appliance Installation",
     },
@@ -17,7 +17,7 @@ const servicesOfferedData = {
       icon: "alert",
       title: "Diagnostics",
       description:
-        "Systematic fault finding, condition assessment and a clear quotation for required appliance repairs.",
+        "Comprehensive fault-finding services to effectively diagnose issues. We provide eligibility assessments and detailed quotations to address any concerns with your system.",
       actionLabel: "Book Diagnostics",
       bookingLabel: "Home Appliance Diagnostics",
     },
@@ -25,7 +25,7 @@ const servicesOfferedData = {
       icon: "wrench",
       title: "Repair Service",
       description:
-        "Repair support for leaks, electrical failures, cooling, heating, drainage and mechanical malfunctions.",
+        "Efficient repair services for all appliance components, ensuring a quick resolution to issues such as leaks, electrical failures, and system malfunctions. Feel free to reach out if you need specific services or have any questions!",
       actionLabel: "Book Repair",
       bookingLabel: "Home Appliance Repair Service",
     },
@@ -33,9 +33,9 @@ const servicesOfferedData = {
       icon: "shield",
       title: "Annual Maintenance Contract",
       description:
-        "Scheduled preventive maintenance designed to support appliance performance, efficiency and longevity.",
+        "This contract outlines the terms and services covered for the annual maintenance of your appliances. Regular maintenance is essential for optimal performance, efficiency, and longevity of your home appliances.",
       actionLabel: "Request AMC Quote",
-      bookingLabel: "Home Appliance Annual Maintenance Contract",
+      bookingLabel: "Home Appliance AMC",
     },
   ],
 };

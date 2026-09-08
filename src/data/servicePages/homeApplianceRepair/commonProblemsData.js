@@ -2,47 +2,47 @@ const commonProblemsData = {
   eyebrow: "Troubleshooting Guide",
   title: "The Most Common Problems with Home Appliances",
   description:
-    "Identify cooling, heating, drainage, electrical and mechanical symptoms before arranging professional service.",
+    "",
   items: [
     {
-      title: "Refrigerator Problems",
+      title: "Refrigerator Problem",
       description:
-        "Cooling faults commonly involve the defrost system, fan motor, compressor, sensors or condenser coils.",
+        "Most fridge malfunctions are related to cooling issues, including problems with the defrost system, fan motor, compressor, or condenser coils.",
     },
     {
-      title: "Dishwasher Problems",
+      title: "Dishwashers Problem",
       description:
-        "Poor cleaning or drying, leaks, drainage faults, electrical issues and control-board failures require diagnosis.",
+        "The most issues with dishwashers are bad cleaning and drying. Common water leaks and drainage. Some electrical issues or PCB failures.",
     },
     {
-      title: "Washing Machine Problems",
+      title: "Washing Machine Problem",
       description:
-        "Drainage faults, leaks, failed door switches, belts, drums and electronic controls can interrupt wash cycles.",
+        "A common issue with washing machines is drainage problems, leaks, and PCB faulty. Also, broken belt or faulty door switch or drum from spinning.",
     },
     {
-      title: "Tumble Dryer Problems",
+      title: "Tumble Dryer Problem",
       description:
-        "A dryer may stop turning, become noisy or fail to heat because of the drive, airflow, heater or control system.",
+        "Dryers can stop the drum from spinning and often make noise without drying clothes properly. Common issues are a broken heating element or control board.",
     },
     {
-      title: "Stove Problems",
+      title: "Stove Problem",
       description:
-        "Uneven heat, flame or ignition faults may involve burner elements, switches, gas controls or wiring.",
+        "Uneven heating or flame issues, such as a broken burner element, bad switch, or electric gas, are the most common problems with stoves.",
     },
     {
-      title: "Oven Problems",
+      title: "Ovens Problems",
       description:
-        "Poor heating, ignition faults, damaged knobs, inaccurate thermostats and controller or valve failures are common.",
+        "Most ovens have common problems like not heating properly, burners not igniting, ignition issues on gas models, broken knobs, and faulty controllers or valves.",
     },
     {
-      title: "Freezer Problems",
+      title: "Freezer Problem",
       description:
-        "Water leaks, reduced cooling, ice-maker faults and compressor, fan or control-board issues affect performance.",
+        "Common issues with a freezer include water leaks, no ice, a malfunctioning ice maker, a malfunctioning PCB, motor, or compressor, and less cooling.",
     },
     {
-      title: "Coffee Machine Problems",
+      title: "Coffee Machine Problem",
       description:
-        "Scale, pump restrictions, valves, sensors and heating faults can cause slow or interrupted water flow.",
+        "Whether they are drip or single-serve coffee makers, there are a few reasons why water flow in coffee makers is often slow or nonexistent.",
     },
   ],
 };

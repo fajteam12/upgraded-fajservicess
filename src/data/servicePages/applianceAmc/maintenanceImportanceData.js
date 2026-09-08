@@ -1,12 +1,12 @@
 const maintenanceImportanceData = {
-  id: "appliance-amc-importance", eyebrow: "Quality Assurance", title: "Why Appliance AMC Services Matter",
-  description: "Planned maintenance supports compliance, productivity, safety, consistent performance and controlled repair costs.",
+  id: "appliance-amc-importance", eyebrow: "Quality Assurance", title: "The Importance of Kitchen Equipment Maintenance Contract Service",
+  description: "In a commercial kitchen, keeping your equipment efficient and safe is essential. Regular maintenance is not merely a routine task but a vital necessity that can greatly affect your business.",
   items: [
-    { icon: "shield", badge: "Appliances AMC Services", title: "Supports Compliance", description: "Regular cleaning and equipment checks support hygienic food preparation and safer appliance operation." },
-    { icon: "zap", badge: "Appliances AMC Services", title: "Enhances Efficiency and Productivity", description: "Dependable appliances help homes and busy kitchens complete essential daily tasks without avoidable delays." },
-    { icon: "alert", badge: "Appliances AMC Services", title: "Enhances Safety", description: "Scheduled inspections identify leaks, loose connections and faulty components that can create hazards." },
-    { icon: "sparkles", badge: "Appliances AMC Services", title: "Maintains Consistent Results", description: "Well-maintained equipment supports repeatable cooling, washing, drying and cooking outcomes." },
-    { icon: "dollar", badge: "Appliances AMC Services", title: "Saves on Repair Costs", description: "Early attention can prevent minor faults from becoming expensive emergency breakdowns." },
+    { icon: "shield", badge: "Appliances AMC Services", title: "Ensures Compliance", description: "Food safety is vital for food service businesses. Regular equipment maintenance prevents contamination and ensures hygienic food preparation." },
+    { icon: "zap", badge: "Appliances AMC Services", title: "Enhances Efficiency and Productivity", description: "In a bustling kitchen, effective equipment is crucial for maintaining productivity and satisfying customer demands." },
+    { icon: "alert", badge: "Appliances AMC Services", title: "Enhances Safety for Staff", description: "A safe working environment is crucial for your staff's well-being. Regular maintenance helps prevent accidents and injuries from faulty equipment." },
+    { icon: "sparkles", badge: "Appliances AMC Services", title: "Eaintains Consistent Food Quality", description: "Consistent food quality is vital for customer satisfaction and repeat business. Regular maintenance ensures your equipment functions properly for uniform cooking results." },
+    { icon: "dollar", badge: "Appliances AMC Services", title: "Eost Savings on Repairs", description: "Addressing minor issues quickly can save your business on repairs and emergency calls. Regular kitchen maintenance is essential for the longevity, efficiency, and safety of your equipment." },
   ],
 };
 export default maintenanceImportanceData;

@@ -1,50 +1,50 @@
 const maintenanceImportanceData = {
   eyebrow: "Preventive Diagnostics",
-  title: "Why Appliance Maintenance Is Important in Dubai",
+  title: "Why is Appliance Maintenance Service Important in Dubai?",
   description:
-    "Planned care is especially valuable in Dubai’s climate and helps protect appliance life, efficiency and operating safety.",
+    "Proper appliance maintenance is essential for extending lifespan and enhancing efficiency, especially in Dubai's climate. Here are the main benefits:",
   items: [
     {
       icon: "clock",
       title: "Extended Lifespan",
       description:
-        "Regular maintenance helps appliances last longer and can delay expensive replacement.",
+        "Regular maintenance helps appliances last longer, saving on replacement costs.",
     },
     {
       icon: "zap",
       title: "Improved Efficiency",
       description:
-        "Clean, correctly operating appliances use energy more effectively and can reduce utility costs.",
+        "Well-maintained appliances use less energy, leading to lower utility bills, which is essential in Dubai.",
     },
     {
       icon: "shield",
-      title: "Prevent Costly Repairs",
+      title: "Preventing Costly Repair",
       description:
-        "Finding minor wear and performance issues early can prevent a larger breakdown.",
+        "Catching minor issues early prevents them from escalating into expensive repair.",
     },
     {
       icon: "check",
-      title: "Preserve Appliance Condition",
+      title: "Preserving Appliance Integrity",
       description:
-        "Routine cleaning reduces dust, residue and scale that can restrict normal operation.",
+        "Regular cleaning prevents dust buildup that affects performance.",
     },
     {
       icon: "alert",
       title: "Early Problem Detection",
       description:
-        "Scheduled checks identify warning signs before they develop into serious faults.",
+        "Routine checks help identify potential issues before they become serious.",
     },
     {
       icon: "dollar",
-      title: "Cost-Effective Care",
+      title: "Cost-Effective",
       description:
-        "Preventive service is often more economical than an early replacement or major repair.",
+        "Maintenance costs are lower than early replacements or major repair. Investing in appliance care ensures safety and efficiency and is a smart economic choice in Dubai.",
     },
     {
       icon: "award",
-      title: "Reliable Daily Performance",
+      title: "Energy Efficiency",
       description:
-        "Consistent care supports dependable cooling, washing, drying and cooking results.",
+        "Regularly maintaining your appliances, can improve their efficiency and save you money.",
     },
   ],
 };

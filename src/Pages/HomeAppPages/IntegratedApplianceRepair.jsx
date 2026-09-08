@@ -34,11 +34,11 @@ export default function IntegratedApplianceRepair() {
         <EmbeddedVideoSection content={pageData.video} tone="dark" />
         <ActionCardsSection content={pageData.maintenanceImportance} tone="white" columns="three" />
         <NumberedGridSection content={pageData.commonProblems} tone="dark" columns="four" />
-        <ActionCardsSection content={pageData.servicesOffered} tone="white" columns="three" onAction={openBooking} />
+        <ActionCardsSection content={pageData.servicesOffered} tone="white" columns="four" onAction={openBooking} />
         <MaintenanceBenefits {...pageData.benefits} />
         <ActionCardsSection content={pageData.whyChooseUs} tone="dark" columns="three" />
         <SearchableDirectorySection content={pageData.brands} tone="soft" onAction={openBooking} />
-        <ActionCardsSection content={pageData.testimonials} tone="dark" columns="three" />
+        <ActionCardsSection content={pageData.testimonials} tone="dark" columns="three" slider autoplay loop />
         <AccordionSection content={pageData.faqs} tone="white" />
         <BookingSection content={pageData.booking} bookingState={bookingState} tone="soft" />
       </main>

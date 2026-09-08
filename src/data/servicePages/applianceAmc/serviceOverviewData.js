@@ -1,13 +1,20 @@
 const serviceOverviewData = {
-  eyebrow: "Reliable Maintenance Contracts", title: "Appliances Maintenance Contract",
-  description: "Scheduled service coverage for domestic appliances and kitchen equipment throughout the year.",
+  eyebrow: "Reliable Maintenance Contracts", 
+  title: "Appliances Maintenance Contract",
+  description: "If you need AMC services for kitchen equipment and appliances, contact us for the best and most reliable service throughout the year.",
   paragraphs: [
-    "FAJ offers AMC support for cooking, baking, cooling, refrigeration, laundry equipment, ice makers, dishwashers and other appliances.",
-    "A customised Planned Preventive Maintenance package can include inspection, testing, cleaning, repair recommendations and priority breakdown support for homes or business properties.",
+    "Enjoy peace of mind knowing that your kitchen equipment and appliances are running smoothly for your business. We've got you covered with cooking, baking, cooling, refrigeration, laundry equipment, ice makers, dishwashers, and other appliances.",
   ],
   cards: [
-    { title: "Planned Preventive Maintenance", paragraphs: ["Proactive service helps washing machines, dryers, dishwashers, ovens, refrigerators and coffee machines operate efficiently while reducing unexpected breakdown risk."] },
-    { title: "Domestic and Commercial Coverage", featured: true, paragraphs: ["Plans can be adapted to equipment quantity, usage, property requirements and preferred callout or parts coverage.", "Scheduled reports provide visibility into equipment condition and recommended actions."] },
+    { 
+      title: "Planned Preventative Maintenance (PPM) Services", 
+      paragraphs: ["Our appliances technician can create a customized Planned Preventative Maintenance Package for your house or business properties.","This package is created to keep your washing machines, dryers, dishwashers, ovens, refrigerators, and coffee machines running efficiently. By taking a proactive approach, you can reduce the likelihood of unexpected breakdowns and the costs associated with them."] 
+    },
+    { 
+      title: "", 
+      featured: true, 
+      paragraphs: ["Our Planned Preventative Maintenance Package includes repair, maintenance, and testing, making it ideal for both major and small appliances across all properties. This package ensures that your air conditioning system operates smoothly and helps prevent breakdowns."] 
+    },
   ],
 };
 export default serviceOverviewData;

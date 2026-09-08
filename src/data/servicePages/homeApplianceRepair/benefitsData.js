@@ -1,44 +1,44 @@
 const benefitsData = {
   eyebrow: "Service Deliverables",
-  title: "Benefits of Home Appliance Service in Dubai",
+  title: "The Benefits of Appliances Service Dubai",
   description:
-    "Keep cooling, washing, drying and cooking appliances safe, efficient and dependable.",
+    "",
   items: [
     {
       icon: "shield",
-      title: "Improved Safety",
+      title: "Ensuring Safety",
       description:
-        "Routine checks reduce risks from electrical faults, gas leaks, overheating and damaged components.",
+        "Routine checks reduce the risk of electrical faults, gas leaks, and other hazards, keeping your home and family safe.",
     },
     {
       icon: "check",
       title: "Optimal Performance",
       description:
-        "Regular maintenance helps appliances deliver stable cooling, washing, drying and heating results.",
+        "Regular maintenance helps your appliances run smoothly and efficiently, delivering the best results every time.",
     },
     {
       icon: "zap",
       title: "Lower Energy Bills",
       description:
-        "Efficient appliances waste less energy and may reduce monthly household utility costs.",
+        "Energy efficient appliances translate to monthly savings on utility bills, putting more money back in your pocket.",
     },
     {
       icon: "dollar",
-      title: "Savings on Repairs",
+      title: "Saving Money on Repair",
       description:
-        "Preventive attention catches developing faults before they require more expensive work.",
+        "Preventive maintenance catches issues early, reducing the risk of major breakdowns and expensive repair costs.",
     },
     {
       icon: "clock",
-      title: "Longer Appliance Life",
+      title: "Extending Appliance Lifespan",
       description:
-        "Proper care and timely service can delay replacement and improve long-term equipment value.",
+        "Proper care and timely servicing can significantly increase life of your home appliances, delaying the need for replacements.",
     },
     {
       icon: "award",
       title: "Peace of Mind",
       description:
-        "Knowing appliances have been professionally checked reduces the stress of unexpected failures.",
+        "Knowing your appliances are in top condition gives you confidence and removes the stress of unexpected failures.",
     },
   ],
 };

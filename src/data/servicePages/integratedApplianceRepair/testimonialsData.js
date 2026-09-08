@@ -2,9 +2,11 @@ const testimonialsData = {
   id: "integrated-appliance-repair-reviews", eyebrow: "Customer Testimonials", title: "What Our Clients Say",
   description: "Feedback from built-in appliance owners across Dubai and Sharjah.",
   items: [
-    { icon: "award", badge: "5-Star Review", title: "Hassan Al M.", subtitle: "Dubai Marina", description: "Professional service for our built-in Miele coffee machine and Siemens dishwasher. The panels were removed carefully, the blockage was resolved and everything was reinstalled neatly." },
-    { icon: "award", badge: "5-Star Review", title: "Clara Kensington", subtitle: "Arabian Ranches", description: "We have several built-in Viking and Sub-Zero appliances. FAJ's planned maintenance helps us reduce unexpected emergency calls." },
-    { icon: "award", badge: "5-Star Review", title: "Rajesh K.", subtitle: "Jumeirah Heights", description: "Our integrated refrigerator stopped cooling during summer. The technician diagnosed the compressor system and restored operation quickly." },
+    { icon: "award", badge: "5-Star Review", title: "Michael J.", subtitle: "Resident", description: "When my oven stopped heating, I called FAJ. Their technician came the same day, and the built-in oven repair Dubai service was smooth and quick. I'm really happy!" },
+    { icon: "award", badge: "5-Star Review", title: "David Gold", subtitle: "Expat", description: "Big thanks to FAJ! The built-in fridge repair in Dubai was done professionally. No delays, no excuses—just great service. My fridge is cooling better than ever now." },
+    { icon: "award", badge: "5-Star Review", title: "Maria Ali", subtitle: "Homeowner", description: "OI’ve tried a few companies before, but FAJ stands out. They fixed multiple built-in kitchen appliances in Dubai for me, and everything has been running perfectly since." },
+    { icon: "award", badge: "5-Star Review", title: "Davis Smith", subtitle: "Resident", description: "The washing machine wouldn’t spin properly. FAJ provided built-in washing machine repair, and within an hour it was back to normal. Very polite team, and they charged fairly too." },
+    { icon: "award", badge: "5-Star Review", title: "Emily James", subtitle: "Business Owner", description: "I was nervous about finding someone reliable, but FAJ made it stress-free. Their built-in fridge repair solved my cooling issue immediately. Can’t thank their technician enough!" },
   ],
 };
 export default testimonialsData;

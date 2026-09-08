@@ -7,52 +7,52 @@ const faqsData = {
     {
       question: "When is the best time to have my appliance repaired?",
       answer:
-        "Contact a professional as soon as an appliance stops operating normally or shows reduced performance. Early diagnosis can prevent a minor issue from developing into a larger failure.",
+        "When you see a problem, contact our experts right away. If you suspect a problem, such as an appliance not working properly or performing poorly, it may require repair. You don’t have to wait till your appliance breaks to contact our repair service.",
     },
     {
-      question: "What appliances does FAJ repair, maintain and install?",
+      question: "What kinds of appliances does FAJ repair, replace, maintain, and install?",
       answer:
-        "FAJ supports freestanding and selected built-in appliances including refrigerators, freezers, washing machines, washer-dryers, tumble dryers, dishwashers, ovens, stoves, hobs, ice makers and wine coolers.",
+        "Our skilled experts have repaired a wide range of appliances, including freezers, refrigerators, dryers, ovens, stoves, microwaves, washers, dish washers, ranges, and trash compactors.",
     },
     {
-      question: "What should I do when an appliance breaks down?",
+      question: "What should I do when my appliance breaks?",
       answer:
-        "Disconnect electrical power or close the gas supply where applicable. Avoid unqualified DIY repairs, contain any safe-to-reach water leakage and arrange professional inspection.",
+        "If your appliance suddenly stops working and you’re not sure why, unplug it straight away. To be safe, you should turn off the main power circuit. Wipe up any leaks that may have happened, such as with a refrigerator or washing machine, but turn it off first. It’s critical to fix the problem as soon as possible, so contact our appliance repair Dubai specialist who can respond quickly.",
     },
     {
-      question: "How long does an appliance repair take?",
+      question: "How long does FAJ take For an appliance to be repaired?",
       answer:
-        "Repair time depends on the fault, equipment access and parts availability. The technician can provide an estimated completion time after diagnosis.",
+        "Our appliance repair experts can provide an approximate completion time for the job before we start working on it, so you know what to expect.",
     },
     {
       question: "Is it better to repair or replace an appliance?",
       answer:
-        "Age, condition, energy efficiency, parts availability and repair cost should all be considered. Repair is often practical when the appliance is otherwise in good condition and the repair cost is reasonable compared with replacement.",
+        "If the repair costs less than half the price of a new one and the appliance isn’t too old, repair it. Otherwise, replace it.",
     },
     {
-      question: "Is it worth repairing a refrigerator?",
+      question: "Is it worth it to repair a refrigerator?",
       answer:
-        "Many fan, sensor, thermostat, relay, seal and control faults are economical to repair. A professional diagnosis is needed before comparing repair with replacement.",
+        "Yes, if it’s under 10 years old and the repair isn’t too expensive. Older models may be better replaced.",
     },
     {
-      question: "How can I extend the life of my refrigerator?",
+      question: "How can I improve the life of my refrigerator?",
       answer:
-        "Keep condenser areas clean, avoid overloading, maintain suitable temperature settings, clean door seals and keep the appliance away from direct heat sources.",
+        "Clean the coils, keep door seals tight, don’t overload it, set the right temperature, and make sure it’s level.",
     },
     {
-      question: "Why is my dishwasher not working properly?",
+      question: "Why is the dishwasher not working properly?",
       answer:
-        "Common causes include blocked filters or spray arms, drainage faults, failed pumps, heating-element problems and defective inlet valves or controls.",
+        "It could be due to clogged filters, blocked spray arms, or drainage issues. Regular cleaning helps prevent problems.",
     },
     {
-      question: "Do ovens need regular servicing?",
+      question: "Do ovens need servicing?",
       answer:
-        "Periodic servicing helps verify safety controls, thermostat accuracy, heating elements, ignition systems, door seals and hinges.",
+        "Yes, occasional servicing keeps them safe and efficient. Check heating elements and clean regularly.",
     },
     {
-      question: "Is it safe to repair an oven myself?",
+      question: "Is it easy to fix an oven?",
       answer:
-        "Gas connections and high-voltage electrical circuits make oven repair hazardous. Qualified technicians should handle gas, wiring, heating and electronic-control faults.",
+        "Some fixes are simple, like replacing a heating element. For gas or electrical issues, call F A J.",
     },
   ],
 };
