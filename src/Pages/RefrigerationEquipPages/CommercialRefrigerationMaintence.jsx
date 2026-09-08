@@ -52,13 +52,12 @@ export default function CommercialRefrigerationMaintence() {
           onAction={openBooking}
         />
 
-        <TwoColumnInfoSection content={pageData.servicePolicy} tone="soft" />
-
-        <EmbeddedVideoSection content={pageData.video} tone="dark" />
+        <EmbeddedVideoSection content={pageData.video} tone="soft" />
 
         <ActionCardsSection
           content={pageData.maintenanceImportance}
           columns="three"
+          tone="white"
         />
 
         <NumberedGridSection
@@ -93,6 +92,9 @@ export default function CommercialRefrigerationMaintence() {
           content={pageData.testimonials}
           tone="dark"
           columns="three"
+          slider
+          autoplay
+          loop
         />
 
         <AccordionSection content={pageData.faqs} tone="white" />

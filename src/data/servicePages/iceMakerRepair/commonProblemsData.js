@@ -1,48 +1,48 @@
 const commonProblemsData = {
   eyebrow: "Troubleshooting Help",
-  title: "The Most Common Problems with Ice Maker Machines",
+  title: "The Most Common Problems with the Ice Maker Machine",
   description:
-    "Quality changes, reduced output and system freezing can indicate water, cooling, mechanical or electrical faults.",
+    "",
   items: [
     {
       title: "Clogged Ice Maker",
       description:
-        "A restricted water filter or water path can reduce flow and interrupt normal ice production.",
+        "A common problem with ice makers is clogged water filter that needs to be replaced or cleaned. Ensure sufficient water flow.",
     },
     {
-      title: "No Ice Cubes",
+      title: "No Ice Cube",
       description:
-        "Frozen fill tubes, blockages, water-supply problems or cycle faults may prevent cubes from forming or dropping.",
+        "If your ice maker isn't making ice or cubes are stuck, check the fill tubes. If cup and tube at the back are frozen, look for blockages.",
     },
     {
       title: "Defective Water Inlet Valve",
       description:
-        "A blocked or damaged inlet valve can stop the correct volume of water from entering the machine.",
+        "The inlet valve controls water flow into the ice maker. Blockages or damage can block flow, preventing entry and halting ice production.",
     },
     {
       title: "Ice Machine Freezing Over",
       description:
-        "Incorrect temperature settings, water-flow faults or a frozen inlet tube can create excessive ice buildup.",
+        "Either the temperature setting is too low, or the water inlet tube has frozen. If it's the former, it's a simple fix.",
     },
     {
       title: "Ice Does Not Form Properly",
       description:
-        "High operating temperatures, poor water flow or refrigeration faults can cause slow or malformed ice.",
+        "The ice maker may struggle to produce ice at its intended rate when the ice machine temperatures are set too high.",
     },
     {
-      title: "Strange Operating Noises",
+      title: "Making Strange Noises",
       description:
-        "Unusual sounds may indicate pump, fan, compressor, cycle or mechanical component problems.",
+        "To address low water temperature in the storage tray, reset the ice-making cycle and restart the machine after turning it off.",
     },
     {
       title: "Faulty Ice Mold",
       description:
-        "Ice that forms but does not release can indicate a mold, heater, sensor or harvest-mechanism fault.",
+        "Check the mold if there’s no ice in the tray. If ice is present but not dropping, it may indicate a possible mechanical issue.",
     },
     {
-      title: "Ice Machine Will Not Operate",
+      title: "Ice Machine won't Operate",
       description:
-        "Power, safety-control, component or water-system faults can prevent the machine from starting.",
+        "A common reason ice machines fail is often due to an electrical fault in either the components or the water system.",
     },
   ],
 };

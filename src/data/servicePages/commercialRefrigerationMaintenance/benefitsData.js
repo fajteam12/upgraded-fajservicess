@@ -1,8 +1,8 @@
 const benefitsData = {
   eyebrow: "Preventative Maintenance Outcomes",
-  title: "Benefits of Regular Refrigeration Maintenance in Dubai",
+  title: "Benefits Of Regular Refrigeration Maintenance in Dubai",
   description:
-    "Professional tests, cleaning and feedback help commercial refrigeration deliver dependable cooling performance.",
+    "",
   stats: [
     { value: "2010", label: "Serving the UAE Since" },
     { value: "7-Day", label: "Support Available" },
@@ -13,7 +13,7 @@ const benefitsData = {
       number: "01",
       title: "Cooling Efficiency",
       description:
-        "We carry out a complete assessment of cooling efficiency using a temperature gun.",
+        "We carry out a complete assessment of the cooling efficiency using a temperature gun.",
       icon: "snowflake",
     },
     {
@@ -21,7 +21,7 @@ const benefitsData = {
       number: "02",
       title: "Disinfect Components",
       description:
-        "Hardware components are tested and disinfected, including filters and vents.",
+        "All hardware components are tested and disinfected, including filters and vents.",
       icon: "shield-check",
     },
     {
@@ -29,7 +29,7 @@ const benefitsData = {
       number: "03",
       title: "Fan Assessment",
       description:
-        "We check that the fan operates correctly and the evaporator coil has no airflow blockages.",
+        "We ensure the fan works correctly with no blockages in the evaporator coil.",
       icon: "wind",
     },
     {
@@ -37,7 +37,7 @@ const benefitsData = {
       number: "04",
       title: "Thermostat Check",
       description:
-        "A laser temperature gauge helps verify that refrigeration thermostats operate correctly.",
+        "We use a laser temperature gauge to ensure that thermostats operate correctly.",
       icon: "sparkles",
     },
     {
@@ -45,7 +45,7 @@ const benefitsData = {
       number: "05",
       title: "Airflow Balance",
       description:
-        "We verify balanced airflow around the refrigerated space according to system requirements.",
+        "We ensure you get optimal airflow around each room as needed.",
       icon: "wind",
     },
     {
@@ -53,7 +53,7 @@ const benefitsData = {
       number: "06",
       title: "Customer Feedback",
       description:
-        "Our team reports on equipment condition and explains any refrigeration repairs that may be needed.",
+        "Our team provides vital feedback on your refrigeration and any needed repairs.",
       icon: "clock",
     },
   ],

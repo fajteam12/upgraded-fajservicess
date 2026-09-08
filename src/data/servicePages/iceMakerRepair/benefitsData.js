@@ -1,8 +1,8 @@
 const benefitsData = {
   eyebrow: "Premium Outcomes",
-  title: "Benefits of Ice Maker Service in Dubai",
+  title: "The Benefits of Ice Maker Service Dubai",
   description:
-    "Professional preventive care supports safe operation, clean ice, efficient production and a longer equipment life.",
+    "",
   stats: [
     { value: "2010", label: "Serving the UAE Since" },
     { value: "7-Day", label: "Support Available" },
@@ -13,7 +13,7 @@ const benefitsData = {
       number: "01",
       title: "Ensuring Safety",
       description:
-        "Routine inspection can identify developing electrical, water and hygiene risks before failure.",
+        "Routine checks reduce the risk of electrical faults, gas leaks, and other hazards, keeping your home and family safe.",
       icon: "shield-check",
     },
     {
@@ -21,7 +21,7 @@ const benefitsData = {
       number: "02",
       title: "Optimal Performance",
       description:
-        "Correct water flow, refrigeration and harvest cycles support reliable ice production.",
+        "Regular maintenance helps your ice machine run smoothly and efficiently, delivering the best results every time.",
       icon: "sparkles",
     },
     {
@@ -29,7 +29,7 @@ const benefitsData = {
       number: "03",
       title: "Lower Energy Bills",
       description:
-        "Clean condensers and correctly operating components avoid unnecessary electricity and water use.",
+        "Energy efficient ice machine translate to monthly savings on utility bills, putting more money back in your pocket.",
       icon: "wind",
     },
     {
@@ -37,7 +37,7 @@ const benefitsData = {
       number: "04",
       title: "Saving Money on Repair",
       description:
-        "Preventive attention can stop minor faults from causing expensive secondary damage or downtime.",
+        "Preventive maintenance catches issues early, reducing the risk of major breakdowns and expensive repair costs.",
       icon: "dollar-sign",
     },
     {
@@ -45,7 +45,7 @@ const benefitsData = {
       number: "05",
       title: "Extended Equipment Lifespan",
       description:
-        "Cleaning, adjustment and timely parts replacement can delay premature machine replacement.",
+        "Proper care and timely servicing can significantly increase life of your home ice machine, delaying the need for replacements.",
       icon: "clock",
     },
     {
@@ -53,7 +53,7 @@ const benefitsData = {
       number: "06",
       title: "Peace of Mind",
       description:
-        "Planned professional care reduces the risk of ice shortages during busy commercial periods.",
+        "Knowing your ice machine are in top condition gives you confidence and removes the stress of unexpected failures.",
       icon: "shield-check",
     },
   ],

@@ -4,8 +4,8 @@ const heroData = {
     "Trusted Commercial Ice Maker Repair and Maintenance Services Near You, in Dubai, UAE",
   subtitle: "Commercial Ice Machine Repair, Cleaning and Maintenance",
   paragraphs: [
-    "FAJ provides urgent ice-maker repair and planned maintenance for restaurants, cafes, hotels, shops and other UAE businesses that depend on a reliable supply of clean ice.",
-    "Our technicians diagnose ice-production, water-flow, freezing, electrical and mechanical faults and provide practical service options for commercial and built-in ice machines.",
+    "If you need urgent ice maker repair service in Dubai, you've come to the right place! FAJ has been a trusted maintenance provider since 2010. We also specialise in commercial ice machine repairs, ensuring that businesses always have a reliable supply of ice.",
+    "If your ice maker is not working properly, contact FAJ Professionals! We prioritise customer satisfaction and offer customised solutions for all your ice maker repair and maintenance needs in Dubai.",
   ],
   primaryAction: "Book Inspection",
   secondaryAction: "WhatsApp Now",

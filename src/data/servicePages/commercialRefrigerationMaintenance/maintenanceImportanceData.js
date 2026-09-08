@@ -1,44 +1,44 @@
 const maintenanceImportanceData = {
   eyebrow: "Planned Preventative Care",
-  title: "Why Is Commercial Refrigeration Maintenance Important in Dubai?",
+  title: "Why is Commercial Refrigeration Maintenance Important in Dubai?",
   description:
-    "Professional routine maintenance supports an effective PPM schedule and helps critical freezers and chillers operate reliably.",
+    "Maintaining commercial refrigeration systems, like freezers and chillers, includes basic tasks such as service. Hiring professionals for regular maintenance is essential for an effective Planned Preventative Maintenance (PPM) schedule.",
   items: [
     {
       icon: "alert",
-      title: "Identify Issues Early",
+      title: "Identifying issues early",
       description:
-        "Regular professional maintenance helps detect developing refrigeration faults before they interrupt operations.",
+        "Regular professional maintenance of your fridge helps catch issues early.",
     },
     {
       icon: "zap",
       title: "Energy Efficiency",
       description:
-        "Correctly maintained refrigeration equipment operates efficiently and avoids unnecessary electricity consumption.",
+        "Make sure your refrigerator is operating efficiently and not wasting electricity.",
     },
     {
       icon: "dollar",
-      title: "Long-Term Savings",
+      title: "Saving money in the long run",
       description:
-        "Planned servicing can prevent secondary damage and reduce the risk of costly emergency repairs.",
+        "Regular servicing of commercial refrigeration can prevent costly repairs.",
     },
     {
       icon: "shield",
-      title: "Product Safety Compliance",
+      title: "Compliance with product safety standards",
       description:
-        "Professional freezer and chiller maintenance helps food businesses maintain safe, consistent storage conditions.",
+        "If you store food in a commercial freezer or chiller, ensure compliance with food safety regulations. A professional service can assist you.",
     },
     {
       icon: "check",
       title: "Damage Control",
       description:
-        "System inspections identify potential hazards, including electrical issues and harmful refrigeration leaks.",
+        "Inspecting for potential hazards, including possible harmful leaks from your refrigeration system.",
     },
     {
       icon: "award",
       title: "Peace of Mind",
       description:
-        "Reliable commercial cooling lets your team focus on the business instead of unexpected equipment failure.",
+        "Ensuring your commercial freezer and chiller work well gives you peace of mind to focus on your business.",
     },
   ],
 };

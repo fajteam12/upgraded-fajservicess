@@ -1,9 +1,9 @@
 const whyChooseUsData = {
   id: "why-choose-faj-refrigeration-amc",
   eyebrow: "FAJ Service Promise",
-  title: "Reliable, Exceptional Service Tailored to Your Needs",
+  title: "CHOOSE US FOR RELIABLE, EXCEPTIONAL SERVICE TAILORED TO YOUR NEEDS!",
   description:
-    "Commercial refrigeration expertise, priority support and practical scheduling for businesses across Dubai and Sharjah.",
+    "",
   items: [
     {
       icon: "dollar",
@@ -24,7 +24,7 @@ const whyChooseUsData = {
       badge: "Flexible Scheduling",
       title: "You Are in Control",
       description:
-        "Choose a day and time for your chiller and freezer repair in Dubai or Sharjah, with a 3–4 hour window for our technician's arrival.",
+        "Choose a day and time for your chiller and freezer repair in Dubai or Sharjah, with a 3–4 hour window for our technician’s arrival.",
     },
     {
       icon: "shield",

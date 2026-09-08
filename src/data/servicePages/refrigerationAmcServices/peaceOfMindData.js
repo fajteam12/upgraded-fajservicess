@@ -1,10 +1,10 @@
 const peaceOfMindData = {
   eyebrow: "Year-Round Protection",
-  title: "Peace of Mind with a Refrigeration Maintenance Contract",
+  title: "Peace of Mind with Maintenance Contract of Refrigeration",
   description:
     "Routine inspection and maintenance help protect cooling performance, energy efficiency and equipment longevity.",
   intro:
-    "Your commercial refrigeration system is vital for home and office comfort during hot summer months. It needs regular maintenance to operate efficiently and avoid breakdowns.",
+    "Your commercial refrigeration system is vital for home and office comfort during hot summer months.",
   listTitle: "Refrigeration Maintenance Services",
   items: [
     {

@@ -88,6 +88,9 @@ export default function IceMakerRepair() {
           content={pageData.testimonials}
           tone="soft"
           columns="three"
+          slider
+          autoplay
+          loop
         />
 
         <AccordionSection content={pageData.faqs} tone="white" />

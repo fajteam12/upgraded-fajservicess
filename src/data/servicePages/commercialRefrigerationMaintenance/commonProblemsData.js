@@ -1,48 +1,48 @@
 const commonProblemsData = {
   eyebrow: "Troubleshooting Guide",
-  title: "The Most Common Problems with Freezers and Chillers",
+  title: "The Most Common Problems with the Freezer and Chiller",
   description:
-    "Heavy-duty cooling systems and compressors can develop these operational faults.",
+    "",
   items: [
     {
       title: "Not Cooling",
       description:
-        "Cooling failure may result from compressor or motor problems, low refrigerant or overdue maintenance.",
+        "Cooling failure is a common issue in freezers and chillers, often due to a faulty compressor, motor problems, or the need for gas and maintenance.",
     },
     {
-      title: "Strange Noises",
+      title: "Cycle Strange Noises",
       description:
-        "Unusual sounds can indicate mechanical, compressor, fan-motor or electrical component problems.",
+        "Unusual sounds may indicate mechanical problems, such as issues with electric devices, the compressor, or the fan motor components.",
     },
     {
-      title: "Ice Buildup",
+      title: "Ice Buildup Concerns",
       description:
-        "Frequent door opening, damaged seals, thermostat faults or sensor issues can cause excessive ice.",
+        "Ice buildup can occur if the door is frequently opened, does not seal correctly, or if a thermostat, sensor, or basic maintenance service is required.",
     },
     {
-      title: "Water Leaks",
+      title: "Water Leaks Problems",
       description:
-        "A blocked defrost drain, damaged pan or defective drain heater can cause water leakage.",
+        "Water leaking from your refrigeration unit may be caused by a blocked defrost drain, a faulty pan, or a defective drain heater.",
     },
     {
-      title: "Electrical Issues",
+      title: "Electricity Issues",
       description:
-        "Repeated circuit-breaker trips may point to compressor, motor or wiring faults requiring prompt attention.",
+        "If your unit frequently trips the circuit breaker, there may be an issue with the compressor, motor, or wiring. it's essential to address this safety risk promptly.",
     },
     {
       title: "Temperature Problems",
       description:
-        "Temperature fluctuations can spoil stock and may indicate thermostat, sensor or refrigerant-system faults.",
+        "Frequent temperature changes can spoil your goods. Ensure thermostat, sensor, or gas system is working properly and maintain even setting.",
     },
     {
-      title: "Motor Runs Continuously",
+      title: "Motor Runs Always",
       description:
-        "A continuously running motor may mean the unit is struggling to hold temperature because of poor seals or another fault.",
+        "A running motor may indicate that the unit is struggling to maintain temperature. Check the door seals and consider professional servicing.",
     },
     {
-      title: "Compressor Will Not Start",
+      title: "Compressor Won't Start",
       description:
-        "Power, breaker, compressor and refrigerant-pressure checks are needed when the compressor fails to start.",
+        "If the compressor won't start, check that power is connected and inspect the circuit breaker. For help with pressurising refrigerant gas, seek professional assistance.",
     },
   ],
 };

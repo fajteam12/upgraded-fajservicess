@@ -1,45 +1,45 @@
 const maintenanceImportanceData = {
   id: "ice-maker-maintenance-importance",
   eyebrow: "Ice Maker Repair",
-  title: "Why Is Ice Maker Maintenance Important in Dubai?",
+  title: "Why is Ice Maker Machine Maintenance Service Important in Dubai?",
   description:
-    "Regular ice-machine maintenance can positively affect operations, hygiene, energy use and long-term equipment value.",
+    "Regular maintenance of ice machines offers essential benefits that can positively impact your operations and bottom line.",
   items: [
     {
       icon: "dollar",
       title: "Reduced Repairs",
       description:
-        "Preventive attention stops minor water, cooling and mechanical issues from developing into expensive failures.",
+        "Regular maintenance prevents minor issues from escalating, reducing repair frequency and costs for ice machines.",
     },
     {
       icon: "zap",
       title: "Enhanced Efficiency",
       description:
-        "Clean components and correct operating settings help the machine use water and electricity efficiently.",
+        "Maintaining your ice machine in optimal condition ensures it operates efficiently, consumes less energy, and lowers operational costs.",
     },
     {
       icon: "clock",
       title: "Extended Lifespan",
       description:
-        "Regular servicing reduces avoidable wear and can delay costly commercial-equipment replacement.",
+        "Well-maintained extends machine lifespan, boosts returns, and delays costly replacements.",
     },
     {
       icon: "snowflake",
       title: "Consistent Ice Quality",
       description:
-        "Cleaning and water-system care help ice remain clear, fresh and free from unwanted taste or odour.",
+        "Regular maintenance keeps your ice clean and free of impurities, improving the taste and safety of your drinks.",
     },
     {
       icon: "shield",
       title: "Health and Safety Compliance",
       description:
-        "Scheduled cleaning and sanitising reduce bacteria, mould and contamination risks in ice-production areas.",
+        "Regular cleaning and sanitizing prevent bacteria and mold, ensuring your ice meets health and safety standards.",
     },
     {
       icon: "check",
-      title: "Optimised Performance",
+      title: "Optimized Performance",
       description:
-        "Detailed inspection and adjustment support dependable output during demanding commercial operating hours.",
+        "Expert maintenance services include detailed inspections and adjustments that ensure your machine operates smoothly and efficiently.",
     },
   ],
 };

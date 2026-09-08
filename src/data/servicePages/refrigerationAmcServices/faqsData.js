@@ -6,59 +6,91 @@ const faqsData = {
     "Answers to common questions about commercial refrigeration maintenance contracts and planned preventive service.",
   items: [
     {
-      question: "What maintenance is needed for a refrigeration system?",
-      answer:
-        "Proper maintenance includes checking refrigerant levels, examining electrical current draw, descaling water lines, flushing drain pans, calibrating digital thermostats, inspecting evaporator fan motors and testing magnetic door gaskets.",
+      question: "What is the maintenance needed for a refrigeration system?",
+      answer: [
+        "7 Essential Tasks for Your Preventive Maintenance Checklist for Commercial Refrigeration",
+        "Be sure to include the following important tasks in your preventive maintenance checklist for commercial refrigeration systems:",
+        {
+          type: "bullets",
+          items: [
+            "Thoroughly Clean Equipment",
+            "Check Temperature and Defrost Settings",
+            "Enhance Airflow",
+            "Test Interior Lights",
+            "Inspect for Leaks and Test Seals",
+            "Examine Coils",
+            "Inspect Fan Blades"
+          ]
+        },
+        "These tasks will help ensure that your refrigeration systems operate efficiently and effectively."
+      ],
     },
     {
-      question: "What are seven essential commercial refrigeration preventive-maintenance tasks?",
-      answer:
-        "A preventive checklist should cover thorough equipment cleaning, temperature and defrost settings, airflow, interior lights, leaks and seals, condenser and evaporator coils, and fan blades.",
+      question: "How do you maintain refrigeration?",
+      answer: [
+        "Refrigerator maintenance tips to help you keep your cool:",
+        {
+          type: "bullets",
+          items: [
+            "Clean the coils: The coils are essential to your fridge's cooling system because they help release heat as the refrigerant flows through them.",
+            "Maintain the temperature: Ensure that your fridge is set to the appropriate temperature for optimal performance.",
+            "Inspect and clean the gasket: Check the door gasket for any wear and tear, and clean it to maintain a proper seal.",
+            "Replace the water and ice filters: Regularly change the water and ice filters to ensure clean and fresh-tasting ice and water.",
+            "Close the door properly: Always make sure the fridge door is fully closed to prevent warm air from entering and compromising the cooling efficiency."
+          ]
+        }
+      ],
     },
     {
-      question: "How do you maintain refrigeration equipment?",
+      question: "What is the preventive maintenance on refrigeration equipment?",
       answer:
-        "Refrigeration equipment is maintained through planned preventive maintenance involving visual inspection, deep cleaning, condenser-coil cleaning, electrical checks, drain-line cleaning and compressor-system diagnostics.",
+        "To maintain cleanliness, regularly wash with a mild soapy water solution. Check the operation of the thermostat and the defrost system (if equipped). Ensure that door seals are clean, avoiding any material buildup in the folds and corners. Remove any ice buildup using the defrost system or a blunt scraper as needed.",
     },
     {
-      question: "What is preventive maintenance on refrigeration equipment?",
+      question: "How often should refrigerator be maintained?",
       answer:
-        "It is a scheduled set of proactive checks designed to maintain efficiency, identify small refrigerant leaks early, clean high-debris areas and replace wearing components before a complete breakdown occurs.",
+        "Ignoring basic maintenance tasks, such as cleaning the condenser coils and wiping down the gaskets, can put unnecessary stress on your appliance. It’s a good idea to set aside time each month for these quick maintenance tasks. When a refrigerator is properly maintained, it operates more efficiently.",
     },
     {
-      question: "How often should a commercial refrigerator be maintained?",
-      answer:
-        "Commercial systems generally require professional maintenance every three to six months depending on usage. Heavy-duty restaurant, medical and warehouse equipment should normally follow a strict quarterly schedule.",
-    },
-    {
-      question: "What are the benefits of an AMC contract?",
-      answer:
-        "An AMC supports routine safety checks, lower energy consumption, priority emergency response, consistent cooling performance and longer equipment life while reducing the risk of expensive sudden repairs.",
+      question: "What are the benefits of AMC contract?",
+      answer: [
+        "Budget Bliss: The Benefits of Predictable Maintenance Costs",
+        "An annual maintenance contract (AMC) protects a company from unexpected expenses related to refrigeration equipment maintenance. With an AMC, businesses benefit from a fixed and predictable cost structure, allowing them to effectively manage and account for all maintenance spending over time."
+      ],
     },
     {
       question: "What is the period of the annual maintenance contract?",
       answer:
-        "FAJ offers yearly twelve-month, six-month and three-month maintenance contracts to suit different business sizes and refrigeration equipment loads.",
+        "Freezer and chiller maintenance contracts will last for one year from the date of acceptance and issuance of the work order. All days, excluding weekends, will be considered as working days.",
     },
     {
-      question: "What should a chiller and freezer maintenance contract include?",
+      question: "What should be included in a chiller and freezer maintenance contract?",
       answer:
-        "A suitable contract can include limited or unlimited breakdown call-outs, one to three PPM visits, refrigerant checks, coil cleaning, electrical diagnosis and tailored options for included or excluded spare parts.",
+        "It can also be referred to as a service maintenance agreement, a preventative maintenance service contract, a freezer and chiller service agreement, or an installation contract. Regardless of the name, it includes everything.",
     },
     {
       question: "What are the different types of annual maintenance contracts?",
-      answer:
-        "Contracts are available for yearly, six-month and three-month periods, with or without MEP integration and with included or excluded spare parts and materials.",
+      answer: [
+        "The various types of Annual Maintenance Contracts (AMCs) include:",
+        {
+          type: "bullets",
+          items: [
+            "Comprehensive AMC: Covers all maintenance costs, including parts and labor.",
+            "Non-Comprehensive AMC: Charges for separate parts; only labor expenses are covered.",
+            "Preventive AMC: Focuses on regular maintenance and inspections."
+          ]
+        }
+      ],
     },
     {
       question: "What is the minimum contract period?",
       answer:
-        "The minimum contract period is three months and includes one comprehensive PPM service visit with the agreed breakdown coverage.",
+        "Minimum Contract Period refers to a duration of six months or twelve months from the start of the contract or another period specified in the Contract.",
     },
     {
-      question: "What does a refrigeration maintenance contract cover?",
+      question: "What does a maintenance contract cover?",
       answer:
-        "Coverage can include preventive diagnostics, condenser and evaporator cleaning, thermostat calibration, sensor testing and priority technician dispatch. Selected plans may also cover standard parts, gaskets and refrigerant refilling.",
+        "The text outlines the terms and conditions of the agreement between the two parties. Maintenance contractors can be hired to provide various maintenance services, ranging from general upkeep to specialised repairs. Any details negotiated between the parties will be clearly specified in the contract.",
     },
   ],
 };

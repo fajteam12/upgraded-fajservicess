@@ -8,52 +8,52 @@ const faqsData = {
     {
       question: "How do I choose the right refrigeration system for my business?",
       answer:
-        "Consider business size, the quantity and type of products being stored, the operating location, ventilation requirements and applicable food or product-safety regulations.",
+        "The size of the business, the quantity of products to be stored, the location of operations, and regulatory requirements are all factors that must be considered when selecting the appropriate refrigeration system.",
     },
     {
       question: "How do we properly maintain our refrigeration system?",
       answer:
-        "Maintenance includes descaling drainage trays, chemically cleaning condenser and evaporator coils, replacing damaged door gaskets, checking electrical current draw, monitoring compressor heat and testing refrigerant pressure.",
+        "Regular maintenance of refrigeration systems is crucial for optimal operation. This includes checking temperatures, locating leaks, cleaning filters, and verifying refrigerant levels.",
     },
     {
-      question: "How can I save on commercial refrigeration operating costs?",
+      question: "How can I save on costs in operating commercial refrigeration systems?",
       answer:
-        "Quarterly preventative maintenance is a practical starting point. Clean condenser coils reduce compressor strain, helping lower energy consumption and delay expensive failures.",
+        "The refrigeration equipment used to create cold air consumes a significant amount of energy. This is one of the key reasons why reducing costs is essential for food retailers of all sizes. There are several ways to save on energy and expenses related to your display cases. For example, you can use night curtains to keep open cases cold when your store is closed, switch to energy-saving LED lights instead of fluorescent lighting, and ensure freezer doors stay closed and sealed by using high-quality gaskets that are durable and long-lasting.",
     },
     {
-      question: "How do I choose the correct refrigerated display-case size?",
+      question: "How to choose the correct refrigerated display case size?",
       answer:
-        "Consider shop layout, customer flow, compressor ventilation margins and the volume of beverages, chilled products or frozen items you need to display.",
+        "Selecting the appropriate size of a refrigerated display case for your food retail business is crucial to minimizing costs and avoiding the waste of valuable sales space and energy. Depending on your sales floor area and the amount of food you need to showcase, display cases are available in a variety of sizes, ranging from 2 feet to 12 feet wide for open cases and from 2-door to 6-door designs for door cases. The volume of these display cases typically varies between 5 to 80 cubic feet each.",
     },
     {
-      question: "What should I do if a refrigeration part needs replacement?",
+      question: "What should I do if a part needs to be replaced?",
       answer:
-        "Some parts may be covered by the selected maintenance contract. Otherwise, our estimators provide a transparent quotation for approval before fitting authentic manufacturer replacements.",
+        "FAJ Technical Services L.L.C. is committed to providing reliable and trouble-free refrigeration solutions through a wide range of quality products equipped with advanced features. To ensure the highest quality and long-lasting dependability of any refrigeration unit, we recommend using genuine replacement parts. For more information, please contact us at info@fajservices.ae or call +971 50 746 4712",
     },
     {
-      question: "How often should commercial refrigeration equipment be maintained?",
+      question: "How often should I schedule maintenance for my refrigeration equipment?",
       answer:
-        "Heavy commercial equipment generally needs preventative inspection every three to six months, depending on daily load, environment and criticality.",
+        "We recommend scheduling regular maintenance at least twice a year to ensure your refrigeration equipment operates smoothly and efficiently. However, the frequency may vary based on factors such as the type of equipment and its usage.",
     },
     {
-      question: "What are common commercial refrigeration applications?",
+      question: "What are some common applications of commercial refrigeration?",
       answer:
-        "Common applications include kitchen prep fridges, cold-storage rooms, supermarket display chillers, beverage coolers, ice-cream freezers and biomedical pharmaceutical chillers.",
+        "Commercial refrigeration is widely used in grocery stores, supermarkets, restaurants, and convenience stores. It plays a crucial role in keeping food and beverages at the appropriate temperatures to maintain their freshness and safety for consumers. Supermarkets implement commercial refrigeration systems to store and display perishable items like dairy products, meats, fruits, vegetables, and frozen goods. These systems include open display cases, walk-in coolers, and freezers, all designed to provide optimal storage conditions. Restaurants typically use equipment such as reach-in refrigerators, under-counter refrigerators, and walk-in coolers to store ingredients, prepared meals, and beverages.",
     },
     {
-      question: "What refrigeration maintenance contracts do you offer?",
+      question: "What Maintenance Contracts Do You Offer?",
       answer:
-        "FAJ offers three-month, six-month and yearly preventative maintenance contracts tailored to cafés, restaurants, supermarkets, hotels, healthcare facilities and warehouses.",
+        "Refrigeration companies often provide regular maintenance contracts to ensure that your systems remain functional. Proper maintenance is essential, and it's important to find the right price for this coverage. In addition to routine maintenance and servicing, a reliable refrigeration company should also offer prompt emergency repairs and spare parts when needed, all at reasonable prices.",
     },
     {
-      question: "What temperature is the food-safety danger zone?",
+      question: "What temperature is the danger zone?",
       answer:
-        "The food-safety danger zone is generally between 5°C and 60°C. Commercial chillers should typically hold food below 4°C and freezers at approximately -18°C, subject to product and regulatory requirements.",
+        "The temperature danger zone is between 41°F and 135°F, where bacteria grow most rapidly in food. Particularly, bacteria multiply fastest between 70°F and 125°F.",
     },
     {
-      question: "What are common problems in commercial chillers?",
+      question: "What is the common problem in chillers?",
       answer:
-        "Common faults include blocked water or drain lines, dirty condenser coils, flow-switch issues, sensor-calibration errors, door-seal damage and refrigerant leaks.",
+        "Incorrect operating practices, lack of maintenance, and improper chiller sizing are three common causes of chiller problems. Operators must actively consider these factors to mitigate potential risks to the cooling equipment.",
     },
   ],
 };

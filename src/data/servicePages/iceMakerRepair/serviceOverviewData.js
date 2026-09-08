@@ -2,22 +2,21 @@ const serviceOverviewData = {
   eyebrow: "Professional Care",
   title: "Ice Maker Machine Maintenance in Dubai",
   description:
-    "High-quality servicing and repair for ice machines used in restaurants, cafes, hotels, shops and commercial facilities.",
+    "Our experts are highly skilled and always work to a high-quality standard. We regularly provide ice machine servicing and repair services for a wide range of ice machine brands, including those used in restaurants, cafes, shops, hotels, and other establishments.",
   paragraphs: [
-    "FAJ technicians work with a wide range of commercial ice-machine brands and configurations, providing diagnosis, planned maintenance, cleaning and repair throughout Dubai.",
   ],
   cards: [
     {
-      title: "Ice Machine Service and Maintenance Fee",
+      title: "Ice Machine Service and Maintenance",
       paragraphs: [
-        "The technical inspection fee includes diagnosis, transportation and reinstallation at your Dubai premises. The flat inspection fee is non-refundable and does not include repair work, cleaning, replacement parts or materials.",
+        "The technical inspection fee includes diagnosis, transportation, and reinstallation at your premises in Dubai. Please note that this fee is non-refundable and is a flat rate.","However, it does not cover the cost of any repair, cleaning service and parts that may need to be replaced. Please contact us."
       ],
     },
     {
       title: "Workshop Drop-Off Discount",
       featured: true,
       paragraphs: [
-        "The FAJ workshop is near Umm Suqeim Road and is accessible from Al Khail Road and Sheikh Zayed Road. Eligible workshop drop-offs receive a discount on technical inspection and selected services.",
+        "If you require repairs for your coffee machine, stand mixer, vacuum cleaner, or other domestic appliances or commercial equipment, please contact us. The FAJ workshop is located near the Umm Suqeim road and is easily accessible from Al Khail Road and Sheikh Zayed Road.","When you drop off your appliance at the workshop, you will receive a discount on the technical inspection fee and other services."
       ],
     },
   ],
