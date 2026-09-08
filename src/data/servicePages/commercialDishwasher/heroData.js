@@ -4,8 +4,8 @@ const heroData = {
     "Top Quality Commercial Dishwasher Repair and Maintenance Services Near You, in Dubai, UAE",
   subtitle: "Commercial Dishwashing Specialists Since 2010",
   paragraphs: [
-    "Since 2010, FAJ has been a trusted name in commercial dishwasher repair and service in Dubai and Sharjah. Our skilled professionals service all major brands using professional diagnostic tools and proven repair methods.",
-    "We prioritise practical repairs over unnecessary replacement, helping restaurants, hotels, cafés and catering facilities reduce costs and avoid disruptive kitchen downtime.",
+    "Since 2010, FAJ has been a trusted name in dishwasher repair and service in Dubai and Sharjah. Our skilled professionals are ready to assist with any brand, using high-quality tools for effective service.",
+    "We prioritise repairs over replacements, helping you save money and avoid the hassle of buying a new dishwasher. Rely on our experienced experts for fast and reliable dishwasher maintenance in Dubai!",
   ],
   primaryAction: "Book Inspection",
   secondaryAction: "WhatsApp Now",

@@ -11,6 +11,7 @@ import {
   SplitHeroSection,
   SplitMediaSection,
   useBookingRequest,
+  TwoColumnInfoSection
 } from "../Components/ServicePageSections";
 import "../Components/ServicePageSections/ServicePageSections.css";
 import pageData from "../data/servicePages/commercialLaundryEquipment";
@@ -44,7 +45,7 @@ export default function CommercialLaundaryEquipmentPage() {
 
         <Breadcrumb />
 
-        <SplitMediaSection content={pageData.intro} />
+        <TwoColumnInfoSection content={pageData.serviceOverview} tone="soft" />
 
         <PlanCardsSection
           content={pageData.contracts}
@@ -54,13 +55,6 @@ export default function CommercialLaundaryEquipmentPage() {
         <EmbeddedVideoSection
           content={pageData.video}
           tone="soft"
-        />
-
-        <ActionCardsSection
-          content={pageData.repairOptions}
-          onAction={openBooking}
-          tone="white"
-          columns="three"
         />
 
         <ActionCardsSection
@@ -110,6 +104,9 @@ export default function CommercialLaundaryEquipmentPage() {
           content={pageData.testimonials}
           tone="dark"
           columns="three"
+          slider
+          autoplay
+          loop
         />
 
         <ActionCardsSection

@@ -3,48 +3,48 @@ const commonProblemsData = {
   eyebrow: "Troubleshooting Guides",
   title: "The Most Common Problems with Dishwashers",
   description:
-    "Watch for these symptoms and arrange professional diagnosis before a developing fault interrupts kitchen operations.",
+    "",
   columns: 4,
   items: [
     {
       title: "Drainage Issues",
       description:
-        "Water pools at the bottom after a cycle, preventing proper drainage and leaving dirty residue.",
+        "Dishwasher machine water is pooling in the bottom of your dishwasher at the end of every cycle.",
     },
     {
       title: "Cycle Won’t Start",
       description:
-        "The start command receives no response even though the display panel appears operational.",
+        "When you press “start”, nothing happens. Your cycle doesn’t begin, and your dishwasher doesn’t seem to respond, despite the display panel appearing normal.",
     },
     {
       title: "Water Leaks",
       description:
-        "Water leaks or pools around the machine during operation, risking damage to the surrounding kitchen area.",
+        "You have noticed water leaking or pooling around your dishwasher when it runs, causing damage to your flooring and the surrounding area.",
     },
     {
       title: "Excessive Suds",
       description:
-        "Too much foam remains inside the chamber or leaves residue on glassware, dishes and utensils.",
+        "Your dishwasher fills with excess suds when you use it. You may also notice suds remaining in the bottom of the dishwasher after the cycle is finished and excessive residue on your dishes.",
     },
     {
       title: "Door Not Closing",
       description:
-        "The dishwasher door does not close or lock correctly, preventing the wash cycle from starting safely.",
+        "The dishwasher door isn’t closing properly, preventing the cycle from starting.",
     },
     {
-      title: "Not Filling with Water",
+      title: "Not Filling With Water",
       description:
-        "The chamber does not fill or receives too little water to complete an effective wash cycle.",
+        "When you start the dishwasher cycle, the interior doesn’t fill with water, or only fills a small amount.",
     },
     {
       title: "Heating Issues",
       description:
-        "Water does not reach the necessary operating temperature, affecting detergent activation and sanitation.",
+        "Your dishwasher is not heating the water sufficiently, leading to cold washes and improperly cleaned dishes. Hot water is needed to properly activate the dishwasher detergent.",
     },
     {
       title: "Dishes Not Drying",
       description:
-        "Dishes and utensils remain excessively wet after the completed cycle and require manual drying.",
+        "Your dishes come out of the dishwasher still wet, requiring manual drying after every load.",
     },
   ],
 };

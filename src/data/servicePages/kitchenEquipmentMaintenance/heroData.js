@@ -1,11 +1,11 @@
 const heroData = {
   eyebrow: "Established Since 2010 - Division of FAJ",
   title:
-    "Expert Commercial Kitchen Equipment Maintenance and Repair in Dubai, UAE",
+    "Top Commercial Kitchen Equipment Maintenance and Servicing Near You, Dubai, Sharjah, Abu Dhabi, UAE",
   subtitle: "Commercial Food-Service Equipment Specialists",
   paragraphs: [
-    "FAJ specialises in the repair and maintenance of commercial food-service equipment, helping professional kitchens operate reliably and meet essential safety requirements.",
-    "We support restaurants, hotels, cafes, catering facilities, schools, colleges and hospitals across Dubai, Sharjah and Abu Dhabi.",
+    "FAJ Technical Services L.L.C has been serving the kitchen equipment needs of Dubai since 2010.",
+    "We provide comprehensive solutions for all types of commercial kitchen equipment. Our services encompass installation, maintenance, and repair, catering to a diverse range of clients, including hospitality outlets, hotels, restaurants, cafes, catering services, and residential homes and villas. Additionally, we serve industrial facilities, corporate offices, and shopping centers.",
   ],
   primaryAction: "Book Appointment",
   secondaryAction: "WhatsApp Now",

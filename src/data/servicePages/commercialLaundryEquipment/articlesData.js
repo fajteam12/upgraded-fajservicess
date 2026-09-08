@@ -10,7 +10,7 @@ const articlesData = {
       title: "Top-Loading Washing Machines",
       subtitle: "FAJ Technical Services",
       description:
-        "Understand top-loading washer operation, benefits, common considerations and maintenance requirements.",
+        "Have you ever faced a laundry issue? Imagine facing issues or delays in",
       actionLabel: "Read Guide",
       href: "/blog/top-loading-washing-machines-a-complete-guidelines/",
     },
@@ -20,7 +20,7 @@ const articlesData = {
       title: "Front-Loading Washing Machines",
       subtitle: "Complete Guideline",
       description:
-        "Learn how front-loading machines work and how correct use and maintenance support reliable performance.",
+        "Front-loading washing machines are the most trending laundry essentials",
       actionLabel: "Read Guide",
       href: "/blog/front-loading-washing-machines/",
     },
@@ -30,7 +30,7 @@ const articlesData = {
       title: "How to Clean Your Washing Machine",
       subtitle: "Easy Guide",
       description:
-        "A practical overview of routine washer cleaning and the signs that professional maintenance may be required.",
+        "Welcome to the guide on how to clean a washing machine! We all rely on ",
       actionLabel: "Read Guide",
       href: "/blog/how-to-clean-washing-machine/",
     },

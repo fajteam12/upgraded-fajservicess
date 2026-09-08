@@ -1,15 +1,15 @@
 const benefitsData = {
   eyebrow: "Technical Checkpoints",
-  title: "Benefits of Commercial Laundry Equipment Service",
+  title: "The Benefits of Laundry Equipments Service Dubai",
   description:
     "Professional maintenance helps keep washer and dryer parameters calibrated for reliable daily performance.",
   items: [
-    { icon: "shield", badge: "Benefit 01", title: "Safer Operation", description: "Routine checks reduce risks from electrical faults, gas-system issues, leaks and blocked dryer airflow." },
-    { icon: "award", badge: "Benefit 02", title: "Optimal Performance", description: "Regular maintenance supports smooth cycles, correct heating, reliable drainage and consistent results." },
-    { icon: "zap", badge: "Benefit 03", title: "Lower Utility Costs", description: "Efficient commercial laundry equipment avoids unnecessary water and electricity consumption." },
-    { icon: "percent", badge: "Benefit 04", title: "Lower Repair Risk", description: "Preventive servicing finds issues early and reduces the likelihood of major breakdown costs." },
-    { icon: "washing-machine", badge: "Benefit 05", title: "Longer Equipment Life", description: "Proper care can reduce premature wear and delay expensive washer or dryer replacement." },
-    { icon: "check", badge: "Benefit 06", title: "Operational Confidence", description: "Maintained equipment gives facilities greater confidence during high-volume laundry schedules." },
+    { icon: "shield", badge: "Benefit 01", title: "Ensuring Safety", description: "Routine checks reduce the risk of electrical faults, gas leaks, and other hazards, keeping your home and family safe." },
+    { icon: "award", badge: "Benefit 02", title: "Optimal Performance", description: "Regular maintenance helps your washing machine run smoothly and efficiently, delivering the best results every time." },
+    { icon: "zap", badge: "Benefit 03", title: "Lower Energy Bills", description: "Energy efficient washing machine translate to monthly savings on utility bills, putting more money back in your pocket." },
+    { icon: "percent", badge: "Benefit 04", title: "Saving Money on Repair", description: "Preventive maintenance catches issues early, reducing the risk of major breakdowns and expensive repair costs." },
+    { icon: "washing-machine", badge: "Benefit 05", title: "Washing machine Lifespan", description: "Proper care and timely servicing can significantly increase life of your home washing machine, delaying the need for replacements." },
+    { icon: "check", badge: "Benefit 06", title: "Peace of Mind", description: "Knowing your washing machines are in top condition gives you confidence and removes the stress of unexpected failures." },
   ],
 };
 

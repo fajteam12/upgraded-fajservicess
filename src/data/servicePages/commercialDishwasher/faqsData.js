@@ -5,28 +5,28 @@ const faqsData = {
     "Answers about warning signs, supported brands, response times, maintenance and repair quotations.",
   items: [
     {
-      question: "How can I tell whether my commercial dishwasher requires maintenance?",
-      answer: "Poor cleaning, leaks, unusual noise, error codes, slow drainage, incorrect temperature or repeated cycle failures are signs that professional diagnosis may be needed.",
+      question: "How can I determine whether my business dishwasher requires maintenance?",
+      answer: "A commercial dishwasher that isn't cleaning properly or keeps leaking might make strange noises or display error codes. it's best to get professional repair services if you see any of these problems.",
     },
     {
       question: "Which commercial dishwasher brands do you repair?",
-      answer: "We service major brands including Bosch, LG, Samsung, Siemens, Electrolux, Teka, Hobart, Winterhalter, Meiko, Fagor and many others, subject to model and parts availability.",
+      answer: "We offer repair services for a variety of commercial dishwasher brands at FAJ Technical Services L.L.C. To guarantee thorough fixes, our skilled technicians have handled a variety of makes and models.",
     },
     {
-      question: "How quickly can you respond to a commercial dishwasher repair request?",
-      answer: "We prioritise urgent business requirements and offer same-day or next-day diagnostic scheduling across Dubai and Sharjah when appointment capacity permits.",
+      question: "In what time frame can you reply to a request for commercial dishwasher repair?",
+      answer: "Aiming to minimize downtime for your business, we usually respond to repair requests in a timely manner.",
     },
     {
-      question: "Are your commercial dishwasher technicians qualified?",
-      answer: "Our technicians are experienced in diagnosing and servicing commercial dishwashing and kitchen equipment, and follow appropriate electrical and workplace safety procedures.",
+      question: "Are the professionals you send to fix commercial dishwashers certified?",
+      answer: "Absolutely, our technicians are qualified and experienced in fixing commercial dishwashers. With their expertise, you can be sure that your equipment is operating properly because they can accurately diagnose problems and put effective solutions in place.",
     },
     {
-      question: "Do you provide commercial dishwasher maintenance contracts?",
-      answer: "Yes. We provide planned preventive maintenance and annual maintenance contract options that can include scheduled visits, defined breakdown support and optional spare-parts coverage.",
+      question: "Do you provide commercial dishwasher maintenance services?",
+      answer: "Unquestionably. We offer routine maintenance services for commercial dishwashers in addition to repairs. Regular maintenance keeps your equipment operating at its best, prolongs its lifespan, and helps prevent breakdowns.",
     },
     {
-      question: "Can I receive a repair estimate before work begins?",
-      answer: "Yes. After technical diagnosis, we provide a clear quotation for recommended repairs and required parts before proceeding with approved work.",
+      question: "Can you give me an estimate of the cost before the repair is done?",
+      answer: "Sure, we provide clear, up-front pricing estimates for our repair services for commercial dishwashers.",
     },
   ],
 };

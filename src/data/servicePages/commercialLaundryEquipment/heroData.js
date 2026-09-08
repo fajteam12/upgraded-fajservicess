@@ -4,8 +4,8 @@ const heroData = {
     "Top-Rated Commercial Laundry Equipment Repair & Maintenance Services Near You, in Dubai, UAE",
   subtitle: "Professional Washer and Dryer Support Since 2010",
   paragraphs: [
-    "Since 2010, FAJ Technical Services L.L.C has provided commercial washing machine repair and laundry-equipment maintenance across Dubai and Sharjah. Our technicians support leading professional brands using appropriate diagnostic tools and proven service methods.",
-    "We prioritise practical repair over unnecessary replacement, helping laundromats, hotels, hospitals and other businesses reduce costs and avoid operational disruption.",
+    "Since 2010, FAJ Technical Services L.L.C has been a trusted name for commercial washing machine repair and laundry machine maintenance services in Dubai and Sharjah. Our skilled professionals are ready to assist with top-brand laundry equipment, using high-quality tools to ensure effective service",
+    "We prioritise repair over replacements, helping you save money and avoid the bother of buying a new commercial washing machine. Rely on our experienced experts for fast and reliable commercial washing machine maintenance in Dubai!",
   ],
   primaryAction: "Book Inspection",
   secondaryAction: "WhatsApp Now",

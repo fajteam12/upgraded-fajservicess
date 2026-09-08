@@ -1,44 +1,32 @@
 const maintenanceImportanceData = {
   eyebrow: "Essential Kitchen Longevity",
-  title: "Why Restaurant Kitchen Equipment Maintenance Is Important",
+  title: "Why Is Commercial Kitchen Equipment Maintenance Important?",
   description:
-    "Planned care helps protect food quality, equipment life, operating efficiency and business continuity.",
+    "All kitchen equipment requires care, but some need specific maintenance for safe food handling and a good working environment. Below are key items and their maintenance needs:",
   items: [
     {
-      icon: "alert",
-      title: "Identify Issues Early",
+      icon: "",
+      title: "Cooking & Baking Equipment",
       description:
-        "Professional checks can find wear, leaks and performance problems before they cause a shutdown.",
+        "Cooking range, cookers, ovens, stove tops and fryer are basic kitchen equipment that must be cleaned regularly to avoid buildup and ensure even cooking. Fryers also need proper oil management to maintain food quality.",
     },
     {
-      icon: "zap",
-      title: "Improve Energy Efficiency",
+      icon: "",
+      title: "Refrigeration Equipment",
       description:
-        "Clean and correctly adjusted catering equipment avoids unnecessary electricity and gas consumption.",
+        "Refrigerators and freezers should be cleaned regularly to remove buildup and require temperature monitoring. Checking and adjusting the temperature is vital for food storage and freshness.",
     },
     {
-      icon: "dollar",
-      title: "Reduce Long-Term Costs",
+      icon: "",
+      title: "Food Preparation Equipment",
       description:
-        "Timely servicing can prevent secondary damage and reduce the likelihood of major emergency repairs.",
+        "Mixers, slicers, and blenders have specific functionality and deep, making thorough cleaning essential to prevent contamination, especially with raw meats. Regular lubrication of moving parts is also necessary to avoid straining the motor.",
     },
     {
-      icon: "shield",
-      title: "Support Food Safety",
+      icon: "",
+      title: "Dishwashing Equipment",
       description:
-        "Maintained storage and cooking equipment supports consistent temperatures and safer food handling.",
-    },
-    {
-      icon: "check",
-      title: "Control Equipment Damage",
-      description:
-        "Routine inspection helps identify electrical, gas, water and mechanical hazards that need attention.",
-    },
-    {
-      icon: "award",
-      title: "Operate with Confidence",
-      description:
-        "Reliable equipment lets your team focus on production and service during demanding trading periods.",
+        "nspect dishwashers and sinks for leaks and drainage to ensure effective washing. Regular descaling is essential to remove food debris buildup that can affect safety and performance.",
     },
   ],
 };

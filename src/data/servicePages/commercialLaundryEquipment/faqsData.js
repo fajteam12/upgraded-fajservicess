@@ -5,40 +5,74 @@ const faqsData = {
     "Answers about supported equipment, preventive schedules, warning signs and routine maintenance.",
   items: [
     {
-      question: "What types of industrial laundry equipment can you service?",
-      answer: "We service commercial and industrial washers, tumble dryers, washer-dryers and related laundry equipment used by laundromats, hotels, hospitals and other facilities, subject to model and parts availability.",
+      question: "What kinds of industrial laundry equipment are you capable of servicing?",
+      answer: "We specialize in providing repair services for industrial dryers, washers, and other equipment used in laundromats, hotels, and hospitals.",
     },
     {
-      question: "How frequently should I schedule commercial laundry maintenance?",
-      answer: "Professional preventive maintenance is commonly scheduled every three to six months, although equipment under heavy daily use may require more frequent inspections.",
+      question: "How frequently ought I to plan maintenance?",
+      answer: "it's recommended to have routine examinations every three to six months to avoid problems and maximize efficiency.",
     },
     {
-      question: "Do you provide customised maintenance schedules?",
-      answer: "Yes. Service frequency and scope can be tailored to laundry volume, equipment quantity, machine type, operating hours and site requirements.",
+      question: "Do you provide individualized service schedules?",
+      answer: "Indeed, Our service plans are adaptable to meet the particular requirements of various business environments.",
     },
     {
-      question: "How can I reduce problems between service visits?",
-      answer: "Clean lint filters, leave washer doors open when appropriate, inspect hoses for leaks, use the correct detergent quantity and report unusual sounds or error codes promptly.",
+      question: "How do I avoid problems in between service calls?",
+      answer: "Maintain lint traps on a regular basis, abide by equipment instructions, and report strange sounds or behaviors right away.",
     },
     {
-      question: "What are signs that a washer or dryer needs professional repair?",
-      answer: "Warning signs include failure to drain, fill, spin or heat, heavy vibration, leaks, burning smells, grinding or humming noises and repeated electrical or control faults.",
+      question: "What are signs a washer dryer needs professional repair?",
+      answer: [{
+        type: "bullets",
+        items: [
+          "Ongoing unusual noises, vibration, or burning smells.",
+          "Washer dryer machines are failing to drain, spin, or heat properly.",
+          "Electrical, timer, or payment system malfunctions."
+        ]
+      }],
     },
     {
-      question: "How long can commercial washers and dryers last?",
-      answer: "High-quality commercial equipment can often operate for 10 to 15 years when correctly installed, used within capacity and maintained according to manufacturer and site requirements.",
+      question: "How long do commercial washers dryers last?",
+      answer: "On average, equipment lasts between 10 to 15 years, with high-quality models reaching 10,000 to 30,000 cycles.",
     },
     {
       question: "Why is my commercial dryer not heating?",
-      answer: "Possible causes include a failed heating element, thermal fuse, igniter, gas valve component, temperature sensor or restricted exhaust airflow. Professional diagnosis is recommended.",
+      answer: [
+        {
+          type: "bullets",
+          items: [
+            "Common reasons include a broken heating element.",
+            "A faulty thermal fuse.",
+            "A malfunctioning igniter (for gas models).",
+            "Clogged airflow that reduces efficiency."
+          ]
+        }
+      ],
     },
     {
-      question: "How often should commercial laundry equipment be cleaned?",
-      answer: "Lint filters may require cleaning after every use, while door seals, dispensers and exteriors need routine care. Deep technical cleaning frequency depends on equipment type and workload.",
+      question: "How often should I clean my laundry equipment?",
+      answer: [
+        {
+          type: "bullets",
+          items: [
+            "Lint filters should be cleaned after every use.",
+            "Deep cleaning (e.g., removing lint buildup inside the cabinet) should be done periodically based on usage volume."
+          ]
+        }
+      ],
     },
     {
-      question: "What daily, weekly and monthly laundry-maintenance tasks are recommended?",
-      answer: "Daily tasks include lint-filter cleaning and leak checks. Weekly tasks can include door-seal and dispenser inspection. Monthly or quarterly tasks may include belt, inlet-filter, drainage, electrical and error-log checks.",
+      question: "What are the daily, weekly, and monthly maintenance tasks for commercial laundry equipment?",
+      answer: [
+        {
+          type: "bullets",
+          items: [
+              "Daily: Clean lint filters, wipe down exteriors, and check for leaks.",
+              "Weekly: Inspect door seals and gaskets, check detergent dispensers, and examine payment systems.",
+              "Monthly/Quarterly: Inspect drive belts, clean water inlet filters, check drainage, and review error logs."
+          ]
+        }
+      ],
     },
   ],
 };

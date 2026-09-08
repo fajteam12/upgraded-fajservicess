@@ -15,6 +15,8 @@ import serviceNoticeData from "./serviceNoticeData";
 import servicesOfferedData from "./servicesOfferedData";
 import videoData from "./videoData";
 import whyChooseUsData from "./whyChooseUsData";
+import serviceOverviewData from "./serviceOverviewData";
+import testimonialsData from "./testimonialsData";
 
 const commercialDishwasherData = {
   seo: seoData,
@@ -34,6 +36,8 @@ const commercialDishwasherData = {
   otherBrands: otherBrandsData,
   faqs: faqsData,
   booking: bookingData,
+  serviceOverview: serviceOverviewData,
+  testimonials: testimonialsData
 };
 
 export {

@@ -1,35 +1,35 @@
 const servicesOfferedData = {
   eyebrow: "Our Core Offerings",
-  title: "Services We Offer for Commercial Dishwashers",
+  title: "HERE ARE THE SERVICES WE OFFER FOR THE DISHWASHER",
   description:
-    "We service commercial dishwashers, glasswashers and warewashing systems across different capacities, configurations and brands.",
+    "We specialise in all types and brands of dishwashers, including dishwasher machines.",
   items: [
     {
       icon: "wrench",
       title: "Dishwasher Installation",
       description:
-        "Professional installation and commissioning for commercial dishwashers, including connection and operating checks.",
+        "Expert installation of various types and brands of dishwashers, ensuring optimal performance and efficiency.",
       actionLabel: "Book Installation",
     },
     {
       icon: "alert",
       title: "Dishwasher Diagnostics",
       description:
-        "Detailed fault finding, condition assessment and a transparent quotation before approved repair work begins.",
+        "We conduct thorough fault finding to diagnose issues effectively. We also provide eligibility assessments and detailed quotations to address any concerns with your system.",
       actionLabel: "Book Diagnostics",
     },
     {
       icon: "droplet",
       title: "Dishwasher Repair Service",
       description:
-        "Repairs for drainage, leaks, heating, dosing, controls, pumps, wash arms and other machine faults.",
+        "Efficient repair services for all dishwasher machine components, ensuring quick resolution of any issues, such as leaks, electrical failures, and system malfunctions.",
       actionLabel: "Book Repair",
     },
     {
       icon: "shield",
-      title: "Annual Maintenance Contract",
+      title: "Dishwasher Annual Maintenance Contract",
       description:
-        "Planned preventive maintenance and priority support designed to reduce unexpected commercial-kitchen downtime.",
+        "This contract outlines the terms and services covered for the dishwasher's annual maintenance. Regular maintenance is essential for optimal performance, efficiency, and longevity of your dishwasher.",
       actionLabel: "Request AMC Quote",
     },
   ],

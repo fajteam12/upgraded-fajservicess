@@ -53,8 +53,6 @@ export default function KitchenEquipmentPage() {
           onAction={openBooking}
         />
 
-        <TwoColumnInfoSection content={pageData.ppm} tone="soft" />
-
         <EmbeddedVideoSection content={pageData.video} />
 
         <ActionCardsSection
@@ -64,39 +62,19 @@ export default function KitchenEquipmentPage() {
 
         <NumberedGridSection
           content={pageData.commonProblems}
-          tone="soft"
-          columns="four"
-        />
-
-        <ActionCardsSection
-          content={pageData.servicesOffered}
-          onAction={openBooking}
-          columns="four"
+          tone="dark"
+          columns="three"
         />
 
         <MaintenanceBenefits {...pageData.benefits} />
 
         <ActionCardsSection
-          content={pageData.whyChooseUs}
-          tone="dark"
-          columns="three"
-        />
-
-        <ActionCardsSection
-          content={pageData.specialisedCategories}
-          tone="soft"
-          columns="two"
-        />
-
-        <SearchableDirectorySection
-          content={pageData.brands}
-          onAction={openBooking}
-        />
-
-        <ActionCardsSection
           content={pageData.testimonials}
           tone="soft"
           columns="three"
+          slider
+          autoplay
+          loop
         />
 
         <AccordionSection content={pageData.faqs} tone="white" />

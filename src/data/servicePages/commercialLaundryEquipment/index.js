@@ -17,6 +17,7 @@ import servicesOfferedData from "./servicesOfferedData";
 import testimonialsData from "./testimonialsData";
 import videoData from "./videoData";
 import whyChooseUsData from "./whyChooseUsData";
+import serviceOverviewData from "./serviceOverviewData";
 
 const commercialLaundryEquipmentData = {
   seo: seoData,
@@ -38,6 +39,7 @@ const commercialLaundryEquipmentData = {
   articles: articlesData,
   booking: bookingData,
   faqs: faqsData,
+  serviceOverview: serviceOverviewData
 };
 
 export {

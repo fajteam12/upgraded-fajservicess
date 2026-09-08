@@ -1,15 +1,15 @@
 const maintenanceImportanceData = {
   eyebrow: "PPM Schedule Importance",
-  title: "Why Is Laundry Equipment Maintenance Important in Dubai?",
+  title: "Why is Laundry Equipment Maintenance Service Important in Dubai?",
   description:
-    "Preventive maintenance helps commercial washers and dryers operate efficiently, safely and reliably under demanding daily use.",
+    "Commercial washing machine and commercial dryer service in Dubai is important for keeping efficiency, extending lifespan, and avoiding costly repairs.",
   items: [
-    { icon: "droplet", badge: "Benefit 01", title: "Save Energy & Water", description: "Correct calibration and clean systems reduce avoidable water and energy consumption." },
-    { icon: "shield", badge: "Benefit 02", title: "Prevent Breakdowns", description: "Routine checks address developing washer and dryer faults before they interrupt operations." },
-    { icon: "zap", badge: "Benefit 03", title: "Improve Efficiency", description: "Well-maintained equipment completes cycles consistently without unnecessary delays or repeated loads." },
-    { icon: "award", badge: "Benefit 04", title: "Extend Equipment Life", description: "Timely repair and cleaning reduce stress on pumps, bearings, drums, motors and heating systems." },
-    { icon: "washing-machine", badge: "Benefit 05", title: "Maintain Wash Quality", description: "Professional cleaning helps prevent residue, mould, odours and inconsistent laundry results." },
-    { icon: "check", badge: "Benefit 06", title: "Support Safe Operation", description: "Maintenance identifies leaks, loose fittings, lint restrictions and electrical safety concerns." },
+    { icon: "droplet", badge: "Benefit 01", title: "Saves Energy & Water", description: "Regular servicing of laundry equipment ensures optimal performance, reducing energy and water consumption." },
+    { icon: "shield", badge: "Benefit 02", title: "Prevents Breakdowns", description: "Regular maintenance of commercial washing machines and dryers helps prevent breakdowns by addressing minor issues before they escalate." },
+    { icon: "zap", badge: "Benefit 03", title: "Improves Efficiency", description: "Promptly addressing issues can greatly increase the lifespan of your laundry washing machine." },
+    { icon: "award", badge: "Benefit 04", title: "Extends Lifespan", description: "Quickly addressing issues can significantly extend the lifespan of your commercial dryer and washing machine." },
+    { icon: "washing-machine", badge: "Benefit 05", title: "Ensures Clean Clothes", description: "Regular professional washer dryer cleaning prevents mold and mould that can cause smells." },
+    { icon: "check", badge: "Benefit 06", title: "Safety", description: " Regular maintenance of your laundry machine helps identify safety issues, such as loose fittings or leaks." },
   ],
 };
 

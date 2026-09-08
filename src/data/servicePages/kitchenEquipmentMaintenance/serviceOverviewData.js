@@ -1,24 +1,34 @@
 const serviceOverviewData = {
   eyebrow: "Operational Continuity",
-  title: "Catering Equipment Maintenance Services",
+  title: "Kitchen Maintenance Services and Solutions for Business-to-Business (B2B)",
   description:
-    "Responsive technical care designed around the demands of busy commercial kitchens.",
-  paragraphs: [
-    "Quick catering-equipment diagnosis and repair is essential because avoidable downtime can interrupt service and reduce revenue.",
-  ],
+    "Since 2010, FAJ Technical L.L.C has established itself as the leading service provider of commercial kitchen maintenance solutions in Dubai, UAE. ",
   cards: [
     {
-      title: "Complete Kitchen Support",
+      title: "",
       paragraphs: [
-        "FAJ supports freezers, chillers, ovens, cooking ranges, fryers, grills, hoods, ice makers, dishwashers, food-preparation machinery and related systems.",
+        "We are committed to delivering exceptional service and expertise, ensuring your kitchen operates at height performance. Trust us to meet your kitchen maintenance needs with confidence.",
       ],
     },
     {
-      title: "Commercial Equipment Call-Out",
+      title: "",
       featured: true,
-      paragraphs: [
-        "Inspection and diagnosis in Dubai starts from AED 157. The call-out covers technician travel and fault assessment; repair work and parts are quoted after diagnosis, and the inspection fee is non-refundable.",
-      ],
+      paragraphs: [],
+      bulletColumns: 1,
+      bullets:[
+        {
+          text: "Comprehensive and Professional Services"
+        },
+        {
+          text: "Annual Maintenance Agreement Services"
+        },
+        {
+          text: "Access to Kitchen Equipment Spare Parts"
+        },
+        {
+          text: "Customer Support 7-Day Call Outs"
+        }
+      ]
     },
   ],
 };

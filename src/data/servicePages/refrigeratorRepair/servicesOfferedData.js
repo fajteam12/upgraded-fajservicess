@@ -27,7 +27,7 @@ const servicesOfferedData = {
       actionLabel: "Request Repair",
     },
     {
-      icon: "calender",
+      icon: "calendar",
       title: "Refrigerator Annual Maintenance Contract",
       description:
         "This contract outlines the terms and services covered for annual maintenance of your refrigerator. Regular maintenance is essential for optimal refrigerator performance, efficiency, and longevity.",

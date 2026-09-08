@@ -12,6 +12,7 @@ import {
   SplitHeroSection,
   SplitMediaSection,
   useBookingRequest,
+  TwoColumnInfoSection
 } from "../Components/ServicePageSections";
 import "../Components/ServicePageSections/ServicePageSections.css";
 import pageData from "../data/servicePages/commercialDishwasher";
@@ -45,23 +46,19 @@ export default function CommercialDishwasherServices() {
 
         <BreadCumb />
 
-        <SplitMediaSection content={pageData.intro} />
-
         <PlanCardsSection
           content={pageData.contracts}
           onAction={openBooking}
         />
 
-        <EmbeddedVideoSection
-          content={pageData.video}
-          tone="soft"
+        <TwoColumnInfoSection 
+          content={pageData.serviceOverview} 
+          tone="soft" 
         />
 
-        <ActionCardsSection
-          content={pageData.repairOptions}
-          onAction={openBooking}
-          tone="white"
-          columns="three"
+        <EmbeddedVideoSection
+          content={pageData.video}
+          tone="dark"
         />
 
         <ActionCardsSection
@@ -103,8 +100,10 @@ export default function CommercialDishwasherServices() {
         <SearchableDirectorySection
           content={pageData.otherBrands}
           onAction={openBooking}
-          tone="dark"
+          tone="white"
         />
+
+        <ActionCardsSection content={pageData.testimonials} tone="dark" columns="three" slider autoplay loop />
 
         <AccordionSection content={pageData.faqs} />
 

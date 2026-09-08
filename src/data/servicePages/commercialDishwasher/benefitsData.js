@@ -1,44 +1,44 @@
 const benefitsData = {
   eyebrow: "Technical Checkpoints",
-  title: "Benefits of Commercial Dishwasher Service",
+  title: "The Benefits of Appliances Service Dubai",
   description:
-    "Thorough maintenance and calibration help warewashing systems operate safely, efficiently and consistently.",
+    "",
   items: [
     {
       icon: "shield",
       badge: "Benefit 01",
-      title: "Safer Operation",
-      description: "Routine checks reduce risks from electrical faults, leaks, overheated parts and unsafe operation.",
+      title: "Ensuring Safety",
+      description: "Routine checks reduce the risk of electrical faults, gas leaks, and other hazards, keeping your home and family safe.",
     },
     {
       icon: "award",
       badge: "Benefit 02",
       title: "Optimal Performance",
-      description: "Correct temperatures, pressure, dosing and drainage help deliver consistent wash results.",
+      description: "Regular maintenance helps your appliances run smoothly and efficiently, delivering the best results every time.",
     },
     {
       icon: "zap",
       badge: "Benefit 03",
-      title: "Lower Utility Costs",
-      description: "Efficient equipment can reduce unnecessary water, detergent and electricity consumption.",
+      title: "Lower Energy Bills",
+      description: "Energy efficient appliances translate to monthly savings on utility bills, putting more money back in your pocket.",
     },
     {
       icon: "percent",
       badge: "Benefit 04",
-      title: "Lower Repair Risk",
-      description: "Preventive servicing catches developing issues before they cause larger repair bills.",
+      title: "Saving Money on Repair",
+      description: "Preventive maintenance catches issues early, reducing the risk of major breakdowns and expensive repair costs.",
     },
     {
       icon: "check",
       badge: "Benefit 05",
-      title: "Longer Equipment Life",
-      description: "Scale removal, cleaning and timely part replacement reduce premature component wear.",
+      title: "Extending Appliance Lifespan",
+      description: "Proper care and timely servicing can significantly increase life of your home appliances, delaying the need for replacements.",
     },
     {
       icon: "droplet",
       badge: "Benefit 06",
-      title: "Reliable Hygiene",
-      description: "A maintained dishwasher supports dependable cleaning and sanitisation throughout busy service periods.",
+      title: "Peace of Mind",
+      description: "Knowing your appliances are in top condition gives you confidence and removes the stress of unexpected failures.",
     },
   ],
 };

@@ -4,7 +4,7 @@ const servicesOfferedData = {
   items: [
     { icon: "wrench", title: "Washing Machine Repair Service", description: "Resolving issues such as non-functioning machines, leaks, drainage problems.", actionLabel: "Request Repair" },
     { icon: "sparkles", title: "Washing Machine Installation", description: "Proper connection to water supply, drainage, and power sources.", actionLabel: "Request Installation" },
-    { icon: "calender", title: "Washing Machine Maintenance Contract", description: "Regular cleaning of filters, hoses, and pumps.", actionLabel: "Request AMC" },,
+    { icon: "calendar", title: "Washing Machine Maintenance Contract", description: "Regular cleaning of filters, hoses, and pumps.", actionLabel: "Request AMC" },,
     { icon: "shield", title: "Additional Services", description: "Water leakage solutions, deep cleaning, and more.", actionLabel: "Request Service" },
   ],
 };

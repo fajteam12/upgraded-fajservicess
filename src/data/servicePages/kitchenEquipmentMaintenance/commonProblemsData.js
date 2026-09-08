@@ -1,48 +1,38 @@
 const commonProblemsData = {
   eyebrow: "Troubleshooting Guide",
-  title: "The Most Common Problems with Commercial Kitchen Equipment",
+  title: "Most Common Problems with Commercial Kitchen Equipment",
   description:
-    "Arrange professional diagnosis when these faults affect cooking, cooling, ventilation or food-preparation equipment.",
+    "",
   items: [
     {
-      title: "Refrigeration Faults",
+      title: "Gas Burner Ignition Problems",
       description:
-        "Temperature loss in walk-in freezers, chillers and display equipment can put stored food and daily operations at risk.",
+        "Gas stove burners that won't ignite can disrupt kitchen operations, affecting food quality. This is often due to clogged gas lines, faulty ignition switches, or dirty pilot lights.",
     },
     {
-      title: "Equipment Failure",
+      title: "Oven not Heating",
       description:
-        "Unexpected mechanical or control failures can stop an essential production line and require systematic diagnosis.",
+        "Conflicting oven heating can cause food to be undercooked or overcooked, affecting food quality. This issue often results from faulty heating elements, calibration errors, or worn thermostats.",
     },
     {
-      title: "Poor Maintenance",
+      title: "Deep Fryer Breakdowns",
       description:
-        "Grease, scale, blocked filters and worn parts reduce reliability and can create avoidable safety problems.",
+        "Electric or Gas deep fryers can get oil, leading to blocked parts, uneven heating, and higher fire risks. Poor maintenance may also cause thermostat and heating element or gas burner failures.",
     },
     {
-      title: "Electrical Problems",
+      title: "Equipment not Working",
       description:
-        "Loose terminals, overloaded circuits, damaged wiring and failed controls can interrupt equipment operation.",
+        "Kitchen equipment like mixers, blenders, processors, mixers, juicers, and coffee makers can overheat from dirty filters, blocked vents, or faulty thermostats, leading to possible damage and safety risks.",
     },
     {
-      title: "Uneven Cooking",
+      title: "Refrigeration Failures",
       description:
-        "Uncalibrated thermostats, failed elements and burner faults can produce inconsistent temperatures and results.",
+        "Uneven temperatures or total refrigeration loss can cause food spoilage and health violations. Common issues include dirty condenser coils, worn door seals that let cold air escape, and failing compressors.",
     },
     {
-      title: "Gas Ignition Faults",
+      title: "Ice Machine Blockages",
       description:
-        "Blocked burners, weak ignition systems and gas-supply issues require qualified inspection before further use.",
-    },
-    {
-      title: "Improper Ventilation",
-      description:
-        "Poor hood, fan or duct performance can increase heat, grease accumulation, air-quality issues and fire risk.",
-    },
-    {
-      title: "Leaking Equipment",
-      description:
-        "Worn gaskets, seals, hoses, valves and drainage components can cause water or fluid leakage around appliances.",
+        "Mineral deposits and clogged filters in ice makers can block water flow and reduce ice production, affecting beverage service and customer satisfaction.",
     },
   ],
 };

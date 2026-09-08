@@ -27,7 +27,7 @@ const servicesOfferedData = {
       actionLabel: "Request Repair",
     },
     {
-      icon: "calender",
+      icon: "calendar",
       title: "Oven Annual Maintenance Contract",
       description:
         "This contract outlines the terms and services covered for your oven's annual maintenance. Regular oven maintenance is essential for optimal performance, efficiency, and longevity of your oven.",

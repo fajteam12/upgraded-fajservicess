@@ -27,7 +27,7 @@ const servicesOfferedData = {
       actionLabel: "Book Repair",
     },
     {
-      icon: "calender",
+      icon: "calendar",
       title: "BBQ Grill Annual Maintenance Contract",
       description:
         "This contract outlines the terms and services provided for the annual maintenance of your barbeque grill. Regular maintenance is essential for ensuring optimal performance, efficiency, and longevity of your barbeque.",

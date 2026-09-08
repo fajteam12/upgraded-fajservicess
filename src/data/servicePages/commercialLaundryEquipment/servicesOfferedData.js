@@ -1,19 +1,19 @@
 const servicesOfferedData = {
   id: "commercial-laundry-services",
   eyebrow: "Our Specialised Range",
-  title: "Services We Offer for Commercial Laundry Equipment",
+  title: "Why Choose FAJ Laundry Systems for Maintenance Services?",
   description:
-    "We support professional washing machines, dryers and related laundry systems across different capacities and brands.",
+    "We offer tailored maintenance plans featuring thorough inspections, genuine replacement parts, and expert advice. Our team aims to reduce downtime, enhance equipment efficiency, and extend the life of your buy.",
   columns: 4,
   notice: {
     icon: "shield",
-    text: "Tailored maintenance plans can include inspections, cleaning, repair recommendations and priority support.",
+    text: "With FAJ Laundry Systems service, you receive reliable support and industry expertise for smooth laundry operations.",
   },
   items: [
-    { title: "Washing Machine Repair", description: "Diagnosis and repair for leaks, drainage faults, cycle failures, vibration and electrical problems." },
-    { title: "Laundry Equipment Installation", description: "Installation checks for the water supply, drainage, power, ventilation and machine positioning." },
-    { title: "Maintenance Contracts", description: "Scheduled cleaning and inspections for washers, dryers, filters, hoses, pumps and safety systems." },
-    { title: "Additional Laundry Services", description: "Support for water leakage, deep cleaning, dryer airflow, drum alignment and related equipment needs." },
+    { title: "Laundry Washing Machine Repair Service", description: "Addressing issues like malfunctioning laundry machines, leaks, and drainage problems." },
+    { title: "Laundry Equipment Installation", description: "Confirm that the laundry equipment is properly installed by connecting it to the water supply, drainage, and power sources." },
+    { title: "Laundry Equipment Maintenance Contract", description: "Regular cleaning of laundry equipment, laundry washing machine and laundry dryer, including filters, hoses, and pumps, is essential." },
+    { title: "Additional Laundry Equipment Services", description: "Laundry equipmentsolutions for water leakage, deep cleaning services, and more." },
   ],
 };
 

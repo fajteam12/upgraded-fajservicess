@@ -1,8 +1,8 @@
 const benefitsData = {
   eyebrow: "Performance and Safety",
-  title: "Benefits of Regular Catering Equipment Maintenance",
+  title: "Top Benefits of Preventive Maintenance for Kitchen Equipment",
   description:
-    "Preventive service protects operational reliability, repair budgets and the long-term value of professional kitchen equipment.",
+    "",
   stats: [
     { value: "2010", label: "Serving the UAE Since" },
     { value: "7-Day", label: "Support Available" },
@@ -11,49 +11,49 @@ const benefitsData = {
     {
       id: "routine-service",
       number: "01",
-      title: "Routine Service",
+      title: "Improved Equipment Lifespan",
       description:
-        "Scheduled checks reduce the risk of faults and keep commercial-kitchen equipment ready for daily service.",
+        "Regular maintenance can extend the life of kitchen equipment, helping you avoid costly parts replacements.",
       icon: "clock",
     },
     {
       id: "reports-updates",
       number: "02",
-      title: "Reports and Updates",
+      title: "Improved Efficiency",
       description:
-        "Condition reports help you prioritise developing issues before they create costly unexpected downtime.",
+        "Well-maintained equipment operates more efficiently, leading to reduced energy consumption and lower utility bills.",
       icon: "shield-check",
     },
     {
       id: "improved-efficiency",
       number: "03",
-      title: "Improved Efficiency",
+      title: "Consistent Performance",
       description:
-        "Cleaning, calibration and correct adjustment support efficient cooking, cooling and warewashing performance.",
+        "Preventive maintenance ensures that all kitchen equipment functions reliably, minimising the risk of unexpected repair work during trading hours.",
       icon: "wind",
     },
     {
       id: "expert-technicians",
       number: "04",
-      title: "Expert Technicians",
+      title: "Food Safety Compliance",
       description:
-        "Qualified technical care supports safe diagnosis and dependable servicing across multiple equipment types.",
+        "Keeping equipment in good condition helps meet health and safety standards, ensuring that food is prepared and stored safely.",
       icon: "sparkles",
     },
     {
       id: "cost-efficiency",
       number: "05",
-      title: "Cost Efficiency",
+      title: "Repair Cost Savings",
       description:
-        "Preventive attention can reduce major repair costs and protect the value of business-critical equipment.",
+        "By addressing minor issues before they escalate, you can save money on important repairs and avoid downtime.",
       icon: "dollar-sign",
     },
     {
       id: "lower-maintenance-costs",
       number: "06",
-      title: "Longer Equipment Life",
+      title: "Peace of Mind",
       description:
-        "Early attention to wear, cleanliness and calibration helps avoid premature equipment replacement.",
+        "Knowing that your kitchen equipment is regularly maintained gives you confidence in its performance and reduces stress during busy periods.",
       icon: "clock",
     },
   ],
