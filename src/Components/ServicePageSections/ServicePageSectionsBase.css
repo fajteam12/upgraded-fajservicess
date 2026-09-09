@@ -16,7 +16,7 @@
   --sl-accent: #007fa3;
   --sl-cyan: #4fc3d8;
   --sl-light: #f5f8fa;
-  --sl-body: #4b5f69;
+  --sl-body: #000000;
   --sl-border: #dbe7ec;
   --sl-success: #25d366;
   --sl-small: 0.6875rem;
@@ -829,7 +829,7 @@
 }
 
 .service-landing__section.is-dark .service-landing__number-card p {
-  color: #bdcbd1;
+  color: #cfd8dc;
 }
 
 .service-landing__section.is-dark .service-landing__number-card > span {
