@@ -96,7 +96,10 @@ export default function KitchenEquipmentAMC() {
         <ActionCardsSection
           content={pageData.testimonials}
           tone="dark"
-          columns="two"
+          columns="three"
+          slider
+          autoplay
+          loop
         />
 
         <AccordionSection content={pageData.faqs} tone="white" />

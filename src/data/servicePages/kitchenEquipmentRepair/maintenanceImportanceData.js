@@ -1,45 +1,45 @@
 const maintenanceImportanceData = {
   id: "restaurant-kitchen-maintenance-importance",
   eyebrow: "Business-Critical Maintenance",
-  title: "Why Is Restaurant Kitchen Equipment Maintenance Important in Dubai?",
+  title: "Why is Restaurant Kitchen Equipment Maintenance Important in Dubai?",
   description:
-    "Professional planned care supports efficiency, food safety and reliable daily kitchen operation.",
+    "Keeping your professional kitchen equipment regularly maintained is important to ensure the longevity of your equipment, that your customers receive high-quality food, and to minimise costly downtime in your business.",
   items: [
     {
       icon: "alert",
-      title: "Identify Issues Early",
+      title: "Identifying Issues Early",
       description:
-        "Regular inspection detects developing commercial-kitchen equipment problems before a shutdown.",
+        "Regular professional maintenance of your kitchen equipment helps catch problems early.",
     },
     {
       icon: "zap",
       title: "Energy Efficiency",
       description:
-        "Clean, calibrated catering equipment avoids unnecessary electricity and gas consumption.",
+        "Ensure that your catering equipment is operating efficiently to avoid wasting electricity.",
     },
     {
       icon: "dollar",
-      title: "Long-Term Savings",
+      title: "Saving Money in the Long Run",
       description:
-        "Routine restaurant-equipment servicing can prevent secondary damage and expensive emergency repairs.",
+        "Regular servicing of restaurant equipment can prevent costly repairs down the line.",
     },
     {
       icon: "shield",
-      title: "Product Safety Compliance",
+      title: "Compliance with Product Safety Standards",
       description:
-        "Professional maintenance supports dependable food-storage and preparation conditions.",
+        " If you store food in commercial appliances, make sure they comply with food safety regulations. A professional service can assist with this.",
     },
     {
       icon: "check",
       title: "Damage Control",
       description:
-        "Planned checks identify electrical, gas, water and mechanical hazards requiring attention.",
+        "Regularly inspect for potential hazards, including any harmful leaks from your kitchen equipment.",
     },
     {
       icon: "award",
       title: "Peace of Mind",
       description:
-        "Reliable kitchen equipment lets the team focus on service instead of unexpected failures.",
+        " Ensuring that your professional kitchen equipment functions properly gives you peace of mind, allowing you to focus on your business.",
     },
   ],
 };

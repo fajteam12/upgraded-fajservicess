@@ -2,47 +2,47 @@ const commonProblemsData = {
   eyebrow: "Troubleshooting Guide",
   title: "Common Commercial Oven Problems That May Require Maintenance",
   description:
-    "Commercial baking lines use high-capacity heating components. These are common faults our technicians diagnose onsite.",
+    "",
   items: [
     {
       title: "Broken Oven Door",
       description:
-        "A damaged or misaligned door can allow heat to escape, causing slow, uneven or incomplete cooking.",
+        "If your food is not cooking evenly or is undercooked, the issue may be related to the door of your commercial oven. For optimal cooking.",
     },
     {
       title: "Oven Not Heating",
       description:
-        "The oven may power on but fail to reach its selected temperature because of electrical, gas or component faults.",
+        "You guessed it! The most obvious issue is that it may not heat to the desired temperature, even when switched on and fully powered up properly and consistently.",
     },
     {
       title: "Uneven Cooking",
       description:
-        "Poor heat distribution can scorch food on one side while leaving the other side undercooked.",
+        "Food often cooks unevenly, scorching on one side while staying undercooked on the other due to uneven heat distribution problems.",
     },
     {
       title: "Oven Keeps Sparking",
       description:
-        "Continuous clicking or sparking in a gas oven may indicate a faulty ignition dial or ignition-system component.",
+        "If you hear continuous clicking and your gas oven is sparking, the problem might be the ignition dial needing immediate professional repair service.",
     },
     {
       title: "Broken Oven Thermostat",
       description:
-        "An inaccurate thermostat can cause overcooking, undercooking and unreliable temperature control.",
+        "Cooking at the right temperature is absolutely vital for delicious meals, as incorrect temperatures can often lead to overcooking or undercooking.",
     },
     {
       title: "Broken Heating Elements",
       description:
-        "Faulty elements, clogged burners, electrical problems or a defective gas igniter can prevent proper heating.",
+        "Possible causes include faulty heating elements, a broken thermostat, clogged burners, or electrical issues. For gas ovens, it may be the igniter.",
     },
     {
       title: "Broken Oven Fan",
       description:
-        "A malfunctioning fan prevents heated air from circulating evenly around the cooking cavity.",
+        "A malfunctioning electric oven fan can lead to uneven cooking. Oven fans circulate heated air around the oven cavity to ensure even cooking.",
     },
     {
       title: "Broken Door Seal",
       description:
-        "A worn gasket no longer creates an airtight seal, allowing heat loss and reducing cooking consistency.",
+        "The oven door seal, also known as a gasket, creates an airtight seal between oven door and the oven cavity, preventing heat loss and ensuring even cooking.",
     },
   ],
 };

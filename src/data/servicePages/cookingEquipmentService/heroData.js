@@ -3,8 +3,8 @@ const heroData = {
   "title": "Best Commercial Cooking Appliances Repair & Maintenance Servicing Near You in Dubai, UAE",
   "subtitle": "Commercial Catering Equipment Specialists Since 2010",
   "paragraphs": [
-    "FAJ specialises in minimising downtime for the catering industry through repair and annual maintenance contracts. Our catering division supplies, installs, repairs, and maintains commercial catering and warewashing equipment.",
-    "We provide services ranging from emergency repairs on electric and gas catering appliances to complete commercial kitchen installations, with solutions tailored to businesses of every size."
+    "FAJ, established in 2010, specialises in minimising downtime for the catering industry through repair and annual maintenance contracts. Our catering division supplies, installs, repairs, and maintains commercial catering and warewashing equipment.",
+    "We provide services ranging from emergency repairs on electric and gas catering appliances to complete commercial kitchen installations, as well as repair and maintenance services tailored to businesses of all sizes"
   ],
   "primaryAction": "Book Inspection",
   "secondaryAction": "WhatsApp Now",

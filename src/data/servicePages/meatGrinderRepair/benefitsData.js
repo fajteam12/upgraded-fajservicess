@@ -1,8 +1,8 @@
 const benefitsData = {
   eyebrow: "Performance Standards",
-  title: "Benefits of Regular Catering Equipment Maintenance",
+  title: "Benefits of Regular Commercial Grinder Service & Maintenance in Dubai",
   description:
-    "Preventive meat-grinder care protects food quality, workplace safety, production speed and the long-term value of commercial kitchen equipment.",
+    "",
   stats: [
     {
       value: "2010",
@@ -19,7 +19,7 @@ const benefitsData = {
       number: "01",
       title: "Enhanced Food Quality",
       description:
-        "Sharp, correctly aligned cutting parts produce a cleaner, more consistent grind without unnecessarily crushing or heating the product.",
+        "The condition of a meat grinder machine significantly impacts food quality; therefore, regular maintenance is crucial.",
       icon: "sparkles",
     },
     {
@@ -27,39 +27,39 @@ const benefitsData = {
       number: "02",
       title: "Improved Workplace Safety",
       description:
-        "Regular safety checks reduce risks from damaged guards, unstable mechanical parts and developing electrical faults.",
+        "Regular maintenance of restaurant kitchen grinders helps prevent contamination, reduces the risk of mishaps, and ensures safe food preparation.",
       icon: "shield-check",
     },
     {
       id: "hygiene-compliance",
       number: "03",
-      title: "Hygiene Compliance",
+      title: "Ensures Compliance",
       description:
-        "Scheduled cleaning and food-contact inspections help commercial kitchens maintain sanitation standards and limit contamination.",
+        "Food safety is crucial for any food business. Regular maintenance of meat grinders prevents contamination and ensures safety.",
       icon: "sparkles",
     },
     {
       id: "reduced-utility-costs",
       number: "04",
-      title: "Reduced Utility Costs",
+      title: "Reduced utility costs",
       description:
-        "A clean, correctly lubricated grinder places less unnecessary load on its motor and drive system during daily operation.",
+        "An electric meat grinder operates more efficiently and safely at peak performance when it is kept clean and serviced regularly.",
       icon: "dollar-sign",
     },
     {
       id: "faster-production",
       number: "05",
-      title: "Faster Production",
+      title: "Improve Speed of Operations",
       description:
-        "Reliable grinder output supports quick kitchen and butchery turnaround without repeated processing or avoidable stoppages.",
+        "A restaurant meat grinder requires quick turnarounds to meet customer demands, as inefficiency causes delays and dissatisfaction.",
       icon: "wind",
     },
     {
       id: "longer-equipment-life",
       number: "06",
-      title: "Longer Equipment Life",
+      title: "Commercial Grinder Maintenance",
       description:
-        "Early attention to wear, alignment and lubrication helps prevent secondary damage and premature equipment replacement.",
+        "Regular cleaning and maintenance of commercial meat grinders are essential to extend their lifespan and reduce costs.",
       icon: "clock",
     },
   ],

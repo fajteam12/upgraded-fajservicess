@@ -4,8 +4,8 @@ const heroData = {
     "Top-Rated Commercial Oven Repair and Pizza Oven Maintenance Services Near You, Dubai, UAE",
   subtitle: "Commercial Kitchen Oven Repair",
   paragraphs: [
-    "Looking for affordable oven repair? FAJ Technical Services L.L.C. has served Dubai since 2010 with dependable commercial cooking-equipment solutions.",
-    "Our skilled technicians repair electric ovens, gas ranges, pizza ovens and other commercial models with prompt, cost-effective service at your premises.",
+    "Looking for affordable oven repair? At FAJ Technical Services L.L.C, we've been serving Dubai since 2010, offering trustworthy repair solutions. Our skilled technicians can handle various oven issues, including electric, gas range, and electric ovens.",
+    "We provide prompt and cost-effective service tailored to your needs, ensuring reliable repairs right at your door.",
   ],
   primaryAction: "Book Onsite Repair",
   secondaryAction: "WhatsApp Now",

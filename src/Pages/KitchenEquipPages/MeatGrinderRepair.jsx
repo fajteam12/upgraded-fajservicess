@@ -47,14 +47,14 @@ export default function MeatGrinderRepair() {
 
         <BreadCumb />
 
-        <ContentCardSection content={pageData.repairOverview} />
+        <TwoColumnInfoSection content={pageData.repairOverview} />
 
-        <EmbeddedVideoSection content={pageData.video} />
-
-        <TwoColumnInfoSection
-          content={pageData.inspectionPolicy}
-          tone="soft"
+        <PlanCardsSection
+          content={pageData.contracts}
+          onAction={openBooking}
         />
+
+        <EmbeddedVideoSection content={pageData.video} tone="soft" />
 
         <ChecklistSection content={pageData.maintenanceChecks} tone="white" />
 
@@ -79,16 +79,13 @@ export default function MeatGrinderRepair() {
           columns="three"
         />
 
-        <PlanCardsSection
-          content={pageData.contracts}
-          onAction={openBooking}
-          dark={false}
-        />
-
         <ActionCardsSection
           content={pageData.testimonials}
           tone="dark"
-          columns="two"
+          columns="three"
+          slider
+          autoplay
+          loop
         />
 
         <AccordionSection content={pageData.faqs} />

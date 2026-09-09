@@ -15,6 +15,7 @@ import serviceDetailsData from "./serviceDetailsData";
 import brandsData from "./brandsData";
 import faqsData from "./faqsData";
 import bookingData from "./bookingData";
+import testimonialsData from "./testimonialsData";
 
 const cookingEquipmentServiceData = {
   seo: seoData,
@@ -32,6 +33,7 @@ const cookingEquipmentServiceData = {
   whyChooseUs: whyChooseUsData,
   serviceDetails: serviceDetailsData,
   brands: brandsData,
+  testimonials: testimonialsData,
   faqs: faqsData,
   booking: bookingData,
 };

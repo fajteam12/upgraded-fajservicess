@@ -1,19 +1,11 @@
 const warrantyData = {
   "eyebrow": "Security Guarantee",
-  "title": "Choose FAJ for Your Peace of Mind",
-  "description": "Every on-demand commercial diagnosis is completed to professional quality standards, with repair and parts warranties provided according to the completed scope.",
-  "items": [
-    {
-      "value": "2 Months",
-      "label": "Repair Warranty",
-      "icon": "shield"
-    },
-    {
-      "value": "3 Months",
-      "label": "Parts Warranty",
-      "icon": "award"
-    }
-  ]
+  "title": "Planned Preventive Maintenance (PPM) Services",
+  "description": "",
+  lead: "Planned Preventive Maintenance for Catering & Refrigeration Equipment",
+  paragraphs: [
+    "Our catering equipment technician can provide your business with a customised Planned Preventive Maintenance Package designed to keep your catering, cooking line, baking line, and refrigeration equipment compliant and running efficiently.","This proactive approach reduces the likelihood of unexpected breakdowns and associated costs. Our Planned Preventive Maintenance Package includes maintenance, repair services, and testing. It is ideal for hotels, restaurants, canteens, and other venues in the hospitality and education sectors looking to ensure their equipment operates smoothly and to prevent breakdowns."
+  ],
 };
 
 export default warrantyData;

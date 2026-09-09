@@ -1,49 +1,49 @@
 const commonProblemsData = {
   id: "commercial-meat-grinder-problems",
   eyebrow: "Troubleshooting Guide",
-  title: "Common Commercial Meat Grinder Problems",
+  title: "Common Problems of Commercial Meat Grinders That May Require Service",
   description:
-    "Stop the machine and arrange professional diagnosis when these symptoms affect safe, consistent grinding.",
+    "",
   items: [
     {
-      title: "Grinder Won’t Start",
+      title: "Grinder Won't Start",
       description:
-        "Power-supply, switch, fuse, safety-interlock, wiring or motor faults can prevent the grinder from starting.",
+        "If your meat grinder doesn't start, check power supply, switches, fuses, or wiring faults. Service motor if needed.",
     },
     {
-      title: "Loud Noise or Vibration",
+      title: "Loud Noise Issue",
       description:
-        "Loose fasteners, damaged blades or plates, worn bearings and motor-mount problems can cause unusual noise or movement.",
+        "If your grinder is noisy or vibrates, check screws, blades, plates, or motor mounts. Replace any damaged components.",
     },
     {
-      title: "Overheating During Use",
+      title: "Overheats When Used",
       description:
-        "Continuous heavy use, overloading, poor ventilation or a developing motor or gearbox fault can generate excessive heat.",
+        "Continuous heavy use or overloading stresses the motor and parts, causing it to heat. Always allow cooling breaks.",
     },
     {
-      title: "Repeated Jamming",
+      title: "Grinder Gets Jammed",
       description:
-        "Sinew, tough product, incorrect preparation, overloading or a worn auger and cutting set can obstruct the grinder.",
+        "When grinding, sinew or tough meat may clog blades or auger. Avoid overloading and trim meat pieces properly first.",
     },
     {
       title: "Poor Grinding Performance",
       description:
-        "Dull, worn or incorrectly fitted blades and plates can mash product instead of producing a clean, consistent grind.",
+        "If meat isn't ground well, blades or plates may be dull or worn. Replace or sharpen them to ensure smooth operation.",
     },
     {
       title: "Leakage Problems",
       description:
-        "Worn seals, gaskets or grinder-head components can allow liquid or product to leak during operation.",
+        "Leaks can happen from worn seals or gaskets in the grinder head. Replace damaged seals to prevent further leakage.",
     },
     {
-      title: "Rust and Product Build-Up",
+      title: "Poor Maintenance",
       description:
-        "Incomplete cleaning and drying encourage corrosion, contamination and friction across food-contact components.",
+        "Ignoring cleaning causes rust, buildup, and friction in grinder parts. Regular servicing extends life and prevents jams.",
     },
     {
-      title: "Burning Smell",
+      title: "Burning Smell Issue",
       description:
-        "A burning odour may indicate overheated windings, damaged wiring, a short circuit or excessive mechanical load.",
+        "A burning smell may signal wiring faults, short circuit, or an overheated motor. Stop use and inspect it right away.",
     },
   ],
 };

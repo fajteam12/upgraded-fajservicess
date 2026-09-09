@@ -2,11 +2,10 @@ const serviceOverviewData = {
   eyebrow: "Commercial Kitchen Specialists",
   title: "Catering Equipment Maintenance Services",
   description:
-    "Experienced repair and maintenance support for professional food-service equipment.",
+    "We know that quick service and repair of your catering equipment is essential, as downtime can severely affect your profits.",
   lead: "Responsive commercial cooking-equipment callouts across Dubai and Sharjah.",
   paragraphs: [
-    "FAJ technicians service catering, cooking, refrigeration and warewashing equipment used in demanding commercial kitchens.",
-    "Our practical diagnostics, repairs and preventative maintenance help restaurants, hotels and institutional kitchens reduce disruption and keep important assets working efficiently.",
+    "The catering industry is fast-paced and highly demanding, which is why we at FAJ prioritise minimising downtime and ensuring smooth operations. This includes servicing freezers, chillers, ovens, ranges, hoods, ice makers, dishwashers, and air conditioning units.",
   ],
 };
 

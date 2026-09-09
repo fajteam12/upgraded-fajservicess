@@ -54,9 +54,7 @@ export default function OvenRepair() {
           onAction={openBooking}
         />
 
-        <TwoColumnInfoSection content={pageData.inspectionPolicy} tone="soft" />
-
-        <EmbeddedVideoSection content={pageData.video} tone="dark" />
+        <EmbeddedVideoSection content={pageData.video} tone="soft" />
 
         <ContentCardSection content={pageData.ppmServices} tone="white" />
 
@@ -96,7 +94,10 @@ export default function OvenRepair() {
         <ActionCardsSection
           content={pageData.testimonials}
           tone="dark"
-          columns="two"
+          columns="three"
+          slider
+          autoplay
+          loop
         />
 
         <AccordionSection content={pageData.faqs} tone="white" />

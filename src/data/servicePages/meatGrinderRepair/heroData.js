@@ -4,8 +4,8 @@ const heroData = {
     "Best Meat Grinder Repair and Food Equipment Maintenance Services Near You in Dubai, UAE",
   subtitle: "Commercial Meat Grinder Specialists Since 2010",
   paragraphs: [
-    "FAJ provides reliable commercial meat grinder repair and maintenance across Dubai. Our technicians diagnose electrical faults, motor failures, blade and plate problems, gearbox issues, leaks, overheating and repeated jamming.",
-    "Prompt professional service helps restore safe operation, reduce costly downtime and extend the working life of equipment used by butcheries, supermarkets, restaurants, hotels and food-production facilities.",
+    "Experience reliable and fast maintenance services in Dubai with FAJ, a registered company since 2010. If you need effective meat grinder repair, trust the professionals at FAJ to ensure your grinder operates perfectly.",
+    "Our skilled technicians can address electrical issues, motor malfunctions, and blade problems, repairing your meat grinder to working order at a fraction of the cost of purchasing a new one. We prioritize customer satisfaction and timely service to help extend the life of your appliance.",
   ],
   primaryAction: "Book Onsite Repair",
   secondaryAction: "WhatsApp Now",

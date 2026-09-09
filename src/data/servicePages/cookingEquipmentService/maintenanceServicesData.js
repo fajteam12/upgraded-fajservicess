@@ -1,50 +1,36 @@
 const maintenanceServicesData = {
   "eyebrow": "Professional Execution",
-  "title": "Comprehensive Commercial Cooking Equipment Maintenance in Dubai",
-  "description": "Specialist engineering support across the commercial culinary line with practical uptime protection.",
+  "title": "Comprehensive Maintenance of Commercial Cooking Equipment in Dubai",
+  "description": "We offer repair services for a variety of commercial cooking equipment, including:",
   "items": [
     {
-      "title": "Gas Cooker Repair",
-      "description": "Repair gas ranges, burners, and ovens, including thermostat adjustment, weak ignition correction, and hose or gasket sealing.",
+      "title": "Commercial Cooking Equipment Installation",
+      "description": "Professional installation of a variety of gas and electric commercial cooking equipment, ensuring optimal performance and efficiency.",
       "icon": "flame",
       "badge": "Certified Gas",
       "actionLabel": "Inspect Capabilities"
     },
     {
-      "title": "Commercial Equipment Installation",
-      "description": "Professional installation of gas and electric cooking equipment with correct positioning, connection, safety checks, and commissioning.",
+      "title": "Commercial Cooking Equipment Diagnostics",
+      "description": "We perform comprehensive diagnostics, eligibility assessments, and provide detailed quotes to resolve any oven issues.",
       "icon": "wrench",
       "badge": "Aligned Setup",
       "actionLabel": "Inspect Capabilities"
     },
     {
-      "title": "Complete System Diagnostics",
-      "description": "Comprehensive fault diagnosis, condition assessment, and an upfront quotation for oven, griddle, fryer, or cooking-line repairs.",
+      "title": "Commercial Cooking Equipment Repair Service",
+      "description": "Professional cooking range, stove, hood, and deep fryer repair services for all components, ensuring quick resolution of leaks, electrical failures, and malfunctions. Contact us for service requests or questions!",
       "icon": "zap",
       "badge": "Diagnostics",
       "actionLabel": "Inspect Capabilities"
     },
     {
-      "title": "Catering Equipment AMC",
-      "description": "Annual maintenance contracts with scheduled tune-ups to support equipment performance, efficiency, safety, and longevity.",
+      "title": "Commercial Cooking Equipment AMC",
+      "description": "This contract details the terms and services for annual maintenance of catering cooking equipment. Regular maintenance is crucial for the optimal performance, efficiency, and longevity of your kitchen restaurant cooking equipment.",
       "icon": "chef",
       "badge": "Annual Protection",
       "actionLabel": "Inspect Capabilities"
     },
-    {
-      "title": "Component Replacement",
-      "description": "Certified replacement parts for heating elements, fuses, thermostats, burners, ignition systems, and ventilation components.",
-      "icon": "award",
-      "badge": "Quality Parts",
-      "actionLabel": "Inspect Capabilities"
-    },
-    {
-      "title": "General Service & Inquiries",
-      "description": "Cooking range, stove, hood, deep fryer, grill, and custom commercial kitchen support for repairs and service agreements.",
-      "icon": "wrench",
-      "badge": "Support Desk",
-      "actionLabel": "Inspect Capabilities"
-    }
   ]
 };
 

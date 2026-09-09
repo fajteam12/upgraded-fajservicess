@@ -14,6 +14,7 @@ import {
   SearchableDirectorySection,
   SplitHeroSection,
   useBookingRequest,
+  ContentCardSection
 } from "../../Components/ServicePageSections";
 import "../../Components/ServicePageSections/ServicePageSections.css";
 import pageData from "../../data/servicePages/cookingEquipmentService";
@@ -54,18 +55,14 @@ export default function CookingEquipmentService() {
           onAction={openBooking}
         />
 
+        <ContentCardSection content={pageData.emergencyServices} tone="soft" />
+
         <EmbeddedVideoSection
           content={pageData.video}
-          tone="soft"
+          tone="dark"
         />
 
-        <ActionCardsSection
-          content={pageData.emergencyServices}
-          onAction={openBooking}
-          columns="three"
-        />
-
-        <CalloutBannerSection content={pageData.warranty} />
+        <ContentCardSection content={pageData.warranty} tone="white" />
 
         <MetricCardsSection content={pageData.maintenanceImportance} />
 
@@ -95,6 +92,8 @@ export default function CookingEquipmentService() {
         <ContentGridSection content={pageData.serviceDetails} />
 
         <SearchableDirectorySection content={pageData.brands} />
+
+        <ActionCardsSection content={pageData.testimonials} tone="dark" columns="three" slider autoplay loop />
 
         <AccordionSection content={pageData.faqs} />
 

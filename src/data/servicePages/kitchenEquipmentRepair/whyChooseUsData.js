@@ -1,51 +1,51 @@
 const whyChooseUsData = {
   id: "why-choose-faj-kitchen-equipment-repair",
   eyebrow: "FAJ Service Promise",
-  title: "Choose Us for Reliable, Exceptional Service Tailored to Your Needs",
+  title: "CHOOSE US FOR RELIABLE, EXCEPTIONAL SERVICE TAILORED TO YOUR NEEDS!",
   description:
-    "Responsive scheduling, commercial catering expertise and dependable value across the UAE.",
+    "",
   items: [
     {
       icon: "zap",
       badge: "Fast, Reliable Service",
       title: "Reliable, Priority and Quick",
       description:
-        "Same-day and next-day visit options help commercial customers receive support quickly.",
+        "You can count on efficient service! Our same-day repair or next-day service visits ensure that your needs are met quickly.",
     },
     {
       icon: "shield",
       badge: "Year-Round Support",
       title: "Feeling of Calm",
       description:
-        "A maintenance contract helps keep kitchen equipment operating smoothly throughout the year.",
+        "With maintenance contract, enjoy year-round service, keeping your kitchen equipment running smoothly and ensuring peace of mind.",
     },
     {
       icon: "calendar",
       badge: "Flexible Scheduling",
       title: "You Are in Control",
       description:
-        "Choose an appointment date and time with a practical three-to-four-hour technician arrival window.",
+        "Choose a day and time for your kitchen appliance repair in Dubai or Sharjah. With a 3-4 hour window for when our technician will arrive.",
     },
     {
       icon: "wrench",
       badge: "Catering Specialists",
       title: "We Are Experts",
       description:
-        "Major commercial brands rely on our catering-equipment repair and maintenance experience.",
+        "We are experts in catering equipment repair. This is why most major brands trust us to handle their service and maintenance needs.",
     },
     {
       icon: "dollar",
       badge: "Customer Value",
       title: "Great Value",
       description:
-        "Timely service, practical problem resolution and competitive prices support customer satisfaction.",
+        "We are dedicated to ensuring customer satisfaction with timely service, prompt issue resolution, and affordable prices.",
     },
     {
       icon: "award",
       badge: "Dependable Care",
       title: "Trustworthy",
       description:
-        "Trained kitchen-equipment technicians provide professional service for major appliance brands.",
+        "Our skilled kitchen equipment technicians are highly trained, providing excellent service for major appliance brands efficiently.",
     },
   ],
 };

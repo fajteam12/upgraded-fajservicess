@@ -1,7 +1,7 @@
 const maintenanceImportanceData = {
   "eyebrow": "Vital Benefits",
-  "title": "Why Is Cooking Equipment Maintenance Important in Dubai?",
-  "description": "Regular maintenance of commercial kitchen equipment is essential for safe, reliable, and efficient operation in Dubai’s competitive culinary environment.",
+  "title": "Why is Cooking Equipment Maintenance Service Important in Dubai?",
+  "description": "Regular maintenance of commercial kitchen cooking equipment is essential for safe and efficient operation.",
   "metric": {
     "eyebrow": "Metric Readout / AMC",
     "value": "35%",
@@ -11,39 +11,33 @@ const maintenanceImportanceData = {
   "items": [
     {
       "title": "Efficiency",
-      "description": "Maintenance helps hot plates, gas ranges, cookers, stoves, fryers, and hoods heat evenly while reducing unnecessary energy use.",
+      "description": "Regular maintenance ensures that the hot plates, gas range, cooker, stove, deep fryer, and hood heat evenly and accurately, reducing energy waste and providing consistent cooking results.",
       "icon": "zap",
       "badge": "Thermal Flow"
     },
     {
       "title": "Food Quality",
-      "description": "Clean and accurately calibrated appliances protect flavour, cooking consistency, and the customer experience.",
+      "description": "A clean commercial cooking appliance prevents unwanted flavours and ensures proper cooking and baking, which are essential for a positive customer experience.",
       "icon": "chef",
       "badge": "Quality Control"
     },
     {
       "title": "Reduced Downtime",
-      "description": "Preventive maintenance identifies developing faults before they become costly cooking-line breakdowns.",
+      "description": "Preventive maintenance (AMC) helps identify potential issues before they result in costly repair or breakdowns.",
       "icon": "wrench",
       "badge": "Continuity"
     },
     {
-      "title": "Cost Savings",
-      "description": "Routine servicing can extend equipment life and lower the cost of emergency repairs and premature replacement.",
+      "title": "Cost Savings with Maintenance Contract",
+      "description": "Regular maintenance can extend the lifespan of commercial cooking ranges, stoves, hobs, induction, hot plates, deep fryers, and chimneys while also lowering repair costs. This ultimately saves businesses money over time.",
       "icon": "award",
       "badge": "Asset Protection"
     },
     {
       "title": "Hygiene",
-      "description": "Regular cleaning helps control grease, food residue, bacteria, and contaminants throughout the kitchen.",
+      "description": "Regular cleaning helps prevent bacteria and other contaminants, ensuring a safe environment for cooking and baking.",
       "icon": "check",
       "badge": "Sterile Flow"
-    },
-    {
-      "title": "Compliance & Safety",
-      "description": "Professional checks support food-safety requirements and help prevent electrical fires, gas leaks, and unsafe operation.",
-      "icon": "shield",
-      "badge": "Safety Standard"
     }
   ]
 };

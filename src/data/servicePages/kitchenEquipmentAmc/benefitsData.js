@@ -1,8 +1,8 @@
 const benefitsData = {
   eyebrow: "Maintenance Outcomes",
-  title: "Benefits of Regular Appliance Service and Maintenance in Dubai",
+  title: "Benefits Of Regular Appliance Service and Maintenance in Dubai",
   description:
-    "Professional planned care supports dependable equipment, informed decisions and predictable operating costs.",
+    "",
   stats: [
     { value: "2010", label: "Serving the UAE Since" },
     { value: "7-Day", label: "Support Available" },
@@ -13,7 +13,7 @@ const benefitsData = {
       number: "01",
       title: "Routine Service",
       description:
-        "Scheduled checks reduce electrical, gas and mechanical risks while keeping kitchen equipment ready for service.",
+        "Routine checks reduce the risk of electrical faults, gas leaks, and other hazards, keeping your home and family safe.",
       icon: "clock",
     },
     {
@@ -21,7 +21,7 @@ const benefitsData = {
       number: "02",
       title: "On-Call Services",
       description:
-        "Timely technical support can extend appliance life and reduce prolonged disruption during equipment faults.",
+        "Proper care and timely servicing can significantly increase life of your home appliances, delaying the need for replacements.",
       icon: "clock",
     },
     {
@@ -29,7 +29,7 @@ const benefitsData = {
       number: "03",
       title: "Genuine Spare Parts",
       description:
-        "Suitable replacement parts support dependable repairs and confidence in business-critical kitchen equipment.",
+        "Knowing your commercial kitchen equipment is in top condition gives you confidence and removes the stress of unexpected failures.",
       icon: "sparkles",
     },
     {
@@ -37,7 +37,7 @@ const benefitsData = {
       number: "04",
       title: "Maintenance Costs",
       description:
-        "Quality equipment and scheduled care generally reduce repeat faults and uncontrolled repair spending.",
+        "High-quality equipment may be more expensive initially, but it typically breaks down less frequently and requires fewer repairs.",
       icon: "dollar-sign",
     },
     {
@@ -45,7 +45,7 @@ const benefitsData = {
       number: "05",
       title: "Increased Efficiency",
       description:
-        "Cleaning, calibration and correct adjustment improve the efficiency of routine commercial kitchen tasks.",
+        "Commercial kitchen equipment can improve the efficiency of daily tasks in your kitchen. · Lower Maintenance Costs · Superior Quality.",
       icon: "wind",
     },
     {
@@ -53,7 +53,7 @@ const benefitsData = {
       number: "06",
       title: "Cost Efficiency",
       description:
-        "A planned contract helps businesses budget equipment care and reduce expensive emergency intervention.",
+        "FAJ a Save hand maintenance. Here's a cost comparison: a commercial kitchen helps you avoid high startup equipment costs.",
       icon: "dollar-sign",
     },
     {
@@ -61,7 +61,7 @@ const benefitsData = {
       number: "07",
       title: "Reports and Updates",
       description:
-        "Condition reports explain current equipment health and recommended actions for efficiency and safety.",
+        "FAJ is releasing a report on the condition of commercial kitchen equipment, outlining actions to enhance efficiency and safety.",
       icon: "shield-check",
     },
     {
@@ -69,7 +69,7 @@ const benefitsData = {
       number: "08",
       title: "Experts and Trained",
       description:
-        "FAJ technicians provide effective commercial kitchen maintenance and repair across multiple equipment categories.",
+        "FAJ technicians to provide customers with effective maintenance, repair for commercial kitchen equipment to ensure satisfaction.",
       icon: "sparkles",
     },
   ],

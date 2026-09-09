@@ -1,8 +1,8 @@
 const benefitsData = {
   eyebrow: "Maintenance Outcomes",
-  title: "Benefits of Regular Appliance Service and Maintenance in Dubai",
+  title: "Benefits Of Regular Appliance Service and Maintenance in Dubai",
   description:
-    "Professional preventative care protects operating performance, repair budgets and equipment value.",
+    "",
   stats: [
     { value: "2010", label: "Serving the UAE Since" },
     { value: "7-Day", label: "Support Available" },
@@ -13,7 +13,7 @@ const benefitsData = {
       number: "01",
       title: "Routine Service",
       description:
-        "Scheduled checks reduce faults and keep commercial-kitchen equipment safe, efficient and ready for service.",
+        "Routine checks reduce the risk of faults and keep your commercial kitchen safe, efficient, and always ready to serve.",
       icon: "clock",
     },
     {
@@ -21,7 +21,7 @@ const benefitsData = {
       number: "02",
       title: "Reports and Updates",
       description:
-        "Condition reports explain developing issues and help prevent expensive, unexpected downtime.",
+        "Detailed reports update you on equipment condition, helping you fix issues early and avoid costly, unexpected downtime.",
       icon: "shield-check",
     },
     {
@@ -29,7 +29,7 @@ const benefitsData = {
       number: "03",
       title: "Improved Efficiency",
       description:
-        "Correct maintenance supports kitchen productivity, lower operating costs and consistent preparation results.",
+        "Proper maintenance improves kitchen efficiency, lowers long-term costs, and ensures the highest quality food preparation daily.",
       icon: "wind",
     },
     {
@@ -37,7 +37,7 @@ const benefitsData = {
       number: "04",
       title: "Expert Technicians",
       description:
-        "Experienced technicians keep professional appliances operating reliably during demanding service periods.",
+        "Expert technicians keep your appliances performing at their best, supporting smooth kitchen operations and customer satisfaction.",
       icon: "sparkles",
     },
     {
@@ -45,7 +45,7 @@ const benefitsData = {
       number: "05",
       title: "Cost Efficiency",
       description:
-        "Regular service reduces the risk of major repair costs and protects the business's equipment investment.",
+        "Regular service reduces major repair costs and protects your investment, making your kitchen more reliable and cost-effective.",
       icon: "dollar-sign",
     },
     {
@@ -53,7 +53,7 @@ const benefitsData = {
       number: "06",
       title: "Lower Maintenance Costs",
       description:
-        "Quality equipment with planned care generally experiences fewer breakdowns and more dependable performance.",
+        "High-quality equipment may cost more upfront but saves money later, with fewer breakdowns and dependable daily performance.",
       icon: "clock",
     },
   ],

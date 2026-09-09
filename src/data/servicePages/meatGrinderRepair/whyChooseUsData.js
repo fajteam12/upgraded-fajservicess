@@ -1,50 +1,50 @@
 const whyChooseUsData = {
   eyebrow: "Tailored Technical Support",
-  title: "Why Choose FAJ for Meat Grinder Service",
+  title: "CHOOSE US FOR RELIABLE, EXCEPTIONAL SERVICE TAILORED TO YOUR NEEDS!",
   description:
-    "Practical commercial-kitchen support from an experienced UAE technical services team.",
+    "",
   items: [
     {
       icon: "zap",
-      title: "Fast, Reliable Service",
-      subtitle: "Priority Response",
+      title: "Reliable, Priority, and Quick",
+      subtitle: "Fast, Reliable Service",
       description:
-        "Same-day or next-day visits are available subject to schedule, location and equipment access.",
+        "You can count on efficient service! Our same-day repair or next-day service visits ensure that your needs are met quickly.",
     },
     {
       icon: "shield",
-      title: "Experienced Technicians",
+      title: "Feeling Of Calm",
       subtitle: "Professional Diagnosis",
       description:
-        "Our team understands commercial electrical, motor, gearbox, cutting and safety-control faults.",
+        "With a maintenance contract, you get a full year of service, ensuring your appliance runs smoothly and providing peace of mind.",
     },
     {
       icon: "calendar",
-      title: "Convenient Scheduling",
-      subtitle: "You Stay in Control",
+      title: "You Stay in Control",
+      subtitle: "Convenient Scheduling",
       description:
-        "Choose a preferred service day and location for inspection across Dubai and supported UAE areas.",
+        "Choose a day and time for your appliance repair in Dubai or Sharjah. With a 3-4 window for when our technician will arrive",
     },
     {
       icon: "wrench",
-      title: "Multi-Brand Expertise",
-      subtitle: "Commercial Equipment Support",
+      title: "We Are Experts",
+      subtitle: "Multi-Brand Expertise",
       description:
-        "We service a wide range of professional meat grinders, mincers and food-preparation machinery.",
+        "We are experts in appliance repair this is why most major brands trust us to handle their service and maintenance needs.",
     },
     {
       icon: "dollar",
-      title: "Practical Value",
-      subtitle: "Repair Before Replacement",
+      title: "Great Value",
+      subtitle: "Practical Value",
       description:
-        "Clear diagnosis helps businesses compare repair, parts and replacement decisions without unnecessary work.",
+        "Inspection fee includes diagnosis, transport, and reinstallation upto two appliances at the same Dubai location",
     },
     {
       icon: "award",
-      title: "Trusted Since 2010",
-      subtitle: "Local UAE Experience",
+      title: "Trustworthy",
+      subtitle: "Trusted Since 2010",
       description:
-        "FAJ supports restaurants, hotels, supermarkets, butcheries and commercial food-production facilities.",
+        "Our skilled appliance technicians are highly trained, and we provide excellent service for a variety of major brands.",
     },
   ],
 };

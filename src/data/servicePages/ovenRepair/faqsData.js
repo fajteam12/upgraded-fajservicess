@@ -8,57 +8,57 @@ const faqsData = {
     {
       question: "What are the different types of commercial ovens?",
       answer:
-        "Commercial ovens include convection, deck, conveyor, pizza, rack, steam and combination ovens. The correct type depends on menu, capacity and cooking requirements.",
+        "Types of Commercial Ovens – Commercial ovens are available in several varieties, including convection ovens, deck ovens, conveyor ovens, and combination ovens. Each type has its own unique features and advantages, so it's important to select the one that best fits your menu and cooking needs.",
     },
     {
-      question: "What is the function of a commercial oven?",
+      question: "What is the function of commercial oven?",
       answer:
-        "Commercial ovens provide high-capacity cooking, baking, roasting or steaming for restaurants, hotels, bakeries and production kitchens, with fast heating and durable construction.",
+        "Commercial ovens are used by large restaurants to cook food more consistently and at lower temperatures than standard ovens. Unlike a typical oven that provides basic cooking capabilities, a commercial convection oven cooks food more evenly and quickly.",
     },
     {
       question: "What is the useful life of a commercial oven?",
       answer:
-        "With professional maintenance and timely replacement of worn components, a quality commercial oven can commonly operate for 10 to 15 years.",
+        "Cooking equipment such as ovens, ranges, and stovetops play a crucial role in food production, typically lasting between 10 to 15 years. Their longevity is greatly affected by how often they are used and the level of maintenance they receive.",
     },
     {
-      question: "What is the duty cycle of a commercial oven?",
+      question: "What is the duty cycle of an oven?",
       answer:
-        "Many commercial ovens are designed for demanding duty cycles of 12 to 18 operating hours per day, with rapid recovery and consistent high temperatures.",
+        "The duty cycle, often referred to as the 'duty factor,' is expressed as a percentage representing the amount of time a signal is ON. For example, a 60% duty cycle indicates that the signal is ON for 60% of the time and OFF for the remaining 40%. In the context of an oven's duty cycle, this term refers to the frequency with which the oven is used.",
     },
     {
-      question: "Why are commercial ovens expensive?",
+      question: "Why are commercial ovens so expensive?",
       answer:
-        "They use industrial stainless steel, heavy insulation, precise controllers and powerful heating systems engineered for continuous use and commercial safety requirements.",
+        "Commercial stoves are generally more expensive than residential stoves because of their larger size, advanced features, and heavy-duty construction. They represent an investment for commercial kitchens that need high-performance cooking equipment to meet their operational demands.",
     },
     {
       question: "How often should a commercial oven be cleaned?",
       answer:
-        "Basic cleaning should be completed daily. Deep technical cleaning and descaling may be required weekly or every two weeks depending on oven type and usage intensity.",
+        "Perform monthly deep cleaning for both the interior and exterior of your commercial oven to maintain its appearance and functioning.",
     },
     {
-      question: "Are all commercial ovens convection ovens?",
+      question: "Are all commercial ovens convection?",
       answer:
-        "No. Commercial options also include deck, conveyor, steam-combi and traditional radiant ovens in addition to fan-assisted convection models.",
+        "There are various types of commercial ovens available, including traditional convection ovens, oven-and-range combinations, specialty countertop ovens, and more. This guide will explain each type of commercial oven and assist you in selecting the best option for your foodservice business.",
     },
     {
       question: "Do commercial ovens bake faster?",
       answer:
-        "Convection and combination ovens use high-velocity airflow and, in some models, steam injection to transfer heat efficiently and shorten cooking times.",
+        "Commercial convection ovens maintain a consistent temperature throughout the baking process, ensuring that your food cooks evenly without the need to adjust anything. Because convection ovens are more efficient than traditional ovens and experience less heat loss, they usually cook food faster.",
     },
     {
-      question: "What is the difference between a commercial and regular oven?",
+      question: "What is the difference between a commercial oven and a regular oven?",
       answer:
-        "Commercial ovens have higher capacity and power, faster recovery, stronger insulation, serviceable heavy-duty components and commercial safety compliance.",
+        "Commercial ovens provide higher heating power and faster preheating times, quickly reaching and maintaining the desired temperature, making them ideal for busy kitchens. Home ovens have lower heating power and longer preheating times, but are more energy-efficient and suitable for small-scale cooking.",
     },
     {
-      question: "How is commercial kitchen gas load calculated?",
+      question: "How to calculate gas load?",
       answer:
-        "Gas load is based on the combined BTU or kW ratings of connected appliances and the available gas-supply pressure and capacity. A qualified gas professional should confirm the calculation.",
+        "To determine the cubic feet per hour of gas required, divide the input of the appliances by the average BTU heating value per cubic foot of gas. The average BTU per cubic foot is 1,100.",
     },
     {
       question: "How deep is a commercial oven?",
       answer:
-        "Commercial ovens commonly range from approximately 28 inches to more than 40 inches deep, depending on whether the unit is compact, countertop or full-size double deck.",
+        "These Gas and Dual Fuel Ranges have an impressive 27-inch depth, providing a peak culinary experience with up to an incredible 10.6 cubic feet of oven cavity space. Available in various widths, you can easily find the Commercial Depth Gas Range that best fits your kitchen layout and cooking style.",
     },
   ],
 };

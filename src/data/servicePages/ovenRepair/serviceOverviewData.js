@@ -2,10 +2,10 @@ const serviceOverviewData = {
   eyebrow: "Commercial Cooking Specialists",
   title: "Commercial Combi Oven Maintenance",
   description:
-    "Professional repair support for commercial gas and electric ovens throughout Dubai.",
-  lead: "Commercial oven technicians equipped for responsive onsite diagnostics and repair.",
+    "We repair all types of commercial kitchen ovens, including gas and electric models. Our specialised team of commercial oven technicians carries essential spare parts, enabling us to assist you whenever you need it. Our goal is to help keep your business running smoothly. We offer commercial oven repair services in Dubai.",
+  lead: "EXPRESS & EMERGENCY OVEN REPAIR SERVICE",
   paragraphs: [
-    "We repair all types of commercial kitchen ovens, including gas and electric models. Our specialised technicians carry essential spare parts so they can assist when you need support and help keep your business operating smoothly.",
+    "Terms & Conditions: There is a callout fee that appliesfor each diagnosis, depending on the capacity applied. Same-day visits are available for bookings made before *12:00 PM. For bookings made after 12:00 PM, next-day visits may be arranged, subject to availability.","CHOOSE FAJ FOR YOUR PEACE OF MIND","We provide 2-month repair warranty and 3-month parts warranty as standard."
   ],
 };
 

@@ -1,8 +1,8 @@
 const benefitsData = {
   eyebrow: "Preventative Maintenance Outcomes",
-  title: "Benefits of Regular Oven Service and Maintenance in Dubai",
+  title: "Benefits Of Regular Oven Service and Maintenance in Dubai",
   description:
-    "Detailed testing, cleaning and reporting help commercial ovens maintain safe, consistent thermal performance.",
+    "",
   stats: [
     { value: "2010", label: "Serving the UAE Since" },
     { value: "7-Day", label: "Support Available" },
@@ -13,7 +13,7 @@ const benefitsData = {
       number: "01",
       title: "Heating Efficiency",
       description:
-        "We conduct a thorough assessment of oven heating efficiency using a temperature gun.",
+        "We conduct a thorough assessment of heating efficiency using a temperature gun.",
       icon: "sparkles",
     },
     {
@@ -21,7 +21,7 @@ const benefitsData = {
       number: "02",
       title: "Disinfect Components",
       description:
-        "Oven parts and components are tested and disinfected to support safe, reliable operation.",
+        "All components and oven parts are thoroughly tested, disinfected to ensure safety and reliability.",
       icon: "shield-check",
     },
     {
@@ -29,7 +29,7 @@ const benefitsData = {
       number: "03",
       title: "Fan Assessment",
       description:
-        "We confirm correct fan operation and check burners or heating elements for airflow blockages.",
+        "We ensure the fan operates properly and has no blockages in the burner or heating element.",
       icon: "wind",
     },
     {
@@ -37,7 +37,7 @@ const benefitsData = {
       number: "04",
       title: "Thermostat Check",
       description:
-        "A laser temperature gauge helps verify that commercial oven thermostats function properly.",
+        "We use a laser temperature gauge to confirm that thermostats are functioning properly.",
       icon: "clock",
     },
     {
@@ -45,7 +45,7 @@ const benefitsData = {
       number: "05",
       title: "Airflow Balance",
       description:
-        "We verify that heated air circulates correctly around each required part of the oven cavity.",
+        "We ensure that you receive optimal airflow around each oven part as required.",
       icon: "wind",
     },
     {
@@ -53,7 +53,7 @@ const benefitsData = {
       number: "06",
       title: "Customer Feedback",
       description:
-        "Our technicians report on oven condition and explain any maintenance or repairs that may be required.",
+        "Our team offers essential feedback on the condition of your oven and any necessary repair.",
       icon: "sparkles",
     },
   ],

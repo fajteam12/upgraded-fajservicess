@@ -7,42 +7,42 @@ const commonProblemsData = {
     {
       title: "Poor Maintenance",
       description:
-        "Ignoring scheduled care accelerates wear and reduces kitchen-equipment efficiency and service life.",
+        "Ignoring regular maintenance of kitchen equipment can cause wear and tear, impacting its efficiency and lifespan.",
     },
     {
       title: "Equipment Failure",
       description:
-        "Failure of business-critical commercial kitchen equipment can severely disrupt hospitality operations.",
+        "In the hospitality industry, commercial kitchen equipment is a crucial asset. Its design optimizes operations, so any failure can cause significant disruptions.",
     },
     {
       title: "Improper Storage",
       description:
-        "Incorrect temperatures, missing labels or unsuitable containers can compromise stored food safety.",
+        "To prevent food contamination, it's essential to store food at the correct temperatures, label and date all items, and use appropriate storage containers.",
     },
     {
       title: "Food Poisoning",
       description:
-        "Contaminated ingredients or unsafe food handling can cause serious foodborne illness.",
+        "Foodborne illness happens when contaminated food is consumed. Examples include aflatoxins in peanuts, toxic mushrooms, and raw kidney beans.",
     },
     {
       title: "Leaking Appliances",
       description:
-        "Damaged gaskets, seals or hoses can cause leaks and secondary water damage around the kitchen.",
+        "Leaks in kitchen appliances are usually due to damaged gaskets, seals, or hoses. If you spot a leak, turn off the appliance and the water supply to prevent damage.",
     },
     {
       title: "Commercial Kitchen Fires",
       description:
-        "Grease, gas and electrical faults can create serious fire risks without cleaning and routine inspection.",
+        "Commercial kitchen fires pose a serious hazard in the restaurant industry, occurring frequently and leading to devastating consequences.",
     },
     {
       title: "Equipment Overheating",
       description:
-        "Ovens, fryers and other high-load appliances may overheat because of airflow, control or component faults.",
+        "Overheating is a common issue with commercial kitchen equipment like ovens and fryers, often resulting from various performance-affecting factors.",
     },
     {
       title: "Electrical Issues",
       description:
-        "Heavy reliance on powered appliances makes prompt electrical diagnosis important for safe kitchen operation.",
+        "As we enhance kitchen efficiency with electrical appliances, increased reliance can lead to issues that need prompt attention to ensure safety and functionality.",
     },
   ],
 };

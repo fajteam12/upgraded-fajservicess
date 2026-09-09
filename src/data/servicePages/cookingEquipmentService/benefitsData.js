@@ -1,41 +1,41 @@
 const benefitsData = {
   "eyebrow": "Performance Standards",
-  "title": "Benefits of Regular Catering Equipment Maintenance",
-  "description": "Maximise kitchen workflow, maintain hygienic standards, and reduce avoidable energy waste with proactive checkups.",
+  "title": "Benefits of Regular Catering Equipment Maintenance in Dubai",
+  "description": "",
   "items": [
     {
       "title": "Enhanced Food Quality",
-      "description": "Equipment condition directly affects cooking consistency and overall food quality.",
+      "description": "Kitchen equipment condition directly affects overall food quality, so proper and regular maintenance is essential.",
       "icon": "chef",
       "badge": "Culinary Integrity"
     },
     {
       "title": "Improved Workplace Safety",
-      "description": "Regular maintenance reduces contamination and helps prevent avoidable workplace hazards.",
+      "description": "Regular kitchen equipment maintenance prevents contamination, reduces accidents, and ensures safe food preparation.",
       "icon": "shield",
       "badge": "Risk Prevention"
     },
     {
-      "title": "Supports Compliance",
-      "description": "Clean, maintained equipment supports food-safety practices and regulatory inspections.",
+      "title": "Ensures Compliance",
+      "description": "Food safety is essential for any food business. Regular maintenance of kitchen equipment prevents contamination and ensures safety.",
       "icon": "check",
       "badge": "Safety Standards"
     },
     {
       "title": "Reduced Utility Costs",
-      "description": "Gas, electric, and water-powered equipment performs more efficiently when correctly cleaned and calibrated.",
+      "description": "Equipment that uses electricity, gas, or water operates more efficiently when kept clean and serviced regularly.",
       "icon": "zap",
       "badge": "Efficiency"
     },
     {
-      "title": "Faster Operations",
-      "description": "Reliable kitchen equipment supports quick turnaround during peak service periods.",
+      "title": "Improve Speed of Operations",
+      "description": "A restaurant kitchen is a busy place that needs quick turnarounds to meet customer demands. Inefficiency can lead to delays and dissatisfaction.",
       "icon": "award",
       "badge": "Peak Performance"
     },
     {
-      "title": "Longer Equipment Life",
-      "description": "Planned cleaning and maintenance protect expensive commercial kitchen assets from premature wear.",
+      "title": "Commercial Kitchen Maintenance",
+      "description": "Commercial kitchen equipment is costly, so regular cleaning and maintenance are essential for extending its lifespan and minimizing expenses.",
       "icon": "wrench",
       "badge": "Asset Protection"
     }

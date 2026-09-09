@@ -1,41 +1,41 @@
 const whyChooseUsData = {
   "eyebrow": "Why FAJ Technical Services",
-  "title": "Reliable, Exceptional Service Tailored to Your Needs",
-  "description": "Commercial kitchen support designed around response time, control, value, and technical expertise.",
+  "title": "CHOOSE US FOR RELIABLE, EXCEPTIONAL SERVICE TAILORED TO YOUR NEEDS!",
+  "description": "",
   "items": [
     {
-      "title": "Fast, Reliable Service",
-      "description": "Same-day or next-day visits are offered according to booking time, technician availability, and service location.",
+      "title": "Reliable, Priority, and Quick",
+      "description": "You can count on efficient service! Our same-day repair or next-day service visits ensure that your needs are met quickly.",
       "icon": "zap",
       "badge": "Priority"
     },
     {
-      "title": "Peace of Mind",
-      "description": "Maintenance contracts provide scheduled support throughout the year to keep essential equipment operating smoothly.",
+      "title": "Feeling Of Calm",
+      "description": "With a maintenance contract, you get a full year of service, ensuring your appliance runs smoothly and providing peace of mind.",
       "icon": "shield",
       "badge": "Protected"
     },
     {
       "title": "You Are in Control",
-      "description": "Choose a suitable service date and receive a practical technician arrival window.",
+      "description": "Choose a day and time for your appliance repair in Dubai or Sharjah. With a 3-4 hour window for when our technician will arrive.",
       "icon": "check",
       "badge": "Scheduled"
     },
     {
-      "title": "Experienced Technicians",
-      "description": "Our technicians work across gas, electric, heating, ventilation, and commercial kitchen equipment systems.",
+      "title": "We Are Experts",
+      "description": "We are experts in appliance repair this is why most major brands trust us to handle their service and maintenance needs.",
       "icon": "wrench",
       "badge": "Specialist"
     },
     {
       "title": "Great Value",
-      "description": "Diagnosis, transport, repair scope, and applicable reinstallation requirements are explained before work proceeds.",
+      "description": "Inspection fee includes diagnosis, transport, and reinstallation upto two appliances at the same location in Dubai.",
       "icon": "award",
       "badge": "Transparent"
     },
     {
-      "title": "Trusted Support",
-      "description": "FAJ provides professional maintenance and repair support for a wide range of major commercial brands.",
+      "title": "Trustworthy",
+      "description": "Our skilled appliance technicians are highly trained, and we provide excellent service for a variety of major brands.",
       "icon": "chef",
       "badge": "Established"
     }

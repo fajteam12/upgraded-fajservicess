@@ -1,53 +1,53 @@
 const commonProblemsData = {
   "eyebrow": "Diagnostic Guides",
-  "title": "Common Cooking Equipment Problems That May Require Service",
-  "description": "Avoid severe kitchen closures. If you observe these technical faults, arrange a professional inspection promptly.",
+  "title": "Common Problems of Cooking Equipment That May Require Service",
+  "description": "",
   "items": [
     {
       "title": "Improper Ventilation",
-      "description": "An inadequate or incorrectly sized ventilation system can cause dangerous heat, grease, and air-quality problems.",
+      "description": "A bad or inadequate ventilation system that is too small or unsuitable for your kitchen equipment can cause serious problems.",
       "icon": "wind",
       "badge": "Critical Air"
     },
     {
       "title": "Leaking Appliance",
-      "description": "Leaks are commonly caused by damaged gaskets, seals, hoses, valves, or loose connections.",
+      "description": "Leaks are often caused by damaged gaskets, seals, or hoses. To fix this, turn off the commercial cooking appliance and ensure the water is off.",
       "icon": "droplet",
       "badge": "Fluid Danger"
     },
     {
       "title": "Equipment Failure",
-      "description": "Unexpected failure of a key kitchen asset can interrupt service, reduce capacity, and affect food production.",
+      "description": "As a business, your commercial kitchen equipment is your key asset. Your kitchen has been designed to ensure optimal functionality and efficiency.",
       "icon": "alert",
       "badge": "Power Drop"
     },
     {
       "title": "Uneven Cooking",
-      "description": "Unequal heat distribution can undercook or overcook food when equipment cannot maintain the selected temperature.",
+      "description": "Unequal heat distribution can lead to undercooked or overcooked food. The cooking range often does not reach the selected temperature.",
       "icon": "thermometer",
       "badge": "Calibration"
     },
     {
-      "title": "Routine Cleaning Issues",
-      "description": "Hoods, ducts, work surfaces, and equipment require a planned cleaning routine to control grease and contamination.",
+      "title": "Routine Cleaning",
+      "description": "Regular cleaning & maintenance are essential. Set a routine to clean hoods, ducts, and all kitchen covers, such as floors, countertops, and equipment.",
       "icon": "check",
       "badge": "Hygiene Risk"
     },
     {
-      "title": "Operational Error",
-      "description": "Kitchen staff should be trained to operate heavy commercial equipment safely and according to manufacturer guidance.",
+      "title": "Employee Failure",
+      "description": "As a food industry professional, it's your duty to ensure your employees clearly know how to safely and efficiently operate all equipment.",
       "icon": "shield",
       "badge": "User Protocol"
     },
     {
       "title": "Electrical Problems",
-      "description": "Incorrect voltage, damaged wiring, weak connections, or failing protection devices can stop equipment and create safety risks.",
+      "description": "Electrical issues can seriously affect equipment by either oversupplying or undersupplying the required voltage and amperage.",
       "icon": "zap",
       "badge": "Voltage Fault"
     },
     {
-      "title": "Poor General Maintenance",
-      "description": "Equipment that is not serviced regularly becomes more vulnerable to wear, inefficiency, and avoidable component failure.",
+      "title": "Poor Maintenance",
+      "description": "When kitchen cooking equipment is not regularly and properly serviced, it becomes much more prone to unnecessary wear and tear.",
       "icon": "wrench",
       "badge": "Wear & Tear"
     }

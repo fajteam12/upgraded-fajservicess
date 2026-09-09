@@ -1,43 +1,43 @@
 const maintenanceServicesData = {
   id: "kitchen-equipment-amc-services",
   eyebrow: "Kitchen Equipment AMC",
-  title: "Maintenance Services We Offer for Kitchen Equipment",
+  title: "HERE ARE THE MAINTENANCE SERVICES WE OFFER FOR KITCHEN EQUIPMENTS",
   description:
-    "Practical scheduled care for commercial cooking, cooling and food-preparation assets.",
+    "Here are some key points to consider for maintaining commercial kitchen equipment:",
   items: [
     {
       icon: "calendar",
       title: "Service Scheduling",
       description:
-        "Weekly, monthly or quarterly maintenance intervals are planned around equipment type, condition and usage.",
+        "Regular maintenance should be scheduled at specific intervals, such as weekly, monthly, or quarterly, depending on the equipment type and its usage.",
       actionLabel: "Plan Schedule",
     },
     {
       icon: "shield",
       title: "Preventive Maintenance",
       description:
-        "Cleaning, lubrication and inspection identify developing problems before they become major failures.",
+        "This involves cleaning, lubricating, and inspecting kitchen equipment to identify and resolve potential issues before they escalate into major problems.",
       actionLabel: "Request PPM",
     },
     {
       icon: "wrench",
-      title: "Repair and Replacement",
+      title: "Repair and Replacements",
       description:
-        "Timely repairs or component replacement help prevent complete failure and reduce operational downtime.",
+        "Timely repairs or replacements are essential to prevent equipment failure and reduce downtime.",
       actionLabel: "Request Repair",
     },
     {
       icon: "alert",
-      title: "Safety Inspection",
+      title: "Safety",
       description:
-        "Regular hazard checks and suitable staff procedures support safer commercial equipment operation.",
+        "Safety should be a top priority when maintaining equipment. Staff should be trained on proper safety procedures and equipment should be regularly inspected for potential hazards.",
       actionLabel: "Book Inspection",
     },
     {
       icon: "award",
       title: "Professional Assistance",
       description:
-        "FAJ technicians provide specialist support for major maintenance and technically demanding repairs.",
+        "FAJ professional technician for major repairs and maintenance is important, especially for equipment requiring specialized skills.",
       actionLabel: "Request Technician",
     },
   ],

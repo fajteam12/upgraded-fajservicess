@@ -8,12 +8,12 @@ const faqsData = {
     {
       question: "How quickly can you respond to my repair call request?",
       answer:
-        "Our service team is available from 8:00 AM to 6:00 PM and responds as quickly as scheduling, location and technician availability allow. Contract response priority depends on the selected plan.",
+        "We understand the urgency and need for your equipment repair. We are available for you from 8:00 AM to 6:00 PM. During this time we will respond to you as soon as possible.",
     },
     {
-      question: "Can you repair all brands of kitchen equipment?",
+      question: "Can you repair all brands of Kitchen equipment?",
       answer:
-        "FAJ technicians support a broad range of local and international commercial kitchen brands. Share the brand, model and equipment type so we can confirm the appropriate technician and parts requirements.",
+        "Our team has high experience in appliance repair. They are well-trained and knowledgeful technicians. So, we deal in all brands of Kitchen equipment repair services.",
     },
   ],
 };

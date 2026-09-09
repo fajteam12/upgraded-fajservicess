@@ -1,51 +1,51 @@
 const whyChooseUsData = {
   id: "why-choose-faj-oven-repair",
   eyebrow: "Peace of Mind Support",
-  title: "Choose Us for Reliable, Exceptional Service Tailored to Your Needs",
+  title: "CHOOSE US FOR RELIABLE, EXCEPTIONAL SERVICE TAILORED TO YOUR NEEDS!",
   description:
-    "Responsive scheduling, commercial oven expertise and dependable value across Dubai and Sharjah.",
+    "",
   items: [
     {
       icon: "zap",
       badge: "Fast, Reliable Service",
       title: "Reliable, Priority and Quick",
       description:
-        "Same-day repairs and next-day visit options help address urgent commercial oven needs quickly.",
+        "You can rely on prompt service! Our same-day repairs or next-day visits ensure that your needs are addressed swiftly.",
     },
     {
       icon: "shield",
       badge: "We Are Experts",
       title: "Confidence",
       description:
-        "An oven maintenance contract provides planned support throughout the year for smoother operation.",
+        "With an oven annual maintenance contract, you receive a year of service, ensuring smooth operation and peace of mind.",
     },
     {
       icon: "calendar",
       badge: "Flexible Scheduling",
       title: "You Are in Control",
       description:
-        "Choose a repair date and time, with a practical three-to-four-hour technician arrival window.",
+        "Schedule your oven repair in Dubai or Sharjah by choosing a specific day and time. Our technician will arrive within a 3-4 hour window.",
     },
     {
       icon: "wrench",
       badge: "Specialist Engineering",
       title: "We Are Experts",
       description:
-        "Major commercial oven brands rely on our specialist repair and maintenance experience.",
+        "We specialise in oven repair, which is why most major brands rely on us for their service and maintenance needs.",
     },
     {
       icon: "dollar",
       badge: "Customer Value",
       title: "Great Value",
       description:
-        "Timely service, efficient fault resolution and competitive pricing support customer satisfaction.",
+        "We are committed to providing customer satisfaction through timely service, quick issue resolution, and competitive pricing.",
     },
     {
       icon: "award",
       badge: "Dependable Support",
       title: "Trustworthy",
       description:
-        "Well-trained oven technicians provide efficient service for a broad range of major commercial brands.",
+        "Our expert oven technicians are well-trained, providing efficient service for various major oven brands.",
     },
   ],
 };
