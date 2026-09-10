@@ -1,20 +1,13 @@
-const introductionData = {
-  eyebrow: "Reliable Climate Comfort",
-  title: "Maintain a Cool and Healthy Indoor Environment All Year Round",
-  description:
-    "In Dubai, dependable air conditioning is essential for comfort, air quality and safe daily operation.",
+const commercialMaintenanceData = {
+  id: "commercial-air-conditioning-maintenance",
+  eyebrow: "Commercial AC Maintenance",
+  title:
+    "Best Commercial Air Conditioning Maintenance Services in Dubai",
   paragraphs: [
-    "A poorly performing AC system can cause immediate discomfort, increase dust and humidity concerns, and consume more electricity than necessary.",
-    "FAJ technicians diagnose airflow, thermostat, fan, compressor, drainage and refrigerant faults across split, ducted, cassette, VRF, package and central air-conditioning systems.",
-    "We support domestic properties as well as offices, warehouses, hotels, entertainment venues, healthcare facilities and other commercial premises.",
+    "We offer tailored service and maintenance packages for businesses of all sizes, including small offices, large warehouses, hotels, entertainment venues, healthcare facilities, sports complexes, and religious institutions.",
+    "For any business with multiple air conditioning units or required systems, we recommend servicing twice a year. This helps ensure safety, improve air quality, and enhance cost-efficiency while reducing the risk of leaks and blockages.",
+    "We also provide a customised FAJ Technical Services L.L.C asset list for each customer.",
   ],
-  spotlight: {
-    icon: "wind",
-    title: "Premium Chemical Coil Washing",
-    description:
-      "High-pressure chemical cleaning helps remove embedded dust, bacterial buildup and residue from indoor cooling coils and external condenser surfaces.",
-    label: "Cleaner, Unrestricted Airflow",
-  },
 };
 
-export default introductionData;
+export default commercialMaintenanceData;

@@ -8,7 +8,7 @@ import {
   PageMetadata,
   PlanCardsSection,
   SplitHeroSection,
-  SpotlightSection,
+  ContentCardSection,
   useBookingRequest,
 } from "../Components/ServicePageSections";
 import "../Components/ServicePageSections/ServicePageSections.css";
@@ -43,7 +43,7 @@ export default function AirConditioning() {
 
         <BreadCumb />
 
-        <SpotlightSection content={pageData.introduction} />
+        <ContentCardSection content={pageData.introduction} />
 
         <PlanCardsSection
           content={pageData.contracts}
@@ -52,22 +52,25 @@ export default function AirConditioning() {
 
         <EmbeddedVideoSection content={pageData.video} tone="soft" />
 
-        <ActionCardsSection
-          content={pageData.problems}
-          tone="white"
-          columns="two"
-        />
+        <ContentCardSection content={pageData.professionalMaintenance} tone="dark" />
 
         <ActionCardsSection
-          content={pageData.services}
-          onAction={openBooking}
+          content={pageData.shop}
           tone="soft"
           columns="three"
         />
 
+        <ActionCardsSection 
+          content={pageData.testimonials} 
+          tone="dark" 
+          columns="three" 
+          slider 
+          autoplay 
+          loop />
+
         <ActionCardsSection
-          content={pageData.benefits}
-          tone="dark"
+          content={pageData.news}
+          tone="soft"
           columns="three"
         />
 

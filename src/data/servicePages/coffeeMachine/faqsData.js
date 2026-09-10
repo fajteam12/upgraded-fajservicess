@@ -7,52 +7,52 @@ const faqsData = {
     {
       question: "What types of coffee machines do you repair?",
       answer:
-        "FAJ services espresso machines, automatic bean-to-cup machines, drip coffee makers, single-serve brewers, grinders and selected commercial or vending coffee equipment.",
+        "We service espresso machines, drip coffee makers, single-serve brewers, and other types of coffee appliances. Smeg, Black and Decker, Beko, Nobel, Espresso, Delonghi, Melitta, Electrolux, Breville, and Philips are among the popular brands we repair.",
     },
     {
-      question: "How long does coffee-machine repair usually take?",
+      question: "How long does a coffee machine repair typically take?",
       answer:
-        "Minor cleaning, gasket or adjustment work may be completed during the visit. Boiler, electronic or workshop repairs can take longer depending on diagnosis and parts availability.",
+        "The time require for the repair is determine by the complexity of the problem. Minor repairs can often be done in a matter of hours, however, more serious repairs may take longer. Our specialists work hard to provide quick service while also ensuring that the repair is done correctly.",
     },
     {
-      question: "What if my coffee machine is beyond repair?",
+      question: "What if my coffee machine cannot repair?",
       answer:
-        "The technician will provide an honest condition assessment and explain whether further repair is practical compared with replacement.",
+        "In the rare situation that your coffee machine is beyond repair, our professionals will also offer you an honest assessment. So, we can also help you look into other possibilities, such as suggesting a replacement or advising you on how to buy a new coffee machine.",
     },
     {
-      question: "Is your coffee-machine service center in Dubai?",
+      question: "Is your coffee machine service center located in Dubai?",
       answer:
-        "Yes. FAJ operates a Dubai technical workshop accessible from Umm Suqeim Road, Al Khail Road and Sheikh Zayed Road.",
+        "Yes, we have a coffee machine servicing center in Dubai. Customers looking for coffee machine repair services in the region can simply find us.",
     },
     {
-      question: "Do you provide onsite coffee-machine repair?",
+      question: "Do you provide on-site coffee machine repair service?",
       answer:
-        "Yes. Onsite diagnosis is available for suitable domestic and commercial coffee machines in Dubai. Some complex repairs may require workshop service.",
+        "Yes, we do on-site coffee machine repair in Dubai. Our professionals may come to your site to diagnose and repair your coffee machine, making service at your door handy.",
     },
     {
-      question: "Can you service DeLonghi coffee machines?",
+      question: "Can you service Delonghi coffee machines in Dubai?",
       answer:
-        "Yes. FAJ supports selected DeLonghi automatic bean-to-cup and traditional espresso machines, subject to model, condition and parts availability.",
+        "Absolutely! We specialize in repairing Delonghi coffee machines as a coffee machine service facility in Dubai. We can conduct the necessary repairs to restore the functionality of your Delonghi espresso machine or drip coffee maker.",
     },
     {
       question: "Is it worth repairing a coffee machine?",
       answer:
-        "Repair can be economical for good-quality machines when the overall condition is sound and the repair cost is reasonable compared with replacement.",
+        "Yes, it can be worth repairing a coffee machine, especially if it’s a high-quality model. Repairs can restore its functionality and extend its life, making it a more cost-effective option than buying a new one.",
     },
     {
-      question: "What are the most common coffee-machine faults?",
+      question: "Can coffee makers be repaired?",
       answer:
-        "Common faults include mineral-scale blockages, water leakage, worn head gaskets, pump problems, grinder jams, heating failures and electronic-control errors.",
+        "Absolutely! Most coffee makers can be repaired. Common issues like broken parts, faulty pumps, or clogged water lines can often be fixed by a professional.",
     },
     {
-      question: "How often should a coffee machine be descaled?",
+      question: "What is the common problem with coffee machines?",
       answer:
-        "Frequency depends on water hardness, filtration, machine design and usage. Follow the manufacturer guidance and arrange professional descaling when flow, heating or taste changes.",
+        "Common problems include clogged water lines, malfunctioning pumps, heating element failures, or issues with the brewing cycle. These problems often arise from lack of regular cleaning or mineral buildup.",
     },
     {
-      question: "Do you offer coffee-machine maintenance contracts?",
+      question: "Can coffee machines be fixed?",
       answer:
-        "Yes. FAJ offers planned maintenance contracts for domestic and commercial coffee equipment with configurable visit frequency, call-outs and parts coverage.",
+        "Yes, most coffee machines can be repaired depending on the issue. Simple problems like water not flowing or the machine not heating can often be fixed quickly. More complicated issues might require professional service.",
     },
   ],
 };

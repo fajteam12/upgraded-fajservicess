@@ -1,10 +1,9 @@
 const heroData = {
-  eyebrow: "FAJ Technical Services - Established 2010",
+  eyebrow: "FAJ Technical Services L.L.C. • Established 2010",
   title:
-    "Professional Air Conditioning Repair and Maintenance Services in Dubai",
-  subtitle: "Residential, Commercial and Industrial HVAC Support",
+    "Top-Rated Air Conditioning Maintenance, Repair, and Services Company in Dubai, UAE",
   paragraphs: [
-    "Beat the heat with professional HVAC care. FAJ provides AC repair, chemical coil washing, compressor diagnostics, gas charging and scheduled maintenance for homes, offices and commercial facilities in Dubai and Sharjah.",
+    "FAJ Technical Services L.L.C. is a leading provider of air conditioning installation, repair, and maintenance services in Dubai. We offer comprehensive solutions to keep your facility cool in the summer and warm in the winter.", "With experience since 2010, we ensure your Air Conditioning systems operate at optimum energy efficiency. Our services help reduce the possibility of breakdowns, ultimately saving you money and time.",
   ],
   primaryAction: "Book Inspection",
   secondaryAction: "WhatsApp Now",

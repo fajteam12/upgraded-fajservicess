@@ -114,7 +114,7 @@ function HeaderLink({ to, className = "", children, onClick, ...props }) {
 	);
 }
 
-function ServicesPopover({ pathname, services }) {
+function ServicesPopover({ pathname, services, closeMenu  }) {
 	return (
 		<div className="faj-header__popover faj-header__popover--services">
 			<div className="faj-header__popover-heading">
@@ -122,7 +122,7 @@ function ServicesPopover({ pathname, services }) {
 					<span className="faj-header__eyebrow">Technical expertise</span>
 					<strong>Repair and maintenance services</strong>
 				</div>
-				<HeaderLink to="/services/" className="faj-header__view-all">
+				<HeaderLink to="/services/" className="faj-header__view-all" onClick={closeMenu}>
 					View all services
 					<ArrowIcon />
 				</HeaderLink>
@@ -155,6 +155,7 @@ function ServicesPopover({ pathname, services }) {
 											className={
 												pathIsActive(pathname, item.path) ? "is-active" : ""
 											}
+                      onClick={closeMenu}
 										>
 											{item.label}
 										</HeaderLink>
@@ -169,7 +170,7 @@ function ServicesPopover({ pathname, services }) {
 	);
 }
 
-function AboutPopover({ pathname, items }) {
+function AboutPopover({ pathname, items, closeMenu }) {
 	return (
 		<div className="faj-header__popover faj-header__popover--about">
 			<ul>
@@ -178,6 +179,7 @@ function AboutPopover({ pathname, items }) {
 						<HeaderLink
 							to={item.path}
 							className={pathIsActive(pathname, item.path) ? "is-active" : ""}
+              onClick={closeMenu}
 						>
 							<strong>{item.label}</strong>
 							<span>{item.description}</span>
@@ -201,6 +203,11 @@ function DesktopNavigation({ pathname, services, aboutItems }) {
 		window.clearTimeout(closeTimer.current);
 		setOpenMenu(menu);
 	};
+
+  const closeMenu = () => {
+    window.clearTimeout(closeTimer.current);
+    setOpenMenu(null);
+  };
 
 	const scheduleClose = () => {
 		window.clearTimeout(closeTimer.current);
@@ -231,11 +238,12 @@ function DesktopNavigation({ pathname, services, aboutItems }) {
 						className={`faj-header__nav-link${servicesActive ? " is-active" : ""}`}
 						aria-haspopup="true"
 						aria-expanded={openMenu === "services"}
+            onClick={closeMenu}
 					>
 						Services
 						<ChevronIcon className="faj-header__chevron" />
 					</HeaderLink>
-					<ServicesPopover pathname={pathname} services={services} />
+					<ServicesPopover pathname={pathname} services={services} closeMenu={closeMenu} />
 				</div>
 
 				<div
@@ -253,11 +261,12 @@ function DesktopNavigation({ pathname, services, aboutItems }) {
 						className={`faj-header__nav-link${aboutActive ? " is-active" : ""}`}
 						aria-haspopup="true"
 						aria-expanded={openMenu === "about"}
+            onClick={closeMenu}
 					>
 						About Us
 						<ChevronIcon className="faj-header__chevron" />
 					</HeaderLink>
-					<AboutPopover pathname={pathname} items={aboutItems} />
+					<AboutPopover pathname={pathname} items={aboutItems} closeMenu={closeMenu} />
 				</div>
 
 				<span

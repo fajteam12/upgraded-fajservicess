@@ -1,21 +1,15 @@
 import BreadCumb from "../Components/Common/BreadCumb";
-import MaintenanceBenefits from "../Components/MaintenanceBenefits/MaintenanceBenefits";
 import {
   AccordionSection,
   ActionCardsSection,
   BookingModal,
   BookingSection,
   ChecklistSection,
-  ContentCardSection,
   EmbeddedVideoSection,
   NumberedGridSection,
   PageMetadata,
   PlanCardsSection,
-  PricingCardsSection,
-  SearchableDirectorySection,
-  ServiceTabsNav,
   SplitHeroSection,
-  TwoColumnInfoSection,
   useBookingRequest,
 } from "../Components/ServicePageSections";
 import "../Components/ServicePageSections/ServicePageSections.css";
@@ -51,9 +45,9 @@ export default function CoffeeMachine() {
 
         <BreadCumb />
 
-        <PricingCardsSection
-          content={pageData.pricing}
-          onAction={openBooking}
+        <ChecklistSection
+          content={pageData.cleaningDescaling}
+          tone="soft"
         />
 
         <PlanCardsSection
@@ -61,16 +55,19 @@ export default function CoffeeMachine() {
           onAction={openBooking}
         />
 
-        <ContentCardSection content={pageData.repairOverview} />
+        <ActionCardsSection
+          content={pageData.shop}
+          tone="soft"
+          columns="four"
+        />
 
         <EmbeddedVideoSection content={pageData.video} />
 
-        <TwoColumnInfoSection
-          content={pageData.servicePolicy}
-          tone="white"
+        <ActionCardsSection
+          content={pageData.whyChooseUs}
+          tone="soft"
+          columns="three"
         />
-
-        <ChecklistSection content={pageData.maintenanceImportance} />
 
         <NumberedGridSection
           content={pageData.commonProblems}
@@ -78,33 +75,26 @@ export default function CoffeeMachine() {
           columns="four"
         />
 
-        <ActionCardsSection
-          content={pageData.servicesOffered}
-          onAction={openBooking}
-          tone="dark"
-          columns="two"
-        />
-
-        <MaintenanceBenefits {...pageData.benefits} />
-
-        <ActionCardsSection
-          content={pageData.whyChooseUs}
-          tone="dark"
-          columns="three"
-        />
-
-        <SearchableDirectorySection
-          content={pageData.brands}
-          onAction={openBooking}
-        />
 
         <ActionCardsSection
           content={pageData.testimonials}
+          tone="dark"
+          columns="three"
+          slider
+          autoplay
+          loop
+        />
+
+        <ActionCardsSection
+          content={pageData.news}
           tone="soft"
           columns="three"
         />
 
-        <AccordionSection content={pageData.faqs} tone="white" />
+        <AccordionSection 
+          content={pageData.faqs} 
+          tone="white" 
+          />
 
         <BookingSection
           content={pageData.booking}

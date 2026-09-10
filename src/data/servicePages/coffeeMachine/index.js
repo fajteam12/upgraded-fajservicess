@@ -16,6 +16,9 @@ import serviceTabsData from "./serviceTabsData";
 import testimonialsData from "./testimonialsData";
 import videoData from "./videoData";
 import whyChooseUsData from "./whyChooseUsData";
+import cleaningDescalingData from "./cleaningDescalingData";
+import shopData from "./shopData"
+import newsData from "./newsData";
 
 const coffeeMachineData = {
   seo: seoData,
@@ -36,6 +39,9 @@ const coffeeMachineData = {
   testimonials: testimonialsData,
   faqs: faqsData,
   booking: bookingData,
+  cleaningDescaling: cleaningDescalingData,
+  shop: shopData,
+  news: newsData
 };
 
 export {
@@ -57,6 +63,9 @@ export {
   testimonialsData,
   videoData,
   whyChooseUsData,
+  cleaningDescalingData,
+  shopData,
+  newsData
 };
 
 export default coffeeMachineData;

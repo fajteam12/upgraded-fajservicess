@@ -393,9 +393,7 @@
     transition: transform 160ms ease;
   }
 
-  .faj-header__nav-item:hover>.faj-header__nav-link .faj-header__chevron,
-  .faj-header__nav-item.is-open>.faj-header__nav-link .faj-header__chevron,
-  .faj-header__nav-item:focus-within>.faj-header__nav-link .faj-header__chevron {
+  .faj-header__nav-item.is-open>.faj-header__nav-link .faj-header__chevron{
     transform: rotate(180deg);
   }
 
@@ -487,9 +485,7 @@
     content: "";
   }
 
-  .faj-header__nav-item:hover>.faj-header__popover,
-  .faj-header__nav-item.is-open>.faj-header__popover,
-  .faj-header__nav-item:focus-within>.faj-header__popover {
+  .faj-header__nav-item.is-open>.faj-header__popover{
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
@@ -505,9 +501,7 @@
     transform: translate(-50%, -8px);
   }
 
-  .faj-header__nav-item:hover>.faj-header__popover--services,
-  .faj-header__nav-item.is-open>.faj-header__popover--services,
-  .faj-header__nav-item:focus-within>.faj-header__popover--services {
+  .faj-header__nav-item.is-open>.faj-header__popover--services {
     transform: translate(-50%, 0);
   }
 
@@ -519,9 +513,7 @@
     transform: translate(-50%, -8px);
   }
 
-  .faj-header__nav-item:hover>.faj-header__popover--about,
-  .faj-header__nav-item.is-open>.faj-header__popover--about,
-  .faj-header__nav-item:focus-within>.faj-header__popover--about {
+  .faj-header__nav-item.is-open>.faj-header__popover--about{
     transform: translate(-50%, 0);
   }
 

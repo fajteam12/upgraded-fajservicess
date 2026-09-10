@@ -7,23 +7,44 @@ const testimonialsData = {
     {
       icon: "award",
       title: "Syed Shah",
-      subtitle: "Dubai Marina",
+      subtitle: "Resident",
       description:
-        "The team responded quickly and repaired our commercial coffee machine and grinder efficiently. Professional and reliable service.",
+        "I’m impressed with their quick response and professional service. They repaired our commercial coffee machine and grinder in Dubai Marina efficiently. Truly reliable and one of the best coffee machine repair teams. Highly recommended!",
     },
     {
       icon: "award",
       title: "Zahir Khan",
-      subtitle: "Commercial Customer",
+      subtitle: "Resident",
       description:
-        "FAJ provided expert commercial coffee-machine repair with a fast response and clear technical support.",
+        "Best commercial coffee machine repair service company. Highly recommend FAJ for their quick response, expert work, and professional service.",
+    },
+    {
+      icon: "award",
+      title: "Imran Rana",
+      subtitle: "Resident",
+      description:
+        "Their team handled our commercial coffee machine repair in Dubai with great professionalism. Quick service, expert work, and reliable support. Recommend FAJ!",
     },
     {
       icon: "award",
       title: "Ravi Kumar",
-      subtitle: "UAE Customer",
+      subtitle: "Resident",
       description:
-        "The technician was skilled, the communication was clear and our coffee equipment was restored professionally.",
+        "I contacted them for commercial coffee machine service in UAE, and they exceeded expectations. Fast response, skilled technicians, and excellent customer care. Highly recommended!",
+    },
+    {
+      icon: "award",
+      title: "Hassan Ali",
+      subtitle: "Resident",
+      description:
+        "Best choice for commercial coffee machine repairs near me. They fixed our machine efficiently, and the grinder is working perfectly now. Very professional and trustworthy service.",
+    },
+    {
+      icon: "award",
+      title: "Mohammed Yousuf",
+      subtitle: "Resident",
+      description:
+        "I’m impressed with their expertise in commercial coffee machine. They repaired our unit quickly and provided great maintenance tips. One of the best services in UAE!",
     },
   ],
 };

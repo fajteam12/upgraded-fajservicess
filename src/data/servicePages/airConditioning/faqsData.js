@@ -5,49 +5,81 @@ const faqsData = {
     "Answers about AC maintenance frequency, repair visits, system types and service coverage in the UAE.",
   items: [
     {
-      question: "How often should air conditioners be serviced in Dubai?",
+      question: "Why is regular AC maintenance necessary?",
       answer:
-        "Because of high dust levels and intensive cooling use, filters may need attention every few months. A comprehensive professional service is commonly recommended at least once or twice a year, depending on the system and operating conditions.",
+        "Regular AC maintenance offers several benefits, including increased reliability, improved indoor air quality, increased energy efficiency, cost savings by preventing significant repairs, extended lifespan of the system, enhanced performance, and peace of mind.",
     },
     {
-      question: "Which refrigerants do you use?",
+      question: "Does F A J offer a warranty for AC repair services?",
       answer:
-        "The correct refrigerant depends on the equipment specification. Technicians identify the required refrigerant and inspect for leaks before recommending evacuation, repair and charging work.",
+        "Yes, we offer a comprehensive warranty for our AC repair services in Dubai. Our warranty serves as a testament to our commitment to customer satisfaction and the quality of our work.",
     },
     {
-      question: "Do you provide AC maintenance contracts for villas?",
+      question: "How can I schedule an appointment with F A J?",
       answer:
-        "Yes. FAJ offers tailored annual maintenance contracts for apartments, villas, offices and commercial premises across Dubai.",
+        "You can contact us at 043300002 to book an appointment or to uncover more about our AC services. Our team is available from 8 am to 6 pm (Dubai time) for emergency AC repair needs.",
     },
     {
-      question: "Does FAJ provide a warranty for AC repair?",
+      question: "What areas does F A J serve in Dubai?",
       answer:
-        "Warranty coverage depends on the completed repair, installed parts and quotation terms. Applicable workmanship or parts warranty details are confirmed with the service quotation or invoice.",
+        "We provide AC repair and maintenance services across the UAE, serving both residential and commercial customers. Our comprehensive range of services ensures that no matter where you are located within the country, you can rely on F A J for top-notch AC solutions. From homes to offices, businesses to institutions, we cater to the cooling needs of diverse customers throughout the United Arab Emirates. Trust us to deliver reliable and professional AC repair and maintenance services wherever you are.",
     },
     {
-      question: "How can I schedule an AC appointment?",
+      question: "How competitive are the prices for AC repair services at F A J?",
       answer:
-        "Use the booking form on this page, contact FAJ by WhatsApp or call +971 50 746 4712. Share the property location, AC type and symptoms to help schedule the correct technician.",
+        "We always try to offer competitive pricing without compromising on our work quality. Our transparent pricing policy ensures that you receive reliable solutions at a fair and affordable price.",
     },
     {
-      question: "Which areas does FAJ serve?",
+      question: "Is F A J available for emergency AC repairs?",
       answer:
-        "FAJ provides residential and commercial air-conditioning service across Dubai and can arrange support in Sharjah and Abu Dhabi subject to location and scheduling availability.",
+        "Yes, we offer emergency AC repair services to ensure that you never have to suffer in the sweltering heat. Just approach us with a call, and our dedicated team will be at your doorstep, ready to promptly fix your AC system.",
     },
     {
-      question: "Do you handle emergency AC repairs?",
+      question: "What happens when an air conditioner fails or errors?",
       answer:
-        "Urgent AC requests are accepted subject to technician availability, access, location and parts requirements. Contact the scheduling team for the earliest available visit.",
+        "If the compressor is not working, the air conditioner will only move room-temperature air around the ventilation system. You may have heard that replacing an air conditioner is preferable to fixing a dead compressor. It is occasionally true, but only occasionally.",
     },
     {
-      question: "Which air-conditioning systems can FAJ service?",
+      question:
+        "What types of air conditioning systems does FAJ Technical Services L.L.C. specialize in?",
       answer:
-        "FAJ supports central AC, ducted split, package units, chilled-water fan-coil units, window, cassette, portable, wall-mounted split, ceiling, VRV, VRF, multi-split, AHU and FAHU systems.",
+        "We specialize in a variety of air conditioning systems, including Central AC, Ducted Split AC, HVAC, Package Unit AC, Centralized AC, CHW FCU Fan Coil Unit AC, Window AC, Cassette Type AC, Portable AC, Wall Mounted AC, Split AC, Ceiling AC, VRV Variable Refrigerant Volume AC, VRF Variable Refrigerant Flow AC, Multi-Split, AHU, and FAHU.",
     },
     {
-      question: "What are common AC problems FAJ can diagnose?",
-      answer:
-        "Common requests include an AC not starting, warm air, weak airflow, unusual noise, fan or compressor faults, water leakage, thermostat errors and parts failures.",
+      question:
+        "Why should I choose FAJ Technical Services L.L.C. for AC repair?",
+      answer: [
+        {
+          type: "bullets",
+          items: [
+            "Trained and professional technicians with expertise in handling all types of AC systems.",
+            "Comprehensive AC services, including repairs, maintenance, and installations.",
+            "We specialize in a wide range of AC systems to meet your unique cooling needs.",
+            "Our dedication to excellence and customer satisfaction creates a reliable and trustworthy service experience.",
+            "We pay close attention to every detail, assuring the durability and effectiveness of your A/C equipment.",
+          ],
+        },
+      ],
+    },
+    {
+      question:
+        "What are some common AC problems that FAJ Technical Services L.L.C. can solve?",
+      answer: [
+        "Some common AC problems we can address include:",
+        {
+          type: "bullets",
+          items: [
+            "The air conditioner is not turning on",
+            "Weird noises or vibrations during the operation",
+            "Warm air coming from supply registers",
+            "The fan is not turning on",
+            "Compressor not working",
+            "Water pooling around the AC unit",
+            "AC unit not working at all",
+            "Faulty spare parts requiring replacement",
+          ],
+        },
+      ],
     },
   ],
 };

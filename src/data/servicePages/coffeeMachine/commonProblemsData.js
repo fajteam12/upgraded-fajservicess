@@ -1,48 +1,81 @@
 const commonProblemsData = {
-  eyebrow: "Warning Signals",
-  title: "The Most Common Coffee Machine Problems",
-  description:
-    "Recognise these symptoms early to reduce the risk of pump, boiler, grinder and electronic-control damage.",
+  eyebrow: "Common Coffee Machine Issues",
+  title: "The Most Common Problems of Coffee Machines",
   items: [
     {
-      title: "Water Leakage",
+      title: "Grinder Malfunctions",
       description:
-        "Worn seals, loose connections, cracked reservoirs or damaged tubing can cause water to escape from the machine.",
+        "Most Likely Causes: Dull blades, motor issues, or a jammed grinder.",
     },
     {
-      title: "Scale Buildup",
+      title: "Slow Brewing",
       description:
-        "Hard-water mineral deposits restrict pathways, affect heating and contribute to clogs or leakage.",
+        "Hard water can lead to a buildup of minerals and clogged filters.",
     },
     {
-      title: "Blocked Coffee Pathways",
+      title: "Portafilter Problems",
       description:
-        "Dirty filter baskets, grinder outlets and internal components can restrict flow and affect taste.",
+        "The gasket is worn out and not sealing properly, and the filter basket is clogged.",
     },
     {
-      title: "Bad Coffee Taste",
+      title: "Machine Not Turning On",
       description:
-        "Incorrect grind settings, temperature problems, stale residue or unsuitable brewing parameters reduce beverage quality.",
+        "Issues such as a defective power cord, a faulty switch, or an internal electrical failure may be present.",
     },
     {
-      title: "Unusual Noise",
+      title: "Water Leaks",
       description:
-        "Low water, pump wear, loose parts, grinder faults or heating problems can produce unexpected sounds.",
+        "Seals are broken, water reservoirs are cracked, and pipes are blocked.",
     },
     {
-      title: "Brewing Problems",
+      title: "Poor Coffee Quality",
       description:
-        "Weak or inconsistent coffee may result from incorrect grind size, pressure, temperature or extraction timing.",
+        "Possible issues include a clogged filter, an incorrect grind size, or an improper brewing temperature.",
     },
     {
-      title: "Slow Coffee Flow",
+      title: "Noisy Operation",
       description:
-        "Blocked lines, an unsuitable grind, pump weakness or scale can reduce normal espresso flow.",
+        "The pump is worn out, there are issues with the motor, and some components are loose.",
     },
     {
-      title: "Machine Not Starting",
+      title: "Milk Frothier Issues",
       description:
-        "Power-supply, switch, thermal protection, control-board or internal wiring faults require professional diagnosis.",
+        "Blocks, a malfunctioning frother motor, and temperature-related issues.",
+    },
+    {
+      title: "Inconsistent Temperature",
+      description:
+        "A malfunctioning thermostat, burnt-out heating elements, or defective temperature-regulating components.",
+    },
+    {
+      title: "Weak or Watery Coffee",
+      description:
+        "Possible causes include an incorrect coffee-to-water ratio, insufficient coffee quantity, and brewing errors.",
+    },
+    {
+      title: "Machine Shuts Off Mid-Brew",
+      description:
+        "Possible Causes: Overheating, electrical malfunctions, and faulty sensors.",
+    },
+    {
+      title: "Display Malfunctions",
+      description:
+        "Issues identified include a defective control board, wiring problems, and software bugs.",
+    },
+    {
+      title: "Water Not Heating",
+      description:
+        "The heating element is broken, there are issues with the thermostat, and there are electrical faults.",
+    },
+    {
+      title: "Excessive Steam or No Steam",
+      description:
+        "Issues with the steam wand include malfunctioning, pressure problems, and blocked steam nozzles.",
+    },
+    {
+      title: "Coffee Grounds in Cup",
+      description:
+        "The filter is damaged and misaligned, and there are too many grounds in the basket.",
     },
   ],
 };
