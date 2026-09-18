@@ -1,0 +1,57 @@
+const commonProblemsData = {
+  eyebrow: "Common Toshiba AC Issues",
+  title: "Common Toshiba AC Problems That May Require Maintenance",
+  items: [
+    {
+      title: "Weak Airflow",
+      description: {
+        parts: [
+          {
+            text: "Reduced airflow",
+            href: "https://www.youtube.com/watch?v=qnByeIsc3lY",
+            external: true,
+            strong: true,
+          },
+          " from a Toshiba air conditioner may indicate a clogged filter or faulty fan, which should be fixed for efficient cooling.",
+        ],
+      },
+    },
+    {
+      title: "Warm Air",
+      description:
+        "If your Toshiba AC is blowing warm air, it may be experiencing issues with the compressor, refrigerant levels, or ductwork.",
+    },
+    {
+      title: "Strange Noises",
+      description:
+        "Unusual sounds like grinding, squeaking, or banging from your Toshiba AC may indicate mechanical issues that require attention.",
+    },
+    {
+      title: "Foul Odors",
+      description:
+        "Unpleasant odors coming from the vents may indicate mold or mildew in the system and should be addressed immediately.",
+    },
+    {
+      title: "Frequent Cycling",
+      description:
+        "The failure to maintain desired temperatures may indicate problems such as dirty filters, low refrigerant levels, or a malfunctioning thermostat.",
+    },
+    {
+      title: "High Humidity Levels",
+      description:
+        "A Toshiba air conditioner that does not reduce humidity may have cooling capacity issues or may not be operating properly.",
+    },
+    {
+      title: "Leaking Water",
+      description:
+        "Water pooling around the Toshiba AC or dripping from vents may indicate a blocked condensate drain, frozen coils, or other issues.",
+    },
+    {
+      title: "Increased Energy Bills",
+      description:
+        "High energy bills without increased usage may indicate inefficiencies in Toshiba air conditioning due to dirty filters or duct leaks.",
+    },
+  ],
+};
+
+export default commonProblemsData;

@@ -1,0 +1,117 @@
+const faqsData = {
+  id: "goodman-ac-faqs",
+  eyebrow: "Have Questions?",
+  title: "Goodman AC Repair and Maintenance FAQs",
+  items: [
+    {
+      question: "What is the warranty maintenance period?",
+      answer:
+        "In most cases, the maintenance period lasts between thirteen weeks and six months or longer, as specified in the contract. This means that any maintenance issues or defects that arise during this time are the builder's responsibility to fix and repair at no additional cost to you.",
+    },
+    {
+      question: "What is the E6 error in Goodman AC?",
+      answer:
+        "The E6 error code in air conditioners usually indicates a communication failure between the indoor and outdoor units. This issue disrupts the synchronised operation of the system, leading to reduced cooling efficiency.",
+    },
+    {
+      question: "What is the error code H3 on Goodman AC?",
+      answer:
+        "The H3 error code typically indicates a refrigerant leak in the AC system. Refrigerant is crucial for the cooling process, and a leak can lead to reduced cooling efficiency or even a total failure of the AC system.",
+    },
+    {
+      question: "Why is my Goodman AC not cooling?",
+      answer:
+        "If the Goodman air conditioner is not cooling, the compressor may be defective. The compressor is a motor that compresses the refrigerant and circulates it through the evaporator and condenser coils. If the compressor fails, the cooling cycle does not initiate, and the Goodman air conditioner will not cool properly.",
+    },
+    {
+      question: "How can I increase my AC cooling?",
+      answer: [
+        "8 Ways to Maximize Your A/C Efficiency:",
+        {
+          type: "bullets",
+          items: [
+            "Seal AC Ducts",
+            "Raise the Thermostat",
+            "Install a Programmable Thermostat",
+            "Insulate and Weatherize",
+            "Check and Change AC Filters",
+            "Install Your Room aircon in the Shade",
+            "Keep Your AC Compressor Cool and Clean",
+            "Get Air Conditioning Annual Inspections",
+          ],
+        },
+      ],
+    },
+    {
+      question: "What are the reasons for the Goodman AC not cooling?",
+      answer: [
+        "Here are the five most common causes of not cooling the Goodman AC and how to solve it:",
+        {
+          type: "bullets",
+          items: [
+            "Your outdoor unit requires additional maintenance due to exposure to sunlight, rain, and debris.",
+            "Unfitted AC unit.",
+            "AC Clogged filter",
+            "AC Low Gas",
+            "The broken thermistor on the outdoor aircon unit",
+          ],
+        },
+      ],
+    },
+    {
+      question: "How do I check my AC cooling capacity?",
+      answer:
+        "To find the tonnage of your AC unit, you can often just walk outside and check the label on the condenser unit. However, most manufacturers typically list the BTUs (British Thermal Units) instead of tons. Fortunately, you can easily convert BTUs to tons by dividing the BTUs by 12,000. This will give you the tonnage of your unit.",
+    },
+    {
+      question: "What is the benefit of VRF?",
+      answer:
+        "With VRF technology, it's easy to heat and cool only the spaces that require it. These systems circulate just the right amount of refrigerant needed for each individual zone to meet the building's demands. Since they do not use ducts, this approach eliminates the energy waste typically associated with duct losses.",
+    },
+    {
+      question: "How do I know the tonnage of my AC unit?",
+      answer:
+        "To estimate the air conditioning tonnage you need, start by multiplying the square footage of the space you want to cool by 25. This calculation will give you the total number of BTUs required for adequate cooling. Next, divide that number by 12,000 to determine the tonnage capacity necessary for your new air conditioning unit.",
+    },
+    {
+      question: "How to calculate AC tonnage from kW?",
+      answer: [
+        "To convert tons of air conditioning (AC) to kilowatts (kW), follow these steps:",
+        {
+          type: "bullets",
+          items: [
+            "1. Understand that 1 ton is equivalent to 12000 BTU (British Thermal Units).",
+            "2. Additionally, 1 ton is equal to 0.0003929 horsepower (hp).",
+            "Example: If we have an AC unit with a capacity of 1.5 tons:",
+            "First, calculate the BTU:",
+            "1.5 tons = 1.5 x 12000 = 18000 BTU",
+            "Next, convert BTU to horsepower:",
+            "hp = 18000 x 0.0003929 = 7.072 hp",
+            "Finally, convert horsepower to kilowatts:",
+            "We know that 1 hp = 0.746 kW",
+            "Therefore, kW = 7.072 x 0.746 = 5.275 kW",
+          ],
+        },
+        "This is a quick reference guide for converting tonnes to kilowatts in 2 seconds.",
+      ],
+    },
+    {
+      question: "What is the ideal temperature for a baby's / kids room?",
+      answer:
+        "When it comes to room temperature, if you feel that it's too cold, your baby likely feels the same way, and the same goes for warmth. Therefore, it's advisable to maintain a temperature between 68 and 72 degrees Fahrenheit, which is comfortable for both summer and winter.",
+    },
+    {
+      question: "How do I know if my baby is cold at night?",
+      answer:
+        "Keep a close eye on your baby for signs of being too cold, such as cool skin, shivering, fussiness, or pale skin. To create an ideal sleep environment, maintain your baby’s room temperature between 68 and 72 degrees Fahrenheit and keep humidity levels around 40 to 60 percent. Dress your baby in layers to ensure they stay comfortable.",
+    },
+    {
+      question:
+        "What temperature should I set my AC in summer in Dubai, UAE?",
+      answer:
+        "During the summer, the ideal room temperature is between 22 and 26 degrees Celsius. This range is considered comfortable for most people, as it helps keep the room cool while ensuring a pleasant living environment, as said by FAJ Engineer Malik Tayyeb.",
+    },
+  ],
+};
+
+export default faqsData;

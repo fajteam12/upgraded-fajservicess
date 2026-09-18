@@ -1,18 +1,70 @@
-import { memo, useCallback, useEffect, useRef } from "react";
+import { Fragment, memo, useCallback, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { ScrollSlide } from "../Animations/ScrollAnimation";
 import SectionHeader from "./SectionHeader";
 import ServiceIcon from "./ServiceIcon";
+
+function RichText({ value, as: Tag = "p", className }) {
+  if (!value) return null;
+
+  if (typeof value === "string") {
+    return <Tag className={className}>{value}</Tag>;
+  }
+
+  if (!value.parts?.length) return null;
+
+  return (
+    <Tag className={className}>
+      {value.parts.map((part, index) => {
+        if (typeof part === "string") {
+          return <Fragment key={index}>{part}</Fragment>;
+        }
+
+        if (!part?.text) return null;
+
+        const content = part.strong ? (
+          <strong>{part.text}</strong>
+        ) : (
+          part.text
+        );
+
+        if (!part.href) {
+          return <Fragment key={`${part.text}-${index}`}>{content}</Fragment>;
+        }
+
+        if (part.external) {
+          return (
+            <a
+              key={`${part.text}-${index}`}
+              href={part.href}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {content}
+            </a>
+          );
+        }
+
+        return (
+          <Link
+            key={`${part.text}-${index}`}
+            to={part.href}
+          >
+            {content}
+          </Link>
+        );
+      })}
+    </Tag>
+  );
+}
 
 function ActionCardsSection({
   content,
   onAction,
   tone = "white",
   columns = "three",
-
   slider = false,
   showSliderArrows = true,
-
   loop = false,
   autoplay = false,
   autoplayDelay = 4000,
@@ -36,12 +88,14 @@ function ActionCardsSection({
 
       const slideWidth = firstSlide.getBoundingClientRect().width;
       const sliderStyles = window.getComputedStyle(sliderElement);
+
       const gap = parseFloat(
         sliderStyles.columnGap || sliderStyles.gap || "0"
       );
 
       const scrollStep = slideWidth + gap;
       const currentScroll = sliderElement.scrollLeft;
+
       const maxScroll =
         sliderElement.scrollWidth - sliderElement.clientWidth;
 
@@ -53,6 +107,7 @@ function ActionCardsSection({
           left: 0,
           behavior: "smooth",
         });
+
         return;
       }
 
@@ -61,6 +116,7 @@ function ActionCardsSection({
           left: maxScroll,
           behavior: "smooth",
         });
+
         return;
       }
 
@@ -98,14 +154,6 @@ function ActionCardsSection({
     itemCount,
     scrollSlider,
   ]);
-
-  console.log("ActionCardsSection:", {
-    title: content?.title,
-    slider,
-    autoplay,
-    loop,
-    items: content?.items?.length,
-  });
 
   if (!content?.items?.length) return null;
 
@@ -149,9 +197,21 @@ function ActionCardsSection({
 
       {item.subtitle && <strong>{item.subtitle}</strong>}
 
-      {item.description && <p>{item.description}</p>}
+      <RichText value={item.description} />
 
-      {item.actionLabel && item.href && (
+      {item.actionLabel && item.href && item.external && (
+        <a
+          className="service-landing__action-link"
+          href={item.href}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {item.actionLabel}
+          <span aria-hidden="true">{"\u2192"}</span>
+        </a>
+      )}
+
+      {item.actionLabel && item.href && !item.external && (
         <Link
           className="service-landing__action-link"
           to={item.href}
@@ -177,116 +237,147 @@ function ActionCardsSection({
   );
 
   return (
-		<section className={`service-landing__section is-${tone}`} id={content.id}>
-			<div className="service-landing__container">
-				<SectionHeader content={content} light={tone === "dark"} />
+    <section
+      className={`service-landing__section is-${tone}`}
+      id={content.id}
+    >
+      <div className="service-landing__container">
+        <SectionHeader
+          content={content}
+          light={tone === "dark"}
+        />
 
-				{content.paragraphs?.length > 0 && (
-					<div className="service-landing__action-intro-copy">
-						{content.paragraphs.map((paragraph, index) => (
-							<p key={index}>{paragraph}</p>
-						))}
-					</div>
-				)}
+        {(content.lead || content.paragraphs?.length > 0) && (
+          <div className="service-landing__action-intro-copy">
+            {content.lead && (
+              <p>
+                <strong>{content.lead}</strong>
+              </p>
+            )}
 
-				<div
-					className={`service-landing__action-section-body ${
-						slider ? "has-slider" : ""
-					}`}
-					onMouseEnter={slider ? pauseAutoplay : undefined}
-					onMouseLeave={slider ? resumeAutoplay : undefined}
-					onFocusCapture={slider ? pauseAutoplay : undefined}
-					onBlurCapture={slider ? resumeAutoplay : undefined}
-				>
-					{shouldShowSliderArrows && (
-						<div
-							className="service-landing__action-slider-controls"
-							aria-label="Card slider controls"
-						>
-							<button
-								type="button"
-								className="service-landing__action-slider-arrow"
-								onClick={() => scrollSlider(-1)}
-								aria-label="Show previous cards"
-							>
-								<span aria-hidden="true">{"\u2190"}</span>
-							</button>
+            {content.paragraphs?.map((paragraph, index) => (
+              <RichText
+                key={index}
+                value={paragraph}
+              />
+            ))}
+          </div>
+        )}
 
-							<button
-								type="button"
-								className="service-landing__action-slider-arrow"
-								onClick={() => scrollSlider(1)}
-								aria-label="Show next cards"
-							>
-								<span aria-hidden="true">{"\u2192"}</span>
-							</button>
-						</div>
-					)}
+        <div
+          className={`service-landing__action-section-body ${
+            slider ? "has-slider" : ""
+          }`}
+          onMouseEnter={slider ? pauseAutoplay : undefined}
+          onMouseLeave={slider ? resumeAutoplay : undefined}
+          onFocusCapture={slider ? pauseAutoplay : undefined}
+          onBlurCapture={slider ? resumeAutoplay : undefined}
+        >
+          {shouldShowSliderArrows && (
+            <div
+              className="service-landing__action-slider-controls"
+              aria-label="Card slider controls"
+            >
+              <button
+                type="button"
+                className="service-landing__action-slider-arrow"
+                onClick={() => scrollSlider(-1)}
+                aria-label="Show previous cards"
+              >
+                <span aria-hidden="true">{"\u2190"}</span>
+              </button>
 
-					{slider ? (
-						<div
-							ref={sliderRef}
-							className={`service-landing__action-grid is-${resolvedColumns} is-slider`}
-						>
-							{content.items.map((item) => (
-								<div className="service-landing__action-slide" key={item.title}>
-									{renderCard(item)}
-								</div>
-							))}
-						</div>
-					) : (
-						<div
-							className={`service-landing__action-grid is-${resolvedColumns}`}
-						>
-							{content.items.map((item, index) => (
-								<ScrollSlide
-									direction="up"
-									delay={(index % 4) * 0.06}
-									key={item.title}
-								>
-									{renderCard(item)}
-								</ScrollSlide>
-							))}
-						</div>
-					)}
-				</div>
+              <button
+                type="button"
+                className="service-landing__action-slider-arrow"
+                onClick={() => scrollSlider(1)}
+                aria-label="Show next cards"
+              >
+                <span aria-hidden="true">{"\u2192"}</span>
+              </button>
+            </div>
+          )}
 
-				{(content.bottomTitle || content.bottomDescription) && (
-					<div className="service-landing__action-bottom-copy">
-						{content.bottomTitle && <h3>{content.bottomTitle}</h3>}
+          {slider ? (
+            <div
+              ref={sliderRef}
+              className={`service-landing__action-grid is-${resolvedColumns} is-slider`}
+            >
+              {content.items.map((item) => (
+                <div
+                  className="service-landing__action-slide"
+                  key={item.title}
+                >
+                  {renderCard(item)}
+                </div>
+              ))}
+            </div>
+          ) : (
+            <div
+              className={`service-landing__action-grid is-${resolvedColumns}`}
+            >
+              {content.items.map((item, index) => (
+                <ScrollSlide
+                  direction="up"
+                  delay={(index % 4) * 0.06}
+                  key={item.title}
+                >
+                  {renderCard(item)}
+                </ScrollSlide>
+              ))}
+            </div>
+          )}
+        </div>
 
-						{content.bottomDescription && <p>{content.bottomDescription}</p>}
-					</div>
-				)}
+        {content.footer && (
+          <div className="service-landing__action-bottom-copy">
+            <RichText value={content.footer} />
+          </div>
+        )}
 
-				{content.footerCard && (
-					<ScrollSlide direction="up">
-						<aside className="service-landing__action-footer-card">
-							<div>
-								<h3>{content.footerCard.title}</h3>
-								<p>{content.footerCard.description}</p>
-							</div>
+        {(content.bottomTitle || content.bottomDescription) && (
+          <div className="service-landing__action-bottom-copy">
+            {content.bottomTitle && (
+              <h3>{content.bottomTitle}</h3>
+            )}
 
-							{content.footerCard.actionLabel && onAction && (
-								<button
-									type="button"
-									className="service-landing__button"
-									onClick={() =>
-										onAction(
-											content.footerCard.bookingLabel ||
-												content.footerCard.title,
-										)
-									}
-								>
-									{content.footerCard.actionLabel}
-								</button>
-							)}
-						</aside>
-					</ScrollSlide>
-				)}
-			</div>
-		</section>
-	);
+            {content.bottomDescription && (
+              <RichText value={content.bottomDescription} />
+            )}
+          </div>
+        )}
+
+        {content.footerCard && (
+          <ScrollSlide direction="up">
+            <aside className="service-landing__action-footer-card">
+              <div>
+                <h3>{content.footerCard.title}</h3>
+
+                <RichText
+                  value={content.footerCard.description}
+                />
+              </div>
+
+              {content.footerCard.actionLabel && onAction && (
+                <button
+                  type="button"
+                  className="service-landing__button"
+                  onClick={() =>
+                    onAction(
+                      content.footerCard.bookingLabel ||
+                        content.footerCard.title
+                    )
+                  }
+                >
+                  {content.footerCard.actionLabel}
+                </button>
+              )}
+            </aside>
+          </ScrollSlide>
+        )}
+      </div>
+    </section>
+  );
 }
 
 export default memo(ActionCardsSection);

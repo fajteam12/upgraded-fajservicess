@@ -1,0 +1,67 @@
+const faqsData = {
+  id: "coleman-ac-faqs",
+  eyebrow: "Have Questions?",
+  title: "Coleman AC Repair and Maintenance FAQs",
+  items: [
+    {
+      question: "How to maintain a Coleman air conditioner?",
+      answer:
+        "For single-zone mini-split systems, change the air filter every 3 to 6 months, clean both indoor and outdoor coils, check and clean the drain pan and line, inspect refrigerant levels, and schedule an annual tune-up.",
+    },
+    {
+      question: "How to save energy in a Coleman Air Conditioner?",
+      answer:
+        "In COOL mode, press 'TEMP' and 'CLOCK' together to activate the energy-saving function. The display will show 'SE', and the system will automatically optimize the temperature for energy efficiency.",
+    },
+    {
+      question: "What is the best setting for Coleman AC?",
+      answer:
+        "Set the thermostat to 78°F (26°C) during summer for comfort and energy efficiency. Use the timer feature to schedule cooling around your daily routine.",
+    },
+    {
+      question: "Does Coleman AC consume less electricity?",
+      answer:
+        "Coleman ACs are designed with advanced technology to use less power compared to other brands while still offering effective cooling. Their inverter systems are particularly energy-efficient.",
+    },
+    {
+      question: "Why does my Coleman AC keep turning off?",
+      answer:
+        "Your unit may be overheating due to compressor grime, or there could be a refrigerant leak. A faulty thermostat, damaged wiring, or an electrical issue might also cause repeated shut-offs.",
+    },
+    {
+      question: "What is the code E1 on Coleman AC?",
+      answer:
+        "E1 indicates high pressure in the system, often caused by dirty coils, restrictions, or overcharging. Check the coils and fans first. If the issue persists, a technician should inspect the high-pressure switch and refrigerant levels.",
+    },
+    {
+      question: "What is the error code E3 on a Coleman?",
+      answer:
+        "E3 signals a low pressure protection alert. If the low-pressure switch stays off for 30 seconds while the unit is on or in standby, the system triggers this fault. After three such faults in 30 minutes, the system stops auto-resetting.",
+    },
+    {
+      question: "What is the error code E2, E4, and E5 on Coleman AC?",
+      answer: [
+        "E2: Indicates frosting on the indoor unit radiator.",
+        "E4: Signals high-temperature protection due to compressor tube overheating.",
+        "E5: Triggers over-current protection caused by high or unstable voltage.",
+      ],
+    },
+    {
+      question: "Why is my Coleman air conditioner not cooling?",
+      answer:
+        "Check for a dirty air filter and clean it if necessary. Ensure that the temperature is correctly set and that all required doors and windows are closed for optimal cooling.",
+    },
+    {
+      question: "What does temperature mean in a Coleman AC remote?",
+      answer:
+        "Pressing the TEMP button lets you cycle between viewing the set temperature, indoor ambient temperature, and outdoor ambient temperature on the display of the indoor unit.",
+    },
+    {
+      question: "What is health mode in Coleman AC?",
+      answer:
+        "Health mode likely initiates a brief heating cycle after cooling to dry the indoor coil, which helps reduce bacterial growth and maintain indoor air quality.",
+    },
+  ],
+};
+
+export default faqsData;

@@ -1,0 +1,82 @@
+const faqsData = {
+  id: "gree-ac-faqs",
+  eyebrow: "Have Questions?",
+  title: "Gree AC Repair and Maintenance FAQs",
+  items: [
+    {
+      question: "How to maintain a Gree air conditioner?",
+      answer: [
+        "Single Zone Mini-Split AC Maintenance for Your GREE Comfort Clients.",
+        {
+          type: "bullets",
+          items: [
+            "hange the air filter every 3 to 6 months based on usage frequency.",
+            "Clean both indoor and outdoor coils.",
+            "Check and clean the drain pan and drain line.",
+            "Inspect refrigerant levels. Conduct an annual tune-up.",
+          ],
+        },
+      ],
+    },
+    {
+      question: "How to save energy in Gree Air Conditioner?",
+      answer:
+        "Under COOL mode, press “TEMP” and “CLOCK” buttons simultaneously to start up or turn off the energy-saving function. When the energy-saving function is activated, “SE” will appear on the remote controller, and the unit will automatically adjust the set temperature to the factory setting for maximum energy savings.",
+    },
+    {
+      question: "What is the best setting for Gree AC?",
+      answer:
+        "Set the Optimal Temperature: For maximum comfort and energy efficiency during summer, set your GREE AC thermostat to approximately 78°F (26°C). Additionally, GREE's Setting Timer feature enables you to schedule cooling periods based on your daily routine.",
+    },
+    {
+      question: "Does Gree AC consume less electricity?",
+      answer:
+        "Every brand has unique features that cater to different preferences. Gree air conditioners have a lower power consumption compared to other AC brands. Their advanced technology allows them to use significantly less power while still delivering excellent cooling. Let's examine the details to understand how much electricity a typical inverter AC consumes.",
+    },
+    {
+      question: "Why does my Gree AC keep turning off?",
+      answer:
+        "AC Problems that Cause Your Unit to Shut Off. The unit is overheating, which typically suggests there is grime buildup within the compressor. However, it could also indicate a more complicated issue, such as a refrigerant leak. Additionally, if the thermostat is faulty, it could be due to damaged wiring or an electrical problem.",
+    },
+    {
+      question: "What is the code E1 on Gree AC?",
+      answer:
+        "E1: This code indicates high pressure in the system, which is often caused by dirty coils, restrictions, or overcharging. Inspect the coils and fans for proper operation. If these components are functioning well, a technician should examine the high-pressure switch and check for potential overcharging.",
+    },
+    {
+      question: "What is the error code E3 on a Gree?",
+      answer:
+        "Low Pressure Protection System. Low Pressure Switch: If the low-pressure switch remains off for 30 seconds while the unit is in the ON or standby state, the unit will trigger a low pressure protection alert. If this fault occurs three times within a 30-minute period, the unit will not automatically reset.",
+    },
+    {
+      question: "What is error code E2 E4 E5 on Gree AC?",
+      answer: [
+        {
+          type: "bullets",
+          items: [
+            "E2: Frosting on the radiator of the indoor unit occurs when freezing temperatures begin.",
+            "E4: High-temperature protection is activated due to overheating of the compressor tube.",
+            "E5: The unit enters over-current protection mode, which is caused by high line voltage or an unstable low voltage supply.",
+          ],
+        },
+      ],
+    },
+    {
+      question: "Why is my Gree air conditioner not cooling?",
+      answer:
+        "Check if the filter is dirty. If it is dirty, clean it. Ensure the temperature is set within the appropriate range. Close any doors or windows that should remain closed.",
+    },
+    {
+      question: "What does temperature mean in Gree AC remote?",
+      answer:
+        "Press the TEMP button to view the indoor set temperature, indoor ambient temperature, or outdoor ambient temperature on the indoor unit's display. The settings on the remote controller can be selected in a circular manner as follows: no display.",
+    },
+    {
+      question: "What is health mode in Gree AC?",
+      answer:
+        "The health mode likely reverses the refrigerant flow to heating after the cooling mode turns off, drying the indoor coil. This is said to reduce bacteria growth on the coil.",
+    },
+  ],
+};
+
+export default faqsData;
