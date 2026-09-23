@@ -7,7 +7,7 @@ const pricingData = {
   items: [
     {
       title: "Coffee Machine Technical Inspection Price",
-      price: "AED 280",
+      price: "AED 320",
       description: "Just tell us about your faulty coffee machine, and we will provide a quote for repair / parts. Our technician will arrive at a time that is suitable for you.",
       popup: {
         title: "Coffee Machine Inspection scope of work",
@@ -32,7 +32,7 @@ const pricingData = {
           {
             label: "Terms & Conditions",
             text:
-              "*Starting from AED 280, callout fee applies based on the type, brand, capacity of the coffee machine unit, and location for each diagnosis.",
+              "*Starting from AED 320, callout fee applies based on the type, brand, capacity of the coffee machine unit, and location for each diagnosis.",
           },
         ],
       },

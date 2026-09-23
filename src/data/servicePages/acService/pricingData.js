@@ -11,7 +11,7 @@ const pricingData = {
     {
       title: "AC Inspection Service",
       badge: "Diagnostics",
-      price: "AED 195",
+      price: "AED 215",
       description:
         "Professional fault assessment for cooling, thermostat, airflow, fan and unusual-noise concerns.",
       popup: {
@@ -36,7 +36,7 @@ const pricingData = {
           {
             label: "Terms & Conditions",
             text:
-              "Starting from AED 195 callout fee applies based on the type, capacity of the unit, and location for each diagnosis.",
+              "Starting from AED 215 callout fee applies based on the type, capacity of the unit, and location for each diagnosis.",
           },
         ],
       },

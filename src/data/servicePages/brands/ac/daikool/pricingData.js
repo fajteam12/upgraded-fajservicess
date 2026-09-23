@@ -11,7 +11,7 @@ const pricingData = {
     {
       title: "AC Inspection Service",
       badge: "Diagnostics",
-      price: "AED 135",
+      price: "AED 215",
       description:
         "Is your AC not cooling your place? Is the AC thermostat broken, or is the fan making strange noises? Give us a call",
       popup: {
@@ -36,7 +36,7 @@ const pricingData = {
           {
             label: "Terms & Conditions",
             text:
-              "Starting from AED 135 callout fee applies based on the type, capacity of the unit, and location for each diagnosis.",
+              "Starting from AED 215 callout fee applies based on the type, capacity of the unit, and location for each diagnosis.",
           },
         ],
       },

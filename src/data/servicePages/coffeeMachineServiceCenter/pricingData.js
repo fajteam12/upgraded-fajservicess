@@ -7,7 +7,7 @@ const pricingData = {
     { 
       title: "Coffee Machine Technical Inspection", 
       badge: "Diagnostics Check", 
-      price: "AED 170", 
+      price: "AED 187", 
       description: "A technician inspects the reported fault and provides a quotation for repair work and required parts.",
       popup: {
         title: "Coffee Machine Inspection scope of work",
@@ -32,7 +32,7 @@ const pricingData = {
           {
             label: "Terms & Conditions",
             text:
-              "*Starting from AED 170, callout fee applies based on the type, brand, capacity of the coffee machine unit, and location for each diagnosis.",
+              "*Starting from AED 187, callout fee applies based on the type, brand, capacity of the coffee machine unit, and location for each diagnosis.",
           },
         ],
       },

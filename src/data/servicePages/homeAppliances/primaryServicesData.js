@@ -9,7 +9,7 @@ const primaryServicesData = {
     {
       badge: "Technical Diagnosis",
       title: "Inspection / Check-Up Cost",
-      price: "AED 157",
+      price: "AED 173",
       description:
         "Tell us about the faulty appliance and our technician will inspect it, explain the fault and provide a quotation for repair and parts.",
       popup: {
@@ -35,7 +35,7 @@ const primaryServicesData = {
           {
             label: "Terms & Conditions",
             text:
-              "*Starting from AED 100, callout fee applies based on the type, brand, capacity of the appliance unit, and location for each diagnosis.",
+              "*Starting from AED 173, callout fee applies based on the type, brand, capacity of the appliance unit, and location for each diagnosis.",
           },
         ],
       },
@@ -69,7 +69,7 @@ const primaryServicesData = {
           {
             label: "Terms & Conditions",
             text:
-              "*Starting from AED 230 fee applies based on the Capacity: Based on Type, Model, and Area for each unit.",
+              "*Starting from AED 340 fee applies based on the Capacity: Based on Type, Model, and Area for each unit.",
           },
         ],
       },
