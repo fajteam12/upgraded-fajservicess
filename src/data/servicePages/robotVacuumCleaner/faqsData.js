@@ -36,7 +36,7 @@ const faqsData = {
     },
     {
       question: "Which robot vacuum cleaner is the best?",
-      answer:
+      answer: [
         {
           type: "bullets",
           items: [
@@ -47,6 +47,7 @@ const faqsData = {
             "Best Roomba: iRobot Roomba Combo J7 Plus"
           ],
         },
+      ]
     },
     {
       question: "How do I choose a robot vacuum cleaner?",
@@ -60,7 +61,7 @@ const faqsData = {
     },
     {
       question: "What are the features of robotic vacuum cleaners?",
-      answer:
+      answer:[
         {
           type: "bullets",
           items: [
@@ -71,6 +72,7 @@ const faqsData = {
             "Pet Mode",
           ]
         },
+      ]
     },
     {
       question: "Does a robot vacuum need Wi-Fi?",
