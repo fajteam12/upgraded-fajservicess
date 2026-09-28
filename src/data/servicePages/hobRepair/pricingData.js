@@ -9,7 +9,7 @@ const pricingData = {
   items: [
     {
       title: "Hob Technical Inspection",
-      price: "AED 157",
+      price: "AED 187",
       description:
         "Tell us about the faulty hob and a technician will inspect it before providing a quotation for repair and required parts.",
       popup: {
@@ -35,7 +35,7 @@ const pricingData = {
           {
             label: "Terms & Conditions",
             text:
-              "*Starting from AED 157, callout fee applies based on the type, brand, capacity of the appliance unit, and location for each diagnosis.",
+              "*Starting from AED 187, callout fee applies based on the type, brand, capacity of the appliance unit, and location for each diagnosis.",
           },
         ],
       },

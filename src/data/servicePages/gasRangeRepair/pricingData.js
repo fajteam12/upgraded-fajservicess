@@ -8,7 +8,7 @@ const pricingData = {
   items: [
     { 
       title: "Gas Cooker Technical Inspection", 
-      price: "AED 157", 
+      price: "AED 187", 
       description: "Just tell us about your faulty appliance, and we will provide a quote for repair / parts. Our technician will arrive at a time that is suitable for you.",
       popup: {
         title: "Inspection / Check-Up Cost scope of work",
@@ -33,7 +33,7 @@ const pricingData = {
           {
             label: "Terms & Conditions",
             text:
-              "*Starting from AED 157, callout fee applies based on the type, brand, capacity of the appliance unit, and location for each diagnosis.",
+              "*Starting from AED 187, callout fee applies based on the type, brand, capacity of the appliance unit, and location for each diagnosis.",
           },
         ],
       },
