@@ -126,7 +126,7 @@ const ACServiceSection = ({
 		{
 			title: "AC Technical Inspection Fee 1.5 to 3.0 Ton",
 			subtitle: "Chilled Water FCU AC",
-			price: "195.00",
+			price: "215.00",
 			color: "d-green",
 			details:
 				"AC inspection and diagnosis of insufficient cooling, over cooling, coils, valve strainer, actuator valve, supply grill for air quality. thermostat/sensor, air filter, capacitor, water leakage, drain pan, airflow issues, strange noises, verifying thermostat settings, AC electrical control and electric components, pipe, shutoff valves.",
@@ -134,7 +134,7 @@ const ACServiceSection = ({
 		{
 			title: "AC Technical Inspection Fee 1.5 to 3.5 Ton",
 			subtitle: "Ducted / Central AC",
-			price: "195.00",
+			price: "215.00",
 			color: "l-green",
 			details:
 				"AC inspection and diagnosis of insufficient cooling, over cooling, coils, thermostat/sensor, air filter, compressor, indoor/outdoor motors, capacitor, water leakage, drain pan, refrigerant level, airflow issues, strange noises, verifying thermostat settings, AC electrical control, electric components and pipe, shutoff valves, and actuator valve.",
@@ -272,7 +272,7 @@ const ACServiceSection = ({
 					{
 						name: "Inspection",
 						description: "Onsite technical inspection Fee",
-						price: "135 to 195 AED + VAT",
+						price: "135 to 215 AED + VAT",
 						warranty: "No Warranty",
 					},
 					{
@@ -303,7 +303,7 @@ const ACServiceSection = ({
 					{
 						name: "Inspection",
 						description: "There is a callout fee that applies each diagnosis.",
-						price: "165 to 195 AED +VAT",
+						price: "165 to 215 AED +VAT",
 						warranty: "",
 					},
 					{

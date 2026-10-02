@@ -6,7 +6,7 @@ const data = {
     {
       type: "Window AC 1.5 to 2.5 Ton",
       services: [
-        { name: "Inspection", description: "Onsite technical inspection Fee", price: "135 to 195 AED + VAT", warranty: "No Warranty" },
+        { name: "Inspection", description: "Onsite technical inspection Fee", price: "135 to 215 AED + VAT", warranty: "No Warranty" },
         { name: "Deep Cleaning Service", description: "Deep Cleaning Service and Gas topup", price: "245 to 360 AED", warranty: "2 Month" },
         { name: "Repair", description: "After the inspection, prices will be quoted based on the technical inspection report provided to the customer.", price: "-", warranty: "2 to 3 Month" },
         { name: "Part Replacement", description: "All warranty for spare part replacements should be valid for 3 month.", price: "-", warranty: "3 Month" }
@@ -15,7 +15,7 @@ const data = {
     {
       type: "Split AC 1.5 to 2.5 Ton",
       services: [
-        { name: "Inspection", description: "There is a callout fee that applies each diagnosis.", price: "165 to 195 AED +VAT", warranty: "" },
+        { name: "Inspection", description: "There is a callout fee that applies each diagnosis.", price: "165 to 215 AED +VAT", warranty: "" },
         { name: "Basic Service", description: "Cleaning service with water pressure pump of outdoor coils, air filter, and drain line, gas top-up As per to AC requirements.", price: "315 to 385 AED + VAT", warranty: "2 Month" },
         { name: "Deep Cleaning Service", description: "Cleaning service with water pressure pump of outdoor coils, indoor coils, air filter, and drain line, gas top-up As per to AC requirements.", price: "340 to 430 AED + VAT", warranty: "2 Month" },
         { name: "Repair", description: "After the inspection, prices will be quoted based on the technical inspection report provided to the customer.", price: "-", warranty: "2 to 3 Month" },

@@ -389,7 +389,7 @@ const CoverageArea = ({ subtitle, title, reviewsbg, titleSeo, description, Autho
                     <td className="ac_pricing_td ac_pricing_type fw-bold" rowSpan="5">Split AC 1.5 to 2.5 Ton</td>
                     <td className="ac_pricing_td fw-bold">Inspection</td>
                     <td className="ac_pricing_td">There is a callout fee that applies each diagnosis.</td>
-                    <td className="ac_pricing_td">195 AED+VAT</td>
+                    <td className="ac_pricing_td">215 AED+VAT</td>
                     <td className="ac_pricing_td">-</td>
                   </tr>
                   <tr className="ac_pricing_row">
@@ -423,7 +423,7 @@ const CoverageArea = ({ subtitle, title, reviewsbg, titleSeo, description, Autho
                     <td className="ac_pricing_td ac_pricing_type fw-bold" rowSpan="5">Central AC 1.5 to 2.5 Ton</td>
                     <td className="ac_pricing_td fw-bold">Inspection</td>
                     <td className="ac_pricing_td">There is a callout fee that applies each diagnosis.</td>
-                    <td className="ac_pricing_td">195 AED+VAT</td>
+                    <td className="ac_pricing_td">215 AED+VAT</td>
                     <td className="ac_pricing_td">-</td>
                   </tr>
                   <tr className="ac_pricing_row">
@@ -491,7 +491,7 @@ const CoverageArea = ({ subtitle, title, reviewsbg, titleSeo, description, Autho
                     <td className="ac_pricing_td ac_pricing_type fw-bold" rowSpan="5">Chill Water FCU 1.5 to 3.5 Ton</td>
                     <td className="ac_pricing_td fw-bold">Inspection</td>
                     <td className="ac_pricing_td">There is a callout fee that applies each diagnosis.</td>
-                    <td className="ac_pricing_td">195 AED+VAT</td>
+                    <td className="ac_pricing_td">215 AED+VAT</td>
                     <td className="ac_pricing_td">-</td>
                   </tr>
                   <tr className="ac_pricing_row">
