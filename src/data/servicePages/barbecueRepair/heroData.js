@@ -1,5 +1,4 @@
 const heroData = {
-  eyebrow: "FAJ Technical Services L.L.C. - Established 2010",
   title:
     "High Rated Barbeque Repair and Gas & Electric BBQ Grill Cleaning Service Near You, Dubai UAE",
   subtitle: "Barbecue Grill Repair, Deep Cleaning and Maintenance",

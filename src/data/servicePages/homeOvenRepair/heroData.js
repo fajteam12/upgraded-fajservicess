@@ -1,5 +1,4 @@
 const heroData = {
-  eyebrow: "FAJ Technical Services L.L.C.®",
   title: "Expert Oven Repair and Gas & Electric Oven Service Center Near You",
   subtitle: "Built-in Domestic Oven Repair in Dubai",
   paragraphs: [

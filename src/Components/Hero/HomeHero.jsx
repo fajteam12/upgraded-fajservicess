@@ -47,7 +47,7 @@ function PhoneIcon() {
 }
 
 function HomeHero({
-  eyebrow = "Trusted Technical Services Since 2010",
+  eyebrow = "",
   titleLines = defaultTitleLines,
   description = "FAJ Technical Services L.L.C provides professional repair, installation and maintenance solutions for homes and commercial facilities across Dubai.",
   features = defaultFeatures,
@@ -83,84 +83,84 @@ function HomeHero({
     image.srcSet || (useFallback ? image.srcSet : cloudflareSrcSet) || undefined;
 
   return (
-    <section className="faj-home-hero" aria-labelledby="faj-home-hero-title">
-      <div className="faj-home-hero__media">
-        <img
-          src="https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/new-homepage-design-images/hero-image-desktop/full"
-          srcSet="https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/new-homepage-design-images/hero-image-desktop/full"
-          sizes="100vw"
-          alt={image.alt}
-          width={image.width}
-          height={image.height}
-          loading="eager"
-          fetchPriority="high"
-          decoding="async"
-          onError={() => {
-            if (!useFallback && image.src) {
-              setUseFallback(true);
-            }
-          }}
-        />
-      </div>
+		<section className="faj-home-hero" aria-labelledby="faj-home-hero-title">
+			<div className="faj-home-hero__media">
+				<img
+					src="https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/new-homepage-design-images/hero-image-desktop/full"
+					srcSet="https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/new-homepage-design-images/hero-image-desktop/full"
+					sizes="100vw"
+					alt={image.alt}
+					width={image.width}
+					height={image.height}
+					loading="eager"
+					fetchPriority="high"
+					decoding="async"
+					onError={() => {
+						if (!useFallback && image.src) {
+							setUseFallback(true);
+						}
+					}}
+				/>
+			</div>
 
-      <div className="faj-home-hero__container">
-        <div className="faj-home-hero__content">
-          <p className="faj-home-hero__eyebrow">
-            <span aria-hidden="true" />
-            {eyebrow}
-          </p>
+			<div className="faj-home-hero__container">
+				<div className="faj-home-hero__content">
+					{eyebrow && (
+						<p className="faj-home-hero__eyebrow">
+							<span aria-hidden="true" />
+							{eyebrow}
+						</p>
+					)}
 
-          <h1 id="faj-home-hero-title" className="faj-home-hero__title">
-            {titleLines.map((line) => (
-              <span
-                key={line.text}
-                className={
-                  line.accent
-                    ? "faj-home-hero__title-accent"
-                    : undefined
-                }
-              >
-                {line.text}
-              </span>
-            ))}
-          </h1>
+					<h1 id="faj-home-hero-title" className="faj-home-hero__title">
+						{titleLines.map((line) => (
+							<span
+								key={line.text}
+								className={
+									line.accent ? "faj-home-hero__title-accent" : undefined
+								}
+							>
+								{line.text}
+							</span>
+						))}
+					</h1>
 
-          <p className="faj-home-hero__description">{description}</p>
+					<p className="faj-home-hero__description">{description}</p>
 
-          <ul className="faj-home-hero__features" aria-label="Service benefits">
-            {features.map((feature) => (
-              <li key={feature}>
-                <span aria-hidden="true" />
-                {feature}
-              </li>
-            ))}
-          </ul>
+					<ul className="faj-home-hero__features" aria-label="Service benefits">
+						{features.map((feature) => (
+							<li key={feature}>
+								<span aria-hidden="true" />
+								{feature}
+							</li>
+						))}
+					</ul>
 
-          <div className="faj-home-hero__actions">
-            {primaryAction && (
-              <Link
-                className="faj-home-hero__primary-action"
-                to={primaryAction.to}
-              >
-                {primaryAction.label}
-                <ArrowIcon />
-              </Link>
-            )}
+					<div className="faj-home-hero__actions">
+						{primaryAction && (
+							<Link
+								className="faj-home-hero__primary-action"
+								to={primaryAction.to}
+							>
+								{primaryAction.label}
+								<ArrowIcon />
+							</Link>
+						)}
 
-            {secondaryAction && (
-              <a
-                className="faj-home-hero__secondary-action"
-                href={secondaryAction.href}
-              >
-                <PhoneIcon />
-                {secondaryAction.label}
-              </a>
-            )}
-          </div>
-        </div>
-      </div>
-    </section>
-  );
+						{secondaryAction && (
+							<a
+								className="faj-home-hero__secondary-action"
+								href={secondaryAction.href}
+							>
+								<PhoneIcon />
+								{secondaryAction.label}
+							</a>
+						)}
+					</div>
+				</div>
+			</div>
+		</section>
+	);
 }
 
 export default memo(HomeHero);

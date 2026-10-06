@@ -1,5 +1,4 @@
 const heroData = {
-  eyebrow: "FAJ Technical Services L.L.C.®",
   title: "Trusted Fridge Repair, Freezer Maintenance and Refrigerator Service in Dubai",
   subtitle: "Refrigerator and Freezer Repair Near You",
   paragraphs: [

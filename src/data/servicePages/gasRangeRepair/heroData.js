@@ -1,5 +1,4 @@
 const heroData = {
-  eyebrow: "FAJ Technical Services L.L.C.®",
   title: "Top Gas Cooker Repair, Electric Stove and Cooking Range Service Center Near You",
   subtitle: "Gas Stove and Cooking Range Repair in Dubai",
   paragraphs: [

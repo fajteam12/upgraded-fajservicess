@@ -1,5 +1,4 @@
 const heroData = {
-  eyebrow: "Professional Coffee Machine Care",
   title:
     "Best Coffee Machine Maintenance Services and Repair Across Dubai and Abu Dhabi, UAE",
   paragraphs: [

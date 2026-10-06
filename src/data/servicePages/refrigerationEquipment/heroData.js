@@ -1,5 +1,4 @@
 const heroData = {
-  "eyebrow": "FAJ Technical Services L.L.C®",
   "title": "Top Quality Commercial Refrigeration Maintenance and Freezer & Chiller Repair Services Near You in Dubai",
   "subtitle": "Professional Cooling Support Since 2010",
   "paragraphs": [

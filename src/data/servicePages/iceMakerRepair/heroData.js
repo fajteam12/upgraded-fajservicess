@@ -1,5 +1,4 @@
 const heroData = {
-  eyebrow: "FAJ Technical Services L.L.C. - Established 2010",
   title:
     "Trusted Commercial Ice Maker Repair and Maintenance Services Near You, in Dubai, UAE",
   subtitle: "Commercial Ice Machine Repair, Cleaning and Maintenance",

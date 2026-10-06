@@ -1,5 +1,4 @@
 const heroData = {
-  eyebrow: "FAJ Technical Services L.L.C®",
   title: "Expert Home Appliances Repair and Service Center Near You in Dubai",
   subtitle: "Freestanding Appliance Specialists Since 2010",
   paragraphs: [

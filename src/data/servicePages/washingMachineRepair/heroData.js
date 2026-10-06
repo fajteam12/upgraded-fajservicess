@@ -1,5 +1,4 @@
 const heroData = {
-  eyebrow: "FAJ Technical Services L.L.C.®",
   title: "Affordable Washing Machine Repair and Maintenance Service in Dubai",
   subtitle: "Washing Machine, Washer Dryer and Laundry Appliance Service",
   paragraphs: [

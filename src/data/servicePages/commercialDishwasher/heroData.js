@@ -1,5 +1,4 @@
 const heroData = {
-  eyebrow: "FAJ Technical Services L.L.C®",
   title:
     "Top Quality Commercial Dishwasher Repair and Maintenance Services Near You, in Dubai, UAE",
   subtitle: "Commercial Dishwashing Specialists Since 2010",

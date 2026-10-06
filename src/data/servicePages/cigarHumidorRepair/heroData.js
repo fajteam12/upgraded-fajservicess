@@ -1,5 +1,4 @@
 const heroData = {
-  eyebrow: "FAJ Technical Services L.L.C. - Established 2010",
   title:
     "Premium Quality Cigar Humidor Repair and Electric Cigar Humidor Service Center Near You, Dubai UAE",
   subtitle: "Cigar Cabinet Humidifier Repair and Maintenance",

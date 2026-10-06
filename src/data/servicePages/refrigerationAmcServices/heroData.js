@@ -1,5 +1,4 @@
 const heroData = {
-  eyebrow: "Since 2010 • UAE Certified",
   title:
     "Top-Rated Commercial Refrigeration Maintenance Contract Services - AMC in Dubai, UAE",
   subtitle: "Commercial Refrigeration AMC and PPM Services",

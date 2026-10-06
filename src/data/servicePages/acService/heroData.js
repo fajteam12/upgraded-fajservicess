@@ -1,5 +1,4 @@
 const heroData = {
-  eyebrow: "FAJ Technical Services L.L.C.® · Specialist AC Care",
   title: "Best AC Repair and Maintenance Services in Dubai",
   subtitle: "Improve the comfort of your home and business premises with air conditioning cooling. Maintain a perfect temperature year-round with our expert AC technicians.",
   paragraphs: [

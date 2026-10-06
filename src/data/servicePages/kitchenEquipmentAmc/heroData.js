@@ -1,5 +1,4 @@
 const heroData = {
-  eyebrow: "Professional Kitchen Maintenance and AMC Cover",
   title:
     "Top Commercial Kitchen Equipment Maintenance Contract Services - AMC in Dubai, UAE",
   subtitle: "Commercial Kitchen Equipment AMC and PPM",

@@ -1351,3 +1351,953 @@
     animation: none;
   }
 }
+
+/* =========================================================
+   COVERAGE AREA - SECTION HEADERS
+   ========================================================= */
+
+.coverage-ai-heading {
+  max-width: 768px;
+  margin: 0 auto 64px;
+  text-align: center;
+}
+
+.coverage-ai-heading h2 {
+  margin: 0;
+  color: #0b1f2a;
+  font-size: clamp(1.875rem, 4vw, 2.5rem);
+  font-weight: 900;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+.coverage-ai-heading p {
+  max-width: 720px;
+  margin: 16px auto 0;
+  color: #55666f;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.75;
+}
+
+.coverage-ai-heading__sub {
+  margin: 12px 0 0;
+  color: #003048;
+  font-size: 0.875rem;
+  font-weight: 800;
+  line-height: 1.5;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   PROCESS CARDS - AI STUDIO DESIGN
+   ========================================================= */
+
+.coverage-process-section {
+  padding: 80px 0;
+  background: #f5f8fa;
+  border-bottom: 1px solid #e5edf2;
+}
+
+.coverage-process__cards {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+  height: 460px;
+}
+
+.coverage-process__card {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-width: 0;
+  padding: 24px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  color: #fff;
+  background: #0b1f2a;
+  box-shadow: 0 4px 12px rgba(0, 48, 72, 0.1);
+  appearance: none;
+  cursor: pointer;
+  text-align: left;
+  transition:
+    flex 0.5s ease-out,
+    opacity 0.5s ease-out,
+    border-color 0.5s ease-out,
+    box-shadow 0.5s ease-out,
+    transform 0.5s ease-out;
+}
+
+.coverage-process__card.is-active {
+  z-index: 20;
+  flex: 3.5 1 0;
+  border-color: #4fc3d8;
+  box-shadow:
+    0 25px 50px rgba(0, 48, 72, 0.3),
+    0 0 0 2px rgba(79, 195, 216, 0.4);
+}
+
+.coverage-process__cards.has-active
+  .coverage-process__card:not(.is-active) {
+  flex: 0.75 1 0;
+  opacity: 0.85;
+}
+
+.coverage-process__card:focus-visible {
+  outline: 3px solid rgba(79, 195, 216, 0.6);
+  outline-offset: 3px;
+}
+
+.coverage-process__image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transform: scale(1);
+  transition: transform 0.7s ease-out;
+}
+
+.coverage-process__card:hover
+  .coverage-process__image {
+  transform: scale(1.05);
+}
+
+.coverage-process__card.is-active
+  .coverage-process__image {
+  transform: scale(1.1);
+}
+
+.coverage-process__overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(
+      to top,
+      rgba(11, 31, 42, 1) 0%,
+      rgba(11, 31, 42, 0.75) 52%,
+      rgba(11, 31, 42, 0.5) 100%
+    );
+  transition: background 0.5s ease;
+}
+
+.coverage-process__card.is-active
+  .coverage-process__overlay {
+  background:
+    linear-gradient(
+      to top,
+      rgba(11, 31, 42, 1) 0%,
+      rgba(11, 31, 42, 0.85) 54%,
+      rgba(11, 31, 42, 0.4) 100%
+    );
+}
+
+.coverage-process__step {
+  position: absolute;
+  z-index: 3;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(10px);
+  font-size: 0.875rem;
+  font-weight: 900;
+  line-height: 1;
+  transition:
+    color 0.5s ease,
+    background 0.5s ease,
+    transform 0.5s ease,
+    box-shadow 0.5s ease;
+}
+
+.coverage-process__card.is-active
+  .coverage-process__step {
+  color: #0b1f2a;
+  background: #4fc3d8;
+  border-color: #4fc3d8;
+  box-shadow:
+    0 0 0 4px rgba(79, 195, 216, 0.3),
+    0 4px 10px rgba(0, 0, 0, 0.12);
+  transform: scale(1.1);
+}
+
+.coverage-process__content {
+  position: relative;
+  z-index: 3;
+  display: block;
+  width: 100%;
+}
+
+.coverage-process__title {
+  display: block;
+  color: rgba(255, 255, 255, 0.95);
+  font-size: clamp(0.875rem, 1.3vw, 1rem);
+  font-weight: 900;
+  line-height: 1.35;
+  letter-spacing: -0.015em;
+  text-transform: uppercase;
+  transition:
+    font-size 0.3s ease,
+    margin 0.3s ease,
+    color 0.3s ease;
+}
+
+.coverage-process__card.is-active
+  .coverage-process__title {
+  margin-bottom: 12px;
+  color: #fff;
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+}
+
+.coverage-process__description {
+  display: block;
+  max-height: 0;
+  padding-left: 0;
+  overflow: hidden;
+  border-left: 0 solid #4fc3d8;
+  color: #e5e7eb;
+  font-size: clamp(0.75rem, 1vw, 0.875rem);
+  font-weight: 400;
+  line-height: 1.7;
+  opacity: 0;
+  transform: translateY(16px);
+  transition:
+    max-height 0.5s ease-out,
+    opacity 0.5s ease-out,
+    transform 0.5s ease-out,
+    padding 0.5s ease-out,
+    border-width 0.5s ease-out;
+}
+
+.coverage-process__card.is-active
+  .coverage-process__description {
+  max-height: 240px;
+  padding-left: 12px;
+  border-left-width: 2px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* =========================================================
+   PROBLEM / SOLUTION - AI STUDIO DESIGN
+   ========================================================= */
+
+.coverage-issues-section {
+  padding: 80px 0;
+  background: #fff;
+  border-bottom: 1px solid #e5edf2;
+}
+
+.coverage-issues__table {
+  overflow: hidden;
+  border: 1px solid #e5edf2;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 4px 16px rgba(0, 48, 72, 0.09);
+}
+
+.coverage-issues__rows {
+  display: grid;
+}
+
+.coverage-issues__row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-bottom: 1px solid #e5edf2;
+  transition: background 0.2s ease;
+}
+
+.coverage-issues__row:last-child {
+  border-bottom: 0;
+}
+
+.coverage-issues__row:nth-child(odd) {
+  background: #fff;
+}
+
+.coverage-issues__row:nth-child(even) {
+  background: rgba(245, 248, 250, 0.4);
+}
+
+.coverage-issues__row:hover {
+  background: rgba(245, 248, 250, 0.8);
+}
+
+.coverage-issues__problem,
+.coverage-issues__solution {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  min-width: 0;
+  padding: 28px;
+}
+
+.coverage-issues__problem {
+  border-right: 1px solid #e5edf2;
+}
+
+.coverage-issues__solution {
+  background: rgba(236, 253, 245, 0.2);
+}
+
+.coverage-issues__icon {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  margin-top: 4px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.coverage-issues__icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+.coverage-issues__icon--problem {
+  color: #dc2626;
+  background: #fee2e2;
+  border: 1px solid #fecaca;
+}
+
+.coverage-issues__icon--solution {
+  color: #fff;
+  background: #10b981;
+  border: 1px solid #059669;
+}
+
+.coverage-issues__copy {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.coverage-issues__copy h3 {
+  margin: 0 0 8px;
+  color: #0b1f2a;
+  font-size: clamp(0.875rem, 1.2vw, 1rem);
+  font-weight: 900;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+}
+
+.coverage-issues__copy h4 {
+  margin: 0 0 8px;
+  color: #047857;
+  font-size: clamp(0.75rem, 1vw, 0.875rem);
+  font-weight: 900;
+  line-height: 1.4;
+}
+
+.coverage-issues__copy p {
+  margin: 0;
+  color: #55666f;
+  font-size: clamp(0.75rem, 1vw, 0.875rem);
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.coverage-issues__solution
+  .coverage-issues__copy p {
+  color: #1f2937;
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   FEATURE DETAILS - AI STUDIO DESIGN
+   ========================================================= */
+
+.coverage-feature-section {
+  padding: 96px 0;
+  background: #fff;
+  border-bottom: 1px solid #e5edf2;
+}
+
+.coverage-feature__stack {
+  display: grid;
+  gap: 48px;
+}
+
+.coverage-feature__card {
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  align-items: stretch;
+  overflow: hidden;
+  border: 1px solid #e5edf2;
+  border-radius: 24px;
+  background: #f5f8fa;
+  box-shadow: 0 2px 8px rgba(0, 48, 72, 0.06);
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+.coverage-feature__card:hover {
+  box-shadow: 0 20px 38px rgba(0, 48, 72, 0.13);
+}
+
+.coverage-feature__card.is-reversed {
+  grid-template-columns: 5fr 7fr;
+}
+
+.coverage-feature__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+  padding: clamp(32px, 5vw, 48px);
+}
+
+.coverage-feature__card.is-reversed
+  .coverage-feature__content {
+  order: 2;
+}
+
+.coverage-feature__content-inner {
+  width: 100%;
+}
+
+.coverage-feature__content h3 {
+  margin: 0 0 12px;
+  color: #0b1f2a;
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+.coverage-feature__description {
+  margin: 0 0 24px;
+  color: #55666f;
+  font-size: clamp(0.75rem, 1vw, 0.875rem);
+  font-weight: 400;
+  line-height: 1.75;
+}
+
+.coverage-feature__detail-card {
+  padding: 24px;
+  border: 1px solid #e5edf2;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 1px 5px rgba(0, 48, 72, 0.04);
+}
+
+.coverage-feature__detail-card h4 {
+  position: relative;
+  margin: 0 0 10px;
+  padding-left: 18px;
+  color: #0b1f2a;
+  font-size: 0.75rem;
+  font-weight: 900;
+  line-height: 1.5;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.coverage-feature__detail-card h4::before {
+  position: absolute;
+  top: 2px;
+  bottom: 2px;
+  left: 0;
+  width: 3px;
+  border-radius: 99px;
+  background: #007fa3;
+  content: "";
+}
+
+.coverage-feature__detail-card p {
+  margin: 0;
+  color: #55666f;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.75;
+}
+
+.coverage-feature__media {
+  position: relative;
+  min-width: 0;
+  min-height: 420px;
+  overflow: hidden;
+  background: #e9eef1;
+}
+
+.coverage-feature__card.is-reversed
+  .coverage-feature__media {
+  order: 1;
+}
+
+.coverage-feature__media img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transform: scale(1);
+  transition: transform 0.7s ease;
+}
+
+.coverage-feature__card:hover
+  .coverage-feature__media img {
+  transform: scale(1.05);
+}
+
+
+/* =========================================================
+   PRICING TABLE - AI STUDIO DESIGN
+   ========================================================= */
+
+.coverage-pricing-section {
+  padding: 96px 0;
+  background: #f5f8fa;
+  border-bottom: 1px solid #e5edf2;
+}
+
+.coverage-ai-heading--pricing {
+  margin-bottom: 48px;
+}
+
+.coverage-pricing__shell {
+  overflow: hidden;
+  border: 1px solid #e5edf2;
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0 12px 32px rgba(0, 48, 72, 0.11);
+}
+
+.coverage-pricing__scroll {
+  width: 100%;
+  max-height: 460px;
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #007fa3 #eef3f6;
+}
+
+.coverage-pricing__scroll::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+
+.coverage-pricing__scroll::-webkit-scrollbar-track {
+  background: #eef3f6;
+}
+
+.coverage-pricing__scroll::-webkit-scrollbar-thumb {
+  border: 2px solid #eef3f6;
+  border-radius: 999px;
+  background: #007fa3;
+}
+
+.coverage-pricing__scroll::-webkit-scrollbar-thumb:hover {
+  background: #003048;
+}
+
+.coverage-pricing__table {
+  width: 100%;
+  min-width: 900px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.coverage-pricing__table thead {
+  position: sticky;
+  z-index: 10;
+  top: 0;
+}
+
+.coverage-pricing__table thead th {
+  padding: 16px 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+  background: #003048;
+  font-size: 0.75rem;
+  font-weight: 900;
+  line-height: 1.4;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.coverage-pricing__table tbody {
+  background: #fff;
+}
+
+.coverage-pricing__table tbody tr {
+  border-bottom: 1px solid #e5edf2;
+  transition: background 0.2s ease;
+}
+
+.coverage-pricing__table tbody tr:last-child {
+  border-bottom: 0;
+}
+
+.coverage-pricing__table tbody tr:hover {
+  background: rgba(245, 248, 250, 0.7);
+}
+
+.coverage-pricing__table td,
+.coverage-pricing__table tbody th {
+  padding: 16px 24px;
+  vertical-align: middle;
+}
+
+.coverage-pricing__type {
+  min-width: 185px;
+  color: #0b1f2a;
+  background: #fff;
+  font-size: 0.75rem;
+  font-weight: 800;
+  line-height: 1.55;
+}
+
+.coverage-pricing__type-inner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.coverage-pricing__type-dot {
+  flex: 0 0 auto;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #003048;
+}
+
+.coverage-pricing__service {
+  min-width: 150px;
+}
+
+.coverage-pricing__service span {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 6px;
+  color: #003048;
+  background: rgba(0, 48, 72, 0.1);
+  font-size: 0.6875rem;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.coverage-pricing__description {
+  min-width: 300px;
+  max-width: 390px;
+  color: #55666f;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.65;
+}
+
+.coverage-pricing__price {
+  min-width: 150px;
+  color: #007fa3;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", monospace;
+  font-size: 0.875rem;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.coverage-pricing__warranty {
+  min-width: 130px;
+  white-space: nowrap;
+}
+
+.coverage-pricing__warranty > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  color: #4b5563;
+  background: #f3f4f6;
+  font-size: 0.6875rem;
+  font-weight: 700;
+}
+
+.coverage-pricing__warranty > span.has-warranty {
+  color: #065f46;
+  background: #d1fae5;
+}
+
+.coverage-pricing__warranty svg {
+  width: 14px;
+  height: 14px;
+  flex: 0 0 auto;
+}
+
+
+/* =========================================================
+   COVERAGE NEW SECTIONS - RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1023px) {
+  .coverage-ai-heading {
+    margin-bottom: 48px;
+  }
+
+  .coverage-process__cards {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .coverage-process__card,
+  .coverage-process__card.is-active,
+  .coverage-process__cards.has-active
+    .coverage-process__card:not(.is-active) {
+    flex: none;
+    width: 100%;
+    min-height: 230px;
+    opacity: 1;
+  }
+
+  .coverage-process__card.is-active {
+    min-height: 340px;
+  }
+
+  .coverage-process__title,
+  .coverage-process__card.is-active
+    .coverage-process__title {
+    font-size: 1.125rem;
+  }
+
+  .coverage-feature__card,
+  .coverage-feature__card.is-reversed {
+    grid-template-columns: 1fr;
+  }
+
+  .coverage-feature__content,
+  .coverage-feature__card.is-reversed
+    .coverage-feature__content {
+    order: 2;
+  }
+
+  .coverage-feature__media,
+  .coverage-feature__card.is-reversed
+    .coverage-feature__media {
+    order: 1;
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 767px) {
+  .coverage-process-section,
+  .coverage-issues-section {
+    padding: 64px 0;
+  }
+
+  .coverage-feature-section,
+  .coverage-pricing-section {
+    padding: 72px 0;
+  }
+
+  .coverage-ai-heading {
+    margin-bottom: 40px;
+  }
+
+  .coverage-ai-heading h2 {
+    font-size: clamp(1.75rem, 8vw, 2.25rem);
+  }
+
+  .coverage-issues__row {
+    grid-template-columns: 1fr;
+  }
+
+  .coverage-issues__problem {
+    border-right: 0;
+    border-bottom: 1px solid #e5edf2;
+  }
+
+  .coverage-issues__problem,
+  .coverage-issues__solution {
+    padding: 24px;
+  }
+
+  .coverage-feature__stack {
+    gap: 32px;
+  }
+
+  .coverage-feature__content {
+    padding: 30px 24px;
+  }
+
+  .coverage-feature__media,
+  .coverage-feature__card.is-reversed
+    .coverage-feature__media {
+    min-height: 280px;
+  }
+
+  .coverage-feature__detail-card {
+    padding: 20px;
+  }
+
+  .coverage-pricing__table {
+    min-width: 820px;
+  }
+
+  .coverage-pricing__table thead th,
+  .coverage-pricing__table td,
+  .coverage-pricing__table tbody th {
+    padding: 14px 18px;
+  }
+}
+
+@media (max-width: 479px) {
+  .coverage-process__card,
+  .coverage-process__card.is-active {
+    min-height: 260px;
+    padding: 20px;
+  }
+
+  .coverage-process__card.is-active {
+    min-height: 330px;
+  }
+
+  .coverage-process__step {
+    top: 16px;
+    left: 16px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .coverage-issues__problem,
+  .coverage-issues__solution {
+    gap: 12px;
+    padding: 20px 18px;
+  }
+
+  .coverage-feature__media,
+  .coverage-feature__card.is-reversed
+    .coverage-feature__media {
+    min-height: 240px;
+  }
+
+  .coverage-feature__content {
+    padding: 26px 20px;
+  }
+
+  .coverage-feature__detail-card {
+    padding: 18px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .coverage-process__card,
+  .coverage-process__image,
+  .coverage-process__step,
+  .coverage-process__title,
+  .coverage-process__description,
+  .coverage-feature__card,
+  .coverage-feature__media img,
+  .coverage-issues__row {
+    transition: none;
+  }
+}
+
+@media (max-width: 1023px) {
+  .coverage-process__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    height: auto;
+  }
+
+  .coverage-process__card,
+  .coverage-process__card.is-active,
+  .coverage-process__cards.has-active
+    .coverage-process__card:not(.is-active) {
+    flex: none;
+    width: 100%;
+    min-height: 320px;
+    opacity: 1;
+  }
+
+  .coverage-process__card.is-active {
+    min-height: 320px;
+  }
+
+  .coverage-process__title,
+  .coverage-process__card.is-active
+    .coverage-process__title {
+    margin-bottom: 12px;
+    color: #fff;
+    font-size: 1.125rem;
+  }
+
+  .coverage-process__description,
+  .coverage-process__card.is-active
+    .coverage-process__description {
+    display: block;
+    max-height: none;
+    padding-left: 12px;
+    border-left: 2px solid #4fc3d8;
+    color: #e5e7eb;
+    opacity: 1;
+    transform: none;
+  }
+
+  .coverage-process__card:hover
+    .coverage-process__image,
+  .coverage-process__card.is-active
+    .coverage-process__image {
+    transform: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .coverage-process__card,
+  .coverage-process__card.is-active {
+    min-height: 300px;
+    padding: 22px;
+  }
+
+  .coverage-process__description,
+  .coverage-process__card.is-active
+    .coverage-process__description {
+    font-size: 0.8125rem;
+    line-height: 1.7;
+  }
+}
+
+@media (max-width: 479px) {
+  .coverage-process__card,
+  .coverage-process__card.is-active {
+    min-height: 290px;
+    padding: 20px;
+  }
+
+  .coverage-process__title,
+  .coverage-process__card.is-active
+    .coverage-process__title {
+    font-size: 1rem;
+  }
+
+  .coverage-process__description,
+  .coverage-process__card.is-active
+    .coverage-process__description {
+    font-size: 0.78rem;
+  }
+}

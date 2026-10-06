@@ -1,5 +1,4 @@
 const heroData = {
-  eyebrow: "Specialized Electronic Circuit Board Services",
   title:
     "Top-Quality Electronic PCB Repair and AC / DC PCB Board Service Near You, in Dubai",
   paragraphs: [

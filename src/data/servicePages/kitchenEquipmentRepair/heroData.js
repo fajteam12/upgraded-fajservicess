@@ -1,5 +1,4 @@
 const heroData = {
-  eyebrow: "Industrial and Commercial Kitchen Care",
   title:
     "Expert Commercial Kitchen Equipment Maintenance Services and Repair Near You, in Dubai, UAE",
   subtitle: "Commercial Catering Equipment Repair",

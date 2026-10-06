@@ -1,5 +1,4 @@
 const heroData = {
-  eyebrow: "Established Since 2010 - Division of FAJ",
   title:
     "Top Commercial Kitchen Equipment Maintenance and Servicing Near You, Dubai, Sharjah, Abu Dhabi, UAE",
   subtitle: "Commercial Food-Service Equipment Specialists",

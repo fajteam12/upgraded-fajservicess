@@ -1,5 +1,4 @@
 const heroData = {
-  eyebrow: "Since 2010 • UAE Certified",
   title:
     "Top Quality Commercial Refrigeration Maintenance and Freezer & Chiller Repair Services Near You, in Dubai",
   subtitle: "Commercial Refrigeration Maintenance in Dubai",

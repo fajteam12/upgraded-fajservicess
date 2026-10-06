@@ -1,5 +1,4 @@
 const heroData = {
-  eyebrow: "FAJ Technical Services L.L.C®",
   title:
     "Top-Rated Commercial Laundry Equipment Repair & Maintenance Services Near You, in Dubai, UAE",
   subtitle: "Professional Washer and Dryer Support Since 2010",

@@ -1,5 +1,5 @@
 const heroData = {
-  eyebrow: "FAJ Technical Services L.L.C.®", title: "Best Home Appliances AMC Services and Maintenance Contracts in Dubai",
+  title: "Best Home Appliances AMC Services and Maintenance Contracts in Dubai",
   subtitle: "Planned Preventive Maintenance for Domestic and Commercial Appliances",
   paragraphs: [
     "FAJ has been providing commercial kitchen equipment and appliance maintenance contract services in Dubai, Sharjah, and Abu Dhabi since 2010. Regular Planned Preventive Maintenance (PPM) is essential for keeping appliances efficient and minimising unexpected failures. As appliances age, they become more prone to breakdowns, often at inconvenient times.",

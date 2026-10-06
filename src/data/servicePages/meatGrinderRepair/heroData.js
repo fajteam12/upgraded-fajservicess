@@ -1,5 +1,4 @@
 const heroData = {
-  eyebrow: "Butchery & Food Preparation Equipment",
   title:
     "Best Meat Grinder Repair and Food Equipment Maintenance Services Near You in Dubai, UAE",
   subtitle: "Commercial Meat Grinder Specialists Since 2010",

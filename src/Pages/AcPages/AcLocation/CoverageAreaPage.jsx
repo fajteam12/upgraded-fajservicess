@@ -4,7 +4,6 @@ import CoverageArea from "../../../Components/ServiceDetails/AcDetail/AcLocation
 const CoverageAreaPage = () => {
   return (
    <div className="serviceDetails">
-      <Breadcrumb />
       <CoverageArea />
     </div>
   )

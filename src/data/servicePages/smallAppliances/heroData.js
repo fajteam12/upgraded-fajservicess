@@ -1,5 +1,4 @@
 const heroData = {
-  eyebrow: "FAJ Technical Services L.L.C. - Established 2010",
   title:
     "Best Small Home Appliances Service Center and Household Appliance Repair Near You, Dubai",
   subtitle: "Fast and Professional Small Appliance Repair",

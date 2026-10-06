@@ -1,5 +1,4 @@
 const heroData = {
-  eyebrow: "FAJ Technical Services L.L.C. - Established 2010",
   title: "Best Robot Vacuum Cleaner Repair and Service Center in Dubai, UAE",
   subtitle: "Robotic, Cordless and Conventional Vacuum Cleaner Specialists",
   paragraphs: [

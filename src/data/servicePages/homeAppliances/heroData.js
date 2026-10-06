@@ -1,5 +1,4 @@
 const heroData = {
-  eyebrow: "FAJ Technical Services L.L.C. - Established 2010",
   title: "Cost-Effective Home Appliance Repair and Service Center Near You",
   subtitle: "Expert Appliance Repair Near You",
   paragraphs: [

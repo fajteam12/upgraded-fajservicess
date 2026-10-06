@@ -1,5 +1,4 @@
 const heroData = {
-  "eyebrow": "FAJ Technical Services L.L.C • Since 2010",
   "title": "Top-Rated Coffee Machine Repair and Maintenance Services in Dubai, Sharjah, and Abu Dhabi, UAE",
   "subtitle": "Professional Coffee Machine Repairs in Dubai, Sharjah, and Abu Dhabi",
   "paragraphs": [

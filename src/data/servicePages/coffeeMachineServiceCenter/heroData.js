@@ -1,5 +1,4 @@
 const heroData = {
-  eyebrow: "FAJ Technical Services L.L.C.® · Elite Coffee Care",
   title: "Affordable Coffee Machine Service Center and Repair in Dubai, Sharjah & Abu Dhabi, UAE",
   subtitle: "Since 2010, FAJ has been providing reliable and trusted expertise in installation, best coffee machine service and maintenance, specialising in coffee machine repair in Dubai, serving home coffee machine service, office coffee machine repair, restaurant coffee machine maintenance, and cafes.",
   paragraphs: [

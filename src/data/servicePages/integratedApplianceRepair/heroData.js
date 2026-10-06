@@ -1,5 +1,5 @@
 const heroData = {
-  eyebrow: "FAJ Technical Services L.L.C.®", title: "Built-In Appliances Repair and Integrated Appliance Service in Dubai",
+  title: "Built-In Appliances Repair and Integrated Appliance Service in Dubai",
   subtitle: "Installation, Repair and Maintenance for Integrated Appliances",
   paragraphs: [
     "FAJ Technical Services L.L.C has been providing reliable and quality services, including installation, repair, and maintenance of built-in appliances, since 2010. We have completed projects in Dubai, Sharjah, and Abu Dhabi.",

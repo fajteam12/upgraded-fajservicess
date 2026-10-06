@@ -1,5 +1,4 @@
 const heroData = {
-  eyebrow: "FAJ Technical Services L.L.C. • Established 2010",
   title:
     "Top-Rated Air Conditioning Maintenance, Repair, and Services Company in Dubai, UAE",
   paragraphs: [

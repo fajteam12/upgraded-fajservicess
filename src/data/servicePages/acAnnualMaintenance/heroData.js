@@ -1,5 +1,4 @@
 const heroData = {
-  eyebrow: "FAJ Technical Services L.L.C.®",
   title: "Best AC Annual Maintenance Contract Services in Dubai, UAE",
   subtitle: "Planned Preventive Maintenance for Residential and Commercial AC Systems",
   paragraphs: [

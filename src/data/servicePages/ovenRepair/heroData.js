@@ -1,5 +1,4 @@
 const heroData = {
-  eyebrow: "Professional Cooking Equipment Solutions",
   title:
     "Top-Rated Commercial Oven Repair and Pizza Oven Maintenance Services Near You, Dubai, UAE",
   subtitle: "Commercial Kitchen Oven Repair",

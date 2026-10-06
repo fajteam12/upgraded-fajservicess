@@ -1,5 +1,4 @@
 const heroData = {
-  eyebrow: "FAJ Technical Services L.L.C.®",
   title: "Fast Dishwasher Repair and Dishwasher Service Center Near You",
   subtitle: "Dishwasher Repair and Maintenance in Dubai",
   paragraphs: [

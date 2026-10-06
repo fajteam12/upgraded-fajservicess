@@ -1,5 +1,4 @@
 const heroData = {
-  "eyebrow": "FAJ Technical Services L.L.C®",
   "title": "Best Commercial Cooking Appliances Repair & Maintenance Servicing Near You in Dubai, UAE",
   "subtitle": "Commercial Catering Equipment Specialists Since 2010",
   "paragraphs": [
