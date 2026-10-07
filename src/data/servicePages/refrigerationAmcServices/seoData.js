@@ -1,7 +1,7 @@
 const seoData = {
   title: "Refrigeration Annual Maintenance Contract Services in Dubai",
   description:
-    "Commercial refrigeration AMC and PPM services in Dubai for cold rooms, walk-in coolers, freezers, chillers and display refrigeration systems.",
+    "FAJ offers commercial refrigeration, including restaurant, hotel, hospital freezer, chiller, cold room, refrigerator annual maintenance contract services Dubai",
   keywords:
     "refrigeration AMC Dubai, commercial refrigeration maintenance contract, refrigeration PPM service, cold room AMC, freezer maintenance contract",
   author: "FAJ Technical Services L.L.C.",

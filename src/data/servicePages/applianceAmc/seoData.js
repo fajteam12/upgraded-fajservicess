@@ -1,6 +1,6 @@
 const seoData = {
-  title: "Home Appliance AMC Dubai | Annual Maintenance Contract",
-  description: "Home appliance AMC services in Dubai with planned preventive maintenance, priority support and flexible 3, 6 and 12-month maintenance contracts.",
+  title: "Home Appliances AMC Services | Maintenance Contract Dubai",
+  description: "Explore reliable home appliances AMC services in Dubai. FAJ provides expert annual maintenance contracts for both built-in and freestanding appliances",
   keywords: "home appliance AMC Dubai, annual maintenance contract, appliance maintenance contract, PPM services, kitchen appliance AMC",
   author: "FAJ Technical Services L.L.C.", businessName: "FAJ Home Appliance AMC Services",
   url: "https://www.fajservices.ae/services/home-appliances-repair/appliances-amc-service/",

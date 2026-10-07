@@ -1,7 +1,7 @@
 const seoData = {
   title: "Home Appliances Repair and Service Center Near You in Dubai",
   description:
-    "Book home appliance repair with FAJ Service Center. Expert technicians repair washing machines, refrigerators, ovens, dishwashers and other appliances.",
+    "Book your home appliance repair today with FAJ Service Center. We will send an expert technician to fix your washing machine, fridge or dishwasher",
   keywords:
     "home appliance repair Dubai, appliance service center near me, washing machine repair, refrigerator repair, oven repair, dishwasher service Dubai",
   author: "FAJ Technical Services L.L.C.",

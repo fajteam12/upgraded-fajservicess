@@ -1,7 +1,7 @@
 const seoData = {
-  title: "Robot Vacuum Cleaner Repair & Service Center Dubai | FAJ",
+  title: "Best Robot Vacuum Cleaner Repair | Top Vacuum Service Center",
   description:
-    "Robot vacuum cleaner repair, diagnostics, cleaning and maintenance in Dubai, Sharjah and Abu Dhabi for Roborock, Ecovacs, Roomba, Dyson and more.",
+    "Affordable Robot vacuum cleaner repair and service in Dubai. Call FAJ for upright, canister & wet-dry vacuum cleaner fix near you تصليح وخدمات مكنسة كهربائية",
   keywords:
     "robot vacuum cleaner repair Dubai, vacuum cleaner service center, Roborock repair Dubai, Ecovacs repair Dubai, Roomba repair UAE, Dyson vacuum repair",
   author: "FAJ Technical Services L.L.C.",

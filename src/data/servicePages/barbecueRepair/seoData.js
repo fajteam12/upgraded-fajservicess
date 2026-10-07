@@ -1,7 +1,7 @@
 const seoData = {
   title: "Barbeque Repair in Dubai | BBQ Grill Cleaning Service Near You",
   description:
-    "Professional barbecue repair in Dubai. Book BBQ grill cleaning, built-in gas grill burner service, electric BBQ deep cleaning and maintenance.",
+    "Professional barbecue repair in Dubai. Book now for BBQ grill cleaning, built-in gas grill burner service, oven & electric BBQ deep cleaning & maintenance",
   keywords:
     "BBQ repair, BBQ grill cleaning service, barbeque repair Dubai, Weber repair, electric BBQ grill repair Dubai",
   author: "FAJ Technical Services L.L.C.",

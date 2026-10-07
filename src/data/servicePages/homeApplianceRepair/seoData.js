@@ -1,7 +1,7 @@
 const seoData = {
-  title: "Home Appliances Repair | Appliance Service Center Near You",
+  title: "Home Appliances Repair | Appliances Service Center Near You",
   description:
-    "Top-rated home appliance repair in Dubai for refrigerators, washing machines, dryers, dishwashers, ovens, stoves and freezers, with installation and AMC support.",
+    "Top-rated home appliances repair and service in Dubai, UAE. Get FAJ experts for tumble dryer, stove, dish washer, fridge & oven service center nearby",
   keywords:
     "appliance repair Dubai, home appliance service Dubai, appliance repair near me, washing machine repair Dubai, refrigerator repair Dubai, dishwasher repair Dubai, oven repair Dubai, dryer repair Dubai",
   author: "FAJ Technical Services L.L.C.",

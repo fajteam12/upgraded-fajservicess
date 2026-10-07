@@ -1,6 +1,6 @@
 const seoData = {
-  title: "AC Annual Maintenance Contract Dubai | AC AMC Services",
-  description: "AC annual maintenance contracts in Dubai with scheduled PPM visits, priority support and flexible 3, 6 and 12-month air-conditioning service plans.",
+  title: "Best AC Annual Maintenance Contract Services in Dubai | AC AMC",
+  description: "FAJ has been offering an AC annual maintenance contract in Dubai. A regular maintenance agreement (AMC) service saves costs in your yearly budget",
   keywords: "AC annual maintenance contract Dubai, AC AMC Dubai, air conditioning maintenance contract, AC PPM services, annual AC service contract",
   author: "FAJ Technical Services L.L.C.", businessName: "FAJ AC Annual Maintenance Services",
   url: "https://www.fajservices.ae/services/air-conditioning-repair/ac-annual-maintenance-contract/",

@@ -1,7 +1,7 @@
 const seoData = {
-  title: "Meat Grinder Repair & Maintenance Service Dubai | FAJ",
+  title: "Meat Grinder Repair | Commercial Food Prep Equipment Service",
   description:
-    "Professional commercial meat grinder repair and maintenance in Dubai for motor faults, jams, worn blades, leaks and overheating, with AMC support.",
+    "Book an expert meat grinder repair in Dubai. FAJ offers commercial food prep equipment, vacuum sealers & food processor maintenance service near you",
   keywords:
     "meat grinder repair Dubai, commercial meat grinder maintenance, meat mincer repair, butcher equipment repair, grinder blade service, meat grinder AMC Dubai",
   author: "FAJ Technical Services L.L.C.",

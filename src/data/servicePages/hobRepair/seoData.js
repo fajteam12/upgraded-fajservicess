@@ -1,7 +1,7 @@
 const seoData = {
-  title: "Hob Repair Service Dubai | Gas and Electric Stove Repair",
+  title: "Induction Hob Repair and Cooktop Service Center Near You, Dubai",
   description:
-    "Same-day hob repair in Dubai for induction, ceramic, gas and electric cooker hobs. Professional inspection, cleaning, installation and maintenance support.",
+    "Having issues with your hob repair in Dubai? Book a service with us for the best gas or electric stove and cooker service nearby, with a parts warranty",
   keywords:
     "hob repair Dubai, induction hob repair, gas stove repair Dubai, electric hob service, cooker hob maintenance, hob installation Dubai",
   author: "FAJ Technical Services L.L.C.",

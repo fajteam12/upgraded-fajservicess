@@ -1,6 +1,6 @@
 const seoData = {
-  title: "Built-In Appliance Repair Dubai | Integrated Appliance Service",
-  description: "Professional built-in appliance repair in Dubai for integrated refrigerators, ovens, dishwashers, washers and coffee machines. Book service today.",
+  title: "Built in Appliances Repair and Service Center Near You, Dubai",
+  description: "FAJ provide the best built-in appliance repair in Dubai, with expert technicians of the integrated home appliances service center and maintenance contract",
   keywords: "built-in appliance repair Dubai, integrated appliance repair, built-in refrigerator repair, integrated dishwasher repair, built-in oven service",
   author: "FAJ Technical Services L.L.C.", businessName: "FAJ Built-In Appliance Repair Services",
   url: "https://www.fajservices.ae/services/home-appliances-repair/built-in-appliances-repair-service/",

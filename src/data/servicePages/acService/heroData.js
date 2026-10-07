@@ -1,5 +1,5 @@
 const heroData = {
-  title: "Best AC Repair and Maintenance Services in Dubai",
+  title: "Best AC Repair and Maintenance Services",
   subtitle: "Improve the comfort of your home and business premises with air conditioning cooling. Maintain a perfect temperature year-round with our expert AC technicians.",
   paragraphs: [
     "High energy bills and inefficient cooling can result from improper or irregular maintenance of AC systems. This is why regular AC maintenance is important to avoid unnecessary expenses in the future.",

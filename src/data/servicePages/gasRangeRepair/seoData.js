@@ -1,6 +1,6 @@
 const seoData = {
-  title: "Gas Cooker Repair Dubai | Stove and Cooking Range Service",
-  description: "Professional gas cooker repair in Dubai for freestanding and built-in stoves, cooking ranges and dual-fuel cookers. Inspection, cleaning and installation available.",
+  title: "Best Gas Cooker Repair | Cooking Range Service Near You, Dubai",
+  description: "Need gas cooker repair in Dubai? Book our top-rated service for electric stove, hood, & chimney. Get quick fixes for cooking ranges and induction repairs",
   keywords: "gas cooker repair Dubai, gas stove service, cooking range repair, cooker installation Dubai, gas range maintenance",
   author: "FAJ Technical Services L.L.C.",
   businessName: "FAJ Gas Cooker Repair Services",

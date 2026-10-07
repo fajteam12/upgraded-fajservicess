@@ -1,6 +1,6 @@
 const seoData = {
   "title": "Commercial Cooking Appliances Repair & Service Near You | FAJ",
-  "description": "Top-rated commercial cooking appliance repair in Dubai, including cooking range, stove, deep fryer, chimney, cooker, hot plate, and preventive maintenance services.",
+  "description": "Top-rated in the commercial cooking appliances repair in Dubai, including cooking range, stove, deep fryer, chimney, cooker & hot plate services near you",
   "keywords": "commercial cooking equipment repair Dubai, professional kitchen appliance service, commercial cooking range repair, gas stove repair, deep fryer service, oven repair, restaurant equipment maintenance",
   "author": "FAJ Technical Services L.L.C.",
   "businessName": "Best Commercial Cooking Appliances Repair Service in Dubai - FAJ Technical Services L.L.C",

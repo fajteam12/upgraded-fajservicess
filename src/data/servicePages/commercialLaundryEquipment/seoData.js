@@ -1,7 +1,7 @@
 const seoData = {
-  title: "Commercial Laundry Equipment Repair & Maintenance Dubai | FAJ",
+  title: "Commercial Laundry Equipment Repair & Maintenance Services",
   description:
-    "Commercial laundry equipment repair and maintenance in Dubai for industrial washers, tumble dryers, washer-dryers and rotary ironers, with flexible AMC plans.",
+    "Top-rated Laundry equipment repair and services in Dubai. Book the best professional washing machine maintenance contract for industrial washer dryers",
   keywords:
     "commercial laundry equipment repair Dubai, commercial washing machine repair, industrial dryer maintenance, laundry equipment AMC, tumble dryer repair Dubai",
   author: "FAJ Technical Services L.L.C.",

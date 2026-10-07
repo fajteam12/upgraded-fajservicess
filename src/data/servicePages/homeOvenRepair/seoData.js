@@ -1,7 +1,7 @@
 const seoData = {
-  title: "Oven Repair Service Dubai | Gas and Electric Oven Repair",
+  title: "Oven Repair & Service | Gas - Electric Oven Maintenance in Dubai",
   description:
-    "Professional oven repair in Dubai for built-in gas and electric ovens. Book inspection, cleaning, installation and same-day repair support.",
+    "Trusted oven repair and service in Dubai. FAJ provides top-quality maintenance for all brands/types of gas and electric ovens, along with a fixed warranty",
   keywords:
     "oven repair Dubai, gas oven repair, electric oven service, built-in oven repair, oven cleaning Dubai, oven installation",
   author: "FAJ Technical Services L.L.C.",

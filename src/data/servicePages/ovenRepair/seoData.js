@@ -1,7 +1,7 @@
 const seoData = {
-  title: "Commercial Oven Repair and Maintenance Services in Dubai",
+  title: "Commercial Oven Repair | Best Pizza Oven Services in Dubai",
   description:
-    "Commercial oven repair in Dubai for gas, electric, combi, convection, pizza, bakery and steam ovens. Professional diagnostics, maintenance and emergency support.",
+    "High-rated commercial oven repair in Dubai. FAJ expert deck, convection, conveyor, bakery, combi gas & electric ovens maintenance services near you",
   keywords:
     "commercial oven repair Dubai, pizza oven maintenance, combi oven repair, commercial kitchen oven service, Rational oven repair Dubai",
   author: "FAJ Technical Services L.L.C.",

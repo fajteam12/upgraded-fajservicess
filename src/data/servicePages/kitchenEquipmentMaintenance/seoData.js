@@ -1,7 +1,7 @@
 const seoData = {
-  title: "Commercial Kitchen Equipment Maintenance Dubai | FAJ",
+  title: "Commercial Kitchen Equipment Maintenance & Services Near You",
   description:
-    "Commercial kitchen equipment repair and maintenance in Dubai for restaurants, hotels, cafes, schools and hospitals. Book diagnostics, PPM or AMC support.",
+    "Top-rated commercial kitchen equipment maintenance & services! FAJ offers restaurants, hotels & schools kitchen equipment  installation & repair in Dubai",
   keywords:
     "commercial kitchen equipment maintenance Dubai, kitchen equipment repair Dubai, catering equipment service, restaurant equipment maintenance, kitchen equipment AMC UAE",
   author: "FAJ Technical Services L.L.C.",

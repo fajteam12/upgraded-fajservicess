@@ -1,6 +1,6 @@
 const seoData = {
-  title: "AC Service Dubai | Air Conditioning Repair and Maintenance",
-  description: "Professional AC service in Dubai for inspection, repair, cleaning and maintenance of residential and commercial air-conditioning systems.",
+  title: "Best AC Repair | HVAC Maintenance & AC Service in Dubai",
+  description: "Top AC Service and AC Repair - FAJ has been providing fast air conditioning maintenance, servicing & cleaning from expert technicians near you in Dubai",
   keywords: "AC service Dubai, AC repair Dubai, air conditioning maintenance, AC cleaning Dubai, emergency AC repair",
   author: "FAJ Technical Services L.L.C.", businessName: "FAJ Air Conditioning Services",
   url: "https://www.fajservices.ae/services/air-conditioning-repair/ac-service/",

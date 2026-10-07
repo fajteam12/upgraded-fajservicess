@@ -1,7 +1,7 @@
 const seoData = {
   title: "Commercial Dishwasher Repair & Maintenance Service Near You",
   description:
-    "Top-quality commercial dishwasher repair and maintenance in Dubai for Hobart, Meiko, Winterhalter, Fagor, Electrolux and other major brands, with AMC support.",
+    "Top-Quality Commercial dishwasher repair & services in Dubai. FAJ offers maintenance for Fagor, Electrolux, Meiko, Elettrobar, Hobart near you & AMC",
   keywords:
     "commercial dishwasher repair Dubai, commercial dishwasher maintenance, glasswasher repair, hood dishwasher service, conveyor dishwasher repair, dishwasher AMC Dubai",
   author: "FAJ Technical Services L.L.C.",

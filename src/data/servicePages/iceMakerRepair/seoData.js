@@ -1,7 +1,7 @@
 const seoData = {
-  title: "Commercial Ice Maker Repair & Maintenance Dubai | FAJ",
+  title: "Commercial Ice Maker Repair - Ice Machine Services Near You",
   description:
-    "Commercial ice maker repair, installation, diagnostics, cleaning and maintenance in Dubai for Hoshizaki, Brema, Scotsman and other ice machines.",
+    "High-rated ice maker repair in Dubai. FAJ expert in Hoshizaki, Manitowoc, Generaltec, Brema & Scotsman ice cube machine maintenance & servicing",
   keywords:
     "ice maker repair Dubai, commercial ice machine repair, ice maker maintenance, Hoshizaki repair Dubai, Brema ice maker service, Scotsman ice machine repair",
   author: "FAJ Technical Services L.L.C.",

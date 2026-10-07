@@ -1,7 +1,7 @@
 const seoData = {
   title: "Cigar Humidor Repair | Cigar Cabinet Service Center Near You",
   description:
-    "FAJ specialises in cigar humidor repair. Contact us for built-in cabinet humidor, cigar fridge cooler and electric cigar cabinet maintenance in the UAE.",
+    "FAJ specialises in cigar humidor repair. Contact us for built-in cabinet humidor, cigar fridge cooler & electric cigar cabinet maintenance and service in UAE",
   keywords:
     "cigar cabinet humidifier repair, cigar humidor repair Dubai, cigar fridge repair, cigar cooler service, electric humidor maintenance Dubai",
   author: "FAJ Technical Services L.L.C.",

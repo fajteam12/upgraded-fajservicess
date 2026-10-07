@@ -1,7 +1,7 @@
 const seoData = {
-  title: "Coffee Machine Service Center and Repair UAE | FAJ",
+  title: "Coffee Machine Maintenance in UAE | Home, Office & Commercial",
   description:
-    "Coffee machine repair, cleaning, descaling, installation and maintenance contracts in Dubai, Sharjah and Abu Dhabi for home, office and commercial machines.",
+    "We provide the best coffee machine maintenance contract (AMC) in UAE. Regular service of espresso machine & coffee equipment can help save costs",
   keywords:
     "coffee machine repair Dubai, coffee machine service center, espresso machine repair UAE, coffee machine cleaning, coffee machine descaling, coffee machine AMC",
   author: "FAJ Technical Services L.L.C.",

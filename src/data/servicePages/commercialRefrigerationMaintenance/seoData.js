@@ -1,7 +1,7 @@
 const seoData = {
-  title: "Commercial Refrigeration Maintenance Services in Dubai",
+  title: "Commercial Refrigeration Maintenance Services & Repair in Dubai",
   description:
-    "Commercial refrigeration maintenance and freezer and chiller repair in Dubai for walk-in coolers, cold rooms, display units and commercial refrigeration systems.",
+    "Top-Rated Commercial refrigeration maintenance services in Dubai. Call now FAJ expert for walk in cooler, biomedical freezer & chiller repair near you",
   keywords:
     "commercial refrigeration maintenance Dubai, freezer repair Dubai, chiller repair Dubai, walk-in cooler maintenance, cold room service",
   author: "FAJ Technical Services L.L.C.",

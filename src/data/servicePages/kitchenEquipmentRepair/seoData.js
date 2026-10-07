@@ -1,7 +1,7 @@
 const seoData = {
-  title: "Commercial Kitchen Equipment Maintenance and Repair Dubai",
+  title: "Commercial Kitchen Equipment Maintenance Services and Repair",
   description:
-    "Commercial kitchen equipment maintenance and repair in Dubai for cooking, refrigeration, warewashing, bakery and food-preparation equipment.",
+    "Looking for expert commercial kitchen equipment maintenance services in Dubai? We offer the best repair, installation, genuine parts, and deep cleaning",
   keywords:
     "commercial kitchen equipment maintenance Dubai, catering equipment repair, restaurant kitchen equipment service, kitchen equipment PPM, commercial appliance repair UAE",
   author: "FAJ Technical Services L.L.C.",

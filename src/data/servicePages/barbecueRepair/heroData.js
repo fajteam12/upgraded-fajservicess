@@ -1,6 +1,6 @@
 const heroData = {
   title:
-    "High Rated Barbeque Repair and Gas & Electric BBQ Grill Cleaning Service Near You, Dubai UAE",
+    "High Rated Barbeque Repair and Gas & Electric BBQ Grill Cleaning Service Near You",
   subtitle: "Barbecue Grill Repair, Deep Cleaning and Maintenance",
   paragraphs: [
     "FAJ has been providing reliable barbecue grill repair, maintenance, and cleaning services in Dubai and Sharjah since 2010.",

@@ -1,6 +1,6 @@
 const heroData = {
   title:
-    "Best Meat Grinder Repair and Food Equipment Maintenance Services Near You in Dubai, UAE",
+    "Best Meat Grinder Repair and Food Equipment Maintenance Services Near You, in Dubai, UAE",
   subtitle: "Commercial Meat Grinder Specialists Since 2010",
   paragraphs: [
     "Experience reliable and fast maintenance services in Dubai with FAJ, a registered company since 2010. If you need effective meat grinder repair, trust the professionals at FAJ to ensure your grinder operates perfectly.",

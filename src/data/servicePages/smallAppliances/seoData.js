@@ -1,7 +1,7 @@
 const seoData = {
-  title: "Small Home Appliances Repair & Service Center Dubai | FAJ",
+  title: "Small Home Appliances Repair & Service Center Near You, Dubai",
   description:
-    "Small home appliance repair in Dubai for mixers, blenders, microwaves, air fryers, irons, grinders, kettles, vacuum cleaners and more.",
+    "Best small home appliances service center in Dubai. FAJ expert in mixer fix, microwave, air fryer, iron, grinder, & garment steamers repair shop nearby",
   keywords:
     "small appliance repair Dubai, mixer repair, steam iron repair, toaster repair, microwave repair, air fryer repair, blender repair, household appliance service",
   author: "FAJ Technical Services L.L.C.",

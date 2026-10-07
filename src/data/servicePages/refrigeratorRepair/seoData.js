@@ -1,7 +1,7 @@
 const seoData = {
-  title: "Refrigerator Repair Dubai | Fridge & Freezer Service",
+  title: "Refrigerator Repair | Best Fridge Service Center in Dubai",
   description:
-    "Trusted refrigerator repair in Dubai for fridges and freezers. Book diagnostics, cleaning, installation and same-day fridge repair service.",
+    "Same day refrigerator repair and service in Dubai. Call FAJ experts for fridge repair & maintenance near you and freezer fixing خدمات صيانة وتصليح ثلاجات في دبي",
   keywords:
     "refrigerator repair Dubai, fridge repair, freezer repair, refrigerator service, fridge cleaning Dubai, refrigerator installation",
   author: "FAJ Technical Services L.L.C.",

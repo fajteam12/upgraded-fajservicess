@@ -1,7 +1,7 @@
 const seoData = {
-  title: "Commercial Kitchen Equipment AMC Services in Dubai",
+  title: "Commercial Kitchen Equipment AMC | Maintenance Contract Dubai",
   description:
-    "Commercial kitchen equipment AMC and PPM services in Dubai for cooking, baking, refrigeration, food-preparation and warewashing equipment.",
+    "Get FAJ trusted commercial kitchen equipment AMC services in Dubai, including refrigeration, AC system & MEP installation & preventative maintenance",
   keywords:
     "commercial kitchen equipment AMC Dubai, kitchen maintenance contract, catering equipment PPM, restaurant equipment AMC, kitchen equipment maintenance UAE",
   author: "FAJ Technical Services L.L.C.",

@@ -1,6 +1,6 @@
 const seoData = {
-  title: "Dishwasher Repair Dubai | Dishwasher Service Near You",
-  description: "Fast dishwasher repair in Dubai for built-in and freestanding machines. Book inspection, cleaning, installation and same-day dishwasher service.",
+  title: "Best Dishwasher Repair and Dishwasher Service Center Near You",
+  description: "Trustworthy dishwasher repair and service in Dubai. Schedule with us for built-in dishwasher repairs, error fixing, and top-rated glass washer maintenance",
   keywords: "dishwasher repair Dubai, dishwasher service, dishwasher cleaning, dishwasher installation, built-in dishwasher repair",
   author: "FAJ Technical Services L.L.C.",
   businessName: "FAJ Dishwasher Repair Services",

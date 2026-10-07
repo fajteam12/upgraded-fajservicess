@@ -1,6 +1,6 @@
 const seoData = {
-  title: "Washing Machine Repair Dubai | Washer & Dryer Service",
-  description: "Affordable washing machine repair in Dubai for front-load, top-load and washer-dryer appliances. Book inspection, cleaning, installation and repair.",
+  title: "Best Washing Machine Repair and Maintenance Services in Dubai",
+  description: "Fast washing machine repair and service in Dubai. FAJ is an expert in automatic washer dryer service center and laundry maintenance تصليح غسالات في دبي",
   keywords: "washing machine repair Dubai, washer repair, dryer repair, washing machine service, washing machine cleaning, washer installation",
   author: "FAJ Technical Services L.L.C.", businessName: "FAJ Washing Machine Repair Services",
   url: "https://www.fajservices.ae/services/home-appliances-repair/washing-machine-repair-service-dubai/",

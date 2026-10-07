@@ -1,6 +1,6 @@
 const seoData = {
-  title: "Coffee Machine Service Center Dubai | Espresso Machine Repair",
-  description: "Affordable coffee machine service center in Dubai for domestic, office and commercial espresso machines. Book inspection, cleaning, installation and repair.",
+  title: "Best Coffee Machine Service Center | Coffee Machine Repair UAE",
+  description: "Fast Coffee Machine service centre. Call FAJ for home / office espresso repair & top coffee maker maintenance near you Dubai. خدمات صيانة وإصلاح آلات القهو",
   keywords: "coffee machine service center Dubai, coffee machine repair, espresso machine maintenance, coffee machine cleaning, descaling Dubai",
   author: "FAJ Technical Services L.L.C.", businessName: "FAJ Coffee Machine Service Center",
   url: "https://www.fajservices.ae/services/coffee-machine/coffee-machine-service-center/",
