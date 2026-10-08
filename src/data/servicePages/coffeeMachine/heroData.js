@@ -9,11 +9,12 @@ const heroData = {
   secondaryAction: "WhatsApp Expert",
   bookingLabel: "Coffee Machine Technical Inspection",
   image: {
-    id: "coffee-machine-service-page-new-design-images/coffee-machine-service-repair-top-image",
+    id: "coffee-machine-service-repair-top-image",
     src: "/img/coffee-machine-service-page-new-design-images/coffee-machine-service-repair-top-image.webp",
     alt: "Coffee machine service and repair technician in Dubai",
     width: 853,
     height: 853,
+    position: "center 70%",
   },
 };
 

@@ -27,20 +27,20 @@ export default function AcAnnualMaintenanceContract() {
       <main className="service-landing">
         <SplitHeroSection content={pageData.hero} contact={pageData.contact} onPrimaryAction={openBooking} />
         <BreadCumb />
-        <TwoColumnInfoSection content={pageData.serviceOverview} tone="soft" />
-        <PlanCardsSection content={pageData.contracts} onAction={openBooking} />
+        <TwoColumnInfoSection content={pageData.serviceOverview} tone="white" />
+        <PlanCardsSection content={pageData.contracts} onAction={openBooking} tone="soft" />
         <ActionCardsSection content={pageData.maintenanceImportance} tone="white" columns="three" />
-        <TwoColumnInfoSection content={pageData.peaceOfMind} tone="dark" />
-        <ResourceCTASection content={pageData.repairPrice} tone="soft" />
-        <NumberedGridSection content={pageData.commonProblems} tone="dark" columns="four" />
+        <TwoColumnInfoSection content={pageData.peaceOfMind} tone="soft" />
+        <ResourceCTASection content={pageData.repairPrice} tone="white" />
+        <NumberedGridSection content={pageData.commonProblems} tone="soft" columns="four" />
         <ActionCardsSection content={pageData.servicesOffered} tone="white" columns="three" onAction={openBooking} />
         <MaintenanceBenefits {...pageData.benefits} />
-        <ActionCardsSection content={pageData.whyChooseUs} tone="dark" columns="three" />
+        <ActionCardsSection content={pageData.whyChooseUs} tone="white" columns="three" />
         <TwoColumnInfoSection content={pageData.amcImportance} tone="soft" />
-        <TwoColumnInfoSection content={pageData.amcIncluded} tone="dark" />
+        <TwoColumnInfoSection content={pageData.amcIncluded} tone="white" />
         <SearchableDirectorySection content={pageData.brands} tone="soft" onAction={openBooking} />
         <ResourceCTASection content={pageData.energyTips} tone="white" />
-        <ActionCardsSection content={pageData.testimonials} tone="dark" columns="three" slider autoplay loop />
+        <ActionCardsSection content={pageData.testimonials} tone="soft" columns="three" slider autoplay loop />
         <AccordionSection content={pageData.faqs} tone="white" />
         <BookingSection content={pageData.booking} bookingState={bookingState} tone="soft" />
       </main>

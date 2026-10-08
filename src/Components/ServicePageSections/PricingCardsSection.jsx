@@ -64,6 +64,8 @@ function PricingCardsSection({ content, onAction }) {
 								Array.isArray(item.popup?.sections) &&
 								item.popup.sections.length > 0;
 
+							const hasAnySubtitle = content.items?.some((i) => Boolean(i.subtitle));
+
 							return (
 								<ScrollSlide
 									direction="up"
@@ -71,14 +73,22 @@ function PricingCardsSection({ content, onAction }) {
 									key={item.title}
 								>
 									<article className="service-landing__price-card">
-										<div>
+										<div className="service-landing__price-card-body">
 											<span className="service-landing__card-badge">
 												{item.badge || content.defaultBadge}
 											</span>
 
-											<h3>{item.title}</h3>
+											<div className="service-landing__price-card-header">
+												<h3>{item.title}</h3>
 
-											{item.subtitle && <small>{item.subtitle}</small>}
+												{hasAnySubtitle ? (
+													<small className={!item.subtitle ? "is-placeholder" : ""}>
+														{item.subtitle || <span aria-hidden="true">&nbsp;</span>}
+													</small>
+												) : (
+													item.subtitle && <small>{item.subtitle}</small>
+												)}
+											</div>
 
 											<strong className="service-landing__price">
 												{(item.pricePrefix ?? content.pricePrefix) && (
@@ -88,6 +98,16 @@ function PricingCardsSection({ content, onAction }) {
 											</strong>
 
 											<p>{item.description}</p>
+										</div>
+
+										<div className="service-landing__price-card-actions">
+											<button
+												type="button"
+												className="service-landing__button is-dark"
+												onClick={() => onAction(item.title)}
+											>
+												{content.actionLabel}
+											</button>
 
 											{hasPopupContent && (
 												<button
@@ -101,14 +121,6 @@ function PricingCardsSection({ content, onAction }) {
 												</button>
 											)}
 										</div>
-
-										<button
-											type="button"
-											className="service-landing__button is-dark is-full"
-											onClick={() => onAction(item.title)}
-										>
-											{content.actionLabel}
-										</button>
 									</article>
 								</ScrollSlide>
 							);

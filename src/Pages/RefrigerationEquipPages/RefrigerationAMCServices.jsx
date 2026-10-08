@@ -55,7 +55,7 @@ export default function RefrigerationAMCServices() {
 
         <TwoColumnInfoSection content={pageData.ppmServices} tone="soft" />
 
-        <EmbeddedVideoSection content={pageData.video} tone="dark" />
+        <EmbeddedVideoSection content={pageData.video} tone="white" />
 
         <ChecklistSection content={pageData.peaceOfMind} tone="soft" />
 

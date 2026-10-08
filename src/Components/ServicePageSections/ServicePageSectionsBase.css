@@ -16,15 +16,29 @@
   --sl-accent: #007fa3;
   --sl-cyan: #4fc3d8;
   --sl-light: #f5f8fa;
-  --sl-body: #000000;
+  --sl-body: #1e293b;
   --sl-border: #dbe7ec;
   --sl-success: #25d366;
-  --sl-small: 0.6875rem;
+  --sl-small: 0.8125rem;
+  --sl-font-body: 1rem;
+  --sl-line-height-body: 1.65;
   min-height: 100vh;
   overflow: clip;
   color: var(--sl-dark);
   background: var(--sl-light);
   font-family: "Archivo", "Inter", ui-sans-serif, system-ui, sans-serif;
+  font-size: var(--sl-font-body);
+  line-height: var(--sl-line-height-body);
+}
+
+.service-landing p,
+.service-landing article p,
+.service-landing .service-landing__card p,
+.service-landing [class*="card"] p,
+.service-landing [class*="panel"] p {
+  font-size: var(--sl-font-body);
+  line-height: var(--sl-line-height-body);
+  color: var(--sl-body);
 }
 
 .service-landing button,
@@ -36,21 +50,28 @@
   font: inherit;
 }
 
-.service-landing__container,
-.service-landing__narrow {
+.service-landing__container {
   position: relative;
   z-index: 1;
-  width: min(100% - 32px, 1240px);
+  width: min(100% - 32px, 1440px);
   margin-inline: auto;
 }
 
+/* Hero section retains its focused container width */
+.service-landing__hero .service-landing__container {
+  width: min(100% - 32px, 1240px);
+}
+
 .service-landing__narrow {
-  max-width: 1024px;
+  position: relative;
+  z-index: 1;
+  width: min(100% - 32px, 1024px);
+  margin-inline: auto;
 }
 
 .service-landing__section {
   position: relative;
-  padding: 88px 0;
+  padding: clamp(40px, 4.2vw, 54px) 0;
   border-bottom: 1px solid var(--sl-border);
 }
 
@@ -64,7 +85,38 @@
     var(--sl-light);
 }
 
+/* All sections render in White or Soft styling on the new services pages.
+   Original dark CSS rules are kept preserved below (do not remove dark css). */
 .service-landing__section.is-dark {
+  overflow: clip;
+  color: var(--sl-dark);
+  background:
+    radial-gradient(circle at 10% 20%, rgba(79, 195, 216, 0.08), transparent 28%),
+    var(--sl-light);
+  border-color: var(--sl-border);
+}
+
+.service-landing__section.is-dark .service-landing__dark-glow {
+  display: none;
+}
+
+.service-landing__section.is-dark .service-landing__section-heading.is-light h2,
+.service-landing__section.is-dark .service-landing__section-heading h2 {
+  color: var(--sl-dark);
+}
+
+.service-landing__section.is-dark .service-landing__section-heading.is-light .service-landing__eyebrow {
+  color: var(--sl-accent);
+}
+
+.service-landing__section.is-dark .service-landing__section-heading.is-light p,
+.service-landing__section.is-dark .service-landing__section-heading p {
+  color: var(--sl-body);
+}
+
+/* Preserved dark CSS rules (kept as requested, not actively used) */
+.service-landing--dark-theme .service-landing__section.is-dark,
+.service-landing__section.is-dark.allow-dark {
   overflow: clip;
   color: #fff;
   background: var(--sl-dark);
@@ -73,7 +125,7 @@
 
 .service-landing__section-heading {
   max-width: 720px;
-  margin: 0 auto 52px;
+  margin: 0 auto clamp(24px, 3.5vw, 36px);
   text-align: center;
 }
 
@@ -85,38 +137,38 @@
   font-size: var(--sl-small);
   font-weight: 800;
   line-height: 1.3;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
 }
 
 .service-landing__section-heading h2 {
   margin: 0;
   color: var(--sl-dark);
-  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-size: clamp(1.45rem, 3.2vw, 2.1rem);
   font-weight: 900;
-  line-height: 1.1;
+  line-height: 1.15;
   letter-spacing: -0.025em;
   text-transform: uppercase;
 }
 
 .service-landing__section-heading p {
-  max-width: 640px;
+  max-width: 680px;
   margin: 16px auto 0;
   color: var(--sl-body);
-  font-size: max(var(--sl-small), 0.875rem);
-  line-height: 1.7;
+  font-size: var(--sl-font-body);
+  line-height: var(--sl-line-height-body);
 }
 
 .service-landing__section-heading.is-light h2 {
-  color: #fff;
+  color: var(--sl-dark);
 }
 
 .service-landing__section-heading.is-light .service-landing__eyebrow {
-  color: var(--sl-cyan);
+  color: var(--sl-accent);
 }
 
 .service-landing__section-heading.is-light p {
-  color: #bdcbd1;
+  color: var(--sl-body);
 }
 
 .service-landing__heading-line {
@@ -128,21 +180,49 @@
 }
 
 .service-landing__hero {
+  --sl-hero-title: #fff;
+  --sl-hero-subtitle: var(--sl-cyan);
+  --sl-hero-copy: #d6e0e4;
+  --sl-hero-note: #b7c7ce;
+
+  --sl-hero-badge-text: var(--sl-cyan);
+  --sl-hero-badge-bg: rgba(79, 195, 216, 0.12);
+  --sl-hero-badge-border: rgba(79, 195, 216, 0.28);
+
+  --sl-hero-note-border: rgba(79, 195, 216, 0.5);
+
+  --sl-hero-media-overlay:
+    linear-gradient(
+      90deg,
+      rgba(11, 28, 36, 0.2),
+      transparent 30%
+    );
+
   position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  min-height: 690px;
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(0, 1fr);
+  align-items: stretch;
+
+  min-height: 0;
   overflow: hidden;
+
   color: #fff;
   background: var(--sl-dark);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+  border-bottom:
+    1px solid
+    rgba(255, 255, 255, 0.08);
 }
 
 .service-landing__hero.is-text-only {
-  grid-template-columns: minmax(0, 1fr);
+  grid-template-columns:
+    minmax(0, 1fr);
 }
 
-.service-landing__hero.is-text-only .service-landing__hero-content {
+.service-landing__hero.is-text-only
+.service-landing__hero-content {
   width: min(100%, 1180px);
   margin-inline: auto;
 }
@@ -151,10 +231,15 @@
 .service-landing__dark-glow {
   position: absolute;
   z-index: 0;
+
   width: 460px;
   height: 460px;
+
   border-radius: 50%;
-  background: rgba(79, 195, 216, 0.08);
+
+  background:
+    rgba(79, 195, 216, 0.08);
+
   filter: blur(90px);
   pointer-events: none;
 }
@@ -167,95 +252,252 @@
 .service-landing__hero-content {
   position: relative;
   z-index: 2;
+
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding: 116px clamp(24px, 6vw, 88px) 72px;
+
+  min-width: 0;
+
+  padding:
+    42px
+    clamp(24px, 4vw, 60px)
+    42px;
 }
 
 .service-landing__hero-badge {
   display: inline-flex;
-  margin-bottom: 18px;
+
+  margin-bottom: 14px;
   padding: 7px 14px;
-  border: 1px solid rgba(79, 195, 216, 0.28);
+
+  border:
+    1px solid
+    var(--sl-hero-badge-border);
+
   border-radius: 999px;
-  color: var(--sl-cyan);
-  background: rgba(79, 195, 216, 0.12);
+
+  color:
+    var(--sl-hero-badge-text);
+
+  background:
+    var(--sl-hero-badge-bg);
+
   font-size: var(--sl-small);
   font-weight: 800;
   line-height: 1.3;
+
   letter-spacing: 0.15em;
   text-transform: uppercase;
 }
 
 .service-landing__hero h1 {
   max-width: 720px;
-  margin: 0 0 16px;
-  color: #fff;
-  font-size: clamp(2rem, 3.5vw, 3rem);
+
+  margin: 0 0 14px;
+
+  color:
+    var(--sl-hero-title);
+
+  font-size: clamp(1.55rem, 2.6vw, 2.15rem);
+
   font-weight: 900;
-  line-height: 1.05;
-  letter-spacing: -0.035em;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
   text-transform: uppercase;
 }
 
 .service-landing__hero h2 {
   max-width: 680px;
-  margin: 0 0 24px;
-  color: var(--sl-cyan);
-  font-size: clamp(1rem, 2vw, 1.35rem);
+
+  margin: 0 0 18px;
+
+  color:
+    var(--sl-hero-subtitle);
+
+  font-size:
+    clamp(0.95rem, 1.6vw, 1.2rem);
+
   font-weight: 800;
-  line-height: 1.3;
+  line-height: 1.35;
   text-transform: uppercase;
 }
 
 .service-landing__hero p {
   max-width: 680px;
-  margin: 0 0 20px;
-  color: #d6e0e4;
-  font-size: max(var(--sl-small), 0.875rem);
-  line-height: 1.75;
+
+  margin: 0 0 16px;
+
+  color:
+    var(--sl-body);
+
+  font-size:
+    var(--sl-font-body);
+
+  line-height: var(--sl-line-height-body);
 }
 
 .service-landing__hero-note {
   padding-left: 16px;
-  border-left: 2px solid rgba(79, 195, 216, 0.5);
-  color: #b7c7ce !important;
+
+  border-left:
+    2px solid
+    var(--sl-hero-note-border);
+
+  color:
+    var(--sl-body)
+    !important;
 }
 
 .service-landing__hero-actions {
   display: flex;
   flex-wrap: wrap;
+
   gap: 14px;
-  margin-top: 8px;
+
+  margin-top: 6px;
 }
 
 .service-landing__hero-media {
   position: relative;
-  min-height: 100%;
+
+  min-width: 0;
+  min-height: 0;
+
   overflow: hidden;
 }
 
 .service-landing__hero-media::after {
   content: "";
+
   position: absolute;
+  z-index: 1;
   inset: 0;
+
   pointer-events: none;
-  background: linear-gradient(90deg, rgba(11, 28, 36, 0.2), transparent 30%);
+
+  background:
+    var(--sl-hero-media-overlay);
 }
 
 .service-landing__hero-media img {
+  position: absolute;
+  inset: 0;
+
   display: block;
+
   width: 100%;
   height: 100%;
+
   object-fit: cover;
   object-position: center;
-  transition: transform 900ms cubic-bezier(0.16, 1, 0.3, 1);
+
+  transition:
+    transform
+    900ms
+    cubic-bezier(
+      0.16,
+      1,
+      0.3,
+      1
+    );
 }
 
-.service-landing__hero:hover .service-landing__hero-media img {
+.service-landing__hero:hover
+.service-landing__hero-media img {
   transform: scale(1.035);
+}
+
+.service-landing__hero.is-dark {
+  --sl-hero-title: #fff;
+  --sl-hero-subtitle: var(--sl-cyan);
+  --sl-hero-copy: #d6e0e4;
+  --sl-hero-note: #b7c7ce;
+
+  --sl-hero-badge-text: var(--sl-cyan);
+  --sl-hero-badge-bg: rgba(79, 195, 216, 0.12);
+  --sl-hero-badge-border: rgba(79, 195, 216, 0.28);
+
+  --sl-hero-note-border: rgba(79, 195, 216, 0.5);
+
+  --sl-hero-media-overlay:
+    linear-gradient(
+      90deg,
+      rgba(11, 28, 36, 0.2),
+      transparent 30%
+    );
+
+  color: #fff;
+  background: var(--sl-dark);
+
+  border-color:
+    rgba(255, 255, 255, 0.08);
+}
+
+.service-landing__hero.is-white {
+  --sl-hero-title: var(--sl-dark);
+  --sl-hero-subtitle: var(--sl-accent);
+  --sl-hero-copy: #52656e;
+  --sl-hero-note: #647780;
+
+  --sl-hero-badge-text: var(--sl-accent);
+  --sl-hero-badge-bg: rgba(0, 127, 163, 0.08);
+  --sl-hero-badge-border: rgba(0, 127, 163, 0.2);
+
+  --sl-hero-note-border: rgba(0, 127, 163, 0.4);
+
+  --sl-hero-media-overlay:
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.12),
+      transparent 30%
+    );
+
+  color: var(--sl-dark);
+  background: #fff;
+
+  border-color: var(--sl-border);
+}
+
+.service-landing__hero.is-soft {
+  --sl-hero-title: var(--sl-dark);
+  --sl-hero-subtitle: var(--sl-accent);
+  --sl-hero-copy: #52656e;
+  --sl-hero-note: #647780;
+
+  --sl-hero-badge-text: var(--sl-accent);
+  --sl-hero-badge-bg: rgba(0, 127, 163, 0.08);
+  --sl-hero-badge-border: rgba(0, 127, 163, 0.2);
+
+  --sl-hero-note-border: rgba(0, 127, 163, 0.4);
+
+  --sl-hero-media-overlay:
+    linear-gradient(
+      90deg,
+      rgba(245, 248, 250, 0.16),
+      transparent 30%
+    );
+
+  color: var(--sl-dark);
+
+  background:
+    radial-gradient(
+      circle at 10% 20%,
+      rgba(79, 195, 216, 0.08),
+      transparent 30%
+    ),
+    var(--sl-light);
+
+  border-color: var(--sl-border);
+}
+
+.service-landing__hero.is-white
+.service-landing__hero-glow,
+.service-landing__hero.is-soft
+.service-landing__hero-glow {
+  background:
+    rgba(79, 195, 216, 0.11);
 }
 
 .service-landing__button {
@@ -405,10 +647,18 @@
   text-transform: uppercase;
 }
 
+.service-landing__price-card-header {
+  display: flex;
+  flex-direction: column;
+}
+
 .service-landing__price-card h3 {
-  margin: 18px 0 8px;
+  display: flex;
+  align-items: center;
+  min-height: 48px;
+  margin: 16px 0 6px;
   color: var(--sl-dark);
-  font-size: 1.05rem;
+  font-size: clamp(1.05rem, 1.8vw, 1.25rem);
   font-weight: 900;
   line-height: 1.3;
   text-transform: uppercase;
@@ -416,6 +666,7 @@
 
 .service-landing__price-card small {
   display: block;
+  min-height: 34px;
   margin-bottom: 10px;
   color: #657780;
   font-size: var(--sl-small);
@@ -425,9 +676,15 @@
   text-transform: uppercase;
 }
 
+.service-landing__price-card small.is-placeholder {
+  visibility: hidden;
+  user-select: none;
+}
+
 .service-landing__price {
   display: block;
-  margin: 18px 0 22px;
+  min-height: 32px;
+  margin: 14px 0 20px;
   color: var(--sl-navy);
   font-size: 1.35rem;
   font-weight: 900;
@@ -440,11 +697,11 @@
 }
 
 .service-landing__price-card p {
-  padding-top: 20px;
+  padding-top: 18px;
   border-top: 1px solid var(--sl-border);
   color: var(--sl-body);
-  font-size: max(var(--sl-small), 0.78rem);
-  line-height: 1.7;
+  font-size: var(--sl-font-body);
+  line-height: var(--sl-line-height-body);
 }
 
 .service-landing__contracts .service-landing__dark-glow {
@@ -452,6 +709,98 @@
   left: 35%;
 }
 
+/* White and Soft tone styling for PlanCardsSection / Contract Cards */
+.service-landing__contracts.is-white,
+.service-landing__contracts.is-soft {
+  color: var(--sl-dark);
+}
+
+.service-landing__contracts.is-white {
+  background: #ffffff;
+}
+
+.service-landing__contracts.is-soft {
+  background:
+    radial-gradient(circle at 10% 20%, rgba(79, 195, 216, 0.08), transparent 28%),
+    var(--sl-light);
+}
+
+.service-landing__contracts.is-white .service-landing__contract-card,
+.service-landing__contracts.is-soft .service-landing__contract-card {
+  color: var(--sl-dark);
+  background: #ffffff;
+  border: 1px solid var(--sl-border);
+  box-shadow: 0 10px 26px rgba(0, 48, 72, 0.06);
+}
+
+.service-landing__contracts.is-white .service-landing__contract-card:hover,
+.service-landing__contracts.is-soft .service-landing__contract-card:hover {
+  border-color: var(--sl-navy);
+  background: #ffffff;
+  box-shadow: 0 20px 42px rgba(0, 48, 72, 0.12);
+  transform: translateY(-6px);
+}
+
+.service-landing__contracts.is-white .service-landing__contract-card.is-featured,
+.service-landing__contracts.is-soft .service-landing__contract-card.is-featured {
+  border: 2px solid var(--sl-accent);
+  background: #ffffff;
+  box-shadow: 0 14px 38px rgba(0, 127, 163, 0.14);
+}
+
+.service-landing__contracts.is-white .service-landing__contract-card h3,
+.service-landing__contracts.is-soft .service-landing__contract-card h3 {
+  color: var(--sl-dark);
+}
+
+.service-landing__contracts.is-white .service-landing__contract-card p,
+.service-landing__contracts.is-soft .service-landing__contract-card p,
+.service-landing__contracts.is-white .service-landing__contract-card li,
+.service-landing__contracts.is-soft .service-landing__contract-card li {
+  color: var(--sl-body);
+}
+
+.service-landing__contracts.is-white .service-landing__contract-card ul,
+.service-landing__contracts.is-soft .service-landing__contract-card ul {
+  border-top: 1px solid var(--sl-border);
+}
+
+.service-landing__contracts.is-white .service-landing__contract-card li span,
+.service-landing__contracts.is-soft .service-landing__contract-card li span {
+  color: var(--sl-accent);
+}
+
+.service-landing__contracts.is-white .service-landing__contract-icon,
+.service-landing__contracts.is-soft .service-landing__contract-icon {
+  color: var(--sl-accent);
+  background: rgba(0, 127, 163, 0.09);
+}
+
+.service-landing__contracts.is-white .service-landing__contract-badge,
+.service-landing__contracts.is-soft .service-landing__contract-badge {
+  color: #ffffff;
+  background: var(--sl-accent);
+}
+
+.service-landing__contracts.is-white .service-landing__footnote,
+.service-landing__contracts.is-soft .service-landing__footnote {
+  color: #647780;
+}
+
+.service-landing__contracts.is-white .service-landing__button.is-contract,
+.service-landing__contracts.is-soft .service-landing__button.is-contract {
+  color: #ffffff;
+  background: var(--sl-navy);
+}
+
+.service-landing__contracts.is-white .service-landing__button.is-contract:hover,
+.service-landing__contracts.is-soft .service-landing__button.is-contract:hover {
+  color: #ffffff;
+  background: var(--sl-accent);
+}
+
+/* Preserved dark contract card styles */
+.service-landing__contracts.is-dark .service-landing__contract-card,
 .service-landing__contract-card {
   min-height: 470px;
   padding: 32px;
@@ -461,6 +810,7 @@
   background: #112633;
 }
 
+.service-landing__contracts.is-dark .service-landing__contract-card:hover,
 .service-landing__contract-card:hover {
   border-color: rgba(79, 195, 216, 0.45);
   background: #142d3b;
@@ -468,6 +818,7 @@
   transform: translateY(-6px);
 }
 
+.service-landing__contracts.is-dark .service-landing__contract-card.is-featured,
 .service-landing__contract-card.is-featured {
   border-color: var(--sl-cyan);
   background: var(--sl-dark);
@@ -496,10 +847,10 @@
 }
 
 .service-landing__contract-card h3 {
-  max-width: 270px;
+  max-width: 100%;
   margin: 0 0 12px;
-  color: #fff;
-  font-size: 1.15rem;
+  color: var(--sl-dark);
+  font-size: clamp(1.05rem, 1.8vw, 1.25rem);
   font-weight: 900;
   line-height: 1.25;
   text-transform: uppercase;
@@ -508,9 +859,15 @@
 .service-landing__contract-card p,
 .service-landing__contract-card li,
 .service-landing__footnote {
+  color: var(--sl-body);
+  font-size: var(--sl-font-body);
+  line-height: var(--sl-line-height-body);
+}
+
+.service-landing__contracts.is-dark .service-landing__contract-card p,
+.service-landing__contracts.is-dark .service-landing__contract-card li,
+.service-landing__contracts.is-dark .service-landing__footnote {
   color: #c3d0d6;
-  font-size: max(var(--sl-small), 0.78rem);
-  line-height: 1.65;
 }
 
 .service-landing__contract-card ul {
@@ -582,8 +939,8 @@
 .service-landing__highlights-panel > p,
 .service-landing__offered-panel p {
   color: var(--sl-body);
-  font-size: max(var(--sl-small), 0.84rem);
-  line-height: 1.75;
+  font-size: var(--sl-font-body);
+  line-height: var(--sl-line-height-body);
 }
 
 .service-landing__video-frame {
@@ -649,7 +1006,7 @@
 .service-landing__info-card h3 {
   margin: 0 0 14px;
   color: var(--sl-navy);
-  font-size: 0.95rem;
+  font-size: clamp(1rem, 1.6vw, 1.15rem);
   font-weight: 900;
   text-transform: uppercase;
 }
@@ -673,7 +1030,7 @@
   padding-top: 26px;
   border-top: 1px solid var(--sl-border);
   color: var(--sl-navy);
-  font-size: 0.92rem;
+  font-size: clamp(1.05rem, 1.8vw, 1.25rem);
   font-weight: 900;
   text-transform: uppercase;
 }
@@ -719,8 +1076,8 @@
 .service-landing__highlights-grid p {
   margin: 0;
   color: var(--sl-body);
-  font-size: var(--sl-small);
-  line-height: 1.6;
+  font-size: var(--sl-font-body);
+  line-height: var(--sl-line-height-body);
 }
 
 .service-landing__number-card {
@@ -783,7 +1140,7 @@
 .service-landing__brand-card h3 {
   margin: 0 0 10px;
   color: var(--sl-dark);
-  font-size: max(var(--sl-small), 0.86rem);
+  font-size: clamp(1rem, 1.6vw, 1.15rem);
   font-weight: 900;
   line-height: 1.4;
   text-transform: uppercase;
@@ -810,31 +1167,50 @@
 .service-landing__brand-card p {
   margin: 0;
   color: var(--sl-body);
-  font-size: max(var(--sl-small), 0.76rem);
-  line-height: 1.65;
+  font-size: var(--sl-font-body);
+  line-height: var(--sl-line-height-body);
 }
 
 .service-landing__section.is-dark .service-landing__number-card {
+  border-color: var(--sl-border);
+  background: #fff;
+  box-shadow: 0 6px 16px rgba(0, 48, 72, 0.04);
+}
+
+.service-landing__section.is-dark .service-landing__number-card:hover {
+  border-color: rgba(0, 127, 163, 0.48);
+  background: #fff;
+  box-shadow: 0 18px 34px rgba(0, 48, 72, 0.1);
+}
+
+.service-landing__section.is-dark .service-landing__number-card h3 {
+  color: var(--sl-dark);
+}
+
+.service-landing__section.is-dark .service-landing__number-card p {
+  color: var(--sl-body);
+}
+
+.service-landing__section.is-dark .service-landing__number-card > span {
+  color: var(--sl-accent);
+  background: rgba(0, 48, 72, 0.08);
+}
+
+/* Preserved dark number card styles */
+.service-landing--dark-theme .service-landing__section.is-dark .service-landing__number-card,
+.service-landing__section.is-dark.allow-dark .service-landing__number-card {
   border-color: rgba(255, 255, 255, 0.1);
   background: rgba(255, 255, 255, 0.045);
 }
 
-.service-landing__section.is-dark .service-landing__number-card:hover {
-  border-color: rgba(79, 195, 216, 0.48);
-  background: rgba(255, 255, 255, 0.075);
-}
-
-.service-landing__section.is-dark .service-landing__number-card h3 {
+.service-landing--dark-theme .service-landing__section.is-dark .service-landing__number-card h3,
+.service-landing__section.is-dark.allow-dark .service-landing__number-card h3 {
   color: #fff;
 }
 
-.service-landing__section.is-dark .service-landing__number-card p {
+.service-landing--dark-theme .service-landing__section.is-dark .service-landing__number-card p,
+.service-landing__section.is-dark.allow-dark .service-landing__number-card p {
   color: #cfd8dc;
-}
-
-.service-landing__section.is-dark .service-landing__number-card > span {
-  color: var(--sl-cyan);
-  background: rgba(79, 195, 216, 0.1);
 }
 
 .service-landing__offered-panel > p {
@@ -988,8 +1364,8 @@
   margin: 0;
   padding: 0 20px 20px;
   color: var(--sl-body);
-  font-size: max(var(--sl-small), 0.8rem);
-  line-height: 1.7;
+  font-size: var(--sl-font-body);
+  line-height: var(--sl-line-height-body);
 }
 
 .service-landing__booking-card {
@@ -1151,15 +1527,15 @@
   }
 
   .service-landing__hero-content {
-    padding-top: 112px;
+    padding:
+      88px
+      clamp(24px, 6vw, 48px)
+      48px;
   }
 
   .service-landing__hero-media {
-    min-height: 520px;
-  }
-
-  .service-landing__info-grid {
-    grid-template-columns: 1fr;
+    min-height: 0;
+    aspect-ratio: 16 / 9;
   }
 }
 
@@ -1178,11 +1554,15 @@
   }
 
   .service-landing__hero-content {
-    padding: 100px 20px 48px;
+    padding:
+      80px
+      20px
+      40px;
   }
 
   .service-landing__hero-media {
-    min-height: 390px;
+    min-height: 0;
+    aspect-ratio: 16 / 9;
   }
 
   .service-landing__hero-actions,
@@ -1248,26 +1628,56 @@
    Pricing card - optional Read More + text-only modal
    ========================================================= */
 
+.service-landing__price-card-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin-top: auto;
+  padding-top: 18px;
+  border-top: 1px solid var(--sl-border);
+}
+
+.service-landing__price-card-actions:has(.service-landing__button:only-child) {
+  grid-template-columns: 1fr;
+}
+
+.service-landing__price-card-actions .service-landing__button {
+  width: 100%;
+  min-height: 42px;
+  padding: 10px 12px;
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-align: center;
+  justify-content: center;
+}
+
 .service-landing__price-read-more {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  margin: 16px 0 24px;
-  padding: 0;
+  justify-content: center;
+  width: 100%;
+  min-height: 42px;
+  gap: 5px;
+  padding: 8px 6px;
   border: 0;
   color: var(--sl-accent);
   background: transparent;
-  font-size: max(var(--sl-small), 0.76rem);
+  font-size: 0.72rem;
   font-weight: 900;
-  line-height: 1.3;
+  line-height: 1.2;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   cursor: pointer;
-  transition: color 220ms ease, gap 220ms ease;
+  white-space: nowrap;
+  transition: color 220ms ease;
 }
 
 .service-landing__price-read-more span {
-  font-size: 1rem;
+  font-size: 0.85rem;
+  font-weight: 900;
   line-height: 1;
   transition: transform 220ms ease;
 }
@@ -1301,7 +1711,8 @@
   margin: 0;
   padding: 0 64px 24px 34px;
   border-bottom: 1px solid var(--sl-border);
-  font-size: clamp(1.2rem, 3vw, 1.65rem);
+  font-size: clamp(1.2rem, 2.5vw, 1.55rem);
+  text-transform: uppercase;
 }
 
 .service-landing__pricing-modal-content {
@@ -1332,7 +1743,7 @@
 .service-landing__pricing-modal-section h3 {
   margin: 0 0 14px;
   color: var(--sl-navy);
-  font-size: max(var(--sl-small), 0.9rem);
+  font-size: clamp(1rem, 1.6vw, 1.15rem);
   font-weight: 900;
   line-height: 1.35;
   letter-spacing: 0.04em;
@@ -1353,8 +1764,8 @@
   gap: 10px;
   align-items: start;
   color: var(--sl-body);
-  font-size: max(var(--sl-small), 0.8rem);
-  line-height: 1.65;
+  font-size: var(--sl-font-body);
+  line-height: var(--sl-line-height-body);
 }
 
 .service-landing__pricing-modal-section li > span:first-child {
@@ -1382,17 +1793,17 @@
   display: block;
   margin-bottom: 6px;
   color: var(--sl-navy);
-  font-size: var(--sl-small);
+  font-size: 0.9375rem;
   font-weight: 900;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
 .service-landing__pricing-modal-note p {
   margin: 0;
   color: var(--sl-body);
-  font-size: max(var(--sl-small), 0.78rem);
-  line-height: 1.65;
+  font-size: var(--sl-font-body);
+  line-height: var(--sl-line-height-body);
 }
 
 @media (max-width: 680px) {
@@ -1412,10 +1823,6 @@
   .service-landing__pricing-modal-content {
     max-height: calc(88vh - 132px);
     padding: 22px 24px 28px;
-  }
-
-  .service-landing__price-read-more {
-    margin-top: 14px;
   }
 }
 
@@ -1473,8 +1880,8 @@
   margin: 0;
   padding-left: 17px;
   color: var(--sl-body);
-  font-size: max(var(--sl-small), 0.8rem);
-  line-height: 1.55;
+  font-size: var(--sl-font-body);
+  line-height: var(--sl-line-height-body);
 }
 
 .service-landing__info-card-bullets li::before {
@@ -1494,11 +1901,11 @@
 }
 
 .service-landing__info-card.is-dark .service-landing__info-card-bullets li {
-  color: #c1cfd5;
+  color: var(--sl-body);
 }
 
 .service-landing__info-card.is-dark .service-landing__info-card-bullets li.is-strong {
-  color: #fff;
+  color: var(--sl-dark);
 }
 
 @media (max-width: 680px) {
@@ -1518,7 +1925,7 @@
 .service-landing__action-bottom-copy h3 {
   margin: 0;
   color: var(--sl-dark);
-  font-size: clamp(1.05rem, 2.2vw, 1.35rem);
+  font-size: clamp(1rem, 2vw, 1.25rem);
   font-weight: 900;
   line-height: 1.35;
 }
@@ -1527,16 +1934,16 @@
   max-width: 1040px;
   margin: 12px auto 0;
   color: var(--sl-body);
-  font-size: max(var(--sl-small), 0.84rem);
-  line-height: 1.75;
+  font-size: var(--sl-font-body);
+  line-height: var(--sl-line-height-body);
 }
 
 .service-landing__section.is-dark .service-landing__action-bottom-copy h3 {
-  color: #fff;
+  color: var(--sl-dark);
 }
 
 .service-landing__section.is-dark .service-landing__action-bottom-copy p {
-  color: #bdcbd1;
+  color: var(--sl-body);
 }
 
 @media (max-width: 680px) {
@@ -1591,15 +1998,15 @@
 }
 
 .service-landing__info-card.is-dark .service-landing__info-card-bullets li > strong {
-  color: #fff;
+  color: var(--sl-dark);
 }
 
 .service-landing__info-card.is-dark .service-landing__info-card-section {
-  border-top-color: rgba(255, 255, 255, 0.1);
+  border-top-color: var(--sl-border);
 }
 
 .service-landing__info-card.is-dark .service-landing__info-card-section h4 {
-  color: var(--sl-cyan);
+  color: var(--sl-navy);
 }
 
 @media (max-width: 680px) {
@@ -1617,32 +2024,57 @@
 
 .service-landing__detail-columns {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr));
-  gap: clamp(32px, 6vw, 72px);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 460px), 1fr));
+  gap: clamp(24px, 3.5vw, 36px);
+  align-items: stretch;
+}
+
+.service-landing__detail-columns > * {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .service-landing__detail-column {
   min-width: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border: 1px solid var(--sl-border, #dbe7ec);
+  border-radius: 16px;
+  padding: clamp(24px, 3.5vw, 36px);
+  box-shadow: 0 4px 20px rgba(0, 48, 72, 0.05);
+  transition: transform 250ms ease, box-shadow 250ms ease, border-color 250ms ease;
+}
+
+.service-landing__detail-column:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgba(0, 48, 72, 0.09);
+  border-color: rgba(24, 175, 208, 0.4);
 }
 
 .service-landing__detail-column h3 {
-  margin: 0 0 22px;
-  color: var(--sl-navy);
-  font-size: clamp(1rem, 2vw, 1.15rem);
-  font-weight: 900;
-  line-height: 1.35;
+  margin: 0 0 18px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #edf2f7;
+  color: var(--sl-navy, #003048);
+  font-size: clamp(1.15rem, 2vw, 1.35rem);
+  font-weight: 800;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
 }
 
 .service-landing__detail-column-intro {
-  margin: -8px 0 20px;
-  color: var(--sl-body);
-  font-size: max(var(--sl-small), 0.82rem);
-  line-height: 1.7;
+  margin: 0 0 20px;
+  color: var(--sl-body, #475569);
+  font-size: 0.95rem;
+  line-height: 1.65;
 }
 
 .service-landing__detail-list {
   display: grid;
-  gap: 10px;
+  gap: 14px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -1651,71 +2083,117 @@
 .service-landing__detail-list li {
   display: grid;
   grid-template-columns: 8px minmax(0, 1fr);
-  gap: 10px;
+  gap: 12px;
   align-items: start;
   margin: 0;
-  color: var(--sl-body);
-  font-size: max(var(--sl-small), 0.82rem);
-  line-height: 1.7;
+  color: var(--sl-body, #334155);
+  font-size: 0.9375rem;
+  line-height: 1.6;
 }
 
 .service-landing__detail-bullet {
-  width: 5px;
-  height: 5px;
-  margin-top: 0.72em;
-  background: var(--sl-accent);
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  margin-top: 0.55em;
+  background: var(--sl-accent, #18afd0);
+  flex-shrink: 0;
 }
 
 .service-landing__detail-list strong {
-  color: var(--sl-dark);
-  font-weight: 900;
+  color: var(--sl-navy, #003048);
+  font-weight: 800;
 }
 
 .service-landing__detail-footer-note {
   display: flex;
-  gap: 5px;
+  gap: 8px;
   align-items: baseline;
-  margin-top: clamp(30px, 5vw, 48px);
-  padding: 18px 20px;
-  border-left: 3px solid var(--sl-cyan);
-  border-radius: 0 10px 10px 0;
-  background: rgba(0, 48, 72, 0.05);
-  color: var(--sl-body);
-  font-size: max(var(--sl-small), 0.82rem);
-  line-height: 1.7;
+  margin-top: clamp(28px, 4vw, 36px);
+  padding: 18px 24px;
+  border-radius: 12px;
+  background: #ffffff;
+  border: 1px solid var(--sl-border, #dbe7ec);
+  border-left: 4px solid var(--sl-cyan, #18afd0);
+  box-shadow: 0 4px 16px rgba(0, 48, 72, 0.04);
+  color: var(--sl-body, #1e293b);
+  font-size: 0.9375rem;
+  line-height: 1.6;
 }
 
 .service-landing__detail-footer-note strong {
   flex: 0 0 auto;
-  color: var(--sl-navy);
-  font-weight: 900;
+  color: var(--sl-navy, #003048);
+  font-weight: 800;
 }
 
-/* Dark tone */
+/* Detail columns in soft/white tone (active) */
 .service-landing__detail-columns-section.is-dark .service-landing__detail-column h3 {
-  color: #fff;
+  color: var(--sl-navy);
 }
 
 .service-landing__detail-columns-section.is-dark .service-landing__detail-column-intro,
 .service-landing__detail-columns-section.is-dark .service-landing__detail-list li {
-  color: #d2dde2;
+  color: var(--sl-body);
 }
 
 .service-landing__detail-columns-section.is-dark .service-landing__detail-list strong {
-  color: #fff;
+  color: var(--sl-dark);
 }
 
 .service-landing__detail-columns-section.is-dark .service-landing__detail-bullet {
-  background: var(--sl-cyan);
+  background: var(--sl-accent);
 }
 
 .service-landing__detail-columns-section.is-dark .service-landing__detail-footer-note {
+  border-left-color: var(--sl-cyan);
+  background: #ffffff;
+  color: var(--sl-body);
+}
+
+.service-landing__detail-columns-section.is-dark .service-landing__detail-footer-note strong {
+  color: var(--sl-navy);
+}
+
+/* Preserved dark tone rules */
+.service-landing--dark-theme .service-landing__detail-columns-section.is-dark .service-landing__detail-column,
+.service-landing__detail-columns-section.is-dark.allow-dark .service-landing__detail-column {
+  background: rgba(255, 255, 255, 0.045);
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: none;
+}
+
+.service-landing--dark-theme .service-landing__detail-columns-section.is-dark .service-landing__detail-column h3,
+.service-landing__detail-columns-section.is-dark.allow-dark .service-landing__detail-column h3 {
+  color: #fff;
+}
+
+.service-landing--dark-theme .service-landing__detail-columns-section.is-dark .service-landing__detail-column-intro,
+.service-landing--dark-theme .service-landing__detail-columns-section.is-dark .service-landing__detail-list li,
+.service-landing__detail-columns-section.is-dark.allow-dark .service-landing__detail-column-intro,
+.service-landing__detail-columns-section.is-dark.allow-dark .service-landing__detail-list li {
+  color: #d2dde2;
+}
+
+.service-landing--dark-theme .service-landing__detail-columns-section.is-dark .service-landing__detail-list strong,
+.service-landing__detail-columns-section.is-dark.allow-dark .service-landing__detail-list strong {
+  color: #fff;
+}
+
+.service-landing--dark-theme .service-landing__detail-columns-section.is-dark .service-landing__detail-bullet,
+.service-landing__detail-columns-section.is-dark.allow-dark .service-landing__detail-bullet {
+  background: var(--sl-cyan);
+}
+
+.service-landing--dark-theme .service-landing__detail-columns-section.is-dark .service-landing__detail-footer-note,
+.service-landing__detail-columns-section.is-dark.allow-dark .service-landing__detail-footer-note {
   border-left-color: var(--sl-cyan);
   background: rgba(255, 255, 255, 0.045);
   color: #d2dde2;
 }
 
-.service-landing__detail-columns-section.is-dark .service-landing__detail-footer-note strong {
+.service-landing--dark-theme .service-landing__detail-columns-section.is-dark .service-landing__detail-footer-note strong,
+.service-landing__detail-columns-section.is-dark.allow-dark .service-landing__detail-footer-note strong {
   color: #fff;
 }
 
@@ -1747,7 +2225,7 @@
 
 .service-landing__resource-cta {
   position: relative;
-  padding: clamp(48px, 7vw, 76px) 0;
+  padding: clamp(36px, 4vw, 48px) 0;
   border-bottom: 1px solid var(--sl-border);
 }
 
@@ -1784,7 +2262,7 @@
 .service-landing__resource-cta h2 {
   margin: 0;
   color: var(--sl-dark);
-  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-size: clamp(1.35rem, 3vw, 1.8rem);
   font-weight: 900;
   line-height: 1.2;
   letter-spacing: -0.02em;
@@ -1794,8 +2272,8 @@
   max-width: 760px;
   margin: 14px auto 0;
   color: var(--sl-body);
-  font-size: max(var(--sl-small), 0.875rem);
-  line-height: 1.7;
+  font-size: var(--sl-font-body);
+  line-height: var(--sl-line-height-body);
 }
 
 .service-landing__resource-cta-button {

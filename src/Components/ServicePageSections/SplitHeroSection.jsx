@@ -9,37 +9,73 @@ import {
 } from "../Animations/ScrollAnimation";
 import WhatsAppIcon from "./WhatsAppIcon";
 
-function SplitHeroSection({ content, contact, onPrimaryAction }) {
-  const [failedSources, setFailedSources] = useState(() => new Set());
+function SplitHeroSection({
+  content,
+  contact,
+  onPrimaryAction,
+  tone = "white",
+}) {
+  const [failedSources, setFailedSources] = useState(
+    () => new Set()
+  );
 
   if (!content) return null;
 
   const image = content.image || {};
+
   const cloudflareSrc = image.id
     ? getCloudflareImageUrl(image.id, "public")
     : "";
+
   const cloudflareSrcSet = image.id
     ? getCloudflareImageSrcSet(image.id)
     : undefined;
+
   const fallbackSrc = image.src || "";
+
   const canUseCloudflare =
-    Boolean(cloudflareSrc) && !failedSources.has(cloudflareSrc);
+    Boolean(cloudflareSrc) &&
+    !failedSources.has(cloudflareSrc);
+
   const canUseFallback =
-    Boolean(fallbackSrc) && !failedSources.has(fallbackSrc);
+    Boolean(fallbackSrc) &&
+    !failedSources.has(fallbackSrc);
+
   const imageSrc = canUseCloudflare
     ? cloudflareSrc
     : canUseFallback
       ? fallbackSrc
       : "";
+
   const imageSrcSet = canUseCloudflare
-    ? cloudflareSrcSet || image.srcSet || undefined
+    ? cloudflareSrcSet ||
+      image.srcSet ||
+      undefined
     : image.srcSet || undefined;
+
+  const hasPrimaryAction =
+    Boolean(content.primaryAction) &&
+    typeof onPrimaryAction === "function";
+
+  const hasSecondaryAction =
+    Boolean(content.secondaryAction) &&
+    Boolean(contact?.whatsapp);
+
+  const hasActions =
+    hasPrimaryAction || hasSecondaryAction;
 
   return (
     <section
-      className={`service-landing__hero ${imageSrc ? "has-media" : "is-text-only"}`}
+      className={`service-landing__hero is-${tone} ${
+        imageSrc
+          ? "has-media"
+          : "is-text-only"
+      }`}
     >
-      <div className="service-landing__hero-glow" aria-hidden="true" />
+      <div
+        className="service-landing__hero-glow"
+        aria-hidden="true"
+      />
 
       <div className="service-landing__hero-content">
         {content.eyebrow && (
@@ -50,49 +86,74 @@ function SplitHeroSection({ content, contact, onPrimaryAction }) {
           </ScrollSlide>
         )}
 
-        <ScrollZoomText as="div" delay={0.12}>
+        <ScrollZoomText
+          as="div"
+          delay={0.12}
+        >
           <h1>{content.title}</h1>
         </ScrollZoomText>
 
-        {content.subtitle && <h2>{content.subtitle}</h2>}
+        {content.subtitle && (
+          <h2>{content.subtitle}</h2>
+        )}
 
-        {content.paragraphs?.map((paragraph, index) => (
+        {content.paragraphs?.map(
+          (paragraph, index) => (
+            <ScrollSlide
+              direction="up"
+              delay={
+                0.2 +
+                index * 0.06
+              }
+              key={`${index}-${paragraph}`}
+            >
+              <p
+                className={
+                  index === 1
+                    ? "service-landing__hero-note"
+                    : ""
+                }
+              >
+                {paragraph}
+              </p>
+            </ScrollSlide>
+          )
+        )}
+
+        {hasActions && (
           <ScrollSlide
             direction="up"
-            delay={0.2 + index * 0.06}
-            key={paragraph}
+            delay={0.34}
           >
-            <p
-              className={
-                index === 1 ? "service-landing__hero-note" : ""
-              }
-            >
-              {paragraph}
-            </p>
+            <div className="service-landing__hero-actions">
+              {hasPrimaryAction && (
+                <button
+                  type="button"
+                  className="service-landing__button is-cyan"
+                  onClick={() =>
+                    onPrimaryAction(
+                      content.bookingLabel
+                    )
+                  }
+                >
+                  {content.primaryAction}
+                </button>
+              )}
+
+              {hasSecondaryAction && (
+                <a
+                  className="service-landing__button is-whatsapp"
+                  href={`https://wa.me/${contact.whatsapp}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <WhatsAppIcon className="service-landing__button-icon" />
+                  {content.secondaryAction}
+                </a>
+              )}
+            </div>
           </ScrollSlide>
-        ))}
-
-        <ScrollSlide direction="up" delay={0.34}>
-          <div className="service-landing__hero-actions">
-            <button
-              type="button"
-              className="service-landing__button is-cyan"
-              onClick={() => onPrimaryAction(content.bookingLabel)}
-            >
-              {content.primaryAction}
-            </button>
-
-            <a
-              className="service-landing__button is-whatsapp"
-              href={`https://wa.me/${contact.whatsapp}`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <WhatsAppIcon className="service-landing__button-icon" />
-              {content.secondaryAction}
-            </a>
-          </div>
-        </ScrollSlide>
+        )}
       </div>
 
       {imageSrc && (
@@ -106,12 +167,26 @@ function SplitHeroSection({ content, contact, onPrimaryAction }) {
             height={image.height}
             fetchPriority="high"
             decoding="async"
+            style={{
+              objectPosition:
+                image.position ||
+                "center",
+            }}
             onError={() => {
-              setFailedSources((currentSources) => {
-                const nextSources = new Set(currentSources);
-                nextSources.add(imageSrc);
-                return nextSources;
-              });
+              setFailedSources(
+                (currentSources) => {
+                  const nextSources =
+                    new Set(
+                      currentSources
+                    );
+
+                  nextSources.add(
+                    imageSrc
+                  );
+
+                  return nextSources;
+                }
+              );
             }}
           />
         </div>

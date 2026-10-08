@@ -52,6 +52,7 @@ export default function IceMakerRepair() {
         <PlanCardsSection
           content={pageData.contracts}
           onAction={openBooking}
+          tone="soft"
         />
 
         <EmbeddedVideoSection content={pageData.video} tone="soft" />
@@ -67,7 +68,7 @@ export default function IceMakerRepair() {
         <ActionCardsSection
           content={pageData.servicesOffered}
           onAction={openBooking}
-          tone="dark"
+          tone="soft"
           columns="three"
         />
 
@@ -75,29 +76,31 @@ export default function IceMakerRepair() {
 
         <ActionCardsSection
           content={pageData.whyChooseUs}
-          tone="dark"
+          tone="white"
           columns="three"
         />
 
         <SearchableDirectorySection
           content={pageData.brands}
           onAction={openBooking}
+          tone="soft"
         />
 
         <ActionCardsSection
           content={pageData.testimonials}
-          tone="soft"
+          tone="white"
           columns="three"
           slider
           autoplay
           loop
         />
 
-        <AccordionSection content={pageData.faqs} tone="white" />
+        <AccordionSection content={pageData.faqs} tone="soft" />
 
         <BookingSection
           content={pageData.booking}
           bookingState={bookingState}
+          tone="white"
         />
       </main>
 

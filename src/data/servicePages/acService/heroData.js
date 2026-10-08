@@ -1,7 +1,8 @@
 const heroData = {
   title: "Best AC Repair and Maintenance Services",
-  subtitle: "Improve the comfort of your home and business premises with air conditioning cooling. Maintain a perfect temperature year-round with our expert AC technicians.",
+  subtitle: "",
   paragraphs: [
+    "Improve the comfort of your home and business premises with air conditioning cooling. Maintain a perfect temperature year-round with our expert AC technicians.",
     "High energy bills and inefficient cooling can result from improper or irregular maintenance of AC systems. This is why regular AC maintenance is important to avoid unnecessary expenses in the future.",
     "To help you maintain your comfort and prevent any problems, FAJ Technical Services L.L.C offers for home, office, and commercial affordable AC Repair, AC cleaning, AC Service, and AC repair service near you. Our goal is to ensure your AC system operates efficiently and minimises energy consumption.",
   ],

@@ -74,9 +74,9 @@
 
 .blog-sidebar-consult > p:not(.blog-sidebar-eyebrow) {
   margin: 10px 0 20px;
-  color: #677a83;
-  font-size: 11px;
-  line-height: 1.65;
+  color: #1e293b;
+  font-size: 0.9375rem;
+  line-height: 1.6;
 }
 
 .blog-sidebar-consult__form {
@@ -90,12 +90,12 @@
   min-height: 42px;
   padding: 10px 12px;
   border: 1px solid #cddde3;
-  border-radius: 2px;
+  border-radius: 4px;
   outline: none;
   background: #f5f8fa;
   color: #193744;
   font: inherit;
-  font-size: 11px;
+  font-size: 0.875rem;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -110,12 +110,13 @@
   margin-top: 2px;
   padding: 10px 13px;
   border: 0;
+  border-radius: 4px;
   background: #003048;
   color: #ffffff;
   font: inherit;
-  font-size: 11px;
-  font-weight: 800;
-  letter-spacing: 0.06em;
+  font-size: 0.875rem;
+  font-weight: 750;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   cursor: pointer;
   transition: background 0.2s ease;
@@ -137,7 +138,7 @@
   border-left: 3px solid #2f9d65;
   background: #edf8f2;
   color: #216f49;
-  font-size: 11px;
+  font-size: 0.875rem;
   line-height: 1.45;
 }
 
@@ -160,8 +161,8 @@
   gap: 8px;
   padding-bottom: 14px;
   border-bottom: 1px solid #dce7eb;
-  font-size: max(11px, 0.78rem);
-  letter-spacing: 0.1em;
+  font-size: 0.875rem;
+  letter-spacing: 0.08em;
 }
 
 .blog-sidebar-recommended h2 svg {
@@ -214,7 +215,7 @@
 .blog-sidebar-recommended__content small {
   overflow: hidden;
   color: #007fa3;
-  font-size: 11px;
+  font-size: 0.75rem;
   font-weight: 800;
   letter-spacing: 0.05em;
   text-overflow: ellipsis;
@@ -226,9 +227,9 @@
   display: -webkit-box;
   overflow: hidden;
   color: #0b1f2a;
-  font-size: 11px;
+  font-size: 0.9375rem;
   font-weight: 800;
-  line-height: 1.4;
+  line-height: 1.45;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   transition: color 0.2s ease;
@@ -244,7 +245,7 @@
   align-items: center;
   gap: 5px;
   color: #83939a;
-  font-size: 11px;
+  font-size: 0.8125rem;
 }
 
 .blog-sidebar-recommended__content span svg {

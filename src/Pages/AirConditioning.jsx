@@ -43,26 +43,27 @@ export default function AirConditioning() {
 
         <BreadCumb />
 
-        <ContentCardSection content={pageData.introduction} />
+        <ContentCardSection content={pageData.introduction} tone="white" />
 
         <PlanCardsSection
           content={pageData.contracts}
           onAction={openBooking}
+          tone="soft"
         />
 
-        <EmbeddedVideoSection content={pageData.video} tone="soft" />
+        <EmbeddedVideoSection content={pageData.video} tone="white" />
 
-        <ContentCardSection content={pageData.professionalMaintenance} tone="dark" />
+        <ContentCardSection content={pageData.professionalMaintenance} tone="soft" />
 
         <ActionCardsSection
           content={pageData.shop}
-          tone="soft"
+          tone="white"
           columns="three"
         />
 
         <ActionCardsSection 
           content={pageData.testimonials} 
-          tone="dark" 
+          tone="soft" 
           columns="three" 
           slider 
           autoplay 
@@ -70,15 +71,16 @@ export default function AirConditioning() {
 
         <ActionCardsSection
           content={pageData.news}
-          tone="soft"
+          tone="white"
           columns="three"
         />
 
-        <AccordionSection content={pageData.faqs} tone="white" />
+        <AccordionSection content={pageData.faqs} tone="soft" />
 
         <BookingSection
           content={pageData.booking}
           bookingState={bookingState}
+          tone="white"
         />
       </main>
 

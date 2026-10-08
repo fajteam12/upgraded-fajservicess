@@ -2,19 +2,20 @@ import { memo } from "react";
 import { ScrollSlide } from "../Animations/ScrollAnimation";
 import SectionHeader from "./SectionHeader";
 
-function PlanCardsSection({ content, onAction, dark = true }) {
+function PlanCardsSection({ content, onAction, tone = "soft", dark }) {
   if (!content?.plans?.length) return null;
+
+  const resolvedTone = dark !== undefined ? (dark ? "dark" : "white") : tone;
+  const isDark = resolvedTone === "dark";
 
   return (
     <section
-      className={`service-landing__section service-landing__contracts ${
-        dark ? "is-dark" : "is-white"
-      }`}
+      className={`service-landing__section service-landing__contracts is-${resolvedTone}`}
       id={content.id}
     >
-      {dark && <div className="service-landing__dark-glow" aria-hidden="true" />}
+      {isDark && <div className="service-landing__dark-glow" aria-hidden="true" />}
       <div className="service-landing__container">
-        <SectionHeader content={content} light={dark} />
+        <SectionHeader content={content} light={isDark} />
 
         <div className="service-landing__contracts-grid">
           {content.plans.map((plan, index) => (
