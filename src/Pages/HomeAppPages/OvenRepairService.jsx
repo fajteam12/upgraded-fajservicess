@@ -1,19 +1,21 @@
 import BreadCumb from "../../Components/Common/BreadCumb";
 import MaintenanceBenefits from "../../Components/MaintenanceBenefits/MaintenanceBenefits";
 import {
+  AboutHeroSection,
   AccordionSection,
   ActionCardsSection,
   BookingModal,
   BookingSection,
+  ContentCardSection,
   EmbeddedVideoSection,
   NumberedGridSection,
   PageMetadata,
   PlanCardsSection,
   PricingCardsSection,
   SearchableDirectorySection,
-  SplitHeroSection,
   TwoColumnInfoSection,
   useBookingRequest,
+  TestimonialsSection,
 } from "../../Components/ServicePageSections";
 import "../../Components/ServicePageSections/ServicePageSections.css";
 import pageData from "../../data/servicePages/homeOvenRepair";
@@ -39,70 +41,90 @@ export default function OvenRepairService() {
       />
 
       <main className="service-landing">
-        <SplitHeroSection
+        <AboutHeroSection
           content={pageData.hero}
           contact={pageData.contact}
           onPrimaryAction={openBooking}
+          contentWidth={pageData.hero.contentWidth || "50%"}
+          showPhone={false}
+          showCall={false}
+          tone="white"
         />
 
         <BreadCumb />
 
-        <PricingCardsSection content={pageData.pricing} onAction={openBooking} />
+        <ContentCardSection content={pageData.overview} tone="soft" />
 
-        <PlanCardsSection content={pageData.contracts} onAction={openBooking} />
+        <PricingCardsSection
+          content={pageData.pricing}
+          onAction={openBooking}
+          tone="white"
+        />
 
-        <TwoColumnInfoSection content={pageData.serviceOverview} tone="soft" />
+        <TwoColumnInfoSection
+          content={pageData.serviceOverview}
+          tone="soft"
+        />
 
-        <EmbeddedVideoSection content={pageData.video} tone="dark" />
+        <EmbeddedVideoSection content={pageData.video} tone="white" />
 
         <ActionCardsSection
           content={pageData.maintenanceImportance}
-          tone="white"
+          tone="soft"
           columns="three"
         />
 
         <NumberedGridSection
           content={pageData.commonProblems}
-          tone="dark"
+          showCta={true}
+          cta={{
+            phone: "",
+            whatsapp: `https://api.whatsapp.com/send?phone=+${pageData.contact.whatsapp}&text=Hello`,
+          }}
+          tone="white"
           columns="four"
         />
 
         <ActionCardsSection
           content={pageData.servicesOffered}
-          tone="white"
+          tone="soft"
           columns="three"
           onAction={openBooking}
         />
 
-        <MaintenanceBenefits {...pageData.benefits} />
+        <MaintenanceBenefits {...pageData.benefits} tone="white" />
 
         <ActionCardsSection
           content={pageData.whyChooseUs}
-          tone="dark"
+          tone="soft"
           columns="three"
         />
 
         <SearchableDirectorySection
           content={pageData.brands}
-          tone="soft"
+          tone="white"
           onAction={openBooking}
+          showCta={true}
+          cta={{
+            phone: `tel:+${pageData.contact.phone}`,
+            whatsapp: "",
+          }}
         />
 
-        <ActionCardsSection
-          content={pageData.testimonials}
+        <TestimonialsSection content={pageData.testimonials} tone="soft" />
+
+        <PlanCardsSection
+          content={pageData.contracts}
+          onAction={openBooking}
           tone="dark"
-          columns="three"
-          slider
-          autoplay
-          loop
         />
 
-        <AccordionSection content={pageData.faqs} tone="white" />
+        <AccordionSection content={pageData.faqs} tone="soft" />
 
         <BookingSection
           content={pageData.booking}
           bookingState={bookingState}
-          tone="soft"
+          tone="white"
         />
       </main>
 

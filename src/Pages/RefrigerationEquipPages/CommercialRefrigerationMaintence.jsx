@@ -1,17 +1,19 @@
 import BreadCumb from "../../Components/Common/BreadCumb";
 import MaintenanceBenefits from "../../Components/MaintenanceBenefits/MaintenanceBenefits";
 import {
+  AboutHeroSection,
   AccordionSection,
   ActionCardsSection,
   BookingModal,
   BookingSection,
+  ContentCardSection,
   EmbeddedVideoSection,
   NumberedGridSection,
   PageMetadata,
   PlanCardsSection,
-  SplitHeroSection,
   TwoColumnInfoSection,
   useBookingRequest,
+  TestimonialsSection,
 } from "../../Components/ServicePageSections";
 import "../../Components/ServicePageSections/ServicePageSections.css";
 import pageData from "../../data/servicePages/commercialRefrigerationMaintenance";
@@ -37,22 +39,29 @@ export default function CommercialRefrigerationMaintence() {
       />
 
       <main className="service-landing">
-        <SplitHeroSection
+        <AboutHeroSection
           content={pageData.hero}
           contact={pageData.contact}
           onPrimaryAction={openBooking}
+          contentWidth={pageData.hero.contentWidth || "50%"}
+          showPhone={false}
+          showCall={false}
+          tone="white"
         />
 
         <BreadCumb />
 
-        <TwoColumnInfoSection content={pageData.serviceOverview} />
+        <ContentCardSection content={pageData.overview} tone="soft" />
 
-        <PlanCardsSection
-          content={pageData.contracts}
-          onAction={openBooking}
+        <TwoColumnInfoSection
+          content={pageData.serviceOverview}
+          tone="white"
         />
 
-        <EmbeddedVideoSection content={pageData.video} tone="soft" />
+        <EmbeddedVideoSection
+          content={pageData.video}
+          tone="soft"
+        />
 
         <ActionCardsSection
           content={pageData.maintenanceImportance}
@@ -62,22 +71,27 @@ export default function CommercialRefrigerationMaintence() {
 
         <NumberedGridSection
           content={pageData.commonProblems}
-          tone="dark"
+          tone="soft"
           columns="four"
+          showCta={true}
+          cta={{
+            phone: "",
+            whatsapp: `https://api.whatsapp.com/send?phone=+${pageData.contact.whatsapp}&text=Hello`,
+          }}
         />
 
         <ActionCardsSection
           content={pageData.servicesOffered}
-          tone="soft"
+          tone="white"
           columns="four"
           onAction={openBooking}
         />
 
-        <MaintenanceBenefits {...pageData.benefits} />
+        <MaintenanceBenefits {...pageData.benefits} tone="soft" />
 
         <ActionCardsSection
           content={pageData.whyChooseUs}
-          tone="dark"
+          tone="white"
           columns="three"
         />
 
@@ -86,23 +100,27 @@ export default function CommercialRefrigerationMaintence() {
           tone="soft"
           columns="three"
           onAction={openBooking}
+          showCta={true}
+          cta={{
+            phone: `tel:+${pageData.contact.phone}`,
+            whatsapp: "",
+          }}
         />
 
-        <ActionCardsSection
-          content={pageData.testimonials}
+        <TestimonialsSection content={pageData.testimonials} tone="white" />
+
+        <PlanCardsSection
+          content={pageData.contracts}
+          onAction={openBooking}
           tone="dark"
-          columns="three"
-          slider
-          autoplay
-          loop
         />
 
-        <AccordionSection content={pageData.faqs} tone="white" />
+        <AccordionSection content={pageData.faqs} tone="soft" />
 
         <BookingSection
           content={pageData.booking}
           bookingState={bookingState}
-          tone="soft"
+          tone="white"
         />
       </main>
 

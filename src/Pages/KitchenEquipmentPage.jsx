@@ -1,18 +1,19 @@
 import BreadCumb from "../Components/Common/BreadCumb";
 import MaintenanceBenefits from "../Components/MaintenanceBenefits/MaintenanceBenefits";
 import {
+  AboutHeroSection,
   AccordionSection,
   ActionCardsSection,
   BookingModal,
   BookingSection,
+  ContentCardSection,
   EmbeddedVideoSection,
   NumberedGridSection,
   PageMetadata,
   PlanCardsSection,
-  SearchableDirectorySection,
-  SplitHeroSection,
   TwoColumnInfoSection,
   useBookingRequest,
+  TestimonialsSection,
 } from "../Components/ServicePageSections";
 import "../Components/ServicePageSections/ServicePageSections.css";
 import pageData from "../data/servicePages/kitchenEquipmentMaintenance";
@@ -38,50 +39,58 @@ export default function KitchenEquipmentPage() {
       />
 
       <main className="service-landing">
-        <SplitHeroSection
+        <AboutHeroSection
           content={pageData.hero}
           contact={pageData.contact}
           onPrimaryAction={openBooking}
+          contentWidth={pageData.hero.contentWidth || "50%"}
+          showPhone={false}
+          showCall={false}
+          tone="white"
         />
 
         <BreadCumb />
 
-        <TwoColumnInfoSection content={pageData.serviceOverview} />
+        <ContentCardSection content={pageData.overview} tone="soft" />
 
-        <PlanCardsSection
-          content={pageData.contracts}
-          onAction={openBooking}
+        <TwoColumnInfoSection
+          content={pageData.serviceOverview}
+          tone="white"
         />
 
-        <EmbeddedVideoSection content={pageData.video} />
+        <EmbeddedVideoSection
+          content={pageData.video}
+          tone="soft"
+        />
 
         <ActionCardsSection
           content={pageData.maintenanceImportance}
           columns="three"
+          tone="white"
         />
 
         <NumberedGridSection
           content={pageData.commonProblems}
-          tone="dark"
-          columns="three"
-        />
-
-        <MaintenanceBenefits {...pageData.benefits} />
-
-        <ActionCardsSection
-          content={pageData.testimonials}
           tone="soft"
           columns="three"
-          slider
-          autoplay
-          loop
         />
 
-        <AccordionSection content={pageData.faqs} tone="white" />
+        <MaintenanceBenefits {...pageData.benefits} tone="white" />
+
+        <TestimonialsSection content={pageData.testimonials} tone="soft" />
+
+        <PlanCardsSection
+          content={pageData.contracts}
+          onAction={openBooking}
+          tone="dark"
+        />
+
+        <AccordionSection content={pageData.faqs} tone="soft" />
 
         <BookingSection
           content={pageData.booking}
           bookingState={bookingState}
+          tone="white"
         />
       </main>
 

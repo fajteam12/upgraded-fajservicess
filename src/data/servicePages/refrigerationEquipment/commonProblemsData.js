@@ -6,19 +6,19 @@ const commonProblemsData = {
     {
       "title": "Not Cooling",
       "description": "Cooling failure may result from compressor, motor, refrigerant, control, or maintenance problems.",
-      "icon": "snowflake",
+      "icon": "thermometer",
       "badge": "Cooling Fault"
     },
     {
       "title": "Strange Cycle Noises",
       "description": "Unusual sounds may indicate a problem with the compressor, fan motor, bearings, or electrical components.",
-      "icon": "alert",
+      "icon": "wrench",
       "badge": "Mechanical"
     },
     {
       "title": "Ice Buildup",
       "description": "Frost can result from frequent door opening, poor seals, sensor faults, or defrost-system problems.",
-      "icon": "snowflake",
+      "icon": "wrench-screwdriver",
       "badge": "Defrost"
     },
     {
@@ -36,19 +36,19 @@ const commonProblemsData = {
     {
       "title": "Temperature Changes",
       "description": "Unstable temperatures may point to thermostat, sensor, airflow, refrigerant, or door-seal faults.",
-      "icon": "thermometer",
+      "icon": "snowflake",
       "badge": "Calibration"
     },
     {
       "title": "Motor Runs Continuously",
       "description": "Continuous operation can indicate heat ingress, weak seals, dirty coils, or poor cooling performance.",
-      "icon": "refrigerator",
+      "icon": "check",
       "badge": "High Load"
     },
     {
       "title": "Compressor Will Not Start",
       "description": "Power, control, overload, capacitor, wiring, or compressor faults can prevent startup.",
-      "icon": "wrench",
+      "icon": "trust-shield",
       "badge": "Critical"
     }
   ]

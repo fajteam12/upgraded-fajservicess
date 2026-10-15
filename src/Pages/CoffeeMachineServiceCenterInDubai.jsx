@@ -1,19 +1,21 @@
 import BreadCumb from "../Components/Common/BreadCumb";
 import MaintenanceBenefits from "../Components/MaintenanceBenefits/MaintenanceBenefits";
 import {
+  AboutHeroSection,
   AccordionSection,
   ActionCardsSection,
   BookingModal,
   BookingSection,
+  ContentCardSection,
   EmbeddedVideoSection,
   NumberedGridSection,
   PageMetadata,
   PlanCardsSection,
   PricingCardsSection,
   SearchableDirectorySection,
-  SplitHeroSection,
   TwoColumnInfoSection,
   useBookingRequest,
+  TestimonialsSection,
 } from "../Components/ServicePageSections";
 import "../Components/ServicePageSections/ServicePageSections.css";
 import pageData from "../data/servicePages/coffeeMachineServiceCenter";
@@ -26,19 +28,31 @@ export default function CoffeeMachineServiceCenterInDubai() {
     <>
       <PageMetadata seo={pageData.seo} contact={pageData.contact} faqItems={pageData.faqs.items} />
       <main className="service-landing">
-        <SplitHeroSection content={pageData.hero} contact={pageData.contact} onPrimaryAction={openBooking} />
+        <AboutHeroSection
+          content={pageData.hero}
+          contact={pageData.contact}
+          onPrimaryAction={openBooking}
+          contentWidth={pageData.hero.contentWidth || "50%"}
+          tone="white"
+        />
         <BreadCumb />
-        <PricingCardsSection content={pageData.pricing} onAction={openBooking} />
-        <PlanCardsSection content={pageData.contracts} onAction={openBooking} tone="soft" />
-        <TwoColumnInfoSection content={pageData.serviceOverview} tone="white" />
-        <EmbeddedVideoSection content={pageData.video} tone="soft" />
-        <ActionCardsSection content={pageData.maintenanceImportance} tone="white" columns="three" />
-        <NumberedGridSection content={pageData.commonProblems} tone="soft" columns="four" />
-        <ActionCardsSection content={pageData.servicesOffered} tone="white" columns="three" onAction={openBooking} />
+        <ContentCardSection content={pageData.overview} contact={pageData.contact} tone="soft" />
+        <PricingCardsSection content={pageData.pricing} onAction={openBooking} tone="white" />
+        <TwoColumnInfoSection content={pageData.serviceOverview} contact={pageData.contact} tone="soft" />
+        <EmbeddedVideoSection content={pageData.video} tone="white" />
+        <ActionCardsSection content={pageData.maintenanceImportance} tone="soft" columns="three" />
+        <NumberedGridSection content={pageData.commonProblems} contact={pageData.contact} tone="white" columns="four" />
+        <ActionCardsSection content={pageData.servicesOffered} tone="soft" columns="three" onAction={openBooking} />
         <MaintenanceBenefits {...pageData.benefits} />
-        <ActionCardsSection content={pageData.whyChooseUs} tone="white" columns="three" />
-        <SearchableDirectorySection content={pageData.brands} tone="soft" onAction={openBooking} />
-        <ActionCardsSection content={pageData.testimonials} tone="white" columns="three" slider={true} autoplay={true} loop={true} />
+        <ActionCardsSection content={pageData.whyChooseUs} contact={pageData.contact} tone="white" columns="three" />
+        <SearchableDirectorySection content={pageData.brands} contact={pageData.contact} tone="soft" onAction={openBooking} />
+        <TestimonialsSection content={pageData.testimonials} tone="white" />
+        <PlanCardsSection
+          content={pageData.contracts}
+          onAction={openBooking}
+          tone="dark"
+        />
+
         <AccordionSection content={pageData.faqs} tone="soft" />
         <BookingSection content={pageData.booking} bookingState={bookingState} tone="white" />
       </main>

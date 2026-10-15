@@ -4,7 +4,7 @@ const systemTypesData = {
   title: "We specialise in Lennox AC services for the following types",
   items: [
     {
-      icon: "wind",
+      icon: "ac-split",
       title: "Lennox Split Air Conditioner Service",
       description: {
         parts: [
@@ -20,7 +20,7 @@ const systemTypesData = {
       },
     },
     {
-      icon: "settings",
+      icon: "ac-central",
       title: "Lennox Central Air Conditioner Repair and Service",
       description: {
         parts: [
@@ -34,44 +34,44 @@ const systemTypesData = {
       },
     },
     {
-      icon: "wrench",
+      icon: "wind",
       title: "Lennox AC Service and Repair",
       description:
         "At Lennox AC Service, we bring you peace of mind with our skilled AC technicians. At FAJ, we are dedicated to delivering efficient and reliable Lennox AC maintenance, repair, and installation. Trust our expert team to keep your HVAC system in prime condition, ensuring your comfort every day of the year!",
     },
     {
-      icon: "zap",
+      icon: "ac-inverter",
       title: "Lennox Inverter Air Conditioner Maintenance",
       description:
         "Trust our dedicated team to quickly address and resolve any issues with your Lennox air conditioner maintenance, ensuring it is restored to optimal performance without delay!",
     },
     {
-      icon: "tool",
+      icon: "ac-air-filter",
       title: "Lennox HVAC Repair",
       description:
         "We specialize in Lennox HVAC, cassette and package unit AC systems, providing reliable repairs to ensure your units operate efficiently.",
     },
     {
-      icon: "wind",
+      icon: "sparkles",
       title: "Lennox Ceiling AC Service and Repair",
       description:
         "Our specialists can quickly diagnose and resolve any issues with your Lennox ceiling air conditioner and ducted split AC services.",
     },
     {
-      icon: "settings",
+      icon: "ac-vrv",
       title:
         "Lennox VRF (Variable Refrigerant Flow) System Service and Repair",
       description:
         "FAJ's Lennox VRF (Variable Refrigerant Flow) repair and maintenance services offer tailored HVAC solutions. Our knowledgeable team focuses on your comfort and satisfaction, ensuring reliable service for your climate control needs.",
     },
     {
-      icon: "wrench",
+      icon: "ac-repair",
       title: "Lennox Ducted Split AC Service and Repair",
       description:
         "For reliable Lennox air conditioning repair and maintenance in Dubai, our skilled technicians are here to help. With expertise in diagnosing various issues and resolving error codes, we ensure minimal disruption to your comfort. You can trust us for prompt service that delivers the cooling relief you need.",
     },
     {
-      icon: "wind",
+      icon: "ac-installation",
       title: "Lennox Wall-Mounted Air Conditioner Service and Repair",
       description:
         "In Dubai, UAE, where extreme heat is common, maintaining a comfortable indoor climate is essential. Our Lennox air conditioning repair, maintenance, and cleaning services ensure optimal unit performance, helping you stay cool even in high temperatures.",

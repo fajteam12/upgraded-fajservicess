@@ -1,8 +1,14 @@
 import { Fragment, memo, useCallback, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
+import {
+  getCloudflareImageSrcSet,
+  getCloudflareImageUrl,
+} from "../../utils/cloudflareImages";
 import { ScrollSlide } from "../Animations/ScrollAnimation";
 import SectionHeader from "./SectionHeader";
 import ServiceIcon from "./ServiceIcon";
+import CallNowButton from "../Buttons/CallNowButton";
+import WhatsappIconButton from "../Buttons/WhatsappIconButton";
 
 function RichText({ value, as: Tag = "p", className }) {
   if (!value) return null;
@@ -69,7 +75,64 @@ function ActionCardsSection({
   autoplay = false,
   autoplayDelay = 4000,
   pauseOnHover = true,
+  showCta,
+  cta,
+  contact,
 }) {
+  const isCtaEnabled = Boolean(
+    showCta ?? content?.showCta ?? (cta || content?.cta)
+  );
+
+  let phoneUrl = "";
+  let whatsappUrl = "";
+
+  if (isCtaEnabled) {
+    const hasExplicitCta = Boolean(
+      (typeof cta === "object" && cta) ||
+      (typeof content?.cta === "object" && content?.cta)
+    );
+
+    const ctaConfig =
+      (typeof cta === "object" && cta) ||
+      (typeof content?.cta === "object" && content?.cta) ||
+      {};
+
+    const getCleanUrl = (val) => {
+      if (typeof val === "string") return val.trim();
+      return "";
+    };
+
+    // Phone URL resolution: empty string or false suppresses the button
+    if ("phone" in ctaConfig) {
+      phoneUrl = getCleanUrl(ctaConfig.phone);
+    } else if ("phone" in content) {
+      phoneUrl = getCleanUrl(content.phone);
+    } else if (!hasExplicitCta && contact?.phone) {
+      phoneUrl = `tel:+${String(contact.phone).replace(/[^0-9]/g, "")}`;
+    }
+
+    if (phoneUrl && !phoneUrl.startsWith("tel:") && !phoneUrl.startsWith("http")) {
+      phoneUrl = `tel:+${phoneUrl.replace(/[^0-9]/g, "")}`;
+    }
+
+    // WhatsApp URL resolution: empty string or false suppresses the button
+    if ("whatsapp" in ctaConfig) {
+      whatsappUrl = getCleanUrl(ctaConfig.whatsapp);
+    } else if ("whatsapp" in content) {
+      whatsappUrl = getCleanUrl(content.whatsapp);
+    } else if (!hasExplicitCta && contact?.whatsapp) {
+      whatsappUrl = `https://api.whatsapp.com/send?phone=+${String(contact.whatsapp).replace(/[^0-9]/g, "")}&text=Hello`;
+    }
+
+    if (whatsappUrl && !whatsappUrl.startsWith("http")) {
+      whatsappUrl = `https://api.whatsapp.com/send?phone=+${whatsappUrl.replace(/[^0-9]/g, "")}&text=Hello`;
+    }
+  }
+
+  const hasPhone = Boolean(phoneUrl);
+  const hasWhatsapp = Boolean(whatsappUrl);
+  const showAnyCta = isCtaEnabled && (hasPhone || hasWhatsapp);
+
   const sliderRef = useRef(null);
   const autoplayPausedRef = useRef(false);
 
@@ -179,62 +242,171 @@ function ActionCardsSection({
     }
   };
 
-  const renderCard = (item) => (
-    <article className="service-landing__action-card">
-      <div className="service-landing__action-card-top">
-        <span className="service-landing__action-icon">
-          <ServiceIcon name={item.icon} />
-        </span>
+  const renderCard = (item) => {
+    const hasImage = Boolean(item.image || item.img);
+    const imageKey = item.image || item.img;
+    const imageSrc = hasImage ? getCloudflareImageUrl(imageKey, "tablet") : "";
+    const imageSrcSet = hasImage ? getCloudflareImageSrcSet(imageKey) : undefined;
 
-        {item.badge && (
-          <span className="service-landing__action-badge">
-            {item.badge}
-          </span>
+    return (
+      <article
+        className={`service-landing__action-card ${
+          hasImage ? "has-image" : ""
+        }`}
+      >
+        {hasImage && (
+          <div className="service-landing__action-card-media">
+            {item.href ? (
+              item.external ? (
+                <a
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="service-landing__action-media-link"
+                  aria-label={`Read ${item.title}`}
+                >
+                  <img
+                    src={imageSrc}
+                    srcSet={imageSrcSet}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    alt={item.title}
+                    width="1290"
+                    height="530"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  {item.badge && (
+                    <span className="service-landing__action-badge is-overlay">
+                      {item.badge}
+                    </span>
+                  )}
+                </a>
+              ) : (
+                <Link
+                  to={item.href}
+                  className="service-landing__action-media-link"
+                  aria-label={`Read ${item.title}`}
+                >
+                  <img
+                    src={imageSrc}
+                    srcSet={imageSrcSet}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    alt={item.title}
+                    width="1290"
+                    height="530"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  {item.badge && (
+                    <span className="service-landing__action-badge is-overlay">
+                      {item.badge}
+                    </span>
+                  )}
+                </Link>
+              )
+            ) : (
+              <div className="service-landing__action-media-link">
+                <img
+                  src={imageSrc}
+                  srcSet={imageSrcSet}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  alt={item.title}
+                  width="1290"
+                  height="530"
+                  loading="lazy"
+                  decoding="async"
+                />
+                {item.badge && (
+                  <span className="service-landing__action-badge is-overlay">
+                    {item.badge}
+                  </span>
+                )}
+              </div>
+            )}
+          </div>
         )}
-      </div>
 
-      <h3>{item.title}</h3>
+        <div className="service-landing__action-card-content">
+          {!hasImage && (
+            <div className="service-landing__action-card-top">
+              <span className="service-landing__action-icon">
+                <ServiceIcon name={item.icon} />
+              </span>
 
-      {item.subtitle && <strong>{item.subtitle}</strong>}
+              {item.badge && (
+                <span className="service-landing__action-badge">
+                  {item.badge}
+                </span>
+              )}
+            </div>
+          )}
 
-      <RichText value={item.description} />
+          <h3>
+            {item.href ? (
+              item.external ? (
+                <a
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="service-landing__action-title-link"
+                >
+                  {item.title}
+                </a>
+              ) : (
+                <Link
+                  to={item.href}
+                  className="service-landing__action-title-link"
+                >
+                  {item.title}
+                </Link>
+              )
+            ) : (
+              item.title
+            )}
+          </h3>
 
-      {item.actionLabel && item.href && item.external && (
-        <a
-          className="service-landing__action-link"
-          href={item.href}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {item.actionLabel}
-          <span aria-hidden="true">{"\u2192"}</span>
-        </a>
-      )}
+          {item.subtitle && <strong>{item.subtitle}</strong>}
 
-      {item.actionLabel && item.href && !item.external && (
-        <Link
-          className="service-landing__action-link"
-          to={item.href}
-        >
-          {item.actionLabel}
-          <span aria-hidden="true">{"\u2192"}</span>
-        </Link>
-      )}
+          <RichText value={item.description} />
 
-      {item.actionLabel && !item.href && onAction && (
-        <button
-          type="button"
-          className="service-landing__action-link"
-          onClick={() =>
-            onAction(item.bookingLabel || item.title)
-          }
-        >
-          {item.actionLabel}
-          <span aria-hidden="true">{"\u2192"}</span>
-        </button>
-      )}
-    </article>
-  );
+          {item.actionLabel && item.href && item.external && (
+            <a
+              className="service-landing__action-link"
+              href={item.href}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {item.actionLabel}
+              <span aria-hidden="true">{"\u2192"}</span>
+            </a>
+          )}
+
+          {item.actionLabel && item.href && !item.external && (
+            <Link
+              className="service-landing__action-link"
+              to={item.href}
+            >
+              {item.actionLabel}
+              <span aria-hidden="true">{"\u2192"}</span>
+            </Link>
+          )}
+
+          {item.actionLabel && !item.href && onAction && (
+            <button
+              type="button"
+              className="service-landing__action-link"
+              onClick={() =>
+                onAction(item.bookingLabel || item.title)
+              }
+            >
+              {item.actionLabel}
+              <span aria-hidden="true">{"\u2192"}</span>
+            </button>
+          )}
+        </div>
+      </article>
+    );
+  };
 
   return (
     <section
@@ -314,7 +486,11 @@ function ActionCardsSection({
             </div>
           ) : (
             <div
-              className={`service-landing__action-grid is-${resolvedColumns}`}
+              className={`service-landing__action-grid is-${resolvedColumns}${
+                content?.items?.length === 5 && resolvedColumns === "three"
+                  ? " has-5-items"
+                  : ""
+              }`}
             >
               {content.items.map((item, index) => (
                 <ScrollSlide
@@ -373,6 +549,15 @@ function ActionCardsSection({
                 </button>
               )}
             </aside>
+          </ScrollSlide>
+        )}
+
+        {showAnyCta && (
+          <ScrollSlide direction="up" delay={0.24}>
+            <div className="service-landing__cta-actions">
+              {hasPhone && <CallNowButton phone={phoneUrl} />}
+              {hasWhatsapp && <WhatsappIconButton whatsapp={whatsappUrl} />}
+            </div>
           </ScrollSlide>
         )}
       </div>

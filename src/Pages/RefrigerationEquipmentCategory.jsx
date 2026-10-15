@@ -39,22 +39,15 @@ export default function RefrigerationEquipmentCategory() {
         <SplitHeroSection
           content={pageData.hero}
           contact={pageData.contact}
-          onPrimaryAction={openBooking}
-        />
+          onPrimaryAction={openBooking} tone="white" />
 
         <Breadcrumb />
 
-        <NoticeBarSection content={pageData.notice} />
-
-        <PlanCardsSection
-          content={pageData.contracts}
-          onAction={openBooking}
-        />
+        <NoticeBarSection content={pageData.notice} tone="soft" />
 
         <ActionCardsSection
           content={pageData.subServices}
-          columns="three"
-        />
+          columns="three" tone="white" />
 
         <EmbeddedVideoSection
           content={pageData.video}
@@ -64,8 +57,7 @@ export default function RefrigerationEquipmentCategory() {
         <ActionCardsSection
           content={pageData.repairOptions}
           onAction={openBooking}
-          columns="three"
-        />
+          columns="three" tone="white" />
 
         <ActionCardsSection
           content={pageData.maintenanceImportance}
@@ -75,41 +67,46 @@ export default function RefrigerationEquipmentCategory() {
 
         <ActionCardsSection
           content={pageData.commonProblems}
-          tone="dark"
+          tone="white"
           columns="four"
         />
 
         <ActionCardsSection
           content={pageData.servicesOffered}
           onAction={openBooking}
-          columns="two"
-        />
+          columns="two" tone="soft" />
 
         <ActionCardsSection
           content={pageData.benefits}
-          tone="soft"
+          tone="white"
           columns="three"
         />
 
         <ActionCardsSection
           content={pageData.whyChooseUs}
-          columns="three"
-        />
+          columns="three" tone="soft" />
 
         <SearchableDirectorySection
           content={pageData.equipmentTypes}
           onAction={openBooking}
-          tone="soft"
+          tone="white"
+        />
+
+        <PlanCardsSection
+          content={pageData.contracts}
+          onAction={openBooking}
+          tone="dark"
         />
 
         <AccordionSection
           content={pageData.faqs}
-          tone="white"
+          tone="soft"
         />
 
         <BookingSection
           content={pageData.booking}
           bookingState={bookingState}
+          tone="white"
         />
       </main>
 

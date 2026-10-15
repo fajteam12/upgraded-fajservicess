@@ -7,21 +7,21 @@ const servicesOfferedData = {
   lead: "Our services include:",
   items: [
     {
-      icon: "wrench",
+      icon: "ac-installation",
       title: "Goodman AC Installation",
       description:
         "Professional installation of various Goodman air conditioning systems ensures optimal performance.",
       actionLabel: "Request Installation",
     },
     {
-      icon: "thermometer",
+      icon: "diagnostics",
       title: "Goodman AC Inspection",
       description:
         "Detailed fault diagnosis to accurately identify system issues. We provide comprehensive quotes and eligibility assessments to address any concerns you may have.",
       actionLabel: "Book Inspection",
     },
     {
-      icon: "settings",
+      icon: "wind",
       title: "Goodman AC Repair Service",
       description: {
         parts: [
@@ -39,7 +39,7 @@ const servicesOfferedData = {
       actionLabel: "Request Repair",
     },
     {
-      icon: "calendar",
+      icon: "ac-maintenance",
       title: "Goodman AC Annual Maintenance Contract",
       description:
         "This contract outlines the Goodman AC annual maintenance terms.",

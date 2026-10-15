@@ -13,12 +13,12 @@ const acPropertiesData = {
       description: "Reduce humidity, pollen and dust",
     },
     {
-      icon: "shield",
+      icon: "safety-compliance",
       title: "PROTECT YOUR PROPERTY",
       description: "Prevent damage to electronics and furnishings",
     },
     {
-      icon: "check",
+      icon: "wrench",
       title: "QUIET AND SECURE",
       description: "No need to leave windows open",
     },

@@ -7,28 +7,28 @@ const servicesOfferedData = {
   lead: "Our services include:",
   items: [
     {
-      icon: "wrench",
+      icon: "ac-installation",
       title: "Coleman AC Installation",
       description:
         "Professional installation of various Coleman AC systems for peak performance.",
       actionLabel: "Request Installation",
     },
     {
-      icon: "thermometer",
+      icon: "diagnostics",
       title: "Coleman AC Diagnostics",
       description:
         "Comprehensive fault finding to accurately diagnose issues. We offer eligibility assessments and detailed quotes to address any concerns with your system.",
       actionLabel: "Book Diagnostics",
     },
     {
-      icon: "settings",
+      icon: "wind",
       title: "Coleman AC Repair Service",
       description:
         "Prompt and effective repair services for all Coleman AC components, addressing issues like leaks, electrical failures, and system malfunctions. Contact us for specific services or any questions you may have!",
       actionLabel: "Request Repair",
     },
     {
-      icon: "calendar",
+      icon: "ac-maintenance",
       title: "Coleman AC Annual Maintenance Contract",
       description:
         "This contract details the terms and services for annual maintenance of Coleman air conditioner units.",

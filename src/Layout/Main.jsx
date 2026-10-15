@@ -4,15 +4,20 @@ import {
   useMatches,
 } from "react-router-dom";
 import Header1 from "../Components/Header/Header1";
+import ClassicHeader from "../Components/Header/ClassicHeader";
 import Footer from "../Components/Footer/Footer";
 import ScrollToTop from "../Components/ScrollToTop";
 import { preloadCommonRoutes } from "../Routes/preloadRoutes";
 import ContactSidebar from "../Components/ContactSidebar/ContactSidebar";
 
+// Switch between "classic" (old site header) and "pill" (new floating pill header) anytime:
+const ACTIVE_HEADER = "classic"; // "classic" | "pill"
+
 const Main = () => {
   const matches = useMatches();
   const activeMatch = matches[matches.length - 1];
 
+  const headerVariant = activeMatch?.handle?.headerVariant || ACTIVE_HEADER;
   const headerMode =
     activeMatch?.handle?.headerMode || "standard";
 
@@ -56,12 +61,16 @@ const Main = () => {
 
       <div
         className={`main-page-area ${
-          overlayHeader
+          headerVariant === "pill" && overlayHeader
             ? "main-page-area--overlay-header"
             : "main-page-area--standard-header"
         }`}
       >
-        <Header1 overlay={overlayHeader} />
+        {headerVariant === "classic" ? (
+          <ClassicHeader />
+        ) : (
+          <Header1 overlay={overlayHeader} />
+        )}
 
         <main
           className="page-content-loader"

@@ -7,28 +7,28 @@ const servicesOfferedData = {
   lead: "Our services include:",
   items: [
     {
-      icon: "wrench",
+      icon: "ac-installation",
       title: "Blue Star AC Installation",
       description:
         "The professional installation of various Blue Star air conditioning systems ensures optimal performance.",
       actionLabel: "Request Installation",
     },
     {
-      icon: "thermometer",
+      icon: "diagnostics",
       title: "Blue Star AC Inspection",
       description:
         "We offer accurate fault diagnosis to pinpoint system issues, along with comprehensive quotes and eligibility assessments to address your concerns.",
       actionLabel: "Book Inspection",
     },
     {
-      icon: "settings",
+      icon: "wind",
       title: "Blue Star AC Repair Service",
       description:
         "We offer fast repair services for Blue Star air conditioners, addressing leaks, electrical problems, and malfunctions. Contact us for further details or inquiries!",
       actionLabel: "Request Repair",
     },
     {
-      icon: "calendar",
+      icon: "ac-maintenance",
       title: "Blue Star AC Annual Maintenance Contract",
       description:
         "The contract specifies the annual maintenance terms for Blue Star air conditioners.",

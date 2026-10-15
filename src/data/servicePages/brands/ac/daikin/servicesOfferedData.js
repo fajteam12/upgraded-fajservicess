@@ -6,28 +6,28 @@ const servicesOfferedData = {
     "We specialize in various types and brands of HVAC systems, including Fresh Air Handling Units (FAHU).",
   items: [
     {
-      icon: "wrench",
+      icon: "ac-installation",
       title: "Daikin AC Installation",
       description:
         "Professional installation of various Daikin air conditioning systems to guarantee optimal performance.",
       actionLabel: "Request Installation",
     },
     {
-      icon: "thermometer",
+      icon: "diagnostics",
       title: "Daikin AC Diagnostics",
       description:
         "Comprehensive fault diagnosis to accurately identify issues. We offer eligibility assessments and detailed quotes to address any concerns regarding your system.",
       actionLabel: "Book Diagnostics",
     },
     {
-      icon: "settings",
+      icon: "wind",
       title: "Daikin AC Repair Service",
       description:
         "We provide prompt and effective repair services for all Daikin AC components, addressing issues such as leaks, electrical failures, and system malfunctions. Contact us for specific services or any questions you may have!",
       actionLabel: "Request Repair",
     },
     {
-      icon: "calendar",
+      icon: "ac-maintenance",
       title: "Daikin AC Annual Maintenance Contract",
       description:
         "This contract details the terms and services for Daikin AC annual maintenance.",

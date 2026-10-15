@@ -1,10 +1,11 @@
 import BreadCumb from "../../Components/Common/BreadCumb";
 import {
+  AboutHeroSection,
   AccordionSection,
   ActionCardsSection,
   BookingModal,
   BookingSection,
-  CalloutBannerSection,
+  ContentCardSection,
   ContentGridSection,
   EmbeddedVideoSection,
   MetricCardsSection,
@@ -12,9 +13,8 @@ import {
   PageMetadata,
   PlanCardsSection,
   SearchableDirectorySection,
-  SplitHeroSection,
   useBookingRequest,
-  ContentCardSection
+  TestimonialsSection,
 } from "../../Components/ServicePageSections";
 import "../../Components/ServicePageSections/ServicePageSections.css";
 import pageData from "../../data/servicePages/cookingEquipmentService";
@@ -40,35 +40,34 @@ export default function CookingEquipmentService() {
       />
 
       <main className="service-landing">
-        <SplitHeroSection
+        <AboutHeroSection
           content={pageData.hero}
           contact={pageData.contact}
           onPrimaryAction={openBooking}
+          contentWidth={pageData.hero.contentWidth || "50%"}
+          showPhone={false}
+          showCall={false}
+          tone="white"
         />
 
         <BreadCumb />
 
+        <ContentCardSection content={pageData.overview} tone="soft" />
+
         <NoticeBarSection content={pageData.notice} />
 
-        <PlanCardsSection
-          content={pageData.contracts}
-          onAction={openBooking}
-        />
+        <ContentCardSection content={pageData.emergencyServices} tone="white" />
 
-        <ContentCardSection content={pageData.emergencyServices} tone="soft" />
-
-        <EmbeddedVideoSection
-          content={pageData.video}
-          tone="dark"
-        />
+        <EmbeddedVideoSection content={pageData.video} tone="soft" />
 
         <ContentCardSection content={pageData.warranty} tone="white" />
 
-        <MetricCardsSection content={pageData.maintenanceImportance} />
+        <MetricCardsSection content={pageData.maintenanceImportance} tone="soft" />
 
         <ActionCardsSection
           content={pageData.commonProblems}
           columns="four"
+          tone="white"
         />
 
         <ActionCardsSection
@@ -80,22 +79,29 @@ export default function CookingEquipmentService() {
 
         <ActionCardsSection
           content={pageData.benefits}
-          tone="dark"
+          tone="white"
           columns="three"
         />
 
         <ActionCardsSection
           content={pageData.whyChooseUs}
           columns="three"
+          tone="soft"
         />
 
-        <ContentGridSection content={pageData.serviceDetails} />
+        <ContentGridSection content={pageData.serviceDetails} tone="white" />
 
-        <SearchableDirectorySection content={pageData.brands} />
+        <SearchableDirectorySection content={pageData.brands} tone="soft" />
 
-        <ActionCardsSection content={pageData.testimonials} tone="dark" columns="three" slider autoplay loop />
+        <TestimonialsSection content={pageData.testimonials} tone="white" />
 
-        <AccordionSection content={pageData.faqs} />
+        <PlanCardsSection
+          content={pageData.contracts}
+          onAction={openBooking}
+          tone="dark"
+        />
+
+        <AccordionSection content={pageData.faqs} tone="soft" />
 
         <BookingSection
           content={pageData.booking}

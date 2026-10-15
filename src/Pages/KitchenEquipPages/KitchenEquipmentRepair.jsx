@@ -1,6 +1,7 @@
 import BreadCumb from "../../Components/Common/BreadCumb";
 import MaintenanceBenefits from "../../Components/MaintenanceBenefits/MaintenanceBenefits";
 import {
+  AboutHeroSection,
   AccordionSection,
   ActionCardsSection,
   BookingModal,
@@ -11,9 +12,8 @@ import {
   PageMetadata,
   PlanCardsSection,
   SearchableDirectorySection,
-  SplitHeroSection,
-  TwoColumnInfoSection,
   useBookingRequest,
+  TestimonialsSection,
 } from "../../Components/ServicePageSections";
 import "../../Components/ServicePageSections/ServicePageSections.css";
 import pageData from "../../data/servicePages/kitchenEquipmentRepair";
@@ -39,36 +39,37 @@ export default function KitchenEquipmentRepair() {
       />
 
       <main className="service-landing">
-        <SplitHeroSection
+        <AboutHeroSection
           content={pageData.hero}
           contact={pageData.contact}
           onPrimaryAction={openBooking}
+          contentWidth={pageData.hero.contentWidth || "50%"}
+          showPhone={false}
+          showCall={false}
+          tone="white"
         />
 
         <BreadCumb />
 
+        <ContentCardSection content={pageData.overview} tone="soft" />
+
         <ContentCardSection content={pageData.serviceOverview} tone="white" />
 
-        <PlanCardsSection
-          content={pageData.contracts}
-          onAction={openBooking}
-        />
+        <ContentCardSection content={pageData.inspectionPolicy} tone="soft" />
 
-        <TwoColumnInfoSection content={pageData.inspectionPolicy} tone="soft" />
+        <EmbeddedVideoSection content={pageData.video} tone="white" />
 
-        <EmbeddedVideoSection content={pageData.video} tone="dark" />
-
-        <ContentCardSection content={pageData.ppmServices} tone="white" />
+        <ContentCardSection content={pageData.ppmServices} tone="soft" />
 
         <ActionCardsSection
           content={pageData.maintenanceImportance}
-          tone="soft"
+          tone="white"
           columns="three"
         />
 
         <NumberedGridSection
           content={pageData.commonProblems}
-          tone="dark"
+          tone="soft"
           columns="four"
         />
 
@@ -79,11 +80,11 @@ export default function KitchenEquipmentRepair() {
           onAction={openBooking}
         />
 
-        <MaintenanceBenefits {...pageData.benefits} />
+        <MaintenanceBenefits {...pageData.benefits} tone="soft" />
 
         <ActionCardsSection
           content={pageData.whyChooseUs}
-          tone="dark"
+          tone="white"
           columns="three"
         />
 
@@ -100,21 +101,20 @@ export default function KitchenEquipmentRepair() {
           onAction={openBooking}
         />
 
-        <ActionCardsSection
-          content={pageData.testimonials}
+        <TestimonialsSection content={pageData.testimonials} tone="soft" />
+
+        <PlanCardsSection
+          content={pageData.contracts}
+          onAction={openBooking}
           tone="dark"
-          columns="three"
-          slider
-          autoplay
-          loop
         />
 
-        <AccordionSection content={pageData.faqs} tone="white" />
+        <AccordionSection content={pageData.faqs} tone="soft" />
 
         <BookingSection
           content={pageData.booking}
           bookingState={bookingState}
-          tone="soft"
+          tone="white"
         />
       </main>
 

@@ -7,28 +7,28 @@ const servicesOfferedData = {
   lead: "Our services include:",
   items: [
     {
-      icon: "wrench",
+      icon: "ac-installation",
       title: "McQuay AC Installation",
       description:
         "Expert installation of various McQuay air conditioning systems to ensure optimal performance.",
       actionLabel: "Request Installation",
     },
     {
-      icon: "thermometer",
+      icon: "diagnostics",
       title: "McQuay AC Diagnostics",
       description:
         "Through fault diagnosis to accurately identify issues. We provide eligibility assessments and detailed quotes to address any concerns regarding your system.",
       actionLabel: "Book Diagnostics",
     },
     {
-      icon: "settings",
+      icon: "wind",
       title: "McQuay AC Repair Service",
       description:
         "Prompt and effective repair services for all McQuay AC components, addressing issues such as leaks, electrical failures, and system malfunctions. Contact us for specific services or any questions you may have!",
       actionLabel: "Request Repair",
     },
     {
-      icon: "calendar",
+      icon: "ac-maintenance",
       title: "McQuay AC Annual Maintenance Contract",
       description:
         "This contract outlines the terms and services for the McQuay AC annual maintenance.",

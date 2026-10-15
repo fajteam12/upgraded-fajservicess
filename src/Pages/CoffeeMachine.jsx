@@ -1,16 +1,18 @@
 import BreadCumb from "../Components/Common/BreadCumb";
 import {
+  AboutHeroSection,
   AccordionSection,
   ActionCardsSection,
   BookingModal,
   BookingSection,
   ChecklistSection,
+  ContentCardSection,
   EmbeddedVideoSection,
   NumberedGridSection,
   PageMetadata,
   PlanCardsSection,
-  SplitHeroSection,
   useBookingRequest,
+  TestimonialsSection,
 } from "../Components/ServicePageSections";
 import "../Components/ServicePageSections/ServicePageSections.css";
 import pageData from "../data/servicePages/coffeeMachine";
@@ -36,53 +38,45 @@ export default function CoffeeMachine() {
       />
 
       <main className="service-landing">
-
-        <SplitHeroSection
+        <AboutHeroSection
           content={pageData.hero}
           contact={pageData.contact}
           onPrimaryAction={openBooking}
+          contentWidth={pageData.hero.contentWidth || "50%"}
+          tone="white"
         />
 
         <BreadCumb />
 
+        <ContentCardSection content={pageData.overview} tone="soft" />
+
         <ChecklistSection
           content={pageData.cleaningDescaling}
-          tone="soft"
-        />
-
-        <PlanCardsSection
-          content={pageData.contracts}
-          onAction={openBooking}
+          contact={pageData.contact}
+          tone="white"
         />
 
         <ActionCardsSection
           content={pageData.shop}
+          contact={pageData.contact}
           tone="soft"
           columns="four"
         />
 
-        <EmbeddedVideoSection content={pageData.video} />
+        <EmbeddedVideoSection content={pageData.video} tone="white" />
 
         <ActionCardsSection
           content={pageData.whyChooseUs}
+          contact={pageData.contact}
           tone="soft"
           columns="three"
         />
 
         <NumberedGridSection
           content={pageData.commonProblems}
+          contact={pageData.contact}
           tone="white"
           columns="four"
-        />
-
-
-        <ActionCardsSection
-          content={pageData.testimonials}
-          tone="dark"
-          columns="three"
-          slider
-          autoplay
-          loop
         />
 
         <ActionCardsSection
@@ -91,14 +85,23 @@ export default function CoffeeMachine() {
           columns="three"
         />
 
+        <TestimonialsSection content={pageData.testimonials} tone="white" />
+
+        <PlanCardsSection
+          content={pageData.contracts}
+          onAction={openBooking}
+          tone="dark"
+        />
+
         <AccordionSection 
           content={pageData.faqs} 
-          tone="white" 
-          />
+          tone="soft" 
+        />
 
         <BookingSection
           content={pageData.booking}
           bookingState={bookingState}
+          tone="white"
         />
       </main>
 

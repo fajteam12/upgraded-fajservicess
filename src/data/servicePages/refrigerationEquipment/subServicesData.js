@@ -6,7 +6,7 @@ const subServicesData = {
     {
       "title": "Ice Maker Repair",
       "description": "On-site repair, cleaning, descaling, and calibration for commercial cubers, nugget machines, and flakers.",
-      "icon": "snowflake",
+      "icon": "icemaker-repair",
       "badge": "Ice Systems",
       "actionLabel": "View Details",
       "href": "/services/refrigeration-equipment/ice-maker-repair/"
@@ -14,7 +14,7 @@ const subServicesData = {
     {
       "title": "Refrigeration AMC Services",
       "description": "Tailored annual maintenance contracts designed to reduce emergencies, protect cooling efficiency, and control operating costs.",
-      "icon": "shield",
+      "icon": "ac-maintenance",
       "badge": "AMC Plans",
       "actionLabel": "View Details",
       "href": "/services/refrigeration-equipment/commercial-refrigeration-maintenance-contract-services/"
@@ -22,7 +22,7 @@ const subServicesData = {
     {
       "title": "Refrigeration Maintenance",
       "description": "Routine condition assessment, gasket replacement, condenser cleaning, drainage service, and compressor performance checks.",
-      "icon": "wrench",
+      "icon": "amc-contract",
       "badge": "Preventive Care",
       "actionLabel": "View Details",
       "href": "/services/refrigeration-equipment/commercial-refrigeration-maintenance/"

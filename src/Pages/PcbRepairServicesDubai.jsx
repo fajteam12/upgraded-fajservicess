@@ -1,14 +1,13 @@
 import BreadCumb from "../Components/Common/BreadCumb";
 import {
+  AboutHeroSection,
   AccordionSection,
   ActionCardsSection,
   BookingModal,
   BookingSection,
+  ContentCardSection,
   NumberedGridSection,
   PageMetadata,
-  SplitHeroSection,
-  ContentCardSection,
-  TwoColumnInfoSection,
   useBookingRequest,
 } from "../Components/ServicePageSections";
 import "../Components/ServicePageSections/ServicePageSections.css";
@@ -35,13 +34,22 @@ export default function PcbRepairServicesDubai() {
       />
 
       <main className="service-landing">
-        <SplitHeroSection
+        <AboutHeroSection
           content={pageData.hero}
           contact={pageData.contact}
           onPrimaryAction={openBooking}
+          contentWidth={pageData.hero.contentWidth || "50%"}
+          showPhone={false}
+          showCall={false}
+          tone="white"
         />
 
         <BreadCumb />
+
+        <ContentCardSection
+          content={pageData.overview}
+          tone="soft"
+        />
 
         <ContentCardSection
           content={pageData.serviceOverview}
@@ -56,7 +64,7 @@ export default function PcbRepairServicesDubai() {
 
         <NumberedGridSection
           content={pageData.repairProcess}
-          tone="dark"
+          tone="white"
           columns="three"
         />
 
@@ -67,23 +75,23 @@ export default function PcbRepairServicesDubai() {
 
         <ContentCardSection
           content={pageData.commercialPcb}
-          tone="dark"
+          tone="white"
         />
 
         <ContentCardSection
           content={pageData.consumerPcb}
-          tone="white"
+          tone="soft"
         />
 
         <AccordionSection
           content={pageData.faqs}
-          tone="soft"
+          tone="white"
         />
 
         <BookingSection
           content={pageData.booking}
           bookingState={bookingState}
-          tone="white"
+          tone="soft"
         />
       </main>
 

@@ -16,6 +16,7 @@ import {
   SearchableDirectorySection,
   SplitHeroSection,
   useBookingRequest,
+  TestimonialsSection
 } from "../../../Components/ServicePageSections";
 import "../../../Components/ServicePageSections/ServicePageSections.css";
 import pageData from "../../../data/servicePages/brands/ac/tcl";
@@ -44,8 +45,7 @@ export default function DaikinAcRepair() {
         <SplitHeroSection
           content={pageData.hero}
           contact={pageData.contact}
-          onPrimaryAction={openBooking}
-        />
+          onPrimaryAction={openBooking} tone="white" />
 
         <BreadCumb />
 
@@ -55,19 +55,14 @@ export default function DaikinAcRepair() {
           tone="white"
         />
 
-        <PlanCardsSection
-          content={pageData.contracts}
-          onAction={openBooking}
-        />
-
-        <ContentCardSection
+<ContentCardSection
           content={pageData.maintenance}
-          tone="white"
+          tone="soft"
         />
 
         <ChecklistSection
           content={pageData.maintenanceSigns}
-          tone="soft"
+          tone="white"
         />
 
         <CalloutBannerSection
@@ -77,77 +72,77 @@ export default function DaikinAcRepair() {
 
         <ChecklistSection
           content={pageData.maintenanceImportance}
-          tone="white"
+          tone="soft"
         />
 
         <NumberedGridSection
           content={pageData.commonProblems}
-          tone="soft"
+          tone="white"
           columns="four"
         />
 
         <EmbeddedVideoSection
           content={pageData.video}
-          tone="dark"
+          tone="soft"
         />
 
         <ActionCardsSection
           content={pageData.servicesOffered}
-          tone="soft"
+          tone="white"
           columns="four"
         />
 
         <ChecklistSection
           content={pageData.benefits}
-          tone="white"
+          tone="soft"
         />
 
         <ActionCardsSection
           content={pageData.whyChooseUs}
-          tone="dark"
+          tone="white"
           columns="three"
         />
 
         <ActionCardsSection
           content={pageData.systemTypes}
-          tone="white"
+          tone="soft"
           columns="three"
         />
 
         <SearchableDirectorySection
           content={pageData.coverage}
-          tone="soft"
+          tone="white"
           variant="compact"
         />
 
         <ResourceCTASection
           content={pageData.energyTips}
-          tone="dark"
+          tone="soft"
         />
 
         <ActionCardsSection
           content={pageData.acProperties}
-          tone="soft"
+          tone="white"
           columns="four"
         />
 
-        <ActionCardsSection
-          content={pageData.testimonials}
+        <TestimonialsSection content={pageData.testimonials} tone="white" />
+
+        <PlanCardsSection
+          content={pageData.contracts}
+          onAction={openBooking}
           tone="dark"
-          columns="three"
-          slider
-          autoplay
-          loop
         />
 
         <AccordionSection
           content={pageData.faqs}
-          tone="white"
+          tone="soft"
         />
 
         <BookingSection
           content={pageData.booking}
           bookingState={bookingState}
+          tone="white"
         />
       </main>
 

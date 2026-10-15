@@ -1,18 +1,20 @@
 import BreadCumb from "../Components/Common/BreadCumb";
 import {
+  AboutHeroSection,
   AccordionSection,
   ActionCardsSection,
   BookingModal,
   BookingSection,
   CalloutBannerSection,
+  ContentCardSection,
   EmbeddedVideoSection,
   PageMetadata,
   PlanCardsSection,
   SearchableDirectorySection,
-  SplitHeroSection,
   SplitMediaSection,
   useBookingRequest,
-  TwoColumnInfoSection
+  TwoColumnInfoSection,
+  TestimonialsSection,
 } from "../Components/ServicePageSections";
 import "../Components/ServicePageSections/ServicePageSections.css";
 import pageData from "../data/servicePages/commercialDishwasher";
@@ -38,74 +40,91 @@ export default function CommercialDishwasherServices() {
       />
 
       <main className="service-landing">
-        <SplitHeroSection
+        <AboutHeroSection
           content={pageData.hero}
           contact={pageData.contact}
           onPrimaryAction={openBooking}
+          contentWidth={pageData.hero.contentWidth || "50%"}
+          showPhone={false}
+          showCall={false}
+          tone="white"
         />
 
         <BreadCumb />
 
-        <PlanCardsSection
-          content={pageData.contracts}
-          onAction={openBooking}
-        />
+        <ContentCardSection content={pageData.overview} tone="soft" />
 
-        <TwoColumnInfoSection 
-          content={pageData.serviceOverview} 
-          tone="soft" 
+        <TwoColumnInfoSection
+          content={pageData.serviceOverview}
+          tone="white"
         />
 
         <EmbeddedVideoSection
           content={pageData.video}
-          tone="dark"
+          tone="soft"
         />
 
         <ActionCardsSection
           content={pageData.maintenanceImportance}
-          tone="soft"
+          tone="white"
           columns="three"
         />
 
         <SplitMediaSection
           content={pageData.commonProblems}
-          tone="dark"
+          tone="soft"
         />
 
         <ActionCardsSection
           content={pageData.servicesOffered}
           onAction={openBooking}
           columns="two"
+          tone="white"
         />
 
-        <CalloutBannerSection content={pageData.serviceNotice} />
+        <CalloutBannerSection
+          content={pageData.serviceNotice}
+          tone="soft"
+        />
 
         <ActionCardsSection
           content={pageData.benefits}
-          tone="soft"
+          tone="white"
           columns="three"
         />
 
         <ActionCardsSection
           content={pageData.whyChooseUs}
           columns="three"
+          tone="soft"
         />
 
         <SearchableDirectorySection
           content={pageData.featuredBrands}
           onAction={openBooking}
-          tone="soft"
+          tone="white"
         />
 
         <SearchableDirectorySection
           content={pageData.otherBrands}
           onAction={openBooking}
-          tone="white"
+          tone="soft"
+          showCta={true}
+          cta={{
+            phone: `tel:+${pageData.contact.phone}`,
+            whatsapp: "",
+          }}
         />
 
-        <ActionCardsSection content={pageData.testimonials} tone="dark" columns="three" slider autoplay loop />
+        <TestimonialsSection content={pageData.testimonials} tone="white" />
 
-        <AccordionSection content={pageData.faqs} />
+        <PlanCardsSection
+          content={pageData.contracts}
+          onAction={openBooking}
+          tone="dark"
+        />
+
+        <AccordionSection content={pageData.faqs} tone="soft" />
 
         <BookingSection
           content={pageData.booking}

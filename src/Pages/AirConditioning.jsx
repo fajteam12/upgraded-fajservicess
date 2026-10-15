@@ -1,4 +1,5 @@
 import BreadCumb from "../Components/Common/BreadCumb";
+import HeaderForm from "../Components/Headeform/HeaderForm";
 import {
   AccordionSection,
   ActionCardsSection,
@@ -7,8 +8,10 @@ import {
   EmbeddedVideoSection,
   PageMetadata,
   PlanCardsSection,
-  SplitHeroSection,
+  AboutHeroSection,
   ContentCardSection,
+  SearchableDirectorySection,
+  TestimonialsSection,
   useBookingRequest,
 } from "../Components/ServicePageSections";
 import "../Components/ServicePageSections/ServicePageSections.css";
@@ -35,39 +38,37 @@ export default function AirConditioning() {
       />
 
       <main className="service-landing">
-        <SplitHeroSection
+        <HeaderForm />
+
+        <AboutHeroSection
           content={pageData.hero}
           contact={pageData.contact}
           onPrimaryAction={openBooking}
+          contentWidth={pageData.hero.contentWidth || "50%"}
+          tone="white"
         />
 
         <BreadCumb />
 
-        <ContentCardSection content={pageData.introduction} tone="white" />
+        <ContentCardSection content={pageData.overview} tone="soft" />
 
-        <PlanCardsSection
-          content={pageData.contracts}
-          onAction={openBooking}
-          tone="soft"
-        />
+        <ContentCardSection content={pageData.introduction} contact={pageData.contact} tone="white" />
 
         <EmbeddedVideoSection content={pageData.video} tone="white" />
 
-        <ContentCardSection content={pageData.professionalMaintenance} tone="soft" />
+        <ContentCardSection content={pageData.professionalMaintenance} contact={pageData.contact} tone="soft" />
 
-        <ActionCardsSection
+        <SearchableDirectorySection
           content={pageData.shop}
+          contact={pageData.contact}
           tone="white"
-          columns="three"
+          variant="compact"
         />
 
-        <ActionCardsSection 
-          content={pageData.testimonials} 
-          tone="soft" 
-          columns="three" 
-          slider 
-          autoplay 
-          loop />
+        <TestimonialsSection
+          content={pageData.testimonials}
+          tone="soft"
+        />
 
         <ActionCardsSection
           content={pageData.news}
@@ -75,7 +76,17 @@ export default function AirConditioning() {
           columns="three"
         />
 
-        <AccordionSection content={pageData.faqs} tone="soft" />
+        <PlanCardsSection
+          content={pageData.contracts}
+          onAction={openBooking}
+          tone="dark"
+        />
+
+        <AccordionSection
+          content={pageData.faqs}
+          contact={pageData.contact}
+          tone="soft"
+        />
 
         <BookingSection
           content={pageData.booking}

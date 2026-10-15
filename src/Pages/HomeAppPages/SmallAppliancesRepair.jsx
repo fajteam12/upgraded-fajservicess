@@ -1,21 +1,23 @@
 import BreadCumb from "../../Components/Common/BreadCumb";
 import MaintenanceBenefits from "../../Components/MaintenanceBenefits/MaintenanceBenefits";
 import {
+  AboutHeroSection,
   AccordionSection,
   ActionCardsSection,
   BookingModal,
   BookingSection,
   CalloutBannerSection,
+  ContentCardSection,
   EmbeddedVideoSection,
   NumberedGridSection,
   PageMetadata,
   PlanCardsSection,
   SearchableDirectorySection,
-  SplitHeroSection,
   SplitListSection,
   StackedServicesPanelSection,
   TwoColumnInfoSection,
   useBookingRequest,
+  TestimonialsSection,
 } from "../../Components/ServicePageSections";
 import "../../Components/ServicePageSections/ServicePageSections.css";
 import pageData from "../../data/servicePages/smallAppliances";
@@ -41,27 +43,33 @@ export default function SmallAppliancesRepair() {
       />
 
       <main className="service-landing">
-        <SplitHeroSection
+        <AboutHeroSection
           content={pageData.hero}
           contact={pageData.contact}
           onPrimaryAction={openBooking}
+          contentWidth={pageData.hero.contentWidth || "50%"}
+          showPhone={false}
+          showCall={false}
+          tone="white"
         />
 
         <BreadCumb />
 
-        <TwoColumnInfoSection content={pageData.serviceOverview} />
+        <ContentCardSection content={pageData.overview} tone="soft" />
 
-        <PlanCardsSection
-          content={pageData.contracts}
-          onAction={openBooking}
-        />
+        <TwoColumnInfoSection content={pageData.serviceOverview} tone="white" />
 
         <EmbeddedVideoSection content={pageData.video} tone="soft" />
 
-        <SplitListSection content={pageData.maintenanceImportance} tone="dark" />
+        <SplitListSection content={pageData.maintenanceImportance} tone="white" />
 
         <NumberedGridSection
           content={pageData.commonProblems}
+          showCta={true}
+          cta={{
+            phone: "",
+            whatsapp: `https://api.whatsapp.com/send?phone=+${pageData.contact.whatsapp}&text=Hello`,
+          }}
           tone="soft"
           columns="four"
         />
@@ -72,35 +80,41 @@ export default function SmallAppliancesRepair() {
           tone="white"
         />
 
-        <MaintenanceBenefits {...pageData.benefits} />
+        <MaintenanceBenefits {...pageData.benefits} tone="soft" />
 
         <ActionCardsSection
           content={pageData.whyChooseUs}
-          tone="dark"
+          tone="white"
           columns="three"
         />
 
         <SearchableDirectorySection
           content={pageData.applianceTypes}
           onAction={openBooking}
-        />
-
-        <CalloutBannerSection content={pageData.warranty} />
-
-        <ActionCardsSection
-          content={pageData.testimonials}
+          showCta={true}
+          cta={{
+            phone: `tel:+${pageData.contact.phone}`,
+            whatsapp: "",
+          }}
           tone="soft"
-          columns="three"
-          slider
-          autoplay
-          loop
         />
 
-        <AccordionSection content={pageData.faqs} tone="white" />
+        <CalloutBannerSection content={pageData.warranty} tone="white" />
+
+        <TestimonialsSection content={pageData.testimonials} tone="soft" />
+
+        <PlanCardsSection
+          content={pageData.contracts}
+          onAction={openBooking}
+          tone="dark"
+        />
+
+        <AccordionSection content={pageData.faqs} tone="soft" />
 
         <BookingSection
           content={pageData.booking}
           bookingState={bookingState}
+          tone="white"
         />
       </main>
 

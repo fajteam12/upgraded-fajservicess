@@ -7,28 +7,28 @@ const servicesOfferedData = {
   lead: "Our services include:",
   items: [
     {
-      icon: "wrench",
+      icon: "ac-installation",
       title: "Gree AC Installation",
       description:
         "Professional installation of various Gree AC systems for peak performance.",
       actionLabel: "Request Installation",
     },
     {
-      icon: "thermometer",
+      icon: "diagnostics",
       title: "Gree AC Diagnostics",
       description:
         "Comprehensive fault finding to accurately diagnose issues. We offer eligibility assessments and detailed quotes to address any concerns with your system.",
       actionLabel: "Book Diagnostics",
     },
     {
-      icon: "settings",
+      icon: "wind",
       title: "Gree AC Repair Service",
       description:
         "Prompt and effective repair services for all Gree AC components, addressing issues like leaks, electrical failures, and system malfunctions. Contact us for specific services or any questions you may have!",
       actionLabel: "Request Repair",
     },
     {
-      icon: "calendar",
+      icon: "ac-maintenance",
       title: "Gree AC Annual Maintenance Contract",
       description:
         "This contract details the terms and services for annual maintenance of Gree air conditioner units.",

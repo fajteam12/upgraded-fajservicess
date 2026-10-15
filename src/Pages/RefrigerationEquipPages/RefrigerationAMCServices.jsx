@@ -1,18 +1,20 @@
 import BreadCumb from "../../Components/Common/BreadCumb";
 import MaintenanceBenefits from "../../Components/MaintenanceBenefits/MaintenanceBenefits";
 import {
+  AboutHeroSection,
   AccordionSection,
   ActionCardsSection,
   BookingModal,
   BookingSection,
   ChecklistSection,
+  ContentCardSection,
   EmbeddedVideoSection,
   NumberedGridSection,
   PageMetadata,
   PlanCardsSection,
-  SplitHeroSection,
   TwoColumnInfoSection,
   useBookingRequest,
+  TestimonialsSection,
 } from "../../Components/ServicePageSections";
 import "../../Components/ServicePageSections/ServicePageSections.css";
 import pageData from "../../data/servicePages/refrigerationAmcServices";
@@ -38,70 +40,97 @@ export default function RefrigerationAMCServices() {
       />
 
       <main className="service-landing">
-        <SplitHeroSection
+        <AboutHeroSection
           content={pageData.hero}
           contact={pageData.contact}
           onPrimaryAction={openBooking}
+          contentWidth={pageData.hero.contentWidth || "50%"}
+          showPhone={false}
+          showCall={false}
+          tone="white"
         />
 
         <BreadCumb />
 
-        <TwoColumnInfoSection content={pageData.serviceOverview} />
+        <ContentCardSection content={pageData.overview} tone="soft" />
 
-        <PlanCardsSection
-          content={pageData.contracts}
-          onAction={openBooking}
+        <TwoColumnInfoSection
+          content={pageData.serviceOverview}
+          tone="white"
         />
 
-        <TwoColumnInfoSection content={pageData.ppmServices} tone="soft" />
+        <EmbeddedVideoSection
+          content={pageData.video}
+          tone="soft"
+        />
 
-        <EmbeddedVideoSection content={pageData.video} tone="white" />
+        <TwoColumnInfoSection
+          content={pageData.ppmServices}
+          tone="white"
+          showCta={true}
+          cta={{
+            phone: `tel:+${pageData.contact.phone}`,
+            whatsapp: `https://api.whatsapp.com/send?phone=+${pageData.contact.whatsapp}&text=Hello`,
+          }}
+        />
 
-        <ChecklistSection content={pageData.peaceOfMind} tone="soft" />
+        <ChecklistSection
+          content={pageData.peaceOfMind}
+          tone="soft"
+        />
 
         <NumberedGridSection
           content={pageData.commonProblems}
           tone="white"
           columns="four"
+          showCta={true}
+          cta={{
+            phone: "",
+            whatsapp: `https://api.whatsapp.com/send?phone=+${pageData.contact.whatsapp}&text=Hello`,
+          }}
         />
 
         <ActionCardsSection
           content={pageData.maintenanceProgrammes}
-          tone="dark"
+          tone="soft"
           columns="three"
           onAction={openBooking}
         />
 
-        <MaintenanceBenefits {...pageData.benefits} />
+        <MaintenanceBenefits {...pageData.benefits} tone="white" />
 
         <ActionCardsSection
           content={pageData.whyChooseUs}
-          tone="dark"
+          tone="soft"
           columns="three"
         />
 
         <ActionCardsSection
           content={pageData.specialisations}
-          tone="soft"
+          tone="white"
           columns="three"
           onAction={openBooking}
+          showCta={true}
+          cta={{
+            phone: `tel:+${pageData.contact.phone}`,
+            whatsapp: "",
+          }}
         />
 
-        <ActionCardsSection
-          content={pageData.testimonials}
+        <TestimonialsSection content={pageData.testimonials} tone="soft" />
+
+        <PlanCardsSection
+          content={pageData.contracts}
+          onAction={openBooking}
           tone="dark"
-          columns="three"
-          slider
-          autoplay
-          loop
         />
 
-        <AccordionSection content={pageData.faqs} tone="white" />
+        <AccordionSection content={pageData.faqs} tone="soft" />
 
         <BookingSection
           content={pageData.booking}
           bookingState={bookingState}
-          tone="soft"
+          tone="white"
         />
       </main>
 

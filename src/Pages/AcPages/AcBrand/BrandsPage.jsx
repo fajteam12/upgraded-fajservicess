@@ -15,6 +15,7 @@ import {
   SearchableDirectorySection,
   SplitHeroSection,
   useBookingRequest,
+  TestimonialsSection
 } from "../../../Components/ServicePageSections";
 
 import "../../../Components/ServicePageSections/ServicePageSections.css";
@@ -45,8 +46,7 @@ export default function BrandsPage() {
         <SplitHeroSection
           content={pageData.hero}
           contact={pageData.contact}
-          onPrimaryAction={openBooking}
-        />
+          onPrimaryAction={openBooking} tone="white" />
 
         <BreadCumb />
 
@@ -56,43 +56,38 @@ export default function BrandsPage() {
           tone="white"
         />
 
-        <PlanCardsSection
-          content={pageData.contracts}
-          onAction={openBooking}
-        />
-
         <ContentCardSection
           content={pageData.brandsOverview}
-          tone="white"
+          tone="soft"
         />
 
         <NumberedGridSection
           content={pageData.process}
-          tone="soft"
+          tone="white"
           columns="three"
         />
 
         <ActionCardsSection
           content={pageData.commonIssues}
-          tone="white"
+          tone="soft"
           columns="three"
         />
 
         <ActionCardsSection
           content={pageData.services}
-          tone="soft"
+          tone="white"
           columns="three"
         />
 
         <ActionCardsSection
           content={pageData.benefits}
-          tone="white"
+          tone="soft"
           columns="three"
         />
 
         <ChecklistSection
           content={pageData.inspection}
-          tone="soft"
+          tone="white"
         />
 
         <CalloutBannerSection
@@ -106,19 +101,18 @@ export default function BrandsPage() {
           columns="four"
         />
 
-        <ActionCardsSection
-          content={pageData.testimonials}
-          tone="dark"
-          columns="three"
-          slider
-          autoplay
-          loop
-        />
+        <TestimonialsSection content={pageData.testimonials} tone="white" />
 
         <SearchableDirectorySection
           content={pageData.brandsDirectory}
           tone="white"
           variant="compact"
+        />
+
+        <PlanCardsSection
+          content={pageData.contracts}
+          onAction={openBooking}
+          tone="dark"
         />
 
         <AccordionSection
@@ -129,6 +123,7 @@ export default function BrandsPage() {
         <BookingSection
           content={pageData.booking}
           bookingState={bookingState}
+          tone="white"
         />
       </main>
 

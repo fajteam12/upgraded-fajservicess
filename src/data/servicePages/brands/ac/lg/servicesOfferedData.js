@@ -7,28 +7,28 @@ const servicesOfferedData = {
   lead: "Our services include:",
   items: [
     {
-      icon: "wrench",
+      icon: "ac-installation",
       title: "LG AC Installation",
       description:
         "The professional installation of diverse LG air conditioning systems guarantees optimal performance.",
       actionLabel: "Request Installation",
     },
     {
-      icon: "thermometer",
+      icon: "diagnostics",
       title: "LG AC Inspection",
       description:
         "We provide precise fault diagnosis to identify system issues, along with detailed quotes and eligibility assessments to address your concerns.",
       actionLabel: "Book Inspection",
     },
     {
-      icon: "settings",
+      icon: "wind",
       title: "LG AC Repair Service",
       description:
         "We provide quick repair services for LG air conditioner, addressing leaks, electrical issues, and malfunctions. Contact us for more details or inquiries!",
       actionLabel: "Request Repair",
     },
     {
-      icon: "calendar",
+      icon: "ac-maintenance",
       title: "LG AC Annual Maintenance Contract",
       description:
         "The contract outlines the annual maintenance terms for LG air conditioners. Regular AC maintenance (AMC/PPM) is crucial for optimal performance and longevity.",

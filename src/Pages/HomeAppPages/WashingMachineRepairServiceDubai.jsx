@@ -1,19 +1,21 @@
 import BreadCumb from "../../Components/Common/BreadCumb";
 import MaintenanceBenefits from "../../Components/MaintenanceBenefits/MaintenanceBenefits";
 import {
+  AboutHeroSection,
   AccordionSection,
   ActionCardsSection,
   BookingModal,
   BookingSection,
+  ContentCardSection,
   EmbeddedVideoSection,
   NumberedGridSection,
   PageMetadata,
   PlanCardsSection,
   PricingCardsSection,
   SearchableDirectorySection,
-  SplitHeroSection,
   TwoColumnInfoSection,
   useBookingRequest,
+  TestimonialsSection,
 } from "../../Components/ServicePageSections";
 import "../../Components/ServicePageSections/ServicePageSections.css";
 import pageData from "../../data/servicePages/washingMachineRepair";
@@ -24,25 +26,106 @@ export default function WashingMachineRepairServiceDubai() {
 
   return (
     <>
-      <PageMetadata seo={pageData.seo} contact={pageData.contact} faqItems={pageData.faqs.items} />
+      <PageMetadata
+        seo={pageData.seo}
+        contact={pageData.contact}
+        faqItems={pageData.faqs.items}
+      />
       <main className="service-landing">
-        <SplitHeroSection content={pageData.hero} contact={pageData.contact} onPrimaryAction={openBooking} />
+        <AboutHeroSection
+          content={pageData.hero}
+          contact={pageData.contact}
+          onPrimaryAction={openBooking}
+          contentWidth={pageData.hero.contentWidth || "50%"}
+          showPhone={false}
+          showCall={false}
+          tone="white"
+        />
+
         <BreadCumb />
-        <PricingCardsSection content={pageData.pricing} onAction={openBooking} />
-        <PlanCardsSection content={pageData.contracts} onAction={openBooking} />
-        <TwoColumnInfoSection content={pageData.serviceOverview} tone="soft" />
-        <EmbeddedVideoSection content={pageData.video} tone="dark" />
-        <ActionCardsSection content={pageData.maintenanceImportance} tone="white" columns="three" />
-        <NumberedGridSection content={pageData.commonProblems} tone="dark" columns="four" />
-        <ActionCardsSection content={pageData.servicesOffered} tone="white" columns="four" onAction={openBooking} />
-        <MaintenanceBenefits {...pageData.benefits} />
-        <ActionCardsSection content={pageData.whyChooseUs} tone="dark" columns="three" />
-        <SearchableDirectorySection content={pageData.brands} tone="soft" onAction={openBooking} />
-        <ActionCardsSection content={pageData.testimonials} tone="dark" columns="three" />
-        <AccordionSection content={pageData.faqs} tone="white" />
-        <BookingSection content={pageData.booking} bookingState={bookingState} tone="soft" />
+
+        <ContentCardSection content={pageData.overview} tone="soft" />
+
+        <PricingCardsSection
+          content={pageData.pricing}
+          onAction={openBooking}
+          tone="white"
+        />
+
+        <TwoColumnInfoSection
+          content={pageData.serviceOverview}
+          tone="soft"
+        />
+
+        <EmbeddedVideoSection content={pageData.video} tone="white" />
+
+        <ActionCardsSection
+          content={pageData.maintenanceImportance}
+          tone="soft"
+          columns="three"
+        />
+
+        <NumberedGridSection
+          content={pageData.commonProblems}
+          showCta={true}
+          cta={{
+            phone: "",
+            whatsapp: `https://api.whatsapp.com/send?phone=+${pageData.contact.whatsapp}&text=Hello`,
+          }}
+          tone="white"
+          columns="four"
+        />
+
+        <ActionCardsSection
+          content={pageData.servicesOffered}
+          tone="soft"
+          columns="four"
+          onAction={openBooking}
+        />
+
+        <MaintenanceBenefits {...pageData.benefits} tone="white" />
+
+        <ActionCardsSection
+          content={pageData.whyChooseUs}
+          tone="soft"
+          columns="three"
+        />
+
+        <SearchableDirectorySection
+          content={pageData.brands}
+          tone="white"
+          onAction={openBooking}
+          showCta={true}
+          cta={{
+            phone: `tel:+${pageData.contact.phone}`,
+            whatsapp: "",
+          }}
+        />
+
+        <TestimonialsSection content={pageData.testimonials} tone="soft" />
+
+        <PlanCardsSection
+          content={pageData.contracts}
+          onAction={openBooking}
+          tone="dark"
+        />
+
+        <AccordionSection content={pageData.faqs} tone="soft" />
+
+        <BookingSection
+          content={pageData.booking}
+          bookingState={bookingState}
+          tone="white"
+        />
       </main>
-      <BookingModal content={pageData.booking} open={modalOpen} onClose={closeBooking} selectedItem={selectedItem} bookingState={bookingState} />
+
+      <BookingModal
+        content={pageData.booking}
+        open={modalOpen}
+        onClose={closeBooking}
+        selectedItem={selectedItem}
+        bookingState={bookingState}
+      />
     </>
   );
 }

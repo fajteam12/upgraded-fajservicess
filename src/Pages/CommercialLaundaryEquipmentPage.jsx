@@ -1,17 +1,19 @@
 import Breadcrumb from "../Components/Common/BreadCumb";
 import {
+  AboutHeroSection,
   AccordionSection,
   ActionCardsSection,
   BookingModal,
   BookingSection,
+  ContentCardSection,
   EmbeddedVideoSection,
   PageMetadata,
   PlanCardsSection,
   SearchableDirectorySection,
-  SplitHeroSection,
   SplitMediaSection,
   useBookingRequest,
-  TwoColumnInfoSection
+  TwoColumnInfoSection,
+  TestimonialsSection,
 } from "../Components/ServicePageSections";
 import "../Components/ServicePageSections/ServicePageSections.css";
 import pageData from "../data/servicePages/commercialLaundryEquipment";
@@ -37,19 +39,23 @@ export default function CommercialLaundaryEquipmentPage() {
       />
 
       <main className="service-landing">
-        <SplitHeroSection
+        <AboutHeroSection
           content={pageData.hero}
           contact={pageData.contact}
           onPrimaryAction={openBooking}
+          contentWidth={pageData.hero.contentWidth || "50%"}
+          showPhone={false}
+          showCall={false}
+          tone="white"
         />
 
         <Breadcrumb />
 
-        <TwoColumnInfoSection content={pageData.serviceOverview} tone="soft" />
+        <ContentCardSection content={pageData.overview} tone="soft" />
 
-        <PlanCardsSection
-          content={pageData.contracts}
-          onAction={openBooking}
+        <TwoColumnInfoSection
+          content={pageData.serviceOverview}
+          tone="white"
         />
 
         <EmbeddedVideoSection
@@ -59,17 +65,25 @@ export default function CommercialLaundaryEquipmentPage() {
 
         <ActionCardsSection
           content={pageData.maintenanceImportance}
-          tone="soft"
+          tone="white"
           columns="three"
         />
 
         <ActionCardsSection
           content={pageData.commonProblems}
-          tone="dark"
+          tone="soft"
           columns="four"
+          showCta={true}
+          cta={{
+            phone: "",
+            whatsapp: `https://api.whatsapp.com/send?phone=+${pageData.contact.whatsapp}&text=Hello`,
+          }}
         />
 
-        <SplitMediaSection content={pageData.servicesOffered} />
+        <SplitMediaSection
+          content={pageData.servicesOffered}
+          tone="white"
+        />
 
         <ActionCardsSection
           content={pageData.benefits}
@@ -80,6 +94,7 @@ export default function CommercialLaundaryEquipmentPage() {
         <ActionCardsSection
           content={pageData.whyChooseUs}
           columns="three"
+          tone="white"
         />
 
         <SearchableDirectorySection
@@ -91,30 +106,35 @@ export default function CommercialLaundaryEquipmentPage() {
         <SearchableDirectorySection
           content={pageData.dryerBrands}
           onAction={openBooking}
-          tone="dark"
+          tone="white"
         />
 
         <SearchableDirectorySection
           content={pageData.otherBrands}
           onAction={openBooking}
           tone="soft"
+          showCta={true}
+          cta={{
+            phone: `tel:+${pageData.contact.phone}`,
+            whatsapp: "",
+          }}
         />
 
-        <ActionCardsSection
-          content={pageData.testimonials}
-          tone="dark"
-          columns="three"
-          slider
-          autoplay
-          loop
-        />
+        <TestimonialsSection content={pageData.testimonials} tone="white" />
 
         <ActionCardsSection
           content={pageData.articles}
           columns="three"
+          tone="soft"
         />
 
-        <AccordionSection content={pageData.faqs} />
+        <PlanCardsSection
+          content={pageData.contracts}
+          onAction={openBooking}
+          tone="dark"
+        />
+
+        <AccordionSection content={pageData.faqs} tone="soft" />
 
         <BookingSection
           content={pageData.booking}

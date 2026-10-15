@@ -2,6 +2,8 @@ import { memo } from "react";
 import { Link } from "react-router-dom";
 import { ScrollSlide } from "../Animations/ScrollAnimation";
 import SectionHeader from "./SectionHeader";
+import CallNowButton from "../Buttons/CallNowButton";
+import WhatsappIconButton from "../Buttons/WhatsappIconButton";
 
 function RichText({ content }) {
   if (typeof content === "string") return content;
@@ -127,8 +129,68 @@ function Paragraphs({ paragraphs }) {
   ));
 }
 
-function TwoColumnInfoSection({ content, tone = "white" }) {
+function TwoColumnInfoSection({
+  content,
+  tone = "white",
+  showCta,
+  cta,
+  contact,
+}) {
   if (!content) return null;
+
+  const isCtaEnabled = Boolean(
+    showCta ?? content?.showCta ?? (cta || content?.cta)
+  );
+
+  let phoneUrl = "";
+  let whatsappUrl = "";
+
+  if (isCtaEnabled) {
+    const hasExplicitCta = Boolean(
+      (typeof cta === "object" && cta) ||
+      (typeof content?.cta === "object" && content?.cta)
+    );
+
+    const ctaConfig =
+      (typeof cta === "object" && cta) ||
+      (typeof content?.cta === "object" && content?.cta) ||
+      {};
+
+    const getCleanUrl = (val) => {
+      if (typeof val === "string") return val.trim();
+      return "";
+    };
+
+    // Phone URL resolution: empty string or false suppresses the button
+    if ("phone" in ctaConfig) {
+      phoneUrl = getCleanUrl(ctaConfig.phone);
+    } else if ("phone" in content) {
+      phoneUrl = getCleanUrl(content.phone);
+    } else if (!hasExplicitCta && contact?.phone) {
+      phoneUrl = `tel:+${String(contact.phone).replace(/[^0-9]/g, "")}`;
+    }
+
+    if (phoneUrl && !phoneUrl.startsWith("tel:") && !phoneUrl.startsWith("http")) {
+      phoneUrl = `tel:+${phoneUrl.replace(/[^0-9]/g, "")}`;
+    }
+
+    // WhatsApp URL resolution: empty string or false suppresses the button
+    if ("whatsapp" in ctaConfig) {
+      whatsappUrl = getCleanUrl(ctaConfig.whatsapp);
+    } else if ("whatsapp" in content) {
+      whatsappUrl = getCleanUrl(content.whatsapp);
+    } else if (!hasExplicitCta && contact?.whatsapp) {
+      whatsappUrl = `https://api.whatsapp.com/send?phone=+${String(contact.whatsapp).replace(/[^0-9]/g, "")}&text=Hello`;
+    }
+
+    if (whatsappUrl && !whatsappUrl.startsWith("http")) {
+      whatsappUrl = `https://api.whatsapp.com/send?phone=+${whatsappUrl.replace(/[^0-9]/g, "")}&text=Hello`;
+    }
+  }
+
+  const hasPhone = Boolean(phoneUrl);
+  const hasWhatsapp = Boolean(whatsappUrl);
+  const showAnyCta = isCtaEnabled && (hasPhone || hasWhatsapp);
 
   return (
     <section className={`service-landing__section is-${tone}`}>
@@ -143,19 +205,43 @@ function TwoColumnInfoSection({ content, tone = "white" }) {
 
         {content.cards?.length > 0 && (
           <div className="service-landing__info-grid">
-            {content.cards.map((card, index) => (
-              <ScrollSlide
-                direction={index % 2 === 0 ? "left" : "right"}
-                key={card.title}
-              >
-                <article
-                  className={`service-landing__info-card ${
-                    card.featured ? "is-dark" : ""
-                  }`}
-                >
-                  <h3>{card.title}</h3>
+            {content.cards.map((card, index) => {
+              const isFeatured =
+                card.featured === true ||
+                card.variant === "featured" ||
+                card.variant === "dark" ||
+                card.cardTone === "featured" ||
+                card.cardTone === "dark" ||
+                card.tone === "featured" ||
+                card.tone === "dark";
 
-                  <Paragraphs paragraphs={card.paragraphs} />
+              const explicitTone =
+                card.variant || card.cardTone || card.tone;
+
+              let toneClass = "is-soft";
+
+              if (isFeatured) {
+                toneClass = "is-dark is-featured";
+              } else if (explicitTone === "white") {
+                toneClass = "is-white";
+              } else if (explicitTone === "soft") {
+                toneClass = "is-soft";
+              } else if (tone === "soft" || content.tone === "soft") {
+                // Section background is grey (soft), so unfeatured cards must be white
+                toneClass = "is-white";
+              }
+
+              return (
+                <ScrollSlide
+                  direction={index % 2 === 0 ? "left" : "right"}
+                  key={card.title || index}
+                >
+                  <article
+                    className={`service-landing__info-card ${toneClass}`}
+                  >
+                    {card.title && <h3>{card.title}</h3>}
+
+                    <Paragraphs paragraphs={card.paragraphs} />
 
                   <InfoBullets
                     bullets={card.bullets}
@@ -179,8 +265,18 @@ function TwoColumnInfoSection({ content, tone = "white" }) {
                   ))}
                 </article>
               </ScrollSlide>
-            ))}
-          </div>
+            );
+          })}
+        </div>
+      )}
+
+        {showAnyCta && (
+          <ScrollSlide direction="up" delay={0.24}>
+            <div className="service-landing__cta-actions">
+              {hasPhone && <CallNowButton phone={phoneUrl} />}
+              {hasWhatsapp && <WhatsappIconButton whatsapp={whatsappUrl} />}
+            </div>
+          </ScrollSlide>
         )}
       </div>
     </section>

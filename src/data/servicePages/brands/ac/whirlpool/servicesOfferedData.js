@@ -7,28 +7,28 @@ const servicesOfferedData = {
   lead: "Our services include:",
   items: [
     {
-      icon: "wrench",
+      icon: "ac-installation",
       title: "Whirlpool AC Installation",
       description:
         "The professional installation of various Whirlpool air conditioning systems ensures optimal performance.",
       actionLabel: "Request Installation",
     },
     {
-      icon: "thermometer",
+      icon: "diagnostics",
       title: "Whirlpool AC Diagnostics",
       description:
         "We offer accurate fault diagnosis to pinpoint system issues, along with comprehensive quotes and eligibility assessments to address your concerns.",
       actionLabel: "Book Diagnostics",
     },
     {
-      icon: "settings",
+      icon: "wind",
       title: "Whirlpool AC Repair Service",
       description:
         "We offer fast repair services for Whirlpool air conditioners, addressing leaks, electrical problems, and malfunctions. Contact us for further details or inquiries!",
       actionLabel: "Request Repair",
     },
     {
-      icon: "calendar",
+      icon: "ac-maintenance",
       title: "Whirlpool AC Annual Maintenance Contract",
       description:
         "The contract specifies the annual maintenance terms for Whirlpool air conditioners.",

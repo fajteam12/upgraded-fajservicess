@@ -1,4 +1,5 @@
 import {
+  AboutHeroSection,
   AccordionSection,
   BookingModal,
   BookingSection,
@@ -11,7 +12,6 @@ import {
   PlanCardsSection,
   PricingCardsSection,
   SearchableDirectorySection,
-  SplitHeroSection,
   TwoColumnInfoSection,
   useBookingRequest,
 } from "../Components/ServicePageSections";
@@ -40,51 +40,69 @@ export default function CommercialCoffeeMachineRepair() {
       />
 
       <main className="service-landing">
-        <SplitHeroSection
+        <AboutHeroSection
           content={pageData.hero}
           contact={pageData.contact}
           onPrimaryAction={openBooking}
+          contentWidth={pageData.hero.contentWidth || "50%"}
+          tone="white"
         />
 
         <BreadCumb />
 
+        <ContentCardSection content={pageData.overview} tone="soft" />
+
         <PricingCardsSection
           content={pageData.pricing}
           onAction={openBooking}
+          tone="white"
         />
 
-        <PlanCardsSection
-          content={pageData.contracts}
-          onAction={openBooking}
+        <TwoColumnInfoSection
+          content={pageData.repairOverview}
+          contact={pageData.contact}
+          tone="soft"
         />
 
-        <TwoColumnInfoSection content={pageData.repairOverview} tone="soft" />
+        <EmbeddedVideoSection content={pageData.video} tone="white" />
 
-        <EmbeddedVideoSection content={pageData.video} />
-
-        <ChecklistSection content={pageData.maintenanceImportance} />
+        <ChecklistSection content={pageData.maintenanceImportance} tone="soft" />
 
         <NumberedGridSection
           content={pageData.commonProblems}
+          contact={pageData.contact}
           columns="four"
+          tone="white"
         />
 
-        <ContentGridSection content={pageData.servicesOffered} />
+        <ContentGridSection content={pageData.servicesOffered} tone="soft" />
 
         <NumberedGridSection
           content={pageData.benefits}
           columns="three"
+          tone="white"
         />
 
         <NumberedGridSection
           content={pageData.whyChooseUs}
           columns="three"
+          tone="soft"
+        />
+
+        <SearchableDirectorySection
+          content={pageData.brands}
+          contact={pageData.contact}
+          onAction={openBooking}
+          tone="white"
+        />
+
+        <PlanCardsSection
+          content={pageData.contracts}
+          onAction={openBooking}
           tone="dark"
         />
 
-        <SearchableDirectorySection content={pageData.brands} />
-
-        <AccordionSection content={pageData.faqs} />
+        <AccordionSection content={pageData.faqs} tone="soft" />
 
         <BookingSection
           content={pageData.booking}

@@ -7,28 +7,28 @@ const servicesOfferedData = {
   lead: "Our services include:",
   items: [
     {
-      icon: "wrench",
+      icon: "ac-installation",
       title: "O General AC Installation",
       description:
         "Professional installation of various O General air conditioning systems ensures optimal performance.",
       actionLabel: "Request Installation",
     },
     {
-      icon: "thermometer",
+      icon: "diagnostics",
       title: "O General AC Inspection",
       description:
         "Detailed fault diagnosis to accurately identify system issues. We provide comprehensive quotes and eligibility assessments to address any concerns you may have.",
       actionLabel: "Book Inspection",
     },
     {
-      icon: "settings",
+      icon: "wind",
       title: "O General AC Repair Service",
       description:
         "We offer fast O General AC repair service components, including leaks, electrical failures, and malfunctions. Contact us for details or inquiries!",
       actionLabel: "Request Repair",
     },
     {
-      icon: "calendar",
+      icon: "ac-maintenance",
       title: "O General AC Annual Maintenance Contract",
       description:
         "This contract outlines the O General AC annual maintenance terms. Regular AC maintenance (AMC/PPM) is vital for ensuring performance, efficiency, and longevity.",

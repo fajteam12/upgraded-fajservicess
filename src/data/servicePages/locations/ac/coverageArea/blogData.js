@@ -9,9 +9,11 @@ const blogData = {
 
   items: [
     {
-      icon: "snowflake",
+      icon: "certified-expert",
 
       badge: "28 May",
+
+      image: "blogs/AC-problems-and-how-to-fix-them",
 
       title:
         "10 Common AC Problems and How to Fix Them - Expert Guide",
@@ -30,9 +32,11 @@ const blogData = {
     },
 
     {
-      icon: "snowflake",
+      icon: "dollar-savings",
 
       badge: "19 June",
+
+      image: "blogs/ac-tips-and-tricks",
 
       title:
         "Best Ways For How To Save Money On AC Bill In 2024",
@@ -51,9 +55,11 @@ const blogData = {
     },
 
     {
-      icon: "snowflake",
+      icon: "wind",
 
       badge: "19 June",
+
+      image: "blogs/how-to-choose-the-best-air-conditioner-for-home",
 
       title:
         "How to Choose Best Air Conditioner for Home | Top Factors",

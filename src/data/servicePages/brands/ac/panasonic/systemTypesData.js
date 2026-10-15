@@ -4,19 +4,19 @@ const systemTypesData = {
   title: "We specialise in Panasonic AC services for the following types",
   items: [
     {
-      icon: "wind",
+      icon: "ac-split",
       title: "Panasonic Split Air Conditioner Service",
       description:
         "FAJ is your trusted provider for Panasonic split air conditioner repair and maintenance in Dubai. Our expert technicians specialize in Panasonic VRF systems and central AC units, ensuring optimal efficiency and comfort. Whether you need routine maintenance or urgent repairs, we are dedicated to delivering exceptional service tailored to your needs.",
     },
     {
-      icon: "settings",
+      icon: "ac-central",
       title: "Panasonic Central Air Conditioner Repair and Service",
       description:
         "FAJ is a leading service provider for Panasonic air conditioners in Dubai, specializing in the repair and maintenance of these innovative cooling systems. Whether you need a routine maintenance check or an urgent repair, FAJ is dedicated to meeting the diverse needs of its clients with professionalism and expertise.",
     },
     {
-      icon: "wrench",
+      icon: "wind",
       title: "Panasonic AC Service and Repair",
       description: {
         parts: [
@@ -30,38 +30,38 @@ const systemTypesData = {
       },
     },
     {
-      icon: "zap",
+      icon: "ac-inverter",
       title: "Panasonic Inverter Air Conditioner Maintenance",
       description:
         "Count on our dedicated team to promptly resolve any concerns with your Panasonic air conditioner maintenance and bring it back to peak performance!",
     },
     {
-      icon: "tool",
+      icon: "ac-air-filter",
       title: "Panasonic HVAC Repair",
       description:
         "We have extensive expertise in Panasonic cassette and package unit AC systems, providing reliable repairs to ensure your unit operates efficiently.",
     },
     {
-      icon: "wind",
+      icon: "sparkles",
       title: "Panasonic Ceiling AC Service and Repair",
       description:
         "Our specialists can quickly diagnose and resolve any issues with your Panasonic ceiling AC repair and service.",
     },
     {
-      icon: "settings",
+      icon: "ac-vrv",
       title:
         "Panasonic VRF (Variable Refrigerant Flow) System Service and Repair",
       description:
         "FAJ's Panasonic Variable Refrigerant Flow (VRF) repair and maintenance services provide efficient HVAC solutions tailored to your needs. Our expert team prioritizes your comfort and satisfaction, ensuring reliable service and peace of mind in managing your climate control requirements.",
     },
     {
-      icon: "wrench",
+      icon: "ac-repair",
       title: "Panasonic Ducted Split AC Service and Repair",
       description:
         "For trustworthy repair and maintenance of Panasonic ducted split air conditioners (AC) in Dubai, our skilled technicians are here to help. With expertise in diagnosing a wide range of Panasonic AC issues and error fixes, we ensure minimal disruption to your comfort. Trust us for quick and effective service that provides the cooling relief you need.",
     },
     {
-      icon: "wind",
+      icon: "ac-installation",
       title: "Panasonic Wall-Mounted Air Conditioner Service and Repair",
       description: {
         parts: [

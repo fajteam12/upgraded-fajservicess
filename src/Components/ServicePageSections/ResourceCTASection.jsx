@@ -1,7 +1,8 @@
 import { memo } from "react";
+import { Link } from "react-router-dom";
 import { ScrollSlide } from "../Animations/ScrollAnimation";
 
-function ResourceCTASection({ content, tone = "dark" }) {
+function ResourceCTASection({ content, tone, onAction }) {
   if (!content) return null;
 
   const hasContent =
@@ -11,11 +12,59 @@ function ResourceCTASection({ content, tone = "dark" }) {
 
   if (!hasContent) return null;
 
-  const hasAction = Boolean(content.actionLabel && content.actionHref);
+  const effectiveTone = content.tone || tone || "dark";
+  const hasAction = Boolean(content.actionLabel && (content.actionHref || onAction));
+
+  const isExternal =
+    content.external ||
+    (content.openInNewTab !== false &&
+      (content.openInNewTab || /^https?:\/\//i.test(content.actionHref || "")));
+
+  const renderAction = () => {
+    if (!hasAction) return null;
+
+    if (content.actionHref) {
+      if (isExternal) {
+        return (
+          <a
+            className="service-landing__resource-cta-button"
+            href={content.actionHref}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {content.actionLabel}
+          </a>
+        );
+      }
+
+      return (
+        <Link
+          className="service-landing__resource-cta-button"
+          to={content.actionHref}
+        >
+          {content.actionLabel}
+        </Link>
+      );
+    }
+
+    if (onAction) {
+      return (
+        <button
+          type="button"
+          className="service-landing__resource-cta-button"
+          onClick={() => onAction(content.bookingLabel || content.title)}
+        >
+          {content.actionLabel}
+        </button>
+      );
+    }
+
+    return null;
+  };
 
   return (
     <section
-      className={`service-landing__resource-cta is-${tone}`}
+      className={`service-landing__resource-cta is-${effectiveTone}`}
       id={content.id}
     >
       <div className="service-landing__container">
@@ -31,20 +80,7 @@ function ResourceCTASection({ content, tone = "dark" }) {
 
             {content.description && <p>{content.description}</p>}
 
-            {hasAction && (
-              <a
-                className="service-landing__resource-cta-button"
-                href={content.actionHref}
-                target={content.openInNewTab === false ? undefined : "_blank"}
-                rel={
-                  content.openInNewTab === false
-                    ? undefined
-                    : "noopener noreferrer"
-                }
-              >
-                {content.actionLabel}
-              </a>
-            )}
+            {hasAction && renderAction()}
           </div>
         </ScrollSlide>
       </div>

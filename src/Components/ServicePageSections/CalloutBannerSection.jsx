@@ -6,10 +6,14 @@ import ServiceIcon from "./ServiceIcon";
 function CalloutBannerSection({
   content,
   onAction,
+  tone,
 }) {
   if (!content) return null;
 
   const hasAction = Boolean(content.actionLabel);
+  const hasItems = content.items?.length > 0;
+  const effectiveTone = content.tone || tone;
+  const isDark = effectiveTone === "dark";
 
   const isExternal =
     content.external ||
@@ -65,10 +69,16 @@ function CalloutBannerSection({
 
   return (
     <section
-      className="service-landing__callout"
+      className={`service-landing__callout ${isDark ? "allow-dark" : ""} ${
+        effectiveTone ? `is-${effectiveTone}` : ""
+      }`}
       id={content.id}
     >
-      <div className="service-landing__container service-landing__callout-layout">
+      <div
+        className={`service-landing__container service-landing__callout-layout ${
+          !hasItems ? "is-single-column" : ""
+        }`}
+      >
         <ScrollSlide direction="left">
           <div className="service-landing__callout-copy">
             {content.eyebrow && (

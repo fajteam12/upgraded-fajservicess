@@ -5,7 +5,7 @@ const whyChooseUsData = {
     "CHOOSE US FOR RELIABLE, EXCEPTIONAL SERVICE TAILORED TO YOUR  NEEDS!",
   items: [
     {
-      icon: "clock",
+      icon: "trust-shield",
       title: "Reliable, Priority, and Quick",
       description: {
         parts: [
@@ -21,7 +21,7 @@ const whyChooseUsData = {
       },
     },
     {
-      icon: "shield",
+      icon: "peace-of-mind",
       title: "Feeling Of Calm",
       description: {
         parts: [
@@ -41,19 +41,19 @@ const whyChooseUsData = {
         "Choose a day and time for your Daikin AC repair in Dubai or Sharjah. With a 3-4 hour window for when our technician will arrive.",
     },
     {
-      icon: "award",
+      icon: "certified-expert",
       title: "We Are Experts",
       description:
         "We are experts in Daikin AC repair. This is why most major brands trust us to handle their service and maintenance needs.",
     },
     {
-      icon: "check",
+      icon: "dollar-savings",
       title: "Great Value",
       description:
         "We are dedicated to ensuring customer satisfaction with timely service, prompt issue resolution, and affordable prices.",
     },
     {
-      icon: "users",
+      icon: "guarantee-seal",
       title: "Trustworthy",
       description: {
         parts: [

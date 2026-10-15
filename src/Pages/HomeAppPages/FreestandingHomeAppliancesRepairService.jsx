@@ -1,18 +1,20 @@
 import BreadCumb from "../../Components/Common/BreadCumb";
 import {
+  AboutHeroSection,
   AccordionSection,
   ActionCardsSection,
   BookingModal,
   BookingSection,
+  ContentCardSection,
   EmbeddedVideoSection,
   NumberedGridSection,
   PageMetadata,
   PlanCardsSection,
   PricingCardsSection,
   SearchableDirectorySection,
-  SplitHeroSection,
   TwoColumnInfoSection,
   useBookingRequest,
+  TestimonialsSection,
 } from "../../Components/ServicePageSections";
 import "../../Components/ServicePageSections/ServicePageSections.css";
 import pageData from "../../data/servicePages/homeApplianceRepair";
@@ -38,22 +40,24 @@ export default function FreestandingHomeAppliancesRepairService() {
       />
 
       <main className="service-landing">
-        <SplitHeroSection
+        <AboutHeroSection
           content={pageData.hero}
           contact={pageData.contact}
           onPrimaryAction={openBooking}
+          contentWidth={pageData.hero.contentWidth || "50%"}
+          showPhone={false}
+          showCall={false}
+          tone="white"
         />
 
         <BreadCumb />
 
+        <ContentCardSection content={pageData.overview} tone="soft" />
+
         <PricingCardsSection
           content={pageData.pricing}
           onAction={openBooking}
-        />
-
-        <PlanCardsSection
-          content={pageData.contracts}
-          onAction={openBooking}
+          tone="white"
         />
 
         <TwoColumnInfoSection
@@ -61,16 +65,22 @@ export default function FreestandingHomeAppliancesRepairService() {
           tone="soft"
         />
 
-        <EmbeddedVideoSection content={pageData.video} />
+        <EmbeddedVideoSection content={pageData.video} tone="white" />
 
         <ActionCardsSection
           content={pageData.maintenanceImportance}
           columns="three"
+          tone="soft"
         />
 
         <NumberedGridSection
           content={pageData.commonProblems}
-          tone="soft"
+          showCta={true}
+          cta={{
+            phone: "",
+            whatsapp: `https://api.whatsapp.com/send?phone=+${pageData.contact.whatsapp}&text=Hello`,
+          }}
+          tone="white"
           columns="four"
         />
 
@@ -78,45 +88,52 @@ export default function FreestandingHomeAppliancesRepairService() {
           content={pageData.servicesOffered}
           onAction={openBooking}
           columns="four"
+          tone="soft"
         />
 
         <ActionCardsSection
           content={pageData.benefits}
-          tone="soft"
+          tone="white"
           columns="three"
         />
 
         <ActionCardsSection
           content={pageData.whyChooseUs}
           columns="three"
+          tone="soft"
         />
 
         <SearchableDirectorySection
           content={pageData.featuredBrands}
           onAction={openBooking}
-          tone="soft"
+          tone="white"
         />
 
         <SearchableDirectorySection
           content={pageData.otherBrands}
           onAction={openBooking}
+          tone="soft"
+          showCta={true}
+          cta={{
+            phone: `tel:+${pageData.contact.phone}`,
+            whatsapp: "",
+          }}
+        />
+
+        <TestimonialsSection content={pageData.testimonials} tone="white" />
+
+        <PlanCardsSection
+          content={pageData.contracts}
+          onAction={openBooking}
           tone="dark"
         />
 
-        <ActionCardsSection
-          content={pageData.testimonials}
-          tone="soft"
-          columns="three"
-          slider
-          autoplay
-          loop
-        />
-
-        <AccordionSection content={pageData.faqs} tone="white" />
+        <AccordionSection content={pageData.faqs} tone="soft" />
 
         <BookingSection
           content={pageData.booking}
           bookingState={bookingState}
+          tone="white"
         />
       </main>
 

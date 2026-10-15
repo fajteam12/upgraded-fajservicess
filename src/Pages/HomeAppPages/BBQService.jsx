@@ -1,19 +1,21 @@
 import BreadCumb from "../../Components/Common/BreadCumb";
 import {
+  AboutHeroSection,
   AccordionSection,
   ActionCardsSection,
   BookingModal,
   BookingSection,
+  ContentCardSection,
   EmbeddedVideoSection,
   MetricCardsSection,
   NumberedGridSection,
   PageMetadata,
   PlanCardsSection,
   SearchableDirectorySection,
-  SplitHeroSection,
   SplitListSection,
   TwoColumnInfoSection,
   useBookingRequest,
+  TestimonialsSection,
 } from "../../Components/ServicePageSections";
 import "../../Components/ServicePageSections/ServicePageSections.css";
 import pageData from "../../data/servicePages/barbecueRepair";
@@ -39,26 +41,35 @@ export default function BBQService() {
       />
 
       <main className="service-landing">
-        <SplitHeroSection
+        <AboutHeroSection
           content={pageData.hero}
           contact={pageData.contact}
           onPrimaryAction={openBooking}
+          contentWidth={pageData.hero.contentWidth || "50%"}
+          showPhone={false}
+          showCall={false}
+          tone="white"
         />
 
         <BreadCumb />
 
-        <TwoColumnInfoSection content={pageData.serviceOverview} />
+        <ContentCardSection content={pageData.overview} tone="soft" />
 
-        <PlanCardsSection content={pageData.contracts} onAction={openBooking} />
+        <TwoColumnInfoSection content={pageData.serviceOverview} tone="white" />
 
-        <SplitListSection content={pageData.process} tone="white" />
+        <SplitListSection content={pageData.process} tone="soft" />
 
-        <EmbeddedVideoSection content={pageData.video} tone="soft" />
+        <EmbeddedVideoSection content={pageData.video} tone="white" />
 
-        <MetricCardsSection content={pageData.maintenanceImportance} />
+        <MetricCardsSection content={pageData.maintenanceImportance} tone="soft" />
 
         <NumberedGridSection
           content={pageData.commonProblems}
+          showCta={true}
+          cta={{
+            phone: "",
+            whatsapp: `https://api.whatsapp.com/send?phone=+${pageData.contact.whatsapp}&text=Hello`,
+          }}
           tone="white"
           columns="four"
         />
@@ -85,27 +96,36 @@ export default function BBQService() {
         <ActionCardsSection
           content={pageData.emergencyService}
           onAction={openBooking}
-          tone="dark"
+          tone="white"
           columns="three"
         />
 
         <SearchableDirectorySection
           content={pageData.brands}
           onAction={openBooking}
-        />
-
-        <ActionCardsSection
-          content={pageData.testimonials}
+          showCta={true}
+          cta={{
+            phone: `tel:+${pageData.contact.phone}`,
+            whatsapp: "",
+          }}
           tone="soft"
-          columns="three"
-          slider
-          autoplay
-          loop
         />
 
-        <AccordionSection content={pageData.faqs} tone="white" />
+        <TestimonialsSection content={pageData.testimonials} tone="white" />
 
-        <BookingSection content={pageData.booking} bookingState={bookingState} />
+        <PlanCardsSection
+          content={pageData.contracts}
+          onAction={openBooking}
+          tone="dark"
+        />
+
+        <AccordionSection content={pageData.faqs} tone="soft" />
+
+        <BookingSection
+          content={pageData.booking}
+          bookingState={bookingState}
+          tone="white"
+        />
       </main>
 
       <BookingModal

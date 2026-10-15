@@ -7,28 +7,28 @@ const servicesOfferedData = {
   lead: "Our services include:",
   items: [
     {
-      icon: "wrench",
+      icon: "ac-installation",
       title: "Cooline AC Installation",
       description:
         "Professional installation of different Cooline air conditioning systems to guarantee optimal performance.",
       actionLabel: "Request Installation",
     },
     {
-      icon: "thermometer",
+      icon: "diagnostics",
       title: "Cooline AC Diagnostics",
       description:
         "Comprehensive fault diagnosis to accurately identify issues. We provide eligibility assessments and detailed quotes to address concerns regarding your system.",
       actionLabel: "Book Diagnostics",
     },
     {
-      icon: "settings",
+      icon: "wind",
       title: "Cooline AC Repair Service",
       description:
         "We provide prompt and effective repair services for all Cooline AC components, addressing issues such as leaks, electrical failures, and system malfunctions. Feel free to contact us for specific services or any questions you may have!",
       actionLabel: "Request Repair",
     },
     {
-      icon: "calendar",
+      icon: "ac-maintenance",
       title: "Cooline AC Annual Maintenance Contract",
       description:
         "This contract details the terms and services for Cooline AC annual maintenance.",

@@ -6,13 +6,13 @@ const benefitsData = {
     {
       "title": "Cooling Efficiency",
       "description": "A complete temperature assessment confirms whether the refrigeration system is cooling efficiently.",
-      "icon": "thermometer",
+      "icon": "zap",
       "badge": "Checkpoint 01"
     },
     {
       "title": "Disinfect Components",
       "description": "Accessible hardware, filters, vents, and contact surfaces are inspected and cleaned as required.",
-      "icon": "check",
+      "icon": "ac-cleaning",
       "badge": "Checkpoint 02"
     },
     {
@@ -24,19 +24,19 @@ const benefitsData = {
     {
       "title": "Thermostat Check",
       "description": "Temperature readings are used to confirm thermostat, sensor, and controller accuracy.",
-      "icon": "thermometer",
+      "icon": "wrench",
       "badge": "Checkpoint 04"
     },
     {
       "title": "Airflow Balance",
       "description": "Air circulation is checked to support even cooling throughout the cabinet, room, or display.",
-      "icon": "wind",
+      "icon": "ac-air-filter",
       "badge": "Checkpoint 05"
     },
     {
       "title": "Customer Feedback",
       "description": "The technician explains equipment condition and highlights repairs or maintenance actions that may be required.",
-      "icon": "award",
+      "icon": "wrench-screwdriver",
       "badge": "Checkpoint 06"
     }
   ]

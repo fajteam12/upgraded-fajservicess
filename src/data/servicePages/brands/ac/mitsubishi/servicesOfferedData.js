@@ -7,28 +7,28 @@ const servicesOfferedData = {
   lead: "Our services include:",
   items: [
     {
-      icon: "wrench",
+      icon: "ac-installation",
       title: "Mitsubishi AC Installation",
       description:
         "Professional installation of different Mitsubishi air conditioning systems to guarantee optimal performance.",
       actionLabel: "Request Installation",
     },
     {
-      icon: "thermometer",
+      icon: "diagnostics",
       title: "Mitsubishi AC Inspection",
       description:
         "Comprehensive fault diagnosis to identify issues accurately. We provide detailed quotes and eligibility assessments to address concerns regarding your system.",
       actionLabel: "Book Inspection",
     },
     {
-      icon: "settings",
+      icon: "wind",
       title: "Mitsubishi AC Repair Service",
       description:
         "We offer fast and effective repair services for all Mitsubishi AC components, addressing issues such as leaks, electrical failures, and system malfunctions. Please contact us for specific services or any questions you may have!",
       actionLabel: "Request Repair",
     },
     {
-      icon: "calendar",
+      icon: "ac-maintenance",
       title: "Mitsubishi AC Annual Maintenance Contract",
       description:
         "This contract outlines the terms and services for Mitsubishi AC annual maintenance.",

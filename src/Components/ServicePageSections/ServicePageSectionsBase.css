@@ -125,14 +125,14 @@
 
 .service-landing__section-heading {
   max-width: 720px;
-  margin: 0 auto clamp(24px, 3.5vw, 36px);
+  margin: 0 auto clamp(14px, 2vw, 20px);
   text-align: center;
 }
 
 .service-landing__eyebrow,
 .service-landing__modal-eyebrow {
   display: inline-block;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   color: var(--sl-accent);
   font-size: var(--sl-small);
   font-weight: 800;
@@ -141,25 +141,27 @@
   text-transform: uppercase;
 }
 
-.service-landing__section-heading h2 {
+.service-landing__section-heading h2,
+.service-landing__section-heading h3 {
   margin: 0;
   color: var(--sl-dark);
-  font-size: clamp(1.45rem, 3.2vw, 2.1rem);
+  font-size: clamp(1.2rem, 2.2vw, 1.65rem);
   font-weight: 900;
-  line-height: 1.15;
-  letter-spacing: -0.025em;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
   text-transform: uppercase;
 }
 
 .service-landing__section-heading p {
   max-width: 680px;
-  margin: 16px auto 0;
+  margin: 10px auto 0;
   color: var(--sl-body);
   font-size: var(--sl-font-body);
   line-height: var(--sl-line-height-body);
 }
 
-.service-landing__section-heading.is-light h2 {
+.service-landing__section-heading.is-light h2,
+.service-landing__section-heading.is-light h3 {
   color: var(--sl-dark);
 }
 
@@ -173,9 +175,9 @@
 
 .service-landing__heading-line {
   display: block;
-  width: 48px;
+  width: 44px;
   height: 2px;
-  margin: 18px auto 0;
+  margin: 10px auto 0;
   background: var(--sl-cyan);
 }
 
@@ -578,7 +580,7 @@
 .service-landing__number-grid,
 .service-landing__brand-grid {
   display: grid;
-  gap: 24px;
+  gap: 16px;
 }
 
 .service-landing__pricing-grid,
@@ -617,9 +619,9 @@
 
 .service-landing__price-card {
   justify-content: space-between;
-  min-height: 390px;
-  padding: 30px;
-  border: 1px solid var(--sl-border);
+  min-height: auto;
+  padding: clamp(18px, 2.2vw, 24px);
+  border: 1px solid var(--sl-navy);
   border-radius: 15px;
   background: rgba(245, 248, 250, 0.62);
   box-shadow: 0 8px 20px rgba(0, 48, 72, 0.05);
@@ -627,7 +629,7 @@
 
 .service-landing__price-card:hover {
   border-color: var(--sl-navy);
-  background: #fff;
+  background: #ffffff;
   box-shadow: 0 22px 38px rgba(0, 48, 72, 0.12);
   transform: translateY(-6px);
 }
@@ -799,15 +801,53 @@
   background: var(--sl-accent);
 }
 
-/* Preserved dark contract card styles */
+/* Dark tone styling for PlanCardsSection (AMC contracts) */
+.service-landing__contracts.is-dark {
+  overflow: clip;
+  color: #fff;
+  background:
+    radial-gradient(circle at 10% 20%, rgba(79, 195, 216, 0.12), transparent 30%),
+    var(--sl-dark, #003048);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.service-landing__contracts.is-dark .service-landing__dark-glow {
+  display: block;
+}
+
+.service-landing__contracts.is-dark .service-landing__section-heading h2,
+.service-landing__contracts.is-dark .service-landing__section-heading.is-light h2 {
+  color: #fff;
+}
+
+.service-landing__contracts.is-dark .service-landing__section-heading p,
+.service-landing__contracts.is-dark .service-landing__section-heading.is-light p {
+  color: #cbd5e1;
+}
+
+.service-landing__contracts.is-dark .service-landing__eyebrow,
+.service-landing__contracts.is-dark .service-landing__section-heading.is-light .service-landing__eyebrow {
+  color: var(--sl-cyan, #4fc3d8);
+}
+
+.service-landing__contracts.is-dark .service-landing__heading-line {
+  background: var(--sl-cyan, #4fc3d8);
+}
+
 .service-landing__contracts.is-dark .service-landing__contract-card,
 .service-landing__contract-card {
-  min-height: 470px;
-  padding: 32px;
+  min-height: auto;
+  padding: clamp(18px, 2.2vw, 24px);
   border: 1px solid rgba(255, 255, 255, 0.09);
-  border-radius: 18px;
+  border-radius: 16px;
   color: #fff;
   background: #112633;
+}
+
+.service-landing__contracts.is-dark .service-landing__contract-card {
+  background: #0d2230;
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.22);
 }
 
 .service-landing__contracts.is-dark .service-landing__contract-card:hover,
@@ -815,20 +855,20 @@
   border-color: rgba(79, 195, 216, 0.45);
   background: #142d3b;
   box-shadow: 0 20px 42px rgba(0, 0, 0, 0.25);
-  transform: translateY(-6px);
+  transform: translateY(-4px);
 }
 
 .service-landing__contracts.is-dark .service-landing__contract-card.is-featured,
 .service-landing__contract-card.is-featured {
   border-color: var(--sl-cyan);
-  background: var(--sl-dark);
-  box-shadow: 0 0 34px rgba(79, 195, 216, 0.12);
+  background: #091a26;
+  box-shadow: 0 0 34px rgba(79, 195, 216, 0.15);
 }
 
 .service-landing__contract-badge {
   position: absolute;
-  top: 24px;
-  right: 24px;
+  top: 18px;
+  right: 18px;
   color: var(--sl-dark);
   background: var(--sl-cyan);
 }
@@ -836,10 +876,10 @@
 .service-landing__contract-icon {
   display: grid;
   place-items: center;
-  width: 48px;
-  height: 48px;
-  margin-bottom: 20px;
-  border-radius: 12px;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 16px;
+  border-radius: 10px;
   color: var(--sl-cyan);
   background: rgba(79, 195, 216, 0.1);
   font-size: 0.75rem;
@@ -848,12 +888,16 @@
 
 .service-landing__contract-card h3 {
   max-width: 100%;
-  margin: 0 0 12px;
+  margin: 0 0 8px;
   color: var(--sl-dark);
-  font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+  font-size: clamp(1.02rem, 1.6vw, 1.18rem);
   font-weight: 900;
   line-height: 1.25;
   text-transform: uppercase;
+}
+
+.service-landing__contracts.is-dark .service-landing__contract-card h3 {
+  color: #fff;
 }
 
 .service-landing__contract-card p,
@@ -872,9 +916,9 @@
 
 .service-landing__contract-card ul {
   display: grid;
-  gap: 14px;
-  margin: 24px 0 30px;
-  padding: 22px 0 0;
+  gap: 10px;
+  margin: 16px 0 20px;
+  padding: 16px 0 0;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   list-style: none;
 }
@@ -919,18 +963,26 @@
 }
 
 .service-landing__statement-card {
-  padding: clamp(28px, 5vw, 48px);
+  padding: clamp(14px, 2.2vw, 20px) clamp(18px, 2.8vw, 28px);
 }
 
 .service-landing__statement-card strong {
   display: block;
-  margin-bottom: 22px;
-  padding-left: 16px;
-  border-left: 4px solid var(--sl-cyan);
+  margin-bottom: 10px;
+  padding-left: 12px;
+  border-left: 3px solid var(--sl-cyan);
   color: var(--sl-navy);
-  font-size: max(var(--sl-small), 0.9rem);
-  line-height: 1.6;
+  font-size: max(var(--sl-small), 0.875rem);
+  line-height: 1.5;
   text-transform: uppercase;
+}
+
+.service-landing__statement-card p {
+  margin: 0;
+}
+
+.service-landing__statement-card p + p {
+  margin-top: 10px;
 }
 
 .service-landing__statement-card p,
@@ -979,14 +1031,20 @@
 .service-landing__info-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 24px;
+  gap: 16px;
+}
+
+@media (max-width: 768px) {
+  .service-landing__info-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .service-landing__info-card {
   height: 100%;
-  padding: 30px;
+  padding: clamp(18px, 2.2vw, 24px);
   border: 1px solid var(--sl-border);
-  border-radius: 16px;
+  border-radius: 14px;
   background: var(--sl-light);
   box-shadow: 0 10px 24px rgba(0, 48, 72, 0.06);
   transition: transform 300ms ease, box-shadow 300ms ease;
@@ -997,10 +1055,27 @@
   box-shadow: 0 18px 34px rgba(0, 48, 72, 0.11);
 }
 
-.service-landing__info-card.is-dark {
+.service-landing__info-card.is-white {
+  background: #ffffff;
+  border-color: var(--sl-border);
+}
+
+.service-landing__info-card.is-soft {
+  background: var(--sl-light);
+  border-color: var(--sl-border);
+}
+
+.service-landing__info-card.is-dark,
+.service-landing__info-card.is-featured {
   color: #fff;
   background: var(--sl-dark);
   border-color: var(--sl-dark);
+}
+
+/* When the section tone is soft (grey), unfeatured/default cards are white for proper contrast */
+.service-landing__section.is-soft .service-landing__info-card:not(.is-dark):not(.is-featured):not(.is-soft) {
+  background: #ffffff;
+  border-color: var(--sl-border);
 }
 
 .service-landing__info-card h3 {
@@ -1011,17 +1086,19 @@
   text-transform: uppercase;
 }
 
-.service-landing__info-card.is-dark h3 {
+.service-landing__info-card.is-dark h3,
+.service-landing__info-card.is-featured h3 {
   color: var(--sl-cyan);
 }
 
-.service-landing__info-card.is-dark p {
+.service-landing__info-card.is-dark p,
+.service-landing__info-card.is-featured p {
   color: #c1cfd5;
 }
 
 .service-landing__highlights-panel,
 .service-landing__offered-panel {
-  padding: clamp(28px, 5vw, 48px);
+  padding: clamp(16px, 2.5vw, 24px);
 }
 
 .service-landing__highlights-panel > h3,
@@ -1086,7 +1163,7 @@
   border: 1px solid var(--sl-border);
   border-radius: 14px;
   background: rgba(245, 248, 250, 0.62);
-  box-shadow: 0 6px 16px rgba(0, 48, 72, 0.04);
+  box-shadow: 0 6px 6px rgba(0, 48, 72, 0.04);
 }
 
 .service-landing__number-card::before,
@@ -1371,11 +1448,11 @@
 .service-landing__booking-card {
   width: min(100% - 32px, 640px);
   margin-inline: auto;
-  padding: clamp(26px, 5vw, 44px);
+  padding: clamp(20px, 3.5vw, 32px);
 }
 
 .service-landing__booking-card .service-landing__section-heading {
-  margin-bottom: 30px;
+  margin-bottom: 18px;
 }
 
 .service-landing__booking-form {
@@ -1416,11 +1493,12 @@
 .service-landing__modal-backdrop {
   position: fixed;
   inset: 0;
-  z-index: 4000;
+  z-index: 100000;
   display: grid;
   place-items: center;
-  padding: 20px;
-  overflow-y: auto;
+  padding: clamp(16px, 4vh, 40px) 16px;
+  overflow: hidden;
+  overscroll-behavior: contain;
   background: rgba(11, 28, 36, 0.78);
   backdrop-filter: blur(5px);
   animation: service-modal-fade 220ms ease both;
@@ -1465,6 +1543,7 @@
   position: absolute;
   top: 16px;
   right: 16px;
+  z-index: 10;
   display: grid;
   place-items: center;
   width: 38px;
@@ -1537,11 +1616,16 @@
     min-height: 0;
     aspect-ratio: 16 / 9;
   }
+
+  .service-landing__hero h1 {
+    font-size: clamp(1.2rem, 3.2vw, 1.6rem);
+    line-height: 1.2;
+  }
 }
 
 @media (max-width: 680px) {
   .service-landing__section {
-    padding: 68px 0;
+    padding: 28px 0;
   }
 
   .service-landing__container,
@@ -1550,7 +1634,7 @@
   }
 
   .service-landing__section-heading {
-    margin-bottom: 36px;
+    margin-bottom: 16px;
   }
 
   .service-landing__hero-content {
@@ -1563,6 +1647,11 @@
   .service-landing__hero-media {
     min-height: 0;
     aspect-ratio: 16 / 9;
+  }
+
+  .service-landing__hero h1 {
+    font-size: clamp(1.05rem, 4.2vw, 1.25rem);
+    line-height: 1.25;
   }
 
   .service-landing__hero-actions,
@@ -1836,8 +1925,11 @@
 .service-landing__pricing-modal {
   display: flex;
   flex-direction: column;
-  max-height: calc(100dvh - 40px);
+  width: min(100%, 680px);
+  max-height: min(calc(100dvh - 48px), 760px);
+  border-radius: 18px;
   overflow: hidden;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
 }
 
 .service-landing__pricing-modal > .service-landing__modal-eyebrow,
@@ -1856,7 +1948,9 @@
 
 @media (max-width: 680px) {
   .service-landing__pricing-modal {
-    max-height: calc(100dvh - 24px);
+    width: min(100%, 560px);
+    max-height: calc(100dvh - 32px);
+    border-radius: 16px;
   }
 
   .service-landing__pricing-modal-content {
@@ -1900,12 +1994,19 @@
   font-weight: 900;
 }
 
-.service-landing__info-card.is-dark .service-landing__info-card-bullets li {
-  color: var(--sl-body);
+.service-landing__info-card.is-dark .service-landing__info-card-bullets li,
+.service-landing__info-card.is-featured .service-landing__info-card-bullets li {
+  color: #c1cfd5;
 }
 
-.service-landing__info-card.is-dark .service-landing__info-card-bullets li.is-strong {
-  color: var(--sl-dark);
+.service-landing__info-card.is-dark .service-landing__info-card-bullets li::before,
+.service-landing__info-card.is-featured .service-landing__info-card-bullets li::before {
+  background: var(--sl-cyan);
+}
+
+.service-landing__info-card.is-dark .service-landing__info-card-bullets li.is-strong,
+.service-landing__info-card.is-featured .service-landing__info-card-bullets li.is-strong {
+  color: #fff;
 }
 
 @media (max-width: 680px) {
@@ -1939,11 +2040,11 @@
 }
 
 .service-landing__section.is-dark .service-landing__action-bottom-copy h3 {
-  color: var(--sl-dark);
+  color: #fff;
 }
 
 .service-landing__section.is-dark .service-landing__action-bottom-copy p {
-  color: var(--sl-body);
+  color: #bdcbd1;
 }
 
 @media (max-width: 680px) {
@@ -1997,16 +2098,19 @@
   margin: 0 0 14px;
 }
 
-.service-landing__info-card.is-dark .service-landing__info-card-bullets li > strong {
-  color: var(--sl-dark);
+.service-landing__info-card.is-dark .service-landing__info-card-bullets li > strong,
+.service-landing__info-card.is-featured .service-landing__info-card-bullets li > strong {
+  color: #fff;
 }
 
-.service-landing__info-card.is-dark .service-landing__info-card-section {
-  border-top-color: var(--sl-border);
+.service-landing__info-card.is-dark .service-landing__info-card-section,
+.service-landing__info-card.is-featured .service-landing__info-card-section {
+  border-top-color: rgba(255, 255, 255, 0.1);
 }
 
-.service-landing__info-card.is-dark .service-landing__info-card-section h4 {
-  color: var(--sl-navy);
+.service-landing__info-card.is-dark .service-landing__info-card-section h4,
+.service-landing__info-card.is-featured .service-landing__info-card-section h4 {
+  color: var(--sl-cyan);
 }
 
 @media (max-width: 680px) {
@@ -2563,11 +2667,13 @@
   color: var(--sl-navy);
 }
 
-.service-landing__info-card.is-dark .service-landing__inline-link {
+.service-landing__info-card.is-dark .service-landing__inline-link,
+.service-landing__info-card.is-featured .service-landing__inline-link {
   color: var(--sl-cyan);
 }
 
-.service-landing__info-card.is-dark .service-landing__inline-link:hover {
+.service-landing__info-card.is-dark .service-landing__inline-link:hover,
+.service-landing__info-card.is-featured .service-landing__inline-link:hover {
   color: #fff;
 }
 

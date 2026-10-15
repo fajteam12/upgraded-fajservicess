@@ -1,20 +1,21 @@
 import BreadCumb from "../Components/Common/BreadCumb";
 import MaintenanceBenefits from "../Components/MaintenanceBenefits/MaintenanceBenefits";
 import {
+  AboutHeroSection,
   AccordionSection,
   ActionCardsSection,
   BookingModal,
   BookingSection,
-  MetricCardsSection,
+  ContentCardSection,
   MediaGallerySection,
   NumberedGridSection,
   PageMetadata,
   PlanCardsSection,
   PricingCardsSection,
   SearchableDirectorySection,
-  SplitHeroSection,
   TwoColumnInfoSection,
   useBookingRequest,
+  TestimonialsSection,
 } from "../Components/ServicePageSections";
 import "../Components/ServicePageSections/ServicePageSections.css";
 import pageData from "../data/servicePages/homeAppliances";
@@ -40,20 +41,25 @@ export default function HomeAppliancesPage() {
       />
 
       <main className="service-landing">
-        <SplitHeroSection
+        <AboutHeroSection
           content={pageData.hero}
           contact={pageData.contact}
           onPrimaryAction={openBooking}
+          contentWidth={pageData.hero.contentWidth || "50%"}
+          showPhone={false}
+          showCall={false}
+          tone="white"
         />
 
         <BreadCumb />
 
+        <ContentCardSection content={pageData.overview} tone="soft" />
+
         <PricingCardsSection
           content={pageData.primaryServices}
           onAction={openBooking}
+          tone="white"
         />
-
-        <PlanCardsSection content={pageData.contracts} onAction={openBooking} />
 
         <ActionCardsSection
           content={pageData.categories}
@@ -61,15 +67,26 @@ export default function HomeAppliancesPage() {
           columns="four"
         />
 
-        <TwoColumnInfoSection content={pageData.serviceOverview} />
+        <TwoColumnInfoSection
+          content={pageData.serviceOverview}
+          showCta={true}
+          cta={{
+            phone: "",
+            whatsapp: `https://api.whatsapp.com/send?phone=+${pageData.contact.whatsapp}&text=Hello`,
+          }}
+          tone="white"
+        />
 
         <NumberedGridSection
           content={pageData.commonProblems}
+          showCta={true}
+          cta={{
+            phone: "",
+            whatsapp: `https://api.whatsapp.com/send?phone=+${pageData.contact.whatsapp}&text=Hello`,
+          }}
           tone="soft"
           columns="three"
         />
-
-        {/* <MetricCardsSection content={pageData.maintenanceImportance} /> */}
 
         <ActionCardsSection
           content={pageData.servicesOffered}
@@ -78,42 +95,52 @@ export default function HomeAppliancesPage() {
           columns="four"
         />
 
-        <MaintenanceBenefits {...pageData.benefits} />
+        <MaintenanceBenefits {...pageData.benefits} tone="soft" />
 
         <ActionCardsSection
           content={pageData.whyChooseUs}
-          tone="dark"
+          showCta={true}
+          cta={{
+            phone: `tel:+${pageData.contact.phone}`,
+            whatsapp: "",
+          }}
+          tone="white"
           columns="three"
         />
 
         <SearchableDirectorySection
           content={pageData.brands}
           onAction={openBooking}
+          showCta={true}
+          cta={{
+            phone: `tel:+${pageData.contact.phone}`,
+            whatsapp: "",
+          }}
+          tone="soft"
         />
 
-        <MediaGallerySection content={pageData.gallery} tone="soft" />
+        <MediaGallerySection content={pageData.gallery} tone="white" />
 
-        <ActionCardsSection
-          content={pageData.testimonials}
-          tone="dark"
-          columns="three"
-          slider
-          autoPlay
-          loop
-        />
+        <TestimonialsSection content={pageData.testimonials} tone="soft" />
 
         <ActionCardsSection
           content={pageData.news}
-          tone="soft"
+          tone="white"
           columns="three"
         />
 
-        <AccordionSection content={pageData.faqs} tone="white" />
+        <PlanCardsSection
+          content={pageData.contracts}
+          onAction={openBooking}
+          tone="dark"
+        />
+
+        <AccordionSection content={pageData.faqs} tone="soft" />
 
         <BookingSection
           content={pageData.booking}
           bookingState={bookingState}
-          tone="soft"
+          tone="white"
         />
       </main>
 

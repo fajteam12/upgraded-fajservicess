@@ -7,28 +7,28 @@ const servicesOfferedData = {
   lead: "Our services include:",
   items: [
     {
-      icon: "wrench",
+      icon: "ac-installation",
       title: "Nikai AC Installation",
       description:
         "The professional installation of various Nikai air conditioning systems ensures optimal performance.",
       actionLabel: "Request Installation",
     },
     {
-      icon: "thermometer",
+      icon: "diagnostics",
       title: "Nikai AC Inspection",
       description:
         "We offer accurate fault diagnosis to pinpoint system issues, along with comprehensive quotes and eligibility assessments to address your concerns.",
       actionLabel: "Book Inspection",
     },
     {
-      icon: "settings",
+      icon: "wind",
       title: "Nikai AC Repair Service",
       description:
         "We offer fast repair services for Nikai air conditioners, addressing leaks, electrical problems, and malfunctions. Contact us for further details or inquiries!",
       actionLabel: "Request Repair",
     },
     {
-      icon: "calendar",
+      icon: "ac-maintenance",
       title: "Nikai AC Annual Maintenance Contract",
       description:
         "The contract specifies the annual maintenance terms for Nikai air conditioners.",
