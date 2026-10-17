@@ -44,7 +44,12 @@ function BookingFields({ content, form, setForm, prefix }) {
           value={form.location}
           onChange={update("location")}
         >
-          {content.locations.map((location) => (
+          {(Array.isArray(content?.locations)
+            ? content.locations
+            : Array.isArray(content?.areas)
+            ? content.areas
+            : ["Dubai", "Sharjah", "Abu Dhabi"]
+          ).map((location) => (
             <option value={location} key={location}>
               {location}
             </option>

@@ -1,21 +1,30 @@
 const HOME_APPLIANCE_BRAND_BASE =
   "/services/home-appliances-repair/brands";
+const COFFEE_BRAND_BASE =
+  "/services/coffee-machine/brands";
 
 const brandServiceRoutes = new Map([
+  // Coffee Machine Brands (Existing Home Appliance pages preserved; new brands routed to Coffee Machine)
+  ["delonghi", `${HOME_APPLIANCE_BRAND_BASE}/delonghi/`],
+  ["sage", `${HOME_APPLIANCE_BRAND_BASE}/sage-coffee-machine-repair-and-service-in-dubai/`],
+  ["jura", `${HOME_APPLIANCE_BRAND_BASE}/jura-coffee-machine-repair-and-service-in-dubai/`],
+  ["philips", `${HOME_APPLIANCE_BRAND_BASE}/philips-repair-service-in-dubai/`],
+  ["la marzocco", `${COFFEE_BRAND_BASE}/la-marzocco/`],
+  ["gaggia", `${COFFEE_BRAND_BASE}/gaggia/`],
+  ["nespresso", `${COFFEE_BRAND_BASE}/nespresso/`],
+  ["breville", `${COFFEE_BRAND_BASE}/breville/`],
+  ["profitec", `${COFFEE_BRAND_BASE}/profitec/`],
+  ["lelit", `${COFFEE_BRAND_BASE}/lelit/`],
+  ["meraki", `${COFFEE_BRAND_BASE}/meraki/`],
+  ["franke coffee", `${COFFEE_BRAND_BASE}/franke/`],
+  ["franke espresso", `${COFFEE_BRAND_BASE}/franke/`],
+
+  // Major Home Appliance Brands
   ["white westinghouse", `${HOME_APPLIANCE_BRAND_BASE}/white-westinghouse/`],
   ["fisher paykel", `${HOME_APPLIANCE_BRAND_BASE}/fisher-paykel/`],
   ["de dietrich", `${HOME_APPLIANCE_BRAND_BASE}/de-dietrich/`],
   ["speed queen", `${HOME_APPLIANCE_BRAND_BASE}/speed-queen/`],
   ["sub zero", `${HOME_APPLIANCE_BRAND_BASE}/sub-zero/`],
-  ["delonghi", `${HOME_APPLIANCE_BRAND_BASE}/delonghi/`],
-  [
-    "sage",
-    `${HOME_APPLIANCE_BRAND_BASE}/sage-coffee-machine-repair-and-service-in-dubai/`,
-  ],
-  [
-    "jura",
-    `${HOME_APPLIANCE_BRAND_BASE}/jura-coffee-machine-repair-and-service-in-dubai/`,
-  ],
   ["aeg", `${HOME_APPLIANCE_BRAND_BASE}/aeg/`],
   ["admiral", `${HOME_APPLIANCE_BRAND_BASE}/admiral/`],
   ["aftron", `${HOME_APPLIANCE_BRAND_BASE}/aftron/`],

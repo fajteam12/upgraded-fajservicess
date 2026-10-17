@@ -40,7 +40,7 @@ function PlanCardsSection({ content, onAction, tone = "soft", dark }) {
                 <h3>{plan.title}</h3>
                 <p>{plan.tagline}</p>
                 <ul>
-                  {plan.features.map((feature) => (
+                  {(plan.features || []).map((feature) => (
                     <li key={feature}>
                       <span aria-hidden="true">{"\u2713"}</span>
                       {feature}
@@ -50,9 +50,10 @@ function PlanCardsSection({ content, onAction, tone = "soft", dark }) {
                 <button
                   type="button"
                   className="service-landing__button is-contract is-full"
-                  onClick={() => onAction(plan.title)}
+                  onClick={() => onAction && onAction(plan.title)}
                 >
-                  {content.actionLabel} <span aria-hidden="true">{"\u2192"}</span>
+                  {(plan.actionLabel || content.actionLabel || "Inquire Plan").replace(/\s*(→|->)\s*$/, "")}{" "}
+                  <span aria-hidden="true">{"\u2192"}</span>
                 </button>
               </article>
             </ScrollSlide>

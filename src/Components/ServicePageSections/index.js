@@ -22,6 +22,7 @@ export const ActionCardsSection = lazySection(() => import("./ActionCardsSection
 export const BeforeAfterSection = lazySection(() => import("./BeforeAfterSection"));
 export const BookingModal = lazySection(() => import("./BookingModal"));
 export const BookingSection = lazySection(() => import("./BookingSection"));
+export const ModernBookingSection = lazySection(() => import("./ModernBookingSection"));
 export const ChecklistSection = lazySection(() => import("./ChecklistSection"));
 export const CalloutBannerSection = lazySection(() => import("./CalloutBannerSection"));
 export const ContentCardSection = lazySection(() => import("./ContentCardSection"));

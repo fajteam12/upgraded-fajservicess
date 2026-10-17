@@ -256,6 +256,68 @@ function ServiceIcon({ name = "wrench" }) {
           <path d="m9 10 2 2 4-4" />
         </svg>
       );
+    case "fan":
+    case "ac-fan":
+      return (
+        <svg {...commonProps}>
+          <path d="M10.827 16.379a6.082 6.082 0 0 1-8.618-7.002l5.412 1.45a6.082 6.082 0 0 1 7.002-8.618l-1.45 5.412a6.082 6.082 0 0 1 8.618 7.002l-5.412-1.45a6.082 6.082 0 0 1-7.002 8.618l1.45-5.412Z" />
+          <circle cx="12" cy="12" r="2" />
+        </svg>
+      );
+    case "git-branch":
+    case "git-fork":
+    case "control-path":
+    case "route":
+      return (
+        <svg {...commonProps}>
+          <circle cx="12" cy="18" r="3" />
+          <circle cx="6" cy="6" r="3" />
+          <circle cx="18" cy="6" r="3" />
+          <path d="M18 9v1a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V9" />
+          <path d="M12 12v3" />
+        </svg>
+      );
+    case "arrow-down-circle":
+    case "download-circle":
+      return (
+        <svg {...commonProps}>
+          <circle cx="12" cy="12" r="10" />
+          <polyline points="8 12 12 16 16 12" />
+          <line x1="12" y1="8" x2="12" y2="16" />
+        </svg>
+      );
+    case "file-cog":
+    case "document-cog":
+      return (
+        <svg {...commonProps}>
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+          <polyline points="14 2 14 8 20 8" />
+          <circle cx="12" cy="15" r="2" />
+          <path d="m12 12 .5 1" />
+          <path d="m14 13.5-.5.5" />
+          <path d="m14.5 15-.5.5" />
+          <path d="m13.5 16.5-.5-.5" />
+          <path d="m12 18-.5-1" />
+          <path d="m10 16.5.5-.5" />
+          <path d="m9.5 15 .5-.5" />
+          <path d="m10.5 13.5.5-.5" />
+        </svg>
+      );
+    case "rosette-check":
+    case "award-check":
+      return (
+        <svg {...commonProps}>
+          <path d="M12 2l2.4 2.4 3.4-.4 1.4 3.1 3.2 1.2-.4 3.4 2.4 2.4-2.4 2.4.4 3.4-3.2 1.2-1.4 3.1-3.4-.4L12 22l-2.4-2.4-3.4.4-1.4-3.1-3.2-1.2.4-3.4L2 12l2.4-2.4-.4-3.4 3.2-1.2 1.4-3.1 3.4.4L12 2z" />
+          <path d="m9 12 2 2 4-4" />
+        </svg>
+      );
+    case "shield-dollar":
+      return (
+        <svg {...commonProps}>
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+          <path d="M12 8v8M10 10.5c.5-.8 1.4-1 2-1 1.2 0 2 .6 2 1.5s-.8 1.5-2 1.8c-1.2.3-2 .9-2 1.8 0 .9.8 1.4 2 1.4.8 0 1.6-.3 2-1" />
+        </svg>
+      );
     default:
       return (
         <svg {...commonProps}>

@@ -1,5 +1,9 @@
 import { memo, useCallback, useEffect, useState } from "react";
 import { createPortal } from "react-dom";
+import {
+	getCloudflareImageSrcSet,
+	getCloudflareImageUrl,
+} from "../../utils/cloudflareImages";
 import { ScrollSlide } from "../Animations/ScrollAnimation";
 import SectionHeader from "./SectionHeader";
 
@@ -66,17 +70,44 @@ function PricingCardsSection({ content, onAction }) {
 
 							const hasAnySubtitle = content.items?.some((i) => Boolean(i.subtitle));
 
+							const imgObj = typeof item.image === "object" && item.image ? item.image : null;
+							const imgSrc = imgObj
+								? (imgObj.id ? getCloudflareImageUrl(imgObj.id, "public") : imgObj.src)
+								: (typeof item.image === "string"
+									? (item.image.startsWith("http") || item.image.startsWith("/")
+										? item.image
+										: getCloudflareImageUrl(item.image, "public"))
+									: "");
+							const imgSrcSet = imgObj?.id
+								? getCloudflareImageSrcSet(imgObj.id)
+								: undefined;
+
 							return (
 								<ScrollSlide
 									direction="up"
 									delay={(index % 3) * 0.08}
 									key={item.title}
 								>
-									<article className="service-landing__price-card">
+									<article className={`service-landing__price-card ${item.image ? "has-image" : ""}`}>
+										{item.image && (
+											<div className="service-landing__price-card-image">
+												<img
+													src={imgSrc}
+													srcSet={imgSrcSet}
+													sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+													alt={item.title}
+													loading="lazy"
+													width={400}
+													height={220}
+												/>
+											</div>
+										)}
 										<div className="service-landing__price-card-body">
-											<span className="service-landing__card-badge">
-												{item.badge || content.defaultBadge}
-											</span>
+											{item.badge && !item.image && (
+												<span className="service-landing__card-badge">
+													{item.badge || content.defaultBadge}
+												</span>
+											)}
 
 											<div className="service-landing__price-card-header">
 												<h3>{item.title}</h3>
@@ -90,12 +121,24 @@ function PricingCardsSection({ content, onAction }) {
 												)}
 											</div>
 
-											<strong className="service-landing__price">
-												{(item.pricePrefix ?? content.pricePrefix) && (
-													<>{item.pricePrefix ?? content.pricePrefix} </>
+											<div className="service-landing__price-card-cost-row">
+												<strong className="service-landing__price">
+													{(item.pricePrefix ?? content.pricePrefix) && (
+														<>{item.pricePrefix ?? content.pricePrefix} </>
+													)}
+													<em>{item.price}</em>
+												</strong>
+
+												{item.warranty && (
+													<span className="service-landing__price-card-warranty">
+														{item.warranty}
+													</span>
 												)}
-												<em>{item.price}</em>
-											</strong>
+											</div>
+
+											{item.image && (
+												<div className="service-landing__price-card-divider" aria-hidden="true" />
+											)}
 
 											<p>{item.description}</p>
 										</div>
@@ -162,7 +205,7 @@ function PricingCardsSection({ content, onAction }) {
 							<h2 id="pricing-popup-title">{activeItem.popup.title}</h2>
 
 							<div className="service-landing__pricing-modal-content">
-								{activeItem.popup.sections.map((section, sectionIndex) => (
+								{(activeItem.popup?.sections || []).map((section, sectionIndex) => (
 									<section
 										className="service-landing__pricing-modal-section"
 										key={`${activeItem.title}-${sectionIndex}`}

@@ -1,0 +1,12 @@
+export { default as DelonghiCoffeeRepair } from "./DelonghiCoffeeRepair";
+export { default as FrankeCoffeeRepair } from "./FrankeCoffeeRepair";
+export { default as LaMarzoccoCoffeeRepair } from "./LaMarzoccoCoffeeRepair";
+export { default as JuraCoffeeRepair } from "./JuraCoffeeRepair";
+export { default as GaggiaCoffeeRepair } from "./GaggiaCoffeeRepair";
+export { default as NespressoCoffeeRepair } from "./NespressoCoffeeRepair";
+export { default as SageCoffeeRepair } from "./SageCoffeeRepair";
+export { default as PhilipsCoffeeRepair } from "./PhilipsCoffeeRepair";
+export { default as BrevilleCoffeeRepair } from "./BrevilleCoffeeRepair";
+export { default as ProfitecCoffeeRepair } from "./ProfitecCoffeeRepair";
+export { default as LelitCoffeeRepair } from "./LelitCoffeeRepair";
+export { default as MerakiCoffeeRepair } from "./MerakiCoffeeRepair";

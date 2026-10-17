@@ -49,8 +49,8 @@ const heroData = {
   secondaryAction: "WhatsApp Now",
   bookingLabel: "AC Technical Assessment",
   image: {
-    id: "ac-repair-new-design-images/air-conditioning-services-top",
-    src: "/img/ac-repair-new-design-images/air-conditioning-services-top.webp",
+    id: "ac-service-page/ac-repair-and-service",
+    src: "https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/ac-service-page/ac-repair-and-service/public",
     alt: "FAJ technician servicing a commercial cassette air conditioner in Dubai",
     width: 853,
     height: 853,

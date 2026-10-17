@@ -136,6 +136,55 @@ export const router = createBrowserRouter([
         path: "/services/coffee-machine/coffee-machine-repairs/",
         element: < Components.CommercialCoffeeMachineRepair />,
       },
+      // Coffee Machine Brand Pages (ac-service design philosophy)
+      {
+        path: "/services/coffee-machine/brands/delonghi/",
+        element: <Navigate to="/services/home-appliances-repair/brands/delonghi/" replace />,
+      },
+      {
+        path: "/services/coffee-machine/brands/franke/",
+        element: <Components.FrankeCoffeeRepair />,
+      },
+      {
+        path: "/services/coffee-machine/brands/la-marzocco/",
+        element: <Components.LaMarzoccoCoffeeRepair />,
+      },
+      {
+        path: "/services/coffee-machine/brands/jura/",
+        element: <Navigate to="/services/home-appliances-repair/brands/jura-coffee-machine-repair-and-service-in-dubai/" replace />,
+      },
+      {
+        path: "/services/coffee-machine/brands/gaggia/",
+        element: <Components.GaggiaCoffeeRepair />,
+      },
+      {
+        path: "/services/coffee-machine/brands/nespresso/",
+        element: <Components.NespressoCoffeeRepair />,
+      },
+      {
+        path: "/services/coffee-machine/brands/sage/",
+        element: <Navigate to="/services/home-appliances-repair/brands/sage-coffee-machine-repair-and-service-in-dubai/" replace />,
+      },
+      {
+        path: "/services/coffee-machine/brands/philips/",
+        element: <Navigate to="/services/home-appliances-repair/brands/philips-repair-service-in-dubai/" replace />,
+      },
+      {
+        path: "/services/coffee-machine/brands/breville/",
+        element: <Components.BrevilleCoffeeRepair />,
+      },
+      {
+        path: "/services/coffee-machine/brands/profitec/",
+        element: <Components.ProfitecCoffeeRepair />,
+      },
+      {
+        path: "/services/coffee-machine/brands/lelit/",
+        element: <Components.LelitCoffeeRepair />,
+      },
+      {
+        path: "/services/coffee-machine/brands/meraki/",
+        element: <Components.MerakiCoffeeRepair />,
+      },
       {
         path: "/services/home-appliances-repair/hob-repair-service/",
         element: <Components.HobRepair />,
@@ -1199,6 +1248,46 @@ export const router = createBrowserRouter([
       {
         path: "/services/home-appliances-repair/brands/ice-cream-machine-repair-and-service-in-dubai/",
         element: <Components.IceCreamMachineRepair />,
+      },
+      {
+        path: "/services/home-appliances-repair/brands/la-marzocco/",
+        element: <Navigate to="/services/coffee-machine/brands/la-marzocco/" replace />,
+      },
+      {
+        path: "/services/home-appliances-repair/brands/gaggia/",
+        element: <Navigate to="/services/coffee-machine/brands/gaggia/" replace />,
+      },
+      {
+        path: "/services/home-appliances-repair/brands/nespresso/",
+        element: <Navigate to="/services/coffee-machine/brands/nespresso/" replace />,
+      },
+      {
+        path: "/services/home-appliances-repair/brands/breville/",
+        element: <Navigate to="/services/coffee-machine/brands/breville/" replace />,
+      },
+      {
+        path: "/services/home-appliances-repair/brands/profitec/",
+        element: <Navigate to="/services/coffee-machine/brands/profitec/" replace />,
+      },
+      {
+        path: "/services/home-appliances-repair/brands/lelit/",
+        element: <Navigate to="/services/coffee-machine/brands/lelit/" replace />,
+      },
+      {
+        path: "/services/home-appliances-repair/brands/meraki/",
+        element: <Navigate to="/services/coffee-machine/brands/meraki/" replace />,
+      },
+      {
+        path: "/services/home-appliances-repair/brands/sage/",
+        element: <Navigate to="/services/home-appliances-repair/brands/sage-coffee-machine-repair-and-service-in-dubai/" replace />,
+      },
+      {
+        path: "/services/home-appliances-repair/brands/jura/",
+        element: <Navigate to="/services/home-appliances-repair/brands/jura-coffee-machine-repair-and-service-in-dubai/" replace />,
+      },
+      {
+        path: "/services/home-appliances-repair/brands/philips/",
+        element: <Navigate to="/services/home-appliances-repair/brands/philips-repair-service-in-dubai/" replace />,
       },
       {
         path: "/services/home-appliances-repair/coverage-area/al-mamzar/",

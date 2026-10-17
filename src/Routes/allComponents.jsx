@@ -410,3 +410,17 @@ export const BrandsPage = withSuspense(React.lazy(() => import("../Pages/AcPages
 export const CommercialLaundaryEquipmentPage = withSuspense(React.lazy(() => import("../Pages/CommercialLaundaryEquipmentPage.jsx")));
 export const HomeCoverageAreaPage = withSuspense(React.lazy(() => import("../Pages/AppliancesPage/AppliancesLocation/HomeCoveragePage.jsx")));
 export const HomeAppBrandPage = withSuspense(React.lazy(() => import("../Pages/AppliancesPage/AppliancesBrand/HomeAppBrandPage.jsx")));
+
+// Coffee Machine Brand Pages (ac-service design philosophy)
+export const DelonghiCoffeeRepair = withSuspense(React.lazy(() => import("../Pages/CoffeeMachinePages/Brands/DelonghiCoffeeRepair")));
+export const FrankeCoffeeRepair = withSuspense(React.lazy(() => import("../Pages/CoffeeMachinePages/Brands/FrankeCoffeeRepair")));
+export const LaMarzoccoCoffeeRepair = withSuspense(React.lazy(() => import("../Pages/CoffeeMachinePages/Brands/LaMarzoccoCoffeeRepair")));
+export const JuraCoffeeRepairModern = withSuspense(React.lazy(() => import("../Pages/CoffeeMachinePages/Brands/JuraCoffeeRepair")));
+export const GaggiaCoffeeRepair = withSuspense(React.lazy(() => import("../Pages/CoffeeMachinePages/Brands/GaggiaCoffeeRepair")));
+export const NespressoCoffeeRepair = withSuspense(React.lazy(() => import("../Pages/CoffeeMachinePages/Brands/NespressoCoffeeRepair")));
+export const SageCoffeeRepairModern = withSuspense(React.lazy(() => import("../Pages/CoffeeMachinePages/Brands/SageCoffeeRepair")));
+export const PhilipsCoffeeRepairModern = withSuspense(React.lazy(() => import("../Pages/CoffeeMachinePages/Brands/PhilipsCoffeeRepair")));
+export const BrevilleCoffeeRepair = withSuspense(React.lazy(() => import("../Pages/CoffeeMachinePages/Brands/BrevilleCoffeeRepair")));
+export const ProfitecCoffeeRepair = withSuspense(React.lazy(() => import("../Pages/CoffeeMachinePages/Brands/ProfitecCoffeeRepair")));
+export const LelitCoffeeRepair = withSuspense(React.lazy(() => import("../Pages/CoffeeMachinePages/Brands/LelitCoffeeRepair")));
+export const MerakiCoffeeRepair = withSuspense(React.lazy(() => import("../Pages/CoffeeMachinePages/Brands/MerakiCoffeeRepair")));

@@ -192,9 +192,14 @@ function TwoColumnInfoSection({
   const hasWhatsapp = Boolean(whatsappUrl);
   const showAnyCta = isCtaEnabled && (hasPhone || hasWhatsapp);
 
+  const containerClass =
+    content.containerWidth === "wide" || content.wide === true || !content.cards?.length
+      ? "service-landing__container"
+      : "service-landing__narrow";
+
   return (
     <section className={`service-landing__section is-${tone}`}>
-      <div className="service-landing__narrow">
+      <div className={containerClass}>
         <SectionHeader content={content} light={tone === "dark"} />
 
         {content.paragraphs?.length > 0 && (

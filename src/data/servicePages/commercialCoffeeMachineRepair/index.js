@@ -498,28 +498,76 @@ const brandsData = {
   "initialCount": 12,
   "items": [
     {
-      "name": "Ascaso Coffee Machine Repair",
-      "description": "Maintenance and cleaning services for Ascaso espresso coffee machine in Dubai and Sharjah."
+      "name": "De’Longhi Coffee Machine Repair",
+      "description": "Certified De'Longhi commercial and domestic coffee machine repair, preventive maintenance and descaling in Dubai.",
+      "href": "/services/home-appliances-repair/brands/delonghi/"
+    },
+    {
+      "name": "Franke Coffee Machine Repair",
+      "description": "Professional Franke commercial bean-to-cup machine repair, FoamMaster cleaning, and AMC contracts across Dubai.",
+      "href": "/services/coffee-machine/brands/franke/"
+    },
+    {
+      "name": "La Marzocco Coffee Machine Repair",
+      "description": "Expert La Marzocco Linea, GS3, and Strada commercial espresso machine maintenance, genuine parts, and AMC in Dubai.",
+      "href": "/services/coffee-machine/brands/la-marzocco/"
+    },
+    {
+      "name": "Jura Coffee Machine Maintenance",
+      "description": "Swiss Jura commercial and office coffee machine repair, Error 8 resolution, brew group overhauls, and descaling in Dubai.",
+      "href": "/services/home-appliances-repair/brands/jura-coffee-machine-repair-and-service-in-dubai/"
+    },
+    {
+      "name": "Gaggia Coffee Machine Repair",
+      "description": "Italian Gaggia commercial and traditional espresso machine repair, 3-way solenoid cleaning, and pump fixes in Dubai.",
+      "href": "/services/coffee-machine/brands/gaggia/"
+    },
+    {
+      "name": "Nespresso Coffee Machine Repair",
+      "description": "Nespresso Aguila, Vertuo and capsule coffee machine maintenance, leak repair, and descaling services in Dubai.",
+      "href": "/services/coffee-machine/brands/nespresso/"
+    },
+    {
+      "name": "Sage Coffee Machine Service",
+      "description": "Expert Sage Barista Express, Touch, and Dual Boiler repairs, ThermoJet descaling, and grinder calibration in Dubai.",
+      "href": "/services/home-appliances-repair/brands/sage-coffee-machine-repair-and-service-in-dubai/"
+    },
+    {
+      "name": "Philips Automatic Coffee Machine Repair",
+      "description": "Philips LatteGo and automatic coffee machine repairs, ceramic grinder servicing, and AquaClean maintenance in Dubai.",
+      "href": "/services/home-appliances-repair/brands/philips-repair-service-in-dubai/"
+    },
+    {
+      "name": "Breville Coffee Machine Repair",
+      "description": "Specialist Breville Barista series repair, 110V/220V maintenance, group collar seals, and PID checks in Dubai.",
+      "href": "/services/coffee-machine/brands/breville/"
+    },
+    {
+      "name": "Profitec Espresso Machine Repair",
+      "description": "German-engineered Profitec Pro dual boiler & heat exchanger repair, E61 group rebuilds, and flow control calibration.",
+      "href": "/services/coffee-machine/brands/profitec/"
     },
     {
       "name": "Lelit Coffee Machine Service",
-      "description": "Professional Lelit coffee machine repair, maintenance, and descaling services are available in your area."
+      "description": "Professional Lelit Bianca, Mara X, and Elizabeth espresso machine repair, paddle flow profiling, and descaling in Dubai.",
+      "href": "/services/coffee-machine/brands/lelit/"
+    },
+    {
+      "name": "Meraki Coffee Machine Repair",
+      "description": "Smart IoT Meraki espresso machine diagnostics, dual heating block maintenance, sensor calibration, and repair in Dubai.",
+      "href": "/services/coffee-machine/brands/meraki/"
+    },
+    {
+      "name": "Ascaso Coffee Machine Repair",
+      "description": "Maintenance and cleaning services for Ascaso espresso coffee machine in Dubai and Sharjah."
     },
     {
       "name": "Conti Coffee Machine Repair",
       "description": "Find Conti espresso and coffee machine descaling and cleaning services near your location."
     },
     {
-      "name": "Jura Coffee Machine Maintenance",
-      "description": "We provide Jura coffee machine maintenance services and espresso maker repair in Dubai."
-    },
-    {
       "name": "Dr Coffee Machine Repairs",
       "description": "You can locate professional Dr Coffee machine maintenance and descaling services near you."
-    },
-    {
-      "name": "La Marzocco Coffee Machine Repair",
-      "description": "Professional maintenance and cleaning for LA Marzocco espresso machine, including AMC services."
     },
     {
       "name": "La Pavoni Espresso Maintenance",
@@ -528,14 +576,6 @@ const brandsData = {
     {
       "name": "ECM Coffee Machine Servicing",
       "description": "Reach out to us for maintenance and repair services for ECM coffee machine descaling."
-    },
-    {
-      "name": "FRANKE Espresso Machine Fix",
-      "description": "You can rely FAJ for the best Franke coffee machine repair, servicing, and descaling in Dubai"
-    },
-    {
-      "name": "Gaggia Coffee Machine Repair",
-      "description": "Look for a Gaggia espresso machine maintenance and cleaning service in Dubai."
     },
     {
       "name": "Coffee Vending Machine Service",
@@ -620,10 +660,6 @@ const brandsData = {
     {
       "name": "Slayer Espresso Machine Service",
       "description": "Call us for coffee machine repair or espresso machine descaling, annual agreement services."
-    },
-    {
-      "name": "Profitec Ride Espresso Machine",
-      "description": "We provide Profitec Ride espresso machine servicing and repair, and service agreements in Dubai."
     },
     {
       "name": "Faema Automatic Coffee Machine",

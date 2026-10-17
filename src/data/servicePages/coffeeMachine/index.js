@@ -688,28 +688,76 @@ const brandsData = {
   "actionLabel": "Book Brand Service",
   "items": [
     {
-      "name": "Ascaso Coffee Machine",
-      "description": "Espresso-machine repair, cleaning and maintenance support."
+      "name": "De’Longhi Coffee Machine",
+      "description": "Automatic and traditional espresso-machine maintenance, descaling and infuser repairs.",
+      "href": "/services/home-appliances-repair/brands/delonghi/"
+    },
+    {
+      "name": "Franke Coffee Machine",
+      "description": "Automatic commercial coffee-machine servicing, FoamMaster cleaning and hydraulic diagnosis.",
+      "href": "/services/coffee-machine/brands/franke/"
+    },
+    {
+      "name": "La Marzocco Coffee Machine",
+      "description": "Commercial espresso-machine maintenance, dual boiler rebuilds and AMC support.",
+      "href": "/services/coffee-machine/brands/la-marzocco/"
+    },
+    {
+      "name": "Jura Coffee Machine",
+      "description": "Automatic coffee-machine maintenance, descaling, Error 8 resolution and brew unit repair.",
+      "href": "/services/home-appliances-repair/brands/jura-coffee-machine-repair-and-service-in-dubai/"
+    },
+    {
+      "name": "Gaggia Coffee Machine",
+      "description": "Coffee and espresso-machine repair, 3-way solenoid valve unclogging and pump maintenance.",
+      "href": "/services/coffee-machine/brands/gaggia/"
+    },
+    {
+      "name": "Nespresso Coffee Machine",
+      "description": "Vertuo and Original capsule coffee-machine repair, descaling and leak diagnostic services.",
+      "href": "/services/coffee-machine/brands/nespresso/"
+    },
+    {
+      "name": "Sage Coffee Machine",
+      "description": "Espresso-machine repair, ThermoJet descaling, integrated grinder calibration and maintenance.",
+      "href": "/services/home-appliances-repair/brands/sage-coffee-machine-repair-and-service-in-dubai/"
+    },
+    {
+      "name": "Philips Coffee Machine",
+      "description": "Automatic coffee-maker diagnosis, LatteGo milk carafe cleaning and brew group service.",
+      "href": "/services/home-appliances-repair/brands/philips-repair-service-in-dubai/"
+    },
+    {
+      "name": "Breville Coffee Machine",
+      "description": "Coffee-machine cleaning, repair, group gasket replacement and performance service.",
+      "href": "/services/coffee-machine/brands/breville/"
+    },
+    {
+      "name": "Profitec Coffee Machine",
+      "description": "German dual boiler and heat exchanger espresso-machine servicing, E61 rebuilds and AMC support.",
+      "href": "/services/coffee-machine/brands/profitec/"
     },
     {
       "name": "Lelit Coffee Machine",
-      "description": "Coffee-machine repair, maintenance and descaling support."
+      "description": "Italian espresso-machine repair, paddle flow profiling calibration and descaling support.",
+      "href": "/services/coffee-machine/brands/lelit/"
+    },
+    {
+      "name": "Meraki Coffee Machine",
+      "description": "Smart IoT espresso-machine diagnosis, precision heating block maintenance and electronic repair.",
+      "href": "/services/coffee-machine/brands/meraki/"
+    },
+    {
+      "name": "Ascaso Coffee Machine",
+      "description": "Espresso-machine repair, cleaning and maintenance support."
     },
     {
       "name": "Conti Coffee Machine",
       "description": "Commercial espresso-machine cleaning and technical service."
     },
     {
-      "name": "Jura Coffee Machine",
-      "description": "Automatic coffee-machine maintenance, descaling and repair."
-    },
-    {
       "name": "Dr Coffee Machine",
       "description": "Professional automatic coffee-machine diagnosis and care."
-    },
-    {
-      "name": "La Marzocco Coffee Machine",
-      "description": "Commercial espresso-machine maintenance and AMC support."
     },
     {
       "name": "La Pavoni Espresso Machine",
@@ -720,28 +768,8 @@ const brandsData = {
       "description": "Espresso-machine maintenance, descaling and repair support."
     },
     {
-      "name": "Franke Coffee Machine",
-      "description": "Automatic coffee-machine servicing, cleaning and diagnosis."
-    },
-    {
-      "name": "Gaggia Coffee Machine",
-      "description": "Coffee and espresso-machine repair and maintenance."
-    },
-    {
       "name": "Bosch Coffee Machine",
       "description": "Coffee-maker diagnosis, cleaning and repair service."
-    },
-    {
-      "name": "DeLonghi Coffee Machine",
-      "description": "Automatic and traditional espresso-machine maintenance."
-    },
-    {
-      "name": "Breville Coffee Machine",
-      "description": "Coffee-machine cleaning, repair and performance service."
-    },
-    {
-      "name": "Sage Coffee Machine",
-      "description": "Espresso-machine repair, maintenance and descaling."
     },
     {
       "name": "Melitta Coffee Machine",
@@ -810,10 +838,6 @@ const brandsData = {
     {
       "name": "Slayer Espresso Machine",
       "description": "Espresso-machine descaling, repair and PPM support."
-    },
-    {
-      "name": "Profitec Coffee Machine",
-      "description": "Espresso-machine servicing, repair and AMC support."
     },
     {
       "name": "Faema Coffee Machine",

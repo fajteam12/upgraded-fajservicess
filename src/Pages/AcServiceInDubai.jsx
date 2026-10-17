@@ -20,6 +20,7 @@ import {
   DetailColumnsSection,
   EmbeddedVideoSection,
   MediaGallerySection,
+  ModernBookingSection,
   NumberedGridSection,
   PageMetadata,
   PlanCardsSection,
@@ -32,7 +33,7 @@ import {
   useBookingRequest,
 } from "../Components/ServicePageSections";
 import "../Components/ServicePageSections/ServicePageSections.css";
-import pageData from "../data/servicePages/acService";
+import pageData from "../data/servicePages/acService/acServiceData";
 
 export default function AcServiceInDubai() {
   const { modalOpen, selectedItem, openBooking, closeBooking, bookingState } =
@@ -98,17 +99,17 @@ export default function AcServiceInDubai() {
           columns="three"
           onAction={openBooking}
         />
-        <MaintenanceBenefits {...pageData.benefits} />
         <SplitMediaSection
           content={pageData.cleaningService}
           showCta={true}
           cta={whatsappCta}
-          tone="white"
+          tone="soft"
         />
         <TwoColumnInfoSection
           content={pageData.cleaningServiceCards}
-          tone="soft"
+          tone="white"
         />
+        <MaintenanceBenefits {...pageData.benefits} />
         <ActionCardsSection content={pageData.whyChooseUs} tone="white" columns="three" />
         <BeforeAfterSection content={pageData.beforeAfter} tone="soft" />
         <SearchableDirectorySection content={pageData.brands} tone="white" onAction={openBooking} />
@@ -135,7 +136,7 @@ export default function AcServiceInDubai() {
           content={pageData.faqs}
           tone="white"
         />
-        <BookingSection content={pageData.booking} bookingState={bookingState} tone="soft" />
+        <ModernBookingSection content={pageData.booking} bookingState={bookingState} tone="soft" />
       </main>
       <BookingModal content={pageData.booking} open={modalOpen} onClose={closeBooking} selectedItem={selectedItem} bookingState={bookingState} />
     </>

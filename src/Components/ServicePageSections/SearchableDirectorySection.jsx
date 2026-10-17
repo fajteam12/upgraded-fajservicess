@@ -141,7 +141,7 @@ function SearchableDirectorySection({
             const itemName = item.name || item.title || "";
             const itemPath = getBrandServiceRoute(
               itemName,
-              item.href || item.path
+              item.href || item.path || item.link || item.to
             );
             const isExternal =
               item.external === true ||

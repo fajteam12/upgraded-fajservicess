@@ -392,6 +392,53 @@
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
+@media (min-width: 901px) {
+  .service-landing__action-grid.is-four.has-7-items,
+  .service-landing__action-grid.is-four:has(> *:first-child:nth-last-child(7)) {
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  .service-landing__action-grid.is-four.has-7-items > *,
+  .service-landing__action-grid.is-four:has(> *:first-child:nth-last-child(7)) > * {
+    grid-column: span 2;
+  }
+
+  .service-landing__action-grid.is-four.has-7-items > *:nth-child(5),
+  .service-landing__action-grid.is-four:has(> *:first-child:nth-last-child(7)) > *:nth-child(5) {
+    grid-column: 2 / span 2;
+  }
+
+  .service-landing__action-grid.is-four.has-6-items,
+  .service-landing__action-grid.is-four:has(> *:first-child:nth-last-child(6)) {
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  .service-landing__action-grid.is-four.has-6-items > *,
+  .service-landing__action-grid.is-four:has(> *:first-child:nth-last-child(6)) > * {
+    grid-column: span 2;
+  }
+
+  .service-landing__action-grid.is-four.has-6-items > *:nth-child(5),
+  .service-landing__action-grid.is-four:has(> *:first-child:nth-last-child(6)) > *:nth-child(5) {
+    grid-column: 3 / span 2;
+  }
+
+  .service-landing__action-grid.is-four.has-5-items,
+  .service-landing__action-grid.is-four:has(> *:first-child:nth-last-child(5)) {
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  .service-landing__action-grid.is-four.has-5-items > *,
+  .service-landing__action-grid.is-four:has(> *:first-child:nth-last-child(5)) > * {
+    grid-column: span 2;
+  }
+
+  .service-landing__action-grid.is-four.has-5-items > *:nth-child(5),
+  .service-landing__action-grid.is-four:has(> *:first-child:nth-last-child(5)) > *:nth-child(5) {
+    grid-column: 4 / span 2;
+  }
+}
+
 .service-landing__action-grid.is-two {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -430,6 +477,16 @@
 
 .service-landing__action-card:hover::after {
   transform: scale(1.6);
+}
+
+.service-landing__action-card.is-aligned-center {
+  text-align: center;
+  align-items: center;
+}
+
+.service-landing__action-card.is-aligned-center .service-landing__action-card-top {
+  justify-content: center;
+  width: 100%;
 }
 
 /* Landscape Featured Image for Blog/News Cards */
@@ -1694,6 +1751,25 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .service-landing__action-grid.is-four.has-7-items > *,
+  .service-landing__action-grid.is-four:has(> *:first-child:nth-last-child(7)) > *,
+  .service-landing__action-grid.is-four.has-6-items > *,
+  .service-landing__action-grid.is-four:has(> *:first-child:nth-last-child(6)) > *,
+  .service-landing__action-grid.is-four.has-5-items > *,
+  .service-landing__action-grid.is-four:has(> *:first-child:nth-last-child(5)) > * {
+    grid-column: auto / span 1;
+  }
+
+  .service-landing__action-grid.is-four.has-7-items > *:nth-child(7),
+  .service-landing__action-grid.is-four:has(> *:first-child:nth-last-child(7)) > *:nth-child(7),
+  .service-landing__action-grid.is-four.has-5-items > *:nth-child(5),
+  .service-landing__action-grid.is-four:has(> *:first-child:nth-last-child(5)) > *:nth-child(5) {
+    grid-column: 1 / -1;
+    max-width: calc(50% - 7px);
+    margin-inline: auto;
+    width: 100%;
+  }
+
   .service-landing__callout-layout,
   .service-landing__metric-layout {
     grid-template-columns: 1fr;
@@ -1798,8 +1874,16 @@
   }
 
   .service-landing__action-grid.is-three.has-5-items > *,
-  .service-landing__action-grid.is-three:has(> *:first-child:nth-last-child(5)) > * {
+  .service-landing__action-grid.is-three:has(> *:first-child:nth-last-child(5)) > *,
+  .service-landing__action-grid.is-four.has-7-items > *,
+  .service-landing__action-grid.is-four:has(> *:first-child:nth-last-child(7)) > *,
+  .service-landing__action-grid.is-four.has-6-items > *,
+  .service-landing__action-grid.is-four:has(> *:first-child:nth-last-child(6)) > *,
+  .service-landing__action-grid.is-four.has-5-items > *,
+  .service-landing__action-grid.is-four:has(> *:first-child:nth-last-child(5)) > * {
     grid-column: auto / span 1;
+    max-width: none;
+    margin-inline: 0;
   }
 
   .service-landing__callout-copy {
@@ -4161,5 +4245,433 @@
     height: 14px;
   }
 }
+
+/* ==========================================================================
+   Modern Dual Booking Section (Figma Design 38-398)
+   ========================================================================== */
+.service-landing__modern-booking {
+  padding: clamp(48px, 5.5vw, 72px) 0;
+}
+
+.service-landing__modern-booking-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: center;
+}
+
+.service-landing__modern-booking-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.service-landing__modern-booking-eyebrow {
+  display: inline-block;
+  color: var(--sl-accent, #007fa3);
+  font-size: 0.8125rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.service-landing__modern-booking-eyebrow::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--sl-cyan, #4fc3d8);
+}
+
+.service-landing__modern-booking-title {
+  color: var(--sl-dark, #001f3f);
+  font-size: clamp(1.75rem, 3.2vw, 2.5rem);
+  font-weight: 900;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+  text-transform: uppercase;
+  margin: 0 0 1rem;
+}
+
+.service-landing__modern-booking-desc {
+  color: var(--sl-body, #475569);
+  font-size: clamp(0.975rem, 1.1vw, 1.05rem);
+  line-height: 1.65;
+  margin: 0 0 1.25rem;
+  max-width: 540px;
+}
+
+.service-landing__modern-booking-divider {
+  width: 56px;
+  height: 3px;
+  background: var(--sl-cyan, #4fc3d8);
+  border-radius: 2px;
+  margin-bottom: 1.75rem;
+}
+
+.service-landing__modern-booking-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.service-landing__modern-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.75rem;
+  font-size: 0.95rem;
+  font-weight: 750;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-height: 46px;
+  border: 1.5px solid transparent;
+}
+
+.service-landing__modern-btn.is-dark {
+  background: var(--sl-navy, #003048);
+  color: #ffffff;
+  border-color: var(--sl-navy, #003048);
+}
+
+.service-landing__modern-btn.is-dark:hover {
+  background: #001f30;
+  border-color: #001f30;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 48, 72, 0.2);
+}
+
+.service-landing__modern-btn.is-outline {
+  background: transparent;
+  color: var(--sl-navy, #003048);
+  border-color: var(--sl-cyan, #4fc3d8);
+}
+
+.service-landing__modern-btn.is-outline:hover {
+  background: rgba(79, 195, 216, 0.08);
+  border-color: var(--sl-accent, #007fa3);
+  color: var(--sl-accent, #007fa3);
+  transform: translateY(-1px);
+}
+
+/* Form Card (Right Column) */
+.service-landing__modern-booking-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: clamp(1.75rem, 3.5vw, 2.75rem);
+  box-shadow: 0 6px 30px rgba(0, 31, 63, 0.06);
+  border: 1px solid var(--sl-border, #e2e8f0);
+}
+
+.service-landing__modern-card-header {
+  text-align: center;
+  margin-bottom: 1.75rem;
+}
+
+.service-landing__modern-card-title {
+  color: var(--sl-dark, #001f3f);
+  font-size: clamp(1.35rem, 2vw, 1.75rem);
+  font-weight: 900;
+  letter-spacing: -0.015em;
+  text-transform: uppercase;
+  margin: 0 0 0.5rem;
+}
+
+.service-landing__modern-card-desc {
+  color: #64748b;
+  font-size: 0.925rem;
+  line-height: 1.55;
+  margin: 0 auto 0.75rem;
+  max-width: 480px;
+}
+
+.service-landing__modern-card-divider {
+  width: 40px;
+  height: 3px;
+  background: var(--sl-cyan, #4fc3d8);
+  border-radius: 2px;
+  margin: 0.75rem auto 0;
+}
+
+.service-landing__modern-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.service-landing__modern-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.15rem;
+}
+
+.service-landing__modern-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.service-landing__modern-field span {
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--sl-dark, #001f3f);
+}
+
+.service-landing__modern-field input,
+.service-landing__modern-field select {
+  width: 100%;
+  height: 48px;
+  padding: 0 1rem;
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  color: var(--sl-dark, #001f3f);
+  font-size: 0.925rem;
+  transition: all 0.2s ease;
+  outline: none;
+  font-family: inherit;
+}
+
+.service-landing__modern-field input:focus,
+.service-landing__modern-field select:focus {
+  background: #ffffff;
+  border-color: var(--sl-accent, #007fa3);
+  box-shadow: 0 0 0 3px rgba(0, 127, 163, 0.12);
+}
+
+.service-landing__modern-field input::placeholder {
+  color: #94a3b8;
+}
+
+.service-landing__select-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.service-landing__select-wrapper select {
+  appearance: none;
+  -webkit-appearance: none;
+  padding-right: 2.25rem;
+  cursor: pointer;
+}
+
+.service-landing__select-arrow {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-landing__modern-submit-btn {
+  width: 100%;
+  height: 52px;
+  background: var(--sl-navy, #003048);
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 0.5rem;
+}
+
+.service-landing__modern-submit-btn:hover {
+  background: #001f30;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0, 48, 72, 0.25);
+}
+
+@media (max-width: 991px) {
+  .service-landing__modern-booking-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .service-landing__modern-booking-desc {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 639px) {
+  .service-landing__modern-form-grid {
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+  }
+
+  .service-landing__modern-booking-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .service-landing__modern-btn {
+    width: 100%;
+  }
+
+  .service-landing__modern-booking-card {
+    padding: 1.5rem 1.25rem;
+    border-radius: 16px;
+  }
+}
+
+/* ==========================================================================
+   Enhanced Pricing Cards (With Top Banner Image & Warranty Tag)
+   ========================================================================== */
+.service-landing__price-card.has-image {
+  padding: 0;
+  overflow: hidden;
+  border-radius: 16px;
+  background: #ffffff;
+  border: 1px solid var(--sl-border, #e2e8f0);
+  box-shadow: 0 4px 20px rgba(0, 31, 63, 0.04);
+  display: flex;
+  flex-direction: column;
+}
+
+.service-landing__price-card-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background: #f1f5f9;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.service-landing__price-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.service-landing__price-card.has-image:hover .service-landing__price-card-image img {
+  transform: scale(1.03);
+}
+
+.service-landing__price-card.has-image .service-landing__price-card-body {
+  padding: 1.5rem 1.5rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+
+.service-landing__price-card.has-image .service-landing__price-card-header h3 {
+  color: var(--sl-accent, #007fa3);
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin: 0 0 0.5rem;
+  line-height: 1.25;
+}
+
+.service-landing__price-card-cost-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.service-landing__price-card-cost-row .service-landing__price {
+  font-size: 1rem;
+  color: var(--sl-body, #1e293b);
+  font-weight: 600;
+  margin: 0;
+}
+
+.service-landing__price-card-cost-row .service-landing__price em {
+  font-style: normal;
+  color: var(--sl-accent, #007fa3);
+  font-size: 1.35rem;
+  font-weight: 900;
+}
+
+.service-landing__price-card-warranty {
+  font-size: 0.8125rem;
+  font-weight: 750;
+  color: var(--sl-accent, #007fa3);
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+}
+
+.service-landing__price-card-divider {
+  width: 100%;
+  height: 1px;
+  background: var(--sl-border, #e2e8f0);
+  margin: 0.85rem 0;
+}
+
+.service-landing__price-card.has-image p {
+  color: var(--sl-body, #475569);
+  font-size: 0.925rem;
+  line-height: 1.55;
+  margin: 0;
+  padding-bottom: 0.5rem;
+}
+
+.service-landing__price-card.has-image .service-landing__price-card-actions {
+  padding: 1.15rem 1.5rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border-top: 1px solid var(--sl-border, #e2e8f0);
+}
+
+.service-landing__price-card.has-image .service-landing__button.is-dark {
+  background: var(--sl-navy, #003048);
+  color: #ffffff;
+  padding: 0.65rem 1.4rem;
+  font-size: 0.875rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.service-landing__price-card.has-image .service-landing__button.is-dark:hover {
+  background: #001f30;
+  transform: translateY(-1px);
+}
+
+.service-landing__price-card.has-image .service-landing__price-read-more {
+  color: var(--sl-accent, #007fa3);
+  font-size: 0.875rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0;
+  transition: color 0.2s ease;
+}
+
+.service-landing__price-card.has-image .service-landing__price-read-more:hover {
+  color: var(--sl-navy, #003048);
+}
+
 
 

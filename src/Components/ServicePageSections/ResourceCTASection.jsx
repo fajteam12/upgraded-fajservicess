@@ -1,6 +1,7 @@
 import { memo } from "react";
 import { Link } from "react-router-dom";
 import { ScrollSlide } from "../Animations/ScrollAnimation";
+import WhatsappIconButton from "../Buttons/WhatsappIconButton";
 
 function ResourceCTASection({ content, tone, onAction }) {
   if (!content) return null;
@@ -20,10 +21,18 @@ function ResourceCTASection({ content, tone, onAction }) {
     (content.openInNewTab !== false &&
       (content.openInNewTab || /^https?:\/\//i.test(content.actionHref || "")));
 
+  const isWhatsapp =
+    Boolean(content.isWhatsapp) ||
+    /whatsapp|wa\.me/i.test(content.actionHref || "");
+
   const renderAction = () => {
     if (!hasAction) return null;
 
     if (content.actionHref) {
+      if (isWhatsapp) {
+        return <WhatsappIconButton whatsapp={content.actionHref} />;
+      }
+
       if (isExternal) {
         return (
           <a

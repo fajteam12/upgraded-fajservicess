@@ -127,9 +127,7 @@ function AboutHeroSection({
       ? fallbackSrc
       : "";
 
-  const imageSrcSet = canUseCloudflare
-    ? cloudflareSrcSet || image.srcSet || undefined
-    : image.srcSet || undefined;
+  const imageSrcSet = imageSrc === cloudflareSrc ? cloudflareSrcSet : undefined;
 
   const effectiveTone = content.tone || tone || "white";
 

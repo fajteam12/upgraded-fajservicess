@@ -78,6 +78,7 @@ function ActionCardsSection({
   showCta,
   cta,
   contact,
+  align = "left",
 }) {
   const isCtaEnabled = Boolean(
     showCta ?? content?.showCta ?? (cta || content?.cta)
@@ -252,7 +253,7 @@ function ActionCardsSection({
       <article
         className={`service-landing__action-card ${
           hasImage ? "has-image" : ""
-        }`}
+        } ${align === "center" ? "is-aligned-center" : ""}`.trim()}
       >
         {hasImage && (
           <div className="service-landing__action-card-media">
@@ -475,7 +476,7 @@ function ActionCardsSection({
               ref={sliderRef}
               className={`service-landing__action-grid is-${resolvedColumns} is-slider`}
             >
-              {content.items.map((item) => (
+              {(content?.items || []).map((item) => (
                 <div
                   className="service-landing__action-slide"
                   key={item.title}
@@ -490,9 +491,21 @@ function ActionCardsSection({
                 content?.items?.length === 5 && resolvedColumns === "three"
                   ? " has-5-items"
                   : ""
+              }${
+                content?.items?.length === 7 && resolvedColumns === "four"
+                  ? " has-7-items"
+                  : ""
+              }${
+                content?.items?.length === 6 && resolvedColumns === "four"
+                  ? " has-6-items"
+                  : ""
+              }${
+                content?.items?.length === 5 && resolvedColumns === "four"
+                  ? " has-5-items"
+                  : ""
               }`}
             >
-              {content.items.map((item, index) => (
+              {(content?.items || []).map((item, index) => (
                 <ScrollSlide
                   direction="up"
                   delay={(index % 4) * 0.06}

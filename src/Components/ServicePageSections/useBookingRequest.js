@@ -4,7 +4,10 @@ function createInitialForm(content) {
   return {
     name: "",
     phone: "",
-    location: content.locations?.[0] || "",
+    location:
+      content?.locations?.[0] ||
+      content?.areas?.[0] ||
+      "Dubai",
     date: "",
   };
 }

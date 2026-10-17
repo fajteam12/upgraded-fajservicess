@@ -8,6 +8,7 @@ import {
   BookingSection,
   ContentCardSection,
   EmbeddedVideoSection,
+  MediaGallerySection,
   NumberedGridSection,
   PageMetadata,
   PlanCardsSection,
@@ -36,17 +37,18 @@ export default function CoffeeMachineServiceCenterInDubai() {
           tone="white"
         />
         <BreadCumb />
-        <ContentCardSection content={pageData.overview} contact={pageData.contact} tone="soft" />
+        <TwoColumnInfoSection content={pageData.overview} contact={pageData.contact} tone="soft" />
         <PricingCardsSection content={pageData.pricing} onAction={openBooking} tone="white" />
         <TwoColumnInfoSection content={pageData.serviceOverview} contact={pageData.contact} tone="soft" />
         <EmbeddedVideoSection content={pageData.video} tone="white" />
-        <ActionCardsSection content={pageData.maintenanceImportance} tone="soft" columns="three" />
+        <ActionCardsSection content={pageData.maintenanceImportance} tone="soft" columns="four" />
         <NumberedGridSection content={pageData.commonProblems} contact={pageData.contact} tone="white" columns="four" />
         <ActionCardsSection content={pageData.servicesOffered} tone="soft" columns="three" onAction={openBooking} />
         <MaintenanceBenefits {...pageData.benefits} />
         <ActionCardsSection content={pageData.whyChooseUs} contact={pageData.contact} tone="white" columns="three" />
         <SearchableDirectorySection content={pageData.brands} contact={pageData.contact} tone="soft" onAction={openBooking} />
-        <TestimonialsSection content={pageData.testimonials} tone="white" />
+        {pageData.gallery && <MediaGallerySection content={pageData.gallery} tone="white" />}
+        <TestimonialsSection content={pageData.testimonials} tone="soft" />
         <PlanCardsSection
           content={pageData.contracts}
           onAction={openBooking}
