@@ -4098,16 +4098,16 @@
 
 /* Before & After Comparison Slider Section */
 .service-landing__before-after-wrapper {
-  max-width: 980px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 .service-landing__before-after-slider {
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 10;
-  min-height: 360px;
-  max-height: 540px;
+  aspect-ratio: 16 / 9;
+  min-height: 320px;
+  max-height: 480px;
   border-radius: 16px;
   overflow: hidden;
   border: 2px solid rgba(0, 127, 163, 0.45);
@@ -4214,8 +4214,8 @@
 
 @media (max-width: 768px) {
   .service-landing__before-after-slider {
-    aspect-ratio: 4 / 3;
-    min-height: 260px;
+    aspect-ratio: 16 / 10;
+    min-height: 240px;
     border-radius: 12px;
   }
 

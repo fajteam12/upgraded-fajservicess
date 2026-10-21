@@ -29,19 +29,19 @@ const heroData = {
   ],
   highlights: [
     {
-      icon: "clock",
-      title: "Serving since 2010",
-      description: "Established local service provider",
+      icon: "award",
+      title: "Established Since 2010",
+      description: "Reliability, Diversity, Integrity, and Quality.",
     },
     {
-      icon: "home",
-      title: "Domestic to Commercial",
-      description: "Established local service provider",
+      icon: "shield-check",
+      title: "Workmanship Warranty",
+      description: "Repair and service warranty support.",
     },
     {
-      icon: "location",
-      title: "Dubai Service Coverage",
-      description: "Established local service provider",
+      icon: "phone-support",
+      title: "7-Day Service Response",
+      description: "Fast assistance across Dubai.",
     },
   ],
   primaryAction: "Get a Quick Quote",

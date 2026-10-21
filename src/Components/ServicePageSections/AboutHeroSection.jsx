@@ -10,6 +10,7 @@ import {
 import WhatsAppIcon from "./WhatsAppIcon";
 import CallNowButton from "../Buttons/CallNowButton";
 import WhatsappIconButton from "../Buttons/WhatsappIconButton";
+import ServiceIcon from "./ServiceIcon";
 
 function renderHighlightIcon(type) {
   switch (type) {
@@ -50,10 +51,71 @@ function renderHighlightIcon(type) {
           <circle cx="12" cy="9.5" r="2.5" />
         </svg>
       );
+    case "award":
+    case "established":
+    case "trophy":
+    case "badge":
+    case "quality":
+      return (
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <circle cx="12" cy="8" r="5" />
+          <path d="m8.5 12-1 9 4.5-2 4.5 2-1-9" />
+        </svg>
+      );
+    case "shield":
+    case "shield-check":
+    case "warranty":
+    case "guarantee":
+    case "trust":
+      return (
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+          <path d="m9 12 2 2 4-4" />
+        </svg>
+      );
+    case "phone-support":
+    case "phone":
+    case "support":
+    case "call":
+    case "headset":
+    case "24-7":
+    case "response":
+      return (
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+          <path d="M14 2a8 8 0 0 1 8 8M14 6a4 4 0 0 1 4 4" />
+        </svg>
+      );
     case "clock":
     case "time":
-    case "experience":
-    default:
+    case "timing":
       return (
         <svg
           width="24"
@@ -69,6 +131,8 @@ function renderHighlightIcon(type) {
           <polyline points="12 7 12 12 15 15" />
         </svg>
       );
+    default:
+      return <ServiceIcon name={type || "clock"} />;
   }
 }
 
