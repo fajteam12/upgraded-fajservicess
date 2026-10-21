@@ -40,7 +40,9 @@
 }
 
 .maintenance-benefits__container {
-  width: min(100% - 32px, 1440px);
+  width: 100%;
+  max-width: 1440px;
+  padding-inline: 32px;
   margin-inline: auto;
 }
 
@@ -311,7 +313,9 @@
   }
 
   .maintenance-benefits__container {
-    width: min(100% - 24px, 520px);
+    width: 100%;
+    max-width: 520px;
+    padding-inline: 16px;
   }
 
   .maintenance-benefits__eyebrow {

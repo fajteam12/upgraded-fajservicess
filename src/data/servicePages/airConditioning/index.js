@@ -50,7 +50,7 @@ const heroData = {
   bookingLabel: "AC Technical Assessment",
   image: {
     id: "ac-service-page/ac-repair-and-service",
-    src: "https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/ac-service-page/ac-repair-and-service/public",
+    src: "/img/ac-service-page/ac-repair-and-service.webp",
     alt: "FAJ technician servicing a commercial cassette air conditioner in Dubai",
     width: 853,
     height: 853,

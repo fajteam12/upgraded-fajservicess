@@ -3,9 +3,9 @@
 // ==========================================================================
 
 const seoData = {
-  title: "Best AC Repair | HVAC Maintenance & AC Service in Dubai",
-  description: "Top AC Service and AC Repair - FAJ has been providing fast air conditioning maintenance, servicing & cleaning from expert technicians near you in Dubai",
-  keywords: "AC service Dubai, AC repair Dubai, air conditioning maintenance, AC cleaning Dubai, emergency AC repair",
+  title: "Best AC Repair | HVAC Maintenance and AC Service in Dubai",
+  description: "Fast AC Service and AC Repair - FAJ offers affordable air conditioning maintenance, servicing & cleaning from expert technicians near you in Dubai.",
+  keywords: "AC service Dubai, AC repair Dubai, air conditioning maintenance, AC cleaning Dubai, emergency AC repair, AC repair near me",
   author: "FAJ Technical Services L.L.C.", businessName: "FAJ Air Conditioning Services",
   url: "https://www.fajservices.ae/services/air-conditioning-repair/ac-service/",
   image: "https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/ac-repair-new-design-images/ac-service-top-image/public",
@@ -25,7 +25,7 @@ const heroData = {
   title: "BEST AC REPAIR AND MAINTENANCE SERVICES",
   subtitle: "",
   paragraphs: [
-    "Improve the comfort of your home and business premises with air conditioning cooling. Maintain a perfect temperature year-round with our expert AC technicians.",
+    "Improve the comfort of your home and business premises with air conditioning cooling system. Maintain a perfect temperature year-round with our expert AC technicians.",
   ],
   highlights: [
     {
@@ -35,12 +35,12 @@ const heroData = {
     },
     {
       icon: "home",
-      title: "Residential & commercial",
+      title: "Domestic to Commercial",
       description: "Established local service provider",
     },
     {
       icon: "location",
-      title: "Dubai service coverage",
+      title: "Dubai Service Coverage",
       description: "Established local service provider",
     },
   ],
@@ -51,7 +51,7 @@ const heroData = {
   showPhone: false,
   image: {
     id: "ac-service-page/ac-repair-top-hero-banner",
-    src: "https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/ac-service-page/ac-repair-top-hero-banner/public",
+    src: "/img/ac-service-page/ac-repair-top-hero-banner.webp",
     alt: "Best AC Repair and Maintenance Services in Dubai",
     width: 733,
     height: 550,
@@ -92,7 +92,7 @@ const pricingData = {
       price: "AED 215",
       image: {
         id: "ac-service-page/ac-inspection",
-        src: "https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/ac-service-page/ac-inspection/public",
+        src: "/img/ac-service-page/ac-inspection.webp",
       },
       description:
         "Is your AC not cooling your place? Is the AC thermostat broken, or is the fan making strange noises? Give us a call.",
@@ -131,7 +131,7 @@ const pricingData = {
       price: "AED 280",
       image: {
         id: "ac-service-page/ac-cleaning-price",
-        src: "https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/ac-service-page/ac-cleaning-price/public",
+        src: "/img/ac-service-page/ac-cleaning-price.webp",
       },
       description:
         "If your AC has reduced airflow or is leaking water, work quickly. Regularly clean filters and drain to provide efficiency and good air quality.",
@@ -171,7 +171,7 @@ const pricingData = {
       price: "AED 325",
       image: {
         id: "ac-service-page/ac-maintenance-price",
-        src: "https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/ac-service-page/ac-maintenance-price/public",
+        src: "/img/ac-service-page/ac-maintenance-price.webp",
       },
       description:
         "Relax and save money by keeping our expert technicians clean and maintain your AC, stopping unnecessary breakdowns.",
@@ -281,7 +281,7 @@ const serviceOverviewData = {
   imageSide: "left",
   image: {
     id: "ac-service-page/ac-repair-and-service",
-    src: "https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/ac-service-page/ac-repair-and-service/public",
+    src: "/img/ac-service-page/ac-repair-and-service.webp",
     alt: "FAJ technician servicing a commercial cassette air conditioner in Dubai",
     width: 853,
     height: 853,
@@ -323,7 +323,7 @@ const videoData = {
   videoId: "prUR0-lZlzg",
   image: {
     id: "indoor-ac-servicing",
-    src: "https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/indoor-ac-servicing/public",
+    src: "/img/indoor-ac-servicing.webp",
     alt: "FAJ AC technician providing express and emergency AC repair in Dubai",
     width: 600,
     height: 400,
@@ -355,7 +355,7 @@ const maintenanceImportanceData = {
   imageSide: "left",
   image: {
     id: "ac-service-page/why-ac-maintenance-important",
-    src: "https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/ac-service-page/why-ac-maintenance-important/public",
+    src: "/img/ac-service-page/why-ac-maintenance-important.webp",
     alt: "AC Maintenance in Dubai",
     width: 600,
     height: 400,
@@ -449,7 +449,7 @@ const servicesOfferedData = {
   imageSide: "left",
   image: {
     id: "ac-service-page/how-to-use-faj-ac-service",
-    src: "https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/ac-service-page/how-to-use-faj-ac-service/public",
+    src: "/img/ac-service-page/how-to-use-faj-ac-service.webp",
     alt: "FAJ AC Service and AC Repair technician servicing air conditioning in Dubai",
     width: 600,
     height: 400,
@@ -555,7 +555,7 @@ const cleaningServiceData = {
   imageSide: "right",
   image: {
     id: "ac-service-page/best-ac-service",
-    src: "https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/ac-service-page/best-ac-service/public",
+    src: "/img/ac-service-page/best-ac-service.webp",
     alt: "AC Maintenance in Dubai",
     width: 600,
     height: 400,
@@ -588,7 +588,7 @@ const cleaningServiceCardsData = {
     },
     {
       title: "Key Benefits",
-      featured: true,
+      variant: "cyan-tint",
       paragraphs: [
         "Regular coils cleaning, air filter cleaning, duct cleaning lowers electricity bills, extends the lifespan of equipment, prevents breakdowns, and eliminates unpleasant odours.",
       ],
@@ -596,11 +596,12 @@ const cleaningServiceCardsData = {
         {
           title: "Signs Your AC Needs Cleaning",
           bulletColumns: 1,
+          noDivider: true,
           bullets: [
             "Noticeably reduced airflow.",
             "Visible dust accumulation around vents.",
             "Unusual or musty odors.",
-            "Increased DEWA bills",
+            "Increased DEWA bills.",
           ],
         },
       ],
@@ -628,57 +629,63 @@ const defaultBrandDescription =
 
 const linkedBrands = [
   [
-    "Daikin Air Conditioning Services",
+    "Daikin Air Conditioning Repair Services",
     "daikin",
-    'Daikin, a Japanese manufacturer, claims to be "the world\'s number one air conditioning company." Founded in 1924, it has developed a strong international presence through its focus on quality, innovation, and effective communication. We work with Daikin air conditioning products because the company continuously invests in research and development.',
+    'Daikin air conditioning systems is a leading Japanese manufacturer. Founded in 1924, the company has built a strong international presence by focusing on quality, innovation, and effective communication.',
   ],
   [
     "Gree AC Repair and Service",
     "gree",
-    "Gree Electric Appliances, Inc., founded in 1991 in Zhuhai, is a key player in the global air conditioning market. Starting with air conditioners, Gree has expanded its product line to include various home appliances and became China's largest air conditioner manufacturer by 2000.",
+    "Gree Air Conditioning, founded in 1991 in Zhuhai, is a major global player in air conditioners. Initially focused on AC, it has expanded into home appliances & became China's largest AC manufacturer by 2000.",
   ],
   [
     "O General AC Repair and Maintenance",
     "o-general",
-    "O General AC, a brand of Fujitsu General, is renowned for its Japanese engineering and high-quality air conditioning solutions.",
+    "O General Air Conditioning, formerly part of Fujitsu General Limited, was founded in January, 1936, by Keijiro Yao as Yaou Shoten Co Ltd. The company has since manufactured appliances & air conditioners.",
   ],
   [
     "Mitsubishi AC Service and Repair",
     "mitsubishi",
-    "Founded in 1954, Mitsubishi Air Conditioning has been producing air conditioning systems for nearly 75 years and is renowned for its reliability and energy efficiency.",
+    "Founded in 1954, Mitsubishi Air Conditioning has been producing residential & commercial HVAC (Mr. Slim & City Multi) AC systems for nearly 75 years & is renowned for its reliability & energy efficiency.",
   ],
   [
     "Samsung AC Maintenance Service",
     "samsung",
-    "Samsung AC is a globally recognized name, known for pushing boundaries. Since 1969, they have continued to shape the future with innovative air conditioning technology.",
+    "Samsung Air Conditioning is a leading brand recognised for innovation since 1969, specialising in air conditioner technology for homes & commercial HVAC systems (including VRF, multi-split & ducted systems).",
   ],
   [
     "York AC Servicing and Repair",
     "york",
-    "YORK® has been an industry leader since our founding in 1874.",
+    "YORK Air Conditioning was established in 1874 as the York Manufacturing Company in Pennsylvania. It began with ice-making machines & later expanded into HVAC, VRF, central AC systems & refrigeration.",
   ],
   [
     "LG AC Maintenance and Service",
     "lg",
-    "LG history in air conditioning began in 1968 with the launch of its first unit.",
+    "LG Air Conditioning, a division of LG Electronics, has established a legacy of innovation since its founding in 1958. Once Korea's first consumer electronics company, it has evolved into a Smart Life Solution Company.",
   ],
   [
     "Trane HVAC Repair and Maintenance",
     "trane",
-    "Trane developed its first air conditioning unit in 1931.",
+    "Trane Air Conditioning launched its first AC unit in 1931 & acquired General Electric's Central AC Division in 1982. This acquisition added key features, such as compressors & condensor coil, which are still in products today.",
   ],
   [
     "Carrier AC Repair and Services in Dubai",
     "carrier",
-    "Since 1902, Carrier HVAC has cultivated a history of proven innovation in the heating, air-conditioning and refrigeration industries.",
+    "Carrier Air Conditioning has been leading the way in cooling & heating systems, central, split, package unit and VRF, Carrier Air Conditioning & Refrigeration since 1902, showcasing a long history of innovation & reliability.",
   ],
   [
     "Rheem AC Repair & Service Near Me",
     "rheem",
-    "Rheem AC was founded in 1925 in California, initially making steel drums. It quickly transitioned to manufacturing water heaters and, in the 1940s and 1950s, expanded into furnaces, split, central air conditioning systems to meet the growing demand for home comfort. Today, Rheem is a leading global HVAC provider known for its innovation and diverse heating and cooling solutions.",
+    "Rheem Air Conditioner, founded in 1925 in California, started with steel drums & later shifted to water heaters. In the 1940s & 1950s, the company expanded into AC systems. Now Rheem is leading global HVAC provider known for its innovative solutions.",
   ],
-  ["SKM AC Maintenance Dubai", "skm"],
-  ["Lennox Air Conditioning Maintenance Service", "lennox"],
+  ["SKM AC Maintenance Dubai", 
+    "skm",
+    "S.K.M Air Conditioning LLC (SKM) was established in 1974 in Sharjah, United Arab Emirates, to manufacture heating, ventilation, and air conditioning (HVAC) equipment tailored for the harsh Gulf climates.",
+  ],
+  ["Lennox Air Conditioning Maintenance Service", 
+    "lennox",
+    "Lennox Air Conditioning was established in 1895 when Dave Lennox built the first riveted-steel coal-fired furnace in Marshalltown, Iowa. The company later entered the air conditioning market in the early 1950s.",
+  ],
   ["Aftron AC Maintenance Service", "aftron"],
   ["Bryant AC Repair Service Dubai", "bryant"],
   ["Blue Star AC Repair", "blue-star"],
@@ -704,13 +711,13 @@ const beforeAfterData = {
   beforeAlt: "Air conditioning unit before service",
   beforeImage: {
     id: "before_img_1",
-    src: "https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/before_img_1/public",
+    src: "/img/before_img_1.webp",
   },
   afterLabel: "After",
   afterAlt: "Air conditioning unit after service",
   afterImage: {
     id: "after_img_1",
-    src: "https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/after_img_1/public",
+    src: "/img/after_img_1.webp",
   },
 };
 
@@ -829,7 +836,7 @@ const galleryData = {
     {
       title: "AC Service",
       id: "ac-service-page/gallery-ac-service",
-      src: "https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/ac-service-page/gallery-ac-service/public",
+      src: "/img/ac-service-page/gallery-ac-service.webp",
       alt: "Ac Service",
       width: 400,
       height: 300,
@@ -837,7 +844,7 @@ const galleryData = {
     {
       title: "AC Repair",
       id: "ac-service-page/gallery-ac-repair",
-      src: "https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/ac-service-page/gallery-ac-repair/public",
+      src: "/img/ac-service-page/gallery-ac-repair.webp",
       alt: "AC Repair",
       width: 400,
       height: 300,
@@ -845,7 +852,7 @@ const galleryData = {
     {
       title: "AC Maintenance",
       id: "ac-service-page/gallery-ac-maintenance",
-      src: "https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/ac-service-page/gallery-ac-maintenance/public",
+      src: "/img/ac-service-page/gallery-ac-maintenance.webp",
       alt: "AC Maintenance",
       width: 400,
       height: 300,
@@ -853,7 +860,7 @@ const galleryData = {
     {
       title: "AC Cleaning",
       id: "ac-service-page/gallery-ac-cleaning",
-      src: "https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/ac-service-page/gallery-ac-cleaning/public",
+      src: "/img/ac-service-page/gallery-ac-cleaning.webp",
       alt: "AC Cleaning",
       width: 400,
       height: 300,
@@ -861,7 +868,7 @@ const galleryData = {
     {
       title: "AC Fixing",
       id: "ac-service-page/gallery-ac-fixing",
-      src: "https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/ac-service-page/gallery-ac-fixing/public",
+      src: "/img/ac-service-page/gallery-ac-fixing.webp",
       alt: "AC Fixing",
       width: 400,
       height: 300,
@@ -869,7 +876,7 @@ const galleryData = {
     {
       title: "AC Gas Filling",
       id: "ac-service-page/gallery-ac-gas-filling",
-      src: "https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/ac-service-page/gallery-ac-gas-filling/public",
+      src: "/img/ac-service-page/gallery-ac-gas-filling.webp",
       alt: "AC Gas Filling",
       width: 400,
       height: 300,

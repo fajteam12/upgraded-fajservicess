@@ -87,14 +87,18 @@ function InfoBullets({ bullets, columns }) {
           return <li key={`${bullet}-${index}`}>{bullet}</li>;
         }
 
+        const hasTitle = Boolean(bullet.title);
+
         return (
           <li
             key={`${bullet.title || bullet.text || "bullet"}-${index}`}
-            className={bullet.strong ? "is-strong" : ""}
+            className={`${bullet.strong ? "is-strong" : ""} ${
+              hasTitle ? "has-title" : ""
+            }`.trim()}
           >
             {bullet.title && (
               <strong className="service-landing__info-bullet-title">
-                {bullet.title}:
+                {bullet.title}:{" "}
               </strong>
             )}
 
@@ -225,7 +229,14 @@ function TwoColumnInfoSection({
 
               let toneClass = "is-soft";
 
-              if (isFeatured) {
+              if (
+                explicitTone === "cyan-tint" ||
+                explicitTone === "tint" ||
+                explicitTone === "accent-soft" ||
+                explicitTone === "cyan"
+              ) {
+                toneClass = "is-cyan-tint";
+              } else if (isFeatured) {
                 toneClass = "is-dark is-featured";
               } else if (explicitTone === "white") {
                 toneClass = "is-white";
@@ -242,35 +253,37 @@ function TwoColumnInfoSection({
                   key={card.title || index}
                 >
                   <article
-                    className={`service-landing__info-card ${toneClass}`}
+                    className={`service-landing__info-card ${toneClass} ${card.className || ""}`.trim()}
                   >
                     {card.title && <h3>{card.title}</h3>}
 
                     <Paragraphs paragraphs={card.paragraphs} />
 
-                  <InfoBullets
-                    bullets={card.bullets}
-                    columns={card.bulletColumns}
-                  />
+                    <InfoBullets
+                      bullets={card.bullets}
+                      columns={card.bulletColumns}
+                    />
 
-                  {card.sections?.map((section, sectionIndex) => (
-                    <div
-                      className="service-landing__info-card-section"
-                      key={`${section.title || "section"}-${sectionIndex}`}
-                    >
-                      {section.title && <h4>{section.title}</h4>}
+                    {card.sections?.map((section, sectionIndex) => (
+                      <div
+                        className={`service-landing__info-card-section ${
+                          section.noDivider ? "has-no-divider" : ""
+                        }`.trim()}
+                        key={`${section.title || "section"}-${sectionIndex}`}
+                      >
+                        {section.title && <h4>{section.title}</h4>}
 
-                      <Paragraphs paragraphs={section.paragraphs} />
+                        <Paragraphs paragraphs={section.paragraphs} />
 
-                      <InfoBullets
-                        bullets={section.bullets}
-                        columns={section.bulletColumns}
-                      />
-                    </div>
-                  ))}
-                </article>
-              </ScrollSlide>
-            );
+                        <InfoBullets
+                          bullets={section.bullets}
+                          columns={section.bulletColumns}
+                        />
+                      </div>
+                    ))}
+                  </article>
+                </ScrollSlide>
+              );
           })}
         </div>
       )}
