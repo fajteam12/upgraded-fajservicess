@@ -8,7 +8,7 @@ import WhatsAppIcon from "./WhatsAppIcon";
 import CallNowButton from "../Buttons/CallNowButton";
 import WhatsappIconButton from "../Buttons/WhatsappIconButton";
 
-function EmbeddedVideoSection({ content, tone = "dark", showCta, cta, contact }) {
+function EmbeddedVideoSection({ content, tone = "dark", showCta, cta, contact, videoSide = "right" }) {
   const isCtaEnabled = Boolean(
     showCta ?? content?.showCta ?? (cta || content?.cta)
   );
@@ -186,7 +186,7 @@ function EmbeddedVideoSection({ content, tone = "dark", showCta, cta, contact })
       id={content?.id}
     >
       <div className="service-landing__narrow">
-        <div className="service-landing__video-split">
+        <div className={`service-landing__video-split is-video-${content?.videoSide || videoSide || "right"}`}>
           {/* Left Column: Textual Content */}
           <div className="service-landing__video-content">
             {content?.eyebrow && (

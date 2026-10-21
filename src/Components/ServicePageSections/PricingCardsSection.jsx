@@ -7,7 +7,7 @@ import {
 import { ScrollSlide } from "../Animations/ScrollAnimation";
 import SectionHeader from "./SectionHeader";
 
-function PricingCardsSection({ content, onAction }) {
+function PricingCardsSection({ content, onAction, tone = "white" }) {
 	const [activeItem, setActiveItem] = useState(null);
 
 	const closePopup = useCallback(() => {
@@ -57,7 +57,7 @@ function PricingCardsSection({ content, onAction }) {
 
 	return (
 		<>
-			<section className="service-landing__section is-white">
+			<section className={`service-landing__section is-${content?.tone || tone || "white"}`}>
 				<div className="service-landing__container">
 					<SectionHeader content={content} />
 

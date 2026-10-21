@@ -15,6 +15,7 @@ function SplitMediaSection({
   showCta,
   cta,
   contact,
+  imageSide,
 }) {
   const [failedSources, setFailedSources] = useState(() => new Set());
 
@@ -92,7 +93,7 @@ function SplitMediaSection({
   const imageSrcSet = canUseCloudflare
     ? cloudflareSrcSet || image.srcSet || undefined
     : image.srcSet || undefined;
-  const imageSide = content.imageSide === "left" ? "left" : "right";
+  const effectiveImageSide = imageSide || (content.imageSide === "left" ? "left" : "right");
 
   return (
     <section
@@ -101,7 +102,7 @@ function SplitMediaSection({
     >
       <div className="service-landing__container">
         <div
-          className={`service-landing__media-split is-image-${imageSide} ${
+          className={`service-landing__media-split is-image-${effectiveImageSide} ${
             imageSrc ? "has-media" : "is-text-only"
           }`}
         >
