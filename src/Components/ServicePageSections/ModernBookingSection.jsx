@@ -64,11 +64,13 @@ function ModernBookingSection({
         <div className="service-landing__modern-booking-grid">
           {/* Left Column: Context & CTA */}
           <div className="service-landing__modern-booking-info">
-            <ScrollSlide direction="down">
-              <span className="service-landing__modern-booking-eyebrow">
-                {content.eyebrow || "BOOK YOUR SERVICE"}
-              </span>
-            </ScrollSlide>
+            {content.eyebrow && (
+              <ScrollSlide direction="down">
+                <span className="service-landing__modern-booking-eyebrow">
+                  {content.eyebrow}
+                </span>
+              </ScrollSlide>
+            )}
 
             <ScrollZoomText as="div" delay={0.08}>
               <h2 className="service-landing__modern-booking-title">

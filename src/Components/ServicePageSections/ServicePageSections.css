@@ -1195,6 +1195,59 @@
   color: #aab8bf;
 }
 
+.service-landing__video-content .service-landing__video-list-title {
+  margin: 14px 0 10px;
+  font-weight: 700;
+  color: var(--sl-dark, #001f3f);
+  text-align: left;
+}
+
+.service-landing__video-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 18px;
+  margin: 0 0 18px;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+}
+
+.service-landing__video-list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--sl-body, #1e293b);
+  font-size: var(--sl-font-body, 0.95rem);
+  line-height: 1.4;
+}
+
+.service-landing__video-list-check {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--sl-accent, #007fa3);
+  font-weight: 900;
+  font-size: 1rem;
+}
+
+.service-landing--dark-theme .service-landing__video-list li,
+.service-landing__section.allow-dark.is-dark .service-landing__video-list li {
+  color: #aab8bf;
+}
+
+.service-landing--dark-theme .service-landing__video-list-check,
+.service-landing__section.allow-dark.is-dark .service-landing__video-list-check {
+  color: #51c7dc;
+}
+
+@media (max-width: 575px) {
+  .service-landing__video-list {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}
+
 .service-landing__video-action {
   display: flex;
   align-items: center;
@@ -3545,15 +3598,15 @@
 
 .service-landing__faq-cta {
   margin-top: clamp(22px, 2.8vw, 32px);
-  padding: 22px 20px 20px;
+  padding: 24px 22px 22px;
   background:
-    radial-gradient(circle at 92% 14%, rgba(83, 203, 222, 0.14), transparent 50%),
-    linear-gradient(145deg, #071f2c 0%, #001f30 62%, #001522 100%);
-  border: 1px solid rgba(83, 203, 222, 0.24);
-  border-radius: 14px;
+    radial-gradient(circle at 92% 14%, rgba(81, 199, 220, 0.18), transparent 50%),
+    linear-gradient(145deg, #01133c 0%, #00123b 62%, #000c28 100%);
+  border: 1px solid rgba(81, 199, 220, 0.45);
+  border-radius: 16px;
   box-shadow:
-    0 14px 34px rgba(0, 31, 48, 0.2),
-    0 0 0 1px rgba(83, 203, 222, 0.08);
+    0 14px 34px rgba(0, 18, 59, 0.35),
+    0 0 24px rgba(81, 199, 220, 0.12);
   color: #fff;
   text-align: left;
   position: relative;
@@ -3567,7 +3620,7 @@
   left: 0;
   width: 100%;
   height: 3px;
-  background: linear-gradient(90deg, #53cbde, transparent 75%);
+  background: linear-gradient(90deg, #51c7dc, transparent 75%);
 }
 
 .service-landing .service-landing__faq-cta-eyebrow,
@@ -3604,9 +3657,9 @@
   align-items: center;
   gap: 12px;
   padding: 11px 16px;
-  border: 1px solid rgba(83, 203, 222, 0.3);
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(81, 199, 220, 0.35);
+  border-radius: 10px;
+  background: rgba(81, 199, 220, 0.05);
   color: #ffffff !important;
   text-decoration: none !important;
   font-size: 0.94rem;
@@ -3623,13 +3676,14 @@
 
 .service-landing__faq-cta-contact-item svg {
   flex-shrink: 0;
-  color: #53cbde;
+  color: #51c7dc;
   transition: transform 0.22s ease, color 0.22s ease;
 }
 
 .service-landing__faq-cta-contact-item:hover {
-  border-color: #53cbde;
-  background: rgba(83, 203, 222, 0.12);
+  border-color: #51c7dc;
+  background: rgba(81, 199, 220, 0.16);
+  box-shadow: 0 0 16px rgba(81, 199, 220, 0.25);
   transform: translateX(3px);
 }
 
@@ -3639,7 +3693,7 @@
 }
 
 .service-landing__faq-cta-contact-item:hover span {
-  color: #53cbde !important;
+  color: #51c7dc !important;
 }
 
 .service-landing__faq-cta-contact-item.is-whatsapp svg {
@@ -4751,3 +4805,220 @@
   color: #01133c;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
 }
+
+
+/* ==========================================================================
+   Tone & Card Contrast Normalization (Prevents cards merging with backgrounds)
+   ========================================================================== */
+
+/* 1. Brand Cards (SearchableDirectorySection) */
+/* In soft tone sections: solid white card with crisp border and subtle shadow */
+.service-landing__brand-card,
+.service-landing__section.is-soft .service-landing__brand-card {
+  background: #ffffff !important;
+  border: 1px solid #c9dbe3;
+  box-shadow: 0 4px 16px rgba(0, 48, 72, 0.06);
+}
+
+.service-landing__brand-card:hover,
+.service-landing__section.is-soft .service-landing__brand-card:hover {
+  background: #ffffff !important;
+  border-color: #51c7dc;
+  box-shadow: 0 12px 28px rgba(0, 48, 72, 0.12);
+  transform: translateY(-4px);
+}
+
+.service-landing__section.is-white .service-landing__brand-card {
+  background: #f6f9fb !important;
+  border: 1px solid #d5e3ea;
+  box-shadow: 0 4px 16px rgba(0, 48, 72, 0.05);
+}
+
+.service-landing__section.is-white .service-landing__brand-card:hover {
+  background: #ffffff !important;
+  border-color: #51c7dc;
+  box-shadow: 0 12px 28px rgba(0, 48, 72, 0.12);
+  transform: translateY(-4px);
+}
+
+.service-landing__brand-search input {
+  background: #ffffff;
+  border: 1px solid #c9dbe3;
+  box-shadow: 0 2px 8px rgba(0, 48, 72, 0.04);
+}
+
+/* 2. Number Cards (NumberedGridSection) */
+/* In soft tone sections: solid white card on soft background */
+.service-landing__number-card,
+.service-landing__section.is-soft .service-landing__number-card {
+  background: #ffffff !important;
+  border: 1px solid #c9dbe3;
+  box-shadow: 0 4px 16px rgba(0, 48, 72, 0.06);
+}
+
+.service-landing__number-card:hover,
+.service-landing__section.is-soft .service-landing__number-card:hover {
+  background: #ffffff !important;
+  border-color: #51c7dc;
+  box-shadow: 0 14px 30px rgba(0, 48, 72, 0.1);
+  transform: translateY(-4px);
+}
+
+.service-landing__section.is-white .service-landing__number-card {
+  background: #f6f9fb !important;
+  border: 1px solid #d5e3ea;
+  box-shadow: 0 4px 16px rgba(0, 48, 72, 0.05);
+}
+
+.service-landing__section.is-white .service-landing__number-card:hover {
+  background: #ffffff !important;
+  border-color: #51c7dc;
+  box-shadow: 0 14px 30px rgba(0, 48, 72, 0.1);
+  transform: translateY(-4px);
+}
+
+/* 3. Action Cards (ActionCardsSection - Choose Us, Blogs, Services) */
+/* In white tone sections: soft-tinted cards so they stand out from pure white canvas */
+.service-landing__section.is-white .service-landing__action-card {
+  background: #f6f9fb;
+  border: 1px solid #d3e2ea;
+  box-shadow: 0 4px 16px rgba(0, 48, 72, 0.05);
+}
+
+.service-landing__section.is-white .service-landing__action-card:hover {
+  background: #ffffff;
+  border-color: rgba(0, 127, 163, 0.45);
+  box-shadow: 0 18px 38px rgba(0, 48, 72, 0.1);
+  transform: translateY(-6px);
+}
+
+.service-landing__section.is-white .service-landing__action-card .service-landing__action-icon {
+  background: #ffffff;
+  border-color: rgba(0, 127, 163, 0.2);
+}
+
+/* In soft tone sections: crisp solid white card on soft background */
+.service-landing__section.is-soft .service-landing__action-card {
+  background: #ffffff;
+  border: 1px solid #c9dbe3;
+  box-shadow: 0 4px 16px rgba(0, 48, 72, 0.06);
+}
+
+.service-landing__section.is-soft .service-landing__action-card:hover {
+  background: #ffffff;
+  border-color: rgba(0, 127, 163, 0.45);
+  box-shadow: 0 18px 38px rgba(0, 48, 72, 0.1);
+  transform: translateY(-6px);
+}
+
+.service-landing__section.is-soft .service-landing__action-card .service-landing__action-icon {
+  background: #f5f8fa;
+  border-color: rgba(0, 127, 163, 0.2);
+}
+
+/* 4. Detail Columns Section (Types of AC Systems) */
+.service-landing__section.is-white .service-landing__detail-column {
+  background: #f6f9fb;
+  border: 1px solid #d3e2ea;
+  box-shadow: 0 4px 16px rgba(0, 48, 72, 0.05);
+}
+
+.service-landing__section.is-white .service-landing__detail-column:hover {
+  background: #ffffff;
+  border-color: rgba(24, 175, 208, 0.45);
+  box-shadow: 0 14px 30px rgba(0, 48, 72, 0.09);
+  transform: translateY(-3px);
+}
+
+.service-landing__section.is-soft .service-landing__detail-column {
+  background: #ffffff;
+  border: 1px solid #c9dbe3;
+  box-shadow: 0 4px 16px rgba(0, 48, 72, 0.06);
+}
+
+
+/* ==========================================================================
+   AMC Deep Navy Color Scheme for Dark Elements & Hover States
+   (Where dark blue was used across the page, replaced with AMC dark #00123b)
+   ========================================================================== */
+
+:root {
+  --sl-navy: #00123b;
+}
+
+/* 1. Action Card Icon Hover (Matches MaintenanceBenefits card 03 hover: AMC dark #00123b with crisp white icon) */
+.service-landing__action-card:hover .service-landing__action-icon {
+  background: #00123b !important;
+  border-color: #00123b !important;
+  color: #ffffff !important;
+  transform: scale(1.06);
+  box-shadow: 0 8px 18px rgba(0, 18, 59, 0.28);
+}
+
+.service-landing__action-card:hover .service-landing__action-icon svg {
+  color: #ffffff !important;
+  stroke: #ffffff !important;
+}
+
+/* 2. Number Card Badge Hover (NumberedGridSection) */
+.service-landing__number-card:hover > span {
+  color: #ffffff !important;
+  background: #00123b !important;
+  transform: scale(1.08);
+  box-shadow: 0 6px 14px rgba(0, 18, 59, 0.25);
+}
+
+/* 3. Resource CTA Section in Dark Tone (Pricing list CTA) */
+.service-landing__resource-cta.is-dark {
+  background: #00123b !important;
+  border-top: 1px solid rgba(81, 199, 220, 0.45) !important;
+  border-bottom: 1px solid rgba(81, 199, 220, 0.45) !important;
+  box-shadow: 0 0 24px rgba(81, 199, 220, 0.12) !important;
+  color: #ffffff !important;
+}
+
+.service-landing__resource-cta.is-dark .service-landing__resource-cta-eyebrow {
+  color: #51c7dc !important;
+}
+
+.service-landing__resource-cta.is-dark h2 {
+  color: #ffffff !important;
+}
+
+.service-landing__resource-cta.is-dark p {
+  color: #d2dde2 !important;
+}
+
+.service-landing__resource-cta.is-dark .service-landing__resource-cta-button {
+  background: #51c7dc !important;
+  color: #01133c !important;
+  font-weight: 800 !important;
+  border-color: #51c7dc !important;
+}
+
+.service-landing__resource-cta.is-dark .service-landing__resource-cta-button:hover {
+  background: #ffffff !important;
+  color: #01133c !important;
+  border-color: #ffffff !important;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4) !important;
+}
+
+/* 4. Modern Dark Buttons (Price Card Buttons, Submit Buttons, Modern Action Buttons) */
+.service-landing__modern-btn.is-dark,
+.service-landing__modern-submit-btn,
+.service-landing__price-card.has-image .service-landing__button.is-dark {
+  background: #00123b !important;
+  border-color: #00123b !important;
+  color: #ffffff !important;
+}
+
+.service-landing__modern-btn.is-dark:hover,
+.service-landing__modern-submit-btn:hover,
+.service-landing__price-card.has-image .service-landing__button.is-dark:hover {
+  background: #01133c !important;
+  border-color: #01133c !important;
+  box-shadow: 0 6px 16px rgba(0, 18, 59, 0.3) !important;
+}
+
+/* NOTE: CallNowButton (.call-icon) and WhatsappIconButton (.whatsapp-icon)
+   are intentionally NOT overridden to preserve their exact design. */

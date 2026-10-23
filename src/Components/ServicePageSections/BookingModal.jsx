@@ -32,9 +32,11 @@ function BookingModal({
         >
           {"\u00D7"}
         </button>
-        <span className="service-landing__modal-eyebrow">
-          {content.modal.eyebrow}
-        </span>
+        {content.modal?.eyebrow && (
+          <span className="service-landing__modal-eyebrow">
+            {content.modal.eyebrow}
+          </span>
+        )}
         <h2 id="page-booking-modal-title">
           {selectedItem || content.defaultService}
         </h2>

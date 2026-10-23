@@ -233,7 +233,7 @@ function TestimonialsSection({
                   {/* Card Body: Client Feedback */}
                   <div className="service-landing__testimonial-body">
                     <blockquote className="service-landing__testimonial-quote">
-                      "{reviewText}"
+                      &ldquo;{reviewText}&rdquo;
                     </blockquote>
                   </div>
 

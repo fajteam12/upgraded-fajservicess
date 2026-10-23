@@ -1,4 +1,34 @@
 import { memo, useState } from "react";
+import { Link } from "react-router-dom";
+
+function renderParagraphContent(content, keyPrefix = "p") {
+  if (content === null || content === undefined) return null;
+  if (typeof content === "string" || typeof content === "number") return content;
+  if (Array.isArray(content)) {
+    return content.map((part, index) => (
+      <span key={`${keyPrefix}-${index}`}>{renderParagraphContent(part, `${keyPrefix}-${index}`)}</span>
+    ));
+  }
+  if (typeof content === "object" && Array.isArray(content.parts)) {
+    return content.parts.map((part, index) => (
+      <span key={`${keyPrefix}-part-${index}`}>{renderParagraphContent(part, `${keyPrefix}-part-${index}`)}</span>
+    ));
+  }
+  if (typeof content === "object" && content.text) {
+    const renderedText = content.strong ? <strong>{content.text}</strong> : content.text;
+    if (!content.href) return renderedText;
+    if (content.external) {
+      return (
+        <a href={content.href} target="_blank" rel="noopener noreferrer">
+          {renderedText}
+        </a>
+      );
+    }
+    return <Link to={content.href}>{renderedText}</Link>;
+  }
+  return null;
+}
+
 import {
   getCloudflareImageSrcSet,
   getCloudflareImageUrl,
@@ -22,21 +52,25 @@ function SplitMediaSection({
   if (!content) return null;
 
   const isCtaEnabled = Boolean(
-    showCta ?? content?.showCta ?? (cta || content?.cta)
+    content?.showCta === false
+      ? false
+      : (content?.showCta ?? showCta ?? (content?.cta || cta))
   );
 
   let phoneUrl = "";
   let whatsappUrl = "";
 
   if (isCtaEnabled) {
+    const hasContentCta = Boolean(
+      typeof content?.cta === "object" && content?.cta
+    );
     const hasExplicitCta = Boolean(
-      (typeof cta === "object" && cta) ||
-      (typeof content?.cta === "object" && content?.cta)
+      hasContentCta || (typeof cta === "object" && cta)
     );
 
     const ctaConfig =
+      (hasContentCta && content.cta) ||
       (typeof cta === "object" && cta) ||
-      (typeof content?.cta === "object" && content?.cta) ||
       {};
 
     const getCleanUrl = (val) => {
@@ -109,9 +143,9 @@ function SplitMediaSection({
         <div className="service-landing__media-copy">
           <SectionHeader content={content} light={tone === "dark"} />
 
-          {content.paragraphs?.map((paragraph) => (
-            <p className="service-landing__media-paragraph" key={paragraph}>
-              {paragraph}
+          {content.paragraphs?.map((paragraph, idx) => (
+            <p className="service-landing__media-paragraph" key={idx}>
+              {renderParagraphContent(paragraph, `p-${idx}`)}
             </p>
           ))}
 

@@ -1,4 +1,5 @@
 import { memo, useState } from "react";
+import { Link } from "react-router-dom";
 import {
   getCloudflareImageSrcSet,
   getCloudflareImageUrl,
@@ -136,6 +137,74 @@ function renderHighlightIcon(type) {
   }
 }
 
+function RichText({ content }) {
+  if (typeof content === "string") return content;
+  if (!content) return null;
+
+  if (content.href && content.text) {
+    const isExternal =
+      content.external === true || /^https?:\/\//i.test(content.href);
+
+    return isExternal ? (
+      <a
+        className="service-landing__inline-link"
+        href={content.href}
+        target={content.newTab === false ? undefined : "_blank"}
+        rel={content.newTab === false ? undefined : "noopener noreferrer"}
+      >
+        {content.strong ? <strong>{content.text}</strong> : content.text}
+      </a>
+    ) : (
+      <Link className="service-landing__inline-link" to={content.href}>
+        {content.strong ? <strong>{content.text}</strong> : content.text}
+      </Link>
+    );
+  }
+
+  if (Array.isArray(content.parts)) {
+    return content.parts.map((part, index) => {
+      if (typeof part === "string") {
+        return <span key={index}>{part}</span>;
+      }
+
+      if (!part) return null;
+
+      if (part.strong && !part.href) {
+        return <strong key={index}>{part.text}</strong>;
+      }
+
+      if (part.href) {
+        const isExternal =
+          part.external === true || /^https?:\/\//i.test(part.href);
+
+        return isExternal ? (
+          <a
+            key={index}
+            className="service-landing__inline-link"
+            href={part.href}
+            target={part.newTab === false ? undefined : "_blank"}
+            rel={part.newTab === false ? undefined : "noopener noreferrer"}
+          >
+            {part.strong ? <strong>{part.text}</strong> : part.text}
+          </a>
+        ) : (
+          <Link
+            key={index}
+            className="service-landing__inline-link"
+            to={part.href}
+          >
+            {part.strong ? <strong>{part.text}</strong> : part.text}
+          </Link>
+        );
+      }
+
+      return <span key={index}>{part.text}</span>;
+    });
+  }
+
+  return content.text || null;
+}
+
 const defaultHighlights = [
   {
     icon: "clock",
@@ -241,11 +310,12 @@ function AboutHeroSection({
 
   const highlights = content.highlights || defaultHighlights;
 
-  // Single paragraph: take first paragraph if array, or paragraph string
-  const paragraph =
-    content.paragraph ||
-    (Array.isArray(content.paragraphs) && content.paragraphs[0]) ||
-    "";
+  const paragraphs =
+    Array.isArray(content.paragraphs) && content.paragraphs.length > 0
+      ? content.paragraphs
+      : content.paragraph
+        ? [content.paragraph]
+        : [];
 
   // Mutual automatic calculation: setting contentWidth calculates imageWidth and vice-versa
   const rawContentWidth =
@@ -289,7 +359,7 @@ function AboutHeroSection({
             <h1 className="service-about-hero__title">{content.title}</h1>
           </ScrollZoomText>
 
-          {content.subtitle && (
+          {content.subtitle && !content.hideSubtitle && (
             <ScrollSlide direction="up" delay={0.16}>
               <h2 className="service-about-hero__subtitle">
                 {content.subtitle}
@@ -297,11 +367,13 @@ function AboutHeroSection({
             </ScrollSlide>
           )}
 
-          {paragraph && (
-            <ScrollSlide direction="up" delay={0.22}>
-              <p className="service-about-hero__paragraph">{paragraph}</p>
+          {paragraphs.map((para, index) => (
+            <ScrollSlide key={index} direction="up" delay={0.22 + index * 0.04}>
+              <p className="service-about-hero__paragraph">
+                <RichText content={para} />
+              </p>
             </ScrollSlide>
-          )}
+          ))}
 
           {highlights && highlights.length > 0 && (
             <ScrollSlide direction="up" delay={0.28}>

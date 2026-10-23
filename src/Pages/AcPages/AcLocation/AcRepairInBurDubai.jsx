@@ -1,15 +1,4 @@
 import { lazy, Suspense } from "react";
-import BreadCumb from "../../../Components/Common/BreadCumb";
-
-const MaintenanceBenefitsLazy = lazy(() =>
-  import("../../../Components/MaintenanceBenefits/MaintenanceBenefits")
-);
-const MaintenanceBenefits = (props) => (
-  <Suspense fallback={null}>
-    <MaintenanceBenefitsLazy {...props} />
-  </Suspense>
-);
-
 import {
   AboutHeroSection,
   AccordionSection,
@@ -29,11 +18,20 @@ import {
   SearchableDirectorySection,
   SplitMediaSection,
   TestimonialsSection,
-  TwoColumnInfoSection,
   useBookingRequest,
 } from "../../../Components/ServicePageSections";
 import "../../../Components/ServicePageSections/ServicePageSections.css";
+import BreadCumb from "../../../Components/Common/BreadCumb";
 import pageData from "../../../data/servicePages/locations/ac/burDubai";
+
+const MaintenanceBenefitsLazy = lazy(() =>
+  import("../../../Components/MaintenanceBenefits/MaintenanceBenefits")
+);
+const MaintenanceBenefits = (props) => (
+  <Suspense fallback={null}>
+    <MaintenanceBenefitsLazy {...props} />
+  </Suspense>
+);
 
 export default function AcRepairInBurDubai() {
   const { modalOpen, selectedItem, openBooking, closeBooking, bookingState } =
@@ -61,32 +59,34 @@ export default function AcRepairInBurDubai() {
         />
         <BreadCumb />
 
-        {/* 1. Paragraph Section: Who provides the best AC repair services in Bur Dubai? */}
-        <TwoColumnInfoSection
-          content={pageData.overview}
-          tone="soft"
-          showCta={true}
-          contact={pageData.contact}
-        />
-
-        {/* 2. Transparent Pricing Section */}
+        {/* 1. Transparent Pricing Section */}
         <PricingCardsSection
           content={pageData.pricing}
           onAction={openBooking}
           tone="white"
         />
 
-        {/* 3. Pricing List Resource CTA */}
-        <ResourceCTASection content={pageData.repairPrice} tone="dark" />
+        {/* 2. Area Overview: Who provides the best AC repair services in Bur Dubai? (Image on RIGHT) */}
+        <SplitMediaSection
+          content={pageData.areaOverview}
+          tone="soft"
+          imageSide="right"
+          showCta={true}
+          cta={whatsappCta}
+          contact={pageData.contact}
+        />
 
-        {/* 4. Section Showing AC Unit Service: Which signs show the AC needs service? */}
+        {/* 3. Section Showing AC Unit Service: Which signs show the AC needs service? */}
         <ChecklistSection
           content={pageData.commonSigns}
           contact={pageData.contact}
           showCta={true}
           cta={whatsappCta}
-          tone="soft"
+          tone="white"
         />
+
+        {/* 4. Pricing List Resource CTA */}
+        <ResourceCTASection content={pageData.repairPrice} tone="dark" />
 
         {/* 5. Why Is My AC Not Cooling? (Image on LEFT) */}
         <SplitMediaSection
@@ -94,21 +94,11 @@ export default function AcRepairInBurDubai() {
           contact={pageData.contact}
           showCta={true}
           cta={whatsappCta}
-          tone="white"
+          tone="soft"
           imageSide="left"
         />
 
-        {/* 6. Professional Air Conditioning Services in Bur Dubai (Image on RIGHT) */}
-        <SplitMediaSection
-          content={pageData.servicesOffered}
-          showCta={true}
-          cta={whatsappCta}
-          contact={pageData.contact}
-          tone="soft"
-          imageSide="right"
-        />
-
-        {/* 7. Our Services Cards in Bur Dubai */}
+        {/* 6. Professional Air Conditioning Services in Bur Dubai (Cards) */}
         <ActionCardsSection
           content={pageData.servicesOfferedCards}
           contact={pageData.contact}
@@ -119,17 +109,17 @@ export default function AcRepairInBurDubai() {
           cta={whatsappCta}
         />
 
-        {/* 8. Why is AC Maintenance Service Important in Bur Dubai? (Image on LEFT) */}
+        {/* 7. Why is AC Maintenance Service Important in Bur Dubai? (Image on RIGHT) */}
         <SplitMediaSection
           content={pageData.maintenanceImportance}
           showCta={true}
           cta={whatsappCta}
           contact={pageData.contact}
           tone="soft"
-          imageSide="left"
+          imageSide="right"
         />
 
-        {/* 9. Key Benefits of Regular AC Maintenance in Bur Dubai */}
+        {/* 8. Key Benefits of Regular AC Maintenance in Bur Dubai */}
         <ActionCardsSection
           content={pageData.maintenanceImportanceCards}
           tone="white"
@@ -139,7 +129,7 @@ export default function AcRepairInBurDubai() {
           contact={pageData.contact}
         />
 
-        {/* 10. Most Common AC Problems That May Require Maintenance */}
+        {/* 9. Common Problems */}
         <NumberedGridSection
           content={pageData.commonProblems}
           contact={pageData.contact}
@@ -149,47 +139,17 @@ export default function AcRepairInBurDubai() {
           columns="four"
         />
 
-        {/* 11. Emergency AC Repair Service in Bur Dubai (Video on RIGHT) */}
+        {/* 10. Emergency AC Repair */}
         <EmbeddedVideoSection
           content={pageData.video}
           tone="white"
-          videoSide="right"
+          videoSide="left"
         />
 
-        {/* 12. Best AC Cleaning & AC Service in Bur Dubai (Image on LEFT after Video) */}
-        <SplitMediaSection
-          content={pageData.cleaningService}
-          showCta={true}
-          cta={whatsappCta}
-          contact={pageData.contact}
-          tone="soft"
-          imageSide="left"
-        />
-
-        {/* 13. Why Regular AC Cleaning is Essential */}
-        <TwoColumnInfoSection
-          content={pageData.cleaningServiceCards}
-          tone="white"
-          showCta={true}
-          contact={pageData.contact}
-        />
-
-        {/* 14. Maintenance Outcomes & Benefits */}
+        {/* 11. Benefits (above Choose Us) */}
         <MaintenanceBenefits {...pageData.benefits} tone="soft" />
 
-        {/* 15. Which AC Needs Services - All Types of AC Systems & Repairs */}
-        <DetailColumnsSection
-          content={pageData.sparePartsRepair}
-          contact={pageData.contact}
-          showCta={true}
-          cta={whatsappCta}
-          tone="white"
-        />
-
-        {/* 16. Before / After Slider */}
-        <BeforeAfterSection content={pageData.beforeAfter} tone="soft" />
-
-        {/* 17. Why Choose Us - The FAJ Guarantee */}
+        {/* 12. Choose Us */}
         <ActionCardsSection
           content={pageData.whyChooseUs}
           tone="white"
@@ -199,7 +159,19 @@ export default function AcRepairInBurDubai() {
           contact={pageData.contact}
         />
 
-        {/* 18. Searchable Brands Directory */}
+        {/* 13. Before aftr */}
+        <BeforeAfterSection content={pageData.beforeAfter} tone="soft" />
+
+        {/* 14. types */}
+        <DetailColumnsSection
+          content={pageData.sparePartsRepair}
+          contact={pageData.contact}
+          showCta={true}
+          cta={whatsappCta}
+          tone="white"
+        />
+
+        {/* 15. brands */}
         <SearchableDirectorySection
           content={pageData.brands}
           tone="soft"
@@ -209,33 +181,37 @@ export default function AcRepairInBurDubai() {
           contact={pageData.contact}
         />
 
-        {/* 19. Gallery */}
+        {/* 16. Gallery */}
         <MediaGallerySection content={pageData.gallery} tone="white" />
 
-        {/* 20. Energy Saving Tips Resource CTA */}
+        {/* 17. tips */}
         <ResourceCTASection content={pageData.energyTips} tone="soft" />
 
-        {/* 21. Annual Maintenance Contracts (AMC) */}
+        {/* 18. Blogs (between Tips and AMC) */}
+        <ActionCardsSection
+          content={pageData.news}
+          tone="white"
+          columns="three"
+        />
+
+        {/* 19. AMC */}
         <PlanCardsSection
           content={pageData.contracts}
           onAction={openBooking}
           tone="dark"
         />
 
-        {/* 22. Customer Testimonials */}
-        <TestimonialsSection content={pageData.testimonials} tone="white" />
+        {/* 20. Reviews */}
+        <TestimonialsSection content={pageData.testimonials} tone="soft" />
 
-        {/* 23. News & Blog Updates */}
-        <ActionCardsSection
-          content={pageData.news}
-          tone="soft"
-          columns="three"
+        {/* 21. Faqs */}
+        <AccordionSection
+          content={pageData.faqs}
+          contact={pageData.contact}
+          tone="white"
         />
 
-        {/* 24. Location FAQs */}
-        <AccordionSection content={pageData.faqs} tone="white" />
-
-        {/* 25. Booking Form */}
+        {/* 22. booking form */}
         <ModernBookingSection
           content={pageData.booking}
           bookingState={bookingState}

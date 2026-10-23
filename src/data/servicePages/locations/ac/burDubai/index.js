@@ -36,14 +36,31 @@ const contactData = {
 };
 
 const heroData = {
-  eyebrow: "Bur Dubai AC Repair & Maintenance",
   title: "Top-Rated Air Conditioner Repair and Maintenance in Bur Dubai | AC Service Near Me",
-  subtitle: "Expert Air Conditioning Servicing, Deep Cleaning & Preventative Care in Bur Dubai",
-  paragraph:
-    "Say goodbye to hot rooms, sticky summer days, and poor air quality. Welcome to cool comfort, fresh air, and better sleep all year round. FAJ Technical Services L.L.C has been serving Dubai since 2010. We provide trusted AC service, AC cleaning service, and AC installation in Bur Dubai and nearby areas.",
   paragraphs: [
-    "Say goodbye to hot rooms, sticky summer days, and poor air quality. Welcome to cool comfort, fresh air, and better sleep all year round. FAJ Technical Services L.L.C has been serving Dubai since 2010. We provide trusted AC service, AC cleaning service, and AC installation in Bur Dubai and nearby areas.",
+    {
+      parts: [
+        "Say goodbye to hot rooms, sticky summer days, and poor air quality. Welcome to cool comfort, fresh air, and better sleep all year round.\n",
+        {
+          strong: true,
+          text: "FAJ Technical Services L.L.C",
+          href: "https://maps.app.goo.gl/soNMACLuaHwdCzKx7",
+          external: true,
+        },
+        " has been serving Dubai since 2010. We provide trusted ",
+        {
+          strong: true,
+          text: "AC service",
+          href: "https://www.youtube.com/watch?v=pkO_jobGdBo",
+          external: true,
+        },
+        ", AC cleaning service, and AC installation in Bur Dubai and nearby areas.",
+      ],
+    },
+    "Our expert team handles both home AC and commercial AC systems with fast response and professional service.",
   ],
+  paragraph:
+    "Say goodbye to hot rooms, sticky summer days, and poor air quality. Welcome to cool comfort, fresh air, and better sleep all year round. FAJ Technical Services L.L.C has been serving Dubai since 2010. We provide trusted AC service, AC cleaning service, and AC installation in Bur Dubai and nearby areas. Our expert team handles both home AC and commercial AC systems with fast response and professional service.",
   highlights: [
     {
       icon: "award",
@@ -75,9 +92,18 @@ const heroData = {
 };
 
 const overviewData = {
+  paragraphs: [],
+  showCta: true,
+  cta: {
+    phone: "",
+    whatsapp: "https://api.whatsapp.com/send?phone=+971507464712&text=Hello",
+  },
+};
+
+const areaOverviewData = {
+  id: "bur-dubai-ac-services",
   title: "Who provides the best AC repair services in Bur Dubai?",
   paragraphs: [
-    "Our expert team handles both home AC and commercial AC systems with fast response and professional service.",
     "Looking for air conditioner repair near you in Bur Dubai? FAJ Technical Services L.L.C provides AC solutions for homes, apartments, villas, offices, shops, restaurants and commercial properties in Dubai and the UAE. Our experienced technicians can fix all types of air conditioning systems from repairs to complete installations.",
     {
       parts: [
@@ -91,6 +117,14 @@ const overviewData = {
       ],
     },
   ],
+  imageSide: "right",
+  image: {
+    id: "ac-service-page/how-to-use-faj-ac-service",
+    src: "/img/ac-service-page/how-to-use-faj-ac-service.webp",
+    alt: "Who provides the best AC repair services in Bur Dubai?",
+    width: 600,
+    height: 400,
+  },
   showCta: true,
   cta: {
     phone: "tel:+971507464712",
@@ -99,7 +133,6 @@ const overviewData = {
 };
 
 const pricingData = {
-  eyebrow: "Transparent Service Options",
   title: "AC Inspection, Cleaning and Maintenance Prices",
   description:
     "Choose a starting service based on your air-conditioning system. Final quotations depend on unit type, condition and required work.",
@@ -243,7 +276,6 @@ const pricingData = {
 
 const contractsData = {
   id: "amc-packages",
-  eyebrow: "Preventive Protection",
   title: "Air Conditioning Maintenance Contracts",
   description:
     "Choose a planned AC maintenance schedule based on property size, unit type, operating hours and response priorities in Bur Dubai.",
@@ -290,12 +322,11 @@ const contractsData = {
 
 const serviceOverviewData = {
   id: "ac-repair-service-overview",
-  eyebrow: "Proven HVAC Expertise",
   title: "Why Is My AC Not Cooling?",
   description:
     "A cooling problem is one of the most common AC problems in Dubai. In case you notice your AC is running but not cooling properly, there are several factors that may be responsible.",
   paragraphs: [
-    "Common causes include dirty air filters, low refrigerant gas, blocked condenser coils, faulty thermostat, compressor problems, electrical faults, and restricted airflow.",
+    "Common causes include: Dirty air filters, Low refrigerant gas, Blocked condenser coils, Faulty thermostat, Compressor problems, Electrical faults, Restricted airflow.",
     "A professional AC inspection can identify the exact cause and prevent further damage to the system.",
   ],
   imageSide: "left",
@@ -315,7 +346,6 @@ const serviceOverviewData = {
 
 const commonSignsData = {
   id: "ac-maintenance-signs",
-  eyebrow: "Diagnostic Indicators",
   title: "Which signs show the AC needs service?",
   intro:
     "If you notice any of these signs, you must contact an expert technician who can repair your AC professionally. We are here to assist your AC cooling system in achieving optimal efficiency.",
@@ -326,22 +356,38 @@ const commonSignsData = {
     { title: "Loss of AC performance" },
     { title: "Poor AC airflow, making noises" },
   ],
-  showCta: true,
+  showCta: false,
   cta: {
-    phone: "tel:+971507464712",
-    whatsapp: "https://api.whatsapp.com/send?phone=+971507464712&text=Hello",
+    phone: "",
+    whatsapp: "",
   },
 };
 
 const videoData = {
   id: "ac-service-video",
-  eyebrow: "Same-Day Emergency Support",
   title: "Emergency AC Repair Service in Bur Dubai",
-  description:
-    "A sudden AC breakdown can affect comfort, productivity, and indoor air quality. Our emergency AC repair service can help with AC not cooling, AC not turning on, water leakage, electrical faults, thermostat issues, compressor failures, weak airflow, and unusual noises. We provide fast assistance for residential and commercial customers throughout Bur Dubai and nearby areas.",
+  lead: "A sudden AC breakdown can affect comfort, productivity, and indoor air quality.",
+  listTitle: "Our emergency AC repair service can help with:",
+  items: [
+    "AC not cooling",
+    "AC not turning on",
+    "Water leakage",
+    "Electrical faults",
+    "Thermostat issues",
+    "Compressor failures",
+    "Weak airflow",
+    "Unusual noises",
+  ],
+  conclusion:
+    "We provide fast assistance for residential and commercial customers throughout Bur Dubai and nearby areas.",
+  description: [
+    "A sudden AC breakdown can affect comfort, productivity, and indoor air quality.",
+    "Our emergency AC repair service can help with: AC not cooling, AC not turning on, water leakage, electrical faults, thermostat issues, compressor failures, weak airflow, and unusual noises.",
+    "We provide fast assistance for residential and commercial customers throughout Bur Dubai and nearby areas.",
+  ],
   frameTitle: "Air-conditioning repair and maintenance service video in Bur Dubai",
   videoId: "prUR0-lZlzg",
-  videoSide: "right",
+  videoSide: "left",
   image: {
     id: "indoor-ac-servicing",
     src: "/img/indoor-ac-servicing.webp",
@@ -369,7 +415,6 @@ const videoData = {
 
 const maintenanceImportanceData = {
   id: "ac-maintenance-importance",
-  eyebrow: "Crucial Prevention",
   title: "Why is AC Maintenance Service Important in Bur Dubai?",
   description:
     "Regular air conditioner (AC) maintenance service in Bur Dubai is essential for optimal performance. FAJ Technical Services L.L.C offers comprehensive services to keep your system running efficiently. With our proactive approach, you can feel confident that AC is functioning at its best. If you need AC maintenance near you in Bur Dubai, contact us.",
@@ -428,16 +473,15 @@ const maintenanceImportanceCardsData = {
         "The air conditioning service in Bur Dubai makes sure our air conditioners are clean and work well every day so we can be comfortable.",
     },
   ],
-  showCta: true,
+  showCta: false,
   cta: {
-    phone: "tel:+971507464712",
-    whatsapp: "https://api.whatsapp.com/send?phone=+971507464712&text=Hello",
+    phone: "",
+    whatsapp: "",
   },
 };
 
 const commonProblemsData = {
-  eyebrow: "Troubleshooting Path",
-  title: "Most Common AC Problems That May Require Maintenance",
+  title: "Most Common AC Problems",
   description: "",
   items: [
     {
@@ -481,16 +525,15 @@ const commonProblemsData = {
         "High energy bills without an increase in usage could indicate the inefficiency of your air conditioner due to dirty filters, duct leaks, or other problems.",
     },
   ],
-  showCta: true,
+  showCta: false,
   cta: {
-    phone: "tel:+971507464712",
-    whatsapp: "https://api.whatsapp.com/send?phone=+971507464712&text=Hello",
+    phone: "",
+    whatsapp: "",
   },
 };
 
 const servicesOfferedData = {
   id: "ac-services-offered",
-  eyebrow: "Seamless Process",
   title: "Professional Air Conditioning Services in Bur Dubai",
   description:
     "Are you searching for reliable air conditioning services in Bur Dubai? FAJ Technical Services L.L.C provides excellent AC repair and AC cleaning service right at your doorstep. Our team of experts is committed to providing your comfort with excellent service.",
@@ -511,7 +554,7 @@ const servicesOfferedData = {
 
 const servicesOfferedCardsData = {
   id: "ac-services-offered-cards",
-  title: "OUR SERVICES IN BUR DUBAI",
+  title: "Professional Air Conditioning Services in Bur Dubai",
   items: [
     {
       icon: "ac-wrench",
@@ -548,13 +591,6 @@ const servicesOfferedCardsData = {
         "Our AMC plans include regular inspections. They also include preventive maintenance and priority support. We provide scheduled servicing throughout the year. It helps you avoid unexpected repair costs.",
       actionLabel: "View AMC Plans",
     },
-    {
-      icon: "phone-support",
-      title: "Emergency AC Repair in Bur Dubai",
-      description:
-        "Experiencing unexpected AC breakdowns? Our 7-day emergency AC repairs is available to provide quick service across Bur Dubai and nearby areas.",
-      actionLabel: "Get Urgent Help",
-    },
   ],
   bottomTitle: "Schedule your FAJ AC Cleaning, AC Repair & Maintenance Services today!",
   bottomDescription: {
@@ -576,8 +612,7 @@ const servicesOfferedCardsData = {
 };
 
 const benefitsData = {
-  eyebrow: "Preventive Maintenance Outcomes",
-  title: "The Benefits of Regular AC Service and Maintenance in Bur Dubai",
+  title: "Benefits Of Regular AC Service and Maintenance in Bur Dubai",
   city: "Bur Dubai",
   stats: [
     { value: "2010", label: "Serving the UAE Since" },
@@ -635,88 +670,8 @@ const benefitsData = {
   ],
 };
 
-const cleaningServiceData = {
-  id: "ac-cleaning-service-overview",
-  eyebrow: "Top-Rated Choice",
-  title: "Best AC Cleaning & AC Service in Dubai and Sharjah",
-  description:
-    "Discover top-rated AC cleaning, maintenance, and air conditioner repair services in Dubai. Keep your space cool and comfortable with professional solutions tailored to your needs.",
-  imageSide: "left",
-  image: {
-    id: "ac-service-page/best-ac-service",
-    src: "/img/ac-service-page/best-ac-service.webp",
-    alt: "AC Maintenance in Bur Dubai",
-    width: 600,
-    height: 400,
-  },
-  showCta: true,
-  cta: {
-    phone: "tel:+971507464712",
-    whatsapp: "https://api.whatsapp.com/send?phone=+971507464712&text=Hello",
-  },
-};
-
-const cleaningServiceCardsData = {
-  id: "ac-cleaning-service-cards",
-  title: "WHY REGULAR AC CLEANING IS ESSENTIAL",
-  wide: true,
-  cards: [
-    {
-      title: "Key to the Best AC Cleaning Services Near You",
-      paragraphs: [
-        "If you are looking for the best AC deep cleaning and services in Dubai and Sharjah, consider the following key aspects:",
-      ],
-      bulletColumns: 1,
-      bullets: [
-        {
-          title: "COOLING & HEATING",
-          text: "Stay comfortable all year round with balanced, dependable climate control.",
-        },
-        {
-          title: "BETTER AIR QUALITY",
-          text: "Reduce humidity, pollen, and dust to keep indoor air clean and healthy.",
-        },
-        {
-          title: "PROTECT YOUR PROPERTY",
-          text: "Prevent moisture damage and wear to sensitive electronics and furnishings.",
-        },
-        {
-          title: "QUIET AND SECURE",
-          text: "Optimal system performance eliminates the need to leave windows open.",
-        },
-      ],
-    },
-    {
-      title: "Key Benefits",
-      variant: "cyan-tint",
-      paragraphs: [
-        "Regular coils cleaning, air filter cleaning, and duct cleaning lowers electricity bills, extends the lifespan of equipment, prevents breakdowns, and eliminates unpleasant odours.",
-      ],
-      sections: [
-        {
-          title: "Signs Your AC Needs Cleaning",
-          bulletColumns: 1,
-          noDivider: true,
-          bullets: [
-            "Noticeably reduced airflow.",
-            "Visible dust accumulation around vents.",
-            "Unusual or musty odors.",
-            "Increased DEWA bills.",
-          ],
-        },
-      ],
-    },
-  ],
-  showCta: true,
-  cta: {
-    phone: "tel:+971507464712",
-    whatsapp: "https://api.whatsapp.com/send?phone=+971507464712&text=Hello",
-  },
-};
-
 const whyChooseUsData = {
   id: "why-choose-faj-ac",
-  eyebrow: "The FAJ Guarantee",
   title: "CHOOSE US FOR RELIABLE, EXCEPTIONAL SERVICE TAILORED TO YOUR NEEDS!",
   description: "",
   items: [
@@ -792,10 +747,10 @@ const whyChooseUsData = {
       },
     },
   ],
-  showCta: true,
+  showCta: false,
   cta: {
-    phone: "tel:+971507464712",
-    whatsapp: "https://api.whatsapp.com/send?phone=+971507464712&text=Hello",
+    phone: "",
+    whatsapp: "",
   },
 };
 
@@ -878,7 +833,6 @@ const linkedBrands = [
 
 
 const brandsData = {
-  eyebrow: "Multi-Brand Expertise",
   title: "We specialise in air conditioning services for the following brands",
   description:
     "Search supported AC brands. Dedicated brand pages are linked directly from their titles.",
@@ -892,16 +846,15 @@ const brandsData = {
   initialCount: 12,
   actionLabel: "Request AC Service",
   items: linkedBrands,
-  showCta: true,
+  showCta: false,
   cta: {
-    phone: "tel:+971507464712",
-    whatsapp: "https://api.whatsapp.com/send?phone=+971507464712&text=Hello",
+    phone: "",
+    whatsapp: "",
   },
 };
 
 const beforeAfterData = {
   id: "recent-completed-service",
-  eyebrow: "Before & After Service",
   title: "Recent Completed Projects",
   description:
     "See the real results of our thorough air conditioning maintenance and deep cleaning service in Bur Dubai.",
@@ -921,7 +874,7 @@ const beforeAfterData = {
 
 const sparePartsRepairData = {
   id: "ac-spare-parts-and-repair",
-  title: "WE SPECIALISE IN ALL TYPES OF AC SYSTEMS & EXPERT REPAIRS",
+  title: "We Specialise in All Types of AC Systems",
   columns: [
     {
       title: "Air Conditioning Systems Serviced Across Bur Dubai:",
@@ -998,11 +951,9 @@ const sparePartsRepairData = {
 
 const galleryData = {
   id: "ac-service-gallery",
-  eyebrow: "Our Work Portfolio",
   title: "Gallery",
   description:
     "A glimpse into our professional AC maintenance, repair, and cleaning services delivered across Bur Dubai.",
-  itemEyebrow: "",
   items: [
     {
       title: "AC Service",
@@ -1078,8 +1029,7 @@ const repairPriceData = {
 
 const testimonialsData = {
   id: "ac-service-reviews",
-  eyebrow: "Direct Testimonials",
-  title: "What Our Clients Say",
+  title: "Customer Reviews",
   description:
     "Customer feedback on FAJ air-conditioning repair and maintenance services in Bur Dubai.",
   items: [
@@ -1135,8 +1085,7 @@ const testimonialsData = {
 };
 
 const newsData = {
-  id: "ac-news",
-  eyebrow: "Air Conditioning Guides",
+  id: "ac-news-bur-dubai",
   title: "NEWS & UPDATES",
   description:
     "Explore the latest expert insights, practical advice, and maintenance tips from our certified AC specialists in Dubai.",
@@ -1188,9 +1137,8 @@ const newsData = {
 };
 
 const faqsData = {
-  id: "ac-service-faqs",
-  eyebrow: "Have Questions?",
-  title: "AC Repair and Maintenance FAQs in Bur Dubai",
+  id: "ac-service-bur-dubai-faqs",
+  title: "AC Repair and Maintenance in Bur Dubai FAQs",
   description:
     "Answers about AC servicing, cleaning, cooling faults and maintenance in Bur Dubai.",
   items: [
@@ -1272,7 +1220,7 @@ const faqsData = {
     {
       question: "How can I improve my AC cooling without calling a technician?",
       answer:
-        "Follow these steps carefully:\n- Close all windows\n- Clean the filters\n- Keep the unit clear\n- Set the thermostat to a consistent temperature\n- Keep doors closed to retain cool air",
+        "Follow these steps carefully:\n- Close all windows\n- Clean the filters\n- Keep the unit clear\n- Set the thermostat to a temperature\n- Extend equipment lifespan",
     },
     {
       question: "Why does my AC smell bad when I turn it on?",
@@ -1282,7 +1230,7 @@ const faqsData = {
     {
       question: "What happens if I skip AC servicing for a year?",
       answer:
-        "If you skip servicing:\n- Your AC's efficiency drops\n- Your electricity bills go up\n- Parts wear out faster\n- Small problems become expensive repairs",
+        "- Your AC's efficiency drops\n- Your bills go up\n- Parts wear out faster\n- Small problems become expensive repairs",
     },
     {
       question: "Does AC servicing include checking the gas level?",
@@ -1303,8 +1251,7 @@ const faqsData = {
 };
 
 const bookingData = {
-  eyebrow: "BOOK YOUR SERVICE",
-  title: "REQUEST AC SERVICE IN BUR DUBAI",
+  title: "Book An Appointment",
   description:
     "Book your AC service appointment with our expert team in Bur Dubai. We provide professional AC installation, cleaning, maintenance, and repair services to keep your space cool and comfortable.",
   primaryAction: "Book Now",
@@ -1324,7 +1271,6 @@ const bookingData = {
     date: { label: "PREFERRED APPOINTMENT DATE" },
   },
   modal: {
-    eyebrow: "Request AC support",
     description:
       "Enter your details and continue through WhatsApp to request AC repair, cleaning, maintenance or AMC coverage in Bur Dubai.",
     submitLabel: "Continue with booking request",
@@ -1345,6 +1291,7 @@ export const seo = seoData;
 export const contact = contactData;
 export const hero = heroData;
 export const overview = overviewData;
+export const areaOverview = areaOverviewData;
 export const pricing = pricingData;
 export const contracts = contractsData;
 export const serviceOverview = serviceOverviewData;
@@ -1356,8 +1303,6 @@ export const commonProblems = commonProblemsData;
 export const servicesOffered = servicesOfferedData;
 export const servicesOfferedCards = servicesOfferedCardsData;
 export const benefits = benefitsData;
-export const cleaningService = cleaningServiceData;
-export const cleaningServiceCards = cleaningServiceCardsData;
 export const whyChooseUs = whyChooseUsData;
 export const beforeAfter = beforeAfterData;
 export const brands = brandsData;
@@ -1375,6 +1320,7 @@ export {
   contactData,
   heroData,
   overviewData,
+  areaOverviewData,
   pricingData,
   contractsData,
   serviceOverviewData,
@@ -1386,9 +1332,7 @@ export {
   servicesOfferedData,
   servicesOfferedCardsData,
   benefitsData,
-  cleaningServiceData,
-  cleaningServiceCardsData,
-  whyChooseUsData,
+whyChooseUsData,
   beforeAfterData,
   brandsData,
   sparePartsRepairData,
@@ -1406,6 +1350,7 @@ const burDubaiData = {
   contact: contactData,
   hero: heroData,
   overview: overviewData,
+  areaOverview: areaOverviewData,
   pricing: pricingData,
   contracts: contractsData,
   serviceOverview: serviceOverviewData,
@@ -1417,8 +1362,6 @@ const burDubaiData = {
   servicesOffered: servicesOfferedData,
   servicesOfferedCards: servicesOfferedCardsData,
   benefits: benefitsData,
-  cleaningService: cleaningServiceData,
-  cleaningServiceCards: cleaningServiceCardsData,
   whyChooseUs: whyChooseUsData,
   beforeAfter: beforeAfterData,
   brands: brandsData,

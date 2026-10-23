@@ -8,23 +8,27 @@ import WhatsAppIcon from "./WhatsAppIcon";
 import CallNowButton from "../Buttons/CallNowButton";
 import WhatsappIconButton from "../Buttons/WhatsappIconButton";
 
-function EmbeddedVideoSection({ content, tone = "dark", showCta, cta, contact, videoSide = "right" }) {
+function EmbeddedVideoSection({ content, tone = "dark", showCta, cta, contact, videoSide }) {
   const isCtaEnabled = Boolean(
-    showCta ?? content?.showCta ?? (cta || content?.cta)
+    content?.showCta === false
+      ? false
+      : (content?.showCta ?? showCta ?? (content?.cta || cta))
   );
 
   let phoneUrl = "";
   let whatsappUrl = "";
 
   if (isCtaEnabled) {
+    const hasContentCta = Boolean(
+      typeof content?.cta === "object" && content?.cta
+    );
     const hasExplicitCta = Boolean(
-      (typeof cta === "object" && cta) ||
-      (typeof content?.cta === "object" && content?.cta)
+      hasContentCta || (typeof cta === "object" && cta)
     );
 
     const ctaConfig =
+      (hasContentCta && content.cta) ||
       (typeof cta === "object" && cta) ||
-      (typeof content?.cta === "object" && content?.cta) ||
       {};
 
     const getCleanUrl = (val) => {
@@ -186,7 +190,7 @@ function EmbeddedVideoSection({ content, tone = "dark", showCta, cta, contact, v
       id={content?.id}
     >
       <div className="service-landing__narrow">
-        <div className={`service-landing__video-split is-video-${content?.videoSide || videoSide || "right"}`}>
+        <div className={`service-landing__video-split is-video-${videoSide || content?.videoSide || "right"}`}>
           {/* Left Column: Textual Content */}
           <div className="service-landing__video-content">
             {content?.eyebrow && (
@@ -210,19 +214,58 @@ function EmbeddedVideoSection({ content, tone = "dark", showCta, cta, contact, v
               aria-hidden="true"
             />
 
-            {Array.isArray(content?.description) ? (
-              content.description.map((desc, idx) => (
-                <ScrollSlide key={idx} direction="up" delay={0.12 + idx * 0.04}>
-                  <p className="service-landing__video-description">{desc}</p>
-                </ScrollSlide>
-              ))
-            ) : content?.description ? (
+            {content?.lead ? (
               <ScrollSlide direction="up" delay={0.12}>
-                <p className="service-landing__video-description">
-                  {content.description}
+                <p className="service-landing__video-description">{content.lead}</p>
+              </ScrollSlide>
+            ) : null}
+
+            {content?.listTitle ? (
+              <ScrollSlide direction="up" delay={0.14}>
+                <p className="service-landing__video-list-title">
+                  <strong>{content.listTitle}</strong>
                 </p>
               </ScrollSlide>
             ) : null}
+
+            {Array.isArray(content?.items) && content.items.length > 0 ? (
+              <ScrollSlide direction="up" delay={0.16}>
+                <ul className="service-landing__video-list">
+                  {content.items.map((item, idx) => (
+                    <li key={idx}>
+                      <span className="service-landing__video-list-check" aria-hidden="true">
+                        {"\u2713"}
+                      </span>
+                      <span>
+                        {typeof item === "string" ? item : item.title || item.text}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </ScrollSlide>
+            ) : null}
+
+            {content?.conclusion ? (
+              <ScrollSlide direction="up" delay={0.18}>
+                <p className="service-landing__video-description">{content.conclusion}</p>
+              </ScrollSlide>
+            ) : null}
+
+            {!content?.lead && !content?.items && (
+              Array.isArray(content?.description) ? (
+                content.description.map((desc, idx) => (
+                  <ScrollSlide key={idx} direction="up" delay={0.12 + idx * 0.04}>
+                    <p className="service-landing__video-description">{desc}</p>
+                  </ScrollSlide>
+                ))
+              ) : content?.description ? (
+                <ScrollSlide direction="up" delay={0.12}>
+                  <p className="service-landing__video-description">
+                    {content.description}
+                  </p>
+                </ScrollSlide>
+              ) : null
+            )}
 
             {showAnyCta ? (
               <ScrollSlide direction="up" delay={0.16}>

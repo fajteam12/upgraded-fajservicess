@@ -78,7 +78,7 @@
 .maintenance-benefits__intro h2 {
   max-width: 100%;
   margin: 18px 0 16px;
-  color: #003048;
+  color: #00123b;
   font-size: clamp(1.65rem, 2.8vw, 2.35rem);
   font-weight: 800;
   line-height: 1.18;
@@ -220,7 +220,7 @@
 
 .maintenance-benefits__card h3 {
   margin: 0 0 10px;
-  color: #003048;
+  color: #00123b;
   font-size: 1.15rem;
   font-weight: 800;
   line-height: 1.32;
@@ -263,9 +263,9 @@
 
   .maintenance-benefits__card:hover
     .maintenance-benefits__icon {
-    border-color: #003048;
+    border-color: #00123b;
     color: #ffffff;
-    background: #003048;
+    background: #00123b;
     box-shadow:
       0 10px 20px rgba(0, 48, 72, 0.18);
     transform: scale(1.1);

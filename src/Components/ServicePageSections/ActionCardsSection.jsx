@@ -81,21 +81,25 @@ function ActionCardsSection({
   align = "left",
 }) {
   const isCtaEnabled = Boolean(
-    showCta ?? content?.showCta ?? (cta || content?.cta)
+    content?.showCta === false
+      ? false
+      : (content?.showCta ?? showCta ?? (content?.cta || cta))
   );
 
   let phoneUrl = "";
   let whatsappUrl = "";
 
   if (isCtaEnabled) {
+    const hasContentCta = Boolean(
+      typeof content?.cta === "object" && content?.cta
+    );
     const hasExplicitCta = Boolean(
-      (typeof cta === "object" && cta) ||
-      (typeof content?.cta === "object" && content?.cta)
+      hasContentCta || (typeof cta === "object" && cta)
     );
 
     const ctaConfig =
+      (hasContentCta && content.cta) ||
       (typeof cta === "object" && cta) ||
-      (typeof content?.cta === "object" && content?.cta) ||
       {};
 
     const getCleanUrl = (val) => {
