@@ -36,27 +36,47 @@ function AnswerContent({ answer }) {
 
 	if (typeof answer !== "string") return null;
 
-	const blocks = answer.split(/\n\s*\n/);
+	// If answer contains HTML tags (like <ul>, <li>, <ol>, <p>, <br>)
+	if (/<(?:ul|ol|li|p|br|strong|b)\b[^>]*>/i.test(answer)) {
+		return (
+			<div
+				className="service-landing__faq-html-answer"
+				dangerouslySetInnerHTML={{ __html: answer }}
+			/>
+		);
+	}
 
-	return blocks.map((block, index) => {
-		const lines = block
-			.split("\n")
-			.map((line) => line.trim())
-			.filter(Boolean);
-		const bulletLines = lines.filter((line) => /^[-*•]\s+/.test(line));
+	// Parse markdown-style answers (with lines and bullets)
+	const lines = answer.split("\n").map((l) => l.trim()).filter(Boolean);
+	const elements = [];
+	let currentBullets = [];
+	let pIndex = 0;
 
-		if (lines.length > 0 && bulletLines.length === lines.length) {
-			return (
-				<ul key={index}>
-					{lines.map((line, itemIndex) => (
-						<li key={itemIndex}>{line.replace(/^[-*•]\s+/, "")}</li>
+	const flushBullets = () => {
+		if (currentBullets.length > 0) {
+			elements.push(
+				<ul key={`ul-${pIndex++}`}>
+					{currentBullets.map((item, idx) => (
+						<li key={idx}>{item}</li>
 					))}
 				</ul>
 			);
+			currentBullets = [];
 		}
+	};
 
-		return <p key={index}>{lines.join(" ")}</p>;
-	});
+	for (let i = 0; i < lines.length; i++) {
+		const line = lines[i];
+		if (/^[-*•]\s+/.test(line)) {
+			currentBullets.push(line.replace(/^[-*•]\s+/, ""));
+		} else {
+			flushBullets();
+			elements.push(<p key={`p-${pIndex++}`}>{line}</p>);
+		}
+	}
+	flushBullets();
+
+	return elements.length > 0 ? elements : <p>{answer}</p>;
 }
 
 function AccordionSection({ content, contact, tone = "soft" }) {
@@ -171,11 +191,13 @@ function AccordionSection({ content, contact, tone = "soft" }) {
 					<div className="service-landing__faq-list">
 						{content.items.map((item, index) => {
 							const isOpen = activeIndex === index;
+							const question = item.question || item.title;
+							const answer = item.answer || item.desc;
 
 							return (
 								<article
 									className={`service-landing__faq ${isOpen ? "is-open" : ""}`}
-									key={item.question}
+									key={question || index}
 								>
 									<h3>
 										<button
@@ -183,13 +205,13 @@ function AccordionSection({ content, contact, tone = "soft" }) {
 											aria-expanded={isOpen}
 											onClick={() => setActiveIndex(isOpen ? -1 : index)}
 										>
-											<span>{item.question}</span>
+											<span>{question}</span>
 											<span aria-hidden="true">{isOpen ? "\u2212" : "+"}</span>
 										</button>
 									</h3>
 									<div className="service-landing__faq-answer">
 										<div>
-											<AnswerContent answer={item.answer} />
+											<AnswerContent answer={answer} />
 										</div>
 									</div>
 								</article>

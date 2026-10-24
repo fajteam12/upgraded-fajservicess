@@ -42,6 +42,7 @@ function RichText({ value, as: Tag = "p", className }) {
           return (
             <a
               key={`${part.text}-${index}`}
+              className="service-landing__inline-link"
               href={part.href}
               target="_blank"
               rel="noopener noreferrer"
@@ -54,6 +55,7 @@ function RichText({ value, as: Tag = "p", className }) {
         return (
           <Link
             key={`${part.text}-${index}`}
+            className="service-landing__inline-link"
             to={part.href}
           >
             {content}
@@ -97,10 +99,10 @@ function ActionCardsSection({
       hasContentCta || (typeof cta === "object" && cta)
     );
 
-    const ctaConfig =
-      (hasContentCta && content.cta) ||
-      (typeof cta === "object" && cta) ||
-      {};
+    const ctaConfig = {
+      ...(hasContentCta ? content.cta : {}),
+      ...(typeof cta === "object" && cta ? cta : {}),
+    };
 
     const getCleanUrl = (val) => {
       if (typeof val === "string") return val.trim();
@@ -141,7 +143,8 @@ function ActionCardsSection({
   const sliderRef = useRef(null);
   const autoplayPausedRef = useRef(false);
 
-  const itemCount = content?.items?.length || 0;
+  const items = content?.items || content?.cards || [];
+  const itemCount = items.length;
 
   const scrollSlider = useCallback(
     (direction) => {
@@ -223,7 +226,7 @@ function ActionCardsSection({
     scrollSlider,
   ]);
 
-  if (!content?.items?.length) return null;
+  if (!itemCount) return null;
 
   const resolvedColumns =
     itemCount === 3
@@ -480,7 +483,7 @@ function ActionCardsSection({
               ref={sliderRef}
               className={`service-landing__action-grid is-${resolvedColumns} is-slider`}
             >
-              {(content?.items || []).map((item) => (
+              {items.map((item) => (
                 <div
                   className="service-landing__action-slide"
                   key={item.title}
@@ -492,24 +495,24 @@ function ActionCardsSection({
           ) : (
             <div
               className={`service-landing__action-grid is-${resolvedColumns}${
-                content?.items?.length === 5 && resolvedColumns === "three"
+                itemCount === 5 && resolvedColumns === "three"
                   ? " has-5-items"
                   : ""
               }${
-                content?.items?.length === 7 && resolvedColumns === "four"
+                itemCount === 7 && resolvedColumns === "four"
                   ? " has-7-items"
                   : ""
               }${
-                content?.items?.length === 6 && resolvedColumns === "four"
+                itemCount === 6 && resolvedColumns === "four"
                   ? " has-6-items"
                   : ""
               }${
-                content?.items?.length === 5 && resolvedColumns === "four"
+                itemCount === 5 && resolvedColumns === "four"
                   ? " has-5-items"
                   : ""
               }`}
             >
-              {(content?.items || []).map((item, index) => (
+              {items.map((item, index) => (
                 <ScrollSlide
                   direction="up"
                   delay={(index % 4) * 0.06}

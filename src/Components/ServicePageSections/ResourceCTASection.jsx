@@ -6,52 +6,58 @@ import WhatsappIconButton from "../Buttons/WhatsappIconButton";
 function ResourceCTASection({ content, tone, onAction }) {
   if (!content) return null;
 
+  const actionLabel = content.actionLabel || content.cta?.label;
+  const actionHref = content.actionHref || content.cta?.href;
+
   const hasContent =
     Boolean(content.title) ||
     Boolean(content.description) ||
-    Boolean(content.actionLabel);
+    Boolean(actionLabel);
 
   if (!hasContent) return null;
 
   const effectiveTone = content.tone || tone || "dark";
-  const hasAction = Boolean(content.actionLabel && (content.actionHref || onAction));
+  const hasAction = Boolean(actionLabel && (actionHref || onAction));
 
   const isExternal =
     content.external ||
     (content.openInNewTab !== false &&
-      (content.openInNewTab || /^https?:\/\//i.test(content.actionHref || "")));
+      (content.openInNewTab || /^https?:\/\//i.test(actionHref || "")));
 
   const isWhatsapp =
     Boolean(content.isWhatsapp) ||
-    /whatsapp|wa\.me/i.test(content.actionHref || "");
+    /whatsapp|wa\.me/i.test(actionHref || "");
+
+  const buttonClass =
+    content.buttonClass || "service-landing__resource-cta-button";
 
   const renderAction = () => {
     if (!hasAction) return null;
 
-    if (content.actionHref) {
+    if (actionHref) {
       if (isWhatsapp) {
-        return <WhatsappIconButton whatsapp={content.actionHref} />;
+        return <WhatsappIconButton whatsapp={actionHref} />;
       }
 
       if (isExternal) {
         return (
           <a
-            className="service-landing__resource-cta-button"
-            href={content.actionHref}
+            className={buttonClass}
+            href={actionHref}
             target="_blank"
             rel="noopener noreferrer"
           >
-            {content.actionLabel}
+            {actionLabel}
           </a>
         );
       }
 
       return (
         <Link
-          className="service-landing__resource-cta-button"
-          to={content.actionHref}
+          className={buttonClass}
+          to={actionHref}
         >
-          {content.actionLabel}
+          {actionLabel}
         </Link>
       );
     }
@@ -60,10 +66,10 @@ function ResourceCTASection({ content, tone, onAction }) {
       return (
         <button
           type="button"
-          className="service-landing__resource-cta-button"
+          className={buttonClass}
           onClick={() => onAction(content.bookingLabel || content.title)}
         >
-          {content.actionLabel}
+          {actionLabel}
         </button>
       );
     }

@@ -318,6 +318,140 @@ function ServiceIcon({ name = "wrench" }) {
           <path d="M12 8v8M10 10.5c.5-.8 1.4-1 2-1 1.2 0 2 .6 2 1.5s-.8 1.5-2 1.8c-1.2.3-2 .9-2 1.8 0 .9.8 1.4 2 1.4.8 0 1.6-.3 2-1" />
         </svg>
       );
+    case "clock-fast":
+      return (
+        <svg {...commonProps}>
+          <circle cx="12" cy="12" r="9" />
+          <path d="M12 7v5l3 1.5" />
+          <path d="M2 9h2M1 14h3M3 19h2" />
+        </svg>
+      );
+    case "heart-hand":
+      return (
+        <svg {...commonProps}>
+          <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+        </svg>
+      );
+    case "calendar-check":
+      return (
+        <svg {...commonProps}>
+          <rect x="3" y="4" width="18" height="18" rx="2" />
+          <path d="M16 2v4M8 2v4M3 10h18" />
+          <path d="m9 16 2 2 4-4" />
+        </svg>
+      );
+    case "user-check":
+    case "users-gear":
+      return (
+        <svg {...commonProps}>
+          <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+          <circle cx="9" cy="7" r="4" />
+          <path d="m16 11 2 2 4-4" />
+        </svg>
+      );
+    case "alert-triangle":
+      return (
+        <svg {...commonProps}>
+          <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z" />
+          <line x1="12" y1="9" x2="12" y2="13" />
+          <line x1="12" y1="17" x2="12.01" y2="17" />
+        </svg>
+      );
+    case "arrow-up-right":
+      return (
+        <svg {...commonProps}>
+          <line x1="7" y1="17" x2="17" y2="7" />
+          <polyline points="7 7 17 7 17 17" />
+        </svg>
+      );
+    case "coins":
+      return (
+        <svg {...commonProps}>
+          <circle cx="8" cy="8" r="6" />
+          <path d="M18.09 10.37A6 6 0 1 1 10.34 18" />
+          <path d="M7 6h1v4" />
+          <path d="m16.71 13.88.7.71-2.82 2.82" />
+        </svg>
+      );
+    case "droplet-slash":
+      return (
+        <svg {...commonProps}>
+          <path d="M12 2.69l5.66 5.66a8 8 0 0 1-2.28 12.37M8.62 8.62L6.34 10.9a8 8 0 0 0 8.04 8.04" />
+          <line x1="2" y1="2" x2="22" y2="22" />
+        </svg>
+      );
+    case "droplets":
+      return (
+        <svg {...commonProps}>
+          <path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z" />
+          <path d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97" />
+        </svg>
+      );
+    case "file-text":
+      return (
+        <svg {...commonProps}>
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+          <polyline points="14 2 14 8 20 8" />
+          <line x1="16" y1="13" x2="8" y2="13" />
+          <line x1="16" y1="17" x2="8" y2="17" />
+          <polyline points="10 9 9 9 8 9" />
+        </svg>
+      );
+    case "settings":
+      return (
+        <svg {...commonProps}>
+          <circle cx="12" cy="12" r="3" />
+          <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z" />
+        </svg>
+      );
+    case "snowflake-slash":
+      return (
+        <svg {...commonProps}>
+          <path d="M12 2v20M2 12h20M20 16l-4-4 4-4M4 8l4 4-4 4" />
+          <line x1="2" y1="2" x2="22" y2="22" />
+        </svg>
+      );
+    case "spray-can":
+      return (
+        <svg {...commonProps}>
+          <rect x="5" y="10" width="10" height="12" rx="2" />
+          <path d="M10 6h4l2 4H8l2-4zM10 2v4" />
+          <circle cx="17" cy="5" r="1" />
+          <circle cx="21" cy="7" r="1" />
+          <circle cx="19" cy="3" r="1" />
+        </svg>
+      );
+    case "thermometer-sun":
+      return (
+        <svg {...commonProps}>
+          <path d="M12 9a4 4 0 0 0-2 7.5v3.5a2 2 0 0 0 4 0v-3.5A4 4 0 0 0 12 9z" />
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
+        </svg>
+      );
+    case "volume-2":
+      return (
+        <svg {...commonProps}>
+          <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
+          <path d="M15.54 8.46a5 5 0 0 1 0 7.07M19.07 4.93a10 10 0 0 1 0 14.14" />
+        </svg>
+      );
+    case "wallet":
+      return (
+        <svg {...commonProps}>
+          <path d="M21 12V7H5a2 2 0 0 1 0-4h14v4" />
+          <path d="M3 5v14a2 2 0 0 0 2 2h16v-5" />
+          <path d="M18 12a2 2 0 0 0 0 4h4v-4z" />
+        </svg>
+      );
+    case "zap-off":
+      return (
+        <svg {...commonProps}>
+          <polyline points="12.41 6.75 13 2 10.57 4.92" />
+          <polyline points="18.57 12.91 21 10 15.66 10" />
+          <polyline points="8 8 3 14 12 14 11 22 16 16" />
+          <line x1="2" y1="2" x2="22" y2="22" />
+        </svg>
+      );
     default:
       return (
         <svg {...commonProps}>

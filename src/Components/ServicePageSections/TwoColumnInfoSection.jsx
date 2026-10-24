@@ -45,6 +45,12 @@ function RichText({ content }) {
         const isExternal =
           part.external === true || /^https?:\/\//i.test(part.href);
 
+        const linkContent = part.strong ? (
+          <strong>{part.text}</strong>
+        ) : (
+          part.text
+        );
+
         return isExternal ? (
           <a
             key={index}
@@ -53,7 +59,7 @@ function RichText({ content }) {
             target={part.newTab === false ? undefined : "_blank"}
             rel={part.newTab === false ? undefined : "noopener noreferrer"}
           >
-            {part.text}
+            {linkContent}
           </a>
         ) : (
           <Link
@@ -61,7 +67,7 @@ function RichText({ content }) {
             className="service-landing__inline-link"
             to={part.href}
           >
-            {part.text}
+            {linkContent}
           </Link>
         );
       }

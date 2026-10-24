@@ -1,4 +1,5 @@
-import { memo, useMemo, useState, useEffect, useCallback } from "react";
+import { Fragment, memo, useMemo, useState, useEffect, useCallback } from "react";
+import { Link } from "react-router-dom";
 import {
   getCloudflareImageSrcSet,
   getCloudflareImageUrl,
@@ -8,12 +9,72 @@ import WhatsAppIcon from "./WhatsAppIcon";
 import CallNowButton from "../Buttons/CallNowButton";
 import WhatsappIconButton from "../Buttons/WhatsappIconButton";
 
-function EmbeddedVideoSection({ content, tone = "dark", showCta, cta, contact, videoSide }) {
-  const isCtaEnabled = Boolean(
-    content?.showCta === false
-      ? false
-      : (content?.showCta ?? showCta ?? (content?.cta || cta))
+
+function RichText({ value, as: Tag = "p", className }) {
+  if (!value) return null;
+
+  if (typeof value === "string") {
+    return <Tag className={className}>{value}</Tag>;
+  }
+
+  if (!value.parts?.length) return null;
+
+  return (
+    <Tag className={className}>
+      {value.parts.map((part, index) => {
+        if (typeof part === "string") {
+          return <Fragment key={index}>{part}</Fragment>;
+        }
+
+        if (!part?.text) return null;
+
+        const elContent = part.strong ? (
+          <strong>{part.text}</strong>
+        ) : (
+          part.text
+        );
+
+        if (!part.href) {
+          return <Fragment key={`${part.text}-${index}`}>{elContent}</Fragment>;
+        }
+
+        if (part.external) {
+          return (
+            <a
+              key={`${part.text}-${index}`}
+              className="service-landing__inline-link"
+              href={part.href}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {elContent}
+            </a>
+          );
+        }
+
+        return (
+          <Link
+            key={`${part.text}-${index}`}
+            className="service-landing__inline-link"
+            to={part.href}
+          >
+            {elContent}
+          </Link>
+        );
+      })}
+    </Tag>
   );
+}
+
+function EmbeddedVideoSection({ content, tone = "dark", showCta, cta, contact, videoSide }) {
+  const hasExplicitShowCta = typeof showCta === "boolean";
+  const isCtaEnabled = hasExplicitShowCta
+    ? showCta
+    : Boolean(
+        content?.showCta !== undefined
+          ? content.showCta
+          : (content?.cta || cta)
+      );
 
   let phoneUrl = "";
   let whatsappUrl = "";
@@ -23,12 +84,12 @@ function EmbeddedVideoSection({ content, tone = "dark", showCta, cta, contact, v
       typeof content?.cta === "object" && content?.cta
     );
     const hasExplicitCta = Boolean(
-      hasContentCta || (typeof cta === "object" && cta)
+      (typeof cta === "object" && cta) || hasContentCta
     );
 
     const ctaConfig =
-      (hasContentCta && content.cta) ||
       (typeof cta === "object" && cta) ||
+      (hasContentCta && content.cta) ||
       {};
 
     const getCleanUrl = (val) => {
@@ -216,7 +277,7 @@ function EmbeddedVideoSection({ content, tone = "dark", showCta, cta, contact, v
 
             {content?.lead ? (
               <ScrollSlide direction="up" delay={0.12}>
-                <p className="service-landing__video-description">{content.lead}</p>
+                <RichText className="service-landing__video-description" value={content.lead} />
               </ScrollSlide>
             ) : null}
 
@@ -247,7 +308,7 @@ function EmbeddedVideoSection({ content, tone = "dark", showCta, cta, contact, v
 
             {content?.conclusion ? (
               <ScrollSlide direction="up" delay={0.18}>
-                <p className="service-landing__video-description">{content.conclusion}</p>
+                <RichText className="service-landing__video-description" value={content.conclusion} />
               </ScrollSlide>
             ) : null}
 

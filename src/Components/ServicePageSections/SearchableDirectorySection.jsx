@@ -64,10 +64,10 @@ function SearchableDirectorySection({
       hasContentCta || (typeof cta === "object" && cta)
     );
 
-    const ctaConfig =
-      (hasContentCta && content.cta) ||
-      (typeof cta === "object" && cta) ||
-      {};
+    const ctaConfig = {
+      ...(hasContentCta ? content.cta : {}),
+      ...(typeof cta === "object" && cta ? cta : {}),
+    };
 
     const getCleanUrl = (val) => {
       if (typeof val === "string") return val.trim();

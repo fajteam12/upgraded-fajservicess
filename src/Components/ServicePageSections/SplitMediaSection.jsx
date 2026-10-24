@@ -68,10 +68,10 @@ function SplitMediaSection({
       hasContentCta || (typeof cta === "object" && cta)
     );
 
-    const ctaConfig =
-      (hasContentCta && content.cta) ||
-      (typeof cta === "object" && cta) ||
-      {};
+    const ctaConfig = {
+      ...(hasContentCta ? content.cta : {}),
+      ...(typeof cta === "object" && cta ? cta : {}),
+    };
 
     const getCleanUrl = (val) => {
       if (typeof val === "string") return val.trim();
@@ -129,6 +129,12 @@ function SplitMediaSection({
     : image.srcSet || undefined;
   const effectiveImageSide = imageSide || (content.imageSide === "left" ? "left" : "right");
 
+  const checklistItems =
+    (Array.isArray(content.checklist) && content.checklist) ||
+    (Array.isArray(content.causes) && content.causes) ||
+    (Array.isArray(content.bullets) && content.bullets) ||
+    (Array.isArray(content.items) && typeof content.items[0] === "string" ? content.items : null);
+
   return (
     <section
       className={`service-landing__section service-landing__media-section is-${tone}`}
@@ -149,6 +155,37 @@ function SplitMediaSection({
             </p>
           ))}
 
+          {content.paragraph && (
+            <p className="service-landing__media-paragraph">
+              {renderParagraphContent(content.paragraph, "p-main")}
+            </p>
+          )}
+
+          {content.listTitle && (
+            <p className="service-landing__media-list-title">
+              <strong>{content.listTitle}</strong>
+            </p>
+          )}
+
+          {checklistItems?.length > 0 && (
+            <ul className="service-landing__media-checklist">
+              {checklistItems.map((item, idx) => (
+                <li key={idx}>
+                  <span className="service-landing__media-check" aria-hidden="true">
+                    {"\u2713"}
+                  </span>
+                  <span>{typeof item === "string" ? item : item.title || item.text}</span>
+                </li>
+              ))}
+            </ul>
+          )}
+
+          {content.conclusion && (
+            <p className="service-landing__media-paragraph" style={{ marginTop: "16px" }}>
+              {renderParagraphContent(content.conclusion, "p-conclusion")}
+            </p>
+          )}
+
           {content.notice && (
             <div className="service-landing__media-notice">
               <ServiceIcon name={content.notice.icon || "check"} />
@@ -156,7 +193,7 @@ function SplitMediaSection({
             </div>
           )}
 
-          {content.items?.length > 0 && (
+          {content.items?.length > 0 && typeof content.items[0] === "object" && content.items[0].description && (
             <div
               className="service-landing__media-items"
               style={{ "--service-media-columns": content.columns || 2 }}

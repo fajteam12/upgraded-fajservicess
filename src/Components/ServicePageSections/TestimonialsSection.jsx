@@ -44,9 +44,31 @@ function TestimonialsSection({
   const sliderRef = useRef(null);
   const autoplayPausedRef = useRef(false);
   const [activeIndex, setActiveIndex] = useState(0);
+  const [pageCount, setPageCount] = useState(1);
 
   const items = content?.items || [];
   const itemCount = items.length;
+
+  const updateLayout = useCallback(() => {
+    const slider = sliderRef.current;
+    if (!slider) return;
+
+    const firstSlide = slider.querySelector(".service-landing__testimonial-slide");
+    if (!firstSlide) return;
+
+    const slideWidth = firstSlide.getBoundingClientRect().width;
+    const styles = window.getComputedStyle(slider);
+    const gap = parseFloat(styles.columnGap || styles.gap || "24");
+    const perView = Math.max(1, Math.round((slider.clientWidth + gap) / (slideWidth + gap)));
+    const pages = Math.ceil(itemCount / perView);
+    setPageCount(pages);
+  }, [itemCount]);
+
+  useEffect(() => {
+    updateLayout();
+    window.addEventListener("resize", updateLayout);
+    return () => window.removeEventListener("resize", updateLayout);
+  }, [updateLayout]);
 
   const scrollSlider = useCallback(
     (direction) => {
@@ -59,22 +81,25 @@ function TestimonialsSection({
       const slideWidth = firstSlide.getBoundingClientRect().width;
       const styles = window.getComputedStyle(slider);
       const gap = parseFloat(styles.columnGap || styles.gap || "24");
-      const scrollStep = slideWidth + gap;
+      const perView = Math.max(1, Math.round((slider.clientWidth + gap) / (slideWidth + gap)));
+      const pageSize = perView * (slideWidth + gap);
 
       const maxScroll = slider.scrollWidth - slider.clientWidth;
+      if (maxScroll <= 5) return;
+
       const currentScroll = slider.scrollLeft;
 
-      if (loop && direction > 0 && currentScroll >= maxScroll - 10) {
+      if (loop && direction > 0 && currentScroll >= maxScroll - 15) {
         slider.scrollTo({ left: 0, behavior: "smooth" });
         return;
       }
 
-      if (loop && direction < 0 && currentScroll <= 10) {
+      if (loop && direction < 0 && currentScroll <= 15) {
         slider.scrollTo({ left: maxScroll, behavior: "smooth" });
         return;
       }
 
-      slider.scrollBy({ left: direction * scrollStep, behavior: "smooth" });
+      slider.scrollBy({ left: direction * pageSize, behavior: "smooth" });
     },
     [loop]
   );
@@ -89,15 +114,17 @@ function TestimonialsSection({
     const slideWidth = firstSlide.getBoundingClientRect().width;
     const styles = window.getComputedStyle(slider);
     const gap = parseFloat(styles.columnGap || styles.gap || "24");
-    const step = slideWidth + gap;
+    const perView = Math.max(1, Math.round((slider.clientWidth + gap) / (slideWidth + gap)));
+    const pageSize = perView * (slideWidth + gap);
+    const pages = Math.ceil(itemCount / perView);
 
-    if (step > 0) {
-      const idx = Math.round(slider.scrollLeft / step);
-      setActiveIndex(Math.max(0, Math.min(idx, itemCount - 1)));
+    if (pageSize > 0) {
+      const page = Math.round(slider.scrollLeft / pageSize);
+      setActiveIndex(Math.max(0, Math.min(page, pages - 1)));
     }
   }, [itemCount]);
 
-  const scrollToSlide = useCallback((index) => {
+  const scrollToSlide = useCallback((pageIndex) => {
     const slider = sliderRef.current;
     if (!slider) return;
 
@@ -107,13 +134,16 @@ function TestimonialsSection({
     const slideWidth = firstSlide.getBoundingClientRect().width;
     const styles = window.getComputedStyle(slider);
     const gap = parseFloat(styles.columnGap || styles.gap || "24");
-    const targetLeft = index * (slideWidth + gap);
+    const perView = Math.max(1, Math.round((slider.clientWidth + gap) / (slideWidth + gap)));
+    const pageSize = perView * (slideWidth + gap);
+    const maxScroll = slider.scrollWidth - slider.clientWidth;
 
+    const targetLeft = Math.min(pageIndex * pageSize, maxScroll);
     slider.scrollTo({ left: targetLeft, behavior: "smooth" });
   }, []);
 
   useEffect(() => {
-    if (!autoplay || itemCount <= 3) return;
+    if (!autoplay || pageCount <= 1) return;
 
     const timer = setInterval(() => {
       if (!autoplayPausedRef.current) {
@@ -122,7 +152,7 @@ function TestimonialsSection({
     }, autoplayDelay);
 
     return () => clearInterval(timer);
-  }, [autoplay, autoplayDelay, itemCount, scrollSlider]);
+  }, [autoplay, autoplayDelay, pageCount, scrollSlider]);
 
   if (!itemCount) return null;
 
@@ -138,7 +168,7 @@ function TestimonialsSection({
             <SectionHeader content={content} light={tone === "dark"} />
           </div>
 
-          {itemCount > 1 && (
+          {pageCount > 1 && (
             <div className="service-landing__testimonials-nav">
               <button
                 type="button"
@@ -185,7 +215,7 @@ function TestimonialsSection({
           )}
         </div>
 
-        {/* 3-Slide Carousel Track */}
+        {/* Carousel Track */}
         <div
           className="service-landing__testimonials-slider-track"
           ref={sliderRef}
@@ -204,9 +234,9 @@ function TestimonialsSection({
           }}
         >
           {items.map((item, index) => {
-            const authorName = item.title || item.name || "Satisfied Client";
-            const authorRole = item.subtitle || item.role || item.badge || "Verified Customer";
-            const reviewText = item.description || item.feedback || item.comment || "";
+            const authorName = item.author || item.name || item.title || "Satisfied Client";
+            const authorRole = item.role || item.subtitle || item.subTitle || item.badge || "Verified Customer";
+            const reviewText = item.quote || item.content || item.description || item.desc || item.feedback || item.comment || item.review || item.text || "";
             const initials = getInitials(authorName);
 
             return (
@@ -280,9 +310,9 @@ function TestimonialsSection({
         </div>
 
         {/* Carousel Pagination Dots */}
-        {itemCount > 1 && (
+        {pageCount > 1 && (
           <div className="service-landing__testimonials-dots" role="tablist">
-            {items.map((_, i) => (
+            {Array.from({ length: pageCount }).map((_, i) => (
               <button
                 key={i}
                 type="button"
@@ -290,7 +320,7 @@ function TestimonialsSection({
                   activeIndex === i ? "is-active" : ""
                 }`}
                 onClick={() => scrollToSlide(i)}
-                aria-label={`Go to testimonial ${i + 1}`}
+                aria-label={`Go to testimonial page ${i + 1}`}
                 role="tab"
                 aria-selected={activeIndex === i}
               />

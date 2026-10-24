@@ -37,8 +37,13 @@ export default function AcRepairInBurDubai() {
   const { modalOpen, selectedItem, openBooking, closeBooking, bookingState } =
     useBookingRequest({ content: pageData.booking, contact: pageData.contact });
 
-  const whatsappCta = {
+  const callAndWhatsappCta = {
     phone: `tel:+${pageData.contact.phone}`,
+    whatsapp: `https://api.whatsapp.com/send?phone=+${pageData.contact.whatsapp}&text=Hello`,
+  };
+
+  const whatsappOnlyCta = {
+    phone: "",
     whatsapp: `https://api.whatsapp.com/send?phone=+${pageData.contact.whatsapp}&text=Hello`,
   };
 
@@ -72,16 +77,14 @@ export default function AcRepairInBurDubai() {
           tone="soft"
           imageSide="right"
           showCta={true}
-          cta={whatsappCta}
+          cta={callAndWhatsappCta}
           contact={pageData.contact}
         />
 
         {/* 3. Section Showing AC Unit Service: Which signs show the AC needs service? */}
         <ChecklistSection
           content={pageData.commonSigns}
-          contact={pageData.contact}
-          showCta={true}
-          cta={whatsappCta}
+          showCta={false}
           tone="white"
         />
 
@@ -92,8 +95,7 @@ export default function AcRepairInBurDubai() {
         <SplitMediaSection
           content={pageData.serviceOverview}
           contact={pageData.contact}
-          showCta={true}
-          cta={whatsappCta}
+          showCta={false}
           tone="soft"
           imageSide="left"
         />
@@ -106,14 +108,13 @@ export default function AcRepairInBurDubai() {
           columns="three"
           onAction={openBooking}
           showCta={true}
-          cta={whatsappCta}
+          cta={whatsappOnlyCta}
         />
 
         {/* 7. Why is AC Maintenance Service Important in Bur Dubai? (Image on RIGHT) */}
         <SplitMediaSection
           content={pageData.maintenanceImportance}
-          showCta={true}
-          cta={whatsappCta}
+          showCta={false}
           contact={pageData.contact}
           tone="soft"
           imageSide="right"
@@ -124,8 +125,7 @@ export default function AcRepairInBurDubai() {
           content={pageData.maintenanceImportanceCards}
           tone="white"
           columns="three"
-          showCta={true}
-          cta={whatsappCta}
+          showCta={false}
           contact={pageData.contact}
         />
 
@@ -134,7 +134,7 @@ export default function AcRepairInBurDubai() {
           content={pageData.commonProblems}
           contact={pageData.contact}
           showCta={true}
-          cta={whatsappCta}
+          cta={callAndWhatsappCta}
           tone="soft"
           columns="four"
         />
@@ -144,18 +144,24 @@ export default function AcRepairInBurDubai() {
           content={pageData.video}
           tone="white"
           videoSide="left"
+          showCta={false}
         />
 
         {/* 11. Benefits (above Choose Us) */}
-        <MaintenanceBenefits {...pageData.benefits} tone="soft" />
+        <MaintenanceBenefits
+          {...pageData.benefits}
+          showCta={true}
+          cta={whatsappOnlyCta}
+          contact={pageData.contact}
+          tone="soft"
+        />
 
         {/* 12. Choose Us */}
         <ActionCardsSection
           content={pageData.whyChooseUs}
           tone="white"
           columns="three"
-          showCta={true}
-          cta={whatsappCta}
+          showCta={false}
           contact={pageData.contact}
         />
 
@@ -166,8 +172,7 @@ export default function AcRepairInBurDubai() {
         <DetailColumnsSection
           content={pageData.sparePartsRepair}
           contact={pageData.contact}
-          showCta={true}
-          cta={whatsappCta}
+          showCta={false}
           tone="white"
         />
 
@@ -176,8 +181,7 @@ export default function AcRepairInBurDubai() {
           content={pageData.brands}
           tone="soft"
           onAction={openBooking}
-          showCta={true}
-          cta={whatsappCta}
+          showCta={false}
           contact={pageData.contact}
         />
 

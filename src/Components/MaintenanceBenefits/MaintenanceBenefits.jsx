@@ -4,6 +4,8 @@ import {
   ScrollZoomText,
 } from "../Animations/ScrollAnimation";
 import ServiceIcon from "../ServicePageSections/ServiceIcon";
+import CallNowButton from "../Buttons/CallNowButton";
+import WhatsappIconButton from "../Buttons/WhatsappIconButton";
 import "./MaintenanceBenefits.css";
 
 function MaintenanceBenefits({
@@ -13,10 +15,54 @@ function MaintenanceBenefits({
   stats = [],
   benefits = [],
   tone = "soft",
+  showCta,
+  cta,
+  contact,
 }) {
   const hasEyebrow = Boolean(eyebrow?.trim());
   const hasTitle = Boolean(title?.trim());
   const hasDescription = Boolean(description?.trim());
+
+  const hasExplicitShowCta = typeof showCta === "boolean";
+  const isCtaEnabled = hasExplicitShowCta
+    ? showCta
+    : Boolean(cta);
+
+  let phoneUrl = "";
+  let whatsappUrl = "";
+
+  if (isCtaEnabled) {
+    const ctaConfig = (typeof cta === "object" && cta) || {};
+
+    const getCleanUrl = (val) => {
+      if (typeof val === "string") return val.trim();
+      return "";
+    };
+
+    if ("phone" in ctaConfig) {
+      phoneUrl = getCleanUrl(ctaConfig.phone);
+    } else if (!cta && contact?.phone) {
+      phoneUrl = `tel:+${String(contact.phone).replace(/[^0-9]/g, "")}`;
+    }
+
+    if (phoneUrl && !phoneUrl.startsWith("tel:") && !phoneUrl.startsWith("http")) {
+      phoneUrl = `tel:+${phoneUrl.replace(/[^0-9]/g, "")}`;
+    }
+
+    if ("whatsapp" in ctaConfig) {
+      whatsappUrl = getCleanUrl(ctaConfig.whatsapp);
+    } else if (contact?.whatsapp) {
+      whatsappUrl = `https://api.whatsapp.com/send?phone=+${String(contact.whatsapp).replace(/[^0-9]/g, "")}&text=Hello`;
+    }
+
+    if (whatsappUrl && !whatsappUrl.startsWith("http")) {
+      whatsappUrl = `https://api.whatsapp.com/send?phone=+${whatsappUrl.replace(/[^0-9]/g, "")}&text=Hello`;
+    }
+  }
+
+  const hasPhone = Boolean(phoneUrl);
+  const hasWhatsapp = Boolean(whatsappUrl);
+  const showAnyCta = isCtaEnabled && (hasPhone || hasWhatsapp);
 
   return (
     <section
@@ -66,6 +112,15 @@ function MaintenanceBenefits({
                       <span>{stat.label}</span>
                     </div>
                   ))}
+                </div>
+              </ScrollSlide>
+            )}
+
+            {showAnyCta && (
+              <ScrollSlide direction="up" delay={0.28}>
+                <div className="maintenance-benefits__actions service-landing__cta-actions">
+                  {hasPhone && <CallNowButton phone={phoneUrl} />}
+                  {hasWhatsapp && <WhatsappIconButton whatsapp={whatsappUrl} />}
                 </div>
               </ScrollSlide>
             )}

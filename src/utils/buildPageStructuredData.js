@@ -23,10 +23,10 @@ export default function buildPageStructuredData({
       "@type": "FAQPage",
       mainEntity: faqItems.map((item) => ({
         "@type": "Question",
-        name: item.question,
+        name: item.question || item.title,
         acceptedAnswer: {
           "@type": "Answer",
-          text: item.answer,
+          text: item.answer || item.desc,
         },
       })),
     });

@@ -2,6 +2,20 @@ import { memo } from "react";
 import { ScrollSlide } from "../Animations/ScrollAnimation";
 import SectionHeader from "./SectionHeader";
 
+function formatPlanTitle(title) {
+  if (!title) return "";
+  const match = String(title).match(/^(.*?)(\s*\([^)]+\))\s*$/);
+  if (match) {
+    return (
+      <>
+        <span className="service-landing__contract-name">{match[1]}</span>{" "}
+        <span className="service-landing__contract-duration">{match[2].trim()}</span>
+      </>
+    );
+  }
+  return title;
+}
+
 function PlanCardsSection({ content, onAction, tone = "soft", dark }) {
   if (!content?.plans?.length) return null;
 
@@ -37,7 +51,7 @@ function PlanCardsSection({ content, onAction, tone = "soft", dark }) {
                 <div className="service-landing__contract-icon" aria-hidden="true">
                   {String(index + 1).padStart(2, "0")}
                 </div>
-                <h3>{plan.title}</h3>
+                <h3>{formatPlanTitle(plan.title)}</h3>
                 <p>{plan.tagline}</p>
                 <ul>
                   {(plan.features || []).map((feature) => (
