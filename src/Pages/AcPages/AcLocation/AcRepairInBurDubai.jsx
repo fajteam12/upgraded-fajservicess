@@ -18,6 +18,7 @@ import {
   SearchableDirectorySection,
   SplitMediaSection,
   TestimonialsSection,
+  TwoColumnInfoSection,
   useBookingRequest,
 } from "../../../Components/ServicePageSections";
 import "../../../Components/ServicePageSections/ServicePageSections.css";
@@ -63,6 +64,14 @@ export default function AcRepairInBurDubai() {
           tone="white"
         />
         <BreadCumb />
+
+        {/* 1. Paragraph Section under Breadcrumb */}
+        <TwoColumnInfoSection
+          content={pageData.overview}
+          tone="soft"
+          showCta={false}
+          contact={pageData.contact}
+        />
 
         {/* 1. Transparent Pricing Section */}
         <PricingCardsSection

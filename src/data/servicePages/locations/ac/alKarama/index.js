@@ -349,36 +349,46 @@ const commonSignsData = {
 };
 
 const videoData = {
-  id: "ac-service-video",
-  title: "Emergency AC Repair Service in Al Karama",
-  description:
-    "Air conditioners can sometimes break down unexpectedly, especially during hot weather, causing discomfort at home or in the office. In such situations, FAJ Technical Services L.L.C is here to help you quickly and restore your comfort without wasting time. Our team offers assistance for: air conditioner not cooling, air conditioner not starting, water leakage, electrical issues, thermostat failure, compressor breakdown, weak airflow, and strange noises.",
-  frameTitle: "Air-conditioning repair and maintenance service video in Al Karama",
-  videoId: "prUR0-lZlzg",
-  videoSide: "left",
-  image: {
-    id: "indoor-ac-servicing",
-    src: "/img/indoor-ac-servicing.webp",
-    alt: "FAJ AC technician providing express and emergency AC repair in Al Karama",
-    width: 600,
-    height: 400,
+  "id": "ac-service-video",
+  "title": "Emergency AC Repair Service in Al Karama",
+  "lead": {
+    "parts": [
+      "AC problems can happen suddenly, especially during Dubai's hottest months. A quick repair helps restore comfort and prevents further damage to your cooling system. At ",
+      {
+        "text": "FAJ Technical Services L.L.C",
+        "href": "/"
+      },
+      ", our fast-response team provides immediate support across Al Karama."
+    ]
   },
-  variant: "framed",
-  blockInteraction: true,
-  allowFullScreen: false,
-  parameters: {
-    autoplay: "1",
-    mute: "0",
-    controls: "0",
-    modestbranding: "1",
-    rel: "0",
-    showinfo: "0",
-    loop: "1",
-    playlist: "prUR0-lZlzg",
-    playsinline: "1",
-    cc_load_policy: "0",
-    disablekb: "1",
+  "listTitle": "Our emergency AC repair service covers:",
+  "items": [
+    "AC not cooling",
+    "AC not turning on",
+    "Water leakage",
+    "Electrical faults",
+    "Compressor problems",
+    "Thermostat issues",
+    "Weak airflow",
+    "Unusual noises"
+  ],
+  "conclusion": "Our technicians provide fast assistance for homes, villas, offices, and commercial properties in Al Karama.",
+  "frameTitle": "Air-conditioning repair and maintenance service video in Al Karama",
+  "videoId": "prUR0-lZlzg",
+  "videoSide": "left",
+  "image": {
+    "id": "indoor-ac-servicing",
+    "src": "/img/indoor-ac-servicing.webp",
+    "alt": "FAJ AC technician providing express and emergency AC repair in Al Karama",
+    "width": 600,
+    "height": 400
   },
+  "variant": "framed",
+  "showCta": false,
+  "cta": {
+    "phone": "",
+    "whatsapp": ""
+  }
 };
 
 const maintenanceImportanceData = {

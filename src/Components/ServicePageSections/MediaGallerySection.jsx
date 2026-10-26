@@ -37,18 +37,35 @@ function GalleryImage({ image }) {
 }
 
 function MediaGallerySection({ content, tone = "white" }) {
-  if (!content?.items?.length) return null;
+  const items =
+    content?.items && content.items.length > 0
+      ? content.items
+      : Array.isArray(content?.images)
+      ? content.images.map((img, idx) =>
+          typeof img === "string"
+            ? {
+                title: `AC Service ${idx + 1}`,
+                src: img,
+                alt: content?.title || "AC Service",
+                width: 400,
+                height: 300,
+              }
+            : img
+        )
+      : [];
+
+  if (!items.length) return null;
 
   return (
     <section className={`service-landing__section is-${tone}`} id={content.id}>
       <div className="service-landing__container">
         <SectionHeader content={content} light={tone === "dark"} />
         <div className="service-landing__media-gallery">
-          {content.items.map((item, index) => (
+          {items.map((item, index) => (
             <ScrollSlide
               direction="up"
               delay={(index % 3) * 0.06}
-              key={item.title}
+              key={item.title || index}
             >
               <figure className="service-landing__media-gallery-item">
                 <GalleryImage image={item} />

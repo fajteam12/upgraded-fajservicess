@@ -73,27 +73,28 @@ const heroData = {
 };
 
 const overviewData = {
-  paragraphs: [
+  "id": "overview",
+  "paragraphs": [
     {
-      parts: [
+      "parts": [
         {
-          text: "FAJ Technical Services L.L.C",
-          href: "/",
+          "text": "FAJ Technical Services L.L.C",
+          "href": "/"
         },
-        " has been an AC cleaning, ",
+        " has been providing expert and professional air conditioner services in Dubai since 2010. We provide ",
         {
-          text: "AC maintenance",
-          href: "/services/air-conditioning-repair/ac-service/",
+          "text": "AC repair",
+          "href": "/services/air-conditioning-repair/ac-service/"
         },
-        ", installing air conditioners and AC repair near me in Business Bay since 2010. Our technicians work on both home and office air conditioning systems. They provide effective solutions for all kinds of cooling issues near me in Dubai and the UAE.",
-      ],
-    },
+        " services, cleaning, maintenance, and installation services in Business Bay. We have the expertise to assist you with your air conditioning repair, maintenance, or installation needs."
+      ]
+    }
   ],
-  showCta: true,
-  cta: {
-    phone: "",
-    whatsapp: "https://api.whatsapp.com/send?phone=+971507464712&text=Hello",
-  },
+  "showCta": false,
+  "cta": {
+    "phone": "",
+    "whatsapp": "https://api.whatsapp.com/send?phone=+971507464712&text=Hello"
+  }
 };
 
 const areaOverviewData = {
@@ -353,36 +354,46 @@ const commonSignsData = {
 };
 
 const videoData = {
-  id: "ac-service-video",
-  title: "Emergency AC Repair Service in Business Bay",
-  description:
-    "A sudden AC breakdown can affect comfort, productivity, and indoor air quality. Unexpected AC failures can happen at any time. Fast assistance is available for AC not cooling, water leakage, electrical faults, thermostat problems, weak airflow, unusual sounds, and system not turning on. We provide fast assistance for residential and commercial customers throughout Business Bay and nearby areas.",
-  frameTitle: "Air-conditioning repair and maintenance service video in Business Bay",
-  videoId: "prUR0-lZlzg",
-  videoSide: "left",
-  image: {
-    id: "indoor-ac-servicing",
-    src: "/img/indoor-ac-servicing.webp",
-    alt: "FAJ AC technician providing express and emergency AC repair in Business Bay",
-    width: 600,
-    height: 400,
+  "id": "ac-service-video",
+  "title": "Emergency AC Repair Service in Business Bay",
+  "lead": {
+    "parts": [
+      "AC problems can happen suddenly, especially during Dubai's hottest months. A quick repair helps restore comfort and prevents further damage to your cooling system. At ",
+      {
+        "text": "FAJ Technical Services L.L.C",
+        "href": "/"
+      },
+      ", our fast-response team provides immediate support across Business Bay."
+    ]
   },
-  variant: "framed",
-  blockInteraction: true,
-  allowFullScreen: false,
-  parameters: {
-    autoplay: "1",
-    mute: "0",
-    controls: "0",
-    modestbranding: "1",
-    rel: "0",
-    showinfo: "0",
-    loop: "1",
-    playlist: "prUR0-lZlzg",
-    playsinline: "1",
-    cc_load_policy: "0",
-    disablekb: "1",
+  "listTitle": "Our emergency AC repair service covers:",
+  "items": [
+    "AC not cooling",
+    "AC not turning on",
+    "Water leakage",
+    "Electrical faults",
+    "Compressor problems",
+    "Thermostat issues",
+    "Weak airflow",
+    "Unusual noises"
+  ],
+  "conclusion": "Our technicians provide fast assistance for homes, villas, offices, and commercial properties in Business Bay.",
+  "frameTitle": "Air-conditioning repair and maintenance service video in Business Bay",
+  "videoId": "prUR0-lZlzg",
+  "videoSide": "left",
+  "image": {
+    "id": "indoor-ac-servicing",
+    "src": "/img/indoor-ac-servicing.webp",
+    "alt": "FAJ AC technician providing express and emergency AC repair in Business Bay",
+    "width": 600,
+    "height": 400
   },
+  "variant": "framed",
+  "showCta": false,
+  "cta": {
+    "phone": "",
+    "whatsapp": ""
+  }
 };
 
 const maintenanceImportanceData = {

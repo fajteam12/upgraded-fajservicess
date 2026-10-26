@@ -73,28 +73,28 @@ const heroData = {
 };
 
 const overviewData = {
-  paragraphs: [
+  "id": "overview",
+  "paragraphs": [
     {
-      parts: [
+      "parts": [
         {
-          text: "FAJ Technical Services L.L.C",
-          href: "https://www.fajtechnicalservices.com",
-          external: true,
+          "text": "FAJ Technical Services L.L.C",
+          "href": "/"
         },
-        " has been operating in Dubai since 2010. We provide ",
+        " has been providing expert and professional air conditioner services in Dubai since 2010. We provide ",
         {
-          text: "AC repair",
-          href: "/services/air-conditioning-repair/ac-service/",
+          "text": "AC repair",
+          "href": "/services/air-conditioning-repair/ac-service/"
         },
-        ", maintenance, cleaning, and installation services in Al Satwa and nearby locations. Our technicians handle all types of air conditioning systems in homes, shops, and offices. Fast response and reliable service are always a priority.",
-      ],
-    },
+        " services, cleaning, maintenance, and installation services in Al Satwa. We have the expertise to assist you with your air conditioning repair, maintenance, or installation needs."
+      ]
+    }
   ],
-  showCta: true,
-  cta: {
-    phone: "",
-    whatsapp: "https://api.whatsapp.com/send?phone=+971507464712&text=Hello",
-  },
+  "showCta": false,
+  "cta": {
+    "phone": "",
+    "whatsapp": "https://api.whatsapp.com/send?phone=+971507464712&text=Hello"
+  }
 };
 
 const areaOverviewData = {
@@ -352,36 +352,46 @@ const commonSignsData = {
 };
 
 const videoData = {
-  id: "ac-service-video",
-  title: "Emergency AC Repair in Al Satwa",
-  description:
-    "Air conditioners can fail without warning, especially during peak summer. Emergency support is available for: AC not cooling, compressor breakdown, water leakage, electrical fault, thermostat failure, weak airflow, and unusual noise. Quick response helps restore comfort without delay.",
-  frameTitle: "Air-conditioning repair and maintenance service video in Al Satwa",
-  videoId: "prUR0-lZlzg",
-  videoSide: "left",
-  image: {
-    id: "indoor-ac-servicing",
-    src: "/img/indoor-ac-servicing.webp",
-    alt: "FAJ AC technician providing express and emergency AC repair in Al Satwa",
-    width: 600,
-    height: 400,
+  "id": "ac-service-video",
+  "title": "Emergency AC Repair Service in Al Satwa",
+  "lead": {
+    "parts": [
+      "AC problems can happen suddenly, especially during Dubai's hottest months. A quick repair helps restore comfort and prevents further damage to your cooling system. At ",
+      {
+        "text": "FAJ Technical Services L.L.C",
+        "href": "/"
+      },
+      ", our fast-response team provides immediate support across Al Satwa."
+    ]
   },
-  variant: "framed",
-  blockInteraction: true,
-  allowFullScreen: false,
-  parameters: {
-    autoplay: "1",
-    mute: "0",
-    controls: "0",
-    modestbranding: "1",
-    rel: "0",
-    showinfo: "0",
-    loop: "1",
-    playlist: "prUR0-lZlzg",
-    playsinline: "1",
-    cc_load_policy: "0",
-    disablekb: "1",
+  "listTitle": "Our emergency AC repair service covers:",
+  "items": [
+    "AC not cooling",
+    "AC not turning on",
+    "Water leakage",
+    "Electrical faults",
+    "Compressor problems",
+    "Thermostat issues",
+    "Weak airflow",
+    "Unusual noises"
+  ],
+  "conclusion": "Our technicians provide fast assistance for homes, villas, offices, and commercial properties in Al Satwa.",
+  "frameTitle": "Air-conditioning repair and maintenance service video in Al Satwa",
+  "videoId": "prUR0-lZlzg",
+  "videoSide": "left",
+  "image": {
+    "id": "indoor-ac-servicing",
+    "src": "/img/indoor-ac-servicing.webp",
+    "alt": "FAJ AC technician providing express and emergency AC repair in Al Satwa",
+    "width": 600,
+    "height": 400
   },
+  "variant": "framed",
+  "showCta": false,
+  "cta": {
+    "phone": "",
+    "whatsapp": ""
+  }
 };
 
 const maintenanceImportanceData = {

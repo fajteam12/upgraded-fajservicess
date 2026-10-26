@@ -867,74 +867,104 @@ const beforeAfterData = {
   },
 };
 
+const defaultBrandDescription =
+  "Professional repair, cleaning and planned maintenance for supported air-conditioning systems.";
+
+const linkedBrands = [
+  [
+    "Daikin Air Conditioning Repair Services",
+    "daikin",
+    'Daikin air conditioning systems is a leading Japanese manufacturer. Founded in 1924, the company has built a strong international presence by focusing on quality, innovation, and effective communication.',
+  ],
+  [
+    "Gree AC Repair and Service",
+    "gree",
+    "Gree Air Conditioning, founded in 1991 in Zhuhai, is a major global player in air conditioners. Initially focused on AC, it has expanded into home appliances & became China's largest AC manufacturer by 2000.",
+  ],
+  [
+    "O General AC Repair and Maintenance",
+    "o-general",
+    "O General Air Conditioning, formerly part of Fujitsu General Limited, was founded in January, 1936, by Keijiro Yao as Yaou Shoten Co Ltd. The company has since manufactured appliances & air conditioners.",
+  ],
+  [
+    "Mitsubishi AC Service and Repair",
+    "mitsubishi",
+    "Founded in 1954, Mitsubishi Air Conditioning has been producing residential & commercial HVAC (Mr. Slim & City Multi) AC systems for nearly 75 years & is renowned for its reliability & energy efficiency.",
+  ],
+  [
+    "Samsung AC Maintenance Service",
+    "samsung",
+    "Samsung Air Conditioning is a leading brand recognised for innovation since 1969, specialising in air conditioner technology for homes & commercial HVAC systems (including VRF, multi-split & ducted systems).",
+  ],
+  [
+    "York AC Servicing and Repair",
+    "york",
+    "YORK Air Conditioning was established in 1874 as the York Manufacturing Company in Pennsylvania. It began with ice-making machines & later expanded into HVAC, VRF, central AC systems & refrigeration.",
+  ],
+  [
+    "LG AC Maintenance and Service",
+    "lg",
+    "LG Air Conditioning, a division of LG Electronics, has established a legacy of innovation since its founding in 1958. Once Korea's first consumer electronics company, it has evolved into a Smart Life Solution Company.",
+  ],
+  [
+    "Trane HVAC Repair and Maintenance",
+    "trane",
+    "Trane Air Conditioning launched its first AC unit in 1931 & acquired General Electric's Central AC Division in 1982. This acquisition added key features, such as compressors & condensor coil, which are still in products today.",
+  ],
+  [
+    "Carrier AC Repair and Services in Dubai",
+    "carrier",
+    "Carrier Air Conditioning has been leading the way in cooling & heating systems, central, split, package unit and VRF, Carrier Air Conditioning & Refrigeration since 1902, showcasing a long history of innovation & reliability.",
+  ],
+  [
+    "Rheem AC Repair & Service Near Me",
+    "rheem",
+    "Rheem Air Conditioner, founded in 1925 in California, started with steel drums & later shifted to water heaters. In the 1940s & 1950s, the company expanded into AC systems. Now Rheem is leading global HVAC provider known for its innovative solutions.",
+  ],
+  ["SKM AC Maintenance Dubai", 
+    "skm",
+    "S.K.M Air Conditioning LLC (SKM) was established in 1974 in Sharjah, United Arab Emirates, to manufacture heating, ventilation, and air conditioning (HVAC) equipment tailored for the harsh Gulf climates.",
+  ],
+  ["Lennox Air Conditioning Maintenance Service", 
+    "lennox",
+    "Lennox Air Conditioning was established in 1895 when Dave Lennox built the first riveted-steel coal-fired furnace in Marshalltown, Iowa. The company later entered the air conditioning market in the early 1950s.",
+  ],
+  ["Aftron AC Maintenance Service", "aftron"],
+  ["Bryant AC Repair Service Dubai", "bryant"],
+  ["Blue Star AC Repair", "blue-star"],
+  ["Supra AC Maintenance", "supra"],
+  ["Toshiba AC Fix", "toshiba"],
+  ["Super General AC Repair and Services in Dubai", "super-general"],
+  ["Hitachi AC Service", "hitachi"],
+  ["Whirlpool AC Repair", "whirlpool"],
+  ["Daewoo AC Cleaning", "daewoo"],
+].map(([name, slug, description]) => ({
+  name,
+  href: `/services/air-conditioning-repair/brands/${slug}/`,
+  ...(description ? { description } : {}),
+}));
+
+
 const brandsData = {
-  showCta: false,
   id: "brands-directory",
   title: "We specialise in air conditioning services for the following brands",
   description:
-    "Our certified technicians carry diagnostic tools and replacement parts for all major international HVAC brands in JBR:",
-  brands: [
-    {
-      name: "LG",
-      description:
-        "Multi V VRF systems, Dual Inverter split units, and ceiling cassettes.",
-      href: "/services/air-conditioning-repair/brands/lg/",
-    },
-    {
-      name: "Samsung",
-      description:
-        "WindFree split systems, DVM S commercial VRF, and digital inverter systems.",
-      href: "/services/air-conditioning-repair/brands/samsung/",
-    },
-    {
-      name: "York",
-      description:
-        "Ducted split systems, package units, air handling units (AHUs), and air-cooled chillers.",
-      href: "/services/air-conditioning-repair/brands/york/",
-    },
-    {
-      name: "Daikin",
-      description:
-        "Inverter split systems, VRV commercial systems, and energy-saving cooling solutions.",
-      href: "/services/air-conditioning-repair/brands/daikin/",
-    },
-    {
-      name: "Trane",
-      description:
-        "Commercial and residential HVAC troubleshooting, air handler repair and thermostat programming.",
-      href: "/services/air-conditioning-repair/brands/trane/",
-    },
-    {
-      name: "Panasonic",
-      description:
-        "Inverter split system repairs, nanoe-G filter maintenance and fan motor replacement.",
-      href: "/services/air-conditioning-repair/brands/panasonic/",
-    },
-    {
-      name: "Gree",
-      description:
-        "Lomo and Crown series servicing, PCB board troubleshooting and refrigerant leak detection.",
-      href: "/services/air-conditioning-repair/brands/gree/",
-    },
-    {
-      name: "O General",
-      description:
-        "Heavy-duty split and window AC maintenance, coil descaling and capacitor replacements.",
-      href: "/services/air-conditioning-repair/brands/o-general/",
-    },
-    {
-      name: "Mitsubishi",
-      description:
-        "Electric & Heavy Industries split, cassette and VRF maintenance with factory fault tracing.",
-      href: "/services/air-conditioning-repair/brands/mitsubishi/",
-    },
-    {
-      name: "Carrier",
-      description:
-        "Central ducted, package and split system maintenance, duct static-pressure balancing.",
-      href: "/services/air-conditioning-repair/brands/carrier/",
-    },
-  ],
+    "Search supported AC brands. Dedicated brand pages are linked directly from their titles.",
+  defaultItemDescription: defaultBrandDescription,
+  searchLabel: "Search AC brands",
+  searchPlaceholder: "Search air-conditioning brand",
+  emptyMessage:
+    "No matching AC brand was found. Contact us with the model details.",
+  showAllLabel: "Show all brands",
+  showLessLabel: "Show fewer brands",
+  initialCount: 12,
+  actionLabel: "Request AC Service",
+  items: linkedBrands,
+  showCta: false,
+  cta: {
+    phone: "",
+    whatsapp: "",
+  },
 };
 
 const sparePartsRepairData = {
@@ -1012,40 +1042,58 @@ const sparePartsRepairData = {
 };
 
 const galleryData = {
-  id: "work-gallery",
+  id: "ac-service-gallery",
   title: "Gallery",
   description:
-    "Our field teams in action across Dubai - diagnosing chillers, clearing blocked drain lines, deep-cleaning coils and installing high-efficiency compressors.",
-  images: [
+    "A glimpse into our professional AC maintenance, repair, and cleaning services delivered across JBR.",
+  items: [
     {
-      id: "AcService/slide1",
-      src: "https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/AcService/slide1/public",
+      title: "AC Service",
+      id: "ac-service-page/gallery-ac-service",
+      src: "/img/ac-service-page/gallery-ac-service.webp",
       alt: "Ac Service in JBR",
+      width: 400,
+      height: 300,
     },
     {
-      id: "AcService/slide2",
-      src: "https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/AcService/slide2/public",
+      title: "AC Repair",
+      id: "ac-service-page/gallery-ac-repair",
+      src: "/img/ac-service-page/gallery-ac-repair.webp",
       alt: "AC Repair in JBR",
+      width: 400,
+      height: 300,
     },
     {
-      id: "AcService/slide3",
-      src: "https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/AcService/slide3/public",
+      title: "AC Maintenance",
+      id: "ac-service-page/gallery-ac-maintenance",
+      src: "/img/ac-service-page/gallery-ac-maintenance.webp",
       alt: "AC Maintenance in JBR",
+      width: 400,
+      height: 300,
     },
     {
-      id: "AcService/slide4",
-      src: "https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/AcService/slide4/public",
+      title: "AC Cleaning",
+      id: "ac-service-page/gallery-ac-cleaning",
+      src: "/img/ac-service-page/gallery-ac-cleaning.webp",
       alt: "AC Cleaning in JBR",
+      width: 400,
+      height: 300,
     },
     {
-      id: "AcService/slide5",
-      src: "https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/AcService/slide5/public",
+      title: "AC Fixing",
+      id: "ac-service-page/gallery-ac-fixing",
+      src: "/img/ac-service-page/gallery-ac-fixing.webp",
       alt: "AC Fixing in JBR",
+      width: 400,
+      height: 300,
     },
     {
-      id: "AcService/slide6",
-      src: "https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/AcService/slide6/public",
+      title: "AC Gas Filling",
+      id: "ac-service-page/gallery-ac-gas-filling",
+      src: "/img/ac-service-page/gallery-ac-gas-filling.webp",
       alt: "AC Gas Filling in JBR",
+      width: 400,
+      height: 300,
     },
   ],
 };

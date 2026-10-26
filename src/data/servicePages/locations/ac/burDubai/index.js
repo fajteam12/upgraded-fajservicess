@@ -92,12 +92,28 @@ const heroData = {
 };
 
 const overviewData = {
-  paragraphs: [],
-  showCta: true,
-  cta: {
-    phone: "",
-    whatsapp: "https://api.whatsapp.com/send?phone=+971507464712&text=Hello",
-  },
+  "id": "overview",
+  "paragraphs": [
+    {
+      "parts": [
+        {
+          "text": "FAJ Technical Services L.L.C",
+          "href": "/"
+        },
+        " has been providing expert and professional air conditioner services in Dubai since 2010. We provide ",
+        {
+          "text": "AC repair",
+          "href": "/services/air-conditioning-repair/ac-service/"
+        },
+        " services, cleaning, maintenance, and installation services in Bur Dubai. We have the expertise to assist you with your air conditioning repair, maintenance, or installation needs."
+      ]
+    }
+  ],
+  "showCta": false,
+  "cta": {
+    "phone": "",
+    "whatsapp": "https://api.whatsapp.com/send?phone=+971507464712&text=Hello"
+  }
 };
 
 const areaOverviewData = {
