@@ -1,63 +1,92 @@
 [
-  {  
+  {
     "title": "What is the price of AC repair in Al Quoz?",
-    "desc": "The cost will be determined based on the type of AC, the problem and the need for replacement parts. An inspection can help identify the real problem and give an accurate estimate."
+    "desc": "The cost will be determined based on the type of AC, the problem and the need for replacement parts. An inspection can help identify the real problem and give an accurate estimate.",
+    "question": "What is the price of AC repair in Al Quoz?",
+    "answer": "The cost will be determined based on the type of AC, the problem and the need for replacement parts. An inspection can help identify the real problem and give an accurate estimate."
   },
   {
     "title": "How often should I service my AC in Al Quoz?",
-    "desc": "It is recommended that most air conditioning systems get serviced twice a year, in the spring and fall. Regular servicing keeps your AC running efficiently and helps avoid unexpected breakdowns."
+    "desc": "It is recommended that most air conditioning systems get serviced twice a year, in the spring and fall. Regular servicing keeps your AC running efficiently and helps avoid unexpected breakdowns.",
+    "question": "How often should I service my AC in Al Quoz?",
+    "answer": "It is recommended that most air conditioning systems get serviced twice a year, in the spring and fall. Regular servicing keeps your AC running efficiently and helps avoid unexpected breakdowns."
   },
   {
     "title": "Why isn't my air conditioner cooling my home?",
-    "desc": "This may occur due to dirty filters, low gas, clogged coils, thermostat failure or compressor failure. A professional inspection will determine the cause."
+    "desc": "This may occur due to dirty filters, low gas, clogged coils, thermostat failure or compressor failure. A professional inspection will determine the cause.",
+    "question": "Why isn't my air conditioner cooling my home?",
+    "answer": "This may occur due to dirty filters, low gas, clogged coils, thermostat failure or compressor failure. A professional inspection will determine the cause."
   },
   {
     "title": "Are you offering AC services to factories and warehouses at Al Quoz?",
-    "desc": "Yes, we do provide AC repair, cleaning and maintenance services for warehouses, factories, offices & commercial properties in Al Quoz."
+    "desc": "Yes, we do provide AC repair, cleaning and maintenance services for warehouses, factories, offices & commercial properties in Al Quoz.",
+    "question": "Are you offering AC services to factories and warehouses at Al Quoz?",
+    "answer": "Yes, we do provide AC repair, cleaning and maintenance services for warehouses, factories, offices & commercial properties in Al Quoz."
   },
   {
     "title": "What is causing water leakage from the AC?",
-    "desc": "Most often, it is caused by drainage issues, dirty filters, or blocked drain pipes or frozen coils. Repairing the leak promptly will avoid damage to the property."
+    "desc": "Most often, it is caused by drainage issues, dirty filters, or blocked drain pipes or frozen coils. Repairing the leak promptly will avoid damage to the property.",
+    "question": "What is causing water leakage from the AC?",
+    "answer": "Most often, it is caused by drainage issues, dirty filters, or blocked drain pipes or frozen coils. Repairing the leak promptly will avoid damage to the property."
   },
   {
     "title": "Can AC cleaning improve cooling performance?",
-    "desc": "Yes. Cleaning filters and coils lets more air circulate through the system and makes the AC cooler."
+    "desc": "Yes. Cleaning filters and coils lets more air circulate through the system and makes the AC cooler.",
+    "question": "Can AC cleaning improve cooling performance?",
+    "answer": "Yes. Cleaning filters and coils lets more air circulate through the system and makes the AC cooler."
   },
   {
     "title": "Are you offering same-day AC Repair in Al Quoz?",
-    "desc": "It may be possible to get same-day service depending on the issue and availability of the technicians. Contact our team to check availability."
+    "desc": "It may be possible to get same-day service depending on the issue and availability of the technicians. Contact our team to check availability.",
+    "question": "Are you offering same-day AC Repair in Al Quoz?",
+    "answer": "It may be possible to get same-day service depending on the issue and availability of the technicians. Contact our team to check availability."
   },
   {
     "title": "What is your preferred brand of air conditioner?",
-    "desc": "<strong>We service the top brands such as:</strong><ul><li>Daikin</li><li>Samsung</li><li>O General</li><li>Mitsubishi</li><li>Carrier</li><li>York</li><li>Trane</li><li>Gree</li><li>LG</li><li>Panasonic and others.</li></ul>"
+    "desc": "<strong>We service the top brands such as:</strong><ul><li>Daikin</li><li>Samsung</li><li>O General</li><li>Mitsubishi</li><li>Carrier</li><li>York</li><li>Trane</li><li>Gree</li><li>LG</li><li>Panasonic and others.</li></ul>",
+    "question": "What is your preferred brand of air conditioner?",
+    "answer": "<strong>We service the top brands such as:</strong><ul><li>Daikin</li><li>Samsung</li><li>O General</li><li>Mitsubishi</li><li>Carrier</li><li>York</li><li>Trane</li><li>Gree</li><li>LG</li><li>Panasonic and others.</li></ul>"
   },
   {
     "title": "What is included in the AC maintenance service?",
-    "desc": "<strong>Typical maintenance tasks are </strong><ul><li>Cleaning the filter</li><li>Inspecting the coils</li><li>Checking drain lines</li><li>Testing thermostats</li><li>Assessing cooling performance</li><li>Checking electricity</li></ul>"
+    "desc": "<strong>Typical maintenance tasks are </strong><ul><li>Cleaning the filter</li><li>Inspecting the coils</li><li>Checking drain lines</li><li>Testing thermostats</li><li>Assessing cooling performance</li><li>Checking electricity</li></ul>",
+    "question": "What is included in the AC maintenance service?",
+    "answer": "<strong>Typical maintenance tasks are </strong><ul><li>Cleaning the filter</li><li>Inspecting the coils</li><li>Checking drain lines</li><li>Testing thermostats</li><li>Assessing cooling performance</li><li>Checking electricity</li></ul>"
   },
   {
     "title": "Do annual maintenance contracts make sense for Air Conditioners?",
-    "desc": "Yes, regular servicing with AMC helps prevent big issues, makes things more efficient and avoid costly repairs."
+    "desc": "Yes, regular servicing with AMC helps prevent big issues, makes things more efficient and avoid costly repairs.",
+    "question": "Do annual maintenance contracts make sense for Air Conditioners?",
+    "answer": "Yes, regular servicing with AMC helps prevent big issues, makes things more efficient and avoid costly repairs."
   },
   {
     "title": "What reasons determine why my AC is making weird noises?",
-    "desc": "Typical causes are loose internal parts, fan motor issues, dust accumulation, or wear. A technician will be able to determine the cause exactly."
+    "desc": "Typical causes are loose internal parts, fan motor issues, dust accumulation, or wear. A technician will be able to determine the cause exactly.",
+    "question": "What reasons determine why my AC is making weird noises?",
+    "answer": "Typical causes are loose internal parts, fan motor issues, dust accumulation, or wear. A technician will be able to determine the cause exactly."
   },
   {
     "title": "What is the time frame required for an AC maintenance?",
-    "desc": "A typical maintenance visit is 1 hour in length. The time is dependent on the type of AC, the quantity of units, and the type of system."
+    "desc": "A typical maintenance visit is 1 hour in length. The time is dependent on the type of AC, the quantity of units, and the type of system.",
+    "question": "What is the time frame required for an AC maintenance?",
+    "answer": "A typical maintenance visit is 1 hour in length. The time is dependent on the type of AC, the quantity of units, and the type of system."
   },
   {
     "title": "Does regular AC servicing lower electric bills?",
-    "desc": "Yes, when the AC system is well-maintained, it is more efficient and uses less energy, which can reduce your monthly electricity expenses."
+    "desc": "Yes, when the AC system is well-maintained, it is more efficient and uses less energy, which can reduce your monthly electricity expenses.",
+    "question": "Does regular AC servicing lower electric bills?",
+    "answer": "Yes, when the AC system is well-maintained, it is more efficient and uses less energy, which can reduce your monthly electricity expenses."
   },
   {
     "title": "Should I replace or repair my old AC?",
-    "desc": "If your AC keeps breaking down or has poor efficiency, replacement might be a better option. A technician can run the test and give you recommendations."
+    "desc": "If your AC keeps breaking down or has poor efficiency, replacement might be a better option. A technician can run the test and give you recommendations.",
+    "question": "Should I replace or repair my old AC?",
+    "answer": "If your AC keeps breaking down or has poor efficiency, replacement might be a better option. A technician can run the test and give you recommendations."
   },
   {
     "title": "What is the best way to get an AC service in Al Quoz?",
-    "desc": "You can contact FAJ Technical Services L.L.C with your location and preferred timing. Our staff will set up an appropriate service appointment."
+    "desc": "You can contact FAJ Technical Services L.L.C with your location and preferred timing. Our staff will set up an appropriate service appointment.",
+    "question": "What is the best way to get an AC service in Al Quoz?",
+    "answer": "You can contact FAJ Technical Services L.L.C with your location and preferred timing. Our staff will set up an appropriate service appointment."
   }
-
 ]

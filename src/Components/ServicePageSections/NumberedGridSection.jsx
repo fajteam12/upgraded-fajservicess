@@ -20,8 +20,14 @@ function Description({ value }) {
 						return part;
 					}
 
+					const content = part.strong ? (
+						<strong>{part.text}</strong>
+					) : (
+						part.text
+					);
+
 					if (!part?.href) {
-						return part?.text || null;
+						return content || null;
 					}
 
 					if (part.external) {
@@ -32,14 +38,14 @@ function Description({ value }) {
 								target="_blank"
 								rel="noopener noreferrer"
 							>
-								{part.text}
+								{content}
 							</a>
 						);
 					}
 
 					return (
 						<Link key={`${part.text}-${index}`} to={part.href}>
-							{part.text}
+							{content}
 						</Link>
 					);
 				})}

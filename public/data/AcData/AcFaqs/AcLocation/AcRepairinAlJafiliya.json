@@ -1,67 +1,98 @@
 [
-  {  
+  {
     "title": "How often should I service my AC in Al Jafiliya?",
-    "desc": "You should get your AC checked every 3 to 6 months. Doing this keeps the cooling strong and stops small problems from turning into big ones."
+    "desc": "You should get your AC checked every 3 to 6 months. Doing this keeps the cooling strong and stops small problems from turning into big ones.",
+    "question": "How often should I service my AC in Al Jafiliya?",
+    "answer": "You should get your AC checked every 3 to 6 months. Doing this keeps the cooling strong and stops small problems from turning into big ones."
   },
   {
     "title": "Why is my AC not cooling properly in Al Jafiliya?",
-    "desc": "<strong>There are a few reasons why this happens:</strong><ul><li>Dirty air filters</li><li>Low refrigerant gas</li><li>Blocked condenser coils</li><li>Poor airflow</li></ul>"
+    "desc": "<strong>There are a few reasons why this happens:</strong><ul><li>Dirty air filters</li><li>Low refrigerant gas</li><li>Blocked condenser coils</li><li>Poor airflow</li></ul>",
+    "question": "Why is my AC not cooling properly in Al Jafiliya?",
+    "answer": "<strong>There are a few reasons why this happens:</strong><ul><li>Dirty air filters</li><li>Low refrigerant gas</li><li>Blocked condenser coils</li><li>Poor airflow</li></ul>"
   },
   {
     "title": "Is same-day AC repair available in Al Jafiliya?",
-    "desc": "Sometimes yes, it depends on how busy the technicians are and what needs to be fixed."
+    "desc": "Sometimes yes, it depends on how busy the technicians are and what needs to be fixed.",
+    "question": "Is same-day AC repair available in Al Jafiliya?",
+    "answer": "Sometimes yes, it depends on how busy the technicians are and what needs to be fixed."
   },
   {
     "title": "Which AC system is suitable for apartments in Al Jafiliya?",
-    "desc": "Split AC systems are a good choice for apartments. They run quietly, cool well and do not use too much electricity."
+    "desc": "Split AC systems are a good choice for apartments. They run quietly, cool well and do not use too much electricity.",
+    "question": "Which AC system is suitable for apartments in Al Jafiliya?",
+    "answer": "Split AC systems are a good choice for apartments. They run quietly, cool well and do not use too much electricity."
   },
   {
     "title": "What causes water leakage from an AC unit?",
-    "desc": "<strong>Water usually leaks because of these things:</strong><ul><li>Blocked drain pipe</li><li>Frozen evaporator coil</li><li>Dirty air filter</li></ul>"
+    "desc": "<strong>Water usually leaks because of these things:</strong><ul><li>Blocked drain pipe</li><li>Frozen evaporator coil</li><li>Dirty air filter</li></ul>",
+    "question": "What causes water leakage from an AC unit?",
+    "answer": "<strong>Water usually leaks because of these things:</strong><ul><li>Blocked drain pipe</li><li>Frozen evaporator coil</li><li>Dirty air filter</li></ul>"
   },
   {
     "title": "Do you provide AC services for offices in Al Jafiliya?",
-    "desc": "Yes! We do. FAJ Technical Services L.L.C offers repair, maintenance, cleaning and installation for offices, apartments, villas, shops and commercial buildings all over Al Jafiliya."
+    "desc": "Yes! We do. FAJ Technical Services L.L.C offers repair, maintenance, cleaning and installation for offices, apartments, villas, shops and commercial buildings all over Al Jafiliya.",
+    "question": "Do you provide AC services for offices in Al Jafiliya?",
+    "answer": "Yes! We do. FAJ Technical Services L.L.C offers repair, maintenance, cleaning and installation for offices, apartments, villas, shops and commercial buildings all over Al Jafiliya."
   },
   {
     "title": "What is included in an AC maintenance service?",
-    "desc": "<strong>A typical maintenance visit covers:</strong><ul><li>Filter cleaning</li><li>Coil inspection</li><li>Drain line cleaning</li><li>Thermostat testing</li><li>Cooling performance check</li></ul>"
+    "desc": "<strong>A typical maintenance visit covers:</strong><ul><li>Filter cleaning</li><li>Coil inspection</li><li>Drain line cleaning</li><li>Thermostat testing</li><li>Cooling performance check</li></ul>",
+    "question": "What is included in an AC maintenance service?",
+    "answer": "<strong>A typical maintenance visit covers:</strong><ul><li>Filter cleaning</li><li>Coil inspection</li><li>Drain line cleaning</li><li>Thermostat testing</li><li>Cooling performance check</li></ul>"
   },
   {
     "title": "Which AC brands do you repair in Al Jafiliya?",
-    "desc": "<strong>Our technicians work on all major brands:</strong><ul><li>Daikin</li><li>LG</li><li>Samsung</li><li>Carrier</li><li>York</li><li>Mitsubishi</li><li>O General</li><li>Gree</li><li>Panasonic and many other well-known brands.</li></ul>"
+    "desc": "<strong>Our technicians work on all major brands:</strong><ul><li>Daikin</li><li>LG</li><li>Samsung</li><li>Carrier</li><li>York</li><li>Mitsubishi</li><li>O General</li><li>Gree</li><li>Panasonic and many other well-known brands.</li></ul>",
+    "question": "Which AC brands do you repair in Al Jafiliya?",
+    "answer": "<strong>Our technicians work on all major brands:</strong><ul><li>Daikin</li><li>LG</li><li>Samsung</li><li>Carrier</li><li>York</li><li>Mitsubishi</li><li>O General</li><li>Gree</li><li>Panasonic and many other well-known brands.</li></ul>"
   },
   {
     "title": "Why is my AC making strange noises?",
-    "desc": "<strong>Noises usually come from:</strong><ul><li>Loose internal parts</li><li>Fan motor problems</li><li>Worn components</li></ul>"
+    "desc": "<strong>Noises usually come from:</strong><ul><li>Loose internal parts</li><li>Fan motor problems</li><li>Worn components</li></ul>",
+    "question": "Why is my AC making strange noises?",
+    "answer": "<strong>Noises usually come from:</strong><ul><li>Loose internal parts</li><li>Fan motor problems</li><li>Worn components</li></ul>"
   },
   {
     "title": "Can AC cleaning improve indoor air quality?",
-    "desc": "Yes, A proper clean gets rid of dust, mould and bacteria so the air in your home stays cleaner and improved."
+    "desc": "Yes, A proper clean gets rid of dust, mould and bacteria so the air in your home stays cleaner and improved.",
+    "question": "Can AC cleaning improve indoor air quality?",
+    "answer": "Yes, A proper clean gets rid of dust, mould and bacteria so the air in your home stays cleaner and improved."
   },
   {
     "title": "How long does AC maintenance usually take?",
-    "desc": "Most visits take about one hour. But it depends on the type of AC, its condition and how many units need attention."
+    "desc": "Most visits take about one hour. But it depends on the type of AC, its condition and how many units need attention.",
+    "question": "How long does AC maintenance usually take?",
+    "answer": "Most visits take about one hour. But it depends on the type of AC, its condition and how many units need attention."
   },
   {
     "title": "Do you provide a warranty on AC services?",
-    "desc": "Yes, our cleaning and maintenance services come with a 60-day warranty."
+    "desc": "Yes, our cleaning and maintenance services come with a 60-day warranty.",
+    "question": "Do you provide a warranty on AC services?",
+    "answer": "Yes, our cleaning and maintenance services come with a 60-day warranty."
   },
   {
     "title": "Can regular AC servicing help lower electricity bills?",
-    "desc": "A well-maintained air conditioner operates more efficiently and consumes less power each month."
+    "desc": "A well-maintained air conditioner operates more efficiently and consumes less power each month.",
+    "question": "Can regular AC servicing help lower electricity bills?",
+    "answer": "A well-maintained air conditioner operates more efficiently and consumes less power each month."
   },
   {
     "title": "How can I book AC service in Al Jafiliya?",
-    "desc": "Just get in touch with FAJ Technical Services L.L.C Tell us your location, and when you are free then we will set up a visit."
+    "desc": "Just get in touch with FAJ Technical Services L.L.C Tell us your location, and when you are free then we will set up a visit.",
+    "question": "How can I book AC service in Al Jafiliya?",
+    "answer": "Just get in touch with FAJ Technical Services L.L.C Tell us your location, and when you are free then we will set up a visit."
   },
   {
     "title": "Can I run my AC 24 hours a day in Dubai?",
-    "desc": "Yes, but the system will wear out faster if you never give it a break. Regular servicing becomes even more important when the AC runs continuously for long periods."
+    "desc": "Yes, but the system will wear out faster if you never give it a break. Regular servicing becomes even more important when the AC runs continuously for long periods.",
+    "question": "Can I run my AC 24 hours a day in Dubai?",
+    "answer": "Yes, but the system will wear out faster if you never give it a break. Regular servicing becomes even more important when the AC runs continuously for long periods."
   },
   {
     "title": "Why does my AC take too long to cool the room?",
-    "desc": "The filters might be dirty, the gas might be low or the unit might be too small for the room. A technician can check the system and suggest the right solution."
+    "desc": "The filters might be dirty, the gas might be low or the unit might be too small for the room. A technician can check the system and suggest the right solution.",
+    "question": "Why does my AC take too long to cool the room?",
+    "answer": "The filters might be dirty, the gas might be low or the unit might be too small for the room. A technician can check the system and suggest the right solution."
   }
-
 ]

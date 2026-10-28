@@ -1,63 +1,92 @@
 [
-  {  
+  {
     "title": "How much does AC repair cost in Al Khawaneej?",
-    "desc": "The cost depends on the AC type, problem, required parts and repair work. FAJ Technical Services L.L.C provides inspection, cleaning and maintenance services with clear pricing."
+    "desc": "The cost depends on the AC type, problem, required parts and repair work. FAJ Technical Services L.L.C provides inspection, cleaning and maintenance services with clear pricing.",
+    "question": "How much does AC repair cost in Al Khawaneej?",
+    "answer": "The cost depends on the AC type, problem, required parts and repair work. FAJ Technical Services L.L.C provides inspection, cleaning and maintenance services with clear pricing."
   },
   {
     "title": "How often should I service my AC in Al Khawaneej?",
-    "desc": "Most AC systems should be serviced every 3 to 6 months. Regular maintenance helps improve cooling, reduce faults and keep the system efficient."
+    "desc": "Most AC systems should be serviced every 3 to 6 months. Regular maintenance helps improve cooling, reduce faults and keep the system efficient.",
+    "question": "How often should I service my AC in Al Khawaneej?",
+    "answer": "Most AC systems should be serviced every 3 to 6 months. Regular maintenance helps improve cooling, reduce faults and keep the system efficient."
   },
   {
     "title": "Why is my AC running but not cooling properly?",
-    "desc": "<strong>Common reasons include:</strong><ul><li>Dirty air filters</li><li>Low refrigerant gas</li><li>locked coils</li><li>Thermostat problems</li><li>Compressor issues</li><li>Poor airflow</li></ul>A professional inspection helps identify the exact cause."
+    "desc": "<strong>Common reasons include:</strong><ul><li>Dirty air filters</li><li>Low refrigerant gas</li><li>locked coils</li><li>Thermostat problems</li><li>Compressor issues</li><li>Poor airflow</li></ul>A professional inspection helps identify the exact cause.",
+    "question": "Why is my AC running but not cooling properly?",
+    "answer": "<strong>Common reasons include:</strong><ul><li>Dirty air filters</li><li>Low refrigerant gas</li><li>locked coils</li><li>Thermostat problems</li><li>Compressor issues</li><li>Poor airflow</li></ul>A professional inspection helps identify the exact cause."
   },
   {
     "title": "Do you provide AC repair services for villas in Al Khawaneej?",
-    "desc": "Yes, we provide AC repair, cleaning, maintenance and installation services for villas, homes, offices and commercial properties in Al Khawaneej."
+    "desc": "Yes, we provide AC repair, cleaning, maintenance and installation services for villas, homes, offices and commercial properties in Al Khawaneej.",
+    "question": "Do you provide AC repair services for villas in Al Khawaneej?",
+    "answer": "Yes, we provide AC repair, cleaning, maintenance and installation services for villas, homes, offices and commercial properties in Al Khawaneej."
   },
   {
     "title": "What causes water leakage from an AC unit?",
-    "desc": "<strong>Common reasons include:</strong><ul><li>Blocked drain pipe</li><li>Frozen evaporator coil</li><li>Dirty filters</li><li>Drainage problems</li></ul>"
+    "desc": "<strong>Common reasons include:</strong><ul><li>Blocked drain pipe</li><li>Frozen evaporator coil</li><li>Dirty filters</li><li>Drainage problems</li></ul>",
+    "question": "What causes water leakage from an AC unit?",
+    "answer": "<strong>Common reasons include:</strong><ul><li>Blocked drain pipe</li><li>Frozen evaporator coil</li><li>Dirty filters</li><li>Drainage problems</li></ul>"
   },
   {
     "title": "Is same-day AC repair available in Al Khawaneej?",
-    "desc": "Same-day AC repair may be available depending on technician availability and the type of AC issue. Contact our team for quick assistance."
+    "desc": "Same-day AC repair may be available depending on technician availability and the type of AC issue. Contact our team for quick assistance.",
+    "question": "Is same-day AC repair available in Al Khawaneej?",
+    "answer": "Same-day AC repair may be available depending on technician availability and the type of AC issue. Contact our team for quick assistance."
   },
   {
     "title": "Which AC brands do you repair?",
-    "desc": "<strong>We repair major AC brands including:</strong><ul><li>Daikin</li><li>LG</li><li>Samsung</li><li>O General</li><li>Mitsubishi</li><li>Carrier</li><li>York</li><li>Gree</li><li>Panasonic</li><li>Hitachi</li></ul>"
+    "desc": "<strong>We repair major AC brands including:</strong><ul><li>Daikin</li><li>LG</li><li>Samsung</li><li>O General</li><li>Mitsubishi</li><li>Carrier</li><li>York</li><li>Gree</li><li>Panasonic</li><li>Hitachi</li></ul>",
+    "question": "Which AC brands do you repair?",
+    "answer": "<strong>We repair major AC brands including:</strong><ul><li>Daikin</li><li>LG</li><li>Samsung</li><li>O General</li><li>Mitsubishi</li><li>Carrier</li><li>York</li><li>Gree</li><li>Panasonic</li><li>Hitachi</li></ul>"
   },
   {
     "title": "What is included in AC maintenance service?",
-    "desc": "<strong>Our AC maintenance service usually includes:</strong><ul><li>Filter cleaning</li><li>Coil inspection</li><liDrain line checking</li><li>Thermostat testing</li><li>Cooling performance inspection</li></ul>"
+    "desc": "<strong>Our AC maintenance service usually includes:</strong><ul><li>Filter cleaning</li><li>Coil inspection</li><liDrain line checking</li><li>Thermostat testing</li><li>Cooling performance inspection</li></ul>",
+    "question": "What is included in AC maintenance service?",
+    "answer": "<strong>Our AC maintenance service usually includes:</strong><ul><li>Filter cleaning</li><li>Coil inspection</li><liDrain line checking</li><li>Thermostat testing</li><li>Cooling performance inspection</li></ul>"
   },
   {
     "title": "Is an Annual Maintenance Contract (AMC) useful for AC systems?",
-    "desc": "Yes, AMC helps prevent sudden breakdowns, improves system performance and reduces long-term repair expenses."
+    "desc": "Yes, AMC helps prevent sudden breakdowns, improves system performance and reduces long-term repair expenses.",
+    "question": "Is an Annual Maintenance Contract (AMC) useful for AC systems?",
+    "answer": "Yes, AMC helps prevent sudden breakdowns, improves system performance and reduces long-term repair expenses."
   },
   {
     "title": "Why is my AC making strange noises?",
-    "desc": "<strong>Common causes include:</strong><ul><li>Loose internal parts</li><li>Fan motor problems</li><li>Dust buildup</li><liWorn components</li></ul>A technician can inspect the system and fix the issue."
+    "desc": "<strong>Common causes include:</strong><ul><li>Loose internal parts</li><li>Fan motor problems</li><li>Dust buildup</li><liWorn components</li></ul>A technician can inspect the system and fix the issue.",
+    "question": "Why is my AC making strange noises?",
+    "answer": "<strong>Common causes include:</strong><ul><li>Loose internal parts</li><li>Fan motor problems</li><li>Dust buildup</li><liWorn components</li></ul>A technician can inspect the system and fix the issue."
   },
   {
     "title": "Can AC cleaning improve indoor air quality?",
-    "desc": "Yes, professional AC cleaning removes dust, mould and dirt buildup from internal components, helping create cleaner indoor air."
+    "desc": "Yes, professional AC cleaning removes dust, mould and dirt buildup from internal components, helping create cleaner indoor air.",
+    "question": "Can AC cleaning improve indoor air quality?",
+    "answer": "Yes, professional AC cleaning removes dust, mould and dirt buildup from internal components, helping create cleaner indoor air."
   },
   {
     "title": "How long does AC maintenance take?",
-    "desc": "Most maintenance visits take around one hour. The exact time depends on the AC type, number of units and system condition."
+    "desc": "Most maintenance visits take around one hour. The exact time depends on the AC type, number of units and system condition.",
+    "question": "How long does AC maintenance take?",
+    "answer": "Most maintenance visits take around one hour. The exact time depends on the AC type, number of units and system condition."
   },
   {
     "title": "Do you provide warranty on AC services?",
-    "desc": "Yes, FAJ Technical Services L.L.C provides a 60-day warranty on selected AC cleaning and maintenance services."
+    "desc": "Yes, FAJ Technical Services L.L.C provides a 60-day warranty on selected AC cleaning and maintenance services.",
+    "question": "Do you provide warranty on AC services?",
+    "answer": "Yes, FAJ Technical Services L.L.C provides a 60-day warranty on selected AC cleaning and maintenance services."
   },
   {
     "title": "Can regular AC servicing reduce electricity bills?",
-    "desc": "Yes, a properly maintained AC works more efficiently and uses less energy, which can help reduce monthly electricity costs."
+    "desc": "Yes, a properly maintained AC works more efficiently and uses less energy, which can help reduce monthly electricity costs.",
+    "question": "Can regular AC servicing reduce electricity bills?",
+    "answer": "Yes, a properly maintained AC works more efficiently and uses less energy, which can help reduce monthly electricity costs."
   },
   {
     "title": "How can I book AC service in Al Khawaneej?",
-    "desc": "You can contact FAJ Technical Services L.L.C with your location and preferred appointment time. Our team will arrange a suitable visit."
+    "desc": "You can contact FAJ Technical Services L.L.C with your location and preferred appointment time. Our team will arrange a suitable visit.",
+    "question": "How can I book AC service in Al Khawaneej?",
+    "answer": "You can contact FAJ Technical Services L.L.C with your location and preferred appointment time. Our team will arrange a suitable visit."
   }
-
 ]

@@ -69,16 +69,7 @@ const overviewData = {
   "paragraphs": [
     {
       "parts": [
-        {
-          "text": "FAJ Technical Services L.L.C",
-          "href": "/"
-        },
-        " has been providing expert and professional air conditioner services in Dubai since 2010. We provide ",
-        {
-          "text": "AC repair",
-          "href": "/services/air-conditioning-repair/ac-service/"
-        },
-        " services, cleaning, maintenance, and installation services in Academy City. We have the expertise to assist you with your air conditioning repair, maintenance, or installation needs."
+        "FAJ Technical Services L.L.C has been providing air conditioner repair and maintenance services in Dubai since 2010. Our expert technicians can fix air conditioners, clean, and service air conditioners. They can install new air conditioners for apartments, villas, offices, schools and commercial properties in Academy City and nearby areas."
       ]
     }
   ],
@@ -91,7 +82,7 @@ const overviewData = {
 
 const areaOverviewData = {
   "id": "academy-city-ac-services",
-  "title": "Who provides the best AC repair services in Academy City?",
+  "title": "Best AC Repair in Academy City",
   "paragraphs": [
     "Finding an air conditioner company is crucial when cooling problems start affecting your home, office, classroom or business space. FAJ Technical Services L.L.C provides air conditioning services for residential and commercial customers all over Academy City.",
     "Our technicians can handle everything from cooling issues to complete system repairs, no matter which brand and which type of air conditioner unit you have."
@@ -291,8 +282,15 @@ const serviceOverviewData = {
   "id": "ac-repair-service-overview",
   "title": "Why Is My AC Not Cooling?",
   "description": "A running air conditioner unit does not always mean proper cooling is taking place. Several components work together to produce cool air and failure in one part can reduce performance.",
-  "paragraphs": [
-    "Some common reasons include: Dirty air filters, Low refrigerant levels, Blocked condenser coils, Faulty thermostat, Compressor problems, Electrical issues, Restricted airflow."
+  "listTitle": "Some common reasons include:",
+  "checklist": [
+    "Dirty air filters",
+    "Low refrigerant levels",
+    "Blocked condenser coils",
+    "Faulty thermostat",
+    "Compressor problems",
+    "Electrical issues",
+    "Restricted airflow"
   ],
   "imageSide": "left",
   "image": {
@@ -311,7 +309,7 @@ const serviceOverviewData = {
 
 const commonSignsData = {
   "id": "ac-maintenance-signs",
-  "title": "Which signs show the AC needs service?",
+  "title": "Signs You Need An AC Service",
   "intro": "Many cooling systems show warning signs before a major breakdown happens.",
   "items": [
     {
@@ -338,46 +336,53 @@ const commonSignsData = {
 };
 
 const videoData = {
-  "id": "ac-service-video",
-  "title": "Emergency AC Repair Service in Academy City",
-  "lead": {
-    "parts": [
-      "AC problems can happen suddenly, especially during Dubai's hottest months. A quick repair helps restore comfort and prevents further damage to your cooling system. At ",
-      {
-        "text": "FAJ Technical Services L.L.C",
-        "href": "/"
-      },
-      ", our fast-response team provides immediate support across Academy City."
-    ]
-  },
-  "listTitle": "Our emergency AC repair service covers:",
-  "items": [
+  id: "ac-service-video",
+  title: "Emergency AC Repair Service in Academy City",
+  lead: "A sudden AC breakdown can affect comfort, productivity, and indoor air quality.",
+  listTitle: "Our emergency AC repair service can help with:",
+  items: [
     "AC not cooling",
     "AC not turning on",
     "Water leakage",
     "Electrical faults",
-    "Compressor problems",
     "Thermostat issues",
+    "Compressor failures",
     "Weak airflow",
-    "Unusual noises"
+    "Unusual noises",
   ],
-  "conclusion": "Our technicians provide fast assistance for homes, villas, offices, and commercial properties in Academy City.",
-  "frameTitle": "Air-conditioning repair and maintenance service video in Academy City",
-  "videoId": "prUR0-lZlzg",
-  "videoSide": "left",
-  "image": {
-    "id": "indoor-ac-servicing",
-    "src": "/img/indoor-ac-servicing.webp",
-    "alt": "FAJ AC technician providing express and emergency AC repair in Academy City",
-    "width": 600,
-    "height": 400
+  conclusion:
+    "We provide fast assistance for residential and commercial customers throughout Academy City and nearby areas.",
+  description: [
+    "A sudden AC breakdown can affect comfort, productivity, and indoor air quality.",
+    "Our emergency AC repair service can help with: AC not cooling, AC not turning on, water leakage, electrical faults, thermostat issues, compressor failures, weak airflow, and unusual noises.",
+    "We provide fast assistance for residential and commercial customers throughout Academy City and nearby areas.",
+  ],
+  frameTitle: "Air-conditioning repair and maintenance service video in Academy City",
+  videoId: "prUR0-lZlzg",
+  videoSide: "left",
+  image: {
+    id: "indoor-ac-servicing",
+    src: "/img/indoor-ac-servicing.webp",
+    alt: "FAJ AC technician providing express and emergency AC repair in Academy City",
+    width: 600,
+    height: 400,
   },
-  "variant": "framed",
-  "showCta": false,
-  "cta": {
-    "phone": "",
-    "whatsapp": ""
-  }
+  variant: "framed",
+  blockInteraction: true,
+  allowFullScreen: false,
+  parameters: {
+    autoplay: "1",
+    mute: "0",
+    controls: "0",
+    modestbranding: "1",
+    rel: "0",
+    showinfo: "0",
+    loop: "1",
+    playlist: "prUR0-lZlzg",
+    playsinline: "1",
+    cc_load_policy: "0",
+    disablekb: "1",
+  },
 };
 
 const maintenanceImportanceData = {
@@ -442,7 +447,7 @@ const maintenanceImportanceCardsData = {
 };
 
 const commonProblemsData = {
-  "title": "Most Common AC Problems",
+  "title": "Common AC Problems That May Require Maintenance",
   "description": "",
   "items": [
     {
@@ -458,7 +463,7 @@ const commonProblemsData = {
       "description": "If you hear grinding, rattling or buzzing sounds, it usually means there's an issue inside."
     },
     {
-      "title": "Bad Smells",
+      "title": "Foul Odors",
       "description": "Unpleasant smells often come from mold, bacteria or dirt that's trapped inside the AC system."
     },
     {
@@ -466,15 +471,15 @@ const commonProblemsData = {
       "description": "If your AC keeps turning on and off it might be a reason for a thermostat or electrical issue."
     },
     {
-      "title": "High Humidity",
+      "title": "High Humidity Levels",
       "description": "If the AC isn't removing moisture well in indoor spaces then it can feel uncomfortable even when it's running."
     },
     {
-      "title": "Water Leakage",
+      "title": "Leaking Water",
       "description": "Water leaks often happen because drainage lines get blocked or coils freeze."
     },
     {
-      "title": "High Electricity Bills",
+      "title": "Increased Energy Bills",
       "description": "If your AC is not working properly it uses more power than it should which increases your electricity bills."
     }
   ],
@@ -487,7 +492,7 @@ const commonProblemsData = {
 
 const servicesOfferedData = {
   "id": "services-offered-overview",
-  "title": "Professional Air Conditioning Services in Academy City",
+  "title": "HERE ARE THE SERVICES WE OFFER FOR AIR CONDITIONING SYSTEMS",
   "description": "Professional air conditioning solutions tailored for residential, commercial and retail properties in Academy City.",
   "imageSide": "left",
   "image": {
@@ -506,7 +511,7 @@ const servicesOfferedData = {
 
 const servicesOfferedCardsData = {
   "id": "services-offered-cards",
-  "title": "Professional Air Conditioning Services in Academy City",
+  "title": "HERE ARE THE SERVICES WE OFFER FOR AIR CONDITIONING SYSTEMS",
   "items": [
     {
       "icon": "wrench",
@@ -712,7 +717,7 @@ const whyChooseUsData = {
 
 const beforeAfterData = {
   "id": "recent-completed-service",
-  "title": "Recent Completed Projects",
+  "title": "Recent Completed Service",
   "description": "See the real results of our thorough air conditioning maintenance and deep cleaning service in Academy City.",
   "beforeLabel": "Before",
   "beforeAlt": "Air conditioning unit before service",
@@ -847,7 +852,7 @@ const brandsData = {
 
 const sparePartsRepairData = {
   "id": "ac-spare-parts-and-repair",
-  "title": "We Handle All Types of AC Systems",
+  "title": "We Specialise in All Types of AC Systems",
   "columns": [
     {
       "title": "Air Conditioning Systems Serviced Across Academy City:",
@@ -983,29 +988,60 @@ const repairPriceData = {
 };
 
 const testimonialsData = {
-  "id": "testimonials",
-  "title": "Customer Reviews",
-  "description": "Real feedback from residential property owners, commercial facility managers and tenants across Academy City.",
-  "items": [
+  id: "ac-service-reviews",
+  title: "Customer Reviews",
+  description:
+    "Customer feedback on FAJ air-conditioning repair and maintenance services in Academy City.",
+  items: [
     {
-      "author": "Rashid Al-Maktoum",
-      "role": "Apartment Owner, Academy City",
-      "content": "Our split AC in the master bedroom was blowing warm air in mid-July. FAJ dispatched a technician within 2 hours. He identified a failed capacitor, replaced it from his van stock, and our room was ice cold again. Brilliant service!",
-      "rating": 5
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Sara Malik",
+      subtitle: "Academy City Resident",
+      description:
+        "FAJ provided professional split AC service for my apartment. The team was skilled, cleaned everything properly, and restored cooling performance. Very satisfied with their quick and reliable service in Academy City.",
     },
     {
-      "author": "Priya Sharma",
-      "role": "Tenant, Academy City",
-      "content": "Water started leaking from our ceiling FCU, soaking the living room rug. Called FAJ and their technician cleared a severely blocked condensate trap and sanitised the tray. Neat, professional and polite team.",
-      "rating": 5
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Al Mansoori",
+      subtitle: "Academy City Resident",
+      description:
+        "Great experience with FAJ’s air conditioner service. The technicians were professional, friendly, and checked everything thoroughly. My AC is running smoothly again. Excellent service in Academy City, highly recommended!",
     },
     {
-      "author": "David Miller",
-      "role": "Villa Resident, Academy City",
-      "content": "Signed an annual maintenance contract for our 4-bedroom villa. The twice-a-year PPM service has visibly dropped our DEWA electricity bill and the AC smells clean and fresh. Well worth the investment.",
-      "rating": 5
-    }
-  ]
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Arjun Kumar",
+      subtitle: "Resident",
+      description:
+        "I booked FAJ for HVAC services in Academy City, and it was excellent. The technicians were skilled, reliable, and carried out the work with great attention to detail.",
+    },
+    {
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Shazia Sheikh",
+      subtitle: "Homeowner",
+      description:
+        "FAJ delivered great AC technical services. Their team was polite, professional, and fixed my cooling issue quickly. Excellent service overall, I will continue using them for future AC problems in Academy City.",
+    },
+    {
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Ravi Mehta",
+      subtitle: "Resident",
+      description:
+        "I used FAJ for AC cleaning service, and it really improved my air quality. The team worked efficiently, cleaned every part, and made my AC run like new again.",
+    },
+    {
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Waseem Aqdas",
+      subtitle: "Homeowner",
+      description:
+        "Outstanding service from FAJ Technical! My AC wasn't cooling properly, but FAJ Technical came to the rescue. Quick response, friendly technician, and now my AC works perfectly. I highly recommend them!",
+    },
+  ],
 };
 
 const newsData = {
@@ -1021,7 +1057,7 @@ const newsData = {
       "subtitle": "Admin • 5 Comments",
       "description": "A properly functioning air conditioning system is essential for various settings, including homes, offices, and individual spaces. According to HVAC Webmasters, over 70%",
       "href": "/blog/10-common-ac-problems-and-how-to-fix-them/",
-      "actionLabel": "Read Article"
+      "actionLabel": "Read More"
     },
     {
       "icon": "dollar-savings",
@@ -1031,7 +1067,7 @@ const newsData = {
       "subtitle": "Admin • 4 Comments",
       "description": "Air conditioning is excellent for keeping you comfortable indoors but can be expensive. But there is no need to worry, there are some ways to reduce AC electric bill with",
       "href": "/blog/how-to-save-money-on-ac/",
-      "actionLabel": "Read Article"
+      "actionLabel": "Read More"
     },
     {
       "icon": "wind",
@@ -1041,7 +1077,7 @@ const newsData = {
       "subtitle": "Admin • 0 Comments",
       "description": "As the temperatures rise and summer approaches, the desire for a cool and comfortable escape within your home intensifies. Air conditioning offers a seemingly simple solu",
       "href": "/blog/how-to-choose-the-best-air-conditioner-for-home/",
-      "actionLabel": "Read Article"
+      "actionLabel": "Read More"
     }
   ],
   "footer": {
@@ -1057,17 +1093,17 @@ const newsData = {
 };
 
 const faqsData = {
-  "id": "location-faqs",
-  "title": "AC Repair and Maintenance FAQs in Academy City",
-  "description": "Find answers to common questions about air conditioning repair, servicing, and maintenance in Academy City.",
-  "items": [
+  id: "ac-service-academyCity-faqs",
+  title: "FAQ's",
+  description: "Find answers to common questions about air conditioning repair, cleaning, and maintenance services.",
+  items: [
     {
       "question": "How often should air conditioner systems be serviced in Academy City?",
       "answer": "Most residential systems benefit from servicing every 3 to 6 months depending on usage and environmental conditions."
     },
     {
       "question": "Do you provide air conditioner services for universities and educational facilities?",
-      "answer": "Yes, FAJ Technical services L.L.C provides AC services for schools, universities, training centres and educational buildings in Academy City."
+      "answer": "Yes, FAJ Technical services L.L.C  provides AC services for schools, universities, training centres and educational buildings in Academy City."
     },
     {
       "question": "Why is my air conditioner blowing air but not cooling?",
@@ -1079,11 +1115,11 @@ const faqsData = {
     },
     {
       "question": "What causes water leakage from an air conditioner unit?",
-      "answer": "Common causes include:Blocked drain pipesFrozen evaporator coilsDirty filters"
+      "answer": "<strong>Common causes include:</strong><ul><li>Blocked drain pipes</li><li>Frozen evaporator coils</li><li>Dirty filters</li></ul>"
     },
     {
       "question": "What is included in air conditioner maintenance service?",
-      "answer": "Maintenance usually includes:Filter cleaningCoil inspectionDrainage cleaningThermostat testingPerformance checks"
+      "answer": "<strong>Maintenance usually includes:</strong><ul><li>Filter cleaning</li><li>Coil inspection</li><li>Drainage cleaning</li><li>Thermostat testing</li><li>Performance checks</li></ul>"
     },
     {
       "question": "Which air conditioner brands do you service?",
@@ -1095,7 +1131,7 @@ const faqsData = {
     },
     {
       "question": "Why is my air conditioner making noises?",
-      "answer": "Some common reasons include:Loose internal componentsFan motor problemsDirt buildup inside the system"
+      "answer": "<strong>Some common reasons include:</strong><ul><li>Loose internal components</li><li>Fan motor problems</li><li>Dirt buildup inside the system</li></ul>"
     },
     {
       "question": "Do you provide services for offices and businesses in Academy City?",
@@ -1121,13 +1157,13 @@ const faqsData = {
       "question": "How can I book an air conditioner service appointment?",
       "answer": "Simply contact our team with your location and preferred time and we will arrange a suitable visit."
     }
-  ]
+  ],
 };
 
 const bookingData = {
   "id": "booking-section",
   "title": "Book An Appointment",
-  "description": "Fill in your details below and our service coordinators will confirm your booking slot within 15 minutes.",
+  "description": "Book your AC service appointment with our expert team in Academy City. We provide professional AC installation, cleaning, maintenance, and repair services to keep your space cool and comfortable.",
   "submitLabel": "Confirm Service Request"
 };
 

@@ -1,59 +1,86 @@
 [
-  {  
+  {
     "title": "What is the price of AC repair in Al Mirdif?",
-    "desc": "The price depends on the type of Air Conditioner, the problem, and the parts required. We provide you with a straightforward price after inspection."
+    "desc": "The price depends on the type of Air Conditioner, the problem, and the parts required. We provide you with a straightforward price after inspection.",
+    "question": "What is the price of AC repair in Al Mirdif?",
+    "answer": "The price depends on the type of Air Conditioner, the problem, and the parts required. We provide you with a straightforward price after inspection."
   },
   {
     "title": "How often should I service my AC in Al Mirdif?",
-    "desc": "Every 6 months is the recommended frequency. This will maintain a properly functioning system and avoid unexpected problems."
+    "desc": "Every 6 months is the recommended frequency. This will maintain a properly functioning system and avoid unexpected problems.",
+    "question": "How often should I service my AC in Al Mirdif?",
+    "answer": "Every 6 months is the recommended frequency. This will maintain a properly functioning system and avoid unexpected problems."
   },
   {
     "title": "Why won't my air conditioner cool my house?",
-    "desc": "<strong>The common reasons are:</strong><ul><li>Dirty Filters</li><li>Low Gas</li><li>Blocked Coils</li><li>Compressor Issues</li></ul>A technician will be able to determine the problem."
+    "desc": "<strong>The common reasons are:</strong><ul><li>Dirty Filters</li><li>Low Gas</li><li>Blocked Coils</li><li>Compressor Issues</li></ul>A technician will be able to determine the problem.",
+    "question": "Why won't my air conditioner cool my house?",
+    "answer": "<strong>The common reasons are:</strong><ul><li>Dirty Filters</li><li>Low Gas</li><li>Blocked Coils</li><li>Compressor Issues</li></ul>A technician will be able to determine the problem."
   },
   {
     "title": "Do you provide AC services for villas in Al Mirdif?",
-    "desc": "Yes, villas, townhouses, apartments, schools and commercial buildings are covered in Al Mirdif."
+    "desc": "Yes, villas, townhouses, apartments, schools and commercial buildings are covered in Al Mirdif.",
+    "question": "Do you provide AC services for villas in Al Mirdif?",
+    "answer": "Yes, villas, townhouses, apartments, schools and commercial buildings are covered in Al Mirdif."
   },
   {
     "title": "What is the reason for AC water leakage?",
-    "desc": "<strong>These are the top causes of water leakage:</strong><ul><li>Drain line clogging</li><li>Frozen coils</li><li>Dirty filters</li></ul>"
+    "desc": "<strong>These are the top causes of water leakage:</strong><ul><li>Drain line clogging</li><li>Frozen coils</li><li>Dirty filters</li></ul>",
+    "question": "What is the reason for AC water leakage?",
+    "answer": "<strong>These are the top causes of water leakage:</strong><ul><li>Drain line clogging</li><li>Frozen coils</li><li>Dirty filters</li></ul>"
   },
   {
     "title": "Does the use of AC cleaning help cool?",
-    "desc": "Yes, cleaning makes a noticeable difference. It can clean the dust and improve the cooling efficiency of the AC."
+    "desc": "Yes, cleaning makes a noticeable difference. It can clean the dust and improve the cooling efficiency of the AC.",
+    "question": "Does the use of AC cleaning help cool?",
+    "answer": "Yes, cleaning makes a noticeable difference. It can clean the dust and improve the cooling efficiency of the AC."
   },
   {
     "title": "Are you providing the same-day AC repair in Al Mirdif?",
-    "desc": "Service can be arranged the same day depending on the issue and availability. Please reach out and let us know if you want to check."
+    "desc": "Service can be arranged the same day depending on the issue and availability. Please reach out and let us know if you want to check.",
+    "question": "Are you providing the same-day AC repair in Al Mirdif?",
+    "answer": "Service can be arranged the same day depending on the issue and availability. Please reach out and let us know if you want to check."
   },
   {
     "title": "Which AC brands do you repair?",
-    "desc": "We service Daikin, LG, Samsung, O General, Mitsubishi, Carrier, York, Trane, Gree, Panasonic and more."
+    "desc": "We service Daikin, LG, Samsung, O General, Mitsubishi, Carrier, York, Trane, Gree, Panasonic and more.",
+    "question": "Which AC brands do you repair?",
+    "answer": "We service Daikin, LG, Samsung, O General, Mitsubishi, Carrier, York, Trane, Gree, Panasonic and more."
   },
   {
     "title": "What are the things involved in AC maintenance?",
-    "desc": "<strong>Maintenance includes:</strong><ul><li>Cleaning of filters</li><li>Inspection of coils</li><li>Drain line checks</li><li>Thermostat testing</li><li>Reviewing overall performance</li></ul>"
+    "desc": "<strong>Maintenance includes:</strong><ul><li>Cleaning of filters</li><li>Inspection of coils</li><li>Drain line checks</li><li>Thermostat testing</li><li>Reviewing overall performance</li></ul>",
+    "question": "What are the things involved in AC maintenance?",
+    "answer": "<strong>Maintenance includes:</strong><ul><li>Cleaning of filters</li><li>Inspection of coils</li><li>Drain line checks</li><li>Thermostat testing</li><li>Reviewing overall performance</li></ul>"
   },
   {
     "title": "Should I get an Annual Maintenance Contract?",
-    "desc": "Absolutely, AMC will help you avoid significant issues and keep your air conditioner in top condition through regular maintenance."
+    "desc": "Absolutely, AMC will help you avoid significant issues and keep your air conditioner in top condition through regular maintenance.",
+    "question": "Should I get an Annual Maintenance Contract?",
+    "answer": "Absolutely, AMC will help you avoid significant issues and keep your air conditioner in top condition through regular maintenance."
   },
   {
     "title": "Why does my AC make strange noises?",
-    "desc": "Loose parts, problems with the fan motor, or dirt accumulation are the typical causes. A technician can find and fix the cause."
+    "desc": "Loose parts, problems with the fan motor, or dirt accumulation are the typical causes. A technician can find and fix the cause.",
+    "question": "Why does my AC make strange noises?",
+    "answer": "Loose parts, problems with the fan motor, or dirt accumulation are the typical causes. A technician can find and fix the cause."
   },
   {
     "title": "What is the duration of time for AC maintenance?",
-    "desc": "Most maintenance tasks require 1 hour, but it depends on the number of units."
+    "desc": "Most maintenance tasks require 1 hour, but it depends on the number of units.",
+    "question": "What is the duration of time for AC maintenance?",
+    "answer": "Most maintenance tasks require 1 hour, but it depends on the number of units."
   },
   {
     "title": "Can regular servicing lower my electricity bills?",
-    "desc": "A clean and well-tuned AC is indeed more energy-efficient and can prove to be a significant cost-saver in your monthly electricity bills."
+    "desc": "A clean and well-tuned AC is indeed more energy-efficient and can prove to be a significant cost-saver in your monthly electricity bills.",
+    "question": "Can regular servicing lower my electricity bills?",
+    "answer": "A clean and well-tuned AC is indeed more energy-efficient and can prove to be a significant cost-saver in your monthly electricity bills."
   },
   {
     "title": "Should I replace or repair my old AC?",
-    "desc": "If repairs are frequent and costly, replacement could be the better option. We can do a scan of your system and make suggestions."
+    "desc": "If repairs are frequent and costly, replacement could be the better option. We can do a scan of your system and make suggestions.",
+    "question": "Should I replace or repair my old AC?",
+    "answer": "If repairs are frequent and costly, replacement could be the better option. We can do a scan of your system and make suggestions."
   }
-
 ]

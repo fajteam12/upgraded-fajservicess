@@ -69,33 +69,33 @@ const heroData = {
 };
 
 const overviewData = {
-  "id": "overview",
-  "paragraphs": [
+  id: "overview",
+  paragraphs: [
     {
-      "parts": [
+      parts: [
         {
-          "text": "FAJ Technical Services L.L.C",
-          "href": "/"
+                "text": "FAJ Technical Services L.L.C",
+                "href": "/"
         },
-        " has been providing expert and professional air conditioner services in Dubai since 2010. We provide ",
+        " has been helping people in Dubai with their air conditioning services since 2010. They do things like fix air conditioners, ",
         {
-          "text": "AC repair",
-          "href": "/services/air-conditioning-repair/ac-service/"
+                "text": "AC maintenance",
+                "href": "/services/air-conditioning-repair/ac-service/"
         },
-        " services, cleaning, maintenance, and installation services in Al Manara. We have the expertise to assist you with your air conditioning repair, maintenance, or installation needs."
-      ]
+        " , keep them working well, clean them, and put in new ones. Our experienced technicians serve homeowners and businesses throughout Al Manara with reliable workmanship and fast response whenever cooling problems occur."
+]
     }
   ],
-  "showCta": false,
-  "cta": {
-    "phone": "",
-    "whatsapp": "https://api.whatsapp.com/send?phone=+971507464712&text=Hello"
+  showCta: false,
+  cta: {
+    phone: "",
+    whatsapp: "https://api.whatsapp.com/send?phone=+971507464712&text=Hello"
   }
 };
 
 const areaOverviewData = {
   "id": "area-ac-services",
-  "title": "Who provides the best AC repair services in Al Manara?",
+  "title": "Best AC Repair in Al Manara",
   "paragraphs": [
     "Finding a trusted AC company is important when cooling problems affect your daily comfort. FAJ Technical Services L.L.C provides complete air conditioning services for villas, family homes, offices, retail shops and commercial properties across Al Manara.",
     "Our technicians carefully inspect every cooling system, explain the problem clearly and recommend practical solutions that improve performance while helping prevent future breakdowns."
@@ -295,7 +295,8 @@ const serviceOverviewData = {
   "id": "ac-repair-service-overview",
   "title": "Why Is My AC Not Cooling?",
   "paragraph": "An air conditioner may continue running while struggling to cool the room properly. Several parts inside the system can affect cooling performance.",
-  "causes": [
+  "listTitle": "Common causes include:",
+  "checklist": [
     "Dirty air filters",
     "Low refrigerant gas",
     "Blocked condenser coils",
@@ -322,7 +323,7 @@ const serviceOverviewData = {
 
 const commonSignsData = {
   "id": "ac-maintenance-signs",
-  "title": "Which signs show the AC needs service?",
+  "title": "Signs You Need An AC Service",
   "intro": "Many air conditioners show small warning signs before a major problem develops.",
   "items": [
     {
@@ -349,46 +350,53 @@ const commonSignsData = {
 };
 
 const videoData = {
-  "id": "ac-service-video",
-  "title": "Emergency AC Repair Service in Al Manara",
-  "lead": {
-    "parts": [
-      "AC problems can happen suddenly, especially during Dubai's hottest months. A quick repair helps restore comfort and prevents further damage to your cooling system. At ",
-      {
-        "text": "FAJ Technical Services L.L.C",
-        "href": "/"
-      },
-      ", our fast-response team provides immediate support across Al Manara."
-    ]
-  },
-  "listTitle": "Our emergency AC repair service covers:",
-  "items": [
+  id: "ac-service-video",
+  title: "Emergency AC Repair Service in Al Manara",
+  lead: "A sudden AC breakdown can affect comfort, productivity, and indoor air quality.",
+  listTitle: "Our emergency AC repair service can help with:",
+  items: [
     "AC not cooling",
     "AC not turning on",
     "Water leakage",
     "Electrical faults",
-    "Compressor problems",
     "Thermostat issues",
+    "Compressor failures",
     "Weak airflow",
-    "Unusual noises"
+    "Unusual noises",
   ],
-  "conclusion": "Our technicians provide fast assistance for homes, villas, offices, and commercial properties in Al Manara.",
-  "frameTitle": "Air-conditioning repair and maintenance service video in Al Manara",
-  "videoId": "prUR0-lZlzg",
-  "videoSide": "left",
-  "image": {
-    "id": "indoor-ac-servicing",
-    "src": "/img/indoor-ac-servicing.webp",
-    "alt": "FAJ AC technician providing express and emergency AC repair in Al Manara",
-    "width": 600,
-    "height": 400
+  conclusion:
+    "We provide fast assistance for residential and commercial customers throughout Al Manara and nearby areas.",
+  description: [
+    "A sudden AC breakdown can affect comfort, productivity, and indoor air quality.",
+    "Our emergency AC repair service can help with: AC not cooling, AC not turning on, water leakage, electrical faults, thermostat issues, compressor failures, weak airflow, and unusual noises.",
+    "We provide fast assistance for residential and commercial customers throughout Al Manara and nearby areas.",
+  ],
+  frameTitle: "Air-conditioning repair and maintenance service video in Al Manara",
+  videoId: "prUR0-lZlzg",
+  videoSide: "left",
+  image: {
+    id: "indoor-ac-servicing",
+    src: "/img/indoor-ac-servicing.webp",
+    alt: "FAJ AC technician providing express and emergency AC repair in Al Manara",
+    width: 600,
+    height: 400,
   },
-  "variant": "framed",
-  "showCta": false,
-  "cta": {
-    "phone": "",
-    "whatsapp": ""
-  }
+  variant: "framed",
+  blockInteraction: true,
+  allowFullScreen: false,
+  parameters: {
+    autoplay: "1",
+    mute: "0",
+    controls: "0",
+    modestbranding: "1",
+    rel: "0",
+    showinfo: "0",
+    loop: "1",
+    playlist: "prUR0-lZlzg",
+    playsinline: "1",
+    cc_load_policy: "0",
+    disablekb: "1",
+  },
 };
 
 const maintenanceImportanceData = {
@@ -415,7 +423,7 @@ const maintenanceImportanceData = {
 const maintenanceImportanceCardsData = {
   "id": "maintenance-importance-cards",
   "title": "Key Benefits of Regular AC Maintenance",
-  "cards": [
+  "items": [
     {
       "icon": "thermometer-sun",
       "title": "Extreme Weather",
@@ -451,7 +459,7 @@ const maintenanceImportanceCardsData = {
 
 const commonProblemsData = {
   "id": "common-ac-problems",
-  "title": "Most Common AC Problems",
+  "title": "Common AC Problems That May Require Maintenance",
   "description": "Our certified technicians in Al Manara quickly diagnose and resolve all major residential and commercial air conditioning issues:",
   "items": [
     {
@@ -520,7 +528,7 @@ const commonProblemsData = {
 
 const servicesOfferedData = {
   "id": "services-offered",
-  "title": "Professional Air Conditioning Services in Al Manara",
+  "title": "HERE ARE THE SERVICES WE OFFER FOR AIR CONDITIONING SYSTEMS",
   "items": [
     {
       "icon": "wrench",
@@ -552,8 +560,8 @@ const servicesOfferedData = {
 
 const servicesOfferedCardsData = {
   "id": "services-offered-cards",
-  "title": "Professional Air Conditioning Services in Al Manara",
-  "cards": [
+  "title": "HERE ARE THE SERVICES WE OFFER FOR AIR CONDITIONING SYSTEMS",
+  "items": [
     {
       "icon": "wrench",
       "title": "AC Repair Service",
@@ -707,43 +715,92 @@ const cleaningServiceCardsData = {
 };
 
 const whyChooseUsData = {
-  "id": "why-choose-us",
-  "title": "CHOOSE US FOR RELIABLE, EXCEPTIONAL SERVICE TAILORED TO YOUR NEEDS!",
-  "description": "Dedicated to prompt, professional and transparent HVAC service across Dubai.",
-  "image": {
-    "id": "ac-service-page/ac-services-component-new",
-    "src": "/img/ac-service-page/ac-services-component-new.webp",
-    "alt": "Ac Maintenance Services",
-    "width": 600,
-    "height": 400
-  },
-  "items": [
+  id: "why-choose-faj-ac",
+  title: "CHOOSE US FOR RELIABLE, EXCEPTIONAL SERVICE TAILORED TO YOUR NEEDS!",
+  description: "",
+  items: [
     {
-      "icon": "fast-reliable",
-      "title": "Reliable, Priority, and Quick",
-      "description": "You can count on efficient service! Our same-day AC repair or next-day AC service visits ensure that your needs are met quickly."
+      icon: "shield-check",
+      badge: "Fast, Reliable Service",
+      title: "Reliable, Priority, and Quick",
+      description: {
+        parts: [
+          "You can count on ",
+          {
+            text: "efficient service",
+            strong: true,
+            href: "https://www.instagram.com/fajtechnicalservicesllc/",
+            external: true,
+          },
+          "! Our same-day AC repair or next-day AC service visits ensure that your needs are met quickly.",
+        ],
+      },
     },
     {
-      "icon": "experts",
-      "title": "Feeling Of Calm",
-      "description": "With an AC annual maintenance contract, you can relax knowing that your AC unit is in good hands and well taken care of."
+      icon: "peace-of-mind",
+      badge: "Expert Planned Care",
+      title: "Feeling Of Calm",
+      description: {
+        parts: [
+          "With ",
+          {
+            text: "annual maintenance contract",
+            strong: true,
+            href: "/services/air-conditioning-repair/ac-annual-maintenance-contract/",
+          },
+          ", you get a full year of service, ensuring your AC runs smoothly and providing peace of mind.",
+        ],
+      },
     },
     {
-      "icon": "satisfaction",
-      "title": "We Are Experts",
-      "description": "Our team has high-level skills to identify and fix any issue, providing reliable AC repair and maintenance you can trust."
-    }
+      icon: "git-branch",
+      badge: "Flexible Scheduling",
+      title: "You Are in Control",
+      description:
+        "Choose a day and time for your AC repair near me, Al Manara or Sharjah. With a 3-4 hour window for when our technician will arrive.",
+    },
+    {
+      icon: "rosette-check",
+      badge: "System Experience",
+      title: "We Are Experts",
+      description:
+        "We are experts in AC service in Al Manara. This is why most major brands trust us to handle their service and maintenance needs.",
+    },
+    {
+      icon: "shield-dollar",
+      badge: "Customer Value",
+      title: "Great Value",
+      description:
+        "We are dedicated to ensuring customer satisfaction with timely service, prompt issue resolution, and affordable prices.",
+    },
+    {
+      icon: "clean-handshake",
+      badge: "Dependable Care",
+      title: "Trustworthy",
+      description: {
+        parts: [
+          "Our ",
+          {
+            text: "skilled AC technicians",
+            strong: true,
+            href: "https://www.facebook.com/acrepairservices",
+            external: true,
+          },
+          " are highly trained, and we provide excellent service for a variety of major AC brands efficiently.",
+        ],
+      },
+    },
   ],
-  "showCta": true,
-  "cta": {
-    "phone": "tel:+971507464712",
-    "whatsapp": "https://api.whatsapp.com/send?phone=+971507464712&text=Hello"
-  }
+  showCta: false,
+  cta: {
+    phone: "",
+    whatsapp: "",
+  },
 };
 
 const beforeAfterData = {
   "id": "before-after-slider",
-  "title": "Recent Completed Projects",
+  "title": "Recent Completed Service",
   "description": "Slide to inspect the condition of cooling equipment before and after our precision service.",
   "beforeLabel": "Before",
   "beforeAlt": "Air conditioning unit before service",
@@ -878,7 +935,7 @@ const brandsData = {
 
 const sparePartsRepairData = {
   "id": "ac-spare-parts-and-repair",
-  "title": "We Handle All Types of AC Systems",
+  "title": "We Specialise in All Types of AC Systems",
   "columns": [
     {
       "title": "Air Conditioning Systems Serviced Across Al Manara:",
@@ -1014,29 +1071,60 @@ const repairPriceData = {
 };
 
 const testimonialsData = {
-  "id": "testimonials",
-  "title": "Customer Reviews",
-  "description": "Read genuine reviews from homeowners, landlords and facility managers who rely on FAJ Technical Services L.L.C for their HVAC maintenance.",
-  "items": [
+  id: "ac-service-reviews",
+  title: "Customer Reviews",
+  description:
+    "Customer feedback on FAJ air-conditioning repair and maintenance services in Al Manara.",
+  items: [
     {
-      "name": "Tariq Mansoor",
-      "role": "Al Manara Resident",
-      "quote": "The technician arrived within 90 minutes when our split AC broke down in the middle of summer. Excellent service, transparent pricing, and cool air restored immediately.",
-      "rating": 5
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Sara Malik",
+      subtitle: "Al Manara Resident",
+      description:
+        "FAJ provided professional split AC service for my apartment. The team was skilled, cleaned everything properly, and restored cooling performance. Very satisfied with their quick and reliable service in Al Manara.",
     },
     {
-      "name": "Elena Rostova",
-      "role": "Property Manager, Al Manara",
-      "quote": "We have an AMC contract with FAJ for our residential units. Routine deep cleaning and pressure washing keep tenant complaints to zero. Outstanding team.",
-      "rating": 5
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Al Mansoori",
+      subtitle: "Al Manara Resident",
+      description:
+        "Great experience with FAJ’s air conditioner service. The technicians were professional, friendly, and checked everything thoroughly. My AC is running smoothly again. Excellent service in Al Manara, highly recommended!",
     },
     {
-      "name": "Khalfan Al Suwaidi",
-      "role": "Villa Owner, Al Manara",
-      "quote": "Very professional duct cleaning and coil descaling. The air feels crisp and smells fresh. Electricity bills dropped by nearly 15% after the service.",
-      "rating": 5
-    }
-  ]
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Arjun Kumar",
+      subtitle: "Resident",
+      description:
+        "I booked FAJ for HVAC services in Al Manara, and it was excellent. The technicians were skilled, reliable, and carried out the work with great attention to detail.",
+    },
+    {
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Shazia Sheikh",
+      subtitle: "Homeowner",
+      description:
+        "FAJ delivered great AC technical services. Their team was polite, professional, and fixed my cooling issue quickly. Excellent service overall, I will continue using them for future AC problems in Al Manara.",
+    },
+    {
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Ravi Mehta",
+      subtitle: "Resident",
+      description:
+        "I used FAJ for AC cleaning service, and it really improved my air quality. The team worked efficiently, cleaned every part, and made my AC run like new again.",
+    },
+    {
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Waseem Aqdas",
+      subtitle: "Homeowner",
+      description:
+        "Outstanding service from FAJ Technical! My AC wasn't cooling properly, but FAJ Technical came to the rescue. Quick response, friendly technician, and now my AC works perfectly. I highly recommend them!",
+    },
+  ],
 };
 
 const newsData = {
@@ -1052,7 +1140,7 @@ const newsData = {
       "subtitle": "Admin • 5 Comments",
       "description": "A properly functioning air conditioning system is essential for various settings, including homes, offices, and individual spaces. According to HVAC Webmasters, over 70%",
       "href": "/blog/10-common-ac-problems-and-how-to-fix-them/",
-      "actionLabel": "Read Article"
+      "actionLabel": "Read More"
     },
     {
       "icon": "dollar-savings",
@@ -1062,7 +1150,7 @@ const newsData = {
       "subtitle": "Admin • 4 Comments",
       "description": "Air conditioning is excellent for keeping you comfortable indoors but can be expensive. But there is no need to worry, there are some ways to reduce AC electric bill with",
       "href": "/blog/how-to-save-money-on-ac/",
-      "actionLabel": "Read Article"
+      "actionLabel": "Read More"
     },
     {
       "icon": "wind",
@@ -1072,7 +1160,7 @@ const newsData = {
       "subtitle": "Admin • 0 Comments",
       "description": "As the temperatures rise and summer approaches, the desire for a cool and comfortable escape within your home intensifies. Air conditioning offers a seemingly simple solu",
       "href": "/blog/how-to-choose-the-best-air-conditioner-for-home/",
-      "actionLabel": "Read Article"
+      "actionLabel": "Read More"
     }
   ],
   "footer": {
@@ -1088,77 +1176,77 @@ const newsData = {
 };
 
 const faqsData = {
-  "id": "location-faqs",
-  "title": "AC Repair and Maintenance FAQs in Al Manara",
-  "description": "Got questions about AC repair, cleaning, or routine maintenance in Al Manara? Browse our most common answers below:",
-  "items": [
+  id: "ac-service-alManara-faqs",
+  title: "FAQ's",
+  description: "Find answers to common questions about air conditioning repair, cleaning, and maintenance services.",
+  items: [
     {
-      "title": "How often should I service my AC in Al Manara?",
-      "desc": "Most AC systems should be professionally serviced every 3 to 6 months depending on usage.."
+      "question": "How often should I service my AC in Al Manara?",
+      "answer": "Most AC systems should be professionally serviced every 3 to 6 months depending on usage.."
     },
     {
-      "title": "Why is my villa AC cooling some rooms but not others?",
-      "desc": "<ul><li>Blocked ducts</li><li>Dirty filters</li><li>Airflow imbalance</li></ul>These are the most common reasons for weak airflow of your AC unit."
+      "question": "Why is my villa AC cooling some rooms but not others?",
+      "answer": "<ul><li>Blocked ducts</li><li>Dirty filters</li><li>Airflow imbalance</li></ul>These are the most common reasons for weak airflow of your AC unit."
     },
     {
-      "title": "Do you provide AC services for villas in Al Manara?",
-      "desc": "Yes, FAJ Technical Services L.L.C provides service for villas, townhouses, apartments, offices and commercial properties."
+      "question": "Do you provide AC services for villas in Al Manara?",
+      "answer": "Yes, FAJ Technical Services L.L.C provides service for villas, townhouses, apartments, offices and commercial properties."
     },
     {
-      "title": "Can I book AC service during weekends?",
-      "desc": "Yes, weekend appointments may be available depending on technician schedules."
+      "question": "Can I book AC service during weekends?",
+      "answer": "Yes, weekend appointments may be available depending on technician schedules."
     },
     {
-      "title": "What causes an AC to trip the electrical breaker?",
-      "desc": "<strong>There are some common causes of an air conditioner tripping again and again.</strong><ul><li>Electrical faults</li><li>Overloaded circuits</li><li>Damaged component</li></ul>"
+      "question": "What causes an AC to trip the electrical breaker?",
+      "answer": "<strong>There are some common causes of an air conditioner tripping again and again.</strong><ul><li>Electrical faults</li><li>Overloaded circuits</li><li>Damaged component</li></ul>"
     },
     {
-      "title": "Does AC cleaning improve indoor air quality?",
-      "desc": "Yes, by removing dust, mould and bacteria, you can create cleaner and healthier indoor air."
+      "question": "Does AC cleaning improve indoor air quality?",
+      "answer": "Yes, by removing dust, mould and bacteria, you can create cleaner and healthier indoor air."
     },
     {
-      "title": "Which AC brands do you repair?",
-      "desc": "<strong>We repair all of the major brands across the UAE.</strong><ul><li>Daikin</li><li>LG</li><li>Samsung</li><li>Carrier</li><li>York</li><li>Mitsubishi</li><li>O General</li><li>Panasonic</li><li>Gree and many other leading brands.</li></ul>"
+      "question": "Which AC brands do you repair?",
+      "answer": "<strong>We repair all of the major brands across the UAE.</strong><ul><li>Daikin</li><li>LG</li><li>Samsung</li><li>Carrier</li><li>York</li><li>Mitsubishi</li><li>O General</li><li>Panasonic</li><li>Gree and many other leading brands.</li></ul>"
     },
     {
-      "title": "Is an AMC worth having?",
-      "desc": "Yes, regular scheduled maintenance reduces breakdowns and helps your system last longer."
+      "question": "Is an AMC worth having?",
+      "answer": "Yes, regular scheduled maintenance reduces breakdowns and helps your system last longer."
     },
     {
-      "title": "Why is my AC making clicking sounds?",
-      "desc": "Loose electrical parts, relays or worn components often create clicking noises."
+      "question": "Why is my AC making clicking sounds?",
+      "answer": "Loose electrical parts, relays or worn components often create clicking noises."
     },
     {
-      "title": "How long does AC maintenance usually take?",
-      "desc": "Most maintenance visits take around one hour depending on the system condition."
+      "question": "How long does AC maintenance usually take?",
+      "answer": "Most maintenance visits take around one hour depending on the system condition."
     },
     {
-      "title": "Can regular servicing lower electricity bills?",
-      "desc": "Yes, a clean and efficient AC uses less electricity while cooling more effectively."
+      "question": "Can regular servicing lower electricity bills?",
+      "answer": "Yes, a clean and efficient AC uses less electricity while cooling more effectively."
     },
     {
-      "title": "Do you install new AC systems?",
-      "desc": "Yes, we install residential and commercial air conditioning systems in Dubai and the UAE near you."
+      "question": "Do you install new AC systems?",
+      "answer": "Yes, we install residential and commercial air conditioning systems in Dubai and the UAE near you."
     },
     {
-      "title": "Do your services include warranty?",
-      "desc": "Yes, our AC cleaning and maintenance services include a 60-day service warranty."
+      "question": "Do your services include warranty?",
+      "answer": "Yes, our AC cleaning and maintenance services include a 60-day service warranty."
     },
     {
-      "title": "What should I do if my AC starts leaking water?",
-      "desc": "Switch the unit off and arrange a professional inspection before further water damage occurs."
+      "question": "What should I do if my AC starts leaking water?",
+      "answer": "Switch the unit off and arrange a professional inspection before further water damage occurs."
     },
     {
-      "title": "How can I schedule an AC service?",
-      "desc": "Simply contact FAJ Technical Services L.L.C with your preferred date and location, and our team will arrange a convenient appointment."
+      "question": "How can I schedule an AC service?",
+      "answer": "Simply contact FAJ Technical Services L.L.C with your preferred date and location, and our team will arrange a convenient appointment."
     }
-  ]
+  ],
 };
 
 const bookingData = {
   "id": "booking-section",
   "title": "Book An Appointment",
-  "description": "Fill in the form below or call our 7-day hotline for immediate service dispatch across Al Manara.",
+  "description": "Book your AC service appointment with our expert team in Al Manara. We provide professional AC installation, cleaning, maintenance, and repair services to keep your space cool and comfortable.",
   "submitLabel": "Schedule Service Now"
 };
 

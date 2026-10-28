@@ -81,12 +81,12 @@ const overviewData = {
           "text": "FAJ Technical Services L.L.C",
           "href": "/"
         },
-        " has been providing expert and professional air conditioner services in Dubai since 2010. We provide ",
+        " has been an AC cleaning, ",
         {
-          "text": "AC repair",
+          "text": "AC maintenance",
           "href": "/services/air-conditioning-repair/ac-service/"
         },
-        " services, cleaning, maintenance, and installation services in Business Bay. We have the expertise to assist you with your air conditioning repair, maintenance, or installation needs."
+        ", installing air conditioners and AC repair near me in Business Bay since 2010. Our technicians work on both home and office air conditioning systems. They provide effective solutions for all kinds of cooling issues near me in Dubai and the UAE."
       ]
     }
   ],
@@ -99,7 +99,7 @@ const overviewData = {
 
 const areaOverviewData = {
   id: "business-bay-ac-services",
-  title: "Who provides Air Conditioning Services in Business Bay?",
+  title: "Best AC Repair in Business Bay",
   paragraphs: [
     "Business Bay has a lot of towers, offices, retail outlets, restaurants and commercial properties. All of these places need Air Conditioning systems that work well. At FAJ Technical Services L.L.C we provide Air Conditioning solutions for all kinds of properties. We do everything from checks to big fixes for Air Conditioning systems.",
     "Our goal with Air Conditioning Services is simple: we want to make sure your Air Conditioning system works well and does not stop working.",
@@ -308,32 +308,38 @@ const contractsData = {
 };
 
 const serviceOverviewData = {
-  id: "ac-repair-service-overview",
-  title: "Why Does My AC Not Cool properly?",
-  description:
-    "Many issues can affect cooling performance. Some of the most common explanations are:",
-  paragraphs: [
-    "Common causes include dirty air filters, low refrigerant levels, blocked condenser coils, faulty thermostat, compressor problems, electrical faults, and restricted airflow.",
-    "Expert diagnosis helps in identifying the exact reason and stops additional system damage.",
+  "id": "ac-repair-service-overview",
+  "title": "Why Does My AC Not Cool properly?",
+  "description": "Many issues can affect cooling performance. Some of the most common explanations are:",
+  "listTitle": "Common causes include:",
+  "checklist": [
+    "Dirty air filters",
+    "Low refrigerant levels",
+    "Blocked condenser coils",
+    "Faulty thermostat",
+    "Compressor problems",
+    "Electrical faults",
+    "Restricted airflow"
   ],
-  imageSide: "left",
-  image: {
-    id: "ac-service-page/ac-repair-and-service",
-    src: "/img/ac-service-page/ac-repair-and-service.webp",
-    alt: "AC Repair in Business Bay",
-    width: 853,
-    height: 853,
+  "conclusion": "Expert diagnosis helps in identifying the exact reason and stops additional system damage.",
+  "imageSide": "left",
+  "image": {
+    "id": "ac-service-page/ac-repair-and-service",
+    "src": "/img/ac-service-page/ac-repair-and-service.webp",
+    "alt": "AC Repair in Business Bay",
+    "width": 853,
+    "height": 853
   },
-  showCta: true,
-  cta: {
-    phone: "tel:+971507464712",
-    whatsapp: "https://api.whatsapp.com/send?phone=+971507464712&text=Hello",
-  },
+  "showCta": true,
+  "cta": {
+    "phone": "tel:+971507464712",
+    "whatsapp": "https://api.whatsapp.com/send?phone=+971507464712&text=Hello"
+  }
 };
 
 const commonSignsData = {
   id: "ac-maintenance-signs",
-  title: "Signs Your AC May Need Professional Attention",
+  title: "Signs You Need An AC Service",
   intro:
     "In case you notice the following issues, you may need AC servicing by experts.",
   items: [
@@ -354,51 +360,58 @@ const commonSignsData = {
 };
 
 const videoData = {
-  "id": "ac-service-video",
-  "title": "Emergency AC Repair Service in Business Bay",
-  "lead": {
-    "parts": [
-      "AC problems can happen suddenly, especially during Dubai's hottest months. A quick repair helps restore comfort and prevents further damage to your cooling system. At ",
-      {
-        "text": "FAJ Technical Services L.L.C",
-        "href": "/"
-      },
-      ", our fast-response team provides immediate support across Business Bay."
-    ]
-  },
-  "listTitle": "Our emergency AC repair service covers:",
-  "items": [
+  id: "ac-service-video",
+  title: "Emergency AC Repair Service in Business Bay",
+  lead: "A sudden AC breakdown can affect comfort, productivity, and indoor air quality.",
+  listTitle: "Our emergency AC repair service can help with:",
+  items: [
     "AC not cooling",
     "AC not turning on",
     "Water leakage",
     "Electrical faults",
-    "Compressor problems",
     "Thermostat issues",
+    "Compressor failures",
     "Weak airflow",
-    "Unusual noises"
+    "Unusual noises",
   ],
-  "conclusion": "Our technicians provide fast assistance for homes, villas, offices, and commercial properties in Business Bay.",
-  "frameTitle": "Air-conditioning repair and maintenance service video in Business Bay",
-  "videoId": "prUR0-lZlzg",
-  "videoSide": "left",
-  "image": {
-    "id": "indoor-ac-servicing",
-    "src": "/img/indoor-ac-servicing.webp",
-    "alt": "FAJ AC technician providing express and emergency AC repair in Business Bay",
-    "width": 600,
-    "height": 400
+  conclusion:
+    "We provide fast assistance for residential and commercial customers throughout Business Bay and nearby areas.",
+  description: [
+    "A sudden AC breakdown can affect comfort, productivity, and indoor air quality.",
+    "Our emergency AC repair service can help with: AC not cooling, AC not turning on, water leakage, electrical faults, thermostat issues, compressor failures, weak airflow, and unusual noises.",
+    "We provide fast assistance for residential and commercial customers throughout Business Bay and nearby areas.",
+  ],
+  frameTitle: "Air-conditioning repair and maintenance service video in Business Bay",
+  videoId: "prUR0-lZlzg",
+  videoSide: "left",
+  image: {
+    id: "indoor-ac-servicing",
+    src: "/img/indoor-ac-servicing.webp",
+    alt: "FAJ AC technician providing express and emergency AC repair in Business Bay",
+    width: 600,
+    height: 400,
   },
-  "variant": "framed",
-  "showCta": false,
-  "cta": {
-    "phone": "",
-    "whatsapp": ""
-  }
+  variant: "framed",
+  blockInteraction: true,
+  allowFullScreen: false,
+  parameters: {
+    autoplay: "1",
+    mute: "0",
+    controls: "0",
+    modestbranding: "1",
+    rel: "0",
+    showinfo: "0",
+    loop: "1",
+    playlist: "prUR0-lZlzg",
+    playsinline: "1",
+    cc_load_policy: "0",
+    disablekb: "1",
+  },
 };
 
 const maintenanceImportanceData = {
   id: "ac-maintenance-importance",
-  title: "Why Does AC Maintenance Matter in Business Bay?",
+  title: "Why is AC Maintenance Service Important in Business Bay?",
   description:
     "In Business Bay AC maintenance is important if you want your system to keep working properly. FAJ Technical Services L.L.C provides complete maintenance solutions to help your AC run the way it should. We take care of problems before they start so you do not have to worry about sudden breakdowns. Our team makes sure your cooling system stays in good shape all year.",
   imageSide: "left",
@@ -411,8 +424,8 @@ const maintenanceImportanceData = {
   },
   showCta: true,
   cta: {
-    phone: "tel:+971507464712",
-    whatsapp: "https://api.whatsapp.com/send?phone=+971507464712&text=Hello",
+    phone: "",
+    whatsapp: "https://api.whatsapp.com/send?phone=+971507464712&text=Hello"
   },
 };
 
@@ -464,7 +477,7 @@ const maintenanceImportanceCardsData = {
 };
 
 const commonProblemsData = {
-  title: "Common AC Problems",
+  title: "Common AC Problems That May Require Maintenance",
   description: "",
   items: [
     {
@@ -493,12 +506,12 @@ const commonProblemsData = {
         "AC is experiencing short cycling and this may occur because of thermostat issues, airflow restrictions, or electrical faults in it.",
     },
     {
-      title: "High Humidity Level",
+      title: "High Humidity Levels",
       description:
         "The Air Conditioner should help control indoor moisture levels and excess humidity may indicate that the Air Conditioner has performance problems.",
     },
     {
-      title: "Leakage Water",
+      title: "Leaking Water",
       description:
         "AC has blocked drain lines, frozen coils or drainage issues. This can cause water to leak from the Air Conditioner unit.",
     },
@@ -517,7 +530,7 @@ const commonProblemsData = {
 
 const servicesOfferedData = {
   id: "ac-services-offered",
-  title: "Air Conditioning Services Available in Business Bay",
+  title: "HERE ARE THE SERVICES WE OFFER FOR AIR CONDITIONING SYSTEMS",
   description:
     "Looking for reliable air conditioning services in Business Bay? FAJ Technical Services L.L.C provides comprehensive AC repair, cleaning, maintenance, and installation solutions for high-rise towers, offices, retail outlets, and residential apartments.",
   imageSide: "right",
@@ -537,7 +550,7 @@ const servicesOfferedData = {
 
 const servicesOfferedCardsData = {
   id: "ac-services-offered-cards",
-  title: "Air Conditioning Services Available in Business Bay",
+  title: "HERE ARE THE SERVICES WE OFFER FOR AIR CONDITIONING SYSTEMS",
   items: [
     {
       icon: "ac-wrench",
@@ -876,13 +889,11 @@ const linkedBrands = [
     "rheem",
     "Rheem Air Conditioner, founded in 1925 in California, started with steel drums & later shifted to water heaters. In the 1940s & 1950s, the company expanded into AC systems. Now Rheem is leading global HVAC provider known for its innovative solutions.",
   ],
-  [
-    "SKM AC Maintenance Dubai",
+  ["SKM AC Maintenance Dubai", 
     "skm",
     "S.K.M Air Conditioning LLC (SKM) was established in 1974 in Sharjah, United Arab Emirates, to manufacture heating, ventilation, and air conditioning (HVAC) equipment tailored for the harsh Gulf climates.",
   ],
-  [
-    "Lennox Air Conditioning Maintenance Service",
+  ["Lennox Air Conditioning Maintenance Service", 
     "lennox",
     "Lennox Air Conditioning was established in 1895 when Dave Lennox built the first riveted-steel coal-fired furnace in Marshalltown, Iowa. The company later entered the air conditioning market in the early 1950s.",
   ],
@@ -901,6 +912,7 @@ const linkedBrands = [
   ...(description ? { description } : {}),
 }));
 
+
 const brandsData = {
   title: "We specialise in air conditioning services for the following brands",
   description:
@@ -915,16 +927,16 @@ const brandsData = {
   initialCount: 12,
   actionLabel: "Request AC Service",
   items: linkedBrands,
-  showCta: true,
+  showCta: false,
   cta: {
-    phone: "tel:+971507464712",
-    whatsapp: "https://api.whatsapp.com/send?phone=+971507464712&text=Hello",
+    phone: "",
+    whatsapp: "",
   },
 };
 
 const beforeAfterData = {
   id: "recent-completed-service",
-  title: "Recent Completed Projects",
+  title: "Recent Completed Service",
   description:
     "See the real results of our thorough air conditioning maintenance and deep cleaning service in Business Bay.",
   beforeLabel: "Before",
@@ -1077,7 +1089,7 @@ const galleryData = {
 
 const energyTipsData = {
   id: "ac-energy-saving-tips",
-  title: "UAE: 7 Tips to Reduce AC Bills This Summer",
+  title: "Practical Tips to Improve Energy Efficiency",
   description:
     "Learn easy and proven ways to save energy with your AC. Find tips to cut the cost and stay cool all summers!",
   actionLabel: "Click Here to Save on Energy Bills",
@@ -1168,7 +1180,7 @@ const newsData = {
       description:
         "A properly functioning air conditioning system is essential for various settings, including homes, offices, and individual spaces. According to HVAC Webmasters, over 70%",
       href: "/blog/10-common-ac-problems-and-how-to-fix-them/",
-      actionLabel: "Read Article",
+      actionLabel: "Read More",
     },
     {
       icon: "dollar-savings",
@@ -1179,7 +1191,7 @@ const newsData = {
       description:
         "Air conditioning is excellent for keeping you comfortable indoors but can be expensive. But there is no need to worry, there are some ways to reduce AC electric bill with",
       href: "/blog/how-to-save-money-on-ac/",
-      actionLabel: "Read Article",
+      actionLabel: "Read More",
     },
     {
       icon: "wind",
@@ -1190,7 +1202,7 @@ const newsData = {
       description:
         "As the temperatures rise and summer approaches, the desire for a cool and comfortable escape within your home intensifies. Air conditioning offers a seemingly simple solu",
       href: "/blog/how-to-choose-the-best-air-conditioner-for-home/",
-      actionLabel: "Read Article",
+      actionLabel: "Read More",
     },
   ],
   footer: {
@@ -1207,80 +1219,65 @@ const newsData = {
 
 const faqsData = {
   id: "ac-service-faqs",
-  title: "AC Repair and Maintenance FAQs in Business Bay",
-  description:
-    "Answers about AC servicing, cleaning, cooling faults and maintenance in Business Bay.",
+  title: "FAQ's",
+  description: "Answers about AC servicing, cleaning, cooling faults and maintenance in Business Bay.",
   items: [
     {
-      question: "How much does ac systems repair cost in Business Bay?",
-      answer:
-        "The cost is based on the type of issue, the air conditioning system, and any replacement parts required. A professional inspection helps to establish the final repair cost.",
+      "question": "How much does ac systems repair cost in Business Bay?",
+      "answer": "The cost is based on the type of issue, the air conditioning system, and any replacement parts required. A professional inspection helps to establish the final repair cost."
     },
     {
-      question: "How many times should AC systems be serviced in Dubai?",
-      answer:
-        "Most domestic systems benefit from regular maintenance every three to six months. Commercial units may need more frequent servicing.",
+      "question": "How many times should AC systems be serviced in Dubai?",
+      "answer": "Most domestic systems benefit from regular maintenance every three to six months. Commercial units may need more frequent servicing."
     },
     {
-      question: "What are the warning indications that my air conditioner needs quick attention?",
-      answer:
-        "- Weak cooling\n- Water leakage\n- Strange noises\n- Burning smell\n- Frequent shutdowns",
+      "question": "What are the warning indications that my air conditioner needs quick attention?",
+      "answer": "<ul><li>Weak cooling</li><li>Water leakage</li><li>Strange noises</li><li>Burning smell</li><li>Frequent shutdowns</li></ul>"
     },
     {
-      question: "What is included in a standard AC maintenance service?",
-      answer:
-        "- Filter cleaning\n- Coil inspection\n- Cooling performance check\n- Thermostat testing\n- General system inspection",
+      "question": "What is included in a standard AC maintenance service?",
+      "answer": "<ul><li>Filter cleaning</li><li>Coil inspection</li><li>Cooling performance check</li><li>Thermostat testing</li><li>General system inspection</li></ul>"
     },
     {
-      question: "Can AC cleaning improve cooling performance?",
-      answer:
-        "Yes, it can. Cleaning removes dust and blockages that restrict airflow. The AC unit cools more effectively.",
+      "question": "Can AC cleaning improve cooling performance?",
+      "answer": "Yes, it can. Cleaning removes dust and blockages that restrict airflow. The AC unit cools more effectively."
     },
     {
-      question: "Why is my AC leaking water?",
-      answer:
-        "Well, there are a few reasons, such as blocked drainage lines, frozen coils or a lot of dirt buildup, that can cause AC water leakage.",
+      "question": "Why is my AC leaking water?",
+      "answer": "Well, there are a few reasons, such as blocked drainage lines, frozen coils or a lot of dirt buildup, that can cause AC water leakage."
     },
     {
-      question: "Do you provide same-day AC service in Business Bay?",
-      answer:
-        "At FAJ Technical Services L.L.C, we offer same-day services. Small issues are fixed immediately, while larger problems may take more time.",
+      "question": "Do you provide same-day AC service in Business Bay?",
+      "answer": "At FAJ Technical Services L.L.C, we offer same-day services. Small issues are fixed immediately, while larger problems may take more time."
     },
     {
-      question: "Which air conditioning brands do you collaborate with?",
-      answer:
-        "We service major AC brands used in homes, offices and commercial buildings across Dubai. AC brands are our specialty, so we work with many of them.",
+      "question": "Which air conditioning brands do you collaborate with?",
+      "answer": "We service major AC brands used in homes, offices and commercial buildings across Dubai. AC brands are our specialty, so we work with many of them."
     },
     {
-      question: "How can I improve my AC cooling without calling a technician?",
-      answer:
-        "Follow these steps carefully:\n- Close all windows\n- Clean the filters\n- Keep the unit clear\n- Set the thermostat to a temperature",
+      "question": "How can I improve my AC cooling without calling a technician?",
+      "answer": "<strong>Follow these steps carefully:</strong><ul><li>Close all windows </li><li>Clean the filters</li><li>Keep the unit clear</li><li>Set the thermostat to a temperature</li></ul>"
     },
     {
-      question: "Why does my AC smell bad when I turn it on?",
-      answer:
-        "Mold or bacteria inside the AC cause smells. Professional cleaning removes the source completely.",
+      "question": "Why does my AC smell bad when I turn it on?",
+      "answer": "Mold or bacteria inside the AC cause smells. Professional cleaning removes the source completely."
     },
     {
-      question: "What happens if I skip AC servicing for a year?",
-      answer:
-        "- Your AC's efficiency drops\n- Your bills go up\n- Parts wear out faster\n- Small problems become expensive repairs",
+      "question": "What happens if I skip AC servicing for a year?",
+      "answer": "<ul><li>Your AC's efficiency drops</li><li>Your bills go up</li><li>Parts wear out faster</li><li>Small problems become expensive repairs</li></ul>"
     },
     {
-      question: "Why does my AC take too long to cool the room?",
-      answer:
-        "The filters might be dirty, the gas might be low or the unit might be too small for the room. A technician can check the system and suggest the right solution.",
+      "question": "Why does my AC take too long to cool the room?",
+      "answer": "The filters might be dirty, the gas might be low or the unit might be too small for the room. A technician can check the system and suggest the right solution."
     },
     {
-      question: "Do I need to service my AC before summer starts?",
-      answer:
-        "Yes. Servicing before summer prepares your AC for the heavy load ahead. It helps avoid breakdowns when the weather gets extremely hot outside.",
+      "question": "Do I need to service my AC before summer starts?",
+      "answer": "Yes. Servicing before summer prepares your AC for the heavy load ahead. It helps avoid breakdowns when the weather gets extremely hot outside."
     },
     {
-      question: "What should I do if my AC remote stops working?",
-      answer:
-        "Check the batteries first. If that does not work, the remote sensor or receiver might be faulty. The AC can still be operated manually until the remote is fixed.",
-    },
+      "question": "What should I do if my AC remote stops working?",
+      "answer": "Check the batteries first. If that does not work, the remote sensor or receiver might be faulty. The AC can still be operated manually until the remote is fixed."
+    }
   ],
 };
 

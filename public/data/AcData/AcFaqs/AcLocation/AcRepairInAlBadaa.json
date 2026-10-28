@@ -1,55 +1,80 @@
 [
-  {  
+  {
     "title": "How often should I get my air conditioner serviced in Al Badaa?",
-    "desc": "Most home air conditioning systems need to be looked at every 6 months. It really depends on how much you use it and the weather outside."
+    "desc": "Most home air conditioning systems need to be looked at every 6 months. It really depends on how much you use it and the weather outside.",
+    "question": "How often should I get my air conditioner serviced in Al Badaa?",
+    "answer": "Most home air conditioning systems need to be looked at every 6 months. It really depends on how much you use it and the weather outside."
   },
   {
     "title": "Do you fix air conditioners for offices and other commercial properties?",
-    "desc": "Yes, you can get your air conditioner fixed for offices, restaurants, shops, clinics and other commercial buildings in Al Badaa."
+    "desc": "Yes, you can get your air conditioner fixed for offices, restaurants, shops, clinics and other commercial buildings in Al Badaa.",
+    "question": "Do you fix air conditioners for offices and other commercial properties?",
+    "answer": "Yes, you can get your air conditioner fixed for offices, restaurants, shops, clinics and other commercial buildings in Al Badaa."
   },
   {
     "title": "Can I get my air conditioner fixed on the day in Al Badaa?",
-    "desc": "You might be able to get same-day service. It depends on when the technicians are available and what needs to be fixed on your air conditioner."
+    "desc": "You might be able to get same-day service. It depends on when the technicians are available and what needs to be fixed on your air conditioner.",
+    "question": "Can I get my air conditioner fixed on the day in Al Badaa?",
+    "answer": "You might be able to get same-day service. It depends on when the technicians are available and what needs to be fixed on your air conditioner."
   },
   {
     "title": "Why is water leaking from my air conditioner?",
-    "desc": "<strong>There are some reasons this can happen including:</strong><ul><li>Blocked drain pipes</li><li>Frozen evaporator coils</li><li>Dirty air filters</li></ul>"
+    "desc": "<strong>There are some reasons this can happen including:</strong><ul><li>Blocked drain pipes</li><li>Frozen evaporator coils</li><li>Dirty air filters</li></ul>",
+    "question": "Why is water leaking from my air conditioner?",
+    "answer": "<strong>There are some reasons this can happen including:</strong><ul><li>Blocked drain pipes</li><li>Frozen evaporator coils</li><li>Dirty air filters</li></ul>"
   },
   {
     "title": "What is included in the AC maintenance service?",
-    "desc": "<strong>Maintenance usually includes:</strong> <ul><li>Filter cleaning</li><li>Coil inspection</li><li>Drain cleaning</li><li>Thermostat testing</li><li>Performance checks</li></ul>"
+    "desc": "<strong>Maintenance usually includes:</strong> <ul><li>Filter cleaning</li><li>Coil inspection</li><li>Drain cleaning</li><li>Thermostat testing</li><li>Performance checks</li></ul>",
+    "question": "What is included in the AC maintenance service?",
+    "answer": "<strong>Maintenance usually includes:</strong> <ul><li>Filter cleaning</li><li>Coil inspection</li><li>Drain cleaning</li><li>Thermostat testing</li><li>Performance checks</li></ul>"
   },
   {
     "title": "Which AC brands do you service?",
-    "desc": "<strong>Our technicians work with major brands, including:</strong><ul><li>Daikin</li><li>Carrier</li><li>LG</li><li>Samsung</li><li>York</li><li>Mitsubishi</li><li>Gree, and many others.</li></ul>"
+    "desc": "<strong>Our technicians work with major brands, including:</strong><ul><li>Daikin</li><li>Carrier</li><li>LG</li><li>Samsung</li><li>York</li><li>Mitsubishi</li><li>Gree, and many others.</li></ul>",
+    "question": "Which AC brands do you service?",
+    "answer": "<strong>Our technicians work with major brands, including:</strong><ul><li>Daikin</li><li>Carrier</li><li>LG</li><li>Samsung</li><li>York</li><li>Mitsubishi</li><li>Gree, and many others.</li></ul>"
   },
   {
     "title": "Is it worth getting a maintenance contract for my air conditioner system?",
-    "desc": "Yes, getting a maintenance contract every year really helps reduce the number of times your air conditioner breaks down. It also helps your air conditioner system work better in the long run."
+    "desc": "Yes, getting a maintenance contract every year really helps reduce the number of times your air conditioner breaks down. It also helps your air conditioner system work better in the long run.",
+    "question": "Is it worth getting a maintenance contract for my air conditioner system?",
+    "answer": "Yes, getting a maintenance contract every year really helps reduce the number of times your air conditioner breaks down. It also helps your air conditioner system work better in the long run."
   },
   {
     "title": "Why is my air conditioner making so much noise?",
-    "desc": "<strong>Some common reasons include:</strong><ul><li>Loose internal components</li><li>Fan motor issues</li><li>Dirt buildup inside the system</li></ul>"
+    "desc": "<strong>Some common reasons include:</strong><ul><li>Loose internal components</li><li>Fan motor issues</li><li>Dirt buildup inside the system</li></ul>",
+    "question": "Why is my air conditioner making so much noise?",
+    "answer": "<strong>Some common reasons include:</strong><ul><li>Loose internal components</li><li>Fan motor issues</li><li>Dirt buildup inside the system</li></ul>"
   },
   {
     "title": "Can AC cleaning improve indoor air quality?",
-    "desc": "Yes, removing dust and pollutants from the system helps create cleaner indoor air."
+    "desc": "Yes, removing dust and pollutants from the system helps create cleaner indoor air.",
+    "question": "Can AC cleaning improve indoor air quality?",
+    "answer": "Yes, removing dust and pollutants from the system helps create cleaner indoor air."
   },
   {
     "title": "How long does an AC maintenance visit usually take?",
-    "desc": "Most maintenance visits take around one hour depending on the condition and number of units."
+    "desc": "Most maintenance visits take around one hour depending on the condition and number of units.",
+    "question": "How long does an AC maintenance visit usually take?",
+    "answer": "Most maintenance visits take around one hour depending on the condition and number of units."
   },
   {
     "title": "Do you provide warranty on AC services?",
-    "desc": "Yes, cleaning and maintenance services include a 60-day service warranty."
+    "desc": "Yes, cleaning and maintenance services include a 60-day service warranty.",
+    "question": "Do you provide warranty on AC services?",
+    "answer": "Yes, cleaning and maintenance services include a 60-day service warranty."
   },
   {
     "title": "Can regular servicing reduce electricity bills?",
-    "desc": "Yes, efficient air conditioning systems use less energy and often result in lower monthly electricity costs."
+    "desc": "Yes, efficient air conditioning systems use less energy and often result in lower monthly electricity costs.",
+    "question": "Can regular servicing reduce electricity bills?",
+    "answer": "Yes, efficient air conditioning systems use less energy and often result in lower monthly electricity costs."
   },
   {
     "title": "How can I book an AC service appointment?",
-    "desc": "Simply contact our team via WhatsApp and Gmail with your location, preferred time and a suitable visit can be arranged."
+    "desc": "Simply contact our team via WhatsApp and Gmail with your location, preferred time and a suitable visit can be arranged.",
+    "question": "How can I book an AC service appointment?",
+    "answer": "Simply contact our team via WhatsApp and Gmail with your location, preferred time and a suitable visit can be arranged."
   }
-
 ]

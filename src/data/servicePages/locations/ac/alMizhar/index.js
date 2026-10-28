@@ -69,33 +69,24 @@ const heroData = {
 };
 
 const overviewData = {
-  "id": "overview",
-  "paragraphs": [
+  id: "overview",
+  paragraphs: [
     {
-      "parts": [
-        {
-          "text": "FAJ Technical Services L.L.C",
-          "href": "/"
-        },
-        " has been providing expert and professional air conditioner services in Dubai since 2010. We provide ",
-        {
-          "text": "AC repair",
-          "href": "/services/air-conditioning-repair/ac-service/"
-        },
-        " services, cleaning, maintenance, and installation services in Al Mizhar. We have the expertise to assist you with your air conditioning repair, maintenance, or installation needs."
-      ]
+      parts: [
+        "Since 2010, FAJ Technical Services L.L.C has been offering professional air conditioner repair, air conditioner maintenance, air conditioner cleaning and air conditioner installation services throughout the Dubai region. Our professional AC technicians provide reliable workmanship, low prices and fast response to the occurrence of cooling problems in houses and commercial properties in Al Mizhar."
+]
     }
   ],
-  "showCta": false,
-  "cta": {
-    "phone": "",
-    "whatsapp": "https://api.whatsapp.com/send?phone=+971507464712&text=Hello"
+  showCta: false,
+  cta: {
+    phone: "",
+    whatsapp: "https://api.whatsapp.com/send?phone=+971507464712&text=Hello"
   }
 };
 
 const areaOverviewData = {
   "id": "area-ac-services",
-  "title": "Who provides the best AC repair services in Al Mizhar?",
+  "title": "Best AC Repair in Al Mizhar",
   "paragraphs": [
     "Finding an experienced AC company becomes important when your cooling system stops working properly. FAJ Technical Services L.L.C provides Air conditioner repair, AC servicing, AC installation and preventive maintenance in villas, apartments, offices, schools, clinics and commercial buildings all over Al Mizhar.",
     "Our technicians thoroughly check each unit, discuss the issue and suggest realistic options that will increase cooling efficiency and decrease repair expenses in the future."
@@ -295,7 +286,8 @@ const serviceOverviewData = {
   "id": "ac-repair-service-overview",
   "title": "Why Is My AC Not Cooling?",
   "paragraph": "Sometimes the AC keeps running but the room never gets cool enough. Several different issues can reduce cooling performance.",
-  "causes": [
+  "listTitle": "Common causes include:",
+  "checklist": [
     "Dirty air filters",
     "Low refrigerant gas",
     "Blocked condenser coils",
@@ -322,7 +314,7 @@ const serviceOverviewData = {
 
 const commonSignsData = {
   "id": "ac-maintenance-signs",
-  "title": "Which signs show the AC needs service?",
+  "title": "Signs You Need An AC Service",
   "intro": "Most air conditioners show early warning signs before a complete breakdown.",
   "items": [
     {
@@ -349,46 +341,53 @@ const commonSignsData = {
 };
 
 const videoData = {
-  "id": "ac-service-video",
-  "title": "Emergency AC Repair Service in Al Mizhar",
-  "lead": {
-    "parts": [
-      "AC problems can happen suddenly, especially during Dubai's hottest months. A quick repair helps restore comfort and prevents further damage to your cooling system. At ",
-      {
-        "text": "FAJ Technical Services L.L.C",
-        "href": "/"
-      },
-      ", our fast-response team provides immediate support across Al Mizhar."
-    ]
-  },
-  "listTitle": "Our emergency AC repair service covers:",
-  "items": [
+  id: "ac-service-video",
+  title: "Emergency AC Repair Service in Al Mizhar",
+  lead: "A sudden AC breakdown can affect comfort, productivity, and indoor air quality.",
+  listTitle: "Our emergency AC repair service can help with:",
+  items: [
     "AC not cooling",
     "AC not turning on",
     "Water leakage",
     "Electrical faults",
-    "Compressor problems",
     "Thermostat issues",
+    "Compressor failures",
     "Weak airflow",
-    "Unusual noises"
+    "Unusual noises",
   ],
-  "conclusion": "Our technicians provide fast assistance for homes, villas, offices, and commercial properties in Al Mizhar.",
-  "frameTitle": "Air-conditioning repair and maintenance service video in Al Mizhar",
-  "videoId": "prUR0-lZlzg",
-  "videoSide": "left",
-  "image": {
-    "id": "indoor-ac-servicing",
-    "src": "/img/indoor-ac-servicing.webp",
-    "alt": "FAJ AC technician providing express and emergency AC repair in Al Mizhar",
-    "width": 600,
-    "height": 400
+  conclusion:
+    "We provide fast assistance for residential and commercial customers throughout Al Mizhar and nearby areas.",
+  description: [
+    "A sudden AC breakdown can affect comfort, productivity, and indoor air quality.",
+    "Our emergency AC repair service can help with: AC not cooling, AC not turning on, water leakage, electrical faults, thermostat issues, compressor failures, weak airflow, and unusual noises.",
+    "We provide fast assistance for residential and commercial customers throughout Al Mizhar and nearby areas.",
+  ],
+  frameTitle: "Air-conditioning repair and maintenance service video in Al Mizhar",
+  videoId: "prUR0-lZlzg",
+  videoSide: "left",
+  image: {
+    id: "indoor-ac-servicing",
+    src: "/img/indoor-ac-servicing.webp",
+    alt: "FAJ AC technician providing express and emergency AC repair in Al Mizhar",
+    width: 600,
+    height: 400,
   },
-  "variant": "framed",
-  "showCta": false,
-  "cta": {
-    "phone": "",
-    "whatsapp": ""
-  }
+  variant: "framed",
+  blockInteraction: true,
+  allowFullScreen: false,
+  parameters: {
+    autoplay: "1",
+    mute: "0",
+    controls: "0",
+    modestbranding: "1",
+    rel: "0",
+    showinfo: "0",
+    loop: "1",
+    playlist: "prUR0-lZlzg",
+    playsinline: "1",
+    cc_load_policy: "0",
+    disablekb: "1",
+  },
 };
 
 const maintenanceImportanceData = {
@@ -415,7 +414,7 @@ const maintenanceImportanceData = {
 const maintenanceImportanceCardsData = {
   "id": "maintenance-importance-cards",
   "title": "Key Benefits of Regular AC Maintenance",
-  "cards": [
+  "items": [
     {
       "icon": "thermometer-sun",
       "title": "Extreme Weather",
@@ -451,7 +450,7 @@ const maintenanceImportanceCardsData = {
 
 const commonProblemsData = {
   "id": "common-ac-problems",
-  "title": "Most Common AC Problems",
+  "title": "Common AC Problems That May Require Maintenance",
   "description": "Our certified technicians in Al Mizhar quickly diagnose and resolve all major residential and commercial air conditioning issues:",
   "items": [
     {
@@ -520,7 +519,7 @@ const commonProblemsData = {
 
 const servicesOfferedData = {
   "id": "services-offered",
-  "title": "Professional Air Conditioning Services in Al Mizhar",
+  "title": "HERE ARE THE SERVICES WE OFFER FOR AIR CONDITIONING SYSTEMS",
   "items": [
     {
       "icon": "wrench",
@@ -552,8 +551,8 @@ const servicesOfferedData = {
 
 const servicesOfferedCardsData = {
   "id": "services-offered-cards",
-  "title": "Professional Air Conditioning Services in Al Mizhar",
-  "cards": [
+  "title": "HERE ARE THE SERVICES WE OFFER FOR AIR CONDITIONING SYSTEMS",
+  "items": [
     {
       "icon": "wrench",
       "title": "AC Repair Service",
@@ -707,43 +706,92 @@ const cleaningServiceCardsData = {
 };
 
 const whyChooseUsData = {
-  "id": "why-choose-us",
-  "title": "CHOOSE US FOR RELIABLE, EXCEPTIONAL SERVICE TAILORED TO YOUR NEEDS!",
-  "description": "Dedicated to prompt, professional and transparent HVAC service across Dubai.",
-  "image": {
-    "id": "ac-service-page/ac-services-component-new",
-    "src": "/img/ac-service-page/ac-services-component-new.webp",
-    "alt": "Ac Maintenance Services",
-    "width": 600,
-    "height": 400
-  },
-  "items": [
+  id: "why-choose-faj-ac",
+  title: "CHOOSE US FOR RELIABLE, EXCEPTIONAL SERVICE TAILORED TO YOUR NEEDS!",
+  description: "",
+  items: [
     {
-      "icon": "fast-reliable",
-      "title": "Reliable, Priority, and Quick",
-      "description": "You can count on efficient service! Our same-day AC repair or next-day AC service visits ensure that your needs are met quickly."
+      icon: "shield-check",
+      badge: "Fast, Reliable Service",
+      title: "Reliable, Priority, and Quick",
+      description: {
+        parts: [
+          "You can count on ",
+          {
+            text: "efficient service",
+            strong: true,
+            href: "https://www.instagram.com/fajtechnicalservicesllc/",
+            external: true,
+          },
+          "! Our same-day AC repair or next-day AC service visits ensure that your needs are met quickly.",
+        ],
+      },
     },
     {
-      "icon": "experts",
-      "title": "Feeling Of Calm",
-      "description": "With an AC annual maintenance contract, you can relax knowing that your AC unit is in good hands and well taken care of."
+      icon: "peace-of-mind",
+      badge: "Expert Planned Care",
+      title: "Feeling Of Calm",
+      description: {
+        parts: [
+          "With ",
+          {
+            text: "annual maintenance contract",
+            strong: true,
+            href: "/services/air-conditioning-repair/ac-annual-maintenance-contract/",
+          },
+          ", you get a full year of service, ensuring your AC runs smoothly and providing peace of mind.",
+        ],
+      },
     },
     {
-      "icon": "satisfaction",
-      "title": "We Are Experts",
-      "description": "Our team has high-level skills to identify and fix any issue, providing reliable AC repair and maintenance you can trust."
-    }
+      icon: "git-branch",
+      badge: "Flexible Scheduling",
+      title: "You Are in Control",
+      description:
+        "Choose a day and time for your AC repair near me, Al Mizhar or Sharjah. With a 3-4 hour window for when our technician will arrive.",
+    },
+    {
+      icon: "rosette-check",
+      badge: "System Experience",
+      title: "We Are Experts",
+      description:
+        "We are experts in AC service in Al Mizhar. This is why most major brands trust us to handle their service and maintenance needs.",
+    },
+    {
+      icon: "shield-dollar",
+      badge: "Customer Value",
+      title: "Great Value",
+      description:
+        "We are dedicated to ensuring customer satisfaction with timely service, prompt issue resolution, and affordable prices.",
+    },
+    {
+      icon: "clean-handshake",
+      badge: "Dependable Care",
+      title: "Trustworthy",
+      description: {
+        parts: [
+          "Our ",
+          {
+            text: "skilled AC technicians",
+            strong: true,
+            href: "https://www.facebook.com/acrepairservices",
+            external: true,
+          },
+          " are highly trained, and we provide excellent service for a variety of major AC brands efficiently.",
+        ],
+      },
+    },
   ],
-  "showCta": true,
-  "cta": {
-    "phone": "tel:+971507464712",
-    "whatsapp": "https://api.whatsapp.com/send?phone=+971507464712&text=Hello"
-  }
+  showCta: false,
+  cta: {
+    phone: "",
+    whatsapp: "",
+  },
 };
 
 const beforeAfterData = {
   "id": "before-after-slider",
-  "title": "Recent Completed Projects",
+  "title": "Recent Completed Service",
   "description": "Slide to inspect the condition of cooling equipment before and after our precision service.",
   "beforeLabel": "Before",
   "beforeAlt": "Air conditioning unit before service",
@@ -878,7 +926,7 @@ const brandsData = {
 
 const sparePartsRepairData = {
   "id": "ac-spare-parts-and-repair",
-  "title": "We Handle All Types of AC Systems",
+  "title": "We Specialise in All Types of AC Systems",
   "columns": [
     {
       "title": "Air Conditioning Systems Serviced Across Al Mizhar:",
@@ -1014,29 +1062,60 @@ const repairPriceData = {
 };
 
 const testimonialsData = {
-  "id": "testimonials",
-  "title": "Customer Reviews",
-  "description": "Read genuine reviews from homeowners, landlords and facility managers who rely on FAJ Technical Services L.L.C for their HVAC maintenance.",
-  "items": [
+  id: "ac-service-reviews",
+  title: "Customer Reviews",
+  description:
+    "Customer feedback on FAJ air-conditioning repair and maintenance services in Al Mizhar.",
+  items: [
     {
-      "name": "Tariq Mansoor",
-      "role": "Al Mizhar Resident",
-      "quote": "The technician arrived within 90 minutes when our split AC broke down in the middle of summer. Excellent service, transparent pricing, and cool air restored immediately.",
-      "rating": 5
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Sara Malik",
+      subtitle: "Al Mizhar Resident",
+      description:
+        "FAJ provided professional split AC service for my apartment. The team was skilled, cleaned everything properly, and restored cooling performance. Very satisfied with their quick and reliable service in Al Mizhar.",
     },
     {
-      "name": "Elena Rostova",
-      "role": "Property Manager, Al Mizhar",
-      "quote": "We have an AMC contract with FAJ for our residential units. Routine deep cleaning and pressure washing keep tenant complaints to zero. Outstanding team.",
-      "rating": 5
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Al Mansoori",
+      subtitle: "Al Mizhar Resident",
+      description:
+        "Great experience with FAJ’s air conditioner service. The technicians were professional, friendly, and checked everything thoroughly. My AC is running smoothly again. Excellent service in Al Mizhar, highly recommended!",
     },
     {
-      "name": "Khalfan Al Suwaidi",
-      "role": "Villa Owner, Al Mizhar",
-      "quote": "Very professional duct cleaning and coil descaling. The air feels crisp and smells fresh. Electricity bills dropped by nearly 15% after the service.",
-      "rating": 5
-    }
-  ]
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Arjun Kumar",
+      subtitle: "Resident",
+      description:
+        "I booked FAJ for HVAC services in Al Mizhar, and it was excellent. The technicians were skilled, reliable, and carried out the work with great attention to detail.",
+    },
+    {
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Shazia Sheikh",
+      subtitle: "Homeowner",
+      description:
+        "FAJ delivered great AC technical services. Their team was polite, professional, and fixed my cooling issue quickly. Excellent service overall, I will continue using them for future AC problems in Al Mizhar.",
+    },
+    {
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Ravi Mehta",
+      subtitle: "Resident",
+      description:
+        "I used FAJ for AC cleaning service, and it really improved my air quality. The team worked efficiently, cleaned every part, and made my AC run like new again.",
+    },
+    {
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Waseem Aqdas",
+      subtitle: "Homeowner",
+      description:
+        "Outstanding service from FAJ Technical! My AC wasn't cooling properly, but FAJ Technical came to the rescue. Quick response, friendly technician, and now my AC works perfectly. I highly recommend them!",
+    },
+  ],
 };
 
 const newsData = {
@@ -1052,7 +1131,7 @@ const newsData = {
       "subtitle": "Admin • 5 Comments",
       "description": "A properly functioning air conditioning system is essential for various settings, including homes, offices, and individual spaces. According to HVAC Webmasters, over 70%",
       "href": "/blog/10-common-ac-problems-and-how-to-fix-them/",
-      "actionLabel": "Read Article"
+      "actionLabel": "Read More"
     },
     {
       "icon": "dollar-savings",
@@ -1062,7 +1141,7 @@ const newsData = {
       "subtitle": "Admin • 4 Comments",
       "description": "Air conditioning is excellent for keeping you comfortable indoors but can be expensive. But there is no need to worry, there are some ways to reduce AC electric bill with",
       "href": "/blog/how-to-save-money-on-ac/",
-      "actionLabel": "Read Article"
+      "actionLabel": "Read More"
     },
     {
       "icon": "wind",
@@ -1072,7 +1151,7 @@ const newsData = {
       "subtitle": "Admin • 0 Comments",
       "description": "As the temperatures rise and summer approaches, the desire for a cool and comfortable escape within your home intensifies. Air conditioning offers a seemingly simple solu",
       "href": "/blog/how-to-choose-the-best-air-conditioner-for-home/",
-      "actionLabel": "Read Article"
+      "actionLabel": "Read More"
     }
   ],
   "footer": {
@@ -1088,81 +1167,81 @@ const newsData = {
 };
 
 const faqsData = {
-  "id": "location-faqs",
-  "title": "AC Repair and Maintenance FAQs in Al Mizhar",
-  "description": "Got questions about AC repair, cleaning, or routine maintenance in Al Mizhar? Browse our most common answers below:",
-  "items": [
+  id: "ac-service-alMizhar-faqs",
+  title: "FAQ's",
+  description: "Find answers to common questions about air conditioning repair, cleaning, and maintenance services.",
+  items: [
     {
-      "title": "How often should I service my AC in Al Mizhar?",
-      "desc": "Most homes should have professional air conditioning servicing every 3 to 6 months to ensure optimal performance."
+      "question": "How often should I service my AC in Al Mizhar?",
+      "answer": "Most homes should have professional air conditioning servicing every 3 to 6 months to ensure optimal performance."
     },
     {
-      "title": "Why is my AC cooling slowly?",
-      "desc": "<strong>Several factors may contribute to performance issues, including:</strong><ul><li>Dirty filters</li><li>Low gas levels</li><li>Blocked coils</li></ul>Addressing these common concerns is essential for maintaining optimal functionality and efficiency."
+      "question": "Why is my AC cooling slowly?",
+      "answer": "<strong>Several factors may contribute to performance issues, including:</strong><ul><li>Dirty filters</li><li>Low gas levels</li><li>Blocked coils</li></ul>Addressing these common concerns is essential for maintaining optimal functionality and efficiency."
     },
     {
-      "title": "Do you repair Central AC systems?",
-      "desc": "Yes. We repair Central AC, Split AC, Ducted AC, Inverter AC, and many other domestic and commercial AC systems."
+      "question": "Do you repair Central AC systems?",
+      "answer": "Yes. We repair Central AC, Split AC, Ducted AC, Inverter AC, and many other domestic and commercial AC systems."
     },
     {
-      "title": "Is same-day AC repair available?",
-      "desc": "Yes, FAJ Technical Services L.L.C provides same-day services but it depends on whether same-day appointments are available and technician availability."
+      "question": "Is same-day AC repair available?",
+      "answer": "Yes, FAJ Technical Services L.L.C provides same-day services but it depends on whether same-day appointments are available and technician availability."
     },
     {
-      "title": "What causes AC water leakage?",
-      "desc": "<strong>Common reasons include:</strong><ul><li>Blocked drain pipe</li><li>Frozen cooling coil</li><li>Dirty air filter</li></ul>"
+      "question": "What causes AC water leakage?",
+      "answer": "<strong>Common reasons include:</strong><ul><li>Blocked drain pipe</li><li>Frozen cooling coil</li><li>Dirty air filter</li></ul>"
     },
     {
-      "title": "What is included in AC maintenance?",
-      "desc": "<strong>Maintenance normally includes:</strong><ul><li>Filter cleaning</li><li>Coil inspection</li><li>Drain cleaning</li><li>Thermostat testing</li><li>Cooling performance check</li></ul>"
+      "question": "What is included in AC maintenance?",
+      "answer": "<strong>Maintenance normally includes:</strong><ul><li>Filter cleaning</li><li>Coil inspection</li><li>Drain cleaning</li><li>Thermostat testing</li><li>Cooling performance check</li></ul>"
     },
     {
-      "title": "Are you providing the same-day AC repair in Al Mirdif?",
-      "desc": "Service can be arranged the same day depending on the issue and availability. Please reach out and let us know if you want to check."
+      "question": "Are you providing the same-day AC repair in Al Mirdif?",
+      "answer": "Service can be arranged the same day depending on the issue and availability. Please reach out and let us know if you want to check."
     },
     {
-      "title": "Which AC brands do you repair?",
-      "desc": "<strong>We repair all the major brands like:</strong><ul><li>Daikin</li><li>LG</li><li>Samsung</li><li>Carrier</li><li>York</li><li>Mitsubishi</li><li>O General</li><li>Panasonic</li><li>Gree and many more.</li></ul>"
+      "question": "Which AC brands do you repair?",
+      "answer": "<strong>We repair all the major brands like:</strong><ul><li>Daikin</li><li>LG</li><li>Samsung</li><li>Carrier</li><li>York</li><li>Mitsubishi</li><li>O General</li><li>Panasonic</li><li>Gree and many more.</li></ul>"
     },
     {
-      "title": "Is an AMC a good investment?",
-      "desc": "Yes, regular maintenance reduces breakdowns and helps your AC last longer."
+      "question": "Is an AMC a good investment?",
+      "answer": "Yes, regular maintenance reduces breakdowns and helps your AC last longer."
     },
     {
-      "title": "Why does my AC make buzzing sounds?",
-      "desc": "<strong>Some common reasons for strange noise in the AC</strong><ul><li>Loose electrical parts</li><li>Fan issues</li><li>Worn components</li></ul>"
+      "question": "Why does my AC make buzzing sounds?",
+      "answer": "<strong>Some common reasons for strange noise in the AC</strong><ul><li>Loose electrical parts</li><li>Fan issues</li><li>Worn components</li></ul>"
     },
     {
-      "title": "Can AC cleaning improve indoor air quality?",
-      "desc": "Yes, professional cleaning removes dust, mould and bacteria from inside the system."
+      "question": "Can AC cleaning improve indoor air quality?",
+      "answer": "Yes, professional cleaning removes dust, mould and bacteria from inside the system."
     },
     {
-      "title": "How long does AC maintenance take?",
-      "desc": "Most maintenance visits take about one hour depending on the system size. Some time it take more time because of big repair issue."
+      "question": "How long does AC maintenance take?",
+      "answer": "Most maintenance visits take about one hour depending on the system size. Some time it take more time because of big repair issue."
     },
     {
-      "title": "Do your services include a warranty?",
-      "desc": "Yes,we offer AC cleaning and maintenance services include a 60-day service warranty."
+      "question": "Do your services include a warranty?",
+      "answer": "Yes,we offer AC cleaning and maintenance services include a 60-day service warranty."
     },
     {
-      "title": "Will regular servicing reduce electricity bills?",
-      "desc": "Yes, a properly AC maintenanes operations helps to make more efficiently and consumes less power."
+      "question": "Will regular servicing reduce electricity bills?",
+      "answer": "Yes, a properly AC maintenanes operations helps to make more efficiently and consumes less power."
     },
     {
-      "title": "Do you provide AC installation in Al Mizhar?",
-      "desc": "Yes, at FAJ Technical Services we install new residential and commercial air conditioning systems in over all Al Mizhar."
+      "question": "Do you provide AC installation in Al Mizhar?",
+      "answer": "Yes, at FAJ Technical Services we install new residential and commercial air conditioning systems in over all Al Mizhar."
     },
     {
-      "title": "How can I book an AC service?",
-      "desc": "Simply contact FAJ Technical Services L.L.C with your location and preferred time, and our team will arrange your appointment."
+      "question": "How can I book an AC service?",
+      "answer": "Simply contact FAJ Technical Services L.L.C with your location and preferred time, and our team will arrange your appointment."
     }
-  ]
+  ],
 };
 
 const bookingData = {
   "id": "booking-section",
   "title": "Book An Appointment",
-  "description": "Fill in the form below or call our 7-day hotline for immediate service dispatch across Al Mizhar.",
+  "description": "Book your AC service appointment with our expert team in Al Mizhar. We provide professional AC installation, cleaning, maintenance, and repair services to keep your space cool and comfortable.",
   "submitLabel": "Schedule Service Now"
 };
 

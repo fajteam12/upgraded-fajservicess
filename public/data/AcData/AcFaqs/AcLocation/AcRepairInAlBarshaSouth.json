@@ -1,62 +1,92 @@
 [
-  {  
+  {
     "title": "How often should I service my AC in Al Barsha?",
-    "desc": "It is recommended to schedule maintenance every 6 months to keep your system performing at its best."
+    "desc": "It is recommended to schedule maintenance every 6 months to keep your system performing at its best.",
+    "question": "How often should I service my AC in Al Barsha?",
+    "answer": "It is recommended to schedule maintenance every 6 months to keep your system performing at its best."
   },
   {
     "title": "Why is my AC cooling slowly?",
-    "desc": "Dirty filters, low refrigerant and airflow blockages are typical reasons for slow cooling."
+    "desc": "Dirty filters, low refrigerant and airflow blockages are typical reasons for slow cooling.",
+    "question": "Why is my AC cooling slowly?",
+    "answer": "Dirty filters, low refrigerant and airflow blockages are typical reasons for slow cooling."
   },
   {
     "title": "Is same-day AC repair available in Al Barsha?",
-    "desc": "Yes, FAJ Technical Services L.L.C provides same-day support, which may be available depending on the technician's schedule. Get in touch with us to find out."
+    "desc": "Yes, FAJ Technical Services L.L.C provides same-day support, which may be available depending on the technician's schedule. Get in touch with us to find out.",
+    "question": "Is same-day AC repair available in Al Barsha?",
+    "answer": "Yes, FAJ Technical Services L.L.C provides same-day support, which may be available depending on the technician's schedule. Get in touch with us to find out."
   },
   {
     "title": "What causes water leakage from an AC?",
-    "desc": "<strong>Common reasons include:</strong><ul><li>Blocked drainage lines</li><li>Frozen evaporator coils</li><li>Dirty air filters</li></ul>"
+    "desc": "<strong>Common reasons include:</strong><ul><li>Blocked drainage lines</li><li>Frozen evaporator coils</li><li>Dirty air filters</li></ul>",
+    "question": "What causes water leakage from an AC?",
+    "answer": "<strong>Common reasons include:</strong><ul><li>Blocked drainage lines</li><li>Frozen evaporator coils</li><li>Dirty air filters</li></ul>"
   },
   {
     "title": "What is included in the AC maintenance service?",
-    "desc": "<strong>Maintenance normally includes:</strong><ul><li>Filter cleaning</li><li>Coil inspection</li><li>Drainage cleaning</li><li>Thermostat testing</li><li>Overall performance checks</li></ul>"
+    "desc": "<strong>Maintenance normally includes:</strong><ul><li>Filter cleaning</li><li>Coil inspection</li><li>Drainage cleaning</li><li>Thermostat testing</li><li>Overall performance checks</li></ul>",
+    "question": "What is included in the AC maintenance service?",
+    "answer": "<strong>Maintenance normally includes:</strong><ul><li>Filter cleaning</li><li>Coil inspection</li><li>Drainage cleaning</li><li>Thermostat testing</li><li>Overall performance checks</li></ul>"
   },
   {
     "title": "Which AC brands do you service?",
-    "desc": "<strong>At FAJ Technical Services L.L.C our  professional technicians work on all major brands including:</strong><ul><li>Daikin</li><li>LG</li><li>Samsung</li><li>Carrier</li><li>York</li><li>Mitsubishi</li><li>Gree</li><li>O General</li><li>And many others</li></ul>"
+    "desc": "<strong>At FAJ Technical Services L.L.C our  professional technicians work on all major brands including:</strong><ul><li>Daikin</li><li>LG</li><li>Samsung</li><li>Carrier</li><li>York</li><li>Mitsubishi</li><li>Gree</li><li>O General</li><li>And many others</li></ul>",
+    "question": "Which AC brands do you service?",
+    "answer": "<strong>At FAJ Technical Services L.L.C our  professional technicians work on all major brands including:</strong><ul><li>Daikin</li><li>LG</li><li>Samsung</li><li>Carrier</li><li>York</li><li>Mitsubishi</li><li>Gree</li><li>O General</li><li>And many others</li></ul>"
   },
   {
     "title": "Is an AMC worth having?",
-    "desc": "Absolutely, regular servicing reduces breakdowns and supports better long-term performance.."
+    "desc": "Absolutely, regular servicing reduces breakdowns and supports better long-term performance..",
+    "question": "Is an AMC worth having?",
+    "answer": "Absolutely, regular servicing reduces breakdowns and supports better long-term performance.."
   },
   {
     "title": "Why is my AC making noise?",
-    "desc": "<strong>Possible reasons include:</strong><ul><li>Loose internal parts</li><li>Fan motor issues</li><li>Dirt accumulation inside the unit</li></ul>"
+    "desc": "<strong>Possible reasons include:</strong><ul><li>Loose internal parts</li><li>Fan motor issues</li><li>Dirt accumulation inside the unit</li></ul>",
+    "question": "Why is my AC making noise?",
+    "answer": "<strong>Possible reasons include:</strong><ul><li>Loose internal parts</li><li>Fan motor issues</li><li>Dirt accumulation inside the unit</li></ul>"
   },
   {
     "title": "Can AC cleaning improve indoor air quality?",
-    "desc": "Definitely, removing dust and contaminants creates cleaner, healthier air inside your property."
+    "desc": "Definitely, removing dust and contaminants creates cleaner, healthier air inside your property.",
+    "question": "Can AC cleaning improve indoor air quality?",
+    "answer": "Definitely, removing dust and contaminants creates cleaner, healthier air inside your property."
   },
   {
     "title": "How long does AC maintenance take?",
-    "desc": "Most maintenance visits take about one hour depending on the system size and its condition."
+    "desc": "Most maintenance visits take about one hour depending on the system size and its condition.",
+    "question": "How long does AC maintenance take?",
+    "answer": "Most maintenance visits take about one hour depending on the system size and its condition."
   },
   {
     "title": "Do you provide warranty on services?",
-    "desc": "Yes, at FAJ Technical Services L.L.C you can get our cleaning and maintenance services, which come with a 60-day service warranty."
+    "desc": "Yes, at FAJ Technical Services L.L.C you can get our cleaning and maintenance services, which come with a 60-day service warranty.",
+    "question": "Do you provide warranty on services?",
+    "answer": "Yes, at FAJ Technical Services L.L.C you can get our cleaning and maintenance services, which come with a 60-day service warranty."
   },
   {
     "title": "Can regular servicing lower electricity bills?",
-    "desc": "Yes, efficient systems use less power and can help reduce your monthly electricity costs."
+    "desc": "Yes, efficient systems use less power and can help reduce your monthly electricity costs.",
+    "question": "Can regular servicing lower electricity bills?",
+    "answer": "Yes, efficient systems use less power and can help reduce your monthly electricity costs."
   },
   {
     "title": "How much does AC repair cost in Bur Dubai?",
-    "desc": "AC service in Dubai typically costs between AED 230 to AED 765 depending on the type of service. Prices vary based on the unit's size and condition, as well as the service provider."
+    "desc": "AC service in Dubai typically costs between AED 230 to AED 765 depending on the type of service. Prices vary based on the unit's size and condition, as well as the service provider.",
+    "question": "How much does AC repair cost in Bur Dubai?",
+    "answer": "AC service in Dubai typically costs between AED 230 to AED 765 depending on the type of service. Prices vary based on the unit's size and condition, as well as the service provider."
   },
   {
     "title": "Can a dirty AC filter make me sick?",
-    "desc": "Yes, Dirty filters trap dust, bacteria and allergens that circulate in the air. This can trigger allergies and breathing problems. Regular cleaning keeps the air safe and healthy."
+    "desc": "Yes, Dirty filters trap dust, bacteria and allergens that circulate in the air. This can trigger allergies and breathing problems. Regular cleaning keeps the air safe and healthy.",
+    "question": "Can a dirty AC filter make me sick?",
+    "answer": "Yes, Dirty filters trap dust, bacteria and allergens that circulate in the air. This can trigger allergies and breathing problems. Regular cleaning keeps the air safe and healthy."
   },
   {
     "title": "Why does my AC trip the circuit breaker?",
-    "desc": "This usually happens because of an electrical fault, a short circuit or a compressor problem. Do not keep resetting the breaker. Get a technician to check the wiring and components."
+    "desc": "This usually happens because of an electrical fault, a short circuit or a compressor problem. Do not keep resetting the breaker. Get a technician to check the wiring and components.",
+    "question": "Why does my AC trip the circuit breaker?",
+    "answer": "This usually happens because of an electrical fault, a short circuit or a compressor problem. Do not keep resetting the breaker. Get a technician to check the wiring and components."
   }
 ]

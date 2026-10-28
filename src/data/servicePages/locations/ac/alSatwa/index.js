@@ -81,12 +81,12 @@ const overviewData = {
           "text": "FAJ Technical Services L.L.C",
           "href": "/"
         },
-        " has been providing expert and professional air conditioner services in Dubai since 2010. We provide ",
+        " has been operating in Dubai since 2010. We provide ",
         {
           "text": "AC repair",
           "href": "/services/air-conditioning-repair/ac-service/"
         },
-        " services, cleaning, maintenance, and installation services in Al Satwa. We have the expertise to assist you with your air conditioning repair, maintenance, or installation needs."
+        ", maintenance, cleaning, and installation services in Al Satwa and nearby locations. Our technicians handle all types of air conditioning systems in homes, shops, and offices. Fast response and reliable service are always a priority."
       ]
     }
   ],
@@ -99,7 +99,7 @@ const overviewData = {
 
 const areaOverviewData = {
   id: "al-satwa-ac-services",
-  title: "Who Offers The Most Trusted AC Repair Service in Al Satwa?",
+  title: "Best AC Repair in Al Satwa",
   paragraphs: [
     "If you are searching for AC repair near you in Al Satwa, FAJ Technical Services L.L.C is a reliable choice. We provide fast and professional AC servicing for homes, offices, shops, and commercial buildings across Dubai and the UAE.",
     "Our expert technicians handle all types of air conditioning systems with proper diagnosis and long-term solutions. We focus on quick response, transparent pricing, and high-quality workmanship.",
@@ -308,32 +308,41 @@ const contractsData = {
 };
 
 const serviceOverviewData = {
-  id: "ac-repair-service-overview",
-  title: "Why Does My Air Conditioner Not Cool?",
-  description:
-    "AC cooling issues are common in Dubai due to heavy usage and dust. Main causes include:",
-  paragraphs: [
-    "Main causes include dirty air filter or blocked air ducts, low refrigerant or gas leakage, compressor or thermostat fault, dirty condenser or evaporator coil, and electrical or airflow restriction.",
-    "A professional HVAC maintenance check helps detect the real issue quickly and safely.",
+  "id": "ac-repair-service-overview",
+  "title": "Why Does My Air Conditioner Not Cool?",
+  "description": "AC cooling issues are common in Dubai due to heavy usage and dust. Main causes include:",
+  "listTitle": "Main causes include:",
+  "checklist": [
+    "Dirty air filter",
+    "Blocked air ducts",
+    "Low refrigerant",
+    "Gas leakage",
+    "Compressor",
+    "Thermostat fault",
+    "Dirty condenser",
+    "Evaporator coil",
+    "Electrical",
+    "Airflow restriction"
   ],
-  imageSide: "left",
-  image: {
-    id: "ac-service-page/ac-repair-and-service",
-    src: "/img/ac-service-page/ac-repair-and-service.webp",
-    alt: "AC Repair in Al Satwa",
-    width: 853,
-    height: 853,
+  "conclusion": "A professional HVAC maintenance check helps detect the real issue quickly and safely.",
+  "imageSide": "left",
+  "image": {
+    "id": "ac-service-page/ac-repair-and-service",
+    "src": "/img/ac-service-page/ac-repair-and-service.webp",
+    "alt": "AC Repair in Al Satwa",
+    "width": 853,
+    "height": 853
   },
-  showCta: true,
-  cta: {
-    phone: "tel:+971507464712",
-    whatsapp: "https://api.whatsapp.com/send?phone=+971507464712&text=Hello",
-  },
+  "showCta": true,
+  "cta": {
+    "phone": "tel:+971507464712",
+    "whatsapp": "https://api.whatsapp.com/send?phone=+971507464712&text=Hello"
+  }
 };
 
 const commonSignsData = {
   id: "ac-maintenance-signs",
-  title: "What are the signs that show the AC needs service?",
+  title: "Signs You Need An AC Service",
   intro:
     "If you notice these issues, your system may need professional AC servicing:",
   items: [
@@ -352,51 +361,58 @@ const commonSignsData = {
 };
 
 const videoData = {
-  "id": "ac-service-video",
-  "title": "Emergency AC Repair Service in Al Satwa",
-  "lead": {
-    "parts": [
-      "AC problems can happen suddenly, especially during Dubai's hottest months. A quick repair helps restore comfort and prevents further damage to your cooling system. At ",
-      {
-        "text": "FAJ Technical Services L.L.C",
-        "href": "/"
-      },
-      ", our fast-response team provides immediate support across Al Satwa."
-    ]
-  },
-  "listTitle": "Our emergency AC repair service covers:",
-  "items": [
+  id: "ac-service-video",
+  title: "Emergency AC Repair Service in Al Satwa",
+  lead: "A sudden AC breakdown can affect comfort, productivity, and indoor air quality.",
+  listTitle: "Our emergency AC repair service can help with:",
+  items: [
     "AC not cooling",
     "AC not turning on",
     "Water leakage",
     "Electrical faults",
-    "Compressor problems",
     "Thermostat issues",
+    "Compressor failures",
     "Weak airflow",
-    "Unusual noises"
+    "Unusual noises",
   ],
-  "conclusion": "Our technicians provide fast assistance for homes, villas, offices, and commercial properties in Al Satwa.",
-  "frameTitle": "Air-conditioning repair and maintenance service video in Al Satwa",
-  "videoId": "prUR0-lZlzg",
-  "videoSide": "left",
-  "image": {
-    "id": "indoor-ac-servicing",
-    "src": "/img/indoor-ac-servicing.webp",
-    "alt": "FAJ AC technician providing express and emergency AC repair in Al Satwa",
-    "width": 600,
-    "height": 400
+  conclusion:
+    "We provide fast assistance for residential and commercial customers throughout Al Satwa and nearby areas.",
+  description: [
+    "A sudden AC breakdown can affect comfort, productivity, and indoor air quality.",
+    "Our emergency AC repair service can help with: AC not cooling, AC not turning on, water leakage, electrical faults, thermostat issues, compressor failures, weak airflow, and unusual noises.",
+    "We provide fast assistance for residential and commercial customers throughout Al Satwa and nearby areas.",
+  ],
+  frameTitle: "Air-conditioning repair and maintenance service video in Al Satwa",
+  videoId: "prUR0-lZlzg",
+  videoSide: "left",
+  image: {
+    id: "indoor-ac-servicing",
+    src: "/img/indoor-ac-servicing.webp",
+    alt: "FAJ AC technician providing express and emergency AC repair in Al Satwa",
+    width: 600,
+    height: 400,
   },
-  "variant": "framed",
-  "showCta": false,
-  "cta": {
-    "phone": "",
-    "whatsapp": ""
-  }
+  variant: "framed",
+  blockInteraction: true,
+  allowFullScreen: false,
+  parameters: {
+    autoplay: "1",
+    mute: "0",
+    controls: "0",
+    modestbranding: "1",
+    rel: "0",
+    showinfo: "0",
+    loop: "1",
+    playlist: "prUR0-lZlzg",
+    playsinline: "1",
+    cc_load_policy: "0",
+    disablekb: "1",
+  },
 };
 
 const maintenanceImportanceData = {
   id: "ac-maintenance-importance",
-  title: "Why AC Maintenance Is Important in Al Satwa?",
+  title: "Why is AC Maintenance Service Important in Al Satwa?",
   description:
     "Dubai’s climate puts heavy pressure on air conditioning systems. Regular servicing helps maintain cooling performance and reduces repair costs.",
   imageSide: "left",
@@ -409,8 +425,8 @@ const maintenanceImportanceData = {
   },
   showCta: true,
   cta: {
-    phone: "tel:+971507464712",
-    whatsapp: "https://api.whatsapp.com/send?phone=+971507464712&text=Hello",
+    phone: "",
+    whatsapp: "https://api.whatsapp.com/send?phone=+971507464712&text=Hello"
   },
 };
 
@@ -462,7 +478,7 @@ const maintenanceImportanceCardsData = {
 };
 
 const commonProblemsData = {
-  title: "Which AC Issues Are Most Frequent?",
+  title: "Common AC Problems That May Require Maintenance",
   description: "",
   items: [
     {
@@ -515,7 +531,7 @@ const commonProblemsData = {
 
 const servicesOfferedData = {
   id: "ac-services-offered",
-  title: "Professional Air Conditioning Services in Al Satwa",
+  title: "HERE ARE THE SERVICES WE OFFER FOR AIR CONDITIONING SYSTEMS",
   description:
     "Searching for professional air conditioning services in Al Satwa? FAJ Technical Services L.L.C provides complete AC repair, cleaning, maintenance, and installation solutions for homes, residential apartments, offices, and commercial properties.",
   imageSide: "right",
@@ -535,7 +551,7 @@ const servicesOfferedData = {
 
 const servicesOfferedCardsData = {
   id: "ac-services-offered-cards",
-  title: "Professional Air Conditioning Services in Al Satwa",
+  title: "HERE ARE THE SERVICES WE OFFER FOR AIR CONDITIONING SYSTEMS",
   items: [
     {
       icon: "ac-wrench",
@@ -874,13 +890,11 @@ const linkedBrands = [
     "rheem",
     "Rheem Air Conditioner, founded in 1925 in California, started with steel drums & later shifted to water heaters. In the 1940s & 1950s, the company expanded into AC systems. Now Rheem is leading global HVAC provider known for its innovative solutions.",
   ],
-  [
-    "SKM AC Maintenance Dubai",
+  ["SKM AC Maintenance Dubai", 
     "skm",
     "S.K.M Air Conditioning LLC (SKM) was established in 1974 in Sharjah, United Arab Emirates, to manufacture heating, ventilation, and air conditioning (HVAC) equipment tailored for the harsh Gulf climates.",
   ],
-  [
-    "Lennox Air Conditioning Maintenance Service",
+  ["Lennox Air Conditioning Maintenance Service", 
     "lennox",
     "Lennox Air Conditioning was established in 1895 when Dave Lennox built the first riveted-steel coal-fired furnace in Marshalltown, Iowa. The company later entered the air conditioning market in the early 1950s.",
   ],
@@ -899,6 +913,7 @@ const linkedBrands = [
   ...(description ? { description } : {}),
 }));
 
+
 const brandsData = {
   title: "We specialise in air conditioning services for the following brands",
   description:
@@ -913,16 +928,16 @@ const brandsData = {
   initialCount: 12,
   actionLabel: "Request AC Service",
   items: linkedBrands,
-  showCta: true,
+  showCta: false,
   cta: {
-    phone: "tel:+971507464712",
-    whatsapp: "https://api.whatsapp.com/send?phone=+971507464712&text=Hello",
+    phone: "",
+    whatsapp: "",
   },
 };
 
 const beforeAfterData = {
   id: "recent-completed-service",
-  title: "Recent Completed Projects",
+  title: "Recent Completed Service",
   description:
     "See the real results of our thorough air conditioning maintenance and deep cleaning service in Al Satwa.",
   beforeLabel: "Before",
@@ -1166,7 +1181,7 @@ const newsData = {
       description:
         "A properly functioning air conditioning system is essential for various settings, including homes, offices, and individual spaces. According to HVAC Webmasters, over 70%",
       href: "/blog/10-common-ac-problems-and-how-to-fix-them/",
-      actionLabel: "Read Article",
+      actionLabel: "Read More",
     },
     {
       icon: "dollar-savings",
@@ -1177,7 +1192,7 @@ const newsData = {
       description:
         "Air conditioning is excellent for keeping you comfortable indoors but can be expensive. But there is no need to worry, there are some ways to reduce AC electric bill with",
       href: "/blog/how-to-save-money-on-ac/",
-      actionLabel: "Read Article",
+      actionLabel: "Read More",
     },
     {
       icon: "wind",
@@ -1188,7 +1203,7 @@ const newsData = {
       description:
         "As the temperatures rise and summer approaches, the desire for a cool and comfortable escape within your home intensifies. Air conditioning offers a seemingly simple solu",
       href: "/blog/how-to-choose-the-best-air-conditioner-for-home/",
-      actionLabel: "Read Article",
+      actionLabel: "Read More",
     },
   ],
   footer: {
@@ -1205,85 +1220,69 @@ const newsData = {
 
 const faqsData = {
   id: "ac-service-faqs",
-  title: "AC Repair and Maintenance FAQs in Al Satwa",
-  description:
-    "Answers about AC servicing, cleaning, cooling faults and maintenance in Al Satwa.",
+  title: "FAQ's",
+  description: "Answers about AC servicing, cleaning, cooling faults and maintenance in Al Satwa.",
   items: [
     {
-      question: "Who provides the best AC repair service near me in Dubai?",
-      answer:
-        "FAJ Technical Services L.L.C is a good option for reliable AC repair. They fix homes, offices and shops all over Dubai. Their response is fast.",
+      "question": "Who provides the best AC repair service near me in Dubai?",
+      "answer": "FAJ Technical Services L.L.C is a good option for reliable AC repair. They fix homes, offices and shops all over Dubai. Their response is fast."
     },
     {
-      question: "How much does AC repair cost in Dubai?",
-      answer:
-        "The cost of fixing your AC depends on the problem and type of AC. They usually inspect first. Then they tell you the price.",
+      "question": "How much does AC repair cost in Dubai?",
+      "answer": "The cost of fixing your AC depends on the problem and type of AC. They usually inspect first. Then they tell you the price."
     },
     {
-      question: "How often should AC be serviced in Dubai?",
-      answer:
-        "You should service your AC every 3 to 6 months. This is because the weather is extreme here.",
+      "question": "How often should AC be serviced in Dubai?",
+      "answer": "You should service your AC every 3 to 6 months. This is because the weather is extreme here."
     },
     {
-      question: "Do you offer emergency AC repair in Dubai?",
-      answer:
-        "Yes, we offer emergency repair. They fix breakdowns and sudden cooling issues.",
+      "question": "Do you offer emergency AC repair in Dubai?",
+      "answer": "Yes, we offer emergency repair. They fix breakdowns and sudden cooling issues."
     },
     {
-      question: "What are the signs that my AC needs repair?",
-      answer:
-        "If your AC cools weakly.. If it leaks water. Unusual noise and high electricity bills are also signs.",
+      "question": "What are the signs that my AC needs repair?",
+      "answer": "If your AC cools weakly.. If it leaks water. Unusual noise and high electricity bills are also signs."
     },
     {
-      question: "Which AC brands do you service in Dubai?",
-      answer:
-        "We service brands including LG, Samsung, Daikin, O General, Mitsubishi, Carrier and more.",
+      "question": "Which AC brands do you service in Dubai?",
+      "answer": "We service brands including LG, Samsung, Daikin, O General, Mitsubishi, Carrier and more."
     },
     {
-      question: "Do you provide same-day AC repair service?",
-      answer:
-        "Yes, same-day service is available. If a technician is available and not too far.",
+      "question": "Do you provide same-day AC repair service?",
+      "answer": "Yes, same-day service is available. If a technician is available and not too far."
     },
     {
-      question: "Why is my AC leaking water?",
-      answer:
-        "Water leaks because of blocked drainage. Dirty filters or frozen coils can also cause it.",
+      "question": "Why is my AC leaking water?",
+      "answer": "Water leaks because of blocked drainage. Dirty filters or frozen coils can also cause it."
     },
     {
-      question: "Is AC gas refill in Dubai?",
-      answer:
-        "Yes, FAJ Technical Services L.L.C refills gas after checking for leaks and system pressure.",
+      "question": "Is AC gas refill in Dubai?",
+      "answer": "Yes, FAJ Technical Services L.L.C refills gas after checking for leaks and system pressure."
     },
     {
-      question: "What is the difference between AC repair and maintenance?",
-      answer:
-        "Repairing is all about solving issues when they arise, while maintenance is your proactive shield against potential problems. Regular upkeep ensures your AC runs smoothly and efficiently, keeping you cool when it matters most.",
+      "question": "What is the difference between AC repair and maintenance?",
+      "answer": "Repairing is all about solving issues when they arise, while maintenance is your proactive shield against potential problems. Regular upkeep ensures your AC runs smoothly and efficiently, keeping you cool when it matters most."
     },
     {
-      question: "Do you offer AC installation service in Dubai?",
-      answer:
-        "Yes, we install all types of AC, including split, window, commercial AC and more.",
+      "question": "Do you offer AC installation service in Dubai?",
+      "answer": "Yes, we install all types of AC, including split, window, commercial AC and more."
     },
     {
-      question: "Is AMC (Annual Maintenance Contract) worth it in Dubai?",
-      answer:
-        "Yes, AMC helps to reduce breakdowns and repair costs. It keeps your AC working all year.",
+      "question": "Is AMC (Annual Maintenance Contract) worth it in Dubai?",
+      "answer": "Yes, AMC helps to reduce breakdowns and repair costs. It keeps your AC working all year."
     },
     {
-      question: "Why is my Air Conditioner not cooling properly?",
-      answer:
-        "- The air filters in your Air Conditioner might be dirty or blocked which reduces the airflow\n- If the refrigerant gas in your Air Conditioner is low it affects the cooling performance\n- There could be issues with the compressor or thermostat in the air conditioner which may stop it from cooling",
+      "question": "Why is my Air Conditioner not cooling properly?",
+      "answer": "<ul><li>The air filters in your Air Conditioner might be dirty or blocked which reduces the airflow</li><li>If the refrigerant gas in your Air Conditioner is low it affects the cooling performance</li><li>There could be issues with the compressor or thermostat in the air conditioner which may stop it from cooling</li></ul>"
     },
     {
-      question: "What are the benefits of Air Conditioner maintenance?",
-      answer:
-        "- Air Conditioner maintenance improves the cooling performance of the Air Conditioner\n- It reduces electricity bills\n- Air Conditioner maintenance helps prevent breakdowns of the air conditioner",
+      "question": "What are the benefits of Air Conditioner maintenance?",
+      "answer": "<ul><li>Air Conditioner maintenance improves the cooling performance of the Air Conditioner</li><li>It reduces electricity bills</li><li>Air Conditioner maintenance helps prevent breakdowns of the air conditioner</li></ul>"
     },
     {
-      question: "What does an air conditioner maintenance service include?",
-      answer:
-        "- Cleaning of the filters and coils of the air conditioner\n- Check the cooling performance of the AC\n- Inspecting the system parts of the AC",
-    },
+      "question": "What does an air conditioner maintenance service include?",
+      "answer": "<ul><li>Cleaning of the filters and coils of the air conditioner</li><li>Check the cooling performance of the AC</li><li>Inspecting the system parts of the AC</li></ul>"
+    }
   ],
 };
 

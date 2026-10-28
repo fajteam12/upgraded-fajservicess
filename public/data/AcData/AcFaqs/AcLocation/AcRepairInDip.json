@@ -1,63 +1,92 @@
 [
-  {  
+  {
     "title": "What is the price of AC repair in DIP?",
-    "desc": "The cost will vary based on the type of AC, the problem, parts to be replaced, and the work to be done. Inspection services are available to pinpoint the problem before repairs."
+    "desc": "The cost will vary based on the type of AC, the problem, parts to be replaced, and the work to be done. Inspection services are available to pinpoint the problem before repairs.",
+    "question": "What is the price of AC repair in DIP?",
+    "answer": "The cost will vary based on the type of AC, the problem, parts to be replaced, and the work to be done. Inspection services are available to pinpoint the problem before repairs."
   },
   {
     "title": "How often should I service my AC in DIP?",
-    "desc": "The typical maintenance schedule for most air conditioners is to get them serviced 3 to 6 months after every single service. Well-maintained means better cooling efficiency and fewer surprises."
+    "desc": "The typical maintenance schedule for most air conditioners is to get them serviced 3 to 6 months after every single service. Well-maintained means better cooling efficiency and fewer surprises.",
+    "question": "How often should I service my AC in DIP?",
+    "answer": "The typical maintenance schedule for most air conditioners is to get them serviced 3 to 6 months after every single service. Well-maintained means better cooling efficiency and fewer surprises."
   },
   {
     "title": "Why doesn't my AC cool as it should?",
-    "desc": "Some of the more common causes are dirty filters, low refrigerant, blocked coils, thermostat problems, compressor problems, or airflow blockage. A professional inspection will be able to identify the exact cause."
+    "desc": "Some of the more common causes are dirty filters, low refrigerant, blocked coils, thermostat problems, compressor problems, or airflow blockage. A professional inspection will be able to identify the exact cause.",
+    "question": "Why doesn't my AC cool as it should?",
+    "answer": "Some of the more common causes are dirty filters, low refrigerant, blocked coils, thermostat problems, compressor problems, or airflow blockage. A professional inspection will be able to identify the exact cause."
   },
   {
     "title": "Do you provide AC repair for warehouses and commercial buildings in DIP?",
-    "desc": "Yes, we do offer AC repair, cleaning and maintenance services in DIP for warehouses, offices, factories, residential buildings and commercial properties."
+    "desc": "Yes, we do offer AC repair, cleaning and maintenance services in DIP for warehouses, offices, factories, residential buildings and commercial properties.",
+    "question": "Do you provide AC repair for warehouses and commercial buildings in DIP?",
+    "answer": "Yes, we do offer AC repair, cleaning and maintenance services in DIP for warehouses, offices, factories, residential buildings and commercial properties."
   },
   {
     "title": "What are the reasons for water leakage from the air conditioner?",
-    "desc": "<strong>Common causes include:</strong><ul><li>Blocked drain pipe</li><li>Frozen evaporator coil</li><li>Dirty air filters</li><li>Drainage problems</li></ul>"
+    "desc": "<strong>Common causes include:</strong><ul><li>Blocked drain pipe</li><li>Frozen evaporator coil</li><li>Dirty air filters</li><li>Drainage problems</li></ul>",
+    "question": "What are the reasons for water leakage from the air conditioner?",
+    "answer": "<strong>Common causes include:</strong><ul><li>Blocked drain pipe</li><li>Frozen evaporator coil</li><li>Dirty air filters</li><li>Drainage problems</li></ul>"
   },
   {
     "title": "Can AC cleaning improve cooling performance?",
-    "desc": "Yes, cleaning will help to remove dust and dirt from filters and coils to facilitate the flow of air through the cooling unit and help it cool more effectively."
+    "desc": "Yes, cleaning will help to remove dust and dirt from filters and coils to facilitate the flow of air through the cooling unit and help it cool more effectively.",
+    "question": "Can AC cleaning improve cooling performance?",
+    "answer": "Yes, cleaning will help to remove dust and dirt from filters and coils to facilitate the flow of air through the cooling unit and help it cool more effectively."
   },
   {
     "title": "Do you offer same-day AC repair in Dubai Investment Park?",
-    "desc": "Depending on the type of air conditioning problem and the availability of the technician, the service may be available on the same day. Get help from our staff in a timely manner. "
+    "desc": "Depending on the type of air conditioning problem and the availability of the technician, the service may be available on the same day. Get help from our staff in a timely manner. ",
+    "question": "Do you offer same-day AC repair in Dubai Investment Park?",
+    "answer": "Depending on the type of air conditioning problem and the availability of the technician, the service may be available on the same day. Get help from our staff in a timely manner. "
   },
   {
     "title": "Which AC brands do you repair?",
-    "desc": "<strong>We repair major AC brands including:</strong><ul><li>Daikin</li><li>LG</li><li>Samsung</li><li>O General</li><li>Mitsubishi</li><li>Carrier</li><li>York</li><li>Gree</li><li>Panasonic</li><li>Hitachi</li></ul>"
+    "desc": "<strong>We repair major AC brands including:</strong><ul><li>Daikin</li><li>LG</li><li>Samsung</li><li>O General</li><li>Mitsubishi</li><li>Carrier</li><li>York</li><li>Gree</li><li>Panasonic</li><li>Hitachi</li></ul>",
+    "question": "Which AC brands do you repair?",
+    "answer": "<strong>We repair major AC brands including:</strong><ul><li>Daikin</li><li>LG</li><li>Samsung</li><li>O General</li><li>Mitsubishi</li><li>Carrier</li><li>York</li><li>Gree</li><li>Panasonic</li><li>Hitachi</li></ul>"
   },
   {
     "title": "What is included in the AC maintenance service?",
-    "desc": "<strong>AC maintenance usually includes:</strong><ul><li>Filter cleaning</li><li>Coil inspection</li><li>Drain line checking</li><li>Thermostat testing</li><li>Cooling performance check</li><li>Electrical inspection</li></ul>"
+    "desc": "<strong>AC maintenance usually includes:</strong><ul><li>Filter cleaning</li><li>Coil inspection</li><li>Drain line checking</li><li>Thermostat testing</li><li>Cooling performance check</li><li>Electrical inspection</li></ul>",
+    "question": "What is included in the AC maintenance service?",
+    "answer": "<strong>AC maintenance usually includes:</strong><ul><li>Filter cleaning</li><li>Coil inspection</li><li>Drain line checking</li><li>Thermostat testing</li><li>Cooling performance check</li><li>Electrical inspection</li></ul>"
   },
   {
     "title": "Is an Annual Maintenance Contract useful for AC systems?",
-    "desc": "Yes, AMC helps prevent major problems, improves system efficiency, and reduces unexpected repair expenses through regular servicing."
+    "desc": "Yes, AMC helps prevent major problems, improves system efficiency, and reduces unexpected repair expenses through regular servicing.",
+    "question": "Is an Annual Maintenance Contract useful for AC systems?",
+    "answer": "Yes, AMC helps prevent major problems, improves system efficiency, and reduces unexpected repair expenses through regular servicing."
   },
   {
     "title": "Why does my AC make strange noises?",
-    "desc": "<strong>Common reasons include:</strong><ul><li>Loose internal parts</li><li>Fan motor problems</li><li>Dirt buildup</li><li>Worn components</li></ul>"
+    "desc": "<strong>Common reasons include:</strong><ul><li>Loose internal parts</li><li>Fan motor problems</li><li>Dirt buildup</li><li>Worn components</li></ul>",
+    "question": "Why does my AC make strange noises?",
+    "answer": "<strong>Common reasons include:</strong><ul><li>Loose internal parts</li><li>Fan motor problems</li><li>Dirt buildup</li><li>Worn components</li></ul>"
   },
   {
     "title": "How long does AC maintenance take?",
-    "desc": "Most maintenance visits take around one hour. The exact time depends on the AC type, number of units, and system condition."
+    "desc": "Most maintenance visits take around one hour. The exact time depends on the AC type, number of units, and system condition.",
+    "question": "How long does AC maintenance take?",
+    "answer": "Most maintenance visits take around one hour. The exact time depends on the AC type, number of units, and system condition."
   },
   {
     "title": "Can regular AC service reduce electricity bills?",
-    "desc": "Yes, a well-maintained AC system works more efficiently and uses less energy, which can help lower monthly electricity costs."
+    "desc": "Yes, a well-maintained AC system works more efficiently and uses less energy, which can help lower monthly electricity costs.",
+    "question": "Can regular AC service reduce electricity bills?",
+    "answer": "Yes, a well-maintained AC system works more efficiently and uses less energy, which can help lower monthly electricity costs."
   },
   {
     "title": "Should I repair or replace my old AC?",
-    "desc": "If your AC requires frequent repairs or has poor efficiency, replacement may be a better option. A technician can check the system condition and guide you."
+    "desc": "If your AC requires frequent repairs or has poor efficiency, replacement may be a better option. A technician can check the system condition and guide you.",
+    "question": "Should I repair or replace my old AC?",
+    "answer": "If your AC requires frequent repairs or has poor efficiency, replacement may be a better option. A technician can check the system condition and guide you."
   },
   {
     "title": "How can I book an AC service in Dubai Investment Park?",
-    "desc": "You can contact FAJ Technical Services L.L.C with your location and preferred timing. Our team will arrange a suitable service appointment."
+    "desc": "You can contact FAJ Technical Services L.L.C with your location and preferred timing. Our team will arrange a suitable service appointment.",
+    "question": "How can I book an AC service in Dubai Investment Park?",
+    "answer": "You can contact FAJ Technical Services L.L.C with your location and preferred timing. Our team will arrange a suitable service appointment."
   }
-
 ]

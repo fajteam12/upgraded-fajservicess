@@ -69,33 +69,33 @@ const heroData = {
 };
 
 const overviewData = {
-  "id": "overview",
-  "paragraphs": [
+  id: "overview",
+  paragraphs: [
     {
-      "parts": [
+      parts: [
         {
-          "text": "FAJ Technical Services L.L.C",
-          "href": "/"
+                "text": "FAJ Technical Services L.L.C",
+                "href": "/"
         },
-        " has been providing expert and professional air conditioner services in Dubai since 2010. We provide ",
+        " has been repairing and maintaining air conditioners in Dubai since 2010. Our team provides ",
         {
-          "text": "AC repair",
-          "href": "/services/air-conditioning-repair/ac-service/"
+                "text": "AC repair",
+                "href": "/services/air-conditioning-repair/ac-service/"
         },
-        " services, cleaning, maintenance, and installation services in Al Mirdif. We have the expertise to assist you with your air conditioning repair, maintenance, or installation needs."
-      ]
+        " , air conditioning repair, AC service, AC maintenance, AC cleaning, and new AC installation services for homes and businesses in Al Mirdif. We have worked on many AC units in this area and we know the common problems that come up here."
+]
     }
   ],
-  "showCta": false,
-  "cta": {
-    "phone": "",
-    "whatsapp": "https://api.whatsapp.com/send?phone=+971507464712&text=Hello"
+  showCta: false,
+  cta: {
+    phone: "",
+    whatsapp: "https://api.whatsapp.com/send?phone=+971507464712&text=Hello"
   }
 };
 
 const areaOverviewData = {
   "id": "area-ac-services",
-  "title": "Who provides the best AC repair services in Al Mirdif?",
+  "title": "Best AC Repair in Al Mirdif",
   "paragraphs": [
     "Nobody wants to endure a broken AC during Dubai's scorching summer. If you are searching for AC repair near me, AC service near me, or air conditioner repair in Al Mirdif, our experienced technicians are ready to help. The villas, townhouses, apartments, schools and small shops in Al Mirdif are being serviced by FAJ Technical Services L.L.C for AC Repair and Maintenance.",
     "Our technicians have the experience to swiftly identify the real issue. They check the entire system, look for gas leaks, test the wiring, and ensure that everything is in order. We update customers throughout to ensure there are no surprises."
@@ -295,7 +295,8 @@ const serviceOverviewData = {
   "id": "ac-repair-service-overview",
   "title": "Why Is My AC Not Cooling?",
   "paragraph": "Many people face this issue. The AC is running but the room does not get cool. There are several reasons why this happens.",
-  "causes": [
+  "listTitle": "Common causes include:",
+  "checklist": [
     "Air filters are blocked with dust",
     "Refrigerant gas has dropped below the required level",
     "Outdoor coils are dirty and cannot release heat",
@@ -322,7 +323,7 @@ const serviceOverviewData = {
 
 const commonSignsData = {
   "id": "ac-maintenance-signs",
-  "title": "Which signs show the AC needs service?",
+  "title": "Signs You Need An AC Service",
   "intro": "If you notice any of these signs, you must contact an expert technician who can repair your AC professionally. We are here to assist your AC cooling system in achieving optimal efficiency.",
   "items": [
     {
@@ -349,46 +350,53 @@ const commonSignsData = {
 };
 
 const videoData = {
-  "id": "ac-service-video",
-  "title": "Emergency AC Repair Service in Al Mirdif",
-  "lead": {
-    "parts": [
-      "AC problems can happen suddenly, especially during Dubai's hottest months. A quick repair helps restore comfort and prevents further damage to your cooling system. At ",
-      {
-        "text": "FAJ Technical Services L.L.C",
-        "href": "/"
-      },
-      ", our fast-response team provides immediate support across Al Mirdif."
-    ]
-  },
-  "listTitle": "Our emergency AC repair service covers:",
-  "items": [
+  id: "ac-service-video",
+  title: "Emergency AC Repair Service in Al Mirdif",
+  lead: "A sudden AC breakdown can affect comfort, productivity, and indoor air quality.",
+  listTitle: "Our emergency AC repair service can help with:",
+  items: [
     "AC not cooling",
     "AC not turning on",
     "Water leakage",
     "Electrical faults",
-    "Compressor problems",
     "Thermostat issues",
+    "Compressor failures",
     "Weak airflow",
-    "Unusual noises"
+    "Unusual noises",
   ],
-  "conclusion": "Our technicians provide fast assistance for homes, villas, offices, and commercial properties in Al Mirdif.",
-  "frameTitle": "Air-conditioning repair and maintenance service video in Al Mirdif",
-  "videoId": "prUR0-lZlzg",
-  "videoSide": "left",
-  "image": {
-    "id": "indoor-ac-servicing",
-    "src": "/img/indoor-ac-servicing.webp",
-    "alt": "FAJ AC technician providing express and emergency AC repair in Al Mirdif",
-    "width": 600,
-    "height": 400
+  conclusion:
+    "We provide fast assistance for residential and commercial customers throughout Al Mirdif and nearby areas.",
+  description: [
+    "A sudden AC breakdown can affect comfort, productivity, and indoor air quality.",
+    "Our emergency AC repair service can help with: AC not cooling, AC not turning on, water leakage, electrical faults, thermostat issues, compressor failures, weak airflow, and unusual noises.",
+    "We provide fast assistance for residential and commercial customers throughout Al Mirdif and nearby areas.",
+  ],
+  frameTitle: "Air-conditioning repair and maintenance service video in Al Mirdif",
+  videoId: "prUR0-lZlzg",
+  videoSide: "left",
+  image: {
+    id: "indoor-ac-servicing",
+    src: "/img/indoor-ac-servicing.webp",
+    alt: "FAJ AC technician providing express and emergency AC repair in Al Mirdif",
+    width: 600,
+    height: 400,
   },
-  "variant": "framed",
-  "showCta": false,
-  "cta": {
-    "phone": "",
-    "whatsapp": ""
-  }
+  variant: "framed",
+  blockInteraction: true,
+  allowFullScreen: false,
+  parameters: {
+    autoplay: "1",
+    mute: "0",
+    controls: "0",
+    modestbranding: "1",
+    rel: "0",
+    showinfo: "0",
+    loop: "1",
+    playlist: "prUR0-lZlzg",
+    playsinline: "1",
+    cc_load_policy: "0",
+    disablekb: "1",
+  },
 };
 
 const maintenanceImportanceData = {
@@ -415,7 +423,7 @@ const maintenanceImportanceData = {
 const maintenanceImportanceCardsData = {
   "id": "maintenance-importance-cards",
   "title": "Key Benefits of Regular AC Maintenance",
-  "cards": [
+  "items": [
     {
       "icon": "thermometer-sun",
       "title": "Extreme Weather",
@@ -451,7 +459,7 @@ const maintenanceImportanceCardsData = {
 
 const commonProblemsData = {
   "id": "common-ac-problems",
-  "title": "Most Common AC Problems",
+  "title": "Common AC Problems That May Require Maintenance",
   "description": "Our certified technicians in Al Mirdif quickly diagnose and resolve all major residential and commercial air conditioning issues:",
   "items": [
     {
@@ -520,7 +528,7 @@ const commonProblemsData = {
 
 const servicesOfferedData = {
   "id": "services-offered",
-  "title": "Professional Air Conditioning Services in Al Mirdif",
+  "title": "HERE ARE THE SERVICES WE OFFER FOR AIR CONDITIONING SYSTEMS",
   "items": [
     {
       "icon": "wrench",
@@ -552,8 +560,8 @@ const servicesOfferedData = {
 
 const servicesOfferedCardsData = {
   "id": "services-offered-cards",
-  "title": "Professional Air Conditioning Services in Al Mirdif",
-  "cards": [
+  "title": "HERE ARE THE SERVICES WE OFFER FOR AIR CONDITIONING SYSTEMS",
+  "items": [
     {
       "icon": "wrench",
       "title": "AC Repair Service",
@@ -707,43 +715,92 @@ const cleaningServiceCardsData = {
 };
 
 const whyChooseUsData = {
-  "id": "why-choose-us",
-  "title": "CHOOSE US FOR RELIABLE, EXCEPTIONAL SERVICE TAILORED TO YOUR NEEDS!",
-  "description": "Dedicated to prompt, professional and transparent HVAC service across Dubai.",
-  "image": {
-    "id": "ac-service-page/ac-services-component-new",
-    "src": "/img/ac-service-page/ac-services-component-new.webp",
-    "alt": "Ac Maintenance Services",
-    "width": 600,
-    "height": 400
-  },
-  "items": [
+  id: "why-choose-faj-ac",
+  title: "CHOOSE US FOR RELIABLE, EXCEPTIONAL SERVICE TAILORED TO YOUR NEEDS!",
+  description: "",
+  items: [
     {
-      "icon": "fast-reliable",
-      "title": "Reliable, Priority, and Quick",
-      "description": "You can count on efficient service! Our same-day AC repair or next-day AC service visits ensure that your needs are met quickly."
+      icon: "shield-check",
+      badge: "Fast, Reliable Service",
+      title: "Reliable, Priority, and Quick",
+      description: {
+        parts: [
+          "You can count on ",
+          {
+            text: "efficient service",
+            strong: true,
+            href: "https://www.instagram.com/fajtechnicalservicesllc/",
+            external: true,
+          },
+          "! Our same-day AC repair or next-day AC service visits ensure that your needs are met quickly.",
+        ],
+      },
     },
     {
-      "icon": "experts",
-      "title": "Feeling Of Calm",
-      "description": "With an AC annual maintenance contract, you can relax knowing that your AC unit is in good hands and well taken care of."
+      icon: "peace-of-mind",
+      badge: "Expert Planned Care",
+      title: "Feeling Of Calm",
+      description: {
+        parts: [
+          "With ",
+          {
+            text: "annual maintenance contract",
+            strong: true,
+            href: "/services/air-conditioning-repair/ac-annual-maintenance-contract/",
+          },
+          ", you get a full year of service, ensuring your AC runs smoothly and providing peace of mind.",
+        ],
+      },
     },
     {
-      "icon": "satisfaction",
-      "title": "We Are Experts",
-      "description": "Our team has high-level skills to identify and fix any issue, providing reliable AC repair and maintenance you can trust."
-    }
+      icon: "git-branch",
+      badge: "Flexible Scheduling",
+      title: "You Are in Control",
+      description:
+        "Choose a day and time for your AC repair near me, Mirdif or Sharjah. With a 3-4 hour window for when our technician will arrive.",
+    },
+    {
+      icon: "rosette-check",
+      badge: "System Experience",
+      title: "We Are Experts",
+      description:
+        "We are experts in AC service in Mirdif. This is why most major brands trust us to handle their service and maintenance needs.",
+    },
+    {
+      icon: "shield-dollar",
+      badge: "Customer Value",
+      title: "Great Value",
+      description:
+        "We are dedicated to ensuring customer satisfaction with timely service, prompt issue resolution, and affordable prices.",
+    },
+    {
+      icon: "clean-handshake",
+      badge: "Dependable Care",
+      title: "Trustworthy",
+      description: {
+        parts: [
+          "Our ",
+          {
+            text: "skilled AC technicians",
+            strong: true,
+            href: "https://www.facebook.com/acrepairservices",
+            external: true,
+          },
+          " are highly trained, and we provide excellent service for a variety of major AC brands efficiently.",
+        ],
+      },
+    },
   ],
-  "showCta": true,
-  "cta": {
-    "phone": "tel:+971507464712",
-    "whatsapp": "https://api.whatsapp.com/send?phone=+971507464712&text=Hello"
-  }
+  showCta: false,
+  cta: {
+    phone: "",
+    whatsapp: "",
+  },
 };
 
 const beforeAfterData = {
   "id": "before-after-slider",
-  "title": "Recent Completed Projects",
+  "title": "Recent Completed Service",
   "description": "Slide to inspect the condition of cooling equipment before and after our precision service.",
   "beforeLabel": "Before",
   "beforeAlt": "Air conditioning unit before service",
@@ -878,7 +935,7 @@ const brandsData = {
 
 const sparePartsRepairData = {
   "id": "ac-spare-parts-and-repair",
-  "title": "We Handle All Types of AC Systems",
+  "title": "We Specialise in All Types of AC Systems",
   "columns": [
     {
       "title": "Air Conditioning Systems Serviced Across Al Mirdif:",
@@ -1014,29 +1071,60 @@ const repairPriceData = {
 };
 
 const testimonialsData = {
-  "id": "testimonials",
-  "title": "Customer Reviews",
-  "description": "Read genuine reviews from homeowners, landlords and facility managers who rely on FAJ Technical Services L.L.C for their HVAC maintenance.",
-  "items": [
+  id: "ac-service-reviews",
+  title: "Customer Reviews",
+  description:
+    "Customer feedback on FAJ air-conditioning repair and maintenance services in Al Mirdif.",
+  items: [
     {
-      "name": "Tariq Mansoor",
-      "role": "Al Mirdif Resident",
-      "quote": "The technician arrived within 90 minutes when our split AC broke down in the middle of summer. Excellent service, transparent pricing, and cool air restored immediately.",
-      "rating": 5
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Sara Malik",
+      subtitle: "Al Mirdif Resident",
+      description:
+        "FAJ provided professional split AC service for my apartment. The team was skilled, cleaned everything properly, and restored cooling performance. Very satisfied with their quick and reliable service in Al Mirdif.",
     },
     {
-      "name": "Elena Rostova",
-      "role": "Property Manager, Al Mirdif",
-      "quote": "We have an AMC contract with FAJ for our residential units. Routine deep cleaning and pressure washing keep tenant complaints to zero. Outstanding team.",
-      "rating": 5
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Al Mansoori",
+      subtitle: "Al Mirdif Resident",
+      description:
+        "Great experience with FAJ’s air conditioner service. The technicians were professional, friendly, and checked everything thoroughly. My AC is running smoothly again. Excellent service in Al Mirdif, highly recommended!",
     },
     {
-      "name": "Khalfan Al Suwaidi",
-      "role": "Villa Owner, Al Mirdif",
-      "quote": "Very professional duct cleaning and coil descaling. The air feels crisp and smells fresh. Electricity bills dropped by nearly 15% after the service.",
-      "rating": 5
-    }
-  ]
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Arjun Kumar",
+      subtitle: "Resident",
+      description:
+        "I booked FAJ for HVAC services in Al Mirdif, and it was excellent. The technicians were skilled, reliable, and carried out the work with great attention to detail.",
+    },
+    {
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Shazia Sheikh",
+      subtitle: "Homeowner",
+      description:
+        "FAJ delivered great AC technical services. Their team was polite, professional, and fixed my cooling issue quickly. Excellent service overall, I will continue using them for future AC problems in Al Mirdif.",
+    },
+    {
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Ravi Mehta",
+      subtitle: "Resident",
+      description:
+        "I used FAJ for AC cleaning service, and it really improved my air quality. The team worked efficiently, cleaned every part, and made my AC run like new again.",
+    },
+    {
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Waseem Aqdas",
+      subtitle: "Homeowner",
+      description:
+        "Outstanding service from FAJ Technical! My AC wasn't cooling properly, but FAJ Technical came to the rescue. Quick response, friendly technician, and now my AC works perfectly. I highly recommend them!",
+    },
+  ],
 };
 
 const newsData = {
@@ -1052,7 +1140,7 @@ const newsData = {
       "subtitle": "Admin • 5 Comments",
       "description": "A properly functioning air conditioning system is essential for various settings, including homes, offices, and individual spaces. According to HVAC Webmasters, over 70%",
       "href": "/blog/10-common-ac-problems-and-how-to-fix-them/",
-      "actionLabel": "Read Article"
+      "actionLabel": "Read More"
     },
     {
       "icon": "dollar-savings",
@@ -1062,7 +1150,7 @@ const newsData = {
       "subtitle": "Admin • 4 Comments",
       "description": "Air conditioning is excellent for keeping you comfortable indoors but can be expensive. But there is no need to worry, there are some ways to reduce AC electric bill with",
       "href": "/blog/how-to-save-money-on-ac/",
-      "actionLabel": "Read Article"
+      "actionLabel": "Read More"
     },
     {
       "icon": "wind",
@@ -1072,7 +1160,7 @@ const newsData = {
       "subtitle": "Admin • 0 Comments",
       "description": "As the temperatures rise and summer approaches, the desire for a cool and comfortable escape within your home intensifies. Air conditioning offers a seemingly simple solu",
       "href": "/blog/how-to-choose-the-best-air-conditioner-for-home/",
-      "actionLabel": "Read Article"
+      "actionLabel": "Read More"
     }
   ],
   "footer": {
@@ -1088,73 +1176,73 @@ const newsData = {
 };
 
 const faqsData = {
-  "id": "location-faqs",
-  "title": "AC Repair and Maintenance FAQs in Al Mirdif",
-  "description": "Got questions about AC repair, cleaning, or routine maintenance in Al Mirdif? Browse our most common answers below:",
-  "items": [
+  id: "ac-service-alMirdif-faqs",
+  title: "FAQ's",
+  description: "Find answers to common questions about air conditioning repair, cleaning, and maintenance services.",
+  items: [
     {
-      "title": "What is the price of AC repair in Al Mirdif?",
-      "desc": "The price depends on the type of Air Conditioner, the problem, and the parts required. We provide you with a straightforward price after inspection."
+      "question": "What is the price of AC repair in Al Mirdif?",
+      "answer": "The price depends on the type of Air Conditioner, the problem, and the parts required. We provide you with a straightforward price after inspection."
     },
     {
-      "title": "How often should I service my AC in Al Mirdif?",
-      "desc": "Every 6 months is the recommended frequency. This will maintain a properly functioning system and avoid unexpected problems."
+      "question": "How often should I service my AC in Al Mirdif?",
+      "answer": "Every 6 months is the recommended frequency. This will maintain a properly functioning system and avoid unexpected problems."
     },
     {
-      "title": "Why won't my air conditioner cool my house?",
-      "desc": "<strong>The common reasons are:</strong><ul><li>Dirty Filters</li><li>Low Gas</li><li>Blocked Coils</li><li>Compressor Issues</li></ul>A technician will be able to determine the problem."
+      "question": "Why won't my air conditioner cool my house?",
+      "answer": "<strong>The common reasons are:</strong><ul><li>Dirty Filters</li><li>Low Gas</li><li>Blocked Coils</li><li>Compressor Issues</li></ul>A technician will be able to determine the problem."
     },
     {
-      "title": "Do you provide AC services for villas in Al Mirdif?",
-      "desc": "Yes, villas, townhouses, apartments, schools and commercial buildings are covered in Al Mirdif."
+      "question": "Do you provide AC services for villas in Al Mirdif?",
+      "answer": "Yes, villas, townhouses, apartments, schools and commercial buildings are covered in Al Mirdif."
     },
     {
-      "title": "What is the reason for AC water leakage?",
-      "desc": "<strong>These are the top causes of water leakage:</strong><ul><li>Drain line clogging</li><li>Frozen coils</li><li>Dirty filters</li></ul>"
+      "question": "What is the reason for AC water leakage?",
+      "answer": "<strong>These are the top causes of water leakage:</strong><ul><li>Drain line clogging</li><li>Frozen coils</li><li>Dirty filters</li></ul>"
     },
     {
-      "title": "Does the use of AC cleaning help cool?",
-      "desc": "Yes, cleaning makes a noticeable difference. It can clean the dust and improve the cooling efficiency of the AC."
+      "question": "Does the use of AC cleaning help cool?",
+      "answer": "Yes, cleaning makes a noticeable difference. It can clean the dust and improve the cooling efficiency of the AC."
     },
     {
-      "title": "Are you providing the same-day AC repair in Al Mirdif?",
-      "desc": "Service can be arranged the same day depending on the issue and availability. Please reach out and let us know if you want to check."
+      "question": "Are you providing the same-day AC repair in Al Mirdif?",
+      "answer": "Service can be arranged the same day depending on the issue and availability. Please reach out and let us know if you want to check."
     },
     {
-      "title": "Which AC brands do you repair?",
-      "desc": "We service Daikin, LG, Samsung, O General, Mitsubishi, Carrier, York, Trane, Gree, Panasonic and more."
+      "question": "Which AC brands do you repair?",
+      "answer": "We service Daikin, LG, Samsung, O General, Mitsubishi, Carrier, York, Trane, Gree, Panasonic and more."
     },
     {
-      "title": "What are the things involved in AC maintenance?",
-      "desc": "<strong>Maintenance includes:</strong><ul><li>Cleaning of filters</li><li>Inspection of coils</li><li>Drain line checks</li><li>Thermostat testing</li><li>Reviewing overall performance</li></ul>"
+      "question": "What are the things involved in AC maintenance?",
+      "answer": "<strong>Maintenance includes:</strong><ul><li>Cleaning of filters</li><li>Inspection of coils</li><li>Drain line checks</li><li>Thermostat testing</li><li>Reviewing overall performance</li></ul>"
     },
     {
-      "title": "Should I get an Annual Maintenance Contract?",
-      "desc": "Absolutely, AMC will help you avoid significant issues and keep your air conditioner in top condition through regular maintenance."
+      "question": "Should I get an Annual Maintenance Contract?",
+      "answer": "Absolutely, AMC will help you avoid significant issues and keep your air conditioner in top condition through regular maintenance."
     },
     {
-      "title": "Why does my AC make strange noises?",
-      "desc": "Loose parts, problems with the fan motor, or dirt accumulation are the typical causes. A technician can find and fix the cause."
+      "question": "Why does my AC make strange noises?",
+      "answer": "Loose parts, problems with the fan motor, or dirt accumulation are the typical causes. A technician can find and fix the cause."
     },
     {
-      "title": "What is the duration of time for AC maintenance?",
-      "desc": "Most maintenance tasks require 1 hour, but it depends on the number of units."
+      "question": "What is the duration of time for AC maintenance?",
+      "answer": "Most maintenance tasks require 1 hour, but it depends on the number of units."
     },
     {
-      "title": "Can regular servicing lower my electricity bills?",
-      "desc": "A clean and well-tuned AC is indeed more energy-efficient and can prove to be a significant cost-saver in your monthly electricity bills."
+      "question": "Can regular servicing lower my electricity bills?",
+      "answer": "A clean and well-tuned AC is indeed more energy-efficient and can prove to be a significant cost-saver in your monthly electricity bills."
     },
     {
-      "title": "Should I replace or repair my old AC?",
-      "desc": "If repairs are frequent and costly, replacement could be the better option. We can do a scan of your system and make suggestions."
+      "question": "Should I replace or repair my old AC?",
+      "answer": "If repairs are frequent and costly, replacement could be the better option. We can do a scan of your system and make suggestions."
     }
-  ]
+  ],
 };
 
 const bookingData = {
   "id": "booking-section",
   "title": "Book An Appointment",
-  "description": "Fill in the form below or call our 7-day hotline for immediate service dispatch across Al Mirdif.",
+  "description": "Book your AC service appointment with our expert team in Al Mirdif. We provide professional AC installation, cleaning, maintenance, and repair services to keep your space cool and comfortable.",
   "submitLabel": "Schedule Service Now"
 };
 

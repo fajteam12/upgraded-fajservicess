@@ -69,33 +69,33 @@ const heroData = {
 };
 
 const overviewData = {
-  "id": "overview",
-  "paragraphs": [
+  id: "overview",
+  paragraphs: [
     {
-      "parts": [
+      parts: [
         {
-          "text": "FAJ Technical Services L.L.C",
-          "href": "/"
+                "text": "FAJ Technical Services L.L.C",
+                "href": "/"
         },
-        " has been providing expert and professional air conditioner services in Dubai since 2010. We provide ",
+        " has been providing professional AC solutions in Dubai since 2010. We offer ",
         {
-          "text": "AC repair",
-          "href": "/services/air-conditioning-repair/ac-service/"
+                "text": "AC repair",
+                "href": "/services/air-conditioning-repair/ac-service/"
         },
-        " services, cleaning, maintenance, and installation services in DIP. We have the expertise to assist you with your air conditioning repair, maintenance, or installation needs."
-      ]
+        ", AC cleaning, AC maintenance, and AC installation services across Dubai Investment Park for different residential and commercial requirements."
+]
     }
   ],
-  "showCta": false,
-  "cta": {
-    "phone": "",
-    "whatsapp": "https://api.whatsapp.com/send?phone=+971507464712&text=Hello"
+  showCta: false,
+  cta: {
+    phone: "",
+    whatsapp: "https://api.whatsapp.com/send?phone=+971507464712&text=Hello"
   }
 };
 
 const areaOverviewData = {
   "id": "area-ac-services",
-  "title": "Who provides the best AC repair services in DIP?",
+  "title": "Best AC Repair in DIP",
   "paragraphs": [
     "If you have an AC issue in your home, you want to find the right technician in order to get the right solution. FAJ Technical Services L.L.C offers AC Repair and Maintenance Services for apartments, offices, warehouses, restaurants and Commercial Buildings in DIP.",
     "Our trained technicians detect cooling issues, electrical trouble, leaks and system failures. We've got your back when it comes to quality repair for your AC unit, open communication, and solutions that will help you avoid having to deal with another AC issue."
@@ -295,7 +295,8 @@ const serviceOverviewData = {
   "id": "ac-repair-service-overview",
   "title": "Why Is My AC Not Cooling?",
   "paragraph": "Sometimes an AC continues running but fails to cool the room properly. This can happen due to problems with different parts of the cooling system.",
-  "causes": [
+  "listTitle": "Common causes include:",
+  "checklist": [
     "Dirty air filters",
     "Low refrigerant gas",
     "Blocked condenser coils",
@@ -322,7 +323,7 @@ const serviceOverviewData = {
 
 const commonSignsData = {
   "id": "ac-maintenance-signs",
-  "title": "Which signs show the AC needs service?",
+  "title": "Signs You Need An AC Service",
   "intro": "Most AC systems show small warning signs before a major issue happens. Getting service at the right time can help avoid expensive repairs.",
   "items": [
     {
@@ -349,46 +350,53 @@ const commonSignsData = {
 };
 
 const videoData = {
-  "id": "ac-service-video",
-  "title": "Emergency AC Repair Service in DIP",
-  "lead": {
-    "parts": [
-      "AC problems can happen suddenly, especially during Dubai's hottest months. A quick repair helps restore comfort and prevents further damage to your cooling system. At ",
-      {
-        "text": "FAJ Technical Services L.L.C",
-        "href": "/"
-      },
-      ", our fast-response team provides immediate support across DIP."
-    ]
-  },
-  "listTitle": "Our emergency AC repair service covers:",
-  "items": [
+  id: "ac-service-video",
+  title: "Emergency AC Repair Service in DIP",
+  lead: "A sudden AC breakdown can affect comfort, productivity, and indoor air quality.",
+  listTitle: "Our emergency AC repair service can help with:",
+  items: [
     "AC not cooling",
     "AC not turning on",
     "Water leakage",
     "Electrical faults",
-    "Compressor problems",
     "Thermostat issues",
+    "Compressor failures",
     "Weak airflow",
-    "Unusual noises"
+    "Unusual noises",
   ],
-  "conclusion": "Our technicians provide fast assistance for homes, villas, offices, and commercial properties in DIP.",
-  "frameTitle": "Air-conditioning repair and maintenance service video in DIP",
-  "videoId": "prUR0-lZlzg",
-  "videoSide": "left",
-  "image": {
-    "id": "indoor-ac-servicing",
-    "src": "/img/indoor-ac-servicing.webp",
-    "alt": "FAJ AC technician providing express and emergency AC repair in DIP",
-    "width": 600,
-    "height": 400
+  conclusion:
+    "We provide fast assistance for residential and commercial customers throughout DIP and nearby areas.",
+  description: [
+    "A sudden AC breakdown can affect comfort, productivity, and indoor air quality.",
+    "Our emergency AC repair service can help with: AC not cooling, AC not turning on, water leakage, electrical faults, thermostat issues, compressor failures, weak airflow, and unusual noises.",
+    "We provide fast assistance for residential and commercial customers throughout DIP and nearby areas.",
+  ],
+  frameTitle: "Air-conditioning repair and maintenance service video in DIP",
+  videoId: "prUR0-lZlzg",
+  videoSide: "left",
+  image: {
+    id: "indoor-ac-servicing",
+    src: "/img/indoor-ac-servicing.webp",
+    alt: "FAJ AC technician providing express and emergency AC repair in DIP",
+    width: 600,
+    height: 400,
   },
-  "variant": "framed",
-  "showCta": false,
-  "cta": {
-    "phone": "",
-    "whatsapp": ""
-  }
+  variant: "framed",
+  blockInteraction: true,
+  allowFullScreen: false,
+  parameters: {
+    autoplay: "1",
+    mute: "0",
+    controls: "0",
+    modestbranding: "1",
+    rel: "0",
+    showinfo: "0",
+    loop: "1",
+    playlist: "prUR0-lZlzg",
+    playsinline: "1",
+    cc_load_policy: "0",
+    disablekb: "1",
+  },
 };
 
 const maintenanceImportanceData = {
@@ -415,7 +423,7 @@ const maintenanceImportanceData = {
 const maintenanceImportanceCardsData = {
   "id": "maintenance-importance-cards",
   "title": "Key Benefits of Regular AC Maintenance",
-  "cards": [
+  "items": [
     {
       "icon": "thermometer-sun",
       "title": "Heavy Operating Hours",
@@ -451,7 +459,7 @@ const maintenanceImportanceCardsData = {
 
 const commonProblemsData = {
   "id": "common-ac-problems",
-  "title": "Most Common AC Problems",
+  "title": "Common AC Problems That May Require Maintenance",
   "description": "Our certified technicians in DIP quickly diagnose and resolve all major residential and commercial air conditioning issues:",
   "items": [
     {
@@ -464,49 +472,49 @@ const commonProblemsData = {
     {
       "id": "prob-2",
       "number": "02",
-      "title": "Blowing Warm Air",
+      "title": "Warm Air",
       "description": "Lukewarm air signifies low refrigerant pressure, compressor electrical failure, or miscalibrated thermostat sensors.",
       "icon": "snowflake-slash"
     },
     {
       "id": "prob-3",
       "number": "03",
-      "title": "Unusual Noises",
+      "title": "Strange Noises",
       "description": "Squealing, grinding, or buzzing noises point to motor bearing friction or loose mechanical mountings.",
       "icon": "volume-2"
     },
     {
       "id": "prob-4",
       "number": "04",
-      "title": "Bad Odors",
+      "title": "Foul Odors",
       "description": "Stagnant, musty odours typically stem from bacterial growth in blocked condensate trays or damp cooling coils.",
       "icon": "alert-triangle"
     },
     {
       "id": "prob-5",
       "number": "05",
-      "title": "Short Cycling",
+      "title": "Frequent Cycling",
       "description": "Frequent rapid switching on and off indicates overheating, failing relays, or incorrect thermostat placement.",
       "icon": "zap-off"
     },
     {
       "id": "prob-6",
       "number": "06",
-      "title": "High Humidity",
+      "title": "High Humidity Levels",
       "description": "Poor dehumidification leaves indoor areas feeling clammy, pointing to evaporator coil or sizing issues.",
       "icon": "droplet-slash"
     },
     {
       "id": "prob-7",
       "number": "07",
-      "title": "Water Dripping",
+      "title": "Leaking Water",
       "description": "Blocked drainage pipes and frozen evaporator coils lead to water leakage that can damage property if left unaddressed.",
       "icon": "droplets"
     },
     {
       "id": "prob-8",
       "number": "08",
-      "title": "High Electric Bills",
+      "title": "Increased Energy Bills",
       "description": "A struggling AC draws excessive amperage to maintain set temperatures, resulting in sudden utility spikes.",
       "icon": "arrow-up-right"
     }
@@ -520,7 +528,7 @@ const commonProblemsData = {
 
 const servicesOfferedData = {
   "id": "services-offered",
-  "title": "Professional Air Conditioning Services in DIP",
+  "title": "HERE ARE THE SERVICES WE OFFER FOR AIR CONDITIONING SYSTEMS",
   "items": [
     {
       "icon": "wrench",
@@ -552,8 +560,8 @@ const servicesOfferedData = {
 
 const servicesOfferedCardsData = {
   "id": "services-offered-cards",
-  "title": "Professional Air Conditioning Services in DIP",
-  "cards": [
+  "title": "HERE ARE THE SERVICES WE OFFER FOR AIR CONDITIONING SYSTEMS",
+  "items": [
     {
       "icon": "wrench",
       "title": "AC Repair Service",
@@ -758,7 +766,7 @@ const whyChooseUsData = {
 
 const beforeAfterData = {
   "id": "recent-completed-service",
-  "title": "Recent Completed Projects",
+  "title": "Recent Completed Service",
   "description": "See the real results of our thorough air conditioning maintenance and deep cleaning service in DIP.",
   "beforeLabel": "Before",
   "beforeAlt": "Air conditioning unit before service",
@@ -893,7 +901,7 @@ const brandsData = {
 
 const sparePartsRepairData = {
   "id": "ac-spare-parts-and-repair",
-  "title": "We Handle All Types of AC Systems",
+  "title": "We Specialise in All Types of AC Systems",
   "columns": [
     {
       "title": "Air Conditioning Systems Serviced Across DIP:",
@@ -1029,29 +1037,60 @@ const repairPriceData = {
 };
 
 const testimonialsData = {
-  "id": "testimonials",
-  "title": "Customer Reviews",
-  "description": "Read genuine reviews from homeowners, landlords and facility managers who rely on FAJ Technical Services L.L.C for their HVAC maintenance.",
-  "items": [
+  id: "ac-service-reviews",
+  title: "Customer Reviews",
+  description:
+    "Customer feedback on FAJ air-conditioning repair and maintenance services in Dubai Investments Park.",
+  items: [
     {
-      "name": "Tariq Mansoor",
-      "role": "DIP Resident",
-      "quote": "The technician arrived within 90 minutes when our split AC broke down in the middle of summer. Excellent service, transparent pricing, and cool air restored immediately.",
-      "rating": 5
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Sara Malik",
+      subtitle: "Dubai Investments Park Resident",
+      description:
+        "FAJ provided professional split AC service for my apartment. The team was skilled, cleaned everything properly, and restored cooling performance. Very satisfied with their quick and reliable service in Dubai Investments Park.",
     },
     {
-      "name": "Elena Rostova",
-      "role": "Property Manager, DIP",
-      "quote": "We have an AMC contract with FAJ for our residential units. Routine deep cleaning and pressure washing keep tenant complaints to zero. Outstanding team.",
-      "rating": 5
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Al Mansoori",
+      subtitle: "Dubai Investments Park Resident",
+      description:
+        "Great experience with FAJ’s air conditioner service. The technicians were professional, friendly, and checked everything thoroughly. My AC is running smoothly again. Excellent service in Dubai Investments Park, highly recommended!",
     },
     {
-      "name": "Khalfan Al Suwaidi",
-      "role": "Villa Owner, DIP",
-      "quote": "Very professional duct cleaning and coil descaling. The air feels crisp and smells fresh. Electricity bills dropped by nearly 15% after the service.",
-      "rating": 5
-    }
-  ]
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Arjun Kumar",
+      subtitle: "Resident",
+      description:
+        "I booked FAJ for HVAC services in Dubai Investments Park, and it was excellent. The technicians were skilled, reliable, and carried out the work with great attention to detail.",
+    },
+    {
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Shazia Sheikh",
+      subtitle: "Homeowner",
+      description:
+        "FAJ delivered great AC technical services. Their team was polite, professional, and fixed my cooling issue quickly. Excellent service overall, I will continue using them for future AC problems in Dubai Investments Park.",
+    },
+    {
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Ravi Mehta",
+      subtitle: "Resident",
+      description:
+        "I used FAJ for AC cleaning service, and it really improved my air quality. The team worked efficiently, cleaned every part, and made my AC run like new again.",
+    },
+    {
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Waseem Aqdas",
+      subtitle: "Homeowner",
+      description:
+        "Outstanding service from FAJ Technical! My AC wasn't cooling properly, but FAJ Technical came to the rescue. Quick response, friendly technician, and now my AC works perfectly. I highly recommend them!",
+    },
+  ],
 };
 
 const newsData = {
@@ -1067,7 +1106,7 @@ const newsData = {
       "subtitle": "Admin • 5 Comments",
       "description": "A properly functioning air conditioning system is essential for various settings, including homes, offices, and individual spaces. According to HVAC Webmasters, over 70%",
       "href": "/blog/10-common-ac-problems-and-how-to-fix-them/",
-      "actionLabel": "Read Article"
+      "actionLabel": "Read More"
     },
     {
       "icon": "dollar-savings",
@@ -1077,7 +1116,7 @@ const newsData = {
       "subtitle": "Admin • 4 Comments",
       "description": "Air conditioning is excellent for keeping you comfortable indoors but can be expensive. But there is no need to worry, there are some ways to reduce AC electric bill with",
       "href": "/blog/how-to-save-money-on-ac/",
-      "actionLabel": "Read Article"
+      "actionLabel": "Read More"
     },
     {
       "icon": "wind",
@@ -1087,7 +1126,7 @@ const newsData = {
       "subtitle": "Admin • 0 Comments",
       "description": "As the temperatures rise and summer approaches, the desire for a cool and comfortable escape within your home intensifies. Air conditioning offers a seemingly simple solu",
       "href": "/blog/how-to-choose-the-best-air-conditioner-for-home/",
-      "actionLabel": "Read Article"
+      "actionLabel": "Read More"
     }
   ],
   "footer": {
@@ -1103,77 +1142,77 @@ const newsData = {
 };
 
 const faqsData = {
-  "id": "location-faqs",
-  "title": "AC Repair and Maintenance FAQs in DIP",
-  "description": "Got questions about AC repair, cleaning, or routine maintenance in DIP? Browse our most common answers below:",
-  "items": [
+  id: "ac-service-dip-faqs",
+  title: "FAQ's",
+  description: "Find answers to common questions about air conditioning repair, cleaning, and maintenance services.",
+  items: [
     {
-      "title": "What is the price of AC repair in DIP?",
-      "desc": "The cost will vary based on the type of AC, the problem, parts to be replaced, and the work to be done. Inspection services are available to pinpoint the problem before repairs."
+      "question": "What is the price of AC repair in DIP?",
+      "answer": "The cost will vary based on the type of AC, the problem, parts to be replaced, and the work to be done. Inspection services are available to pinpoint the problem before repairs."
     },
     {
-      "title": "How often should I service my AC in DIP?",
-      "desc": "The typical maintenance schedule for most air conditioners is to get them serviced 3 to 6 months after every single service. Well-maintained means better cooling efficiency and fewer surprises."
+      "question": "How often should I service my AC in DIP?",
+      "answer": "The typical maintenance schedule for most air conditioners is to get them serviced 3 to 6 months after every single service. Well-maintained means better cooling efficiency and fewer surprises."
     },
     {
-      "title": "Why doesn't my AC cool as it should?",
-      "desc": "Some of the more common causes are dirty filters, low refrigerant, blocked coils, thermostat problems, compressor problems, or airflow blockage. A professional inspection will be able to identify the exact cause."
+      "question": "Why doesn't my AC cool as it should?",
+      "answer": "Some of the more common causes are dirty filters, low refrigerant, blocked coils, thermostat problems, compressor problems, or airflow blockage. A professional inspection will be able to identify the exact cause."
     },
     {
-      "title": "Do you provide AC repair for warehouses and commercial buildings in DIP?",
-      "desc": "Yes, we do offer AC repair, cleaning and maintenance services in DIP for warehouses, offices, factories, residential buildings and commercial properties."
+      "question": "Do you provide AC repair for warehouses and commercial buildings in DIP?",
+      "answer": "Yes, we do offer AC repair, cleaning and maintenance services in DIP for warehouses, offices, factories, residential buildings and commercial properties."
     },
     {
-      "title": "What are the reasons for water leakage from the air conditioner?",
-      "desc": "<strong>Common causes include:</strong><ul><li>Blocked drain pipe</li><li>Frozen evaporator coil</li><li>Dirty air filters</li><li>Drainage problems</li></ul>"
+      "question": "What are the reasons for water leakage from the air conditioner?",
+      "answer": "<strong>Common causes include:</strong><ul><li>Blocked drain pipe</li><li>Frozen evaporator coil</li><li>Dirty air filters</li><li>Drainage problems</li></ul>"
     },
     {
-      "title": "Can AC cleaning improve cooling performance?",
-      "desc": "Yes, cleaning will help to remove dust and dirt from filters and coils to facilitate the flow of air through the cooling unit and help it cool more effectively."
+      "question": "Can AC cleaning improve cooling performance?",
+      "answer": "Yes, cleaning will help to remove dust and dirt from filters and coils to facilitate the flow of air through the cooling unit and help it cool more effectively."
     },
     {
-      "title": "Do you offer same-day AC repair in Dubai Investment Park?",
-      "desc": "Depending on the type of air conditioning problem and the availability of the technician, the service may be available on the same day. Get help from our staff in a timely manner. "
+      "question": "Do you offer same-day AC repair in Dubai Investment Park?",
+      "answer": "Depending on the type of air conditioning problem and the availability of the technician, the service may be available on the same day. Get help from our staff in a timely manner. "
     },
     {
-      "title": "Which AC brands do you repair?",
-      "desc": "<strong>We repair major AC brands including:</strong><ul><li>Daikin</li><li>LG</li><li>Samsung</li><li>O General</li><li>Mitsubishi</li><li>Carrier</li><li>York</li><li>Gree</li><li>Panasonic</li><li>Hitachi</li></ul>"
+      "question": "Which AC brands do you repair?",
+      "answer": "<strong>We repair major AC brands including:</strong><ul><li>Daikin</li><li>LG</li><li>Samsung</li><li>O General</li><li>Mitsubishi</li><li>Carrier</li><li>York</li><li>Gree</li><li>Panasonic</li><li>Hitachi</li></ul>"
     },
     {
-      "title": "What is included in the AC maintenance service?",
-      "desc": "<strong>AC maintenance usually includes:</strong><ul><li>Filter cleaning</li><li>Coil inspection</li><li>Drain line checking</li><li>Thermostat testing</li><li>Cooling performance check</li><li>Electrical inspection</li></ul>"
+      "question": "What is included in the AC maintenance service?",
+      "answer": "<strong>AC maintenance usually includes:</strong><ul><li>Filter cleaning</li><li>Coil inspection</li><li>Drain line checking</li><li>Thermostat testing</li><li>Cooling performance check</li><li>Electrical inspection</li></ul>"
     },
     {
-      "title": "Is an Annual Maintenance Contract useful for AC systems?",
-      "desc": "Yes, AMC helps prevent major problems, improves system efficiency, and reduces unexpected repair expenses through regular servicing."
+      "question": "Is an Annual Maintenance Contract useful for AC systems?",
+      "answer": "Yes, AMC helps prevent major problems, improves system efficiency, and reduces unexpected repair expenses through regular servicing."
     },
     {
-      "title": "Why does my AC make strange noises?",
-      "desc": "<strong>Common reasons include:</strong><ul><li>Loose internal parts</li><li>Fan motor problems</li><li>Dirt buildup</li><li>Worn components</li></ul>"
+      "question": "Why does my AC make strange noises?",
+      "answer": "<strong>Common reasons include:</strong><ul><li>Loose internal parts</li><li>Fan motor problems</li><li>Dirt buildup</li><li>Worn components</li></ul>"
     },
     {
-      "title": "How long does AC maintenance take?",
-      "desc": "Most maintenance visits take around one hour. The exact time depends on the AC type, number of units, and system condition."
+      "question": "How long does AC maintenance take?",
+      "answer": "Most maintenance visits take around one hour. The exact time depends on the AC type, number of units, and system condition."
     },
     {
-      "title": "Can regular AC service reduce electricity bills?",
-      "desc": "Yes, a well-maintained AC system works more efficiently and uses less energy, which can help lower monthly electricity costs."
+      "question": "Can regular AC service reduce electricity bills?",
+      "answer": "Yes, a well-maintained AC system works more efficiently and uses less energy, which can help lower monthly electricity costs."
     },
     {
-      "title": "Should I repair or replace my old AC?",
-      "desc": "If your AC requires frequent repairs or has poor efficiency, replacement may be a better option. A technician can check the system condition and guide you."
+      "question": "Should I repair or replace my old AC?",
+      "answer": "If your AC requires frequent repairs or has poor efficiency, replacement may be a better option. A technician can check the system condition and guide you."
     },
     {
-      "title": "How can I book an AC service in Dubai Investment Park?",
-      "desc": "You can contact FAJ Technical Services L.L.C with your location and preferred timing. Our team will arrange a suitable service appointment."
+      "question": "How can I book an AC service in Dubai Investment Park?",
+      "answer": "You can contact FAJ Technical Services L.L.C with your location and preferred timing. Our team will arrange a suitable service appointment."
     }
-  ]
+  ],
 };
 
 const bookingData = {
   "id": "booking-section",
   "title": "Book An Appointment",
-  "description": "Fill in the form below or call our 7-day hotline for immediate service dispatch across DIP.",
+  "description": "Book your AC service appointment with our expert team in DIP. We provide professional AC installation, cleaning, maintenance, and repair services to keep your space cool and comfortable.",
   "submitLabel": "Schedule Service Now"
 };
 

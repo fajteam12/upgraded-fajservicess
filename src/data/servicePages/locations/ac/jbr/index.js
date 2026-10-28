@@ -40,7 +40,7 @@ const heroData = {
   paragraph:
     "Jumeirah Beach Residence (JBR) is a highly sought-after waterfront community in Dubai. Residential high-rises, hotel buildings, retail shops, restaurants, and cafes line the streets of the area. People live, work, and visit here all year round. Due to the high heat and humidity in Dubai, the air conditioners operate for extended periods each day at JBR. A faulty air conditioning system can create a very uncomfortable and unproductive environment for occupants of the home or business.",
   paragraphs: [
-    "Jumeirah Beach Residence (JBR) is a highly sought-after waterfront community in Dubai. Residential high-rises, hotel buildings, retail shops, restaurants, and cafes line the streets of the area. People live, work, and visit here all year round. Due to the high heat and humidity in Dubai, the air conditioners operate for extended periods each day at JBR. A faulty air conditioning system can create a very uncomfortable and unproductive environment for occupants of the home or business.",
+    "Jumeirah Beach Residence (JBR) is a highly sought-after waterfront community in Dubai. Residential high-rises, hotel buildings, retail shops, restaurants, and cafes line the streets of the area. People live, work, and visit here all year round. Due to the high heat and humidity in Dubai, the air conditioners operate for extended periods each day at JBR. A faulty air conditioning system can create a very uncomfortable and unproductive environment for occupants of the home or business."
   ],
   highlights: [
     {
@@ -83,30 +83,20 @@ const overviewData = {
   paragraphs: [
     {
       parts: [
-        "Since 2010, ",
-        {
-          text: "FAJ Technical Services L.L.C",
-          href: "/",
-        },
-        " has been offering AC services throughout Dubai. We offer ",
-        {
-          text: "AC repair",
-          href: "/services/air-conditioning-repair/ac-service/",
-        },
-        ", AC cleaning, AC maintenance, and AC installation services for residential and commercial properties throughout JBR. Our team understands the cooling needs of this coastal community and provides reliable support for all types of AC systems.",
-      ],
-    },
+        "Since 2010, FAJ Technical Services L.L.C has been offering AC services throughout Dubai. We offer AC repair, AC cleaning, AC maintenance, and AC installation services for residential and commercial properties throughout JBR. Our team understands the cooling needs of this coastal community and provides reliable support for all types of AC systems."
+]
+    }
   ],
   showCta: false,
   cta: {
     phone: "",
-    whatsapp: "https://api.whatsapp.com/send?phone=+971507464712&text=Hello",
-  },
+    whatsapp: "https://api.whatsapp.com/send?phone=+971507464712&text=Hello"
+  }
 };
 
 const areaOverviewData = {
   id: "area-ac-services",
-  title: "Who provides the best AC repair services in JBR?",
+  title: "Best AC Repair in JBR",
   paragraphs: [
     "When your AC stops working in JBR, you need someone who can fix it fast. FAJ Technical Services L.L.C provides Apartment AC repair and maintenance services in JBR along with services for hotels, restaurants, retail shops and commercial buildings.",
     "Our technicians are able to detect cooling issues, electrical problems, gas leaks as well as system failures. Our services include solutions that work and we make sure you know every step of the way through the repair.",
@@ -346,7 +336,7 @@ const serviceOverviewData = {
 
 const commonSignsData = {
   id: "ac-maintenance-signs",
-  title: "Which signs show the AC needs service?",
+  title: "Signs You Need An AC Service",
   intro:
     "Most AC units will provide some sort of warning before they fail. Early recognition of these signs can save you from the discomfort and expensive repairs that can follow.",
   items: [
@@ -363,14 +353,8 @@ const commonSignsData = {
 const videoData = {
   id: "ac-service-video",
   title: "Emergency AC Repair Service in JBR",
-  lead: {
-    parts: [
-      "AC problems can happen at any time. When the weather is hot and your AC stops working, you need help fast. At ",
-      { text: "FAJ Technical Services L.L.C", href: "/" },
-      ", our quick repair restores comfort and prevents further damage to your system.",
-    ],
-  },
-  listTitle: "Our emergency AC repair service covers:",
+  lead: "A sudden AC breakdown can affect comfort, productivity, and indoor air quality.",
+  listTitle: "Our emergency AC repair service can help with:",
   items: [
     "AC not cooling",
     "AC not turning on",
@@ -382,7 +366,13 @@ const videoData = {
     "Unusual noises",
   ],
   conclusion:
-    "Our team provides fast support for homes, hotels, restaurants, and commercial properties across JBR.",
+    "We provide fast assistance for residential and commercial customers throughout JBR and nearby areas.",
+  description: [
+    "A sudden AC breakdown can affect comfort, productivity, and indoor air quality.",
+    "Our emergency AC repair service can help with: AC not cooling, AC not turning on, water leakage, electrical faults, thermostat issues, compressor failures, weak airflow, and unusual noises.",
+    "We provide fast assistance for residential and commercial customers throughout JBR and nearby areas.",
+  ],
+  frameTitle: "Air-conditioning repair and maintenance service video in JBR",
   videoId: "prUR0-lZlzg",
   videoSide: "left",
   image: {
@@ -393,10 +383,20 @@ const videoData = {
     height: 400,
   },
   variant: "framed",
-  showCta: false,
-  cta: {
-    phone: "",
-    whatsapp: "",
+  blockInteraction: true,
+  allowFullScreen: false,
+  parameters: {
+    autoplay: "1",
+    mute: "0",
+    controls: "0",
+    modestbranding: "1",
+    rel: "0",
+    showinfo: "0",
+    loop: "1",
+    playlist: "prUR0-lZlzg",
+    playsinline: "1",
+    cc_load_policy: "0",
+    disablekb: "1",
   },
 };
 
@@ -414,10 +414,10 @@ const maintenanceImportanceData = {
     width: 600,
     height: 400,
   },
-  showCta: false,
+  showCta: true,
   cta: {
     phone: "",
-    whatsapp: "https://api.whatsapp.com/send?phone=+971507464712&text=Hello",
+    whatsapp: "https://api.whatsapp.com/send?phone=+971507464712&text=Hello"
   },
 };
 
@@ -466,7 +466,7 @@ const maintenanceImportanceCardsData = {
 
 const commonProblemsData = {
   id: "common-problems",
-  title: "Most Common AC Problems",
+  title: "Common AC Problems That May Require Maintenance",
   subtitle:
     "We provide fast diagnosis and professional repair for all major air conditioning faults across JBR:",
   columns: "four",
@@ -545,7 +545,7 @@ const commonProblemsData = {
 
 const servicesOfferedData = {
   id: "ac-services-offered",
-  title: "Professional Air Conditioning Services in JBR",
+  title: "HERE ARE THE SERVICES WE OFFER FOR AIR CONDITIONING SYSTEMS",
   items: [
     {
       icon: "wrench",
@@ -590,7 +590,7 @@ const servicesOfferedData = {
 
 const servicesOfferedCardsData = {
   id: "services-offered-cards",
-  title: "Professional Air Conditioning Services in JBR",
+  title: "HERE ARE THE SERVICES WE OFFER FOR AIR CONDITIONING SYSTEMS",
   columns: "three",
   items: [
     {
@@ -682,7 +682,7 @@ const benefitsData = {
     {
       id: "ac-airflow",
       number: "05",
-      title: "Airflow Balance",
+      title: "AIRFLOW BALANCE",
       description:
         "We ensure optimal airflow from your air conditioning system in each room as needed.",
       icon: "wind",
@@ -690,7 +690,7 @@ const benefitsData = {
     {
       id: "ac-feedback",
       number: "06",
-      title: "Customer Feedback",
+      title: "CUSTOMER FEEDBACK",
       description:
         "Our team provides essential feedback on your air conditioning health and any necessary repair.",
       icon: "customer-feedback",
@@ -850,7 +850,7 @@ const whyChooseUsData = {
 
 const beforeAfterData = {
   id: "recent-completed-service",
-  title: "Recent Completed Projects",
+  title: "Recent Completed Service",
   description:
     "See the real results of our thorough air conditioning maintenance and deep cleaning service in JBR.",
   beforeLabel: "Before",
@@ -969,7 +969,7 @@ const brandsData = {
 
 const sparePartsRepairData = {
   id: "ac-spare-parts-and-repair",
-  title: "We Handle All Types of AC Systems",
+  title: "We Specialise in All Types of AC Systems",
   columns: [
     {
       title: "Air Conditioning Systems Serviced Across JBR:",
@@ -1120,33 +1120,59 @@ const repairPriceData = {
 };
 
 const testimonialsData = {
-  id: "testimonials",
+  id: "ac-service-reviews",
   title: "Customer Reviews",
   description:
-    "Read genuine reviews from homeowners, landlords and facility managers who rely on FAJ Technical Services L.L.C for their HVAC maintenance.",
+    "Customer feedback on FAJ air-conditioning repair and maintenance services in JBR.",
   items: [
-
     {
-      name: "Sara Malik",
-      role: "JBR Resident",
-      quote:
-        "FAJ provided professional split AC service for our property in JBR. The team was skilled, cleaned everything properly, and restored cooling performance. Very satisfied with their prompt response.",
-      rating: 5,
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Sara Malik",
+      subtitle: "JBR Resident",
+      description:
+        "FAJ provided professional split AC service for my apartment. The team was skilled, cleaned everything properly, and restored cooling performance. Very satisfied with their quick and reliable service in JBR.",
     },
     {
-      name: "Arjun Kumar",
-      role: "JBR Resident",
-      quote:
-        "I booked FAJ for AC maintenance in JBR, and the service was prompt and professional. Excellent attention to detail and clear diagnostics.",
-      rating: 5,
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Al Mansoori",
+      subtitle: "JBR Resident",
+      description:
+        "Great experience with FAJ’s air conditioner service. The technicians were professional, friendly, and checked everything thoroughly. My AC is running smoothly again. Excellent service in JBR, highly recommended!",
     },
     {
-      name: "Shazia Sheikh",
-      role: "Homeowner, JBR",
-      quote:
-        "Outstanding AC repair service in JBR. The technician arrived on time and fixed our cooling issue quickly. Excellent service overall, highly recommended!",
-      rating: 5,
-    }
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Arjun Kumar",
+      subtitle: "Resident",
+      description:
+        "I booked FAJ for HVAC services in JBR, and it was excellent. The technicians were skilled, reliable, and carried out the work with great attention to detail.",
+    },
+    {
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Shazia Sheikh",
+      subtitle: "Homeowner",
+      description:
+        "FAJ delivered great AC technical services. Their team was polite, professional, and fixed my cooling issue quickly. Excellent service overall, I will continue using them for future AC problems in JBR.",
+    },
+    {
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Ravi Mehta",
+      subtitle: "Resident",
+      description:
+        "I used FAJ for AC cleaning service, and it really improved my air quality. The team worked efficiently, cleaned every part, and made my AC run like new again.",
+    },
+    {
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Waseem Aqdas",
+      subtitle: "Homeowner",
+      description:
+        "Outstanding service from FAJ Technical! My AC wasn't cooling properly, but FAJ Technical came to the rescue. Quick response, friendly technician, and now my AC works perfectly. I highly recommend them!",
+    },
   ],
 };
 
@@ -1165,7 +1191,7 @@ const newsData = {
       description:
         "A properly functioning air conditioning system is essential for various settings, including homes, offices, and individual spaces. According to HVAC Webmasters, over 70%",
       href: "/blog/10-common-ac-problems-and-how-to-fix-them/",
-      actionLabel: "Read Article",
+      actionLabel: "Read More",
     },
     {
       icon: "dollar-savings",
@@ -1176,7 +1202,7 @@ const newsData = {
       description:
         "Air conditioning is excellent for keeping you comfortable indoors but can be expensive. But there is no need to worry, there are some ways to reduce AC electric bill with",
       href: "/blog/how-to-save-money-on-ac/",
-      actionLabel: "Read Article",
+      actionLabel: "Read More",
     },
     {
       icon: "wind",
@@ -1187,7 +1213,7 @@ const newsData = {
       description:
         "As the temperatures rise and summer approaches, the desire for a cool and comfortable escape within your home intensifies. Air conditioning offers a seemingly simple solu",
       href: "/blog/how-to-choose-the-best-air-conditioner-for-home/",
-      actionLabel: "Read Article",
+      actionLabel: "Read More",
     },
   ],
   footer: {
@@ -1204,60 +1230,53 @@ const newsData = {
 
 const faqsData = {
   id: "location-faqs",
-  title: "AC Repair and Maintenance FAQs in JBR",
-  description:
-    "Got questions about AC repair, cleaning, or routine maintenance in JBR? Browse our most common answers below:",
+  title: "FAQ's",
+  description: "Got questions about AC repair, cleaning, or routine maintenance in JBR? Browse our most common answers below:",
   items: [
     {
-      question: "What is the price of AC repair in JBR?",
-      answer:
-        "The price will vary based on the AC type, the issue and parts replacement. An inspection will help to identify the precise problem and offer a straightforward estimate.",
+      "question": "What is the price of AC repair in JBR?",
+      "answer": "The price will vary based on the AC type, the issue and parts replacement. An inspection will help to identify the precise problem and offer a straightforward estimate."
     },
     {
-      question: "When should I have my AC serviced in JBR?",
-      answer:
-        "Most air conditioning units need servicing twice a year. Ongoing maintenance helps your air conditioner perform efficiently and helps prevent sudden breakdowns.",
+      "question": "When should I have my AC serviced in JBR?",
+      "answer": "Most air conditioning units need servicing twice a year. Ongoing maintenance helps your air conditioner perform efficiently and helps prevent sudden breakdowns."
     },
     {
-      question: "Why is my AC not cooling properly?",
-      answer:
-        "<p><strong>This can happen because of the following reasons:</strong></p><ul><li>Dirty Filters</li><li>Low Gas</li><li>Blocked Coils</li><li>Thermostat Problems</li><li>Compressor Issues</li></ul><p>A professional inspection can identify the exact cause.</p>"    },
-    {
-      question: "Do you provide AC services for hotels and restaurants in JBR?",
-      answer:
-        "Yes, we offer AC repair, cleaning, and maintenance services for hotels, restaurants, retail shops, and commercial properties throughout JBR.",
+      "question": "Why is my AC not cooling properly?",
+      "answer": "<strong>This can happen because of the following reasons:</strong><ul><li>Dirty Filters</li><li>Low Gas</li><li>Blocked Coils</li><li>Thermostat Problems</li><li>Compressor Issues</li></ul>A professional inspection can identify the exact cause."
     },
     {
-      question: "What causes water leakage from the AC?",
-      answer:
-        "<p><strong>Common causes include:</strong></p><ul><li>Blocked drain pipes</li><li>Frozen coils</li><li>Dirty filters</li><li>Drainage problems</li></ul><p>Fixing the leak early prevents property damage.</p>"    },
-    {
-      question: "Can AC cleaning improve cooling performance?",
-      answer:
-        "Yes, cleaning removes dust and dirt from filters and coils, which improves airflow and helps your AC cool more effectively.",
+      "question": "Do you provide AC services for hotels and restaurants in JBR?",
+      "answer": "Yes, we offer AC repair, cleaning, and maintenance services for hotels, restaurants, retail shops, and commercial properties throughout JBR."
     },
     {
-      question: "Do you offer same-day AC repair in JBR?",
-      answer:
-        "Yes, at FAJ Technical Services L.L.C offer same-day services but this service may be available depending on the issue and technician availability. Contact our team to check availability.",
+      "question": "What causes water leakage from the AC?",
+      "answer": "<strong>Common causes include:</strong><ul><li>blocked drain pipes</li><li>frozen coils</li><li>dirty filters</li><li>drainage problems</li></ul>Fixing the leak early prevents property damage."
     },
     {
-      question: "Which AC brands do you repair?",
-      answer:
-        "<p><strong>We repair major brands including:</strong></p><ul><li>Daikin</li><li>LG</li><li>Samsung</li><li>O General</li><li>Mitsubishi</li><li>Carrier</li><li>York</li><li>Trane</li><li>Gree</li><li>Panasonic and Hitachi</li></ul>"    },
-    {
-      question: "What is included in the AC maintenance service?",
-      answer:
-        "<p><strong>Maintenance usually includes:</strong></p><ul><li>Filter Cleaning</li><li>Coil Inspection</li><li>Drain Line Checking</li><li>Thermostat Testing</li><li>Cooling Performance Check</li><li>Electrical Inspection</li></ul>"    },
-    {
-      question: "Is an Annual Maintenance Contract useful for AC systems?",
-      answer:
-        "Yes, AMC helps prevent major problems, improves system efficiency, and reduces unexpected repair costs through regular servicing.",
+      "question": "Can AC cleaning improve cooling performance?",
+      "answer": "Yes, cleaning removes dust and dirt from filters and coils, which improves airflow and helps your AC cool more effectively."
     },
     {
-      question: "Why does my AC make strange noises?",
-      answer:
-        "<p><strong>Common reasons include:</strong></p><ul><li>Loose Internal Parts</li><li>Fan Motor Problems</li><li>Dirt Buildup</li><li>Worn Components</li></ul><p>A technician can find the exact cause.</p>"    }
+      "question": "Do you offer same-day AC repair in JBR?",
+      "answer": "Yes, at FAJ Technical Services L.L.C offer same-day services but this service may be available depending on the issue and technician availability. Contact our team to check availability."
+    },
+    {
+      "question": "Which AC brands do you repair?",
+      "answer": "<strong>We repair major brands including:</strong><ul><li>Daikin</li><li>LG</li><li>Samsung</li><li>O General</li><li>Mitsubishi</li><li>Carrier</li><li>York</li><li>Trane</li><li>Gree</li><li>Panasonic and Hitachi</li></ul>"
+    },
+    {
+      "question": "What is included in the AC maintenance service?",
+      "answer": "<strong>Maintenance usually includes:</strong><ul><li>Filter Cleaning</li><li>Coil Inspection</li><li>Drain Line Checking</li><li>Thermostat Testing</li><li>Cooling Performance Check</li><li>Electrical Inspection</li></ul>"
+    },
+    {
+      "question": "Is an Annual Maintenance Contract useful for AC systems?",
+      "answer": "Yes, AMC helps prevent major problems, improves system efficiency, and reduces unexpected repair costs through regular servicing."
+    },
+    {
+      "question": "Why does my AC make strange noises?",
+      "answer": "<strong>Common reasons include:</strong><ul><li>Loose Internal Parts</li><li>Fan Motor Problems</li><li>Dirt Buildup</li><li>Worn Components</li></ul>A technician can find the exact cause."
+    }
   ],
 };
 
@@ -1265,7 +1284,7 @@ const bookingData = {
   id: "booking-section",
   title: "Book An Appointment",
   description:
-    "Fill in the form below or call our 7-day hotline for immediate service dispatch across JBR.",
+    "Book your AC service appointment with our expert team in JBR. We provide professional AC installation, cleaning, maintenance, and repair services to keep your space cool and comfortable.",
   submitLabel: "Schedule Service Now",
 };
 

@@ -1,87 +1,128 @@
 [
-  {  
+  {
     "title": "How much does AC repair cost in Bur Dubai?",
-    "desc": "AC service in Dubai typically costs between AED 230 to AED 765 depending on the type of service. Prices vary based on the unit&apos;s size and condition, as well as the service provider."
+    "desc": "AC service in Dubai typically costs between AED 230 to AED 765 depending on the type of service. Prices vary based on the unit&apos;s size and condition, as well as the service provider.",
+    "question": "How much does AC repair cost in Bur Dubai?",
+    "answer": "AC service in Dubai typically costs between AED 230 to AED 765 depending on the type of service. Prices vary based on the unit&apos;s size and condition, as well as the service provider."
   },
   {
     "title": "What are the signs that my AC needs immediate repair?",
-    "desc": "<strong>Common warning signs include:</strong> <ul><li>Weak cooling performance</li><li>Water leakage</li><li>Burning smell</li><li>Strange noises</li><li>High electricity bills</li><li>Frequent shutdowns</li></ul>"
+    "desc": "<strong>Common warning signs include:</strong> <ul><li>Weak cooling performance</li><li>Water leakage</li><li>Burning smell</li><li>Strange noises</li><li>High electricity bills</li><li>Frequent shutdowns</li></ul>",
+    "question": "What are the signs that my AC needs immediate repair?",
+    "answer": "<strong>Common warning signs include:</strong> <ul><li>Weak cooling performance</li><li>Water leakage</li><li>Burning smell</li><li>Strange noises</li><li>High electricity bills</li><li>Frequent shutdowns</li></ul>"
   },
   {
     "title": "Which AC systems do you repair?",
-    "desc": "<strong>We repair and maintain:</strong> <ul><li>Window AC</li><li>Split AC</li><li>Central AC</li><li>Chiller AC</li><li>FCU Systems</li><li>Package Unit AC</li><li>Portable AC</li><li>Ducted Split AC</li><li>Ceiling AC</li><li>Inverter AC</li></ul>"
+    "desc": "<strong>We repair and maintain:</strong> <ul><li>Window AC</li><li>Split AC</li><li>Central AC</li><li>Chiller AC</li><li>FCU Systems</li><li>Package Unit AC</li><li>Portable AC</li><li>Ducted Split AC</li><li>Ceiling AC</li><li>Inverter AC</li></ul>",
+    "question": "Which AC systems do you repair?",
+    "answer": "<strong>We repair and maintain:</strong> <ul><li>Window AC</li><li>Split AC</li><li>Central AC</li><li>Chiller AC</li><li>FCU Systems</li><li>Package Unit AC</li><li>Portable AC</li><li>Ducted Split AC</li><li>Ceiling AC</li><li>Inverter AC</li></ul>"
   },
   {
     "title": "How often should AC be serviced in Dubai?",
-    "desc": "Most residential air conditioning systems should be professionally serviced every six months. Commercial systems and heavily used units may require more frequent maintenance."
+    "desc": "Most residential air conditioning systems should be professionally serviced every six months. Commercial systems and heavily used units may require more frequent maintenance.",
+    "question": "How often should AC be serviced in Dubai?",
+    "answer": "Most residential air conditioning systems should be professionally serviced every six months. Commercial systems and heavily used units may require more frequent maintenance."
   },
   {
     "title": "Is an AMC worth it for air conditioning systems?",
-    "desc": "Yes. An Annual Maintenance Contract helps reduce breakdowns, improve cooling efficiency, lower repair costs, improve indoor air quality, and extend equipment lifespan."
+    "desc": "Yes. An Annual Maintenance Contract helps reduce breakdowns, improve cooling efficiency, lower repair costs, improve indoor air quality, and extend equipment lifespan.",
+    "question": "Is an AMC worth it for air conditioning systems?",
+    "answer": "Yes. An Annual Maintenance Contract helps reduce breakdowns, improve cooling efficiency, lower repair costs, improve indoor air quality, and extend equipment lifespan."
   },
   {
     "title": "Why is my AC running but not cooling?",
-    "desc": "This can happen because of dirty filters, low refrigerant levels, blocked coils, thermostat faults, compressor issues, or restricted airflow. A professional inspection can identify the exact cause."
+    "desc": "This can happen because of dirty filters, low refrigerant levels, blocked coils, thermostat faults, compressor issues, or restricted airflow. A professional inspection can identify the exact cause.",
+    "question": "Why is my AC running but not cooling?",
+    "answer": "This can happen because of dirty filters, low refrigerant levels, blocked coils, thermostat faults, compressor issues, or restricted airflow. A professional inspection can identify the exact cause."
   },
   {
     "title": "Can AC cleaning reduce electricity bills?",
-    "desc": "Yes. Cleaning filters, coils, and drainage systems helps the unit operate more efficiently, reducing unnecessary energy consumption."
+    "desc": "Yes. Cleaning filters, coils, and drainage systems helps the unit operate more efficiently, reducing unnecessary energy consumption.",
+    "question": "Can AC cleaning reduce electricity bills?",
+    "answer": "Yes. Cleaning filters, coils, and drainage systems helps the unit operate more efficiently, reducing unnecessary energy consumption."
   },
   {
     "title": "Do you provide same-day AC repair near me in Bur Dubai?",
-    "desc": "Yes. Depending on technician availability and the nature of the issue, same-day AC repair services may be available for residential and commercial customers."
+    "desc": "Yes. Depending on technician availability and the nature of the issue, same-day AC repair services may be available for residential and commercial customers.",
+    "question": "Do you provide same-day AC repair near me in Bur Dubai?",
+    "answer": "Yes. Depending on technician availability and the nature of the issue, same-day AC repair services may be available for residential and commercial customers."
   },
   {
     "title": "What AC brands do you service?",
-    "desc": "We service major brands including Daikin, LG, Samsung, O General, Mitsubishi, Carrier, York, Trane, Panasonic, Gree, Hitachi, Toshiba, Super General, Lennox, Rheem, Midea, Goodman, SKM, McQuay, and Blue Star."
+    "desc": "We service major brands including Daikin, LG, Samsung, O General, Mitsubishi, Carrier, York, Trane, Panasonic, Gree, Hitachi, Toshiba, Super General, Lennox, Rheem, Midea, Goodman, SKM, McQuay, and Blue Star.",
+    "question": "What AC brands do you service?",
+    "answer": "We service major brands including Daikin, LG, Samsung, O General, Mitsubishi, Carrier, York, Trane, Panasonic, Gree, Hitachi, Toshiba, Super General, Lennox, Rheem, Midea, Goodman, SKM, McQuay, and Blue Star."
   },
   {
     "title": "What are the benefits of regular AC maintenance?",
-    "desc": "<strong>Regular maintenance helps:</strong><ul><li>Improve cooling efficiency</li><li>Lower electricity bills</li><li>Improve indoor air quality</li><li>Reduce breakdown risks</li><li>Extend equipment lifespan</li><li>Maintain consistent airflow</li><li>Protect major AC components</li></ul>"
+    "desc": "<strong>Regular maintenance helps:</strong><ul><li>Improve cooling efficiency</li><li>Lower electricity bills</li><li>Improve indoor air quality</li><li>Reduce breakdown risks</li><li>Extend equipment lifespan</li><li>Maintain consistent airflow</li><li>Protect major AC components</li></ul>",
+    "question": "What are the benefits of regular AC maintenance?",
+    "answer": "<strong>Regular maintenance helps:</strong><ul><li>Improve cooling efficiency</li><li>Lower electricity bills</li><li>Improve indoor air quality</li><li>Reduce breakdown risks</li><li>Extend equipment lifespan</li><li>Maintain consistent airflow</li><li>Protect major AC components</li></ul>"
   },
   {
     "title": "How often should AC ducts be cleaned?",
-    "desc": "AC ducts should be cleaned every 2-3 years, or more frequently if you notice dust accumulation, poor airflow, or a musty smell. Regular cleaning ensures better air quality and system efficiency."
+    "desc": "AC ducts should be cleaned every 2-3 years, or more frequently if you notice dust accumulation, poor airflow, or a musty smell. Regular cleaning ensures better air quality and system efficiency.",
+    "question": "How often should AC ducts be cleaned?",
+    "answer": "AC ducts should be cleaned every 2-3 years, or more frequently if you notice dust accumulation, poor airflow, or a musty smell. Regular cleaning ensures better air quality and system efficiency."
   },
   {
     "title": "How long does an AC repair usually take?",
-    "desc": "Most repairs take one to three hours. It really depends on what's wrong with the AC and if we have the parts we need."
+    "desc": "Most repairs take one to three hours. It really depends on what's wrong with the AC and if we have the parts we need.",
+    "question": "How long does an AC repair usually take?",
+    "answer": "Most repairs take one to three hours. It really depends on what's wrong with the AC and if we have the parts we need."
   },
   {
     "title": "Is it better to repair or replace my AC?",
-    "desc": "If fixing your AC costs half of what a new one costs and your AC is over 10 years old it's often better to get a new one. New ACs save you money on energy too."
+    "desc": "If fixing your AC costs half of what a new one costs and your AC is over 10 years old it's often better to get a new one. New ACs save you money on energy too.",
+    "question": "Is it better to repair or replace my AC?",
+    "answer": "If fixing your AC costs half of what a new one costs and your AC is over 10 years old it's often better to get a new one. New ACs save you money on energy too."
   },
   {
     "title": "Can I clean my AC myself?",
-    "desc": "You can clean the covers and washable filters yourself. For deep cleaning of coils and drains you need a professional."
+    "desc": "You can clean the covers and washable filters yourself. For deep cleaning of coils and drains you need a professional.",
+    "question": "Can I clean my AC myself?",
+    "answer": "You can clean the covers and washable filters yourself. For deep cleaning of coils and drains you need a professional."
   },
   {
     "title": "Do you provide emergency AC repair services?",
-    "desc": "Yes, we provide emergency repair services to fix breakdowns, leaks, electrical faults and compressor failures. We know AC problems are urgent."
+    "desc": "Yes, we provide emergency repair services to fix breakdowns, leaks, electrical faults and compressor failures. We know AC problems are urgent.",
+    "question": "Do you provide emergency AC repair services?",
+    "answer": "Yes, we provide emergency repair services to fix breakdowns, leaks, electrical faults and compressor failures. We know AC problems are urgent."
   },
   {
     "title": "How can I improve my AC cooling without calling a technician?",
-    "desc": "<strong>Follow these steps carefully:</strong><ul><li>Close all windows </li><li>Clean the filters</li><li>Keep the unit clear</li><li>Set the thermostat to a temperature</li><li>Extend equipment lifespan</li></ul>"
+    "desc": "<strong>Follow these steps carefully:</strong><ul><li>Close all windows </li><li>Clean the filters</li><li>Keep the unit clear</li><li>Set the thermostat to a temperature</li><li>Extend equipment lifespan</li></ul>",
+    "question": "How can I improve my AC cooling without calling a technician?",
+    "answer": "<strong>Follow these steps carefully:</strong><ul><li>Close all windows </li><li>Clean the filters</li><li>Keep the unit clear</li><li>Set the thermostat to a temperature</li><li>Extend equipment lifespan</li></ul>"
   },
   {
     "title": "Why does my AC smell bad when I turn it on?",
-    "desc": "Mold or bacteria inside the AC cause smells. Professional cleaning removes the source completely."
+    "desc": "Mold or bacteria inside the AC cause smells. Professional cleaning removes the source completely.",
+    "question": "Why does my AC smell bad when I turn it on?",
+    "answer": "Mold or bacteria inside the AC cause smells. Professional cleaning removes the source completely."
   },
   {
     "title": "What happens if I skip AC servicing for a year?",
-    "desc": "<ul><li>Your AC's efficiency drops</li><li>Your bills go up</li><li>Parts wear out faster</li> <li>Small problems become expensive repairs</li></ul>"
+    "desc": "<ul><li>Your AC's efficiency drops</li><li>Your bills go up</li><li>Parts wear out faster</li> <li>Small problems become expensive repairs</li></ul>",
+    "question": "What happens if I skip AC servicing for a year?",
+    "answer": "<ul><li>Your AC's efficiency drops</li><li>Your bills go up</li><li>Parts wear out faster</li> <li>Small problems become expensive repairs</li></ul>"
   },
   {
     "title": "Does AC servicing include checking the gas level?",
-    "desc": "Yes, it does. Technicians check the gas level. If it's low they find the leak and recharge the system."
+    "desc": "Yes, it does. Technicians check the gas level. If it's low they find the leak and recharge the system.",
+    "question": "Does AC servicing include checking the gas level?",
+    "answer": "Yes, it does. Technicians check the gas level. If it's low they find the leak and recharge the system."
   },
   {
     "title": "How do I know if my AC needs a gas refill?",
-    "desc": "If your AC runs but the air is not cold enough you might need a gas refill. Only a technician can confirm this."
+    "desc": "If your AC runs but the air is not cold enough you might need a gas refill. Only a technician can confirm this.",
+    "question": "How do I know if my AC needs a gas refill?",
+    "answer": "If your AC runs but the air is not cold enough you might need a gas refill. Only a technician can confirm this."
   },
   {
     "title": "Can I use my AC while it is leaking water?",
-    "desc": "No, turn it off. A leaking AC can damage your floors and walls. Call a technician to fix it."
+    "desc": "No, turn it off. A leaking AC can damage your floors and walls. Call a technician to fix it.",
+    "question": "Can I use my AC while it is leaking water?",
+    "answer": "No, turn it off. A leaking AC can damage your floors and walls. Call a technician to fix it."
   }
-
 ]

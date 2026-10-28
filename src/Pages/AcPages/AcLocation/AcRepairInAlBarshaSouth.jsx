@@ -123,7 +123,8 @@ export default function AcRepairInAlBarshaSouth() {
         {/* 7. Why is AC Maintenance Service Important? (Image on RIGHT) */}
         <SplitMediaSection
           content={pageData.maintenanceImportance}
-          showCta={false}
+          showCta={true}
+          cta={whatsappOnlyCta}
           contact={pageData.contact}
           tone="soft"
           imageSide="right"

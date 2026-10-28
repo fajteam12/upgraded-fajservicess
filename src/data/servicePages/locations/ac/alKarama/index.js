@@ -98,7 +98,7 @@ const overviewData = {
 
 const areaOverviewData = {
   id: "al-karama-ac-services",
-  title: "Who provides the Trusted AC repair services in Al Karama?",
+  title: "Best AC Repair in Al Karama",
   paragraphs: [
     "If you need to fix your air conditioner in Al Karama you can trust FAJ Technical Services L.L.C We fix air conditioners for homes, offices, shops and big commercial buildings across Dubai and the UAE. Our workers are very good at fixing air conditioners because they have done it for a long time. They can fix any problem with your air conditioner, such as if it's not cool enough or if it is leaking water. We do not just fix the problem for now we make sure it does not happen again.",
   ],
@@ -306,32 +306,39 @@ const contractsData = {
 };
 
 const serviceOverviewData = {
-  id: "ac-repair-service-overview",
-  title: "What Is The Reason Behind My Ac Not Cooling?",
-  description:
-    "It is very common for air conditioners to stop cooling in Dubai because we use them a lot. If your air conditioner is running but not cooling, there could be reasons.",
-  paragraphs: [
-    "Some common reasons are: Dirty Filters, Not enough refrigerant gas, Blocked or dirty coils, Thermostat problem, Compressor issue, Electrical problem, and Poor airflow.",
-    "If you call a professional they can find the problem and fix it before it gets worse.",
+  "id": "ac-repair-service-overview",
+  "title": "What Is The Reason Behind My Ac Not Cooling?",
+  "description": "It is very common for air conditioners to stop cooling in Dubai because we use them a lot. If your air conditioner is running but not cooling, there could be reasons.",
+  "listTitle": "Some common reasons are:",
+  "checklist": [
+    "Dirty Filters",
+    "Not enough refrigerant gas",
+    "Blocked",
+    "Dirty coils",
+    "Thermostat problem",
+    "Compressor issue",
+    "Electrical problem",
+    "Poor airflow"
   ],
-  imageSide: "left",
-  image: {
-    id: "ac-service-page/ac-repair-and-service",
-    src: "/img/ac-service-page/ac-repair-and-service.webp",
-    alt: "AC Repair in Al Karama",
-    width: 853,
-    height: 853,
+  "conclusion": "If you call a professional they can find the problem and fix it before it gets worse.",
+  "imageSide": "left",
+  "image": {
+    "id": "ac-service-page/ac-repair-and-service",
+    "src": "/img/ac-service-page/ac-repair-and-service.webp",
+    "alt": "AC Repair in Al Karama",
+    "width": 853,
+    "height": 853
   },
-  showCta: true,
-  cta: {
-    phone: "tel:+971507464712",
-    whatsapp: "https://api.whatsapp.com/send?phone=+971507464712&text=Hello",
-  },
+  "showCta": true,
+  "cta": {
+    "phone": "tel:+971507464712",
+    "whatsapp": "https://api.whatsapp.com/send?phone=+971507464712&text=Hello"
+  }
 };
 
 const commonSignsData = {
   id: "ac-maintenance-signs",
-  title: "Which signs show the AC needs service?",
+  title: "Signs You Need An AC Service",
   intro:
     "If you see any of these problems you should call us away",
   items: [
@@ -349,51 +356,58 @@ const commonSignsData = {
 };
 
 const videoData = {
-  "id": "ac-service-video",
-  "title": "Emergency AC Repair Service in Al Karama",
-  "lead": {
-    "parts": [
-      "AC problems can happen suddenly, especially during Dubai's hottest months. A quick repair helps restore comfort and prevents further damage to your cooling system. At ",
-      {
-        "text": "FAJ Technical Services L.L.C",
-        "href": "/"
-      },
-      ", our fast-response team provides immediate support across Al Karama."
-    ]
-  },
-  "listTitle": "Our emergency AC repair service covers:",
-  "items": [
+  id: "ac-service-video",
+  title: "Emergency AC Repair Service in Al Karama",
+  lead: "A sudden AC breakdown can affect comfort, productivity, and indoor air quality.",
+  listTitle: "Our emergency AC repair service can help with:",
+  items: [
     "AC not cooling",
     "AC not turning on",
     "Water leakage",
     "Electrical faults",
-    "Compressor problems",
     "Thermostat issues",
+    "Compressor failures",
     "Weak airflow",
-    "Unusual noises"
+    "Unusual noises",
   ],
-  "conclusion": "Our technicians provide fast assistance for homes, villas, offices, and commercial properties in Al Karama.",
-  "frameTitle": "Air-conditioning repair and maintenance service video in Al Karama",
-  "videoId": "prUR0-lZlzg",
-  "videoSide": "left",
-  "image": {
-    "id": "indoor-ac-servicing",
-    "src": "/img/indoor-ac-servicing.webp",
-    "alt": "FAJ AC technician providing express and emergency AC repair in Al Karama",
-    "width": 600,
-    "height": 400
+  conclusion:
+    "We provide fast assistance for residential and commercial customers throughout Al Karama and nearby areas.",
+  description: [
+    "A sudden AC breakdown can affect comfort, productivity, and indoor air quality.",
+    "Our emergency AC repair service can help with: AC not cooling, AC not turning on, water leakage, electrical faults, thermostat issues, compressor failures, weak airflow, and unusual noises.",
+    "We provide fast assistance for residential and commercial customers throughout Al Karama and nearby areas.",
+  ],
+  frameTitle: "Air-conditioning repair and maintenance service video in Al Karama",
+  videoId: "prUR0-lZlzg",
+  videoSide: "left",
+  image: {
+    id: "indoor-ac-servicing",
+    src: "/img/indoor-ac-servicing.webp",
+    alt: "FAJ AC technician providing express and emergency AC repair in Al Karama",
+    width: 600,
+    height: 400,
   },
-  "variant": "framed",
-  "showCta": false,
-  "cta": {
-    "phone": "",
-    "whatsapp": ""
-  }
+  variant: "framed",
+  blockInteraction: true,
+  allowFullScreen: false,
+  parameters: {
+    autoplay: "1",
+    mute: "0",
+    controls: "0",
+    modestbranding: "1",
+    rel: "0",
+    showinfo: "0",
+    loop: "1",
+    playlist: "prUR0-lZlzg",
+    playsinline: "1",
+    cc_load_policy: "0",
+    disablekb: "1",
+  },
 };
 
 const maintenanceImportanceData = {
   id: "ac-maintenance-importance",
-  title: "What makes AC maintenance service essential in Al Karama?",
+  title: "Why is AC Maintenance Service Important in Al Karama?",
   description:
     "It is very important to take care of your air conditioner in Al Karama because of the hot weather. FAJ Technical Services L.L.C makes sure your air conditioner works all year round.",
   imageSide: "left",
@@ -406,8 +420,8 @@ const maintenanceImportanceData = {
   },
   showCta: true,
   cta: {
-    phone: "tel:+971507464712",
-    whatsapp: "https://api.whatsapp.com/send?phone=+971507464712&text=Hello",
+    phone: "",
+    whatsapp: "https://api.whatsapp.com/send?phone=+971507464712&text=Hello"
   },
 };
 
@@ -459,7 +473,7 @@ const maintenanceImportanceCardsData = {
 };
 
 const commonProblemsData = {
-  title: "Most Common Ac Problems",
+  title: "Common AC Problems That May Require Maintenance",
   description: "",
   items: [
     {
@@ -493,12 +507,12 @@ const commonProblemsData = {
         "AC is not removing moisture properly when the humidity is high. It makes the home feel uncomfortable. It needs to check and maintain the AC or check the gas level.",
     },
     {
-      title: "Water Leakage",
+      title: "Leaking Water",
       description:
         "Water leaks from the AC usually happen because the drainage is blocked or the coils are frozen. If you get AC repair in Dubai, you can stop damage to your property.",
     },
     {
-      title: "High Energy Bills",
+      title: "Increased Energy Bills",
       description:
         "Your electricity bills are rising, which means your AC is working harder than usual. If your filters are dirty or you don't maintain them, it uses a lot of power.",
     },
@@ -512,7 +526,7 @@ const commonProblemsData = {
 
 const servicesOfferedData = {
   id: "ac-services-offered",
-  title: "Best Air Conditioning Services in Al Karama",
+  title: "HERE ARE THE SERVICES WE OFFER FOR AIR CONDITIONING SYSTEMS",
   description:
     "Are you searching for trusted air conditioning services in Al Karama? FAJ Technical Services L.L.C provides top-rated AC repair, cleaning, maintenance, and installation solutions for homes, residential apartments, offices, and commercial properties.",
   imageSide: "right",
@@ -532,7 +546,7 @@ const servicesOfferedData = {
 
 const servicesOfferedCardsData = {
   id: "ac-services-offered-cards",
-  title: "Best Air Conditioning Services in Al Karama",
+  title: "HERE ARE THE SERVICES WE OFFER FOR AIR CONDITIONING SYSTEMS",
   items: [
     {
       icon: "ac-wrench",
@@ -871,13 +885,11 @@ const linkedBrands = [
     "rheem",
     "Rheem Air Conditioner, founded in 1925 in California, started with steel drums & later shifted to water heaters. In the 1940s & 1950s, the company expanded into AC systems. Now Rheem is leading global HVAC provider known for its innovative solutions.",
   ],
-  [
-    "SKM AC Maintenance Dubai",
+  ["SKM AC Maintenance Dubai", 
     "skm",
     "S.K.M Air Conditioning LLC (SKM) was established in 1974 in Sharjah, United Arab Emirates, to manufacture heating, ventilation, and air conditioning (HVAC) equipment tailored for the harsh Gulf climates.",
   ],
-  [
-    "Lennox Air Conditioning Maintenance Service",
+  ["Lennox Air Conditioning Maintenance Service", 
     "lennox",
     "Lennox Air Conditioning was established in 1895 when Dave Lennox built the first riveted-steel coal-fired furnace in Marshalltown, Iowa. The company later entered the air conditioning market in the early 1950s.",
   ],
@@ -896,6 +908,7 @@ const linkedBrands = [
   ...(description ? { description } : {}),
 }));
 
+
 const brandsData = {
   title: "We specialise in air conditioning services for the following brands",
   description:
@@ -910,16 +923,16 @@ const brandsData = {
   initialCount: 12,
   actionLabel: "Request AC Service",
   items: linkedBrands,
-  showCta: true,
+  showCta: false,
   cta: {
-    phone: "tel:+971507464712",
-    whatsapp: "https://api.whatsapp.com/send?phone=+971507464712&text=Hello",
+    phone: "",
+    whatsapp: "",
   },
 };
 
 const beforeAfterData = {
   id: "recent-completed-service",
-  title: "Recent Completed Projects",
+  title: "Recent Completed Service",
   description:
     "See the real results of our thorough air conditioning maintenance and deep cleaning service in Al Karama.",
   beforeLabel: "Before",
@@ -1163,7 +1176,7 @@ const newsData = {
       description:
         "A properly functioning air conditioning system is essential for various settings, including homes, offices, and individual spaces. According to HVAC Webmasters, over 70%",
       href: "/blog/10-common-ac-problems-and-how-to-fix-them/",
-      actionLabel: "Read Article",
+      actionLabel: "Read More",
     },
     {
       icon: "dollar-savings",
@@ -1174,7 +1187,7 @@ const newsData = {
       description:
         "Air conditioning is excellent for keeping you comfortable indoors but can be expensive. But there is no need to worry, there are some ways to reduce AC electric bill with",
       href: "/blog/how-to-save-money-on-ac/",
-      actionLabel: "Read Article",
+      actionLabel: "Read More",
     },
     {
       icon: "wind",
@@ -1185,7 +1198,7 @@ const newsData = {
       description:
         "As the temperatures rise and summer approaches, the desire for a cool and comfortable escape within your home intensifies. Air conditioning offers a seemingly simple solu",
       href: "/blog/how-to-choose-the-best-air-conditioner-for-home/",
-      actionLabel: "Read Article",
+      actionLabel: "Read More",
     },
   ],
   footer: {
@@ -1202,75 +1215,61 @@ const newsData = {
 
 const faqsData = {
   id: "ac-service-faqs",
-  title: "AC Repair and Maintenance FAQs in Al Karama",
-  description:
-    "Answers about AC servicing, cleaning, cooling faults and maintenance in Al Karama.",
+  title: "FAQ's",
+  description: "Answers about AC servicing, cleaning, cooling faults and maintenance in Al Karama.",
   items: [
     {
-      question: "What does AC service cost in Al Karama?",
-      answer:
-        "The cost of AC service in Al Karama depends on the type of AC and the problem. Usually an inspection is done first to find out the repair cost.",
+      "question": "What does AC service cost in Al Karama?",
+      "answer": "The cost of AC service in Al Karama depends on the type of AC and the problem. Usually an inspection is done first to find out the repair cost."
     },
     {
-      question: "Is AC repair available near me in Al Karama?",
-      answer:
-        "Yes, AC repair service is available in Al Karama. At FAJ Technical Services L.L.C our technicians can reach homes, offices and shops quickly.",
+      "question": "Is AC repair available near me in Al Karama?",
+      "answer": "Yes, AC repair service is available in Al Karama. At FAJ Technical Services L.L.C our technicians can reach homes, offices and shops quickly."
     },
     {
-      question: "How long does AC repair take in Al Karama?",
-      answer:
-        "Small AC repairs are done on the same visit. Bigger issues may take longer to fix depending on the parts needed.",
+      "question": "How long does AC repair take in Al Karama?",
+      "answer": "Small AC repairs are done on the same visit. Bigger issues may take longer to fix depending on the parts needed."
     },
     {
-      question: "What are the common problems with AC in Al Karama homes?",
-      answer:
-        "Common AC problems in Al Karama homes include:\n- Ineffective cooling due to dirty filters\n- Water leakage from a blocked drainage system\n- Gas leakage or low refrigerant",
+      "question": "What are the common problems with AC in Al Karama homes?",
+      "answer": "<strong>Common AC problems in Al Karama homes include:</strong><ul><li>cooling because of dirty filters</li><li>Water leakage from a blocked drainage system</li><li>Gas leakage or low refrigerant</li></ul>"
     },
     {
-      question: "Do you offer emergency AC repair in Al Karama?",
-      answer:
-        "Yes, we offer emergency AC service in Al Karama. This helps when your AC stops working in hot weather. Just call us, and we'll fix your AC problem at your doorstep on the same day.",
+      "question": "Do you offer emergency AC repair in Al Karama?",
+      "answer": "Yes, we offer emergency AC service in Al Karama. This helps when your AC stops working in hot weather. Just call us, and we'll fix your AC problem at your doorstep on the same day."
     },
     {
-      question: "How often should I service my AC in Al Karama?",
-      answer:
-        "You should service your AC every 3 to 6 months. Regular service helps avoid breakdowns.",
+      "question": "How often should I service my AC in Al Karama?",
+      "answer": "You should service your AC every 3 to 6 months. Regular service helps avoid breakdowns."
     },
     {
-      question: "What does AC maintenance service include?",
-      answer:
-        "Basic AC maintenance usually includes:\n- Cleaning filters and coils\n- Checking cooling performance\n- Inspecting parts",
+      "question": "What does AC maintenance service include?",
+      "answer": "<strong>Basic AC maintenance usually includes:</strong><ul><li>Cleaning filters and coils</li><li>Checking cooling performance</li><li>Inspecting parts</li></ul>"
     },
     {
-      question: "Which AC brands do you service in Al Karama?",
-      answer:
-        "At FAJ Technical Services L.L.C we service all AC brands in Al Karama, including LG, Samsung, Daikin, O General and others used in homes and offices.",
+      "question": "Which AC brands do you service in Al Karama?",
+      "answer": "At FAJ Technical Services L.L.C we service all AC brands in Al Karama, including LG, Samsung, Daikin, O General and others used in homes and offices."
     },
     {
-      question: "What is the AC cleaning service in Al Karama?",
-      answer:
-        "AC cleaning removes dust, dirt and blockages from filters and coils. This helps improve cooling and air quality.",
+      "question": "What is the AC cleaning service in Al Karama?",
+      "answer": "AC cleaning removes dust, dirt and blockages from filters and coils. This helps improve cooling and air quality."
     },
     {
-      question: "Why is my AC not cooling in Al Karama?",
-      answer:
-        "Usually it's due to gas, dirty coils or compressor issues. A technician inspection is needed to confirm the issue. And get back in good condition.",
+      "question": "Why is my AC not cooling in Al Karama?",
+      "answer": "Usually it's due to gas, dirty coils or compressor issues. A technician inspection is needed to confirm the issue. And get back in good condition."
     },
     {
-      question: "Is an AC gas refill available in Al Karama?",
-      answer:
-        "Yes, gas refill service is available in Al Karama after checking for leakage or a low gas level. The exact cost depends on the AC type.",
+      "question": "Is an AC gas refill available in Al Karama?",
+      "answer": "Yes, gas refill service is available in Al Karama after checking for leakage or a low gas level. The exact cost depends on the AC type."
     },
     {
-      question: "What is better, repair or replacement in Al Karama?",
-      answer:
-        "It depends on the AC condition and repair cost. If the repair cost is too high, replacement is usually recommended. The final price depends on the AC condition and the work required.",
+      "question": "What is better, repair or replacement in Al Karama?",
+      "answer": "It depends on the AC condition and repair cost. If the repair cost is too high, replacement is usually recommended. The final price depends on the AC condition and the work required."
     },
     {
-      question: "Do you provide same-day AC service in Al Karama?",
-      answer:
-        "Yes, same-day AC service is often available in Al Karama. It depends on availability and job urgency.",
-    },
+      "question": "Do you provide same-day AC service in Al Karama?",
+      "answer": "Yes, same-day AC service is often available in Al Karama. It depends on availability and job urgency."
+    }
   ],
 };
 

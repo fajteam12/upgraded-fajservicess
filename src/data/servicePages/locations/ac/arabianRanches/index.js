@@ -71,33 +71,34 @@ const heroData = {
 };
 
 const overviewData = {
-  "id": "overview",
-  "paragraphs": [
+  id: "overview",
+  paragraphs: [
     {
-      "parts": [
+      parts: [
+        "Ever since 2010, ",
         {
-          "text": "FAJ Technical Services L.L.C",
-          "href": "/"
+                "text": "FAJ Technical Services L.L.C",
+                "href": "/"
         },
-        " has been providing expert and professional air conditioner services in Dubai since 2010. We provide ",
+        " has been serving customers all over Dubai. We offer ",
         {
-          "text": "AC repair",
-          "href": "/services/air-conditioning-repair/ac-service/"
+                "text": "AC repair",
+                "href": "/services/air-conditioning-repair/ac-service/"
         },
-        " services, cleaning, maintenance, and installation services in Arabian Ranches. We have the expertise to assist you with your air conditioning repair, maintenance, or installation needs."
-      ]
+        " , AC cleaning, AC maintenance and AC installation in Arabian Ranches. Our experts will be able to repair or service your system if you require it. We service residential and commercial air conditioning systems and offer solutions to ensure proper operation of your cooling system year-round."
+]
     }
   ],
-  "showCta": false,
-  "cta": {
-    "phone": "",
-    "whatsapp": "https://api.whatsapp.com/send?phone=+971507464712&text=Hello"
+  showCta: false,
+  cta: {
+    phone: "",
+    whatsapp: "https://api.whatsapp.com/send?phone=+971507464712&text=Hello"
   }
 };
 
 const areaOverviewData = {
   "id": "area-ac-services",
-  "title": "Who provides the best AC repair services in Arabian Ranches?",
+  "title": "Best AC Repair in Arabian Ranches",
   "paragraphs": [
     "When your cooling system is not working properly, it is vital to find a reliable AC company. FAJ Technical Services L.L.C is a company that offers professional AC services to villas, townhouses, offices, retail shops and commercial properties in Arabian Ranches. Our technicians thoroughly check each system and offer appropriate repairs for cooling issues, water leaks, electrical issues, compressor failures, and thermostat problems. We don't just give quick fixes; we also care about long-term AC performance."
   ],
@@ -324,7 +325,7 @@ const serviceOverviewData = {
 
 const commonSignsData = {
   "id": "ac-maintenance-signs",
-  "title": "Which signs show the AC needs service?",
+  "title": "Signs You Need An AC Service",
   "intro": "Most air conditioners show warning signs before a complete breakdown.",
   "items": [
     {
@@ -350,20 +351,11 @@ const commonSignsData = {
 };
 
 const videoData = {
-  "id": "ac-service-video",
-  "title": "Emergency AC Repair Service in Arabian Ranches",
-  "lead": {
-    "parts": [
-      "An AC failure during Dubai's hot weather needs immediate attention. At ",
-      {
-        "text": "FAJ Technical Services L.L.C",
-        "href": "/"
-      },
-      " our emergency repair service helps restore cooling quickly and prevents further damage to your system."
-    ]
-  },
-  "listTitle": "We provide emergency assistance for:",
-  "items": [
+  id: "ac-service-video",
+  title: "Emergency AC Repair Service in Arabian Ranches",
+  lead: "A sudden AC breakdown can affect comfort, productivity, and indoor air quality.",
+  listTitle: "Our emergency AC repair service can help with:",
+  items: [
     "AC not cooling",
     "AC not turning on",
     "Water leakage",
@@ -371,24 +363,41 @@ const videoData = {
     "Thermostat issues",
     "Compressor failures",
     "Weak airflow",
-    "Strange noises"
+    "Unusual noises",
   ],
-  "conclusion": "We provide fast assistance for residential and commercial customers throughout Arabian Ranches and nearby areas.",
-  "videoId": "prUR0-lZlzg",
-  "videoSide": "left",
-  "image": {
-    "id": "indoor-ac-servicing",
-    "src": "/img/indoor-ac-servicing.webp",
-    "alt": "FAJ AC technician providing express and emergency AC repair in Arabian Ranches",
-    "width": 600,
-    "height": 400
+  conclusion:
+    "We provide fast assistance for residential and commercial customers throughout Arabian Ranches and nearby areas.",
+  description: [
+    "A sudden AC breakdown can affect comfort, productivity, and indoor air quality.",
+    "Our emergency AC repair service can help with: AC not cooling, AC not turning on, water leakage, electrical faults, thermostat issues, compressor failures, weak airflow, and unusual noises.",
+    "We provide fast assistance for residential and commercial customers throughout Arabian Ranches and nearby areas.",
+  ],
+  frameTitle: "Air-conditioning repair and maintenance service video in Arabian Ranches",
+  videoId: "prUR0-lZlzg",
+  videoSide: "left",
+  image: {
+    id: "indoor-ac-servicing",
+    src: "/img/indoor-ac-servicing.webp",
+    alt: "FAJ AC technician providing express and emergency AC repair in Arabian Ranches",
+    width: 600,
+    height: 400,
   },
-  "variant": "framed",
-  "showCta": false,
-  "cta": {
-    "phone": "",
-    "whatsapp": ""
-  }
+  variant: "framed",
+  blockInteraction: true,
+  allowFullScreen: false,
+  parameters: {
+    autoplay: "1",
+    mute: "0",
+    controls: "0",
+    modestbranding: "1",
+    rel: "0",
+    showinfo: "0",
+    loop: "1",
+    playlist: "prUR0-lZlzg",
+    playsinline: "1",
+    cc_load_policy: "0",
+    disablekb: "1",
+  },
 };
 
 const maintenanceImportanceData = {
@@ -452,7 +461,7 @@ const maintenanceImportanceCardsData = {
 
 const commonProblemsData = {
   "id": "common-problems",
-  "title": "Most Common AC Problems",
+  "title": "Common AC Problems That May Require Maintenance",
   "subtitle": "We provide fast diagnosis and professional repair for all major air conditioning faults across Arabian Ranches:",
   "columns": "four",
   "items": [
@@ -522,7 +531,7 @@ const commonProblemsData = {
 
 const servicesOfferedData = {
   "id": "ac-services-offered",
-  "title": "Professional Air Conditioning Services in Arabian Ranches",
+  "title": "HERE ARE THE SERVICES WE OFFER FOR AIR CONDITIONING SYSTEMS",
   "items": [
     {
       "icon": "wrench",
@@ -563,7 +572,7 @@ const servicesOfferedData = {
 
 const servicesOfferedCardsData = {
   "id": "services-offered-cards",
-  "title": "Professional Air Conditioning Services in Arabian Ranches",
+  "title": "HERE ARE THE SERVICES WE OFFER FOR AIR CONDITIONING SYSTEMS",
   "columns": "three",
   "items": [
     {
@@ -810,7 +819,7 @@ const whyChooseUsData = {
 
 const beforeAfterData = {
   "id": "recent-completed-service",
-  "title": "Recent Completed Projects",
+  "title": "Recent Completed Service",
   "description": "See the real results of our thorough air conditioning maintenance and deep cleaning service in Arabian Ranches.",
   "beforeLabel": "Before",
   "beforeAlt": "Air conditioning unit before service",
@@ -945,7 +954,7 @@ const brandsData = {
 
 const sparePartsRepairData = {
   "id": "ac-spare-parts-and-repair",
-  "title": "We Handle All Types of AC Systems",
+  "title": "We Specialise in All Types of AC Systems",
   "columns": [
     {
       "title": "Air Conditioning Systems Serviced Across Arabian Ranches:",
@@ -1081,29 +1090,60 @@ const repairPriceData = {
 };
 
 const testimonialsData = {
-  "id": "testimonials",
-  "title": "Customer Reviews",
-  "description": "Read genuine reviews from homeowners, landlords and facility managers who rely on FAJ Technical Services L.L.C for their HVAC maintenance.",
-  "items": [
+  id: "ac-service-reviews",
+  title: "Customer Reviews",
+  description:
+    "Customer feedback on FAJ air-conditioning repair and maintenance services in Arabian Ranches.",
+  items: [
     {
-      "name": "Sara Malik",
-      "role": "Arabian Ranches Resident",
-      "quote": "FAJ provided professional split AC service for our property in Arabian Ranches. The team was skilled, cleaned everything properly, and restored cooling performance. Very satisfied with their prompt response.",
-      "rating": 5
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Sara Malik",
+      subtitle: "Arabian Ranches Resident",
+      description:
+        "FAJ provided professional split AC service for my apartment. The team was skilled, cleaned everything properly, and restored cooling performance. Very satisfied with their quick and reliable service in Arabian Ranches.",
     },
     {
-      "name": "Arjun Kumar",
-      "role": "Arabian Ranches Resident",
-      "quote": "I booked FAJ for AC maintenance in Arabian Ranches, and the service was prompt and professional. Excellent attention to detail and clear diagnostics.",
-      "rating": 5
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Al Mansoori",
+      subtitle: "Arabian Ranches Resident",
+      description:
+        "Great experience with FAJ’s air conditioner service. The technicians were professional, friendly, and checked everything thoroughly. My AC is running smoothly again. Excellent service in Arabian Ranches, highly recommended!",
     },
     {
-      "name": "Shazia Sheikh",
-      "role": "Homeowner, Arabian Ranches",
-      "quote": "Outstanding AC repair service in Arabian Ranches. The technician arrived on time and fixed our cooling issue quickly. Excellent service overall, highly recommended!",
-      "rating": 5
-    }
-  ]
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Arjun Kumar",
+      subtitle: "Resident",
+      description:
+        "I booked FAJ for HVAC services in Arabian Ranches, and it was excellent. The technicians were skilled, reliable, and carried out the work with great attention to detail.",
+    },
+    {
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Shazia Sheikh",
+      subtitle: "Homeowner",
+      description:
+        "FAJ delivered great AC technical services. Their team was polite, professional, and fixed my cooling issue quickly. Excellent service overall, I will continue using them for future AC problems in Arabian Ranches.",
+    },
+    {
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Ravi Mehta",
+      subtitle: "Resident",
+      description:
+        "I used FAJ for AC cleaning service, and it really improved my air quality. The team worked efficiently, cleaned every part, and made my AC run like new again.",
+    },
+    {
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Waseem Aqdas",
+      subtitle: "Homeowner",
+      description:
+        "Outstanding service from FAJ Technical! My AC wasn't cooling properly, but FAJ Technical came to the rescue. Quick response, friendly technician, and now my AC works perfectly. I highly recommend them!",
+    },
+  ],
 };
 
 const newsData = {
@@ -1119,7 +1159,7 @@ const newsData = {
       "subtitle": "Admin • 5 Comments",
       "description": "A properly functioning air conditioning system is essential for various settings, including homes, offices, and individual spaces. According to HVAC Webmasters, over 70%",
       "href": "/blog/10-common-ac-problems-and-how-to-fix-them/",
-      "actionLabel": "Read Article"
+      "actionLabel": "Read More"
     },
     {
       "icon": "dollar-savings",
@@ -1129,7 +1169,7 @@ const newsData = {
       "subtitle": "Admin • 4 Comments",
       "description": "Air conditioning is excellent for keeping you comfortable indoors but can be expensive. But there is no need to worry, there are some ways to reduce AC electric bill with",
       "href": "/blog/how-to-save-money-on-ac/",
-      "actionLabel": "Read Article"
+      "actionLabel": "Read More"
     },
     {
       "icon": "wind",
@@ -1139,7 +1179,7 @@ const newsData = {
       "subtitle": "Admin • 0 Comments",
       "description": "As the temperatures rise and summer approaches, the desire for a cool and comfortable escape within your home intensifies. Air conditioning offers a seemingly simple solu",
       "href": "/blog/how-to-choose-the-best-air-conditioner-for-home/",
-      "actionLabel": "Read Article"
+      "actionLabel": "Read More"
     }
   ],
   "footer": {
@@ -1155,10 +1195,10 @@ const newsData = {
 };
 
 const faqsData = {
-  "id": "location-faqs",
-  "title": "AC Repair and Maintenance FAQs in Arabian Ranches",
-  "description": "Got questions about AC repair, cleaning, or routine maintenance in Arabian Ranches? Browse our most common answers below:",
-  "items": [
+  id: "ac-service-arabianRanches-faqs",
+  title: "FAQ's",
+  description: "Find answers to common questions about air conditioning repair, cleaning, and maintenance services.",
+  items: [
     {
       "question": "Why is my villa's AC not cooling upstairs properly?",
       "answer": "Warm air upstairs is often caused by restricted airflow, dirty filters, blocked ducts, or incorrect thermostat settings. A professional inspection can identify the exact reason."
@@ -1177,7 +1217,7 @@ const faqsData = {
     },
     {
       "question": "What causes my AC to leak water?",
-      "answer": "<p><strong>Common causes include:</strong></p><ul><li>Blocked drain pipe</li><li>Frozen evaporator coil</li><li>Dirty air filters</li><li>Clogged drainage line</li></ul>"
+      "answer": "<strong>Common causes include:</strong><ul><li>Blocked drain pipe</li><li>Frozen evaporator coil</li><li>Dirty air filters</li><li>Clogged drainage line</li></ul>"
     },
     {
       "question": "Is yearly AC maintenance enough in Dubai?",
@@ -1189,15 +1229,15 @@ const faqsData = {
     },
     {
       "question": "What is included in a standard AC maintenance visit?",
-      "answer": "<p><strong>Maintenance normally includes:</strong></p><ul><li>Filter cleaning</li><li>Coil inspection</li><li>Drain cleaning</li><li>Thermostat testing</li><li>Cooling performance check</li></ul>"
+      "answer": "<strong>Maintenance normally includes:</strong><ul><li>Filter cleaning</li><li>Coil inspection</li><li>Drain cleaning</li><li>Thermostat testing</li><li>Cooling performance check</li></ul>"
     },
     {
       "question": "Which AC brands do you repair?",
-      "answer": "<p><strong>We service major brands including: </strong></p><ul><li>Daikin</li><li>LG</li><li>Samsung</li><li>Carrier</li><li>York</li><li>O General</li><li>Gree</li><li>Panasonic, and many others</li></ul>"
+      "answer": "<strong>We service major brands including: </strong><ul><li>Daikin</li><li>LG</li><li>Samsung</li><li>Carrier</li><li>York</li><li>O General</li><li>Gree</li><li>Panasonic, and many others</li></ul>"
     },
     {
       "question": "Why does my AC make clicking or buzzing sounds?",
-      "answer": "<p><strong>Possible reasons include:</strong></p><ul><li>Loose components</li><li>Fan motor issues</li><li>Electrical faults</li><li>Worn moving parts</li></ul>"
+      "answer": "<strong>Possible reasons include:</strong><ul><li>Loose components</li><li>Fan motor issues</li><li>Electrical faults</li><li>Worn moving parts</li></ul>"
     },
     {
       "question": "Can AC servicing help lower electricity bills?",
@@ -1219,13 +1259,13 @@ const faqsData = {
       "question": "How do I book an AC service in Arabian Ranches?",
       "answer": "Simply contact FAJ Technical Services L.L.C with your location and preferred time, and our team will arrange a convenient appointment."
     }
-  ]
+  ],
 };
 
 const bookingData = {
   "id": "booking-section",
   "title": "Book An Appointment",
-  "description": "Fill in the form below or call our 7-day hotline for immediate service dispatch across Arabian Ranches.",
+  "description": "Book your AC service appointment with our expert team in Arabian Ranches. We provide professional AC installation, cleaning, maintenance, and repair services to keep your space cool and comfortable.",
   "submitLabel": "Schedule Service Now"
 };
 

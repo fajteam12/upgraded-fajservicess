@@ -73,12 +73,12 @@ const overviewData = {
           "text": "FAJ Technical Services L.L.C",
           "href": "/"
         },
-        " has been providing expert and professional air conditioner services in Dubai since 2010. We provide ",
+        " has been offering services in Dubai since 2010. We are good at fixing air conditioners, cleaning them deeply and doing ",
         {
-          "text": "AC repair",
+          "text": "AC maintenance",
           "href": "/services/air-conditioning-repair/ac-service/"
         },
-        " services, cleaning, maintenance, and installation services in Dubai Marina. We have the expertise to assist you with your air conditioning repair, maintenance, or installation needs."
+        " work in Dubai Marina. We can help you whether you live in a building, have a house, or own a business. Our team is very good at what they do. We can fix your air conditioner quickly when you need us to."
       ]
     }
   ],
@@ -91,7 +91,7 @@ const overviewData = {
 
 const areaOverviewData = {
   "id": "dubai-marina-ac-services",
-  "title": "Who provides the best AC repair services in Dubai Marina?",
+  "title": "Best AC Repair in Dubai Marina",
   "paragraphs": [
     {
       "parts": [
@@ -300,8 +300,15 @@ const serviceOverviewData = {
   "id": "ac-repair-service-overview",
   "title": "Why Is My AC Not Cooling?",
   "description": "AC does not have proper cooling; this is one of the most common complaints in Dubai Marina. Many factors can affect cooling performance even when the system appears to be running normally.",
-  "paragraphs": [
-    "Common causes include: Dirty air filters, Low refrigerant levels, Blocked condenser coils, Thermostat malfunctions, Compressor faults, Electrical issues, Restricted airflow."
+  "listTitle": "Common causes include:",
+  "checklist": [
+    "Dirty air filters",
+    "Low refrigerant levels",
+    "Blocked condenser coils",
+    "Thermostat malfunctions",
+    "Compressor faults",
+    "Electrical issues",
+    "Restricted airflow"
   ],
   "imageSide": "left",
   "image": {
@@ -320,7 +327,7 @@ const serviceOverviewData = {
 
 const commonSignsData = {
   "id": "ac-maintenance-signs",
-  "title": "Which signs show the AC needs service?",
+  "title": "Signs You Need An AC Service",
   "intro": "Many air conditioners show warning signs before a major fault develops. Some common signs include:",
   "items": [
     {
@@ -347,46 +354,53 @@ const commonSignsData = {
 };
 
 const videoData = {
-  "id": "ac-service-video",
-  "title": "Emergency AC Repair Service in Dubai Marina",
-  "lead": {
-    "parts": [
-      "AC problems can happen suddenly, especially during Dubai's hottest months. A quick repair helps restore comfort and prevents further damage to your cooling system. At ",
-      {
-        "text": "FAJ Technical Services L.L.C",
-        "href": "/"
-      },
-      ", our fast-response team provides immediate support across Dubai Marina."
-    ]
-  },
-  "listTitle": "Our emergency AC repair service covers:",
-  "items": [
+  id: "ac-service-video",
+  title: "Emergency AC Repair Service in Dubai Marina",
+  lead: "A sudden AC breakdown can affect comfort, productivity, and indoor air quality.",
+  listTitle: "Our emergency AC repair service can help with:",
+  items: [
     "AC not cooling",
     "AC not turning on",
     "Water leakage",
     "Electrical faults",
-    "Compressor problems",
     "Thermostat issues",
+    "Compressor failures",
     "Weak airflow",
-    "Unusual noises"
+    "Unusual noises",
   ],
-  "conclusion": "Our technicians provide fast assistance for homes, villas, offices, and commercial properties in Dubai Marina.",
-  "frameTitle": "Air-conditioning repair and maintenance service video in Dubai Marina",
-  "videoId": "prUR0-lZlzg",
-  "videoSide": "left",
-  "image": {
-    "id": "indoor-ac-servicing",
-    "src": "/img/indoor-ac-servicing.webp",
-    "alt": "FAJ AC technician providing express and emergency AC repair in Dubai Marina",
-    "width": 600,
-    "height": 400
+  conclusion:
+    "We provide fast assistance for residential and commercial customers throughout Dubai Marina and nearby areas.",
+  description: [
+    "A sudden AC breakdown can affect comfort, productivity, and indoor air quality.",
+    "Our emergency AC repair service can help with: AC not cooling, AC not turning on, water leakage, electrical faults, thermostat issues, compressor failures, weak airflow, and unusual noises.",
+    "We provide fast assistance for residential and commercial customers throughout Dubai Marina and nearby areas.",
+  ],
+  frameTitle: "Air-conditioning repair and maintenance service video in Dubai Marina",
+  videoId: "prUR0-lZlzg",
+  videoSide: "left",
+  image: {
+    id: "indoor-ac-servicing",
+    src: "/img/indoor-ac-servicing.webp",
+    alt: "FAJ AC technician providing express and emergency AC repair in Dubai Marina",
+    width: 600,
+    height: 400,
   },
-  "variant": "framed",
-  "showCta": false,
-  "cta": {
-    "phone": "",
-    "whatsapp": ""
-  }
+  variant: "framed",
+  blockInteraction: true,
+  allowFullScreen: false,
+  parameters: {
+    autoplay: "1",
+    mute: "0",
+    controls: "0",
+    modestbranding: "1",
+    rel: "0",
+    showinfo: "0",
+    loop: "1",
+    playlist: "prUR0-lZlzg",
+    playsinline: "1",
+    cc_load_policy: "0",
+    disablekb: "1",
+  },
 };
 
 const maintenanceImportanceData = {
@@ -451,7 +465,7 @@ const maintenanceImportanceCardsData = {
 };
 
 const commonProblemsData = {
-  "title": "Most Common AC Problems",
+  "title": "Common AC Problems That May Require Maintenance",
   "description": "",
   "items": [
     {
@@ -479,7 +493,7 @@ const commonProblemsData = {
       "description": "High humidity means your AC is not removing moisture from the air properly. This makes the room feel sticky and uncomfortable."
     },
     {
-      "title": "Water Leakage",
+      "title": "Leaking Water",
       "description": "Water leaks are often caused by a clogged drain line or frozen coils. Fixing it quickly stops damage to your floors and walls."
     },
     {
@@ -496,7 +510,7 @@ const commonProblemsData = {
 
 const servicesOfferedData = {
   "id": "services-offered-overview",
-  "title": "Professional Air Conditioning Services in Dubai Marina",
+  "title": "HERE ARE THE SERVICES WE OFFER FOR AIR CONDITIONING SYSTEMS",
   "description": "Professional air conditioning solutions tailored for residential, commercial and retail properties in Dubai Marina.",
   "imageSide": "left",
   "image": {
@@ -515,7 +529,7 @@ const servicesOfferedData = {
 
 const servicesOfferedCardsData = {
   "id": "services-offered-cards",
-  "title": "Professional Air Conditioning Services in Dubai Marina",
+  "title": "HERE ARE THE SERVICES WE OFFER FOR AIR CONDITIONING SYSTEMS",
   "items": [
     {
       "icon": "wrench",
@@ -721,7 +735,7 @@ const whyChooseUsData = {
 
 const beforeAfterData = {
   "id": "recent-completed-service",
-  "title": "Recent Completed Projects",
+  "title": "Recent Completed Service",
   "description": "See the real results of our thorough air conditioning maintenance and deep cleaning service in Dubai Marina.",
   "beforeLabel": "Before",
   "beforeAlt": "Air conditioning unit before service",
@@ -856,7 +870,7 @@ const brandsData = {
 
 const sparePartsRepairData = {
   "id": "ac-spare-parts-and-repair",
-  "title": "We Handle All Types of AC Systems",
+  "title": "We Specialise in All Types of AC Systems",
   "columns": [
     {
       "title": "Air Conditioning Systems Serviced Across Dubai Marina:",
@@ -992,29 +1006,60 @@ const repairPriceData = {
 };
 
 const testimonialsData = {
-  "id": "testimonials",
-  "title": "Customer Reviews",
-  "description": "Real feedback from residential property owners, commercial facility managers and tenants across Dubai Marina.",
-  "items": [
+  id: "ac-service-reviews",
+  title: "Customer Reviews",
+  description:
+    "Customer feedback on FAJ air-conditioning repair and maintenance services in Dubai Marina.",
+  items: [
     {
-      "author": "Rashid Al-Maktoum",
-      "role": "Apartment Owner, Dubai Marina",
-      "content": "Our split AC in the master bedroom was blowing warm air in mid-July. FAJ dispatched a technician within 2 hours. He identified a failed capacitor, replaced it from his van stock, and our room was ice cold again. Brilliant service!",
-      "rating": 5
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Sara Malik",
+      subtitle: "Dubai Marina Resident",
+      description:
+        "FAJ provided professional split AC service for my apartment. The team was skilled, cleaned everything properly, and restored cooling performance. Very satisfied with their quick and reliable service in Dubai Marina.",
     },
     {
-      "author": "Priya Sharma",
-      "role": "Tenant, Dubai Marina",
-      "content": "Water started leaking from our ceiling FCU, soaking the living room rug. Called FAJ and their technician cleared a severely blocked condensate trap and sanitised the tray. Neat, professional and polite team.",
-      "rating": 5
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Al Mansoori",
+      subtitle: "Dubai Marina Resident",
+      description:
+        "Great experience with FAJ’s air conditioner service. The technicians were professional, friendly, and checked everything thoroughly. My AC is running smoothly again. Excellent service in Dubai Marina, highly recommended!",
     },
     {
-      "author": "David Miller",
-      "role": "Villa Resident, Dubai Marina",
-      "content": "Signed an annual maintenance contract for our 4-bedroom villa. The twice-a-year PPM service has visibly dropped our DEWA electricity bill and the AC smells clean and fresh. Well worth the investment.",
-      "rating": 5
-    }
-  ]
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Arjun Kumar",
+      subtitle: "Resident",
+      description:
+        "I booked FAJ for HVAC services in Dubai Marina, and it was excellent. The technicians were skilled, reliable, and carried out the work with great attention to detail.",
+    },
+    {
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Shazia Sheikh",
+      subtitle: "Homeowner",
+      description:
+        "FAJ delivered great AC technical services. Their team was polite, professional, and fixed my cooling issue quickly. Excellent service overall, I will continue using them for future AC problems in Dubai Marina.",
+    },
+    {
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Ravi Mehta",
+      subtitle: "Resident",
+      description:
+        "I used FAJ for AC cleaning service, and it really improved my air quality. The team worked efficiently, cleaned every part, and made my AC run like new again.",
+    },
+    {
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Waseem Aqdas",
+      subtitle: "Homeowner",
+      description:
+        "Outstanding service from FAJ Technical! My AC wasn't cooling properly, but FAJ Technical came to the rescue. Quick response, friendly technician, and now my AC works perfectly. I highly recommend them!",
+    },
+  ],
 };
 
 const newsData = {
@@ -1030,7 +1075,7 @@ const newsData = {
       "subtitle": "Admin • 5 Comments",
       "description": "A properly functioning air conditioning system is essential for various settings, including homes, offices, and individual spaces. According to HVAC Webmasters, over 70%",
       "href": "/blog/10-common-ac-problems-and-how-to-fix-them/",
-      "actionLabel": "Read Article"
+      "actionLabel": "Read More"
     },
     {
       "icon": "dollar-savings",
@@ -1040,7 +1085,7 @@ const newsData = {
       "subtitle": "Admin • 4 Comments",
       "description": "Air conditioning is excellent for keeping you comfortable indoors but can be expensive. But there is no need to worry, there are some ways to reduce AC electric bill with",
       "href": "/blog/how-to-save-money-on-ac/",
-      "actionLabel": "Read Article"
+      "actionLabel": "Read More"
     },
     {
       "icon": "wind",
@@ -1050,7 +1095,7 @@ const newsData = {
       "subtitle": "Admin • 0 Comments",
       "description": "As the temperatures rise and summer approaches, the desire for a cool and comfortable escape within your home intensifies. Air conditioning offers a seemingly simple solu",
       "href": "/blog/how-to-choose-the-best-air-conditioner-for-home/",
-      "actionLabel": "Read Article"
+      "actionLabel": "Read More"
     }
   ],
   "footer": {
@@ -1066,10 +1111,10 @@ const newsData = {
 };
 
 const faqsData = {
-  "id": "location-faqs",
-  "title": "AC Repair and Maintenance FAQs in Dubai Marina",
-  "description": "Find answers to common questions about air conditioning repair, servicing, and maintenance in Dubai Marina.",
-  "items": [
+  id: "ac-service-dubaiMarina-faqs",
+  title: "FAQ's",
+  description: "Find answers to common questions about air conditioning repair, cleaning, and maintenance services.",
+  items: [
     {
       "question": "What is the price of AC repair in DIP?",
       "answer": "The cost will vary based on the type of AC, the problem, parts to be replaced, and the work to be done. Inspection services are available to pinpoint the problem before repairs."
@@ -1088,7 +1133,7 @@ const faqsData = {
     },
     {
       "question": "What are the reasons for water leakage from the air conditioner?",
-      "answer": "Common causes include:Blocked drain pipeFrozen evaporator coilDirty air filtersDrainage problems"
+      "answer": "<strong>Common causes include:</strong><ul><li>Blocked drain pipe</li><li>Frozen evaporator coil</li><li>Dirty air filters</li><li>Drainage problems</li></ul>"
     },
     {
       "question": "Can AC cleaning improve cooling performance?",
@@ -1096,15 +1141,15 @@ const faqsData = {
     },
     {
       "question": "Do you offer same-day AC repair in Dubai Investment Park?",
-      "answer": "Depending on the type of air conditioning problem and the availability of the technician, the service may be available on the same day. Get help from our staff in a timely manner."
+      "answer": "Depending on the type of air conditioning problem and the availability of the technician, the service may be available on the same day. Get help from our staff in a timely manner. "
     },
     {
       "question": "Which AC brands do you repair?",
-      "answer": "We repair major AC brands including:DaikinLGSamsungO GeneralMitsubishiCarrierYorkGreePanasonicHitachi"
+      "answer": "<strong>We repair major AC brands including:</strong><ul><li>Daikin</li><li>LG</li><li>Samsung</li><li>O General</li><li>Mitsubishi</li><li>Carrier</li><li>York</li><li>Gree</li><li>Panasonic</li><li>Hitachi</li></ul>"
     },
     {
       "question": "What is included in the AC maintenance service?",
-      "answer": "AC maintenance usually includes:Filter cleaningCoil inspectionDrain line checkingThermostat testingCooling performance checkElectrical inspection"
+      "answer": "<strong>AC maintenance usually includes:</strong><ul><li>Filter cleaning</li><li>Coil inspection</li><li>Drain line checking</li><li>Thermostat testing</li><li>Cooling performance check</li><li>Electrical inspection</li></ul>"
     },
     {
       "question": "Is an Annual Maintenance Contract useful for AC systems?",
@@ -1112,7 +1157,7 @@ const faqsData = {
     },
     {
       "question": "Why does my AC make strange noises?",
-      "answer": "Common reasons include:Loose internal partsFan motor problemsDirt buildupWorn components"
+      "answer": "<strong>Common reasons include:</strong><ul><li>Loose internal parts</li><li>Fan motor problems</li><li>Dirt buildup</li><li>Worn components</li></ul>"
     },
     {
       "question": "How long does AC maintenance take?",
@@ -1130,13 +1175,13 @@ const faqsData = {
       "question": "How can I book an AC service in Dubai Investment Park?",
       "answer": "You can contact FAJ Technical Services L.L.C with your location and preferred timing. Our team will arrange a suitable service appointment."
     }
-  ]
+  ],
 };
 
 const bookingData = {
   "id": "booking-section",
   "title": "Book An Appointment",
-  "description": "Fill in your details below and our service coordinators will confirm your booking slot within 15 minutes.",
+  "description": "Book your AC service appointment with our expert team in Dubai Marina. We provide professional AC installation, cleaning, maintenance, and repair services to keep your space cool and comfortable.",
   "submitLabel": "Confirm Service Request"
 };
 

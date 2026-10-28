@@ -1,63 +1,92 @@
 [
-    {  
-      "title": "How often should air conditioner systems be serviced in Academy City?",
-      "desc": "Most residential systems benefit from servicing every 3 to 6 months depending on usage and environmental conditions."
-    },
-    {
-      "title": "Do you provide air conditioner services for universities and educational facilities?",
-      "desc": "Yes, FAJ Technical services L.L.C  provides AC services for schools, universities, training centres and educational buildings in Academy City."
-    },
-    {
-      "title": "Why is my air conditioner blowing air but not cooling?",
-      "desc": "This usually happens because of dirty filters, low refrigerant levels or airflow restrictions inside the system."
-    },
-    {
-      "title": "Is same-day air conditioner repair available in Academy City?",
-      "desc": "At FAJ Technical Services L.L.C provides, same-day service may be available depending on technician schedules and job requirements."
-    },
-    {
-      "title": "What causes water leakage from an air conditioner unit?",
-      "desc": "<strong>Common causes include:</strong><ul><li>Blocked drain pipes</li><li>Frozen evaporator coils</li><li>Dirty filters</li></ul>"
-    },
-    {
-      "title": "What is included in air conditioner maintenance service?",
-      "desc": "<strong>Maintenance usually includes:</strong><ul><li>Filter cleaning</li><li>Coil inspection</li><li>Drainage cleaning</li><li>Thermostat testing</li><li>Performance checks</li></ul>"
-    },
-    {
-      "title": "Which air conditioner brands do you service?",
-      "desc": "Our technicians work with major brands including Daikin, LG, Samsung, Carrier, York, Mitsubishi, Gree and many others."
-    },
-    {
-      "title": "Is an AMC worth having for my air conditioner system?",
-      "desc": "Yes, annual maintenance plans help reduce breakdowns and improve long-term performance."
-    },
-    {
-      "title": "Why is my air conditioner making noises?",
-      "desc": "<strong>Some common reasons include:</strong><ul><li>Loose internal components</li><li>Fan motor problems</li><li>Dirt buildup inside the system</li></ul>"
-    },
-    {
-      "title": "Do you provide services for offices and businesses in Academy City?",
-      "desc": "Yes, air conditioner services are available for offices, retail shops, educational facilities and commercial buildings in Academy City."
-    },
-    {
-      "title": "Can air conditioner cleaning improve indoor air quality?",
-      "desc": "Yes, removing dust and contaminants from the air conditioning system helps create cleaner indoor air."
-    },
-    {
-      "title": "How long does an air conditioner maintenance visit usually take?",
-      "desc": "Most maintenance visits take around one hour depending on the system condition and the number of units."
-    },
-    {
-      "title": "Do you provide warranty on air conditioner services?",
-      "desc": "Yes, FAJ Technical Services L.L.C offers cleaning and maintenance services, including a 60-day service warranty."
-    },
-    {
-      "title": "Can regular air conditioner servicing reduce electricity bills?",
-      "desc": "Yes, efficient air conditioning systems use less energy and often result in lower monthly electricity costs."
-    },
-    {
-      "title": "How can I book an air conditioner service appointment?",
-      "desc": "Simply contact our team with your location and preferred time and we will arrange a suitable visit."
-    }
-
-  ]
+  {
+    "title": "How often should air conditioner systems be serviced in Academy City?",
+    "desc": "Most residential systems benefit from servicing every 3 to 6 months depending on usage and environmental conditions.",
+    "question": "How often should air conditioner systems be serviced in Academy City?",
+    "answer": "Most residential systems benefit from servicing every 3 to 6 months depending on usage and environmental conditions."
+  },
+  {
+    "title": "Do you provide air conditioner services for universities and educational facilities?",
+    "desc": "Yes, FAJ Technical services L.L.C  provides AC services for schools, universities, training centres and educational buildings in Academy City.",
+    "question": "Do you provide air conditioner services for universities and educational facilities?",
+    "answer": "Yes, FAJ Technical services L.L.C  provides AC services for schools, universities, training centres and educational buildings in Academy City."
+  },
+  {
+    "title": "Why is my air conditioner blowing air but not cooling?",
+    "desc": "This usually happens because of dirty filters, low refrigerant levels or airflow restrictions inside the system.",
+    "question": "Why is my air conditioner blowing air but not cooling?",
+    "answer": "This usually happens because of dirty filters, low refrigerant levels or airflow restrictions inside the system."
+  },
+  {
+    "title": "Is same-day air conditioner repair available in Academy City?",
+    "desc": "At FAJ Technical Services L.L.C provides, same-day service may be available depending on technician schedules and job requirements.",
+    "question": "Is same-day air conditioner repair available in Academy City?",
+    "answer": "At FAJ Technical Services L.L.C provides, same-day service may be available depending on technician schedules and job requirements."
+  },
+  {
+    "title": "What causes water leakage from an air conditioner unit?",
+    "desc": "<strong>Common causes include:</strong><ul><li>Blocked drain pipes</li><li>Frozen evaporator coils</li><li>Dirty filters</li></ul>",
+    "question": "What causes water leakage from an air conditioner unit?",
+    "answer": "<strong>Common causes include:</strong><ul><li>Blocked drain pipes</li><li>Frozen evaporator coils</li><li>Dirty filters</li></ul>"
+  },
+  {
+    "title": "What is included in air conditioner maintenance service?",
+    "desc": "<strong>Maintenance usually includes:</strong><ul><li>Filter cleaning</li><li>Coil inspection</li><li>Drainage cleaning</li><li>Thermostat testing</li><li>Performance checks</li></ul>",
+    "question": "What is included in air conditioner maintenance service?",
+    "answer": "<strong>Maintenance usually includes:</strong><ul><li>Filter cleaning</li><li>Coil inspection</li><li>Drainage cleaning</li><li>Thermostat testing</li><li>Performance checks</li></ul>"
+  },
+  {
+    "title": "Which air conditioner brands do you service?",
+    "desc": "Our technicians work with major brands including Daikin, LG, Samsung, Carrier, York, Mitsubishi, Gree and many others.",
+    "question": "Which air conditioner brands do you service?",
+    "answer": "Our technicians work with major brands including Daikin, LG, Samsung, Carrier, York, Mitsubishi, Gree and many others."
+  },
+  {
+    "title": "Is an AMC worth having for my air conditioner system?",
+    "desc": "Yes, annual maintenance plans help reduce breakdowns and improve long-term performance.",
+    "question": "Is an AMC worth having for my air conditioner system?",
+    "answer": "Yes, annual maintenance plans help reduce breakdowns and improve long-term performance."
+  },
+  {
+    "title": "Why is my air conditioner making noises?",
+    "desc": "<strong>Some common reasons include:</strong><ul><li>Loose internal components</li><li>Fan motor problems</li><li>Dirt buildup inside the system</li></ul>",
+    "question": "Why is my air conditioner making noises?",
+    "answer": "<strong>Some common reasons include:</strong><ul><li>Loose internal components</li><li>Fan motor problems</li><li>Dirt buildup inside the system</li></ul>"
+  },
+  {
+    "title": "Do you provide services for offices and businesses in Academy City?",
+    "desc": "Yes, air conditioner services are available for offices, retail shops, educational facilities and commercial buildings in Academy City.",
+    "question": "Do you provide services for offices and businesses in Academy City?",
+    "answer": "Yes, air conditioner services are available for offices, retail shops, educational facilities and commercial buildings in Academy City."
+  },
+  {
+    "title": "Can air conditioner cleaning improve indoor air quality?",
+    "desc": "Yes, removing dust and contaminants from the air conditioning system helps create cleaner indoor air.",
+    "question": "Can air conditioner cleaning improve indoor air quality?",
+    "answer": "Yes, removing dust and contaminants from the air conditioning system helps create cleaner indoor air."
+  },
+  {
+    "title": "How long does an air conditioner maintenance visit usually take?",
+    "desc": "Most maintenance visits take around one hour depending on the system condition and the number of units.",
+    "question": "How long does an air conditioner maintenance visit usually take?",
+    "answer": "Most maintenance visits take around one hour depending on the system condition and the number of units."
+  },
+  {
+    "title": "Do you provide warranty on air conditioner services?",
+    "desc": "Yes, FAJ Technical Services L.L.C offers cleaning and maintenance services, including a 60-day service warranty.",
+    "question": "Do you provide warranty on air conditioner services?",
+    "answer": "Yes, FAJ Technical Services L.L.C offers cleaning and maintenance services, including a 60-day service warranty."
+  },
+  {
+    "title": "Can regular air conditioner servicing reduce electricity bills?",
+    "desc": "Yes, efficient air conditioning systems use less energy and often result in lower monthly electricity costs.",
+    "question": "Can regular air conditioner servicing reduce electricity bills?",
+    "answer": "Yes, efficient air conditioning systems use less energy and often result in lower monthly electricity costs."
+  },
+  {
+    "title": "How can I book an air conditioner service appointment?",
+    "desc": "Simply contact our team with your location and preferred time and we will arrange a suitable visit.",
+    "question": "How can I book an air conditioner service appointment?",
+    "answer": "Simply contact our team with your location and preferred time and we will arrange a suitable visit."
+  }
+]

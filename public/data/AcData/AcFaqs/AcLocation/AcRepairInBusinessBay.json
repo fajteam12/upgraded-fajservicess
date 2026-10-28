@@ -1,59 +1,86 @@
 [
-  {  
+  {
     "title": "How much does ac systems repair cost in Business Bay?",
-    "desc": "The cost is based on the type of issue, the air conditioning system, and any replacement parts required. A professional inspection helps to establish the final repair cost."
+    "desc": "The cost is based on the type of issue, the air conditioning system, and any replacement parts required. A professional inspection helps to establish the final repair cost.",
+    "question": "How much does ac systems repair cost in Business Bay?",
+    "answer": "The cost is based on the type of issue, the air conditioning system, and any replacement parts required. A professional inspection helps to establish the final repair cost."
   },
   {
     "title": "How many times should AC systems be serviced in Dubai?",
-    "desc": "Most domestic systems benefit from regular maintenance every three to six months. Commercial units may need more frequent servicing."
+    "desc": "Most domestic systems benefit from regular maintenance every three to six months. Commercial units may need more frequent servicing.",
+    "question": "How many times should AC systems be serviced in Dubai?",
+    "answer": "Most domestic systems benefit from regular maintenance every three to six months. Commercial units may need more frequent servicing."
   },
   {
     "title": "What are the warning indications that my air conditioner needs quick attention?",
-    "desc": "<ul><li>Weak cooling</li><li>Water leakage</li><li>Strange noises</li><li>Burning smell</li><li>Frequent shutdowns</li></ul>"
+    "desc": "<ul><li>Weak cooling</li><li>Water leakage</li><li>Strange noises</li><li>Burning smell</li><li>Frequent shutdowns</li></ul>",
+    "question": "What are the warning indications that my air conditioner needs quick attention?",
+    "answer": "<ul><li>Weak cooling</li><li>Water leakage</li><li>Strange noises</li><li>Burning smell</li><li>Frequent shutdowns</li></ul>"
   },
   {
     "title": "What is included in a standard AC maintenance service?",
-    "desc": "<ul><li>Filter cleaning</li><li>Coil inspection</li><li>Cooling performance check</li><li>Thermostat testing</li><li>General system inspection</li></ul>"
+    "desc": "<ul><li>Filter cleaning</li><li>Coil inspection</li><li>Cooling performance check</li><li>Thermostat testing</li><li>General system inspection</li></ul>",
+    "question": "What is included in a standard AC maintenance service?",
+    "answer": "<ul><li>Filter cleaning</li><li>Coil inspection</li><li>Cooling performance check</li><li>Thermostat testing</li><li>General system inspection</li></ul>"
   },
   {
     "title": "Can AC cleaning improve cooling performance?",
-    "desc": "Yes, it can. Cleaning removes dust and blockages that restrict airflow. The AC unit cools more effectively."
+    "desc": "Yes, it can. Cleaning removes dust and blockages that restrict airflow. The AC unit cools more effectively.",
+    "question": "Can AC cleaning improve cooling performance?",
+    "answer": "Yes, it can. Cleaning removes dust and blockages that restrict airflow. The AC unit cools more effectively."
   },
   {
     "title": "Why is my AC leaking water?",
-    "desc": "Well, there are a few reasons, such as blocked drainage lines, frozen coils or a lot of dirt buildup, that can cause AC water leakage."
+    "desc": "Well, there are a few reasons, such as blocked drainage lines, frozen coils or a lot of dirt buildup, that can cause AC water leakage.",
+    "question": "Why is my AC leaking water?",
+    "answer": "Well, there are a few reasons, such as blocked drainage lines, frozen coils or a lot of dirt buildup, that can cause AC water leakage."
   },
   {
     "title": "Do you provide same-day AC service in Business Bay?",
-    "desc": "At FAJ Technical Services L.L.C, we offer same-day services. Small issues are fixed immediately, while larger problems may take more time."
+    "desc": "At FAJ Technical Services L.L.C, we offer same-day services. Small issues are fixed immediately, while larger problems may take more time.",
+    "question": "Do you provide same-day AC service in Business Bay?",
+    "answer": "At FAJ Technical Services L.L.C, we offer same-day services. Small issues are fixed immediately, while larger problems may take more time."
   },
   {
     "title": "Which air conditioning brands do you collaborate with?",
-    "desc": "We service major AC brands used in homes, offices and commercial buildings across Dubai. AC brands are our specialty, so we work with many of them."
+    "desc": "We service major AC brands used in homes, offices and commercial buildings across Dubai. AC brands are our specialty, so we work with many of them.",
+    "question": "Which air conditioning brands do you collaborate with?",
+    "answer": "We service major AC brands used in homes, offices and commercial buildings across Dubai. AC brands are our specialty, so we work with many of them."
   },
   {
     "title": "How can I improve my AC cooling without calling a technician?",
-    "desc": "<strong>Follow these steps carefully:</strong><ul><li>Close all windows </li><li>Clean the filters</li><li>Keep the unit clear</li><li>Set the thermostat to a temperature</li></ul>"
+    "desc": "<strong>Follow these steps carefully:</strong><ul><li>Close all windows </li><li>Clean the filters</li><li>Keep the unit clear</li><li>Set the thermostat to a temperature</li></ul>",
+    "question": "How can I improve my AC cooling without calling a technician?",
+    "answer": "<strong>Follow these steps carefully:</strong><ul><li>Close all windows </li><li>Clean the filters</li><li>Keep the unit clear</li><li>Set the thermostat to a temperature</li></ul>"
   },
   {
     "title": "Why does my AC smell bad when I turn it on?",
-    "desc": "Mold or bacteria inside the AC cause smells. Professional cleaning removes the source completely."
+    "desc": "Mold or bacteria inside the AC cause smells. Professional cleaning removes the source completely.",
+    "question": "Why does my AC smell bad when I turn it on?",
+    "answer": "Mold or bacteria inside the AC cause smells. Professional cleaning removes the source completely."
   },
   {
     "title": "What happens if I skip AC servicing for a year?",
-    "desc": "<ul><li>Your AC's efficiency drops</li><li>Your bills go up</li><li>Parts wear out faster</li><li>Small problems become expensive repairs</li></ul>"
+    "desc": "<ul><li>Your AC's efficiency drops</li><li>Your bills go up</li><li>Parts wear out faster</li><li>Small problems become expensive repairs</li></ul>",
+    "question": "What happens if I skip AC servicing for a year?",
+    "answer": "<ul><li>Your AC's efficiency drops</li><li>Your bills go up</li><li>Parts wear out faster</li><li>Small problems become expensive repairs</li></ul>"
   },
   {
     "title": "Why does my AC take too long to cool the room?",
-    "desc": "The filters might be dirty, the gas might be low or the unit might be too small for the room. A technician can check the system and suggest the right solution."
+    "desc": "The filters might be dirty, the gas might be low or the unit might be too small for the room. A technician can check the system and suggest the right solution.",
+    "question": "Why does my AC take too long to cool the room?",
+    "answer": "The filters might be dirty, the gas might be low or the unit might be too small for the room. A technician can check the system and suggest the right solution."
   },
   {
     "title": "Do I need to service my AC before summer starts?",
-    "desc": "Yes. Servicing before summer prepares your AC for the heavy load ahead. It helps avoid breakdowns when the weather gets extremely hot outside."
+    "desc": "Yes. Servicing before summer prepares your AC for the heavy load ahead. It helps avoid breakdowns when the weather gets extremely hot outside.",
+    "question": "Do I need to service my AC before summer starts?",
+    "answer": "Yes. Servicing before summer prepares your AC for the heavy load ahead. It helps avoid breakdowns when the weather gets extremely hot outside."
   },
   {
     "title": "What should I do if my AC remote stops working?",
-    "desc": "Check the batteries first. If that does not work, the remote sensor or receiver might be faulty. The AC can still be operated manually until the remote is fixed."
+    "desc": "Check the batteries first. If that does not work, the remote sensor or receiver might be faulty. The AC can still be operated manually until the remote is fixed.",
+    "question": "What should I do if my AC remote stops working?",
+    "answer": "Check the batteries first. If that does not work, the remote sensor or receiver might be faulty. The AC can still be operated manually until the remote is fixed."
   }
-
 ]

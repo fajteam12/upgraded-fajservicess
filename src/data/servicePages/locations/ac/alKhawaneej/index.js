@@ -69,33 +69,33 @@ const heroData = {
 };
 
 const overviewData = {
-  "id": "overview",
-  "paragraphs": [
+  id: "overview",
+  paragraphs: [
     {
-      "parts": [
+      parts: [
         {
-          "text": "FAJ Technical Services L.L.C",
-          "href": "/"
+                "text": "FAJ Technical Services L.L.C",
+                "href": "/"
         },
-        " has been providing expert and professional air conditioner services in Dubai since 2010. We provide ",
+        " has been providing services in Dubai for air conditioner problems since 2010. We repair air conditioners, clean them do ",
         {
-          "text": "AC repair",
-          "href": "/services/air-conditioning-repair/ac-service/"
+                "text": "AC maintenance",
+                "href": "/services/air-conditioning-repair/ac-service/"
         },
-        " services, cleaning, maintenance, and installation services in Al Khawaneej. We have the expertise to assist you with your air conditioning repair, maintenance, or installation needs."
-      ]
+        " work and install them in Al Khawaneej for people's homes, villas, offices and commercial buildings. Our technicians are very experienced. Can handle all kinds of air conditioning systems, and they always find a solution quickly."
+]
     }
   ],
-  "showCta": false,
-  "cta": {
-    "phone": "",
-    "whatsapp": "https://api.whatsapp.com/send?phone=+971507464712&text=Hello"
+  showCta: false,
+  cta: {
+    phone: "",
+    whatsapp: "https://api.whatsapp.com/send?phone=+971507464712&text=Hello"
   }
 };
 
 const areaOverviewData = {
   "id": "area-ac-services",
-  "title": "Who provides the best AC repair services in Al Khawaneej?",
+  "title": "Best AC Repair in Al Khawaneej",
   "paragraphs": [
     "Finding an air conditioner repair company is really important when your air conditioner stops working as it should. FAJ Technical Services L.L.C does air conditioner repair and maintenance for houses, homes, offices, restaurants and commercial buildings in Al Khawaneej.",
     "Our technicians are very good at what they do. They look at the problem carefully and fix the air conditioner when it is not cooling, when there is a water leak, an electrical problem, a problem with the compressor or any other air conditioner issue."
@@ -295,7 +295,8 @@ const serviceOverviewData = {
   "id": "ac-repair-service-overview",
   "title": "Why Is My AC Not Cooling?",
   "paragraph": "An AC running without proper cooling is a common issue in Dubai. Different parts of the system work together to produce cool air, and a problem with any component can affect performance.",
-  "causes": [
+  "listTitle": "Common causes include:",
+  "checklist": [
     "Dirty air filters",
     "Low refrigerant gas",
     "Blocked condenser coils",
@@ -322,7 +323,7 @@ const serviceOverviewData = {
 
 const commonSignsData = {
   "id": "ac-maintenance-signs",
-  "title": "Which signs show the AC needs service?",
+  "title": "Signs You Need An AC Service",
   "intro": "Most air conditioners show warning signs before a major breakdown happens.",
   "items": [
     {
@@ -352,46 +353,53 @@ const commonSignsData = {
 };
 
 const videoData = {
-  "id": "ac-service-video",
-  "title": "Emergency AC Repair Service in Al Khawaneej",
-  "lead": {
-    "parts": [
-      "AC problems can happen suddenly, especially during Dubai's hottest months. A quick repair helps restore comfort and prevents further damage to your cooling system. At ",
-      {
-        "text": "FAJ Technical Services L.L.C",
-        "href": "/"
-      },
-      ", our fast-response team provides immediate support across Al Khawaneej."
-    ]
-  },
-  "listTitle": "Our emergency AC repair service covers:",
-  "items": [
+  id: "ac-service-video",
+  title: "Emergency AC Repair Service in Al Khawaneej",
+  lead: "A sudden AC breakdown can affect comfort, productivity, and indoor air quality.",
+  listTitle: "Our emergency AC repair service can help with:",
+  items: [
     "AC not cooling",
     "AC not turning on",
     "Water leakage",
     "Electrical faults",
-    "Compressor problems",
     "Thermostat issues",
+    "Compressor failures",
     "Weak airflow",
-    "Unusual noises"
+    "Unusual noises",
   ],
-  "conclusion": "Our technicians provide fast assistance for homes, villas, offices, and commercial properties in Al Khawaneej.",
-  "frameTitle": "Air-conditioning repair and maintenance service video in Al Khawaneej",
-  "videoId": "prUR0-lZlzg",
-  "videoSide": "left",
-  "image": {
-    "id": "indoor-ac-servicing",
-    "src": "/img/indoor-ac-servicing.webp",
-    "alt": "FAJ AC technician providing express and emergency AC repair in Al Khawaneej",
-    "width": 600,
-    "height": 400
+  conclusion:
+    "We provide fast assistance for residential and commercial customers throughout Al Khawaneej and nearby areas.",
+  description: [
+    "A sudden AC breakdown can affect comfort, productivity, and indoor air quality.",
+    "Our emergency AC repair service can help with: AC not cooling, AC not turning on, water leakage, electrical faults, thermostat issues, compressor failures, weak airflow, and unusual noises.",
+    "We provide fast assistance for residential and commercial customers throughout Al Khawaneej and nearby areas.",
+  ],
+  frameTitle: "Air-conditioning repair and maintenance service video in Al Khawaneej",
+  videoId: "prUR0-lZlzg",
+  videoSide: "left",
+  image: {
+    id: "indoor-ac-servicing",
+    src: "/img/indoor-ac-servicing.webp",
+    alt: "FAJ AC technician providing express and emergency AC repair in Al Khawaneej",
+    width: 600,
+    height: 400,
   },
-  "variant": "framed",
-  "showCta": false,
-  "cta": {
-    "phone": "",
-    "whatsapp": ""
-  }
+  variant: "framed",
+  blockInteraction: true,
+  allowFullScreen: false,
+  parameters: {
+    autoplay: "1",
+    mute: "0",
+    controls: "0",
+    modestbranding: "1",
+    rel: "0",
+    showinfo: "0",
+    loop: "1",
+    playlist: "prUR0-lZlzg",
+    playsinline: "1",
+    cc_load_policy: "0",
+    disablekb: "1",
+  },
 };
 
 const maintenanceImportanceData = {
@@ -418,7 +426,7 @@ const maintenanceImportanceData = {
 const maintenanceImportanceCardsData = {
   "id": "maintenance-importance-cards",
   "title": "Key Benefits of Regular AC Maintenance",
-  "cards": [
+  "items": [
     {
       "icon": "thermometer-sun",
       "title": "High Summer Heat",
@@ -454,7 +462,7 @@ const maintenanceImportanceCardsData = {
 
 const commonProblemsData = {
   "id": "common-ac-problems",
-  "title": "Most Common AC Problems",
+  "title": "Common AC Problems That May Require Maintenance",
   "description": "Our certified technicians in Al Khawaneej quickly diagnose and resolve all major residential and commercial air conditioning issues:",
   "items": [
     {
@@ -467,7 +475,7 @@ const commonProblemsData = {
     {
       "id": "prob-2",
       "number": "02",
-      "title": "Blowing Warm Air",
+      "title": "Warm Air",
       "description": "Lukewarm air indicates low refrigerant gas, a failed compressor, or an electrical malfunction.",
       "icon": "snowflake-slash"
     },
@@ -481,35 +489,35 @@ const commonProblemsData = {
     {
       "id": "prob-4",
       "number": "04",
-      "title": "Musty Smells",
+      "title": "Foul Odors",
       "description": "Foul smells are typically caused by mould and bacteria buildup on damp evaporator coils or in drain pans.",
       "icon": "alert-triangle"
     },
     {
       "id": "prob-5",
       "number": "05",
-      "title": "Short Cycling",
+      "title": "Frequent Cycling",
       "description": "If your AC turns on and off repeatedly in short intervals, it may indicate thermostat faults or overheating.",
       "icon": "zap-off"
     },
     {
       "id": "prob-6",
       "number": "06",
-      "title": "Excess Moisture",
+      "title": "High Humidity Levels",
       "description": "A functioning AC should keep indoor humidity balanced. High humidity signals reduced cooling efficiency.",
       "icon": "droplet-slash"
     },
     {
       "id": "prob-7",
       "number": "07",
-      "title": "Water Leakage",
+      "title": "Leaking Water",
       "description": "Backed-up drainage trays and frozen coils can overflow, potentially causing damage to walls and ceilings.",
       "icon": "droplets"
     },
     {
       "id": "prob-8",
       "number": "08",
-      "title": "Sudden High Bills",
+      "title": "Increased Energy Bills",
       "description": "A spike in energy bills often means your air conditioner is struggling to maintain the set temperature.",
       "icon": "arrow-up-right"
     }
@@ -523,7 +531,7 @@ const commonProblemsData = {
 
 const servicesOfferedData = {
   "id": "services-offered",
-  "title": "Professional Air Conditioning Services in Al Khawaneej",
+  "title": "HERE ARE THE SERVICES WE OFFER FOR AIR CONDITIONING SYSTEMS",
   "items": [
     {
       "icon": "wrench",
@@ -555,8 +563,8 @@ const servicesOfferedData = {
 
 const servicesOfferedCardsData = {
   "id": "services-offered-cards",
-  "title": "Professional Air Conditioning Services in Al Khawaneej",
-  "cards": [
+  "title": "HERE ARE THE SERVICES WE OFFER FOR AIR CONDITIONING SYSTEMS",
+  "items": [
     {
       "icon": "wrench",
       "title": "AC Repair Service",
@@ -761,7 +769,7 @@ const whyChooseUsData = {
 
 const beforeAfterData = {
   "id": "recent-completed-service",
-  "title": "Recent Completed Projects",
+  "title": "Recent Completed Service",
   "description": "See the real results of our thorough air conditioning maintenance and deep cleaning service in Al Khawaneej.",
   "beforeLabel": "Before",
   "beforeAlt": "Air conditioning unit before service",
@@ -896,7 +904,7 @@ const brandsData = {
 
 const sparePartsRepairData = {
   "id": "ac-spare-parts-and-repair",
-  "title": "We Handle All Types of AC Systems",
+  "title": "We Specialise in All Types of AC Systems",
   "columns": [
     {
       "title": "Air Conditioning Systems Serviced Across Al Khawaneej:",
@@ -1032,29 +1040,60 @@ const repairPriceData = {
 };
 
 const testimonialsData = {
-  "id": "testimonials",
-  "title": "Customer Reviews",
-  "description": "Read genuine reviews from homeowners, landlords and facility managers who rely on FAJ Technical Services L.L.C for their HVAC maintenance.",
-  "items": [
+  id: "ac-service-reviews",
+  title: "Customer Reviews",
+  description:
+    "Customer feedback on FAJ air-conditioning repair and maintenance services in Al Khawaneej.",
+  items: [
     {
-      "name": "Tariq Mansoor",
-      "role": "Al Khawaneej Resident",
-      "quote": "The technician arrived within 90 minutes when our split AC broke down in the middle of summer. Excellent service, transparent pricing, and cool air restored immediately.",
-      "rating": 5
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Sara Malik",
+      subtitle: "Al Khawaneej Resident",
+      description:
+        "FAJ provided professional split AC service for my apartment. The team was skilled, cleaned everything properly, and restored cooling performance. Very satisfied with their quick and reliable service in Al Khawaneej.",
     },
     {
-      "name": "Elena Rostova",
-      "role": "Property Manager, Al Khawaneej",
-      "quote": "We have an AMC contract with FAJ for our residential units. Routine deep cleaning and pressure washing keep tenant complaints to zero. Outstanding team.",
-      "rating": 5
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Al Mansoori",
+      subtitle: "Al Khawaneej Resident",
+      description:
+        "Great experience with FAJ’s air conditioner service. The technicians were professional, friendly, and checked everything thoroughly. My AC is running smoothly again. Excellent service in Al Khawaneej, highly recommended!",
     },
     {
-      "name": "Khalfan Al Suwaidi",
-      "role": "Villa Owner, Al Khawaneej",
-      "quote": "Very professional duct cleaning and coil descaling. The air feels crisp and smells fresh. Electricity bills dropped by nearly 15% after the service.",
-      "rating": 5
-    }
-  ]
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Arjun Kumar",
+      subtitle: "Resident",
+      description:
+        "I booked FAJ for HVAC services in Al Khawaneej, and it was excellent. The technicians were skilled, reliable, and carried out the work with great attention to detail.",
+    },
+    {
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Shazia Sheikh",
+      subtitle: "Homeowner",
+      description:
+        "FAJ delivered great AC technical services. Their team was polite, professional, and fixed my cooling issue quickly. Excellent service overall, I will continue using them for future AC problems in Al Khawaneej.",
+    },
+    {
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Ravi Mehta",
+      subtitle: "Resident",
+      description:
+        "I used FAJ for AC cleaning service, and it really improved my air quality. The team worked efficiently, cleaned every part, and made my AC run like new again.",
+    },
+    {
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Waseem Aqdas",
+      subtitle: "Homeowner",
+      description:
+        "Outstanding service from FAJ Technical! My AC wasn't cooling properly, but FAJ Technical came to the rescue. Quick response, friendly technician, and now my AC works perfectly. I highly recommend them!",
+    },
+  ],
 };
 
 const newsData = {
@@ -1070,7 +1109,7 @@ const newsData = {
       "subtitle": "Admin • 5 Comments",
       "description": "A properly functioning air conditioning system is essential for various settings, including homes, offices, and individual spaces. According to HVAC Webmasters, over 70%",
       "href": "/blog/10-common-ac-problems-and-how-to-fix-them/",
-      "actionLabel": "Read Article"
+      "actionLabel": "Read More"
     },
     {
       "icon": "dollar-savings",
@@ -1080,7 +1119,7 @@ const newsData = {
       "subtitle": "Admin • 4 Comments",
       "description": "Air conditioning is excellent for keeping you comfortable indoors but can be expensive. But there is no need to worry, there are some ways to reduce AC electric bill with",
       "href": "/blog/how-to-save-money-on-ac/",
-      "actionLabel": "Read Article"
+      "actionLabel": "Read More"
     },
     {
       "icon": "wind",
@@ -1090,7 +1129,7 @@ const newsData = {
       "subtitle": "Admin • 0 Comments",
       "description": "As the temperatures rise and summer approaches, the desire for a cool and comfortable escape within your home intensifies. Air conditioning offers a seemingly simple solu",
       "href": "/blog/how-to-choose-the-best-air-conditioner-for-home/",
-      "actionLabel": "Read Article"
+      "actionLabel": "Read More"
     }
   ],
   "footer": {
@@ -1106,77 +1145,77 @@ const newsData = {
 };
 
 const faqsData = {
-  "id": "location-faqs",
-  "title": "AC Repair and Maintenance FAQs in Al Khawaneej",
-  "description": "Got questions about AC repair, cleaning, or routine maintenance in Al Khawaneej? Browse our most common answers below:",
-  "items": [
+  id: "ac-service-alKhawaneej-faqs",
+  title: "FAQ's",
+  description: "Find answers to common questions about air conditioning repair, cleaning, and maintenance services.",
+  items: [
     {
-      "title": "How much does AC repair cost in Al Khawaneej?",
-      "desc": "The cost depends on the AC type, problem, required parts and repair work. FAJ Technical Services L.L.C provides inspection, cleaning and maintenance services with clear pricing."
+      "question": "How much does AC repair cost in Al Khawaneej?",
+      "answer": "The cost depends on the AC type, problem, required parts and repair work. FAJ Technical Services L.L.C provides inspection, cleaning and maintenance services with clear pricing."
     },
     {
-      "title": "How often should I service my AC in Al Khawaneej?",
-      "desc": "Most AC systems should be serviced every 3 to 6 months. Regular maintenance helps improve cooling, reduce faults and keep the system efficient."
+      "question": "How often should I service my AC in Al Khawaneej?",
+      "answer": "Most AC systems should be serviced every 3 to 6 months. Regular maintenance helps improve cooling, reduce faults and keep the system efficient."
     },
     {
-      "title": "Why is my AC running but not cooling properly?",
-      "desc": "<strong>Common reasons include:</strong><ul><li>Dirty air filters</li><li>Low refrigerant gas</li><li>Locked coils</li><li>Thermostat problems</li><li>Compressor issues</li><li>Poor airflow</li></ul>A professional inspection helps identify the exact cause."
+      "question": "Why is my AC running but not cooling properly?",
+      "answer": "<strong>Common reasons include:</strong><ul><li>Dirty air filters</li><li>Low refrigerant gas</li><li>locked coils</li><li>Thermostat problems</li><li>Compressor issues</li><li>Poor airflow</li></ul>A professional inspection helps identify the exact cause."
     },
     {
-      "title": "Do you provide AC repair services for villas in Al Khawaneej?",
-      "desc": "Yes, we provide AC repair, cleaning, maintenance and installation services for villas, homes, offices and commercial properties in Al Khawaneej."
+      "question": "Do you provide AC repair services for villas in Al Khawaneej?",
+      "answer": "Yes, we provide AC repair, cleaning, maintenance and installation services for villas, homes, offices and commercial properties in Al Khawaneej."
     },
     {
-      "title": "What causes water leakage from an AC unit?",
-      "desc": "<strong>Common reasons include:</strong><ul><li>Blocked drain pipe</li><li>Frozen evaporator coil</li><li>Dirty filters</li><li>Drainage problems</li></ul>"
+      "question": "What causes water leakage from an AC unit?",
+      "answer": "<strong>Common reasons include:</strong><ul><li>Blocked drain pipe</li><li>Frozen evaporator coil</li><li>Dirty filters</li><li>Drainage problems</li></ul>"
     },
     {
-      "title": "Is same-day AC repair available in Al Khawaneej?",
-      "desc": "Same-day AC repair may be available depending on technician availability and the type of AC issue. Contact our team for quick assistance."
+      "question": "Is same-day AC repair available in Al Khawaneej?",
+      "answer": "Same-day AC repair may be available depending on technician availability and the type of AC issue. Contact our team for quick assistance."
     },
     {
-      "title": "Which AC brands do you repair?",
-      "desc": "<strong>We repair major AC brands including:</strong><ul><li>Daikin</li><li>LG</li><li>Samsung</li><li>O General</li><li>Mitsubishi</li><li>Carrier</li><li>York</li><li>Gree</li><li>Panasonic</li><li>Hitachi</li></ul>"
+      "question": "Which AC brands do you repair?",
+      "answer": "<strong>We repair major AC brands including:</strong><ul><li>Daikin</li><li>LG</li><li>Samsung</li><li>O General</li><li>Mitsubishi</li><li>Carrier</li><li>York</li><li>Gree</li><li>Panasonic</li><li>Hitachi</li></ul>"
     },
     {
-      "title": "What is included in AC maintenance service?",
-      "desc": "<strong>Our AC maintenance service usually includes:</strong><ul><li>Filter cleaning</li><li>Coil inspection</li><li>Drain line checking</li><li>Thermostat testing</li><li>Cooling performance inspection</li></ul>"
+      "question": "What is included in AC maintenance service?",
+      "answer": "<strong>Our AC maintenance service usually includes:</strong><ul><li>Filter cleaning</li><li>Coil inspection</li><liDrain line checking</li><li>Thermostat testing</li><li>Cooling performance inspection</li></ul>"
     },
     {
-      "title": "Is an Annual Maintenance Contract (AMC) useful for AC systems?",
-      "desc": "Yes, AMC helps prevent sudden breakdowns, improves system performance and reduces long-term repair expenses."
+      "question": "Is an Annual Maintenance Contract (AMC) useful for AC systems?",
+      "answer": "Yes, AMC helps prevent sudden breakdowns, improves system performance and reduces long-term repair expenses."
     },
     {
-      "title": "Why is my AC making strange noises?",
-      "desc": "<strong>Common causes include:</strong><ul><li>Loose internal parts</li><li>Fan motor problems</li><li>Dust buildup</li><li>Worn components</li></ul>A technician can inspect the system and fix the issue."
+      "question": "Why is my AC making strange noises?",
+      "answer": "<strong>Common causes include:</strong><ul><li>Loose internal parts</li><li>Fan motor problems</li><li>Dust buildup</li><liWorn components</li></ul>A technician can inspect the system and fix the issue."
     },
     {
-      "title": "Can AC cleaning improve indoor air quality?",
-      "desc": "Yes, professional AC cleaning removes dust, mould and dirt buildup from internal components, helping create cleaner indoor air."
+      "question": "Can AC cleaning improve indoor air quality?",
+      "answer": "Yes, professional AC cleaning removes dust, mould and dirt buildup from internal components, helping create cleaner indoor air."
     },
     {
-      "title": "How long does AC maintenance take?",
-      "desc": "Most maintenance visits take around one hour. The exact time depends on the AC type, number of units and system condition."
+      "question": "How long does AC maintenance take?",
+      "answer": "Most maintenance visits take around one hour. The exact time depends on the AC type, number of units and system condition."
     },
     {
-      "title": "Do you provide warranty on AC services?",
-      "desc": "Yes, FAJ Technical Services L.L.C provides a 60-day warranty on selected AC cleaning and maintenance services."
+      "question": "Do you provide warranty on AC services?",
+      "answer": "Yes, FAJ Technical Services L.L.C provides a 60-day warranty on selected AC cleaning and maintenance services."
     },
     {
-      "title": "Can regular AC servicing reduce electricity bills?",
-      "desc": "Yes, a properly maintained AC works more efficiently and uses less energy, which can help reduce monthly electricity costs."
+      "question": "Can regular AC servicing reduce electricity bills?",
+      "answer": "Yes, a properly maintained AC works more efficiently and uses less energy, which can help reduce monthly electricity costs."
     },
     {
-      "title": "How can I book AC service in Al Khawaneej?",
-      "desc": "You can contact FAJ Technical Services L.L.C with your location and preferred appointment time. Our team will arrange a suitable visit."
+      "question": "How can I book AC service in Al Khawaneej?",
+      "answer": "You can contact FAJ Technical Services L.L.C with your location and preferred appointment time. Our team will arrange a suitable visit."
     }
-  ]
+  ],
 };
 
 const bookingData = {
   "id": "booking-section",
   "title": "Book An Appointment",
-  "description": "Fill in the form below or call our 7-day hotline for immediate service dispatch across Al Khawaneej.",
+  "description": "Book your AC service appointment with our expert team in Al Khawaneej. We provide professional AC installation, cleaning, maintenance, and repair services to keep your space cool and comfortable.",
   "submitLabel": "Schedule Service Now"
 };
 

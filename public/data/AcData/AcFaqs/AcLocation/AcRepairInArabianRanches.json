@@ -1,63 +1,92 @@
 [
-    {  
-      "title": "Why is my villa's AC not cooling upstairs properly?",
-      "desc": "Warm air upstairs is often caused by restricted airflow, dirty filters, blocked ducts, or incorrect thermostat settings. A professional inspection can identify the exact reason."
-    },
-    {
-      "title": "How often should I clean my AC filters in Arabian Ranches?",
-      "desc": "During heavy summer use, filters should be checked every month and professionally cleaned during regular servicing."
-    },
-    {
-      "title": "Can dirty AC ducts affect indoor air quality?",
-      "desc": "Yes, dust, pollen, and mould inside ducts can reduce indoor air quality and affect the health of people inside the property."
-    },
-    {
-      "title": "Do you repair ducted AC systems in Arabian Ranches?",
-      "desc": "Yes, we repair, clean, and maintain ducted AC systems installed in villas, townhouses, and commercial properties."
-    },
-    {
-      "title": "What causes my AC to leak water?",
-      "desc": "<strong>Common causes include:</strong><ul><li>Blocked drain pipe</li><li>Frozen evaporator coil</li><li>Dirty air filters</li><li>Clogged drainage line</li></ul>"
-    },
-    {
-      "title": "Is yearly AC maintenance enough in Dubai?",
-      "desc": "No, because of Dubai's climate, most AC systems should be serviced every 3–6 months for better performance."
-    },
-    {
-      "title": "Do you provide AC services for villa communities?",
-      "desc": "Yes, our technicians provide AC services for villas, townhouses, residential communities, and commercial properties throughout Arabian Ranches."
-    },
-    {
-      "title": "What is included in a standard AC maintenance visit?",
-      "desc": "<strong>Maintenance normally includes:</strong><ul><li>Filter cleaning</li><li>Coil inspection</li><li>Drain cleaning</li><li>Thermostat testing</li><li>Cooling performance check</li></ul>"
-    },
-    {
-      "title": "Which AC brands do you repair?",
-      "desc": "<strong>We service major brands including: </strong><ul><li>Daikin</li><li>LG</li><li>Samsung</li><li>Carrier</li><li>York</li><li>O General</li><li>Gree</li><li>Panasonic, and many others</li></ul>"
-    },
-    {
-      "title": "Why does my AC make clicking or buzzing sounds?",
-      "desc": "<strong>Possible reasons include:</strong><ul><li>Loose components</li><li>Fan motor issues</li><li>Electrical faults</li><li>Worn moving parts</li></ul>"
-    },
-    {
-      "title": "Can AC servicing help lower electricity bills?",
-      "desc": "Yes, a clean and properly maintained AC uses less power and cools more efficiently."
-    },
-    {
-      "title": "Do you provide emergency AC repair in Arabian Ranches?",
-      "desc": "Yes, depending on technician availability, emergency repair services are available for urgent AC breakdowns."
-    },
-    {
-      "title": "How long does AC servicing normally take?",
-      "desc": "Most maintenance appointments take around one hour, depending on the number and condition of the units."
-    },
-    {
-      "title": "Do your AC services include a warranty?",
-      "desc": "Yes, our AC cleaning and maintenance services include a 60-day service warranty."
-    },
-    {
-      "title": "How do I book an AC service in Arabian Ranches?",
-      "desc": "Simply contact FAJ Technical Services L.L.C with your location and preferred time, and our team will arrange a convenient appointment."
-    }
-
-  ]
+  {
+    "title": "Why is my villa's AC not cooling upstairs properly?",
+    "desc": "Warm air upstairs is often caused by restricted airflow, dirty filters, blocked ducts, or incorrect thermostat settings. A professional inspection can identify the exact reason.",
+    "question": "Why is my villa's AC not cooling upstairs properly?",
+    "answer": "Warm air upstairs is often caused by restricted airflow, dirty filters, blocked ducts, or incorrect thermostat settings. A professional inspection can identify the exact reason."
+  },
+  {
+    "title": "How often should I clean my AC filters in Arabian Ranches?",
+    "desc": "During heavy summer use, filters should be checked every month and professionally cleaned during regular servicing.",
+    "question": "How often should I clean my AC filters in Arabian Ranches?",
+    "answer": "During heavy summer use, filters should be checked every month and professionally cleaned during regular servicing."
+  },
+  {
+    "title": "Can dirty AC ducts affect indoor air quality?",
+    "desc": "Yes, dust, pollen, and mould inside ducts can reduce indoor air quality and affect the health of people inside the property.",
+    "question": "Can dirty AC ducts affect indoor air quality?",
+    "answer": "Yes, dust, pollen, and mould inside ducts can reduce indoor air quality and affect the health of people inside the property."
+  },
+  {
+    "title": "Do you repair ducted AC systems in Arabian Ranches?",
+    "desc": "Yes, we repair, clean, and maintain ducted AC systems installed in villas, townhouses, and commercial properties.",
+    "question": "Do you repair ducted AC systems in Arabian Ranches?",
+    "answer": "Yes, we repair, clean, and maintain ducted AC systems installed in villas, townhouses, and commercial properties."
+  },
+  {
+    "title": "What causes my AC to leak water?",
+    "desc": "<strong>Common causes include:</strong><ul><li>Blocked drain pipe</li><li>Frozen evaporator coil</li><li>Dirty air filters</li><li>Clogged drainage line</li></ul>",
+    "question": "What causes my AC to leak water?",
+    "answer": "<strong>Common causes include:</strong><ul><li>Blocked drain pipe</li><li>Frozen evaporator coil</li><li>Dirty air filters</li><li>Clogged drainage line</li></ul>"
+  },
+  {
+    "title": "Is yearly AC maintenance enough in Dubai?",
+    "desc": "No, because of Dubai's climate, most AC systems should be serviced every 3–6 months for better performance.",
+    "question": "Is yearly AC maintenance enough in Dubai?",
+    "answer": "No, because of Dubai's climate, most AC systems should be serviced every 3–6 months for better performance."
+  },
+  {
+    "title": "Do you provide AC services for villa communities?",
+    "desc": "Yes, our technicians provide AC services for villas, townhouses, residential communities, and commercial properties throughout Arabian Ranches.",
+    "question": "Do you provide AC services for villa communities?",
+    "answer": "Yes, our technicians provide AC services for villas, townhouses, residential communities, and commercial properties throughout Arabian Ranches."
+  },
+  {
+    "title": "What is included in a standard AC maintenance visit?",
+    "desc": "<strong>Maintenance normally includes:</strong><ul><li>Filter cleaning</li><li>Coil inspection</li><li>Drain cleaning</li><li>Thermostat testing</li><li>Cooling performance check</li></ul>",
+    "question": "What is included in a standard AC maintenance visit?",
+    "answer": "<strong>Maintenance normally includes:</strong><ul><li>Filter cleaning</li><li>Coil inspection</li><li>Drain cleaning</li><li>Thermostat testing</li><li>Cooling performance check</li></ul>"
+  },
+  {
+    "title": "Which AC brands do you repair?",
+    "desc": "<strong>We service major brands including: </strong><ul><li>Daikin</li><li>LG</li><li>Samsung</li><li>Carrier</li><li>York</li><li>O General</li><li>Gree</li><li>Panasonic, and many others</li></ul>",
+    "question": "Which AC brands do you repair?",
+    "answer": "<strong>We service major brands including: </strong><ul><li>Daikin</li><li>LG</li><li>Samsung</li><li>Carrier</li><li>York</li><li>O General</li><li>Gree</li><li>Panasonic, and many others</li></ul>"
+  },
+  {
+    "title": "Why does my AC make clicking or buzzing sounds?",
+    "desc": "<strong>Possible reasons include:</strong><ul><li>Loose components</li><li>Fan motor issues</li><li>Electrical faults</li><li>Worn moving parts</li></ul>",
+    "question": "Why does my AC make clicking or buzzing sounds?",
+    "answer": "<strong>Possible reasons include:</strong><ul><li>Loose components</li><li>Fan motor issues</li><li>Electrical faults</li><li>Worn moving parts</li></ul>"
+  },
+  {
+    "title": "Can AC servicing help lower electricity bills?",
+    "desc": "Yes, a clean and properly maintained AC uses less power and cools more efficiently.",
+    "question": "Can AC servicing help lower electricity bills?",
+    "answer": "Yes, a clean and properly maintained AC uses less power and cools more efficiently."
+  },
+  {
+    "title": "Do you provide emergency AC repair in Arabian Ranches?",
+    "desc": "Yes, depending on technician availability, emergency repair services are available for urgent AC breakdowns.",
+    "question": "Do you provide emergency AC repair in Arabian Ranches?",
+    "answer": "Yes, depending on technician availability, emergency repair services are available for urgent AC breakdowns."
+  },
+  {
+    "title": "How long does AC servicing normally take?",
+    "desc": "Most maintenance appointments take around one hour, depending on the number and condition of the units.",
+    "question": "How long does AC servicing normally take?",
+    "answer": "Most maintenance appointments take around one hour, depending on the number and condition of the units."
+  },
+  {
+    "title": "Do your AC services include a warranty?",
+    "desc": "Yes, our AC cleaning and maintenance services include a 60-day service warranty.",
+    "question": "Do your AC services include a warranty?",
+    "answer": "Yes, our AC cleaning and maintenance services include a 60-day service warranty."
+  },
+  {
+    "title": "How do I book an AC service in Arabian Ranches?",
+    "desc": "Simply contact FAJ Technical Services L.L.C with your location and preferred time, and our team will arrange a convenient appointment.",
+    "question": "How do I book an AC service in Arabian Ranches?",
+    "answer": "Simply contact FAJ Technical Services L.L.C with your location and preferred time, and our team will arrange a convenient appointment."
+  }
+]

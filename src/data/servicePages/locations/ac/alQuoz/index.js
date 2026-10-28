@@ -69,33 +69,33 @@ const heroData = {
 };
 
 const overviewData = {
-  "id": "overview",
-  "paragraphs": [
+  id: "overview",
+  paragraphs: [
     {
-      "parts": [
+      parts: [
         {
-          "text": "FAJ Technical Services L.L.C",
-          "href": "/"
+                "text": "FAJ Technical Services L.L.C",
+                "href": "/"
         },
-        " has been providing expert and professional air conditioner services in Dubai since 2010. We provide ",
+        " has been providing AC solutions across Dubai since 2010. We offer ",
         {
-          "text": "AC repair",
-          "href": "/services/air-conditioning-repair/ac-service/"
+                "text": "AC repair",
+                "href": "/services/air-conditioning-repair/ac-service/"
         },
-        " services, cleaning, maintenance, and installation services in Al Quoz. We have the expertise to assist you with your air conditioning repair, maintenance, or installation needs."
-      ]
+        " , cleaning, maintenance, and installation services for residential and commercial properties throughout Al Quoz. Our team understands the cooling needs of this area and provides reliable support for all types of AC systems."
+]
     }
   ],
-  "showCta": false,
-  "cta": {
-    "phone": "",
-    "whatsapp": "https://api.whatsapp.com/send?phone=+971507464712&text=Hello"
+  showCta: false,
+  cta: {
+    phone: "",
+    whatsapp: "https://api.whatsapp.com/send?phone=+971507464712&text=Hello"
   }
 };
 
 const areaOverviewData = {
   "id": "area-ac-services",
-  "title": "Who provides the best AC repair services in Al Quoz?",
+  "title": "Best AC Repair in Al Quoz",
   "paragraphs": [
     "When your AC stops working the way it should, you need someone you can trust to fix it fast. FAJ Technical Services L.L.C is a company that offers air conditioner repair and AC maintenance services for apartments, offices, warehouses, retail shops and commercial buildings in Al Quoz.",
     "Our technicians are trained to figure out what is wrong with your AC, like cooling problems, gas leaks and system failures. We want to make sure we fix your air conditioner right the first time, so we work hard to find a solution that really works."
@@ -295,7 +295,8 @@ const serviceOverviewData = {
   "id": "ac-repair-service-overview",
   "title": "Why Is My AC Not Cooling?",
   "paragraph": "Sometimes your AC keeps running but the room never feels cool enough. This is frustrating and can happen for several reasons.",
-  "causes": [
+  "listTitle": "Common causes include:",
+  "checklist": [
     "Dirty air filters blocking airflow",
     "Low refrigerant gas levels",
     "Condenser coils covered in dust",
@@ -322,7 +323,7 @@ const serviceOverviewData = {
 
 const commonSignsData = {
   "id": "ac-maintenance-signs",
-  "title": "Which signs show the AC needs service?",
+  "title": "Signs You Need An AC Service",
   "intro": "Most air conditioner units give warning signs before they stop working. Catching these signs early can help you avoid repairs and discomfort.",
   "items": [
     {
@@ -349,46 +350,53 @@ const commonSignsData = {
 };
 
 const videoData = {
-  "id": "ac-service-video",
-  "title": "Emergency AC Repair Service in Al Quoz",
-  "lead": {
-    "parts": [
-      "AC problems can happen suddenly, especially during Dubai's hottest months. A quick repair helps restore comfort and prevents further damage to your cooling system. At ",
-      {
-        "text": "FAJ Technical Services L.L.C",
-        "href": "/"
-      },
-      ", our fast-response team provides immediate support across Al Quoz."
-    ]
-  },
-  "listTitle": "Our emergency AC repair service covers:",
-  "items": [
+  id: "ac-service-video",
+  title: "Emergency AC Repair Service in Al Quoz",
+  lead: "A sudden AC breakdown can affect comfort, productivity, and indoor air quality.",
+  listTitle: "Our emergency AC repair service can help with:",
+  items: [
     "AC not cooling",
     "AC not turning on",
     "Water leakage",
     "Electrical faults",
-    "Compressor problems",
     "Thermostat issues",
+    "Compressor failures",
     "Weak airflow",
-    "Unusual noises"
+    "Unusual noises",
   ],
-  "conclusion": "Our technicians provide fast assistance for homes, villas, offices, and commercial properties in Al Quoz.",
-  "frameTitle": "Air-conditioning repair and maintenance service video in Al Quoz",
-  "videoId": "prUR0-lZlzg",
-  "videoSide": "left",
-  "image": {
-    "id": "indoor-ac-servicing",
-    "src": "/img/indoor-ac-servicing.webp",
-    "alt": "FAJ AC technician providing express and emergency AC repair in Al Quoz",
-    "width": 600,
-    "height": 400
+  conclusion:
+    "We provide fast assistance for residential and commercial customers throughout Al Quoz and nearby areas.",
+  description: [
+    "A sudden AC breakdown can affect comfort, productivity, and indoor air quality.",
+    "Our emergency AC repair service can help with: AC not cooling, AC not turning on, water leakage, electrical faults, thermostat issues, compressor failures, weak airflow, and unusual noises.",
+    "We provide fast assistance for residential and commercial customers throughout Al Quoz and nearby areas.",
+  ],
+  frameTitle: "Air-conditioning repair and maintenance service video in Al Quoz",
+  videoId: "prUR0-lZlzg",
+  videoSide: "left",
+  image: {
+    id: "indoor-ac-servicing",
+    src: "/img/indoor-ac-servicing.webp",
+    alt: "FAJ AC technician providing express and emergency AC repair in Al Quoz",
+    width: 600,
+    height: 400,
   },
-  "variant": "framed",
-  "showCta": false,
-  "cta": {
-    "phone": "",
-    "whatsapp": ""
-  }
+  variant: "framed",
+  blockInteraction: true,
+  allowFullScreen: false,
+  parameters: {
+    autoplay: "1",
+    mute: "0",
+    controls: "0",
+    modestbranding: "1",
+    rel: "0",
+    showinfo: "0",
+    loop: "1",
+    playlist: "prUR0-lZlzg",
+    playsinline: "1",
+    cc_load_policy: "0",
+    disablekb: "1",
+  },
 };
 
 const maintenanceImportanceData = {
@@ -415,7 +423,7 @@ const maintenanceImportanceData = {
 const maintenanceImportanceCardsData = {
   "id": "maintenance-importance-cards",
   "title": "Key Benefits of Regular AC Maintenance",
-  "cards": [
+  "items": [
     {
       "icon": "thermometer-sun",
       "title": "Harsh Operating Conditions",
@@ -451,7 +459,7 @@ const maintenanceImportanceCardsData = {
 
 const commonProblemsData = {
   "id": "common-ac-problems",
-  "title": "Most Common AC Problems",
+  "title": "Common AC Problems That May Require Maintenance",
   "description": "Our certified technicians in Al Quoz quickly diagnose and resolve all major residential and commercial air conditioning issues:",
   "items": [
     {
@@ -464,49 +472,49 @@ const commonProblemsData = {
     {
       "id": "prob-2",
       "number": "02",
-      "title": "Warm Air Output",
+      "title": "Warm Air",
       "description": "Refrigerant leaks or compressor overload result in the unit blowing ambient air instead of chilled air.",
       "icon": "snowflake-slash"
     },
     {
       "id": "prob-3",
       "number": "03",
-      "title": "Grinding & Rattling",
+      "title": "Strange Noises",
       "description": "Vibrating panels, worn motor belts, or bearing failure cause audible mechanical noises.",
       "icon": "volume-2"
     },
     {
       "id": "prob-4",
       "number": "04",
-      "title": "Musty Odours",
+      "title": "Foul Odors",
       "description": "Accumulated mould and bacterial growth in evaporator coils produce sour smells whenever the fan kicks on.",
       "icon": "alert-triangle"
     },
     {
       "id": "prob-5",
       "number": "05",
-      "title": "Frequent On/Off Cycling",
+      "title": "Frequent Cycling",
       "description": "Thermostat faults or overheating capacitors force the AC to cycle rapidly without cooling.",
       "icon": "zap-off"
     },
     {
       "id": "prob-6",
       "number": "06",
-      "title": "Excessive Room Humidity",
+      "title": "High Humidity Levels",
       "description": "A struggling air conditioner cannot dehumidify, leaving indoor spaces feeling muggy and sticky.",
       "icon": "droplet-slash"
     },
     {
       "id": "prob-7",
       "number": "07",
-      "title": "Water Spillage",
+      "title": "Leaking Water",
       "description": "Backed-up condensation trays and blocked drainage hoses cause water to pool beneath indoor units.",
       "icon": "droplets"
     },
     {
       "id": "prob-8",
       "number": "08",
-      "title": "High Monthly DEWA",
+      "title": "Increased Energy Bills",
       "description": "Dirty condenser fins make the unit work double time, creating unexpected spikes in monthly energy bills.",
       "icon": "arrow-up-right"
     }
@@ -520,7 +528,7 @@ const commonProblemsData = {
 
 const servicesOfferedData = {
   "id": "services-offered",
-  "title": "Professional Air Conditioning Services in Al Quoz",
+  "title": "HERE ARE THE SERVICES WE OFFER FOR AIR CONDITIONING SYSTEMS",
   "items": [
     {
       "icon": "wrench",
@@ -552,8 +560,8 @@ const servicesOfferedData = {
 
 const servicesOfferedCardsData = {
   "id": "services-offered-cards",
-  "title": "Professional Air Conditioning Services in Al Quoz",
-  "cards": [
+  "title": "HERE ARE THE SERVICES WE OFFER FOR AIR CONDITIONING SYSTEMS",
+  "items": [
     {
       "icon": "wrench",
       "title": "AC Repair Service",
@@ -758,7 +766,7 @@ const whyChooseUsData = {
 
 const beforeAfterData = {
   "id": "recent-completed-service",
-  "title": "Recent Completed Projects",
+  "title": "Recent Completed Service",
   "description": "See the real results of our thorough air conditioning maintenance and deep cleaning service in Al Quoz.",
   "beforeLabel": "Before",
   "beforeAlt": "Air conditioning unit before service",
@@ -893,7 +901,7 @@ const brandsData = {
 
 const sparePartsRepairData = {
   "id": "ac-spare-parts-and-repair",
-  "title": "We Handle All Types of AC Systems",
+  "title": "We Specialise in All Types of AC Systems",
   "columns": [
     {
       "title": "Air Conditioning Systems Serviced Across Al Quoz:",
@@ -1029,29 +1037,60 @@ const repairPriceData = {
 };
 
 const testimonialsData = {
-  "id": "testimonials",
-  "title": "Customer Reviews",
-  "description": "Read genuine reviews from homeowners, landlords and facility managers who rely on FAJ Technical Services L.L.C for their HVAC maintenance.",
-  "items": [
+  id: "ac-service-reviews",
+  title: "Customer Reviews",
+  description:
+    "Customer feedback on FAJ air-conditioning repair and maintenance services in Al Quoz.",
+  items: [
     {
-      "name": "Tariq Mansoor",
-      "role": "Al Quoz Resident",
-      "quote": "The technician arrived within 90 minutes when our split AC broke down in the middle of summer. Excellent service, transparent pricing, and cool air restored immediately.",
-      "rating": 5
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Sara Malik",
+      subtitle: "Al Quoz Resident",
+      description:
+        "FAJ provided professional split AC service for my apartment. The team was skilled, cleaned everything properly, and restored cooling performance. Very satisfied with their quick and reliable service in Al Quoz.",
     },
     {
-      "name": "Elena Rostova",
-      "role": "Property Manager, Al Quoz",
-      "quote": "We have an AMC contract with FAJ for our residential units. Routine deep cleaning and pressure washing keep tenant complaints to zero. Outstanding team.",
-      "rating": 5
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Al Mansoori",
+      subtitle: "Al Quoz Resident",
+      description:
+        "Great experience with FAJ’s air conditioner service. The technicians were professional, friendly, and checked everything thoroughly. My AC is running smoothly again. Excellent service in Al Quoz, highly recommended!",
     },
     {
-      "name": "Khalfan Al Suwaidi",
-      "role": "Villa Owner, Al Quoz",
-      "quote": "Very professional duct cleaning and coil descaling. The air feels crisp and smells fresh. Electricity bills dropped by nearly 15% after the service.",
-      "rating": 5
-    }
-  ]
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Arjun Kumar",
+      subtitle: "Resident",
+      description:
+        "I booked FAJ for HVAC services in Al Quoz, and it was excellent. The technicians were skilled, reliable, and carried out the work with great attention to detail.",
+    },
+    {
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Shazia Sheikh",
+      subtitle: "Homeowner",
+      description:
+        "FAJ delivered great AC technical services. Their team was polite, professional, and fixed my cooling issue quickly. Excellent service overall, I will continue using them for future AC problems in Al Quoz.",
+    },
+    {
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Ravi Mehta",
+      subtitle: "Resident",
+      description:
+        "I used FAJ for AC cleaning service, and it really improved my air quality. The team worked efficiently, cleaned every part, and made my AC run like new again.",
+    },
+    {
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Waseem Aqdas",
+      subtitle: "Homeowner",
+      description:
+        "Outstanding service from FAJ Technical! My AC wasn't cooling properly, but FAJ Technical came to the rescue. Quick response, friendly technician, and now my AC works perfectly. I highly recommend them!",
+    },
+  ],
 };
 
 const newsData = {
@@ -1067,7 +1106,7 @@ const newsData = {
       "subtitle": "Admin • 5 Comments",
       "description": "A properly functioning air conditioning system is essential for various settings, including homes, offices, and individual spaces. According to HVAC Webmasters, over 70%",
       "href": "/blog/10-common-ac-problems-and-how-to-fix-them/",
-      "actionLabel": "Read Article"
+      "actionLabel": "Read More"
     },
     {
       "icon": "dollar-savings",
@@ -1077,7 +1116,7 @@ const newsData = {
       "subtitle": "Admin • 4 Comments",
       "description": "Air conditioning is excellent for keeping you comfortable indoors but can be expensive. But there is no need to worry, there are some ways to reduce AC electric bill with",
       "href": "/blog/how-to-save-money-on-ac/",
-      "actionLabel": "Read Article"
+      "actionLabel": "Read More"
     },
     {
       "icon": "wind",
@@ -1087,7 +1126,7 @@ const newsData = {
       "subtitle": "Admin • 0 Comments",
       "description": "As the temperatures rise and summer approaches, the desire for a cool and comfortable escape within your home intensifies. Air conditioning offers a seemingly simple solu",
       "href": "/blog/how-to-choose-the-best-air-conditioner-for-home/",
-      "actionLabel": "Read Article"
+      "actionLabel": "Read More"
     }
   ],
   "footer": {
@@ -1103,77 +1142,77 @@ const newsData = {
 };
 
 const faqsData = {
-  "id": "location-faqs",
-  "title": "AC Repair and Maintenance FAQs in Al Quoz",
-  "description": "Got questions about AC repair, cleaning, or routine maintenance in Al Quoz? Browse our most common answers below:",
-  "items": [
+  id: "ac-service-alQuoz-faqs",
+  title: "FAQ's",
+  description: "Find answers to common questions about air conditioning repair, cleaning, and maintenance services.",
+  items: [
     {
-      "title": "What is the price of AC repair in Al Quoz?",
-      "desc": "The cost will be determined based on the type of AC, the problem and the need for replacement parts. An inspection can help identify the real problem and give an accurate estimate."
+      "question": "What is the price of AC repair in Al Quoz?",
+      "answer": "The cost will be determined based on the type of AC, the problem and the need for replacement parts. An inspection can help identify the real problem and give an accurate estimate."
     },
     {
-      "title": "How often should I service my AC in Al Quoz?",
-      "desc": "It is recommended that most air conditioning systems get serviced twice a year, in the spring and fall. Regular servicing keeps your AC running efficiently and helps avoid unexpected breakdowns."
+      "question": "How often should I service my AC in Al Quoz?",
+      "answer": "It is recommended that most air conditioning systems get serviced twice a year, in the spring and fall. Regular servicing keeps your AC running efficiently and helps avoid unexpected breakdowns."
     },
     {
-      "title": "Why isn't my air conditioner cooling my home?",
-      "desc": "This may occur due to dirty filters, low gas, clogged coils, thermostat failure or compressor failure. A professional inspection will determine the cause."
+      "question": "Why isn't my air conditioner cooling my home?",
+      "answer": "This may occur due to dirty filters, low gas, clogged coils, thermostat failure or compressor failure. A professional inspection will determine the cause."
     },
     {
-      "title": "Are you offering AC services to factories and warehouses at Al Quoz?",
-      "desc": "Yes, we do provide AC repair, cleaning and maintenance services for warehouses, factories, offices & commercial properties in Al Quoz."
+      "question": "Are you offering AC services to factories and warehouses at Al Quoz?",
+      "answer": "Yes, we do provide AC repair, cleaning and maintenance services for warehouses, factories, offices & commercial properties in Al Quoz."
     },
     {
-      "title": "What is causing water leakage from the AC?",
-      "desc": "Most often, it is caused by drainage issues, dirty filters, or blocked drain pipes or frozen coils. Repairing the leak promptly will avoid damage to the property."
+      "question": "What is causing water leakage from the AC?",
+      "answer": "Most often, it is caused by drainage issues, dirty filters, or blocked drain pipes or frozen coils. Repairing the leak promptly will avoid damage to the property."
     },
     {
-      "title": "Can AC cleaning improve cooling performance?",
-      "desc": "Yes. Cleaning filters and coils lets more air circulate through the system and makes the AC cooler."
+      "question": "Can AC cleaning improve cooling performance?",
+      "answer": "Yes. Cleaning filters and coils lets more air circulate through the system and makes the AC cooler."
     },
     {
-      "title": "Are you offering same-day AC Repair in Al Quoz?",
-      "desc": "It may be possible to get same-day service depending on the issue and availability of the technicians. Contact our team to check availability."
+      "question": "Are you offering same-day AC Repair in Al Quoz?",
+      "answer": "It may be possible to get same-day service depending on the issue and availability of the technicians. Contact our team to check availability."
     },
     {
-      "title": "What is your preferred brand of air conditioner?",
-      "desc": "<strong>We service the top brands such as:</strong><ul><li>Daikin</li><li>Samsung</li><li>O General</li><li>Mitsubishi</li><li>Carrier</li><li>York</li><li>Trane</li><li>Gree</li><li>LG</li><li>Panasonic and others.</li></ul>"
+      "question": "What is your preferred brand of air conditioner?",
+      "answer": "<strong>We service the top brands such as:</strong><ul><li>Daikin</li><li>Samsung</li><li>O General</li><li>Mitsubishi</li><li>Carrier</li><li>York</li><li>Trane</li><li>Gree</li><li>LG</li><li>Panasonic and others.</li></ul>"
     },
     {
-      "title": "What is included in the AC maintenance service?",
-      "desc": "<strong>Typical maintenance tasks are </strong><ul><li>Cleaning the filter</li><li>Inspecting the coils</li><li>Checking drain lines</li><li>Testing thermostats</li><li>Assessing cooling performance</li><li>Checking electricity</li></ul>"
+      "question": "What is included in the AC maintenance service?",
+      "answer": "<strong>Typical maintenance tasks are </strong><ul><li>Cleaning the filter</li><li>Inspecting the coils</li><li>Checking drain lines</li><li>Testing thermostats</li><li>Assessing cooling performance</li><li>Checking electricity</li></ul>"
     },
     {
-      "title": "Do annual maintenance contracts make sense for Air Conditioners?",
-      "desc": "Yes, regular servicing with AMC helps prevent big issues, makes things more efficient and avoid costly repairs."
+      "question": "Do annual maintenance contracts make sense for Air Conditioners?",
+      "answer": "Yes, regular servicing with AMC helps prevent big issues, makes things more efficient and avoid costly repairs."
     },
     {
-      "title": "What reasons determine why my AC is making weird noises?",
-      "desc": "Typical causes are loose internal parts, fan motor issues, dust accumulation, or wear. A technician will be able to determine the cause exactly."
+      "question": "What reasons determine why my AC is making weird noises?",
+      "answer": "Typical causes are loose internal parts, fan motor issues, dust accumulation, or wear. A technician will be able to determine the cause exactly."
     },
     {
-      "title": "What is the time frame required for an AC maintenance?",
-      "desc": "A typical maintenance visit is 1 hour in length. The time is dependent on the type of AC, the quantity of units, and the type of system."
+      "question": "What is the time frame required for an AC maintenance?",
+      "answer": "A typical maintenance visit is 1 hour in length. The time is dependent on the type of AC, the quantity of units, and the type of system."
     },
     {
-      "title": "Does regular AC servicing lower electric bills?",
-      "desc": "Yes, when the AC system is well-maintained, it is more efficient and uses less energy, which can reduce your monthly electricity expenses."
+      "question": "Does regular AC servicing lower electric bills?",
+      "answer": "Yes, when the AC system is well-maintained, it is more efficient and uses less energy, which can reduce your monthly electricity expenses."
     },
     {
-      "title": "Should I replace or repair my old AC?",
-      "desc": "If your AC keeps breaking down or has poor efficiency, replacement might be a better option. A technician can run the test and give you recommendations."
+      "question": "Should I replace or repair my old AC?",
+      "answer": "If your AC keeps breaking down or has poor efficiency, replacement might be a better option. A technician can run the test and give you recommendations."
     },
     {
-      "title": "What is the best way to get an AC service in Al Quoz?",
-      "desc": "You can contact FAJ Technical Services L.L.C with your location and preferred timing. Our staff will set up an appropriate service appointment."
+      "question": "What is the best way to get an AC service in Al Quoz?",
+      "answer": "You can contact FAJ Technical Services L.L.C with your location and preferred timing. Our staff will set up an appropriate service appointment."
     }
-  ]
+  ],
 };
 
 const bookingData = {
   "id": "booking-section",
   "title": "Book An Appointment",
-  "description": "Fill in the form below or call our 7-day hotline for immediate service dispatch across Al Quoz.",
+  "description": "Book your AC service appointment with our expert team in Al Quoz. We provide professional AC installation, cleaning, maintenance, and repair services to keep your space cool and comfortable.",
   "submitLabel": "Schedule Service Now"
 };
 

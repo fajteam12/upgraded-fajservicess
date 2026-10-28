@@ -1,47 +1,92 @@
 [
-  {  
-    "title": "What is the price of AC repair in JBR?",
-    "desc": "The price will vary based on the AC type, the issue and parts replacement. An inspection will help to identify the precise problem and offer a straightforward estimate."
+  {
+    "title": "How often should I service my AC in Al Sufouh?",
+    "desc": "For many residential systems, servicing every 3 to 6 months is a practical schedule. ACs used heavily may need more frequent attention.",
+    "question": "How often should I service my AC in Al Sufouh?",
+    "answer": "For many residential systems, servicing every 3 to 6 months is a practical schedule. ACs used heavily may need more frequent attention."
   },
   {
-    "title": "When should I have my AC serviced in JBR?",
-    "desc": "Most air conditioning units need servicing twice a year. Ongoing maintenance helps your air conditioner perform efficiently and helps prevent sudden breakdowns."
+    "title": "Why is my AC cooling slowly?",
+    "desc": "Slow cooling can happen because of dirty filters, blocked coils, weak airflow, low refrigerant or thermostat problems. An inspection can identify the actual cause.",
+    "question": "Why is my AC cooling slowly?",
+    "answer": "Slow cooling can happen because of dirty filters, blocked coils, weak airflow, low refrigerant or thermostat problems. An inspection can identify the actual cause."
   },
   {
-    "title": "Why is my AC not cooling properly?",
-    "desc": "<strong>This can happen because of the following reasons:</strong><ul><li>Dirty Filters</li><li>Low Gas</li><li>Blocked Coils</li><li>Thermostat Problems</li><li>Compressor Issues</li></ul>A professional inspection can identify the exact cause."
+    "title": "Do you provide AC repair for apartments and villas in Al Sufouh?",
+    "desc": "Yes, we provide Home AC Repair for apartments, villas and other residential properties, along with Commercial AC Repair for offices, shops and businesses.",
+    "question": "Do you provide AC repair for apartments and villas in Al Sufouh?",
+    "answer": "Yes, we provide Home AC Repair for apartments, villas and other residential properties, along with Commercial AC Repair for offices, shops and businesses."
   },
   {
-    "title": "Do you provide AC services for hotels and restaurants in JBR?",
-    "desc": "Yes, we offer AC repair, cleaning, and maintenance services for hotels, restaurants, retail shops, and commercial properties throughout JBR."
+    "title": "Is Same Day AC Repair available in Al Sufouh?",
+    "desc": "Same-day service may be available depending on technician schedules, location and the type of AC fault. Contacting the service team early can help with availability.",
+    "question": "Is Same Day AC Repair available in Al Sufouh?",
+    "answer": "Same-day service may be available depending on technician schedules, location and the type of AC fault. Contacting the service team early can help with availability."
   },
   {
-    "title": "What causes water leakage from the AC?",
-    "desc": "<strong>Common causes include:</strong><ul><li>blocked drain pipes</li><li>frozen coils</li><li>dirty filters</li><li>drainage problems</li></ul>Fixing the leak early prevents property damage."
+    "title": "What causes an AC to leak water?",
+    "desc": "<strong>Common reasons include:</strong><ul><li>Blocked drain line</li><li>Frozen evaporator coil</li><li>Dirty air filter</li></ul> The unit should be checked if the leakage continues.",
+    "question": "What causes an AC to leak water?",
+    "answer": "<strong>Common reasons include:</strong><ul><li>Blocked drain line</li><li>Frozen evaporator coil</li><li>Dirty air filter</li></ul> The unit should be checked if the leakage continues."
   },
   {
-    "title": "Can AC cleaning improve cooling performance?",
-    "desc": "Yes, cleaning removes dust and dirt from filters and coils, which improves airflow and helps your AC cool more effectively."
+    "title": "What does AC maintenance include?",
+    "desc": "A typical maintenance visit may include filter cleaning, coil inspection, drain cleaning, thermostat testing and cooling performance checks.",
+    "question": "What does AC maintenance include?",
+    "answer": "A typical maintenance visit may include filter cleaning, coil inspection, drain cleaning, thermostat testing and cooling performance checks."
   },
   {
-    "title": "Do you offer same-day AC repair in JBR?",
-    "desc": "Yes, at FAJ Technical Services L.L.C offer same-day services but this service may be available depending on the issue and technician availability. Contact our team to check availability."
+    "title": "Do you provide AC Gas Refill in Al Sufouh?",
+    "desc": "Yes, when low refrigerant is confirmed during inspection. The technician should first check why the refrigerant level has dropped before carrying out a refill.",
+    "question": "Do you provide AC Gas Refill in Al Sufouh?",
+    "answer": "Yes, when low refrigerant is confirmed during inspection. The technician should first check why the refrigerant level has dropped before carrying out a refill."
+  },
+  {
+    "title": "Why does my AC smell bad when it starts?",
+    "desc": "A bad smell can come from dust, moisture, mold or bacteria inside the unit. AC cleaning can remove buildup from filters, coils and drainage areas.",
+    "question": "Why does my AC smell bad when it starts?",
+    "answer": "A bad smell can come from dust, moisture, mold or bacteria inside the unit. AC cleaning can remove buildup from filters, coils and drainage areas."
+  },
+  {
+    "title": "Why is my AC making a buzzing sound?",
+    "desc": "Buzzing can be caused by loose electrical connections, fan problems, vibration or worn internal parts. The source should be inspected before the problem becomes worse.",
+    "question": "Why is my AC making a buzzing sound?",
+    "answer": "Buzzing can be caused by loose electrical connections, fan problems, vibration or worn internal parts. The source should be inspected before the problem becomes worse."
   },
   {
     "title": "Which AC brands do you repair?",
-    "desc": "<strong>We repair major brands including:</strong><ul><li>Daikin</li><li>LG</li><li>Samsung</li><li>O General</li><li>Mitsubishi</li><li>Carrier</li><li>York</li><li>Trane</li><li>Gree</li><li>Panasonic and Hitachi</li></ul>"
+    "desc": "Our technicians work with major brands such as Daikin, LG, Samsung, Carrier, York, Mitsubishi, O General, Panasonic, Gree and other common AC brands.",
+    "question": "Which AC brands do you repair?",
+    "answer": "Our technicians work with major brands such as Daikin, LG, Samsung, Carrier, York, Mitsubishi, O General, Panasonic, Gree and other common AC brands."
   },
   {
-    "title": "What is included in the AC maintenance service?",
-    "desc": "<strong>Maintenance usually includes:</strong><ul><li>Filter Cleaning</li><li>Coil Inspection</li><li>Drain Line Checking</li><li>Thermostat Testing</li><li>Cooling Performance Check</li><li>Electrical Inspection</li></ul>"
+    "title": "Can AC cleaning help reduce electricity use?",
+    "desc": "Yes, dirty filters and coils can restrict airflow and make the system work harder. Regular cleaning helps the cooling unit operate more efficiently.",
+    "question": "Can AC cleaning help reduce electricity use?",
+    "answer": "Yes, dirty filters and coils can restrict airflow and make the system work harder. Regular cleaning helps the cooling unit operate more efficiently."
   },
   {
-    "title": "Is an Annual Maintenance Contract useful for AC systems?",
-    "desc": "Yes, AMC helps prevent major problems, improves system efficiency, and reduces unexpected repair costs through regular servicing."
+    "title": "How long can an air conditioner last?",
+    "desc": "An AC's lifespan depends on how well it is maintained. If you keep it maintained by regular servicing, it helps to reduce unexpected breakdowns and it works longer.",
+    "question": "How long can an air conditioner last?",
+    "answer": "An AC's lifespan depends on how well it is maintained. If you keep it maintained by regular servicing, it helps to reduce unexpected breakdowns and it works longer."
   },
   {
-    "title": "Why does my AC make strange noises?",
-    "desc": "<strong>Common reasons include:</strong><ul><li>Loose Internal Parts</li><li>Fan Motor Problems</li><li>Dirt Buildup</li><li>Worn Components</li></ul>A technician can find the exact cause."
+    "title": "Is an Annual Maintenance Contract worth having?",
+    "desc": "An AMC can be useful for systems that run frequently. Scheduled inspections help identify developing faults early and keep routine servicing on track.",
+    "question": "Is an Annual Maintenance Contract worth having?",
+    "answer": "An AMC can be useful for systems that run frequently. Scheduled inspections help identify developing faults early and keep routine servicing on track."
+  },
+  {
+    "title": "How much does AC repair cost in Al Sufouh?",
+    "desc": "The repair price depends on the AC type, fault, required parts and amount of work. An inspection can identify the problem before the final repair cost is confirmed.",
+    "question": "How much does AC repair cost in Al Sufouh?",
+    "answer": "The repair price depends on the AC type, fault, required parts and amount of work. An inspection can identify the problem before the final repair cost is confirmed."
+  },
+  {
+    "title": "How can I book AC service in Al Sufouh?",
+    "desc": "Share your location, AC problem and preferred appointment time with FAJ Technical Services L.L.C. The team can then arrange a suitable service visit.",
+    "question": "How can I book AC service in Al Sufouh?",
+    "answer": "Share your location, AC problem and preferred appointment time with FAJ Technical Services L.L.C. The team can then arrange a suitable service visit."
   }
-
 ]

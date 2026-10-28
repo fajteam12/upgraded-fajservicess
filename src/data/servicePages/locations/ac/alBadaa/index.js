@@ -73,12 +73,12 @@ const overviewData = {
           "text": "FAJ Technical Services L.L.C",
           "href": "/"
         },
-        " has been providing expert and professional air conditioner services in Dubai since 2010. We provide ",
+        " has been providing professional air conditioning services across Dubai since 2010. Our technicians provide ",
         {
           "text": "AC repair",
           "href": "/services/air-conditioning-repair/ac-service/"
         },
-        " services, cleaning, maintenance, and installation services in Al Badaa. We have the expertise to assist you with your air conditioning repair, maintenance, or installation needs."
+        ", AC cleaning, AC maintenance, and AC installation services for homes or businesses in Al Badaa and nearby areas."
       ]
     }
   ],
@@ -91,7 +91,7 @@ const overviewData = {
 
 const areaOverviewData = {
   "id": "al-badaa-ac-services",
-  "title": "Who provides the best AC repair services in Al Badaa?",
+  "title": "Best AC Repair in Al Badaa",
   "paragraphs": [
     "Choosing the right AC company becomes important when cooling problems start affecting your home or workplace. FAJ Technical Services L.L.C provides air conditioner repair, maintenance and cleaning services for apartments, villas, offices, restaurants, shops, and commercial buildings throughout Al Badaa.",
     "Our technicians are experienced in handling everything from small repairs to complete system troubleshooting and major component replacement."
@@ -291,8 +291,15 @@ const serviceOverviewData = {
   "id": "ac-repair-service-overview",
   "title": "Why Is My AC Not Cooling?",
   "description": "An AC unit can continue running while still failing to cool the room properly. Several parts inside the system work together to produce cool air if a fault occurs in any one of them can reduce performance.",
-  "paragraphs": [
-    "Some common reasons include: Dirty air filters, Low refrigerant levels, Blocked condenser coils, Thermostat problems, Compressor faults, Electrical issues, Restricted airflow."
+  "listTitle": "Some common reasons include:",
+  "checklist": [
+    "Dirty air filters",
+    "Low refrigerant levels",
+    "Blocked condenser coils",
+    "Thermostat problems",
+    "Compressor faults",
+    "Electrical issues",
+    "Restricted airflow"
   ],
   "imageSide": "left",
   "image": {
@@ -311,7 +318,7 @@ const serviceOverviewData = {
 
 const commonSignsData = {
   "id": "ac-maintenance-signs",
-  "title": "Which signs show the AC needs service?",
+  "title": "Signs You Need An AC Service",
   "intro": "Most AC units show warning signs before they stop working completely.",
   "items": [
     {
@@ -338,46 +345,53 @@ const commonSignsData = {
 };
 
 const videoData = {
-  "id": "ac-service-video",
-  "title": "Emergency AC Repair Service in Al Badaa",
-  "lead": {
-    "parts": [
-      "AC problems can happen suddenly, especially during Dubai's hottest months. A quick repair helps restore comfort and prevents further damage to your cooling system. At ",
-      {
-        "text": "FAJ Technical Services L.L.C",
-        "href": "/"
-      },
-      ", our fast-response team provides immediate support across Al Badaa."
-    ]
-  },
-  "listTitle": "Our emergency AC repair service covers:",
-  "items": [
+  id: "ac-service-video",
+  title: "Emergency AC Repair Service in Al Badaa",
+  lead: "A sudden AC breakdown can affect comfort, productivity, and indoor air quality.",
+  listTitle: "Our emergency AC repair service can help with:",
+  items: [
     "AC not cooling",
     "AC not turning on",
     "Water leakage",
     "Electrical faults",
-    "Compressor problems",
     "Thermostat issues",
+    "Compressor failures",
     "Weak airflow",
-    "Unusual noises"
+    "Unusual noises",
   ],
-  "conclusion": "Our technicians provide fast assistance for homes, villas, offices, and commercial properties in Al Badaa.",
-  "frameTitle": "Air-conditioning repair and maintenance service video in Al Badaa",
-  "videoId": "prUR0-lZlzg",
-  "videoSide": "left",
-  "image": {
-    "id": "indoor-ac-servicing",
-    "src": "/img/indoor-ac-servicing.webp",
-    "alt": "FAJ AC technician providing express and emergency AC repair in Al Badaa",
-    "width": 600,
-    "height": 400
+  conclusion:
+    "We provide fast assistance for residential and commercial customers throughout Al Badaa and nearby areas.",
+  description: [
+    "A sudden AC breakdown can affect comfort, productivity, and indoor air quality.",
+    "Our emergency AC repair service can help with: AC not cooling, AC not turning on, water leakage, electrical faults, thermostat issues, compressor failures, weak airflow, and unusual noises.",
+    "We provide fast assistance for residential and commercial customers throughout Al Badaa and nearby areas.",
+  ],
+  frameTitle: "Air-conditioning repair and maintenance service video in Al Badaa",
+  videoId: "prUR0-lZlzg",
+  videoSide: "left",
+  image: {
+    id: "indoor-ac-servicing",
+    src: "/img/indoor-ac-servicing.webp",
+    alt: "FAJ AC technician providing express and emergency AC repair in Al Badaa",
+    width: 600,
+    height: 400,
   },
-  "variant": "framed",
-  "showCta": false,
-  "cta": {
-    "phone": "",
-    "whatsapp": ""
-  }
+  variant: "framed",
+  blockInteraction: true,
+  allowFullScreen: false,
+  parameters: {
+    autoplay: "1",
+    mute: "0",
+    controls: "0",
+    modestbranding: "1",
+    rel: "0",
+    showinfo: "0",
+    loop: "1",
+    playlist: "prUR0-lZlzg",
+    playsinline: "1",
+    cc_load_policy: "0",
+    disablekb: "1",
+  },
 };
 
 const maintenanceImportanceData = {
@@ -442,7 +456,7 @@ const maintenanceImportanceCardsData = {
 };
 
 const commonProblemsData = {
-  "title": "Most Common AC Problems",
+  "title": "Common AC Problems That May Require Maintenance",
   "description": "",
   "items": [
     {
@@ -458,7 +472,7 @@ const commonProblemsData = {
       "description": "External sounds like grinding, rattling or buzzing are usually considered to be the indication of loose or damaged internal parts."
     },
     {
-      "title": "Bad Smells",
+      "title": "Foul Odors",
       "description": "Odors can be a result of dust buildup, bacteria, or mold developing inside the system/"
     },
     {
@@ -466,11 +480,11 @@ const commonProblemsData = {
       "description": "It is possible that irregular shutting and opening can signal thermostat or electrical issues."
     },
     {
-      "title": "High Humidity",
+      "title": "High Humidity Levels",
       "description": "Even with the air conditioning running, you may still fail to properly remove indoor moisture when humidity levels are high."
     },
     {
-      "title": "Water Leakage",
+      "title": "Leaking Water",
       "description": "Blocking drainage lines and frozen coils are common causes of AC water leakage."
     },
     {
@@ -487,7 +501,7 @@ const commonProblemsData = {
 
 const servicesOfferedData = {
   "id": "services-offered-overview",
-  "title": "Professional Air Conditioning Services in Al Badaa",
+  "title": "HERE ARE THE SERVICES WE OFFER FOR AIR CONDITIONING SYSTEMS",
   "description": "Professional air conditioning solutions tailored for residential, commercial and retail properties in Al Badaa.",
   "imageSide": "left",
   "image": {
@@ -506,7 +520,7 @@ const servicesOfferedData = {
 
 const servicesOfferedCardsData = {
   "id": "services-offered-cards",
-  "title": "Professional Air Conditioning Services in Al Badaa",
+  "title": "HERE ARE THE SERVICES WE OFFER FOR AIR CONDITIONING SYSTEMS",
   "items": [
     {
       "icon": "wrench",
@@ -712,7 +726,7 @@ const whyChooseUsData = {
 
 const beforeAfterData = {
   "id": "recent-completed-service",
-  "title": "Recent Completed Projects",
+  "title": "Recent Completed Service",
   "description": "See the real results of our thorough air conditioning maintenance and deep cleaning service in Al Badaa.",
   "beforeLabel": "Before",
   "beforeAlt": "Air conditioning unit before service",
@@ -847,7 +861,7 @@ const brandsData = {
 
 const sparePartsRepairData = {
   "id": "ac-spare-parts-and-repair",
-  "title": "We Handle All Types of AC Systems",
+  "title": "We Specialise in All Types of AC Systems",
   "columns": [
     {
       "title": "Air Conditioning Systems Serviced Across Al Badaa:",
@@ -983,29 +997,60 @@ const repairPriceData = {
 };
 
 const testimonialsData = {
-  "id": "testimonials",
-  "title": "Customer Reviews",
-  "description": "Real feedback from residential property owners, commercial facility managers and tenants across Al Badaa.",
-  "items": [
+  id: "ac-service-reviews",
+  title: "Customer Reviews",
+  description:
+    "Customer feedback on FAJ air-conditioning repair and maintenance services in Al Badaa.",
+  items: [
     {
-      "author": "Rashid Al-Maktoum",
-      "role": "Apartment Owner, Al Badaa",
-      "content": "Our split AC in the master bedroom was blowing warm air in mid-July. FAJ dispatched a technician within 2 hours. He identified a failed capacitor, replaced it from his van stock, and our room was ice cold again. Brilliant service!",
-      "rating": 5
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Sara Malik",
+      subtitle: "Al Badaa Resident",
+      description:
+        "FAJ provided professional split AC service for my apartment. The team was skilled, cleaned everything properly, and restored cooling performance. Very satisfied with their quick and reliable service in Al Badaa.",
     },
     {
-      "author": "Priya Sharma",
-      "role": "Tenant, Al Badaa",
-      "content": "Water started leaking from our ceiling FCU, soaking the living room rug. Called FAJ and their technician cleared a severely blocked condensate trap and sanitised the tray. Neat, professional and polite team.",
-      "rating": 5
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Al Mansoori",
+      subtitle: "Al Badaa Resident",
+      description:
+        "Great experience with FAJ’s air conditioner service. The technicians were professional, friendly, and checked everything thoroughly. My AC is running smoothly again. Excellent service in Al Badaa, highly recommended!",
     },
     {
-      "author": "David Miller",
-      "role": "Villa Resident, Al Badaa",
-      "content": "Signed an annual maintenance contract for our 4-bedroom villa. The twice-a-year PPM service has visibly dropped our DEWA electricity bill and the AC smells clean and fresh. Well worth the investment.",
-      "rating": 5
-    }
-  ]
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Arjun Kumar",
+      subtitle: "Resident",
+      description:
+        "I booked FAJ for HVAC services in Al Badaa, and it was excellent. The technicians were skilled, reliable, and carried out the work with great attention to detail.",
+    },
+    {
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Shazia Sheikh",
+      subtitle: "Homeowner",
+      description:
+        "FAJ delivered great AC technical services. Their team was polite, professional, and fixed my cooling issue quickly. Excellent service overall, I will continue using them for future AC problems in Al Badaa.",
+    },
+    {
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Ravi Mehta",
+      subtitle: "Resident",
+      description:
+        "I used FAJ for AC cleaning service, and it really improved my air quality. The team worked efficiently, cleaned every part, and made my AC run like new again.",
+    },
+    {
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Waseem Aqdas",
+      subtitle: "Homeowner",
+      description:
+        "Outstanding service from FAJ Technical! My AC wasn't cooling properly, but FAJ Technical came to the rescue. Quick response, friendly technician, and now my AC works perfectly. I highly recommend them!",
+    },
+  ],
 };
 
 const newsData = {
@@ -1021,7 +1066,7 @@ const newsData = {
       "subtitle": "Admin • 5 Comments",
       "description": "A properly functioning air conditioning system is essential for various settings, including homes, offices, and individual spaces. According to HVAC Webmasters, over 70%",
       "href": "/blog/10-common-ac-problems-and-how-to-fix-them/",
-      "actionLabel": "Read Article"
+      "actionLabel": "Read More"
     },
     {
       "icon": "dollar-savings",
@@ -1031,7 +1076,7 @@ const newsData = {
       "subtitle": "Admin • 4 Comments",
       "description": "Air conditioning is excellent for keeping you comfortable indoors but can be expensive. But there is no need to worry, there are some ways to reduce AC electric bill with",
       "href": "/blog/how-to-save-money-on-ac/",
-      "actionLabel": "Read Article"
+      "actionLabel": "Read More"
     },
     {
       "icon": "wind",
@@ -1041,7 +1086,7 @@ const newsData = {
       "subtitle": "Admin • 0 Comments",
       "description": "As the temperatures rise and summer approaches, the desire for a cool and comfortable escape within your home intensifies. Air conditioning offers a seemingly simple solu",
       "href": "/blog/how-to-choose-the-best-air-conditioner-for-home/",
-      "actionLabel": "Read Article"
+      "actionLabel": "Read More"
     }
   ],
   "footer": {
@@ -1057,10 +1102,10 @@ const newsData = {
 };
 
 const faqsData = {
-  "id": "location-faqs",
-  "title": "AC Repair and Maintenance FAQs in Al Badaa",
-  "description": "Find answers to common questions about air conditioning repair, servicing, and maintenance in Al Badaa.",
-  "items": [
+  id: "ac-service-alBadaa-faqs",
+  title: "FAQ's",
+  description: "Find answers to common questions about air conditioning repair, cleaning, and maintenance services.",
+  items: [
     {
       "question": "How often should I get my air conditioner serviced in Al Badaa?",
       "answer": "Most home air conditioning systems need to be looked at every 6 months. It really depends on how much you use it and the weather outside."
@@ -1075,15 +1120,15 @@ const faqsData = {
     },
     {
       "question": "Why is water leaking from my air conditioner?",
-      "answer": "There are some reasons this can happen including:Blocked drain pipesFrozen evaporator coilsDirty air filters"
+      "answer": "<strong>There are some reasons this can happen including:</strong><ul><li>Blocked drain pipes</li><li>Frozen evaporator coils</li><li>Dirty air filters</li></ul>"
     },
     {
       "question": "What is included in the AC maintenance service?",
-      "answer": "Maintenance usually includes: Filter cleaningCoil inspectionDrain cleaningThermostat testingPerformance checks"
+      "answer": "<strong>Maintenance usually includes:</strong> <ul><li>Filter cleaning</li><li>Coil inspection</li><li>Drain cleaning</li><li>Thermostat testing</li><li>Performance checks</li></ul>"
     },
     {
       "question": "Which AC brands do you service?",
-      "answer": "Our technicians work with major brands, including:DaikinCarrierLGSamsungYorkMitsubishiGree, and many others."
+      "answer": "<strong>Our technicians work with major brands, including:</strong><ul><li>Daikin</li><li>Carrier</li><li>LG</li><li>Samsung</li><li>York</li><li>Mitsubishi</li><li>Gree, and many others.</li></ul>"
     },
     {
       "question": "Is it worth getting a maintenance contract for my air conditioner system?",
@@ -1091,7 +1136,7 @@ const faqsData = {
     },
     {
       "question": "Why is my air conditioner making so much noise?",
-      "answer": "Some common reasons include:Loose internal componentsFan motor issuesDirt buildup inside the system"
+      "answer": "<strong>Some common reasons include:</strong><ul><li>Loose internal components</li><li>Fan motor issues</li><li>Dirt buildup inside the system</li></ul>"
     },
     {
       "question": "Can AC cleaning improve indoor air quality?",
@@ -1113,13 +1158,13 @@ const faqsData = {
       "question": "How can I book an AC service appointment?",
       "answer": "Simply contact our team via WhatsApp and Gmail with your location, preferred time and a suitable visit can be arranged."
     }
-  ]
+  ],
 };
 
 const bookingData = {
   "id": "booking-section",
   "title": "Book An Appointment",
-  "description": "Fill in your details below and our service coordinators will confirm your booking slot within 15 minutes.",
+  "description": "Book your AC service appointment with our expert team in Al Badaa. We provide professional AC installation, cleaning, maintenance, and repair services to keep your space cool and comfortable.",
   "submitLabel": "Confirm Service Request"
 };
 

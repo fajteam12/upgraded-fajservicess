@@ -1,63 +1,92 @@
 [
-  {  
+  {
     "title": "How often should I service my AC in Al Twar?",
-    "desc": "Most residential AC systems benefit from professional servicing every 3 to 6 months. Systems that run heavily may need more frequent checks."
+    "desc": "Most residential AC systems benefit from professional servicing every 3 to 6 months. Systems that run heavily may need more frequent checks.",
+    "question": "How often should I service my AC in Al Twar?",
+    "answer": "Most residential AC systems benefit from professional servicing every 3 to 6 months. Systems that run heavily may need more frequent checks."
   },
   {
     "title": "Why is my AC not cooling the room properly?",
-    "desc": "The problem may be caused by dirty filters, low refrigerant, blocked coils, poor airflow, thermostat faults or compressor problems. An inspection can identify the cause."
+    "desc": "The problem may be caused by dirty filters, low refrigerant, blocked coils, poor airflow, thermostat faults or compressor problems. An inspection can identify the cause.",
+    "question": "Why is my AC not cooling the room properly?",
+    "answer": "The problem may be caused by dirty filters, low refrigerant, blocked coils, poor airflow, thermostat faults or compressor problems. An inspection can identify the cause."
   },
   {
     "title": "Do you provide AC Repair Near Me in Al Twar?",
-    "desc": "Yes, FAJ Technical Services L.L.C provides AC Repair Near Me and AC Service Near Me for residential and commercial properties in Al Twar."
+    "desc": "Yes, FAJ Technical Services L.L.C provides AC Repair Near Me and AC Service Near Me for residential and commercial properties in Al Twar.",
+    "question": "Do you provide AC Repair Near Me in Al Twar?",
+    "answer": "Yes, FAJ Technical Services L.L.C provides AC Repair Near Me and AC Service Near Me for residential and commercial properties in Al Twar."
   },
   {
     "title": "Can you repair Split AC and Central AC systems?",
-    "desc": "Yes, our technicians handle Split AC Repair, Central AC Repair, ducted systems, inverter units and several commercial and domestic cooling systems."
+    "desc": "Yes, our technicians handle Split AC Repair, Central AC Repair, ducted systems, inverter units and several commercial and domestic cooling systems.",
+    "question": "Can you repair Split AC and Central AC systems?",
+    "answer": "Yes, our technicians handle Split AC Repair, Central AC Repair, ducted systems, inverter units and several commercial and domestic cooling systems."
   },
   {
     "title": "What causes AC water leakage?",
-    "desc": "<strong>Common causes include:</strong><ul><li>Blocked drain line</li><li>Frozen evaporator coil</li><li>Dirty air filter</li></ul>Continued leakage should be checked to avoid damage to walls, ceilings or flooring."
+    "desc": "<strong>Common causes include:</strong><ul><li>Blocked drain line</li><li>Frozen evaporator coil</li><li>Dirty air filter</li></ul>Continued leakage should be checked to avoid damage to walls, ceilings or flooring.",
+    "question": "What causes AC water leakage?",
+    "answer": "<strong>Common causes include:</strong><ul><li>Blocked drain line</li><li>Frozen evaporator coil</li><li>Dirty air filter</li></ul>Continued leakage should be checked to avoid damage to walls, ceilings or flooring."
   },
   {
     "title": "What is checked during AC maintenance?",
-    "desc": "Maintenance may include filter cleaning, coil inspection, drain line cleaning, thermostat testing, airflow checks and cooling performance testing."
+    "desc": "Maintenance may include filter cleaning, coil inspection, drain line cleaning, thermostat testing, airflow checks and cooling performance testing.",
+    "question": "What is checked during AC maintenance?",
+    "answer": "Maintenance may include filter cleaning, coil inspection, drain line cleaning, thermostat testing, airflow checks and cooling performance testing."
   },
   {
     "title": "Do you provide AC Gas Refill?",
-    "desc": "Yes, when low refrigerant is confirmed during inspection. The technician should check for a refrigerant leak before adding gas."
+    "desc": "Yes, when low refrigerant is confirmed during inspection. The technician should check for a refrigerant leak before adding gas.",
+    "question": "Do you provide AC Gas Refill?",
+    "answer": "Yes, when low refrigerant is confirmed during inspection. The technician should check for a refrigerant leak before adding gas."
   },
   {
     "title": "Why does my AC smell bad?",
-    "desc": "A musty or unpleasant smell can develop from moisture, mould, bacteria or dust inside the AC. Professional cleaning can remove the buildup causing the smell."
+    "desc": "A musty or unpleasant smell can develop from moisture, mould, bacteria or dust inside the AC. Professional cleaning can remove the buildup causing the smell.",
+    "question": "Why does my AC smell bad?",
+    "answer": "A musty or unpleasant smell can develop from moisture, mould, bacteria or dust inside the AC. Professional cleaning can remove the buildup causing the smell."
   },
   {
     "title": "Why does my AC make a loud noise?",
-    "desc": "Noise can come from a loose component, fan motor, vibration, dirt buildup or worn parts. The source should be inspected before continued use causes more damage."
+    "desc": "Noise can come from a loose component, fan motor, vibration, dirt buildup or worn parts. The source should be inspected before continued use causes more damage.",
+    "question": "Why does my AC make a loud noise?",
+    "answer": "Noise can come from a loose component, fan motor, vibration, dirt buildup or worn parts. The source should be inspected before continued use causes more damage."
   },
   {
     "title": "Can AC cleaning help lower electricity bills?",
-    "desc": "Cleaning filters and coils can improve airflow and cooling efficiency. When an AC does not have to work as hard, electricity consumption may be reduced."
+    "desc": "Cleaning filters and coils can improve airflow and cooling efficiency. When an AC does not have to work as hard, electricity consumption may be reduced.",
+    "question": "Can AC cleaning help lower electricity bills?",
+    "answer": "Cleaning filters and coils can improve airflow and cooling efficiency. When an AC does not have to work as hard, electricity consumption may be reduced."
   },
   {
     "title": "How long does an AC repair normally take?",
-    "desc": "Many straightforward repairs can take around one to three hours, but the actual time depends on the fault, AC type and whether replacement parts are required."
+    "desc": "Many straightforward repairs can take around one to three hours, but the actual time depends on the fault, AC type and whether replacement parts are required.",
+    "question": "How long does an AC repair normally take?",
+    "answer": "Many straightforward repairs can take around one to three hours, but the actual time depends on the fault, AC type and whether replacement parts are required."
   },
   {
     "title": "Is an Annual Maintenance Contract useful?",
-    "desc": "An AMC can be useful for frequently used systems because scheduled servicing helps identify problems early and keeps preventive maintenance on track."
+    "desc": "An AMC can be useful for frequently used systems because scheduled servicing helps identify problems early and keeps preventive maintenance on track.",
+    "question": "Is an Annual Maintenance Contract useful?",
+    "answer": "An AMC can be useful for frequently used systems because scheduled servicing helps identify problems early and keeps preventive maintenance on track."
   },
   {
     "title": "Which AC brands do you service?",
-    "desc": "Our technicians work with major brands including Daikin, LG, Samsung, Carrier, York, Mitsubishi, O General, Panasonic, Gree and other commonly used brands."
+    "desc": "Our technicians work with major brands including Daikin, LG, Samsung, Carrier, York, Mitsubishi, O General, Panasonic, Gree and other commonly used brands.",
+    "question": "Which AC brands do you service?",
+    "answer": "Our technicians work with major brands including Daikin, LG, Samsung, Carrier, York, Mitsubishi, O General, Panasonic, Gree and other commonly used brands."
   },
   {
     "title": "How much does AC repair cost in Al Twar?",
-    "desc": "The cost depends on the AC type, problem, parts required and repair work involved. An inspection helps determine the actual fault before the repair is carried out."
+    "desc": "The cost depends on the AC type, problem, parts required and repair work involved. An inspection helps determine the actual fault before the repair is carried out.",
+    "question": "How much does AC repair cost in Al Twar?",
+    "answer": "The cost depends on the AC type, problem, parts required and repair work involved. An inspection helps determine the actual fault before the repair is carried out."
   },
   {
     "title": "How can I book an AC service in Al Twar?",
-    "desc": "Share your location, AC problem and preferred appointment time with FAJ Technical Services L.L.C. The team can arrange a suitable visit based on availability."
+    "desc": "Share your location, AC problem and preferred appointment time with FAJ Technical Services L.L.C. The team can arrange a suitable visit based on availability.",
+    "question": "How can I book an AC service in Al Twar?",
+    "answer": "Share your location, AC problem and preferred appointment time with FAJ Technical Services L.L.C. The team can arrange a suitable visit based on availability."
   }
-
 ]

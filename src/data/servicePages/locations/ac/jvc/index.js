@@ -45,7 +45,7 @@ const heroData = {
   paragraph:
     "In Dubai, the JVC is one of the most popular residential areas where there are a lot of apartments, townhouses, villas, cafes, commercial stores and family housing. Since air coolers are being used almost daily, even a small leak in the cooler will make the indoor environment uncomfortable. Regularly scheduled AC services guarantee regular cooling, air quality, and electricity usage.",
   paragraphs: [
-    "In Dubai, the JVC is one of the most popular residential areas where there are a lot of apartments, townhouses, villas, cafes, commercial stores and family housing. Since air coolers are being used almost daily, even a small leak in the cooler will make the indoor environment uncomfortable. Regularly scheduled AC services guarantee regular cooling, air quality, and electricity usage.",
+    "In Dubai, the JVC is one of the most popular residential areas where there are a lot of apartments, townhouses, villas, cafes, commercial stores and family housing. Since air coolers are being used almost daily, even a small leak in the cooler will make the indoor environment uncomfortable. Regularly scheduled AC services guarantee regular cooling, air quality, and electricity usage."
   ],
   highlights: [
     {
@@ -94,29 +94,20 @@ const overviewData = {
   paragraphs: [
     {
       parts: [
-        {
-          text: "FAJ Technical Services L.L.C",
-          href: "/",
-        },
-        " has been providing expert and professional air conditioner services in Dubai since 2010. We provide ",
-        {
-          text: "AC repair",
-          href: "/services/air-conditioning-repair/ac-service/",
-        },
-        " services, cleaning, maintenance, and installation services in JVC. We have the expertise to assist you with your air conditioning repair, maintenance, or installation needs.",
-      ],
-    },
+        "FAJ Technical Services L.L.C has been providing expert and professional air conditioner services in Dubai since 2010. We provide AC repair services, cleaning, maintenance, and installation services in JVC. We have the expertise to assist you with your air conditioning repair, maintenance, or installation needs."
+]
+    }
   ],
   showCta: false,
   cta: {
     phone: "",
-    whatsapp: "https://api.whatsapp.com/send?phone=+971507464712&text=Hello",
-  },
+    whatsapp: "https://api.whatsapp.com/send?phone=+971507464712&text=Hello"
+  }
 };
 
 const areaOverviewData = {
   id: "area-ac-services",
-  title: "Who provides the best AC repair services in JVC?",
+  title: "Best AC Repair in JVC",
   paragraphs: [
     "When you need an AC company to service your cooling equipment, you must find a reliable service provider, particularly during the hot summer seasons in Dubai. FAJ Technical Services L.L.C offers reliable AC repair and maintenance services in apartments, villas, townhouses, retail, restaurants and commercial buildings across JVC. We work for long-term system performance and quality workmanship, not short-term fixes.",
   ],
@@ -355,7 +346,7 @@ const serviceOverviewData = {
 
 const commonSignsData = {
   id: "ac-maintenance-signs",
-  title: "Which signs show the AC needs service?",
+  title: "Signs You Need An AC Service",
   intro:
     "The majority of air conditioners give warning signs prior to a total failure. Recognizing these signs early helps to avoid costly repairs and inconvenient breakdowns.",
   items: [
@@ -382,14 +373,8 @@ const repairPriceData = {
 const videoData = {
   id: "ac-service-video",
   title: "Emergency AC Repair Service in JVC",
-  lead: {
-    parts: [
-      "When your AC suddenly stops working, quick repairs help restore comfort and prevent further damage to your cooling equipment. At ",
-      { text: "FAJ Technical Services L.L.C", href: "/" },
-      ", our fast-response team provides immediate support across JVC.",
-    ],
-  },
-  listTitle: "Our emergency AC repair service covers:",
+  lead: "A sudden AC breakdown can affect comfort, productivity, and indoor air quality.",
+  listTitle: "Our emergency AC repair service can help with:",
   items: [
     "AC not cooling",
     "AC not turning on",
@@ -401,21 +386,37 @@ const videoData = {
     "Unusual noises",
   ],
   conclusion:
-    "Our team provides fast support for apartments, villas, townhouses, and retail outlets across JVC.",
+    "We provide fast assistance for residential and commercial customers throughout JVC and nearby areas.",
+  description: [
+    "A sudden AC breakdown can affect comfort, productivity, and indoor air quality.",
+    "Our emergency AC repair service can help with: AC not cooling, AC not turning on, water leakage, electrical faults, thermostat issues, compressor failures, weak airflow, and unusual noises.",
+    "We provide fast assistance for residential and commercial customers throughout JVC and nearby areas.",
+  ],
+  frameTitle: "Air-conditioning repair and maintenance service video in JVC",
   videoId: "prUR0-lZlzg",
   videoSide: "left",
   image: {
     id: "indoor-ac-servicing",
     src: "/img/indoor-ac-servicing.webp",
-    alt: "Emergency AC Repair Service in JVC",
+    alt: "FAJ AC technician providing express and emergency AC repair in JVC",
     width: 600,
     height: 400,
   },
   variant: "framed",
-  showCta: false,
-  cta: {
-    phone: "",
-    whatsapp: "",
+  blockInteraction: true,
+  allowFullScreen: false,
+  parameters: {
+    autoplay: "1",
+    mute: "0",
+    controls: "0",
+    modestbranding: "1",
+    rel: "0",
+    showinfo: "0",
+    loop: "1",
+    playlist: "prUR0-lZlzg",
+    playsinline: "1",
+    cc_load_policy: "0",
+    disablekb: "1",
   },
 };
 
@@ -433,10 +434,10 @@ const maintenanceImportanceData = {
     width: 600,
     height: 400,
   },
-  showCta: false,
+  showCta: true,
   cta: {
     phone: "",
-    whatsapp: "https://api.whatsapp.com/send?phone=+971507464712&text=Hello",
+    whatsapp: "https://api.whatsapp.com/send?phone=+971507464712&text=Hello"
   },
 };
 
@@ -485,7 +486,7 @@ const maintenanceImportanceCardsData = {
 
 const commonProblemsData = {
   id: "common-problems",
-  title: "Most Common AC Problems",
+  title: "Common AC Problems That May Require Maintenance",
   subtitle:
     "We provide fast diagnosis and professional repair for all major air conditioning faults across JVC:",
   columns: "four",
@@ -564,7 +565,7 @@ const commonProblemsData = {
 
 const servicesOfferedData = {
   id: "services-offered-overview",
-  title: "Professional Air Conditioning Services in JVC",
+  title: "HERE ARE THE SERVICES WE OFFER FOR AIR CONDITIONING SYSTEMS",
   items: [
     {
       icon: "wrench",
@@ -609,7 +610,7 @@ const servicesOfferedData = {
 
 const servicesOfferedCardsData = {
   id: "services-offered-cards",
-  title: "Professional Air Conditioning Services in JVC",
+  title: "HERE ARE THE SERVICES WE OFFER FOR AIR CONDITIONING SYSTEMS",
   columns: "three",
   items: [
     {
@@ -870,7 +871,7 @@ const whyChooseUsData = {
 
 const beforeAfterData = {
   id: "recent-completed-service",
-  title: "Recent Completed Projects",
+  title: "Recent Completed Service",
   description:
     "See the real results of our thorough air conditioning maintenance and deep cleaning service in JVC.",
   beforeLabel: "Before",
@@ -988,7 +989,7 @@ const brandsData = {
 
 const sparePartsRepairData = {
   id: "ac-spare-parts-and-repair",
-  title: "We Handle All Types of AC Systems",
+  title: "We Specialise in All Types of AC Systems",
   columns: [
     {
       title: "Air Conditioning Systems Serviced Across JVC:",
@@ -1143,7 +1144,7 @@ const newsData = {
       description:
         "A properly functioning air conditioning system is essential for various settings, including homes, offices, and individual spaces. According to HVAC Webmasters, over 70%",
       href: "/blog/10-common-ac-problems-and-how-to-fix-them/",
-      actionLabel: "Read Article",
+      actionLabel: "Read More",
     },
     {
       icon: "dollar-savings",
@@ -1154,7 +1155,7 @@ const newsData = {
       description:
         "Air conditioning is excellent for keeping you comfortable indoors but can be expensive. But there is no need to worry, there are some ways to reduce AC electric bill with",
       href: "/blog/how-to-save-money-on-ac/",
-      actionLabel: "Read Article",
+      actionLabel: "Read More",
     },
     {
       icon: "wind",
@@ -1165,7 +1166,7 @@ const newsData = {
       description:
         "As the temperatures rise and summer approaches, the desire for a cool and comfortable escape within your home intensifies. Air conditioning offers a seemingly simple solu",
       href: "/blog/how-to-choose-the-best-air-conditioner-for-home/",
-      actionLabel: "Read Article",
+      actionLabel: "Read More",
     },
   ],
   footer: {
@@ -1181,106 +1182,135 @@ const newsData = {
 };
 
 const testimonialsData = {
-  id: "testimonials",
+  id: "ac-service-reviews",
   title: "Customer Reviews",
   description:
-    "Read genuine reviews from homeowners, landlords and facility managers who rely on FAJ Technical Services L.L.C for their HVAC maintenance in JVC.",
+    "Customer feedback on FAJ air-conditioning repair and maintenance services in JVC.",
   items: [
     {
-      name: "Tariq Mansoor",
-      role: "JVC Seasons Community Resident",
-      quote:
-        "Our central AC stopped cooling during a hot weekend in JVC. FAJ dispatched a technician within two hours. He cleared a clogged drainage line, replaced a worn capacitor, and restored icy cooling. Top professional work!",
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Sara Malik",
+      subtitle: "JVC Resident",
+      description:
+        "FAJ provided professional split AC service for my apartment. The team was skilled, cleaned everything properly, and restored cooling performance. Very satisfied with their quick and reliable service in JVC.",
     },
     {
-      name: "Hannah Phillips",
-      role: "Villa Owner in JVC District 12",
-      quote:
-        "Outstanding deep coil cleaning! The musty smell completely vanished and our electricity bill dropped significantly the following month. Highly recommend FAJ for JVC villa maintenance.",
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Al Mansoori",
+      subtitle: "JVC Resident",
+      description:
+        "Great experience with FAJ’s air conditioner service. The technicians were professional, friendly, and checked everything thoroughly. My AC is running smoothly again. Excellent service in JVC, highly recommended!",
     },
     {
-      name: "Vikram Sharma",
-      role: "Retail Shop Manager, JVC",
-      quote:
-        "We have an annual maintenance contract (AMC) with FAJ for our commercial space in JVC. Reliable quarterly tune-ups, pristine maintenance logs, and zero downtime across the whole summer.",
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Arjun Kumar",
+      subtitle: "Resident",
+      description:
+        "I booked FAJ for HVAC services in JVC, and it was excellent. The technicians were skilled, reliable, and carried out the work with great attention to detail.",
+    },
+    {
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Shazia Sheikh",
+      subtitle: "Homeowner",
+      description:
+        "FAJ delivered great AC technical services. Their team was polite, professional, and fixed my cooling issue quickly. Excellent service overall, I will continue using them for future AC problems in JVC.",
+    },
+    {
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Ravi Mehta",
+      subtitle: "Resident",
+      description:
+        "I used FAJ for AC cleaning service, and it really improved my air quality. The team worked efficiently, cleaned every part, and made my AC run like new again.",
+    },
+    {
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Waseem Aqdas",
+      subtitle: "Homeowner",
+      description:
+        "Outstanding service from FAJ Technical! My AC wasn't cooling properly, but FAJ Technical came to the rescue. Quick response, friendly technician, and now my AC works perfectly. I highly recommend them!",
     },
   ],
 };
 
 const faqsData = {
   id: "location-faqs",
-  title: "AC Repair and Maintenance FAQs in JVC",
-  description:
-    "Got questions about AC repair, cleaning, or routine maintenance in JVC? Browse our most common answers below:",
+  title: "FAQ's",
+  description: "Got questions about AC repair, cleaning, or routine maintenance in JVC? Browse our most common answers below:",
   items: [
     {
-        "question": "How often should I service my AC in JVC?",
-        "answer": "Most AC systems should be serviced every 3 to 6 months to maintain good cooling performance"
+      "question": "How often should I service my AC in JVC?",
+      "answer": "Most AC systems should be serviced every 3 to 6 months to maintain good cooling performance"
     },
     {
-        "question": "Why is my AC running but not cooling?",
-        "answer": "<strong>Common reasons include:</strong><ul><li>Dirty Filters</li><li>Low Refrigerant</li><li>Blocked Coils</li><li>Thermostat Problems</li></ul>"
+      "question": "Why is my AC running but not cooling?",
+      "answer": "<stong>Common reasons include:</strong><ul><li>Dirty Filters</li><li>Low Refrigerant</li><li>Blocked Coils</li><li>Thermostat Problems</li></ul>"
     },
     {
-        "question": "Is same-day AC repair available in JVC?",
-        "answer": "Yes, same-day service may be available, but most of the time it depends on technician availability and the AC problem."
+      "question": "Is same-day AC repair available in JVC?",
+      "answer": "Yes, same-day service may be available, but most of the time it depends on technician availability and the AC problem."
     },
     {
-        "question": "Do you repair ducted AC systems?",
-        "answer": "Yes, our technicians repair and maintain ducted AC systems for residential and commercial properties."
+      "question": "Do you repair ducted AC systems?",
+      "answer": "Yes, our technicians repair and maintain ducted AC systems for residential and commercial properties."
     },
     {
-        "question": "What causes water leakage from an AC?",
-        "answer": "<ul><li>Blocked drain pipe</li><li>Frozen evaporator coil</li><li>Dirty air filter</li></ul>"
+      "question": "What causes water leakage from an AC?",
+      "answer": "<ul><li>Blocked drain pipe</li><li>Frozen evaporator coil</li><li>Dirty air filter</li></ul>"
     },
     {
-        "question": "Can AC cleaning improve air quality?",
-        "answer": "Yes, professional cleaning removes dust, mould, and bacteria that affect indoor air."
+      "question": "Can AC cleaning improve air quality?",
+      "answer": "Yes, professional cleaning removes dust, mould, and bacteria that affect indoor air."
     },
     {
-        "question": "Which AC brands do you repair?",
-        "answer": "<strong>We repair: </strong><ul><li>Daikin</li><li>LG</li><li>Samsung</li><li>Carrier</li><li>York</li><li>Mitsubishi</li><li>O General</li><li>Gree</li><li>Panasonic and many other brands.</li></ul>"
+      "question": "Which AC brands do you repair?",
+      "answer": "<strong>We repair: </strong><ul><li>Daikin</li><li>LG</li><li>Samsung</li><li>Carrier</li><li>York</li><li>Mitsubishi</li><li>O General</li><li>Gree</li><li>Panasonic and many other brands.</li></ul>"
     },
     {
-        "question": "What is included in AC maintenance?",
-        "answer": "<ul><li>Filter cleaning</li><li>Coil inspection</li><li>Drain cleaning</li><li>Thermostat testing</li><li>Performance check</li></ul>"
+      "question": "What is included in AC maintenance?",
+      "answer": "<ul><li>Filter cleaning</li><li>Coil inspection</li><li>Drain cleaning</li><li>Thermostat testing</li><li>Performance check</li></ul>"
     },
     {
-        "question": "Why is my AC making noise?",
-        "answer": "Your AC may be making noise because of loose parts, fan problems, or worn components, which are the most common causes of it."
+      "question": "Why is my AC making noise?",
+      "answer": "Your AC may be making noise because of loose parts, fan problems, or worn components, which are the most common causes of it."
     },
     {
-        "question": "Is an AMC worth it?",
-        "answer": "Yes, it prevents breakdowns and ensures efficient AC performance throughout the year."
+      "question": "Is an AMC worth it?",
+      "answer": "Yes, it prevents breakdowns and ensures efficient AC performance throughout the year."
     },
     {
-        "question": "How long does AC servicing take?",
-        "answer": "The typical time for most maintenance visits is approximately one hour. Remember, sometimes it will be increased because of the AC problem."
+      "question": "How long does AC servicing take?",
+      "answer": "The typical time for most maintenance visits is approximately one hour. Remember, sometimes it will be increased because of the AC problem."
     },
     {
-        "question": "Can you help lower electric bills?",
-        "answer": "Yes, a clean AC will have less of an impact on the environment and cool more efficiently."
+      "question": "Can you help lower electric bills?",
+      "answer": "Yes, a clean AC will have less of an impact on the environment and cool more efficiently."
     },
     {
-        "question": "Do you provide a warranty?",
-        "answer": "Yes, our AC cleaning services are guaranteed to be serviced for 60 days with a maintenance warranty"
+      "question": "Do you provide a warranty?",
+      "answer": "Yes, our AC cleaning services are guaranteed to be serviced for 60 days with a maintenance warranty"
     },
     {
-        "question": "Do I need to repair or replace my air conditioner?",
-        "answer": "YWhen repairs become regular, and the unit is quite old, it might be sensible to replace it in the long term."
+      "question": "Do I need to repair or replace my air conditioner?",
+      "answer": "YWhen repairs become regular, and the unit is quite old, it might be sensible to replace it in the long term."
     },
     {
-        "question": "What is the best way to get AC services in JVC?",
-        "answer": "Call FAJ Technical Services L.L.C and let us know where you are and when you're available, and we will get you an appointment."
+      "question": "What is the best way to get AC services in JVC?",
+      "answer": "Call FAJ Technical Services L.L.C and let us know where you are and when you're available, and we will get you an appointment."
     }
-],
+  ],
 };
 
 const bookingData = {
   id: "book-appointment",
   title: "Book An Appointment",
   description:
-    "Fill in the form below or call our 7-day hotline for immediate service dispatch across JVC.",
+    "Book your AC service appointment with our expert team in JVC. We provide professional AC installation, cleaning, maintenance, and repair services to keep your space cool and comfortable.",
   submitLabel: "Schedule Service Now",
 };
 

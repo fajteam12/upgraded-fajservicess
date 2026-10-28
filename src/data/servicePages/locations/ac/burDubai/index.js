@@ -38,29 +38,10 @@ const contactData = {
 const heroData = {
   title: "Top-Rated Air Conditioner Repair and Maintenance in Bur Dubai | AC Service Near Me",
   paragraphs: [
-    {
-      parts: [
-        "Say goodbye to hot rooms, sticky summer days, and poor air quality. Welcome to cool comfort, fresh air, and better sleep all year round.\n",
-        {
-          strong: true,
-          text: "FAJ Technical Services L.L.C",
-          href: "https://maps.app.goo.gl/soNMACLuaHwdCzKx7",
-          external: true,
-        },
-        " has been serving Dubai since 2010. We provide trusted ",
-        {
-          strong: true,
-          text: "AC service",
-          href: "https://www.youtube.com/watch?v=pkO_jobGdBo",
-          external: true,
-        },
-        ", AC cleaning service, and AC installation in Bur Dubai and nearby areas.",
-      ],
-    },
-    "Our expert team handles both home AC and commercial AC systems with fast response and professional service.",
+      "Say goodbye to hot rooms, sticky summer days, and poor air quality. Welcome to cool comfort, fresh air, and better sleep all year round."
   ],
   paragraph:
-    "Say goodbye to hot rooms, sticky summer days, and poor air quality. Welcome to cool comfort, fresh air, and better sleep all year round. FAJ Technical Services L.L.C has been serving Dubai since 2010. We provide trusted AC service, AC cleaning service, and AC installation in Bur Dubai and nearby areas. Our expert team handles both home AC and commercial AC systems with fast response and professional service.",
+    "Say goodbye to hot rooms, sticky summer days, and poor air quality. Welcome to cool comfort, fresh air, and better sleep all year round.",
   highlights: [
     {
       icon: "award",
@@ -100,12 +81,17 @@ const overviewData = {
           "text": "FAJ Technical Services L.L.C",
           "href": "/"
         },
-        " has been providing expert and professional air conditioner services in Dubai since 2010. We provide ",
+        " has been serving Dubai since 2010. We provide trusted ",
         {
-          "text": "AC repair",
+          "text": "AC service",
           "href": "/services/air-conditioning-repair/ac-service/"
         },
-        " services, cleaning, maintenance, and installation services in Bur Dubai. We have the expertise to assist you with your air conditioning repair, maintenance, or installation needs."
+        ", AC cleaning service, and AC installation in Bur Dubai and nearby areas."
+      ]
+    },
+    {
+      "parts": [
+        "Our expert team handles both home AC and commercial AC systems with fast response and professional service."
       ]
     }
   ],
@@ -118,7 +104,7 @@ const overviewData = {
 
 const areaOverviewData = {
   id: "bur-dubai-ac-services",
-  title: "Who provides the best AC repair services in Bur Dubai?",
+  title: "Best AC Repair in Bur Dubai",
   paragraphs: [
     "Looking for air conditioner repair near you in Bur Dubai? FAJ Technical Services L.L.C provides AC solutions for homes, apartments, villas, offices, shops, restaurants and commercial properties in Dubai and the UAE. Our experienced technicians can fix all types of air conditioning systems from repairs to complete installations.",
     {
@@ -337,32 +323,38 @@ const contractsData = {
 };
 
 const serviceOverviewData = {
-  id: "ac-repair-service-overview",
-  title: "Why Is My AC Not Cooling?",
-  description:
-    "A cooling problem is one of the most common AC problems in Dubai. In case you notice your AC is running but not cooling properly, there are several factors that may be responsible.",
-  paragraphs: [
-    "Common causes include: Dirty air filters, Low refrigerant gas, Blocked condenser coils, Faulty thermostat, Compressor problems, Electrical faults, Restricted airflow.",
-    "A professional AC inspection can identify the exact cause and prevent further damage to the system.",
+  "id": "ac-repair-service-overview",
+  "title": "Why Is My AC Not Cooling?",
+  "description": "A cooling problem is one of the most common AC problems in Dubai. In case you notice your AC is running but not cooling properly, there are several factors that may be responsible.",
+  "listTitle": "Common causes include:",
+  "checklist": [
+    "Dirty air filters",
+    "Low refrigerant gas",
+    "Blocked condenser coils",
+    "Faulty thermostat",
+    "Compressor problems",
+    "Electrical faults",
+    "Restricted airflow"
   ],
-  imageSide: "left",
-  image: {
-    id: "ac-service-page/ac-repair-and-service",
-    src: "/img/ac-service-page/ac-repair-and-service.webp",
-    alt: "FAJ technician servicing air conditioning in Bur Dubai",
-    width: 853,
-    height: 853,
+  "conclusion": "A professional AC inspection can identify the exact cause and prevent further damage to the system.",
+  "imageSide": "left",
+  "image": {
+    "id": "ac-service-page/ac-repair-and-service",
+    "src": "/img/ac-service-page/ac-repair-and-service.webp",
+    "alt": "FAJ technician servicing air conditioning in Bur Dubai",
+    "width": 853,
+    "height": 853
   },
-  showCta: true,
-  cta: {
-    phone: "tel:+971507464712",
-    whatsapp: "https://api.whatsapp.com/send?phone=+971507464712&text=Hello",
-  },
+  "showCta": true,
+  "cta": {
+    "phone": "tel:+971507464712",
+    "whatsapp": "https://api.whatsapp.com/send?phone=+971507464712&text=Hello"
+  }
 };
 
 const commonSignsData = {
   id: "ac-maintenance-signs",
-  title: "Which signs show the AC needs service?",
+  title: "Signs You Need An AC Service",
   intro:
     "If you notice any of these signs, you must contact an expert technician who can repair your AC professionally. We are here to assist your AC cooling system in achieving optimal efficiency.",
   items: [
@@ -444,8 +436,8 @@ const maintenanceImportanceData = {
   },
   showCta: true,
   cta: {
-    phone: "tel:+971507464712",
-    whatsapp: "https://api.whatsapp.com/send?phone=+971507464712&text=Hello",
+    phone: "",
+    whatsapp: "https://api.whatsapp.com/send?phone=+971507464712&text=Hello"
   },
 };
 
@@ -497,7 +489,7 @@ const maintenanceImportanceCardsData = {
 };
 
 const commonProblemsData = {
-  title: "Most Common AC Problems",
+  title: "Common AC Problems That May Require Maintenance",
   description: "",
   items: [
     {
@@ -550,7 +542,7 @@ const commonProblemsData = {
 
 const servicesOfferedData = {
   id: "ac-services-offered",
-  title: "Professional Air Conditioning Services in Bur Dubai",
+  title: "HERE ARE THE SERVICES WE OFFER FOR AIR CONDITIONING SYSTEMS",
   description:
     "Are you searching for reliable air conditioning services in Bur Dubai? FAJ Technical Services L.L.C provides excellent AC repair and AC cleaning service right at your doorstep. Our team of experts is committed to providing your comfort with excellent service.",
   imageSide: "right",
@@ -570,7 +562,7 @@ const servicesOfferedData = {
 
 const servicesOfferedCardsData = {
   id: "ac-services-offered-cards",
-  title: "Professional Air Conditioning Services in Bur Dubai",
+  title: "HERE ARE THE SERVICES WE OFFER FOR AIR CONDITIONING SYSTEMS",
   items: [
     {
       icon: "ac-wrench",
@@ -638,7 +630,7 @@ const benefitsData = {
     {
       id: "ac-cooling",
       number: "01",
-      title: "Cooling Efficiency",
+      title: "COOLING EFFICIENCY",
       description:
         "We perform a thorough evaluation of AC cooling efficiency with the use of a temperature gun.",
       icon: "snowflake",
@@ -662,7 +654,7 @@ const benefitsData = {
     {
       id: "ac-thermostat",
       number: "04",
-      title: "Thermostat Check",
+      title: "THERMOSTAT CHECK",
       description:
         "We use a laser temperature gauge to confirm that the air conditioning thermostats are functioning properly.",
       icon: "ac-thermostat",
@@ -670,7 +662,7 @@ const benefitsData = {
     {
       id: "ac-airflow",
       number: "05",
-      title: "Airflow Balance",
+      title: "AIRFLOW BALANCE",
       description:
         "We ensure optimal airflow from your air conditioning system in each room as needed.",
       icon: "wind",
@@ -678,7 +670,7 @@ const benefitsData = {
     {
       id: "ac-feedback",
       number: "06",
-      title: "Customer Feedback",
+      title: "CUSTOMER FEEDBACK",
       description:
         "Our team provides essential feedback on your air conditioning health and any necessary repair.",
       icon: "customer-feedback",
@@ -871,7 +863,7 @@ const brandsData = {
 
 const beforeAfterData = {
   id: "recent-completed-service",
-  title: "Recent Completed Projects",
+  title: "Recent Completed Service",
   description:
     "See the real results of our thorough air conditioning maintenance and deep cleaning service in Bur Dubai.",
   beforeLabel: "Before",
@@ -1115,7 +1107,7 @@ const newsData = {
       description:
         "A properly functioning air conditioning system is essential for various settings, including homes, offices, and individual spaces. According to HVAC Webmasters, over 70%",
       href: "/blog/10-common-ac-problems-and-how-to-fix-them/",
-      actionLabel: "Read Article",
+      actionLabel: "Read More",
     },
     {
       icon: "dollar-savings",
@@ -1126,7 +1118,7 @@ const newsData = {
       description:
         "Air conditioning is excellent for keeping you comfortable indoors but can be expensive. But there is no need to worry, there are some ways to reduce AC electric bill with",
       href: "/blog/how-to-save-money-on-ac/",
-      actionLabel: "Read Article",
+      actionLabel: "Read More",
     },
     {
       icon: "wind",
@@ -1137,7 +1129,7 @@ const newsData = {
       description:
         "As the temperatures rise and summer approaches, the desire for a cool and comfortable escape within your home intensifies. Air conditioning offers a seemingly simple solu",
       href: "/blog/how-to-choose-the-best-air-conditioner-for-home/",
-      actionLabel: "Read Article",
+      actionLabel: "Read More",
     },
   ],
   footer: {
@@ -1154,115 +1146,93 @@ const newsData = {
 
 const faqsData = {
   id: "ac-service-bur-dubai-faqs",
-  title: "AC Repair and Maintenance in Bur Dubai FAQs",
-  description:
-    "Answers about AC servicing, cleaning, cooling faults and maintenance in Bur Dubai.",
+  title: "FAQ's",
+  description: "Answers about AC servicing, cleaning, cooling faults and maintenance in Bur Dubai.",
   items: [
     {
-      question: "How much does AC repair cost in Bur Dubai?",
-      answer:
-        "AC service in Dubai typically costs between AED 230 to AED 765 depending on the type of service. Prices vary based on the unit's size and condition, as well as the service provider.",
+      "question": "How much does AC repair cost in Bur Dubai?",
+      "answer": "AC service in Dubai typically costs between AED 230 to AED 765 depending on the type of service. Prices vary based on the unit&apos;s size and condition, as well as the service provider."
     },
     {
-      question: "What are the signs that my AC needs immediate repair?",
-      answer:
-        "Common warning signs include:\n- Weak cooling performance\n- Water leakage\n- Burning smell\n- Strange noises\n- High electricity bills\n- Frequent shutdowns",
+      "question": "What are the signs that my AC needs immediate repair?",
+      "answer": "<strong>Common warning signs include:</strong> <ul><li>Weak cooling performance</li><li>Water leakage</li><li>Burning smell</li><li>Strange noises</li><li>High electricity bills</li><li>Frequent shutdowns</li></ul>"
     },
     {
-      question: "Which AC systems do you repair?",
-      answer:
-        "We repair and maintain:\n- Window AC\n- Split AC\n- Central AC\n- Chiller AC\n- FCU Systems\n- Package Unit AC\n- Portable AC\n- Ducted Split AC\n- Ceiling AC\n- Inverter AC",
+      "question": "Which AC systems do you repair?",
+      "answer": "<strong>We repair and maintain:</strong> <ul><li>Window AC</li><li>Split AC</li><li>Central AC</li><li>Chiller AC</li><li>FCU Systems</li><li>Package Unit AC</li><li>Portable AC</li><li>Ducted Split AC</li><li>Ceiling AC</li><li>Inverter AC</li></ul>"
     },
     {
-      question: "How often should AC be serviced in Dubai?",
-      answer:
-        "Most residential air conditioning systems should be professionally serviced every six months. Commercial systems and heavily used units may require more frequent maintenance.",
+      "question": "How often should AC be serviced in Dubai?",
+      "answer": "Most residential air conditioning systems should be professionally serviced every six months. Commercial systems and heavily used units may require more frequent maintenance."
     },
     {
-      question: "Is an AMC worth it for air conditioning systems?",
-      answer:
-        "Yes. An Annual Maintenance Contract helps reduce breakdowns, improve cooling efficiency, lower repair costs, improve indoor air quality, and extend equipment lifespan.",
+      "question": "Is an AMC worth it for air conditioning systems?",
+      "answer": "Yes. An Annual Maintenance Contract helps reduce breakdowns, improve cooling efficiency, lower repair costs, improve indoor air quality, and extend equipment lifespan."
     },
     {
-      question: "Why is my AC running but not cooling?",
-      answer:
-        "This can happen because of dirty filters, low refrigerant levels, blocked coils, thermostat faults, compressor issues, or restricted airflow. A professional inspection can identify the exact cause.",
+      "question": "Why is my AC running but not cooling?",
+      "answer": "This can happen because of dirty filters, low refrigerant levels, blocked coils, thermostat faults, compressor issues, or restricted airflow. A professional inspection can identify the exact cause."
     },
     {
-      question: "Can AC cleaning reduce electricity bills?",
-      answer:
-        "Yes. Cleaning filters, coils, and drainage systems helps the unit operate more efficiently, reducing unnecessary energy consumption.",
+      "question": "Can AC cleaning reduce electricity bills?",
+      "answer": "Yes. Cleaning filters, coils, and drainage systems helps the unit operate more efficiently, reducing unnecessary energy consumption."
     },
     {
-      question: "Do you provide same-day AC repair near me in Bur Dubai?",
-      answer:
-        "Yes. Depending on technician availability and the nature of the issue, same-day AC repair services may be available for residential and commercial customers.",
+      "question": "Do you provide same-day AC repair near me in Bur Dubai?",
+      "answer": "Yes. Depending on technician availability and the nature of the issue, same-day AC repair services may be available for residential and commercial customers."
     },
     {
-      question: "What AC brands do you service?",
-      answer:
-        "We service major brands including Daikin, LG, Samsung, O General, Mitsubishi, Carrier, York, Trane, Panasonic, Gree, Hitachi, Toshiba, Super General, Lennox, Rheem, Midea, Goodman, SKM, McQuay, and Blue Star.",
+      "question": "What AC brands do you service?",
+      "answer": "We service major brands including Daikin, LG, Samsung, O General, Mitsubishi, Carrier, York, Trane, Panasonic, Gree, Hitachi, Toshiba, Super General, Lennox, Rheem, Midea, Goodman, SKM, McQuay, and Blue Star."
     },
     {
-      question: "What are the benefits of regular AC maintenance?",
-      answer:
-        "Regular maintenance helps:\n- Improve cooling efficiency\n- Lower electricity bills\n- Improve indoor air quality\n- Reduce breakdown risks\n- Extend equipment lifespan\n- Maintain consistent airflow\n- Protect major AC components",
+      "question": "What are the benefits of regular AC maintenance?",
+      "answer": "<strong>Regular maintenance helps:</strong><ul><li>Improve cooling efficiency</li><li>Lower electricity bills</li><li>Improve indoor air quality</li><li>Reduce breakdown risks</li><li>Extend equipment lifespan</li><li>Maintain consistent airflow</li><li>Protect major AC components</li></ul>"
     },
     {
-      question: "How often should AC ducts be cleaned?",
-      answer:
-        "AC ducts should be cleaned every 2-3 years, or more frequently if you notice dust accumulation, poor airflow, or a musty smell. Regular cleaning ensures better air quality and system efficiency.",
+      "question": "How often should AC ducts be cleaned?",
+      "answer": "AC ducts should be cleaned every 2-3 years, or more frequently if you notice dust accumulation, poor airflow, or a musty smell. Regular cleaning ensures better air quality and system efficiency."
     },
     {
-      question: "How long does an AC repair usually take?",
-      answer:
-        "Most repairs take one to three hours. It really depends on what's wrong with the AC and if we have the parts we need.",
+      "question": "How long does an AC repair usually take?",
+      "answer": "Most repairs take one to three hours. It really depends on what's wrong with the AC and if we have the parts we need."
     },
     {
-      question: "Is it better to repair or replace my AC?",
-      answer:
-        "If fixing your AC costs half of what a new one costs and your AC is over 10 years old it's often better to get a new one. New ACs save you money on energy too.",
+      "question": "Is it better to repair or replace my AC?",
+      "answer": "If fixing your AC costs half of what a new one costs and your AC is over 10 years old it's often better to get a new one. New ACs save you money on energy too."
     },
     {
-      question: "Can I clean my AC myself?",
-      answer:
-        "You can clean the covers and washable filters yourself. For deep cleaning of coils and drains you need a professional.",
+      "question": "Can I clean my AC myself?",
+      "answer": "You can clean the covers and washable filters yourself. For deep cleaning of coils and drains you need a professional."
     },
     {
-      question: "Do you provide emergency AC repair services?",
-      answer:
-        "Yes, we provide emergency repair services to fix breakdowns, leaks, electrical faults and compressor failures. We know AC problems are urgent.",
+      "question": "Do you provide emergency AC repair services?",
+      "answer": "Yes, we provide emergency repair services to fix breakdowns, leaks, electrical faults and compressor failures. We know AC problems are urgent."
     },
     {
-      question: "How can I improve my AC cooling without calling a technician?",
-      answer:
-        "Follow these steps carefully:\n- Close all windows\n- Clean the filters\n- Keep the unit clear\n- Set the thermostat to a temperature\n- Extend equipment lifespan",
+      "question": "How can I improve my AC cooling without calling a technician?",
+      "answer": "<strong>Follow these steps carefully:</strong><ul><li>Close all windows </li><li>Clean the filters</li><li>Keep the unit clear</li><li>Set the thermostat to a temperature</li><li>Extend equipment lifespan</li></ul>"
     },
     {
-      question: "Why does my AC smell bad when I turn it on?",
-      answer:
-        "Mold or bacteria inside the AC cause smells. Professional cleaning removes the source completely.",
+      "question": "Why does my AC smell bad when I turn it on?",
+      "answer": "Mold or bacteria inside the AC cause smells. Professional cleaning removes the source completely."
     },
     {
-      question: "What happens if I skip AC servicing for a year?",
-      answer:
-        "- Your AC's efficiency drops\n- Your bills go up\n- Parts wear out faster\n- Small problems become expensive repairs",
+      "question": "What happens if I skip AC servicing for a year?",
+      "answer": "<ul><li>Your AC's efficiency drops</li><li>Your bills go up</li><li>Parts wear out faster</li> <li>Small problems become expensive repairs</li></ul>"
     },
     {
-      question: "Does AC servicing include checking the gas level?",
-      answer:
-        "Yes, it does. Technicians check the gas level. If it's low they find the leak and recharge the system.",
+      "question": "Does AC servicing include checking the gas level?",
+      "answer": "Yes, it does. Technicians check the gas level. If it's low they find the leak and recharge the system."
     },
     {
-      question: "How do I know if my AC needs a gas refill?",
-      answer:
-        "If your AC runs but the air is not cold enough you might need a gas refill. Only a technician can confirm this.",
+      "question": "How do I know if my AC needs a gas refill?",
+      "answer": "If your AC runs but the air is not cold enough you might need a gas refill. Only a technician can confirm this."
     },
     {
-      question: "Can I use my AC while it is leaking water?",
-      answer:
-        "No, turn it off. A leaking AC can damage your floors and walls. Call a technician to fix it.",
-    },
+      "question": "Can I use my AC while it is leaking water?",
+      "answer": "No, turn it off. A leaking AC can damage your floors and walls. Call a technician to fix it."
+    }
   ],
 };
 

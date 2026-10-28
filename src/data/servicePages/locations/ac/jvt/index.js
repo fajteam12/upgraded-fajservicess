@@ -45,7 +45,7 @@ const heroData = {
   paragraph:
     "Jumeirah Village Triangle (JVT) is a peaceful and quiet residential development that boasts villas, townhouses, apartment complexes, parks, schools, and local shops. Since air conditioners run for many hours every day, regular servicing is important to keep your home comfortable and avoid unexpected breakdowns during Dubai's hot weather.",
   paragraphs: [
-    "Jumeirah Village Triangle (JVT) is a peaceful and quiet residential development that boasts villas, townhouses, apartment complexes, parks, schools, and local shops. Since air conditioners run for many hours every day, regular servicing is important to keep your home comfortable and avoid unexpected breakdowns during Dubai's hot weather.",
+    "Jumeirah Village Triangle (JVT) is a peaceful and quiet residential development that boasts villas, townhouses, apartment complexes, parks, schools, and local shops. Since air conditioners run for many hours every day, regular servicing is important to keep your home comfortable and avoid unexpected breakdowns during Dubai's hot weather."
   ],
   highlights: [
     {
@@ -94,29 +94,20 @@ const overviewData = {
   paragraphs: [
     {
       parts: [
-        {
-          text: "FAJ Technical Services L.L.C",
-          href: "/",
-        },
-        " has been providing expert and professional air conditioner services in Dubai since 2010. We provide ",
-        {
-          text: "AC repair",
-          href: "/services/air-conditioning-repair/ac-service/",
-        },
-        " services, cleaning, maintenance, and installation services in JVT. We have the expertise to assist you with your air conditioning repair, maintenance, or installation needs.",
-      ],
-    },
+        "Since 2010, FAJ Technical Services L.L.C has been offering professional AC repair and maintenance services throughout Dubai. In JVT, we provide AC repair, AC cleaning, AC maintenance, and AC installation services all over the town. From routine maintenance to critical repair, our skilled technicians are at your service."
+]
+    }
   ],
   showCta: false,
   cta: {
     phone: "",
-    whatsapp: "https://api.whatsapp.com/send?phone=+971507464712&text=Hello",
-  },
+    whatsapp: "https://api.whatsapp.com/send?phone=+971507464712&text=Hello"
+  }
 };
 
 const areaOverviewData = {
   id: "area-ac-services",
-  title: "Who provides the best AC repair services in Jumeirah Village Triangle?",
+  title: "Best AC Repair in JVT",
   paragraphs: [
     "When cooling issues have become a problem, it's crucial to find a trusted AC company, especially during the extreme heat of Dubai's summer months. FAJ Technical Services L.L.C offers reliable AC repair and maintenance in JVT across apartments, townhouses, villas, restaurants, and other commercial spaces. Our focus is on long-lasting performance and quality work, rather than fast fixes.",
   ],
@@ -355,7 +346,7 @@ const serviceOverviewData = {
 
 const commonSignsData = {
   id: "ac-maintenance-signs",
-  title: "Which signs show the AC needs service?",
+  title: "Signs You Need An AC Service",
   intro:
     "A significant number of ACs have signs that appear before the system breaks down. Knowing these signs early will help avoid bigger problems and expensive repairs.",
   items: [
@@ -382,14 +373,8 @@ const repairPriceData = {
 const videoData = {
   id: "ac-service-video",
   title: "Emergency AC Repair Service in JVT",
-  lead: {
-    parts: [
-      "Unexpected AC breakdowns require fast attention. When cooling fails during high temperatures, you need rapid, reliable assistance. At ",
-      { text: "FAJ Technical Services L.L.C", href: "/" },
-      ", our technicians quickly restore proper cooling across JVT.",
-    ],
-  },
-  listTitle: "Our emergency AC repair service covers:",
+  lead: "A sudden AC breakdown can affect comfort, productivity, and indoor air quality.",
+  listTitle: "Our emergency AC repair service can help with:",
   items: [
     "AC not cooling",
     "AC not turning on",
@@ -401,27 +386,43 @@ const videoData = {
     "Unusual noises",
   ],
   conclusion:
-    "Our team provides fast support for villas, townhouses, and residential apartments across JVT.",
+    "We provide fast assistance for residential and commercial customers throughout JVT and nearby areas.",
+  description: [
+    "A sudden AC breakdown can affect comfort, productivity, and indoor air quality.",
+    "Our emergency AC repair service can help with: AC not cooling, AC not turning on, water leakage, electrical faults, thermostat issues, compressor failures, weak airflow, and unusual noises.",
+    "We provide fast assistance for residential and commercial customers throughout JVT and nearby areas.",
+  ],
+  frameTitle: "Air-conditioning repair and maintenance service video in JVT",
   videoId: "prUR0-lZlzg",
   videoSide: "left",
   image: {
     id: "indoor-ac-servicing",
     src: "/img/indoor-ac-servicing.webp",
-    alt: "Emergency AC Repair Service in JVT",
+    alt: "FAJ AC technician providing express and emergency AC repair in JVT",
     width: 600,
     height: 400,
   },
   variant: "framed",
-  showCta: false,
-  cta: {
-    phone: "",
-    whatsapp: "",
+  blockInteraction: true,
+  allowFullScreen: false,
+  parameters: {
+    autoplay: "1",
+    mute: "0",
+    controls: "0",
+    modestbranding: "1",
+    rel: "0",
+    showinfo: "0",
+    loop: "1",
+    playlist: "prUR0-lZlzg",
+    playsinline: "1",
+    cc_load_policy: "0",
+    disablekb: "1",
   },
 };
 
 const maintenanceImportanceData = {
   id: "ac-maintenance-importance",
-  title: "Why is AC Maintenance Service Important in Jumeirah Village Triangle?",
+  title: "Why is AC Maintenance Service Important in JVT?",
   paragraphs: [
     "JVT is a residential neighbourhood in which families spend much of their time inside. Dubai has a hot climate as such, the ACs here do a lot of work all year round. Regular maintenance helps to increase performance and prevent unwanted failures.",
   ],
@@ -433,10 +434,10 @@ const maintenanceImportanceData = {
     width: 600,
     height: 400,
   },
-  showCta: false,
+  showCta: true,
   cta: {
     phone: "",
-    whatsapp: "https://api.whatsapp.com/send?phone=+971507464712&text=Hello",
+    whatsapp: "https://api.whatsapp.com/send?phone=+971507464712&text=Hello"
   },
 };
 
@@ -485,7 +486,7 @@ const maintenanceImportanceCardsData = {
 
 const commonProblemsData = {
   id: "common-problems",
-  title: "Most Common AC Problems",
+  title: "Common AC Problems That May Require Maintenance",
   subtitle:
     "We provide fast diagnosis and professional repair for all major air conditioning faults across JVT:",
   columns: "four",
@@ -564,7 +565,7 @@ const commonProblemsData = {
 
 const servicesOfferedData = {
   id: "services-offered-overview",
-  title: "Professional Air Conditioning Services in JVT",
+  title: "HERE ARE THE SERVICES WE OFFER FOR AIR CONDITIONING SYSTEMS",
   items: [
     {
       icon: "wrench",
@@ -609,7 +610,7 @@ const servicesOfferedData = {
 
 const servicesOfferedCardsData = {
   id: "services-offered-cards",
-  title: "Professional Air Conditioning Services in JVT",
+  title: "HERE ARE THE SERVICES WE OFFER FOR AIR CONDITIONING SYSTEMS",
   columns: "three",
   items: [
     {
@@ -870,7 +871,7 @@ const whyChooseUsData = {
 
 const beforeAfterData = {
   id: "recent-completed-service",
-  title: "Recent Completed Projects",
+  title: "Recent Completed Service",
   description:
     "See the real results of our thorough air conditioning maintenance and deep cleaning service in JVT.",
   beforeLabel: "Before",
@@ -988,7 +989,7 @@ const brandsData = {
 
 const sparePartsRepairData = {
   id: "ac-spare-parts-and-repair",
-  title: "We Handle All Types of AC Systems",
+  title: "We Specialise in All Types of AC Systems",
   columns: [
     {
       title: "Air Conditioning Systems Serviced Across JVT:",
@@ -1143,7 +1144,7 @@ const newsData = {
       description:
         "A properly functioning air conditioning system is essential for various settings, including homes, offices, and individual spaces. According to HVAC Webmasters, over 70%",
       href: "/blog/10-common-ac-problems-and-how-to-fix-them/",
-      actionLabel: "Read Article",
+      actionLabel: "Read More",
     },
     {
       icon: "dollar-savings",
@@ -1154,7 +1155,7 @@ const newsData = {
       description:
         "Air conditioning is excellent for keeping you comfortable indoors but can be expensive. But there is no need to worry, there are some ways to reduce AC electric bill with",
       href: "/blog/how-to-save-money-on-ac/",
-      actionLabel: "Read Article",
+      actionLabel: "Read More",
     },
     {
       icon: "wind",
@@ -1165,7 +1166,7 @@ const newsData = {
       description:
         "As the temperatures rise and summer approaches, the desire for a cool and comfortable escape within your home intensifies. Air conditioning offers a seemingly simple solu",
       href: "/blog/how-to-choose-the-best-air-conditioner-for-home/",
-      actionLabel: "Read Article",
+      actionLabel: "Read More",
     },
   ],
   footer: {
@@ -1181,102 +1182,131 @@ const newsData = {
 };
 
 const testimonialsData = {
-  id: "testimonials",
+  id: "ac-service-reviews",
   title: "Customer Reviews",
   description:
-    "Read genuine reviews from homeowners, landlords and facility managers who rely on FAJ Technical Services L.L.C for their HVAC maintenance in JVT.",
+    "Customer feedback on FAJ air-conditioning repair and maintenance services in JVT.",
   items: [
     {
-      name: "Sultan Al Nuaimi",
-      role: "JVT Villa Owner, District 4",
-      quote:
-        "Our split AC units were barely cooling during extreme humidity. FAJ arrived on the same day, checked gas pressure, cleaned the filters, and fixed an electrical connection. Prompt, courteous, and efficient service!",
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Sara Malik",
+      subtitle: "JVT Resident",
+      description:
+        "FAJ provided professional split AC service for my apartment. The team was skilled, cleaned everything properly, and restored cooling performance. Very satisfied with their quick and reliable service in JVT.",
     },
     {
-      name: "Charlotte Evans",
-      role: "Townhouse Resident, JVT",
-      quote:
-        "Excellent experience with FAJ AC maintenance team. They performed complete coil flushing and unblocked a messy drain line. The technicians were clean, polite, and left zero mess.",
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Al Mansoori",
+      subtitle: "JVT Resident",
+      description:
+        "Great experience with FAJ’s air conditioner service. The technicians were professional, friendly, and checked everything thoroughly. My AC is running smoothly again. Excellent service in JVT, highly recommended!",
     },
     {
-      name: "Rashid Qureshi",
-      role: "Property Landlord in JVT",
-      quote:
-        "I trust FAJ with all AC maintenance contracts across my rental units in JVT. Honest pricing, thorough diagnostic reports, and great warranty coverage. Highly recommended!",
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Arjun Kumar",
+      subtitle: "Resident",
+      description:
+        "I booked FAJ for HVAC services in JVT, and it was excellent. The technicians were skilled, reliable, and carried out the work with great attention to detail.",
+    },
+    {
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Shazia Sheikh",
+      subtitle: "Homeowner",
+      description:
+        "FAJ delivered great AC technical services. Their team was polite, professional, and fixed my cooling issue quickly. Excellent service overall, I will continue using them for future AC problems in JVT.",
+    },
+    {
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Ravi Mehta",
+      subtitle: "Resident",
+      description:
+        "I used FAJ for AC cleaning service, and it really improved my air quality. The team worked efficiently, cleaned every part, and made my AC run like new again.",
+    },
+    {
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Waseem Aqdas",
+      subtitle: "Homeowner",
+      description:
+        "Outstanding service from FAJ Technical! My AC wasn't cooling properly, but FAJ Technical came to the rescue. Quick response, friendly technician, and now my AC works perfectly. I highly recommend them!",
     },
   ],
 };
 
 const faqsData = {
   id: "location-faqs",
-  title: "AC Repair and Maintenance FAQs in JVT",
-  description:
-    "Got questions about AC repair, cleaning, or routine maintenance in JVT? Browse our most common answers below:",
+  title: "FAQ's",
+  description: "Got questions about AC repair, cleaning, or routine maintenance in JVT? Browse our most common answers below:",
   items: [
     {
-        "question": "How often should I service my AC in JVT?",
-        "answer": "Cooling efficiency is maintained, and breakdowns are minimised with a professional service every 3 to 6 months."
+      "question": "How often should I service my AC in JVT?",
+      "answer": "Cooling efficiency is maintained, and breakdowns are minimised with a professional service every 3 to 6 months."
     },
     {
-        "question": "Why does my Air Conditioner blow hot air?",
-        "answer": "<strong>It may be due to the following:</strong><ul><li>Dirty filters</li><li>Low refrigerant</li><li>Compressor faults</li><li>Thermostat problems</li></ul>"
+      "question": "Why does my Air Conditioner blow hot air?",
+      "answer": "<strong>It may be due to the following:</strong><ul><li>Dirty filters</li><li>Low refrigerant</li><li>Compressor faults</li><li>Thermostat problems</li></ul>"
     },
     {
-        "question": "Is the same-day AC repair service offered in JVT?",
-        "answer": "Yes, but it depends on the technician's availability and the issues of you AC unit; same-day service may be available."
+      "question": "Is the same-day AC repair service offered in JVT?",
+      "answer": "Yes, but it depends on the technician's availability and the issues of you AC unit; same-day service may be available."
     },
     {
-        "question": "What AC unit would be best for a villa in JVT?",
-        "answer": "Central AC and Ducted Split AC systems are commonly used because they cool multiple rooms efficiently."
+      "question": "What AC unit would be best for a villa in JVT?",
+      "answer": "Central AC and Ducted Split AC systems are commonly used because they cool multiple rooms efficiently."
     },
     {
-        "question": "What causes AC water leakage?",
-        "answer": "<strong>Common causes include:</strong><ul><li>Blocked drain pipe</li><li>Frozen evaporator coil</li><li>Dirty air filter</li></ul>"
+      "question": "What causes AC water leakage?",
+      "answer": "<strong>Common causes include:</strong><ul><li>Blocked drain pipe</li><li>Frozen evaporator coil</li><li>Dirty air filter</li></ul>"
     },
     {
-        "question": "Can AC cleaning improve indoor air quality?",
-        "answer": "Yes, professional cleaning removes dust, mould, and bacteria from the system and helps to improve the air quality or reduce energy bills."
+      "question": "Can AC cleaning improve indoor air quality?",
+      "answer": "Yes, professional cleaning removes dust, mould, and bacteria from the system and helps to improve the air quality or reduce energy bills."
     },
     {
-        "question": "What is included in AC maintenance?",
-        "answer": "<strong>Maintenance includes:</strong><ul><li>Filter cleaning</li><li>Coil inspection</li><li>Drain cleaning</li><li>Thermostat testing</li><li>Cooling performance check</li></ul>"
+      "question": "What is included in AC maintenance?",
+      "answer": "<strong>Maintenance includes:</strong><ul><li>Filter cleaning</li><li>Coil inspection</li><li>Drain cleaning</li><li>Thermostat testing</li><li>Cooling performance check</li></ul>"
     },
     {
-        "question": "Which AC brands do you repair?",
-        "answer": "<strong>We repair</strong><ul><li>Daikin</li><li>LG</li><li>Samsung</li><li>Carrier</li><li>York</li><li>Mitsubishi</li><li>O General</li><li>Gree</li><li>Panasonic, and many other brands.</li></ul>"
+      "question": "Which AC brands do you repair?",
+      "answer": "<strong>We repair</strong><ul><li>Daikin</li><li>LG</li><li>Samsung</li><li>Carrier</li><li>York</li><li>Mitsubishi</li><li>O General</li><li>Gree</li><li>Panasonic, and many other brands.</li></ul>"
     },
     {
-        "question": "Is an AMC worth having?",
-        "answer": "Yes, regular servicing will minimise breakdowns and will extend the lifespan of your AC."
+      "question": "Is an AMC worth having?",
+      "answer": "Yes, regular servicing will minimise breakdowns and will extend the lifespan of your AC."
     },
     {
-        "question": "Do you repair ACs in townhouses and apartments?",
-        "answer": "Yes, we offer AC services for offices, townhouses, villas, apartments and commercial buildings in JVT."
+      "question": "Do you repair ACs in townhouses and apartments?",
+      "answer": "Yes, we offer AC services for offices, townhouses, villas, apartments and commercial buildings in JVT."
     },
     {
-        "question": "What is the time needed for AC maintenance?",
-        "answer": "The time spent on the maintenance depends on the situation of the system and is approximately 1 hour."
+      "question": "What is the time needed for AC maintenance?",
+      "answer": "The time spent on the maintenance depends on the situation of the system and is approximately 1 hour."
     },
     {
-        "question": "Can regular servicing lower electricity bills?",
-        "answer": "Yes, if the AC is well-maintained, it will be more efficient and run on less electricity."
+      "question": "Can regular servicing lower electricity bills?",
+      "answer": "Yes, if the AC is well-maintained, it will be more efficient and run on less electricity."
     },
     {
-        "question": "Do your AC services include a warranty?",
-        "answer": "Yes, our AC cleaning and maintenance services include a 60-day service warranty."
+      "question": "Do your AC services include a warranty?",
+      "answer": "Yes, our AC cleaning and maintenance services include a 60-day service warranty."
     },
     {
-        "question": "How can I book AC service in JVT?",
-        "answer": "YSimply contact FAJ Technical Services L.L.C, share your location and preferred appointment time, and our team will schedule a suitable visit."
+      "question": "How can I book AC service in JVT?",
+      "answer": "YSimply contact FAJ Technical Services L.L.C, share your location and preferred appointment time, and our team will schedule a suitable visit."
     }
-],
+  ],
 };
 
 const bookingData = {
   id: "book-appointment",
   title: "Book An Appointment",
   description:
-    "Fill in the form below or call our 7-day hotline for immediate service dispatch across JVT.",
+    "Book your AC service appointment with our expert team in JVT. We provide professional AC installation, cleaning, maintenance, and repair services to keep your space cool and comfortable.",
   submitLabel: "Schedule Service Now",
 };
 

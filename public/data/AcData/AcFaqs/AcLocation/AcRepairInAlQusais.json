@@ -1,63 +1,92 @@
 [
-  {  
+  {
     "title": "What is the price of AC repair in Al Qusais?",
-    "desc": "Cost will vary according to the type of AC, the problem and parts required. A clear quote will be provided after inspection."
+    "desc": "Cost will vary according to the type of AC, the problem and parts required. A clear quote will be provided after inspection.",
+    "question": "What is the price of AC repair in Al Qusais?",
+    "answer": "Cost will vary according to the type of AC, the problem and parts required. A clear quote will be provided after inspection."
   },
   {
     "title": "How often should I service my AC in Al Qusais?",
-    "desc": "We recommend servicing every 6 months. This ensures that the system operates smoothly and prevents unexpected failures."
+    "desc": "We recommend servicing every 6 months. This ensures that the system operates smoothly and prevents unexpected failures.",
+    "question": "How often should I service my AC in Al Qusais?",
+    "answer": "We recommend servicing every 6 months. This ensures that the system operates smoothly and prevents unexpected failures."
   },
   {
     "title": "Why does my air conditioner not cool well?",
-    "desc": "These are the typical reasons. It will be discovered with a professional check-up.<ul><li>Dirty filters</li><li>Low gas</li><li>Blocked coils</li><li>Compressor problems</li></ul>"
+    "desc": "These are the typical reasons. It will be discovered with a professional check-up.<ul><li>Dirty filters</li><li>Low gas</li><li>Blocked coils</li><li>Compressor problems</li></ul>",
+    "question": "Why does my air conditioner not cool well?",
+    "answer": "These are the typical reasons. It will be discovered with a professional check-up.<ul><li>Dirty filters</li><li>Low gas</li><li>Blocked coils</li><li>Compressor problems</li></ul>"
   },
   {
     "title": "Do you provide AC services for apartments in Al Qusais?",
-    "desc": "Yes, we do provide rentals for apartments, villas, schools, clinics and shops in Al Qusais."
+    "desc": "Yes, we do provide rentals for apartments, villas, schools, clinics and shops in Al Qusais.",
+    "question": "Do you provide AC services for apartments in Al Qusais?",
+    "answer": "Yes, we do provide rentals for apartments, villas, schools, clinics and shops in Al Qusais."
   },
   {
     "title": "Why is AC water leaking?",
-    "desc": "A blocked drain pipe, Frozen coils, and dirty filters are the most frequent causes of water leaks."
+    "desc": "A blocked drain pipe, Frozen coils, and dirty filters are the most frequent causes of water leaks.",
+    "question": "Why is AC water leaking?",
+    "answer": "A blocked drain pipe, Frozen coils, and dirty filters are the most frequent causes of water leaks."
   },
   {
     "title": "Can AC cleaning improve cooling?",
-    "desc": "Yes, there is a significant difference between cleaning and not cleaning. It gets rid of dust and allows better airflow, cooling the AC quicker."
+    "desc": "Yes, there is a significant difference between cleaning and not cleaning. It gets rid of dust and allows better airflow, cooling the AC quicker.",
+    "question": "Can AC cleaning improve cooling?",
+    "answer": "Yes, there is a significant difference between cleaning and not cleaning. It gets rid of dust and allows better airflow, cooling the AC quicker."
   },
   {
     "title": "Are you a same-day AC repair company in Al Qusais?",
-    "desc": "When possible, we attempt to deliver same-day service. This will depend on the problem and when we are available."
+    "desc": "When possible, we attempt to deliver same-day service. This will depend on the problem and when we are available.",
+    "question": "Are you a same-day AC repair company in Al Qusais?",
+    "answer": "When possible, we attempt to deliver same-day service. This will depend on the problem and when we are available."
   },
   {
     "title": "Which AC brands do you repair?",
-    "desc": "<p>We repair all major brands such as:</p><p>Daikin, LG, Samsung, O General, Mitsubishi, Carrier, York, Trane, Gree, Panasonic, and many other brands</p>"
+    "desc": "<p>We repair all major brands such as:</p><p>Daikin, LG, Samsung, O General, Mitsubishi, Carrier, York, Trane, Gree, Panasonic, and many other brands</p>",
+    "question": "Which AC brands do you repair?",
+    "answer": "<p>We repair all major brands such as:</p><p>Daikin, LG, Samsung, O General, Mitsubishi, Carrier, York, Trane, Gree, Panasonic, and many other brands</p>"
   },
   {
     "title": "What does AC maintenance entail?",
-    "desc": "The maintenance involves cleaning the filter, inspecting the coils, checking the drain, testing the thermostat, and a performance check."
+    "desc": "The maintenance involves cleaning the filter, inspecting the coils, checking the drain, testing the thermostat, and a performance check.",
+    "question": "What does AC maintenance entail?",
+    "answer": "The maintenance involves cleaning the filter, inspecting the coils, checking the drain, testing the thermostat, and a performance check."
   },
   {
     "title": "Is an Annual Maintenance Contract worth it?",
-    "desc": "Yes, AMC will help you to prevent large repairs and ensure your AC is working properly throughout the year."
+    "desc": "Yes, AMC will help you to prevent large repairs and ensure your AC is working properly throughout the year.",
+    "question": "Is an Annual Maintenance Contract worth it?",
+    "answer": "Yes, AMC will help you to prevent large repairs and ensure your AC is working properly throughout the year."
   },
   {
     "title": "How long does an AC maintenance take?",
-    "desc": "Most of the jobs require around 1 hour. The time may differ depending on the number of units to attend."
+    "desc": "Most of the jobs require around 1 hour. The time may differ depending on the number of units to attend.",
+    "question": "How long does an AC maintenance take?",
+    "answer": "Most of the jobs require around 1 hour. The time may differ depending on the number of units to attend."
   },
   {
     "title": "Can regular servicing lower my electricity bills?",
-    "desc": "Yes, a clean AC consumes less electricity and saves you money each month."
+    "desc": "Yes, a clean AC consumes less electricity and saves you money each month.",
+    "question": "Can regular servicing lower my electricity bills?",
+    "answer": "Yes, a clean AC consumes less electricity and saves you money each month."
   },
   {
     "title": "How to book AC service in Al Qusais?",
-    "desc": "Call FAJ Technical Services L.L.C and provide your address and preferred time. A team will be dispatched."
+    "desc": "Call FAJ Technical Services L.L.C and provide your address and preferred time. A team will be dispatched.",
+    "question": "How to book AC service in Al Qusais?",
+    "answer": "Call FAJ Technical Services L.L.C and provide your address and preferred time. A team will be dispatched."
   },
   {
     "title": "Do you offer a warranty on services?",
-    "desc": "Yes, our cleaning and maintenance services have a 60-day warranty."
+    "desc": "Yes, our cleaning and maintenance services have a 60-day warranty.",
+    "question": "Do you offer a warranty on services?",
+    "answer": "Yes, our cleaning and maintenance services have a 60-day warranty."
   },
   {
     "title": "Can you install AC in Al Qusais?",
-    "desc": "Yes, we replace the AC units in both residential and commercial buildings in Al Qusais."
+    "desc": "Yes, we replace the AC units in both residential and commercial buildings in Al Qusais.",
+    "question": "Can you install AC in Al Qusais?",
+    "answer": "Yes, we replace the AC units in both residential and commercial buildings in Al Qusais."
   }
-
 ]

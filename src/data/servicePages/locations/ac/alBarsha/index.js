@@ -73,12 +73,12 @@ const overviewData = {
           "text": "FAJ Technical Services L.L.C",
           "href": "/"
         },
-        " has been providing expert and professional air conditioner services in Dubai since 2010. We provide ",
+        " has been serving the Dubai community with AC solutions since 2010. Our skilled professionals can handle ",
         {
-          "text": "AC repair",
+          "text": "AC repairs",
           "href": "/services/air-conditioning-repair/ac-service/"
         },
-        " services, cleaning, maintenance, and installation services in Al Barsha. We have the expertise to assist you with your air conditioning repair, maintenance, or installation needs."
+        ", deep cleaning and new installations for both homes and commercial spaces in Al Barsha and surrounding communities."
       ]
     }
   ],
@@ -91,7 +91,7 @@ const overviewData = {
 
 const areaOverviewData = {
   "id": "al-barsha-ac-services",
-  "title": "Who provides the best AC repair services in Al Barsha?",
+  "title": "Best AC Repair in Al Barsha",
   "paragraphs": [
     "When the cooling system stops working, it makes life uncomfortable at home and the office. That is exactly when you need a dependable AC service provider to step in and fix the problem.",
     "FAJ Technical Services L.L.C offers full repair and maintenance support for apartments, private villas, office spaces, retail outlets and commercial establishments across Al Barsha. Our trained specialists approach every repair task with care and precision, from minor fixes to comprehensive system evaluations."
@@ -291,10 +291,17 @@ const serviceOverviewData = {
   "id": "ac-repair-service-overview",
   "title": "Why Is My AC Not Cooling?",
   "description": "Sometimes the AC unit keeps running but still fails to cool the room properly.",
-  "paragraphs": [
-    "Here are some typical causes: Clogged air filters, Low refrigerant charge, Dirty condenser coils, Electrical faults, Thermostat not working correctly, Compressor issues, Airflow restrictions.",
-    "Inspection uncovers the real fault and stops unnecessary damage to vital components. Our technicians are skilled at identifying and fixing all kinds of cooling issues."
+  "listTitle": "Here are some typical causes:",
+  "checklist": [
+    "Clogged air filters",
+    "Low refrigerant charge",
+    "Dirty condenser coils",
+    "Electrical faults",
+    "Thermostat not working correctly",
+    "Compressor issues",
+    "Airflow restrictions"
   ],
+  "conclusion": "Inspection uncovers the real fault and stops unnecessary damage to vital components. Our technicians are skilled at identifying and fixing all kinds of cooling issues.",
   "imageSide": "left",
   "image": {
     "id": "ac-service-page/ac-repair-and-service",
@@ -312,7 +319,7 @@ const serviceOverviewData = {
 
 const commonSignsData = {
   "id": "ac-maintenance-signs",
-  "title": "Which signs show the AC needs service?",
+  "title": "Signs You Need An AC Service",
   "intro": "Most AC systems show early warning signs before a complete breakdown happens.",
   "items": [
     {
@@ -339,46 +346,53 @@ const commonSignsData = {
 };
 
 const videoData = {
-  "id": "ac-service-video",
-  "title": "Emergency AC Repair Service in Al Barsha",
-  "lead": {
-    "parts": [
-      "AC problems can happen suddenly, especially during Dubai's hottest months. A quick repair helps restore comfort and prevents further damage to your cooling system. At ",
-      {
-        "text": "FAJ Technical Services L.L.C",
-        "href": "/"
-      },
-      ", our fast-response team provides immediate support across Al Barsha."
-    ]
-  },
-  "listTitle": "Our emergency AC repair service covers:",
-  "items": [
+  id: "ac-service-video",
+  title: "Emergency AC Repair Service in Al Barsha",
+  lead: "A sudden AC breakdown can affect comfort, productivity, and indoor air quality.",
+  listTitle: "Our emergency AC repair service can help with:",
+  items: [
     "AC not cooling",
     "AC not turning on",
     "Water leakage",
     "Electrical faults",
-    "Compressor problems",
     "Thermostat issues",
+    "Compressor failures",
     "Weak airflow",
-    "Unusual noises"
+    "Unusual noises",
   ],
-  "conclusion": "Our technicians provide fast assistance for homes, villas, offices, and commercial properties in Al Barsha.",
-  "frameTitle": "Air-conditioning repair and maintenance service video in Al Barsha",
-  "videoId": "prUR0-lZlzg",
-  "videoSide": "left",
-  "image": {
-    "id": "indoor-ac-servicing",
-    "src": "/img/indoor-ac-servicing.webp",
-    "alt": "FAJ AC technician providing express and emergency AC repair in Al Barsha",
-    "width": 600,
-    "height": 400
+  conclusion:
+    "We provide fast assistance for residential and commercial customers throughout Al Barsha and nearby areas.",
+  description: [
+    "A sudden AC breakdown can affect comfort, productivity, and indoor air quality.",
+    "Our emergency AC repair service can help with: AC not cooling, AC not turning on, water leakage, electrical faults, thermostat issues, compressor failures, weak airflow, and unusual noises.",
+    "We provide fast assistance for residential and commercial customers throughout Al Barsha and nearby areas.",
+  ],
+  frameTitle: "Air-conditioning repair and maintenance service video in Al Barsha",
+  videoId: "prUR0-lZlzg",
+  videoSide: "left",
+  image: {
+    id: "indoor-ac-servicing",
+    src: "/img/indoor-ac-servicing.webp",
+    alt: "FAJ AC technician providing express and emergency AC repair in Al Barsha",
+    width: 600,
+    height: 400,
   },
-  "variant": "framed",
-  "showCta": false,
-  "cta": {
-    "phone": "",
-    "whatsapp": ""
-  }
+  variant: "framed",
+  blockInteraction: true,
+  allowFullScreen: false,
+  parameters: {
+    autoplay: "1",
+    mute: "0",
+    controls: "0",
+    modestbranding: "1",
+    rel: "0",
+    showinfo: "0",
+    loop: "1",
+    playlist: "prUR0-lZlzg",
+    playsinline: "1",
+    cc_load_policy: "0",
+    disablekb: "1",
+  },
 };
 
 const maintenanceImportanceData = {
@@ -443,7 +457,7 @@ const maintenanceImportanceCardsData = {
 };
 
 const commonProblemsData = {
-  "title": "Most Common AC Problems",
+  "title": "Common AC Problems That May Require Maintenance",
   "description": "",
   "items": [
     {
@@ -467,11 +481,11 @@ const commonProblemsData = {
       "description": "Short cycling, like on, off, on, off, may occur due to thermostat problems or electrical faults that need professional attention."
     },
     {
-      "title": "High Humidity Level",
+      "title": "High Humidity Levels",
       "description": "Poor moisture removal can leave rooms feeling sticky and uncomfortable even while the AC is operating well."
     },
     {
-      "title": "Water Leakage",
+      "title": "Leaking Water",
       "description": "Blocked drainage pipes and frozen coils are common reasons for water leaking from the indoor unit."
     },
     {
@@ -488,7 +502,7 @@ const commonProblemsData = {
 
 const servicesOfferedData = {
   "id": "services-offered-overview",
-  "title": "Professional Air Conditioning Services in Al Barsha",
+  "title": "HERE ARE THE SERVICES WE OFFER FOR AIR CONDITIONING SYSTEMS",
   "description": "Professional air conditioning solutions tailored for residential, commercial and retail properties in Al Barsha.",
   "imageSide": "left",
   "image": {
@@ -507,7 +521,7 @@ const servicesOfferedData = {
 
 const servicesOfferedCardsData = {
   "id": "services-offered-cards",
-  "title": "Professional Air Conditioning Services in Al Barsha",
+  "title": "HERE ARE THE SERVICES WE OFFER FOR AIR CONDITIONING SYSTEMS",
   "items": [
     {
       "icon": "wrench",
@@ -713,7 +727,7 @@ const whyChooseUsData = {
 
 const beforeAfterData = {
   "id": "recent-completed-service",
-  "title": "Recent Completed Projects",
+  "title": "Recent Completed Service",
   "description": "See the real results of our thorough air conditioning maintenance and deep cleaning service in Al Barsha.",
   "beforeLabel": "Before",
   "beforeAlt": "Air conditioning unit before service",
@@ -848,7 +862,7 @@ const brandsData = {
 
 const sparePartsRepairData = {
   "id": "ac-spare-parts-and-repair",
-  "title": "We Handle All Types of AC Systems",
+  "title": "We Specialise in All Types of AC Systems",
   "columns": [
     {
       "title": "Air Conditioning Systems Serviced Across Al Barsha:",
@@ -984,29 +998,60 @@ const repairPriceData = {
 };
 
 const testimonialsData = {
-  "id": "testimonials",
-  "title": "Customer Reviews",
-  "description": "Real feedback from residential property owners, commercial facility managers and tenants across Al Barsha.",
-  "items": [
+  id: "ac-service-reviews",
+  title: "Customer Reviews",
+  description:
+    "Customer feedback on FAJ air-conditioning repair and maintenance services in Al Barsha.",
+  items: [
     {
-      "author": "Rashid Al-Maktoum",
-      "role": "Apartment Owner, Al Barsha",
-      "content": "Our split AC in the master bedroom was blowing warm air in mid-July. FAJ dispatched a technician within 2 hours. He identified a failed capacitor, replaced it from his van stock, and our room was ice cold again. Brilliant service!",
-      "rating": 5
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Sara Malik",
+      subtitle: "Al Barsha Resident",
+      description:
+        "FAJ provided professional split AC service for my apartment. The team was skilled, cleaned everything properly, and restored cooling performance. Very satisfied with their quick and reliable service in Al Barsha.",
     },
     {
-      "author": "Priya Sharma",
-      "role": "Tenant, Al Barsha",
-      "content": "Water started leaking from our ceiling FCU, soaking the living room rug. Called FAJ and their technician cleared a severely blocked condensate trap and sanitised the tray. Neat, professional and polite team.",
-      "rating": 5
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Al Mansoori",
+      subtitle: "Al Barsha Resident",
+      description:
+        "Great experience with FAJ’s air conditioner service. The technicians were professional, friendly, and checked everything thoroughly. My AC is running smoothly again. Excellent service in Al Barsha, highly recommended!",
     },
     {
-      "author": "David Miller",
-      "role": "Villa Resident, Al Barsha",
-      "content": "Signed an annual maintenance contract for our 4-bedroom villa. The twice-a-year PPM service has visibly dropped our DEWA electricity bill and the AC smells clean and fresh. Well worth the investment.",
-      "rating": 5
-    }
-  ]
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Arjun Kumar",
+      subtitle: "Resident",
+      description:
+        "I booked FAJ for HVAC services in Al Barsha, and it was excellent. The technicians were skilled, reliable, and carried out the work with great attention to detail.",
+    },
+    {
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Shazia Sheikh",
+      subtitle: "Homeowner",
+      description:
+        "FAJ delivered great AC technical services. Their team was polite, professional, and fixed my cooling issue quickly. Excellent service overall, I will continue using them for future AC problems in Al Barsha.",
+    },
+    {
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Ravi Mehta",
+      subtitle: "Resident",
+      description:
+        "I used FAJ for AC cleaning service, and it really improved my air quality. The team worked efficiently, cleaned every part, and made my AC run like new again.",
+    },
+    {
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Waseem Aqdas",
+      subtitle: "Homeowner",
+      description:
+        "Outstanding service from FAJ Technical! My AC wasn't cooling properly, but FAJ Technical came to the rescue. Quick response, friendly technician, and now my AC works perfectly. I highly recommend them!",
+    },
+  ],
 };
 
 const newsData = {
@@ -1022,7 +1067,7 @@ const newsData = {
       "subtitle": "Admin • 5 Comments",
       "description": "A properly functioning air conditioning system is essential for various settings, including homes, offices, and individual spaces. According to HVAC Webmasters, over 70%",
       "href": "/blog/10-common-ac-problems-and-how-to-fix-them/",
-      "actionLabel": "Read Article"
+      "actionLabel": "Read More"
     },
     {
       "icon": "dollar-savings",
@@ -1032,7 +1077,7 @@ const newsData = {
       "subtitle": "Admin • 4 Comments",
       "description": "Air conditioning is excellent for keeping you comfortable indoors but can be expensive. But there is no need to worry, there are some ways to reduce AC electric bill with",
       "href": "/blog/how-to-save-money-on-ac/",
-      "actionLabel": "Read Article"
+      "actionLabel": "Read More"
     },
     {
       "icon": "wind",
@@ -1042,7 +1087,7 @@ const newsData = {
       "subtitle": "Admin • 0 Comments",
       "description": "As the temperatures rise and summer approaches, the desire for a cool and comfortable escape within your home intensifies. Air conditioning offers a seemingly simple solu",
       "href": "/blog/how-to-choose-the-best-air-conditioner-for-home/",
-      "actionLabel": "Read Article"
+      "actionLabel": "Read More"
     }
   ],
   "footer": {
@@ -1058,10 +1103,10 @@ const newsData = {
 };
 
 const faqsData = {
-  "id": "location-faqs",
-  "title": "AC Repair and Maintenance FAQs in Al Barsha",
-  "description": "Find answers to common questions about air conditioning repair, servicing, and maintenance in Al Barsha.",
-  "items": [
+  id: "ac-service-alBarsha-faqs",
+  title: "FAQ's",
+  description: "Find answers to common questions about air conditioning repair, cleaning, and maintenance services.",
+  items: [
     {
       "question": "How often should I service my AC in Al Barsha South?",
       "answer": "You need to schedule maintenance service every 6 months for better performance."
@@ -1076,15 +1121,15 @@ const faqsData = {
     },
     {
       "question": "What causes water leakage from an AC?",
-      "answer": "Common causes include:Blocked drainage linesFrozen evaporator coilsDirty filters"
+      "answer": "<strong>Common causes include:</strong><ul><li>Blocked drainage lines</li><li>Frozen evaporator coils</li><li>Dirty filters</li></ul>"
     },
     {
       "question": "What is included in the AC maintenance service?",
-      "answer": "Maintenance normally includes:Filter cleaningCoil inspectionDrainage cleaningThermostat testingPerformance checks"
+      "answer": "<strong>Maintenance normally includes:</strong><ul><li>Filter cleaning</li><li>Coil inspection</li><li>Drainage cleaning</li><li>Thermostat testing</li><li>Performance checks</li></ul>"
     },
     {
       "question": "Which AC brands do you service?",
-      "answer": "Our expert technicians work on all of these AC units:DaikinLGSamsungCarrierYorkMitsubishiGreeO General, and many other major brands."
+      "answer": "<strong>Our expert technicians work on all of these AC units:</strong><ul><li>Daikin</li><li>LG</li><li>Samsung</li><li>Carrier</li><li>York</li><li>Mitsubishi</li><li>Gree</li><li>O General, and many other major brands.</li></ul>"
     },
     {
       "question": "Is an AMC worth having?",
@@ -1092,7 +1137,7 @@ const faqsData = {
     },
     {
       "question": "Why is my AC making noise?",
-      "answer": "Some common reasons include:Loose internal partsFan motor problemsDirt buildup inside the unit"
+      "answer": "<strong>Some common reasons include:</strong><ul><li>Loose internal parts</li><li>Fan motor problems</li><li>Dirt buildup inside the unit</li></ul>"
     },
     {
       "question": "Do you provide AC services for offices and businesses?",
@@ -1122,13 +1167,13 @@ const faqsData = {
       "question": "Do I need to service my air conditioner before summer starts?",
       "answer": "Yes. You should service your AC before summer. Servicing your AC before summer prepares your air conditioner for the load ahead. It helps avoid breakdowns when the weather gets hot outside."
     }
-  ]
+  ],
 };
 
 const bookingData = {
   "id": "booking-section",
   "title": "Book An Appointment",
-  "description": "Fill in your details below and our service coordinators will confirm your booking slot within 15 minutes.",
+  "description": "Book your AC service appointment with our expert team in Al Barsha. We provide professional AC installation, cleaning, maintenance, and repair services to keep your space cool and comfortable.",
   "submitLabel": "Confirm Service Request"
 };
 

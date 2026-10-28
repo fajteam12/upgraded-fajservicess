@@ -78,7 +78,7 @@ function PageMetadata({
 
       <link
         rel="canonical"
-        href={seo.url}
+        href={seo.url || seo.canonical}
       />
 
       <meta
