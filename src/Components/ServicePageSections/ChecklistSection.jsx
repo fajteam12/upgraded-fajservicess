@@ -111,11 +111,14 @@ function ChecklistSection({
     return null;
   }
 
-  const isCtaEnabled = Boolean(
-    content?.showCta === false
-      ? false
-      : (content?.showCta ?? showCta ?? (content?.cta || cta))
-  );
+  const hasExplicitShowCta = typeof showCta === "boolean";
+  const isCtaEnabled = hasExplicitShowCta
+    ? showCta
+    : Boolean(
+        content?.showCta !== undefined
+          ? content.showCta
+          : (content?.cta || cta)
+      );
 
   let phoneUrl = "";
   let whatsappUrl = "";

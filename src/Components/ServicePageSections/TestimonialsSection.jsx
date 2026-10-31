@@ -46,7 +46,12 @@ function TestimonialsSection({
   const [activeIndex, setActiveIndex] = useState(0);
   const [pageCount, setPageCount] = useState(1);
 
-  const items = content?.items || [];
+  const items =
+    Array.isArray(content?.items) && content.items.length > 0
+      ? content.items
+      : Array.isArray(content?.reviews)
+      ? content.reviews
+      : [];
   const itemCount = items.length;
 
   const updateLayout = useCallback(() => {

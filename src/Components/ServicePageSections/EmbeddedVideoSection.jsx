@@ -126,7 +126,11 @@ function EmbeddedVideoSection({ content, tone = "dark", showCta, cta, contact, v
   const hasWhatsapp = Boolean(whatsappUrl);
   const showAnyCta = isCtaEnabled && (hasPhone || hasWhatsapp);
 
-  const videoId = content?.videoId;
+  const videoId =
+    content?.videoId ||
+    (typeof content?.videoUrl === "string"
+      ? content.videoUrl.split("/").pop().split("?")[0]
+      : "");
   const parametersConfig = content?.parameters;
   const isTechnical = content?.variant === "technical";
   const isInteractive = content?.blockInteraction !== true;

@@ -1,18 +1,41 @@
 const heroData = {
   eyebrow: "Sanyo AC Specialists",
-  title:
-    "Top-Quality Sanyo Air Conditioning Repair and Maintenance Services in Dubai, UAE",
+  title: "Top-Quality Sanyo Air Conditioning Repair and Maintenance Services in Dubai, UAE",
   paragraphs: [
     "Sanyo air conditioning units are a great choice for homes and commercial spaces, offering reliable summer cooling. With a universal range of models, they meet diverse needs and are a smart investment for year-round climate control.",
-    "At FAJ Technical Services L.L.C, established in 2010, we specialise in Sanyo AC repair and maintenance, providing cost-effective solutions to keep your cooling systems efficient. Our experienced team takes repairs and replacements, particularly for Sanyo units, which are common during this season.",
+  ],
+  paragraph: "Sanyo air conditioning units are a great choice for homes and commercial spaces, offering reliable summer cooling. With a universal range of models, they meet diverse needs and are a smart investment for year-round climate control.",
+  highlights: [
+    {
+      icon: "award",
+      title: "Established Since 2010",
+      description: "Reliability, Diversity, Integrity, and Quality.",
+    },
+    {
+      icon: "shield-check",
+      title: "Workmanship Warranty",
+      description: "Repair and service warranty support.",
+    },
+    {
+      icon: "phone-support",
+      title: "7-Day Service Response",
+      description: "Fast assistance across Dubai.",
+    },
   ],
   primaryAction: "Book An Appointment",
-  secondaryAction: "Call +971 4 330 0002",
-  bookingLabel: "Sanyo AC Repair",
+  secondaryAction: "Call Now",
+  showCall: true,
+  showPhone: true,
   image: {
-    id: "brands/ac/ac-brand-top",
-    src: "/img/brands/ac/ac-brand-top.webp",
-    alt: "Sanyo Airconditioner Repair",
+    id: "ac-brand-logos/sanyo-logo",
+    src: "/img/ac-brand-logos/sanyo-logo.webp",
+    alt: "Sanyo Air Conditioning Repair and Maintenance in Dubai",
+    width: 600,
+    height: 400,
+    fit: "contain",
+    padding: "20px",
+    bg: "#ffffff",
+    hideOverlay: true,
   },
 };
 

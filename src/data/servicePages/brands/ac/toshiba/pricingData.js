@@ -1,5 +1,5 @@
 const pricingData = {
-  eyebrow: "Transparent Service Options",
+  id: "pricing",
   title: "AC Inspection, Cleaning and Maintenance Prices",
   description:
     "Choose a starting service based on your air-conditioning system. Final quotations depend on unit type, condition and required work.",
@@ -12,6 +12,10 @@ const pricingData = {
       title: "AC Inspection Service",
       badge: "Diagnostics",
       price: "AED 215",
+      image: {
+        id: "ac-service-page/ac-inspection",
+        src: "/img/ac-service-page/ac-inspection.webp",
+      },
       description:
         "Is your AC not cooling your place? Is the AC thermostat broken, or is the fan making strange noises? Give us a call",
       popup: {
@@ -43,92 +47,87 @@ const pricingData = {
     },
 
     {
-      title: "Basic AC Cleaning Price",
+      title: "Basic AC Cleaning",
       subtitle: "Selected work includes a 60-day service warranty",
+      warranty: "60 - Days Warranty",
       badge: "Popular",
-      price: "AED 190",
+      price: "AED 280",
+      image: {
+        id: "ac-service-page/ac-cleaning-price",
+        src: "/img/ac-service-page/ac-cleaning-price.webp",
+      },
       description:
         "If your AC has reduced airflow or is leaking water, work quickly. Regularly clean filters and drain to provide efficiency and good air quality.",
       popup: {
-        title: "AC Cleaning Service scope of works:",
+        title: "AC Filter Cleaning scope of works:",
         sections: [
           {
             items: [
-              "AC filter cleaning",
-              "AC water leakage",
-              "Check AC components",
-              "Filter cleaning and replacement",
-              "Condenser coil cleaning",
-              "AC thermostat check-up",
-              "Refrigerant Level check-up",
-              "Addressing sound issues from the AC",
+              "Cleaning the AC filters",
+              "Checking the AC thermostat",
+              "Checking the Gas Pressure",
+              "Flushing the AC Drain line with water",
+              "Checking the unit noise and unusual sounds",
+              "Addressing minor water leaks found during servicing",
             ],
           },
           {
             label: "Excluded",
             text:
-              "Cost for any repair work, procurement cost, cost of any new parts and installation, if required.",
+              "Any AC parts replacement, complex electrical repairs, major water leakage fixes, or full coil chemical overhauls.",
           },
           {
             label: "Terms & Conditions",
             text:
-              "Starting from AED 190 basic cleaning service charge applies based on the type, capacity of the unit, and location for each diagnosis.",
+              "Starting from AED 280 fee covers basic cleaning per single split or ducted unit indoor and outdoor filter/drain flush.",
           },
         ],
       },
     },
 
     {
-      title: "AC Maintenance Price",
+      title: "AC Maintenance",
       subtitle: "Selected work includes a 60-day service warranty",
+      warranty: "60 - Days Warranty",
       badge: "Preventive Care",
-      price: "AED 235",
+      price: "AED 325",
+      image: {
+        id: "ac-service-page/ac-maintenance-price",
+        src: "/img/ac-service-page/ac-maintenance-price.webp",
+      },
       description:
         "Relax and save money by keeping our expert technicians clean and maintain your AC, stopping unnecessary breakdowns.",
       popup: {
-        title: "AC Maintenance scope of works",
+        title: "AC Full Maintenance (Service & Tune-up) scope of works:",
         sections: [
           {
-            heading: "DX Unit AC",
             items: [
-              "Clean the condenser coil",
-              "Check, clean and flush the drain line",
-              "Check the room and grill temperatures",
-              "Check and clean the filters and air valves",
-              "Check the vibration pads and vibration isolators",
-              "Check the blowers and clean if proper access is available",
-              "Check the conditions of contactors, relays, and capacitors",
-              "Check temperature controlled thermostat and pressure sensors",
-              "Check the electrical points in the outdoor unit and tighten, clean the electrical terminals",
-              "Check the insulation on the pipeline, if damaged, recommend for replacement (Additional cost for replacement of insulation)",
-            ],
-          },
-          {
-            heading: "Chiller FCU AC",
-            items: [
-              "Check the vibration isolators",
-              "Check, clean and flush the drain line",
-              "Check the room and grill temperatures",
-              "Check and clean the filters and air valves",
-              "Check temperature controlled thermostat",
-              "Check the functionality of actuator valves",
-              "Check the blowers and clean if proper access is available",
-              "Check the insulation on the pipeline; if damaged, recommend for replacement (Additional cost for replacement of insulation)",
+              "Full indoor & outdoor coil chemical wash",
+              "Fan blower deep cleaning and motor lubrication",
+              "Complete condensate tray disinfection & chemical flush",
+              "Capacitor, contractor, and compressor terminal tightening",
+              "Refrigerant top-up and operating temperature differential check",
+              "Thermostat recalibration and energy optimization test",
             ],
           },
           {
             label: "Excluded",
             text:
-              "Cost for any repair work, procurement cost, cost of any new parts and installation, if required.",
+              "Major component rewinding, compressor replacement, or complete copper pipe retrofits.",
           },
           {
             label: "Terms & Conditions",
             text:
-              "Starting from AED 235 AC Maintenance charge applies based on the type, capacity of the unit, and location for each diagnosis.",
+              "Starting from AED 325 applies to comprehensive preventive maintenance tune-up per standard residential unit.",
           },
         ],
       },
     },
+  ],
+
+  notes: [
+    "Final pricing depends on unit type (Split, Ducted, Package, VRF), capacity, and accessibility.",
+    "Emergency call-outs and non-standard parts are quoted transparently before work begins.",
   ],
 };
 

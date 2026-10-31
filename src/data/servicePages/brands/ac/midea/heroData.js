@@ -1,19 +1,41 @@
 const heroData = {
   eyebrow: "Midea AC Specialists",
-  title:
-    "Professional Midea Air Conditioning Repair and Maintenance Service Specialists in Dubai, UAE",
+  title: "Professional Midea Air Conditioning Repair and Maintenance Service Specialists in Dubai, UAE",
   paragraphs: [
     "FAJ Technical Services L.L.C Since 2010, we’ve proudly served our community! Our skilled facilities team brings a wealth of experience in Midea AC repair, maintenance, and installation for both homes and businesses across Dubai and Sharjah.",
-    "A Midea air conditioning is key to ensuring your indoor comfort throughout the year.",
-    "To keep it performing at its best, regular AC maintenance is essential. Rest assured, we offer professional cleaning services for Midea units to help your system run efficiently and effectively!",
+  ],
+  paragraph: "FAJ Technical Services L.L.C Since 2010, we’ve proudly served our community! Our skilled facilities team brings a wealth of experience in Midea AC repair, maintenance, and installation for both homes and businesses across Dubai and Sharjah.",
+  highlights: [
+    {
+      icon: "award",
+      title: "Established Since 2010",
+      description: "Reliability, Diversity, Integrity, and Quality.",
+    },
+    {
+      icon: "shield-check",
+      title: "Workmanship Warranty",
+      description: "Repair and service warranty support.",
+    },
+    {
+      icon: "phone-support",
+      title: "7-Day Service Response",
+      description: "Fast assistance across Dubai.",
+    },
   ],
   primaryAction: "Book An Appointment",
-  secondaryAction: "Call +971 4 330 0002",
-  bookingLabel: "Midea AC Repair",
+  secondaryAction: "Call Now",
+  showCall: true,
+  showPhone: true,
   image: {
-    id: "brands/ac/ac-brand-top",
-    src: "/img/brands/ac/ac-brand-top.webp",
-    alt: "Midea Airconditioner Repair",
+    id: "ac-brand-logos/midea-logo",
+    src: "/img/ac-brand-logos/midea-logo.webp",
+    alt: "Midea Air Conditioning Repair and Maintenance in Dubai",
+    width: 600,
+    height: 400,
+    fit: "contain",
+    padding: "20px",
+    bg: "#ffffff",
+    hideOverlay: true,
   },
 };
 

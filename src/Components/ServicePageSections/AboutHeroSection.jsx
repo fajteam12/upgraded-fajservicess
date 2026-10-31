@@ -241,11 +241,16 @@ function AboutHeroSection({
   if (!content) return null;
 
   const image = content.image || {};
-  const cloudflareSrc = image.id
-    ? getCloudflareImageUrl(image.id, "public")
+  const imageId =
+    image.id ||
+    (typeof image.src === "string" && image.src.startsWith("/img/")
+      ? image.src.replace(/^\/img\//, "").replace(/\.[^/.]+$/, "")
+      : "");
+  const cloudflareSrc = imageId
+    ? getCloudflareImageUrl(imageId, "public")
     : "";
-  const cloudflareSrcSet = image.id
-    ? getCloudflareImageSrcSet(image.id)
+  const cloudflareSrcSet = imageId
+    ? getCloudflareImageSrcSet(imageId)
     : undefined;
   const fallbackSrc = image.src || "";
 
@@ -448,7 +453,10 @@ function AboutHeroSection({
             delay={0.18}
             className="service-about-hero__media-wrapper"
           >
-            <div className="service-about-hero__media">
+            <div
+              className="service-about-hero__media"
+              style={image.bg ? { background: image.bg } : undefined}
+            >
               <img
                 className="service-about-hero__image"
                 src={imageSrc}
@@ -460,7 +468,11 @@ function AboutHeroSection({
                 loading="eager"
                 fetchPriority="high"
                 decoding="async"
-                style={{ objectPosition: image.position || "center" }}
+                style={{
+                  objectPosition: image.position || "center",
+                  objectFit: image.fit || undefined,
+                  padding: image.padding || undefined,
+                }}
                 onError={() => {
                   setFailedSources((prev) => {
                     const next = new Set(prev);
@@ -469,10 +481,12 @@ function AboutHeroSection({
                   });
                 }}
               />
-              <div
-                className="service-about-hero__image-overlay"
-                aria-hidden="true"
-              />
+              {!image.hideOverlay && image.fit !== "contain" && (
+                <div
+                  className="service-about-hero__image-overlay"
+                  aria-hidden="true"
+                />
+              )}
             </div>
           </ScrollSlide>
         )}

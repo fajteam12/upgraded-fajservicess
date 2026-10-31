@@ -1,18 +1,41 @@
 const heroData = {
   eyebrow: "Panasonic AC Specialists",
-  title:
-    "High-Quality Panasonic AC Repair and Maintenance Services in Dubai",
+  title: "High-Quality Panasonic AC Repair and Maintenance Services in Dubai",
   paragraphs: [
     "Are you looking for reliable Panasonic AC repair and service in Dubai? FAJ Technical Services L.L.C has been the top choice for Panasonic air conditioning solutions in Dubai and Sharjah since 2010. Our experienced technicians are equipped to repair your air conditioning unit on the same day, ensuring optimal cooling.",
-    "We specialise in a complete range of services, including Panasonic AC repair, cleaning, maintenance, and installation for both residential and commercial units. Our expert team is dedicated to optimising your system's performance, creating a comfortable and healthy indoor environment. Trust us for dependable expertise and outstanding service.",
+  ],
+  paragraph: "Are you looking for reliable Panasonic AC repair and service in Dubai? FAJ Technical Services L.L.C has been the top choice for Panasonic air conditioning solutions in Dubai and Sharjah since 2010. Our experienced technicians are equipped to repair your air conditioning unit on the same day, ensuring optimal cooling.",
+  highlights: [
+    {
+      icon: "award",
+      title: "Established Since 2010",
+      description: "Reliability, Diversity, Integrity, and Quality.",
+    },
+    {
+      icon: "shield-check",
+      title: "Workmanship Warranty",
+      description: "Repair and service warranty support.",
+    },
+    {
+      icon: "phone-support",
+      title: "7-Day Service Response",
+      description: "Fast assistance across Dubai.",
+    },
   ],
   primaryAction: "Book An Appointment",
-  secondaryAction: "Call +971 4 330 0002",
-  bookingLabel: "Panasonic AC Repair",
+  secondaryAction: "Call Now",
+  showCall: true,
+  showPhone: true,
   image: {
-    id: "brands/ac/ac-brand-top",
-    src: "/img/brands/ac/ac-brand-top.webp",
-    alt: "Panasonic Airconditioner Repair",
+    id: "ac-brand-logos/panasonic-logo",
+    src: "/img/ac-brand-logos/panasonic-logo.webp",
+    alt: "Panasonic Air Conditioning Repair and Maintenance in Dubai",
+    width: 600,
+    height: 400,
+    fit: "contain",
+    padding: "20px",
+    bg: "#ffffff",
+    hideOverlay: true,
   },
 };
 

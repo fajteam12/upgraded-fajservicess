@@ -1,157 +1,250 @@
-import BreadCumb from "../../../Components/Common/BreadCumb";
+import { lazy, Suspense } from "react";
 import {
+  AboutHeroSection,
   AccordionSection,
   ActionCardsSection,
+  BeforeAfterSection,
   BookingModal,
-  BookingSection,
-  CalloutBannerSection,
   ChecklistSection,
-  ContentCardSection,
+  DetailColumnsSection,
   EmbeddedVideoSection,
+  MediaGallerySection,
+  ModernBookingSection,
   NumberedGridSection,
   PageMetadata,
   PlanCardsSection,
   PricingCardsSection,
   ResourceCTASection,
   SearchableDirectorySection,
-  SplitHeroSection,
+  SplitMediaSection,
+  TestimonialsSection,
+  TwoColumnInfoSection,
   useBookingRequest,
-  TestimonialsSection
 } from "../../../Components/ServicePageSections";
 import "../../../Components/ServicePageSections/ServicePageSections.css";
+import BreadCumb from "../../../Components/Common/BreadCumb";
 import pageData from "../../../data/servicePages/brands/ac/westpoint";
 
-export default function DaikinAcRepair() {
-  const {
-    modalOpen,
-    selectedItem,
-    openBooking,
-    closeBooking,
-    bookingState,
-  } = useBookingRequest({
-    content: pageData.booking,
-    contact: pageData.contact,
-  });
+const MaintenanceBenefitsLazy = lazy(() =>
+  import("../../../Components/MaintenanceBenefits/MaintenanceBenefits")
+);
+const MaintenanceBenefits = (props) => (
+  <Suspense fallback={null}>
+    <MaintenanceBenefitsLazy {...props} />
+  </Suspense>
+);
+
+export default function WestpointAcRepair() {
+  const { modalOpen, selectedItem, openBooking, closeBooking, bookingState } =
+    useBookingRequest({ content: pageData.booking, contact: pageData.contact });
+
+  const callAndWhatsappCta = {
+    phone: `tel:+${pageData.contact.phone}`,
+    whatsapp: `https://api.whatsapp.com/send?phone=+${pageData.contact.whatsapp}&text=Hello`,
+  };
+
+  const callOnlyCta = {
+    phone: `tel:+${pageData.contact.phone}`,
+    whatsapp: "",
+  };
+
+  const whatsappOnlyCta = {
+    phone: "",
+    whatsapp: `https://api.whatsapp.com/send?phone=+${pageData.contact.whatsapp}&text=Hello`,
+  };
 
   return (
     <>
       <PageMetadata
-        seo={pageData.seo}
-        contact={pageData.contact}
-        faqItems={pageData.faqs.items}
+        seo={pageData.seoData}
+        contact={pageData.contactData}
+        faqItems={pageData.faqsData.faqs}
       />
-
       <main className="service-landing">
-        <SplitHeroSection
-          content={pageData.hero}
-          contact={pageData.contact}
-          onPrimaryAction={openBooking} tone="white" />
-
+        <AboutHeroSection
+          content={pageData.heroData}
+          contact={pageData.contactData}
+          onPrimaryAction={openBooking}
+          contentWidth={pageData.heroData.contentWidth || "50%"}
+          tone="white"
+        />
         <BreadCumb />
 
+        {/* 1. Paragraph Section under Breadcrumb */}
+        <TwoColumnInfoSection
+          content={pageData.overviewData}
+          tone="soft"
+          showCta={false}
+        />
+
+        {/* 1. Transparent Pricing Section */}
         <PricingCardsSection
-          content={pageData.pricing}
+          content={pageData.pricingData}
           onAction={openBooking}
           tone="white"
         />
 
-<ContentCardSection
-          content={pageData.maintenance}
+        {/* 2. Brand Overview */}
+        <SplitMediaSection
+          content={pageData.areaOverviewData}
           tone="soft"
+          imageSide="right"
+          showCta={true}
+          cta={callAndWhatsappCta}
+          contact={pageData.contactData}
         />
 
+        {/* 3. Section Showing AC Unit Service: Which signs show the AC needs service? */}
         <ChecklistSection
-          content={pageData.maintenanceSigns}
+          content={pageData.commonSignsData}
+          showCta={false}
           tone="white"
         />
 
-        <CalloutBannerSection
-          content={pageData.repairPrice}
-          onAction={openBooking}
-        />
+        {/* 4. Pricing List Resource CTA */}
+        <ResourceCTASection content={pageData.repairPriceData} tone="dark" />
 
-        <ChecklistSection
-          content={pageData.maintenanceImportance}
+        {/* 5. Why Is My Brand AC Not Cooling? (Image on LEFT) */}
+        <SplitMediaSection
+          content={pageData.serviceOverviewData}
+          showCta={false}
           tone="soft"
+          imageSide="left"
         />
 
-        <NumberedGridSection
-          content={pageData.commonProblems}
+        {/* 6. Why is Brand AC Maintenance Service Important in Dubai? (Image on RIGHT) */}
+        <SplitMediaSection
+          content={pageData.maintenanceImportanceData}
+          showCta={true}
+          cta={whatsappOnlyCta}
+          showPhone={false}
+          contact={pageData.contactData}
           tone="white"
-          columns="four"
+          imageSide="right"
         />
 
+        {/* 7. Key Benefits of Regular Brand AC Maintenance in Dubai */}
+        {/* 7. Key Benefits of Regular Brand AC Maintenance in Dubai */}
+        <ActionCardsSection
+          content={pageData.maintenanceImportanceCards || pageData.maintenanceImportanceCardsData}
+          tone="soft"
+          columns="three"
+          showCta={false}
+          contact={pageData.contact}
+        />
+
+        {/* 8. Emergency AC Repair (Video Section placed ABOVE Common Problems) */}
         <EmbeddedVideoSection
-          content={pageData.video}
-          tone="soft"
+          content={pageData.video || pageData.videoData}
+          tone="white"
+          videoSide="left"
+          showCta={false}
         />
 
-        <ActionCardsSection
-          content={pageData.servicesOffered}
-          tone="white"
+        {/* 9. Common Problems */}
+        <NumberedGridSection
+          content={pageData.commonProblems || pageData.commonProblemsData}
+          contact={pageData.contact}
+          showCta={true}
+          cta={callOnlyCta}
+          showWhatsapp={false}
+          tone="soft"
           columns="four"
         />
 
-        <ChecklistSection
-          content={pageData.benefits}
-          tone="soft"
-        />
-
+        {/* 10. Professional Air Conditioning Services for Brand AC (Cards - BETWEEN Common Problems & Benefits) */}
         <ActionCardsSection
-          content={pageData.whyChooseUs}
+          content={pageData.servicesOfferedCards || pageData.servicesOfferedCardsData}
+          contact={pageData.contact}
           tone="white"
           columns="three"
+          onAction={openBooking}
+          showCta={false}
         />
 
-        <ActionCardsSection
-          content={pageData.systemTypes}
+        {/* 11. Benefits (above Choose Us) */}
+        <MaintenanceBenefits
+          {...(pageData.benefits || pageData.benefitsData)}
+          showCta={true}
+          cta={whatsappOnlyCta}
+          contact={pageData.contact}
           tone="soft"
-          columns="three"
         />
 
+        {/* 12. Choose Us */}
+        <ActionCardsSection
+          content={pageData.whyChooseUs || pageData.whyChooseUsData}
+          tone="white"
+          columns="three"
+          showCta={false}
+          contact={pageData.contact}
+        />
+
+        {/* 13. types (Spare Parts & Repairs) */}
+        <DetailColumnsSection
+          content={pageData.sparePartsRepair || pageData.sparePartsRepairData}
+          contact={pageData.contact}
+          showCta={false}
+          tone="soft"
+        />
+
+        {/* 14. Before after */}
+        <BeforeAfterSection content={pageData.beforeAfter || pageData.beforeAfterData} tone="white" />
+
+        {/* 15. Service Coverage Areas across Dubai */}
         <SearchableDirectorySection
-          content={pageData.coverage}
-          tone="white"
-          variant="compact"
-        />
-
-        <ResourceCTASection
-          content={pageData.energyTips}
+          content={pageData.coverageData || pageData.brands}
           tone="soft"
+          onAction={openBooking}
+          showCta={false}
+          contact={pageData.contactData}
         />
 
+        {/* 16. Gallery */}
+        <MediaGallerySection content={pageData.galleryData} tone="white" />
+
+        {/* 17. tips */}
+        <ResourceCTASection content={pageData.energyTipsData} tone="soft" />
+
+        {/* 18. Blogs (between Tips and AMC) */}
         <ActionCardsSection
-          content={pageData.acProperties}
+          content={pageData.newsData}
           tone="white"
-          columns="four"
+          columns="three"
         />
 
-        <TestimonialsSection content={pageData.testimonials} tone="white" />
-
+        {/* 19. AMC */}
         <PlanCardsSection
-          content={pageData.contracts}
+          content={pageData.contractsData}
           onAction={openBooking}
           tone="dark"
         />
 
+        {/* 20. Reviews */}
+        <TestimonialsSection content={pageData.testimonialsData} tone="soft" />
+
+        {/* 21. Faqs */}
         <AccordionSection
-          content={pageData.faqs}
-          tone="soft"
+          content={pageData.faqsData}
+          contact={pageData.contactData}
+          tone="white"
         />
 
-        <BookingSection
-          content={pageData.booking}
-          bookingState={bookingState}
-          tone="white"
+        {/* 22. booking form */}
+        <ModernBookingSection
+          content={pageData.bookingData}
+          contact={pageData.contactData}
+          onSubmitSuccess={openBooking}
+          tone="soft"
         />
       </main>
 
       <BookingModal
-        content={pageData.booking}
-        open={modalOpen}
+        isOpen={modalOpen}
         onClose={closeBooking}
-        selectedItem={selectedItem}
         bookingState={bookingState}
+        item={selectedItem}
+        contact={pageData.contactData}
       />
     </>
   );

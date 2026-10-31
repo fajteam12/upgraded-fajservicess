@@ -1,19 +1,41 @@
 const heroData = {
-  eyebrow: "AFtron AC Specialists",
-  title:
-    "Choose the leading Aftron AC Repair and Maintenance Services in Dubai",
+  eyebrow: "Aftron AC Specialists",
+  title: "Choose the leading Aftron AC Repair and Maintenance Services in Dubai",
   paragraphs: [
     "Year-round indoor comfort helps us overcome challenges like summer humidity, warm nights, and indoor allergens, turning our spaces into havens of serenity and well-being.",
-    "Founded in 2010, FAJ Technical Services L.L.C has been a trusted provider of Aftron Air Conditioner solutions in Dubai and Sharjah. Our experienced team specializes in a range of services, including cleaning, repair, maintenance, and installation of Aftron AC units for both residential and commercial properties.",
-    "We are committed to optimizing the performance of your air conditioning system to enhance indoor comfort effectively.",
+  ],
+  paragraph: "Year-round indoor comfort helps us overcome challenges like summer humidity, warm nights, and indoor allergens, turning our spaces into havens of serenity and well-being.",
+  highlights: [
+    {
+      icon: "award",
+      title: "Established Since 2010",
+      description: "Reliability, Diversity, Integrity, and Quality.",
+    },
+    {
+      icon: "shield-check",
+      title: "Workmanship Warranty",
+      description: "Repair and service warranty support.",
+    },
+    {
+      icon: "phone-support",
+      title: "7-Day Service Response",
+      description: "Fast assistance across Dubai.",
+    },
   ],
   primaryAction: "Book An Appointment",
-  secondaryAction: "Call +971 4 330 0002",
-  bookingLabel: "Aftron AC Repair",
+  secondaryAction: "Call Now",
+  showCall: true,
+  showPhone: true,
   image: {
-    id: "brands/ac/ac-brand-top",
-    src: "/img/brands/ac/ac-brand-top.webp",
-    alt: "Aftron Airconditioner Repair",
+    id: "ac-brand-logos/aftron-logo",
+    src: "/img/ac-brand-logos/aftron-logo.webp",
+    alt: "Aftron Air Conditioning Repair and Maintenance in Dubai",
+    width: 600,
+    height: 400,
+    fit: "contain",
+    padding: "20px",
+    bg: "#ffffff",
+    hideOverlay: true,
   },
 };
 

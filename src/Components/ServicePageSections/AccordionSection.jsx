@@ -30,45 +30,102 @@ function AnswerContent({ answer }) {
 				);
 			}
 
+			if (block?.type === "numbered") {
+				return (
+					<ol key={index}>
+						{block.items?.map((item, itemIndex) => (
+							<li key={itemIndex}>{item}</li>
+						))}
+					</ol>
+				);
+			}
+
 			return <p key={index}>{block?.text}</p>;
 		});
 	}
 
 	if (typeof answer !== "string") return null;
 
+	// Normalize any literal escaped newlines from JSON or source files
+	const normalized = answer
+		.replace(/\\r\\n/g, "\n")
+		.replace(/\\n/g, "\n")
+		.replace(/\r\n/g, "\n");
+
 	// If answer contains HTML tags (like <ul>, <li>, <ol>, <p>, <br>)
-	if (/<(?:ul|ol|li|p|br|strong|b)\b[^>]*>/i.test(answer)) {
+	if (/<(?:ul|ol|li|p|br|strong|b)\b[^>]*>/i.test(normalized)) {
 		return (
 			<div
 				className="service-landing__faq-html-answer"
-				dangerouslySetInnerHTML={{ __html: answer }}
+				dangerouslySetInnerHTML={{ __html: normalized }}
 			/>
 		);
 	}
 
 	// Parse markdown-style answers (with lines and bullets)
-	const lines = answer.split("\n").map((l) => l.trim()).filter(Boolean);
+	const lines = normalized.split("\n").map((l) => l.trim()).filter(Boolean);
+	if (lines.length <= 1) {
+		return <p>{normalized.trim()}</p>;
+	}
+
 	const elements = [];
 	let currentBullets = [];
+	let currentListType = "ul";
 	let pIndex = 0;
 
 	const flushBullets = () => {
 		if (currentBullets.length > 0) {
+			const ListTag = currentListType === "ol" ? "ol" : "ul";
 			elements.push(
-				<ul key={`ul-${pIndex++}`}>
+				<ListTag key={`list-${pIndex++}`}>
 					{currentBullets.map((item, idx) => (
 						<li key={idx}>{item}</li>
 					))}
-				</ul>
+				</ListTag>
 			);
 			currentBullets = [];
+			currentListType = "ul";
 		}
 	};
 
+	// Determine if following lines are items of a list
+	const hasColonIntro = lines[0].endsWith(":");
+
 	for (let i = 0; i < lines.length; i++) {
 		const line = lines[i];
+
+		if (i === 0 && hasColonIntro) {
+			flushBullets();
+			elements.push(<p key={`p-${pIndex++}`}>{line}</p>);
+			continue;
+		}
+
 		if (/^[-*•]\s+/.test(line)) {
+			if (currentBullets.length > 0 && currentListType !== "ul") {
+				flushBullets();
+			}
+			currentListType = "ul";
 			currentBullets.push(line.replace(/^[-*•]\s+/, ""));
+		} else if (/^\d+[\.)]\s+/.test(line)) {
+			if (currentBullets.length > 0 && currentListType !== "ol") {
+				flushBullets();
+			}
+			currentListType = "ol";
+			currentBullets.push(line.replace(/^\d+[\.)]\s+/, ""));
+		} else if (hasColonIntro && line.length < 200) {
+			// Lines following an introductory colon (e.g. "Servicing Includes:\nCleaning AC...")
+			if (currentBullets.length > 0 && currentListType !== "ul") {
+				flushBullets();
+			}
+			currentListType = "ul";
+			currentBullets.push(line.replace(/^[-*•]\s*/, ""));
+		} else if (
+			lines.length >= 3 &&
+			lines.every((l) => l.length < 120 && !l.endsWith(":"))
+		) {
+			// A pure sequence of checklist symptoms or items (e.g. "Check the AC airflow.\nBe aware...")
+			currentListType = "ul";
+			currentBullets.push(line.replace(/^[-*•]\s*/, ""));
 		} else {
 			flushBullets();
 			elements.push(<p key={`p-${pIndex++}`}>{line}</p>);
@@ -76,13 +133,14 @@ function AnswerContent({ answer }) {
 	}
 	flushBullets();
 
-	return elements.length > 0 ? elements : <p>{answer}</p>;
+	return elements.length > 0 ? elements : <p>{normalized.trim()}</p>;
 }
 
 function AccordionSection({ content, contact, tone = "soft" }) {
 	const [activeIndex, setActiveIndex] = useState(0);
 
-	if (!content?.items?.length) return null;
+	const faqList = content?.items || content?.faqs || [];
+	if (!faqList.length) return null;
 
 	const phoneNum = contact?.phone || DEFAULT_CONTACT.phone;
 	const phoneDisplay =
@@ -189,7 +247,7 @@ function AccordionSection({ content, contact, tone = "soft" }) {
 
 					{/* Right Column: FAQ Accordion List */}
 					<div className="service-landing__faq-list">
-						{content.items.map((item, index) => {
+						{faqList.map((item, index) => {
 							const isOpen = activeIndex === index;
 							const question = item.question || item.title;
 							const answer = item.answer || item.desc;

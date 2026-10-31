@@ -12,10 +12,12 @@ function createInitialForm(content) {
   };
 }
 
-export default function useBookingRequest({ content, contact }) {
+export default function useBookingRequest({ content = {}, contact = {} } = {}) {
+  const safeContent = content || {};
+  const safeContact = contact || {};
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedItem, setSelectedItem] = useState("");
-  const [form, setForm] = useState(() => createInitialForm(content));
+  const [form, setForm] = useState(() => createInitialForm(safeContent));
   const [submitted, setSubmitted] = useState(false);
 
   useEffect(() => {
@@ -37,11 +39,11 @@ export default function useBookingRequest({ content, contact }) {
 
   const openBooking = useCallback(
     (itemName) => {
-      setSelectedItem(itemName || content.defaultService);
+      setSelectedItem(itemName || safeContent.defaultService || "");
       setSubmitted(false);
       setModalOpen(true);
     },
-    [content.defaultService]
+    [safeContent.defaultService]
   );
 
   const closeBooking = useCallback(() => setModalOpen(false), []);
@@ -49,24 +51,33 @@ export default function useBookingRequest({ content, contact }) {
   const onSubmit = useCallback(
     (event) => {
       event.preventDefault();
-      const itemName = selectedItem || content.defaultService;
+      const itemName = selectedItem || safeContent.defaultService || "AC Service";
+      const messageGreeting = safeContent.messageGreeting || "Hello FAJ, I would like to request";
+      const labels = safeContent.messageLabels || {
+        name: "Name",
+        phone: "Phone",
+        location: "Location",
+        date: "Preferred Date",
+        page: "Service Page",
+      };
       const message = [
-        `${content.messageGreeting} ${itemName}.`,
-        `${content.messageLabels.name}: ${form.name}`,
-        `${content.messageLabels.phone}: ${form.phone}`,
-        `${content.messageLabels.location}: ${form.location}`,
-        `${content.messageLabels.date}: ${form.date}`,
-        `${content.messageLabels.page}: ${window.location.href}`,
+        `${messageGreeting} ${itemName}.`,
+        `${labels.name || "Name"}: ${form.name}`,
+        `${labels.phone || "Phone"}: ${form.phone}`,
+        `${labels.location || "Location"}: ${form.location}`,
+        `${labels.date || "Date"}: ${form.date}`,
+        `${labels.page || "Page"}: ${window.location.href}`,
       ].join("\n");
 
+      const waNumber = safeContact.whatsapp || "971507464712";
       window.open(
-        `https://wa.me/${contact.whatsapp}?text=${encodeURIComponent(message)}`,
+        `https://wa.me/${waNumber}?text=${encodeURIComponent(message)}`,
         "_blank",
         "noopener,noreferrer"
       );
       setSubmitted(true);
     },
-    [contact.whatsapp, content, form, selectedItem]
+    [safeContact.whatsapp, safeContent, form, selectedItem]
   );
 
   const bookingState = useMemo(

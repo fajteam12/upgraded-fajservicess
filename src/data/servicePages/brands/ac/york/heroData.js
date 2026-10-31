@@ -1,19 +1,41 @@
 const heroData = {
   eyebrow: "York AC Specialists",
-  title:
-    "Top-Quality York Air Conditioning | York AC Repair and Maintenance Services in Dubai, UAE",
+  title: "Top-Quality York Air Conditioning | York AC Repair and Maintenance Services in Dubai, UAE",
   paragraphs: [
     "Looking for reliable servicing and maintenance for your York air conditioning and refrigeration systems?",
-    "We provide expert services for York HVAC, ducted split AC, central AC, and VRF AC repair throughout Dubai. Serving both homes and businesses, we deliver high-quality HVAC service and annual maintenance contract.",
-    "Established in 2010, FAJ Technical Services L.L.C is a trusted provider of York air conditioning solutions in Dubai and Sharjah. Our experienced team offers York AC cleaning, maintenance, repair, and installation services for residential and commercial units, ensuring your system operates efficiently and enhances your indoor comfort.",
+  ],
+  paragraph: "Looking for reliable servicing and maintenance for your York air conditioning and refrigeration systems?",
+  highlights: [
+    {
+      icon: "award",
+      title: "Established Since 2010",
+      description: "Reliability, Diversity, Integrity, and Quality.",
+    },
+    {
+      icon: "shield-check",
+      title: "Workmanship Warranty",
+      description: "Repair and service warranty support.",
+    },
+    {
+      icon: "phone-support",
+      title: "7-Day Service Response",
+      description: "Fast assistance across Dubai.",
+    },
   ],
   primaryAction: "Book An Appointment",
-  secondaryAction: "Call +971 4 330 0002",
-  bookingLabel: "York AC Repair",
+  secondaryAction: "Call Now",
+  showCall: true,
+  showPhone: true,
   image: {
-    id: "brands/ac/ac-brand-top",
-    src: "/img/brands/ac/ac-brand-top.webp",
-    alt: "York Airconditioner Repair",
+    id: "ac-brand-logos/york-logo",
+    src: "/img/ac-brand-logos/york-logo.webp",
+    alt: "York Air Conditioning Repair and Maintenance in Dubai",
+    width: 600,
+    height: 400,
+    fit: "contain",
+    padding: "20px",
+    bg: "#ffffff",
+    hideOverlay: true,
   },
 };
 

@@ -18,10 +18,20 @@ function MaintenanceBenefits({
   showCta,
   cta,
   contact,
+  items = [],
+  showPhone,
+  showWhatsapp,
 }) {
   const hasEyebrow = Boolean(eyebrow?.trim());
   const hasTitle = Boolean(title?.trim());
   const hasDescription = Boolean(description?.trim());
+
+  const benefitsList =
+    Array.isArray(benefits) && benefits.length > 0
+      ? benefits
+      : Array.isArray(items) && items.length > 0
+      ? items
+      : [];
 
   const hasExplicitShowCta = typeof showCta === "boolean";
   const isCtaEnabled = hasExplicitShowCta
@@ -39,9 +49,11 @@ function MaintenanceBenefits({
       return "";
     };
 
-    if ("phone" in ctaConfig) {
+    const hasExplicitCta = Boolean(typeof cta === "object" && cta);
+
+    if (getCleanUrl(ctaConfig.phone)) {
       phoneUrl = getCleanUrl(ctaConfig.phone);
-    } else if (!cta && contact?.phone) {
+    } else if (!hasExplicitCta && contact?.phone) {
       phoneUrl = `tel:+${String(contact.phone).replace(/[^0-9]/g, "")}`;
     }
 
@@ -49,7 +61,7 @@ function MaintenanceBenefits({
       phoneUrl = `tel:+${phoneUrl.replace(/[^0-9]/g, "")}`;
     }
 
-    if ("whatsapp" in ctaConfig) {
+    if (getCleanUrl(ctaConfig.whatsapp)) {
       whatsappUrl = getCleanUrl(ctaConfig.whatsapp);
     } else if (contact?.whatsapp) {
       whatsappUrl = `https://api.whatsapp.com/send?phone=+${String(contact.whatsapp).replace(/[^0-9]/g, "")}&text=Hello`;
@@ -57,6 +69,13 @@ function MaintenanceBenefits({
 
     if (whatsappUrl && !whatsappUrl.startsWith("http")) {
       whatsappUrl = `https://api.whatsapp.com/send?phone=+${whatsappUrl.replace(/[^0-9]/g, "")}&text=Hello`;
+    }
+
+    if (showPhone === false || ctaConfig.showPhone === false) {
+      phoneUrl = "";
+    }
+    if (showWhatsapp === false || ctaConfig.showWhatsapp === false) {
+      whatsappUrl = "";
     }
   }
 
@@ -127,10 +146,10 @@ function MaintenanceBenefits({
           </aside>
 
           <div className="maintenance-benefits__grid">
-            {benefits.map((benefit, index) => {
+            {benefitsList.map((benefit, index) => {
               return (
                 <ScrollSlide
-                  key={benefit.id}
+                  key={benefit.id || benefit.title || index}
                   direction="up"
                   delay={(index % 2) * 0.1}
                 >
@@ -140,11 +159,11 @@ function MaintenanceBenefits({
                         className="maintenance-benefits__icon"
                         aria-hidden="true"
                       >
-                        <ServiceIcon name={benefit.icon} />
+                        <ServiceIcon name={benefit.icon || "snowflake"} />
                       </span>
 
                       <span className="maintenance-benefits__number">
-                        {benefit.number}
+                        {benefit.number || String(index + 1).padStart(2, "0")}
                       </span>
                     </div>
 

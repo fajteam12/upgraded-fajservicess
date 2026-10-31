@@ -12,6 +12,10 @@ const pricingData = {
       title: "AC Inspection Service",
       badge: "Diagnostics",
       price: "AED 215",
+      image: {
+        id: "ac-service-page/ac-inspection",
+        src: "/img/ac-service-page/ac-inspection.webp",
+      },
       description:
         "Is your AC not cooling your place? Is the AC thermostat broken, or is the fan making strange noises? Give us a call",
       popup: {
@@ -43,10 +47,15 @@ const pricingData = {
     },
 
     {
-      title: "Basic AC Cleaning Price",
+      title: "Basic AC Cleaning",
       subtitle: "Selected work includes a 60-day service warranty",
+      warranty: "60 - Days Warranty",
       badge: "Popular",
-      price: "AED 190",
+      price: "AED 280",
+      image: {
+        id: "ac-service-page/ac-cleaning-price",
+        src: "/img/ac-service-page/ac-cleaning-price.webp",
+      },
       description:
         "If your AC has reduced airflow or is leaking water, work quickly. Regularly clean filters and drain to provide efficiency and good air quality.",
       popup: {
@@ -72,48 +81,41 @@ const pricingData = {
           {
             label: "Terms & Conditions",
             text:
-              "Starting from AED 190 basic cleaning service charge applies based on the type, capacity of the unit, and location for each diagnosis.",
+              "Starting from AED 280 basic cleaning service charge applies based on the type, capacity of the unit, and location for each diagnosis.",
           },
         ],
       },
     },
 
     {
-      title: "AC Maintenance Price",
+      title: "AC Maintenance",
       subtitle: "Selected work includes a 60-day service warranty",
+      warranty: "60 - Days Warranty",
       badge: "Preventive Care",
-      price: "AED 235",
+      price: "AED 325",
+      image: {
+        id: "ac-service-page/ac-maintenance-price",
+        src: "/img/ac-service-page/ac-maintenance-price.webp",
+      },
       description:
-        "Relax and save money by keeping our expert technicians clean and maintain your AC, stopping unnecessary breakdowns.",
+        "Regular AC maintenance is essential for optimal performance. Clean coils, clear drains, and a tuned system ensure lower bills, better cooling, and clean air.",
       popup: {
-        title: "AC Maintenance scope of works",
+        title: "AC Maintenance Service scope of works:",
         sections: [
           {
-            heading: "DX Unit AC",
             items: [
-              "Clean the condenser coil",
-              "Check, clean and flush the drain line",
-              "Check the room and grill temperatures",
-              "Check and clean the filters and air valves",
-              "Check the vibration pads and vibration isolators",
-              "Check the blowers and clean if proper access is available",
-              "Check the conditions of contactors, relays, and capacitors",
-              "Check temperature controlled thermostat and pressure sensors",
-              "Check the electrical points in the outdoor unit and tighten, clean the electrical terminals",
-              "Check the insulation on the pipeline, if damaged, recommend for replacement (Additional cost for replacement of insulation)",
-            ],
-          },
-          {
-            heading: "Chiller FCU AC",
-            items: [
-              "Check the vibration isolators",
-              "Check, clean and flush the drain line",
-              "Check the room and grill temperatures",
-              "Check and clean the filters and air valves",
-              "Check temperature controlled thermostat",
-              "Check the functionality of actuator valves",
-              "Check the blowers and clean if proper access is available",
-              "Check the insulation on the pipeline; if damaged, recommend for replacement (Additional cost for replacement of insulation)",
+              "Cleaning the indoor filters",
+              "Flushing the drain line",
+              "Checking the suction pressure",
+              "Checking the discharge pressure",
+              "Checking the indoor fan blower",
+              "Checking the outdoor fan motor",
+              "Cleaning the indoor evaporator coil",
+              "Checking the electrical connections",
+              "Cleaning the outdoor condenser coil",
+              "Checking the indoor unit control PCB",
+              "Checking the outdoor unit control PCB",
+              "Checking the amp draw of the compressor",
             ],
           },
           {
@@ -124,7 +126,7 @@ const pricingData = {
           {
             label: "Terms & Conditions",
             text:
-              "Starting from AED 235 AC Maintenance charge applies based on the type, capacity of the unit, and location for each diagnosis.",
+              "Starting from AED 325 maintenance service charge applies based on the type, capacity of the unit, and location for each diagnosis.",
           },
         ],
       },

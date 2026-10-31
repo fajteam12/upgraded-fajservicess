@@ -1,15 +1,43 @@
 const heroData = {
   eyebrow: "Bryant AC Specialists",
-  title:
-    "Top-Quality Bryant Air Conditioning – Bryant AC Repair and Services Dubai, UAE",
+  title: "Top-Quality Bryant Air Conditioning – Bryant AC Repair and Services Dubai, UAE",
   paragraphs: [
     "To ensure optimal comfort throughout the year, it is imperative to address challenges such as elevated humidity levels, warm nights, and indoor allergens.",
     "Established in 2010, FAJ Technical Services L.L.C is a reputable provider of Bryant air conditioning solutions in Dubai and Sharjah.",
-    "Our team of professionals specializes in Bryant AC repairs, cleaning service, and maintenance, as well as installation services for both residential and commercial units. We are dedicated to ensuring the efficient operation of your air conditioning system, thereby enhancing overall indoor comfort.",
+  ],
+  paragraph: "To ensure optimal comfort throughout the year, it is imperative to address challenges such as elevated humidity levels, warm nights, and indoor allergens.",
+  highlights: [
+    {
+      icon: "award",
+      title: "Established Since 2010",
+      description: "Reliability, Diversity, Integrity, and Quality.",
+    },
+    {
+      icon: "shield-check",
+      title: "Workmanship Warranty",
+      description: "Repair and service warranty support.",
+    },
+    {
+      icon: "phone-support",
+      title: "7-Day Service Response",
+      description: "Fast assistance across Dubai.",
+    },
   ],
   primaryAction: "Book An Appointment",
-  secondaryAction: "Call +971 4 330 0002",
-  bookingLabel: "Bryant AC Repair",
+  secondaryAction: "Call Now",
+  showCall: true,
+  showPhone: true,
+  image: {
+    id: "ac-brand-logos/bryant-logo",
+    src: "/img/ac-brand-logos/bryant-logo.webp",
+    alt: "Bryant Air Conditioning Repair and Maintenance in Dubai",
+    width: 600,
+    height: 400,
+    fit: "contain",
+    padding: "20px",
+    bg: "#ffffff",
+    hideOverlay: true,
+  },
 };
 
 export default heroData;

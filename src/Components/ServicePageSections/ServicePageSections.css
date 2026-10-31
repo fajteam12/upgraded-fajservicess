@@ -3663,6 +3663,12 @@
   list-style-type: disc;
 }
 
+.service-landing__faq-answer ol {
+  margin: 4px 0 16px;
+  padding: 0 20px 0 45px;
+  list-style-type: decimal;
+}
+
 .service-landing__faq-answer li {
   margin-bottom: 6px;
   color: var(--sl-body, #1e293b);
@@ -5209,4 +5215,63 @@
 .service-landing__info-card.is-dark .service-landing__inline-link:hover,
 .service-landing__info-card.is-featured .service-landing__inline-link:hover {
   color: #ffffff;
+}
+
+
+/* Sleek directory cards without descriptions (removes huge blank height/space) */
+.service-landing__brand-card.is-simple-card,
+.service-landing__brand-card:not(:has(p)):not(:has(.service-landing__action-link)) {
+  min-height: unset !important;
+  height: auto;
+  padding: 0 !important;
+  display: flex !important;
+  align-items: stretch !important;
+  border-radius: 12px !important;
+}
+
+.service-landing__brand-card.is-simple-card h3,
+.service-landing__brand-card:not(:has(p)):not(:has(.service-landing__action-link)) h3 {
+  margin: 0 !important;
+  width: 100% !important;
+  display: flex !important;
+  align-items: stretch !important;
+}
+
+.service-landing__brand-card.is-simple-card h3 a,
+.service-landing__brand-card.is-simple-card h3 > span,
+.service-landing__brand-card:not(:has(p)):not(:has(.service-landing__action-link)) h3 a,
+.service-landing__brand-card:not(:has(p)):not(:has(.service-landing__action-link)) h3 > span {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 12px !important;
+  width: 100% !important;
+  padding: 16px 20px !important;
+  color: var(--sl-dark, #001f3f) !important;
+  text-decoration: none !important;
+  font-size: clamp(0.92rem, 1.1vw, 1.05rem) !important;
+  font-weight: 800 !important;
+  line-height: 1.35 !important;
+  letter-spacing: -0.01em !important;
+  transition: color 250ms ease !important;
+}
+
+.service-landing__brand-card.is-simple-card .service-landing__brand-card-arrow {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 1.15rem !important;
+  font-weight: 700 !important;
+  color: var(--sl-cyan, #007fa3) !important;
+  transition: transform 250ms ease, color 250ms ease !important;
+  flex-shrink: 0 !important;
+}
+
+.service-landing__brand-card.is-simple-card:hover h3 a {
+  color: var(--sl-cyan, #007fa3) !important;
+}
+
+.service-landing__brand-card.is-simple-card:hover .service-landing__brand-card-arrow {
+  transform: translateX(4px) !important;
+  color: #0096be !important;
 }

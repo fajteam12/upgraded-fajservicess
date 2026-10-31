@@ -151,6 +151,12 @@ function SearchableDirectorySection({
               item.external === true ||
               (itemPath && /^https?:\/\//i.test(itemPath));
 
+            const hasDescription = Boolean(
+              item.description || content.defaultItemDescription
+            );
+            const hasAction = Boolean(content.actionLabel && onAction);
+            const isSimpleCard = !hasDescription && !hasAction;
+
             return (
               <ScrollSlide
                 direction="up"
@@ -190,7 +196,11 @@ function SearchableDirectorySection({
                     )}
                   </div>
                 ) : (
-                  <article className="service-landing__brand-card">
+                  <article
+                    className={`service-landing__brand-card${
+                      isSimpleCard ? " is-simple-card" : ""
+                    }`}
+                  >
                     <h3>
                       {itemPath ? (
                         isExternal ? (
@@ -199,27 +209,42 @@ function SearchableDirectorySection({
                             target="_blank"
                             rel="noopener noreferrer"
                           >
-                            {itemName}
+                            <span>{itemName}</span>
+                            {isSimpleCard && (
+                              <span
+                                className="service-landing__brand-card-arrow"
+                                aria-hidden="true"
+                              >
+                                {"\u2192"}
+                              </span>
+                            )}
                           </a>
                         ) : (
                           <Link to={itemPath}>
-                            {itemName}
+                            <span>{itemName}</span>
+                            {isSimpleCard && (
+                              <span
+                                className="service-landing__brand-card-arrow"
+                                aria-hidden="true"
+                              >
+                                {"\u2192"}
+                              </span>
+                            )}
                           </Link>
                         )
                       ) : (
-                        itemName
+                        <span>{itemName}</span>
                       )}
                     </h3>
 
-                    {(item.description ||
-                      content.defaultItemDescription) && (
+                    {hasDescription && (
                       <p>
                         {item.description ||
                           content.defaultItemDescription}
                       </p>
                     )}
 
-                    {content.actionLabel && onAction && (
+                    {hasAction && (
                       <button
                         type="button"
                         className="service-landing__action-link"

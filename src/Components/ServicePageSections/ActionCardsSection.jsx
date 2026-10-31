@@ -82,11 +82,14 @@ function ActionCardsSection({
   contact,
   align = "left",
 }) {
-  const isCtaEnabled = Boolean(
-    content?.showCta === false
-      ? false
-      : (content?.showCta ?? showCta ?? (content?.cta || cta))
-  );
+  const hasExplicitShowCta = typeof showCta === "boolean";
+  const isCtaEnabled = hasExplicitShowCta
+    ? showCta
+    : Boolean(
+        content?.showCta !== undefined
+          ? content.showCta
+          : (content?.cta || cta)
+      );
 
   let phoneUrl = "";
   let whatsappUrl = "";
@@ -95,24 +98,20 @@ function ActionCardsSection({
     const hasContentCta = Boolean(
       typeof content?.cta === "object" && content?.cta
     );
-    const hasExplicitCta = Boolean(
-      hasContentCta || (typeof cta === "object" && cta)
-    );
-
-    const ctaConfig = {
-      ...(hasContentCta ? content.cta : {}),
-      ...(typeof cta === "object" && cta ? cta : {}),
-    };
+    const hasPropCta = Boolean(typeof cta === "object" && cta);
+    const hasExplicitCta = hasContentCta || hasPropCta;
 
     const getCleanUrl = (val) => {
       if (typeof val === "string") return val.trim();
+      if (typeof val === "object" && val?.href) return String(val.href).trim();
       return "";
     };
 
-    // Phone URL resolution: empty string or false suppresses the button
-    if ("phone" in ctaConfig) {
-      phoneUrl = getCleanUrl(ctaConfig.phone);
-    } else if ("phone" in content) {
+    if (hasPropCta && getCleanUrl(cta.phone)) {
+      phoneUrl = getCleanUrl(cta.phone);
+    } else if (hasContentCta && getCleanUrl(content.cta.phone)) {
+      phoneUrl = getCleanUrl(content.cta.phone);
+    } else if (content?.phone) {
       phoneUrl = getCleanUrl(content.phone);
     } else if (!hasExplicitCta && contact?.phone) {
       phoneUrl = `tel:+${String(contact.phone).replace(/[^0-9]/g, "")}`;
@@ -122,10 +121,11 @@ function ActionCardsSection({
       phoneUrl = `tel:+${phoneUrl.replace(/[^0-9]/g, "")}`;
     }
 
-    // WhatsApp URL resolution: empty string or false suppresses the button
-    if ("whatsapp" in ctaConfig) {
-      whatsappUrl = getCleanUrl(ctaConfig.whatsapp);
-    } else if ("whatsapp" in content) {
+    if (hasPropCta && getCleanUrl(cta.whatsapp)) {
+      whatsappUrl = getCleanUrl(cta.whatsapp);
+    } else if (hasContentCta && getCleanUrl(content.cta.whatsapp)) {
+      whatsappUrl = getCleanUrl(content.cta.whatsapp);
+    } else if (content?.whatsapp) {
       whatsappUrl = getCleanUrl(content.whatsapp);
     } else if (!hasExplicitCta && contact?.whatsapp) {
       whatsappUrl = `https://api.whatsapp.com/send?phone=+${String(contact.whatsapp).replace(/[^0-9]/g, "")}&text=Hello`;

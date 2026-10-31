@@ -1,18 +1,41 @@
 const heroData = {
   eyebrow: "O General AC Specialists",
-  title:
-    "Cost-Effective O General AC Repair and Maintenance Service in Dubai",
+  title: "Cost-Effective O General AC Repair and Maintenance Service in Dubai",
   paragraphs: [
-    "O General AC Repair by FAJ Technical Services L.L.C, established in 2010, is your trusted solution for any issues with your O General air conditioning system. Our AC technicians are always available to assist you in Dubai and the surrounding areas. Contact us today to schedule a visit from one of our expert technicians at a time that is convenient for you.",
-    "In the rare event of a fault or breakdown, our experienced O General AC repair and maintenance technicians can typically diagnose and fix your unit during their first visit. This minimizes downtime and helps restore your comfortable indoor climate as quickly as possible.",
+    "O General AC Repair by FAJ Technical Services L.L.C , established in 2010, is your trusted solution for any issues with your O General air conditioning system. Our AC technicians are always available to assist you in Dubai and the surrounding areas. Contact us today to schedule a visit from one of our expert technicians at a time that is convenient for you.",
+  ],
+  paragraph: "O General AC Repair by FAJ Technical Services L.L.C , established in 2010, is your trusted solution for any issues with your O General air conditioning system. Our AC technicians are always available to assist you in Dubai and the surrounding areas. Contact us today to schedule a visit from one of our expert technicians at a time that is convenient for you.",
+  highlights: [
+    {
+      icon: "award",
+      title: "Established Since 2010",
+      description: "Reliability, Diversity, Integrity, and Quality.",
+    },
+    {
+      icon: "shield-check",
+      title: "Workmanship Warranty",
+      description: "Repair and service warranty support.",
+    },
+    {
+      icon: "phone-support",
+      title: "7-Day Service Response",
+      description: "Fast assistance across Dubai.",
+    },
   ],
   primaryAction: "Book An Appointment",
-  secondaryAction: "Call +971 4 330 0002",
-  bookingLabel: "O General AC Repair",
+  secondaryAction: "Call Now",
+  showCall: true,
+  showPhone: true,
   image: {
-    id: "brands/ac/ac-brand-top",
-    src: "/img/brands/ac/ac-brand-top.webp",
-    alt: "O General Airconditioner Repair",
+    id: "ac-brand-logos/o-general-logo",
+    src: "/img/ac-brand-logos/o-general-logo.webp",
+    alt: "OGeneral Air Conditioning Repair and Maintenance in Dubai",
+    width: 600,
+    height: 400,
+    fit: "contain",
+    padding: "20px",
+    bg: "#ffffff",
+    hideOverlay: true,
   },
 };
 
