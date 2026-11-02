@@ -414,6 +414,23 @@ const Orphan = ({ titleSeo, description, Author, Keyword, URL, Image }) => {
                             <li><a href="https://www.fajservices.ae/services/pcb-repair-services/">PCB Repair Services</a></li>
                             <li><a href="https://www.fajservices.ae/services/kitchen-equipment-maintenance/commercial-kitchen-equipment-amc/">Commercial Kitchen Equipment AMC</a></li>
                             <li><a href="https://www.fajservices.ae/services/plumbing-services-in-dubai/">Plumber Services In Dubai</a></li>
+                            <li><a href="https://www.fajservices.ae/blog/extend-ac-lifespan-tips/">Tips for Extending the Lifespan of Your AC Unit</a></li>
+                            <li><a href="https://www.fajservices.ae/blog/how-to-set-ac-temperature-for-cooling/">Learn How To Set AC Temperature For Cooling: Stay Cool, Save Energy</a></li>
+                            <li><a href="https://www.fajservices.ae/faqs/">FAQ | Frequently Asked Questions Services Home & Commercial</a></li>
+                            <li><a href="https://www.fajservices.ae/testimonials/">Testimonials: Our Client's Experiences | FAJ Technical Dubai</a></li>
+                            <li><a href="https://www.fajservices.ae/blog/how-to-clean-ac-filter-for-all-types-a-step-by-step-guide/">How to Clean AC Filter for all Types: A Step-by-Step Guide</a></li>
+                            <li><a href="https://www.fajservices.ae/blog/the-gas-cooker-a-reliable-appliance-for-modern-kitchens/">The Gas Cooker: A Reliable Appliance for Modern Kitchens</a></li>
+                            <li><a href="https://www.fajservices.ae/orphan/">Trusted Home & Commercial Appliance Repair in Dubai</a></li>
+                            <li><a href="https://www.fajservices.ae/blog/safe-successful-kitchen-appliance-installation/">How to Ensure a Safe, Successful Installation and Upgradation of Kitchen Appliances</a></li>
+                            <li><a href="https://www.fajservices.ae/blog/its-time-for-an-ac-cleaning/">Don't Ignore These Warning Signs! it's Time for an AC Cleaning</a></li>
+                            <li><a href="https://www.fajservices.ae/blog/how-to-choose-a-reliable-technical-service-provider-uae/">How to Choose a Reliable Technical Service Provider in the UAE</a></li>
+                            <li><a href="https://www.fajservices.ae/about-us/">Our Story: About us | Who We Are | FAJ Technical Services L.L.C</a></li>
+                            <li><a href="https://www.fajservices.ae/services/air-conditioning-repair/coverage-area/jumeirah-beach-residence/">Best AC Maintenance & Repair in Jumeirah Beach Residence Near</a></li>
+                            <li><a href="https://www.fajservices.ae/blog/what-is-ac-filter/">What Is AC Filter?</a></li>
+                            <li><a href="https://www.fajservices.ae/services/air-conditioning-repair/coverage-area/town-square/">Best AC Repair and Cleaning Service in Town Square, Dubai</a></li>
+                            <li><a href="https://www.fajservices.ae/blog/portable-air-conditioners-guide-2024/">The Ultimate Guide to Portable Air Conditioners</a></li>
+                            <li><a href="https://www.fajservices.ae/blog/ac-maintenance-cost-guide-dubai/">AC Maintenance Cost Guide in Dubai: Everything You Need to Know</a></li>
+                            <li><a href="https://www.fajservices.ae/services/air-conditioning-repair/coverage-area/discovery-gardens/">Best AC Repair & AC Maintenance Servicing in Discovery Gardens</a></li>
                         </ul>
                     </div>
                 </div>
