@@ -1,11 +1,501 @@
 import acCoverageLocations106 from "../../../acCoverageLocations106.js";
-import heroData from "./heroData";
-import faqsData from "./faqsData";
-import contractsData from "./contractsData";
-import pricingData from "./pricingData";
-import repairPriceData from "./repairPriceData";
-import energyTipsData from "./energyTipsData";
-import testimonialsData from "./testimonialsData";
+
+// --- Inlined from heroData.js ---
+const heroData = {
+  eyebrow: "Daikin AC Specialists",
+  title: "Reliable Daikin Air Conditioning Repair and Maintenance Service Specialists in Dubai, UAE",
+  paragraphs: [
+    "Are you looking for a Daikin air conditioning maintenance provider for your home or business? We can help!",
+    "FAJ Technical Services L.L.C offers complete services for Daikin air conditioning systems throughout Dubai, including regular repair, maintenance, and installation.",
+  ],
+  paragraph: "Are you looking for a Daikin air conditioning maintenance provider for your home or business? We can help!",
+  highlights: [
+    {
+      icon: "award",
+      title: "Established Since 2010",
+      description: "Reliability, Diversity, Integrity, and Quality.",
+    },
+    {
+      icon: "shield-check",
+      title: "Workmanship Warranty",
+      description: "Repair and service warranty support.",
+    },
+    {
+      icon: "phone-support",
+      title: "7-Day Service Response",
+      description: "Fast assistance across Dubai.",
+    },
+  ],
+  primaryAction: "Book An Appointment",
+  secondaryAction: "Call Now",
+  showCall: true,
+  showPhone: true,
+  image: {
+    id: "ac-brand-logos/daikin-logo",
+    src: "/img/ac-brand-logos/daikin-logo.webp",
+    alt: "Daikin Air Conditioning Repair and Maintenance in Dubai",
+    width: 600,
+    height: 400,
+    fit: "contain",
+    padding: "20px",
+    bg: "#ffffff",
+    hideOverlay: true,
+  },
+};
+
+// --- Inlined from faqsData.js ---
+const items = [
+    {
+      "question": "How do I clear Daikin AC error code?",
+      "title": "How do I clear Daikin AC error code?",
+      "answer": [
+        {
+          "type": "bullets",
+          "items": [
+            "Simple Steps to Reset Your Daikin Air Conditioning Unit",
+            "Find the On/Off button on your Daikin air conditioner's remote.",
+            "Press and hold this button for two seconds.",
+            "Release the button, then press it once more.",
+            "Finally, press it a third time. Your Daikin air conditioner should reset and start running again."
+          ]
+        }
+      ],
+      "desc": [
+        {
+          "type": "bullets",
+          "items": [
+            "Simple Steps to Reset Your Daikin Air Conditioning Unit",
+            "Find the On/Off button on your Daikin air conditioner's remote.",
+            "Press and hold this button for two seconds.",
+            "Release the button, then press it once more.",
+            "Finally, press it a third time. Your Daikin air conditioner should reset and start running again."
+          ]
+        }
+      ]
+    },
+    {
+      "question": "What is E3 code on Daikin AC VRV?",
+      "title": "What is E3 code on Daikin AC VRV?",
+      "answer": "E3 – High pressure is excessively high (HPS activation) – The condenser may have short-circuited or overloaded, or the heat exchanger may be dirty.",
+      "desc": "E3 – High pressure is excessively high (HPS activation) – The condenser may have short-circuited or overloaded, or the heat exchanger may be dirty."
+    },
+    {
+      "question": "How do I troubleshoot my Daikin?",
+      "title": "How do I troubleshoot my Daikin?",
+      "answer": [
+        {
+          "type": "bullets",
+          "items": [
+            "Daikin aircon troubleshooting—the full list",
+            "If the on/off button is off.",
+            "If the operation lamp is flashing (green flashing light)",
+            "Double check the temperature on your remote.",
+            "Check that the air filters are clean.",
+            "Check that the air con is clear of obstructions.",
+            "Check your doors and windows.",
+            "Check that the sensor is working."
+          ]
+        }
+      ],
+      "desc": [
+        {
+          "type": "bullets",
+          "items": [
+            "Daikin aircon troubleshooting—the full list",
+            "If the on/off button is off.",
+            "If the operation lamp is flashing (green flashing light)",
+            "Double check the temperature on your remote.",
+            "Check that the air filters are clean.",
+            "Check that the air con is clear of obstructions.",
+            "Check your doors and windows.",
+            "Check that the sensor is working."
+          ]
+        }
+      ]
+    },
+    {
+      "question": "What is Daikin AC Error codes?",
+      "title": "What is Daikin AC Error codes?",
+      "answer": [
+        {
+          "type": "bullets",
+          "items": [
+            "AA0 External protection device activated",
+            "A1 Malfunction of indoor unit PCB",
+            "A3 Drain Level Control System Abnormality",
+            "A4 Malfunction of freezing protection",
+            "A5 High pressure control in heating, freeze-up protection control in cooling",
+            "E0 Protection devices activated (unified)",
+            "E1 Protection devices activated (unified)",
+            "E3 Actuation of high pressure switch (HPS)",
+            "E3 System No.1 Actuation of high pressure switch (HPS)",
+            "E4 Actuation of low pressure switch (LPS)",
+            "E5 Inverter compressor motor or overheat",
+            "J1 Malfunction of pressure sensor",
+            "J2 Malfunction of current sensor of compressor",
+            "J3 Malfunction of discharge pipe thermistor",
+            "J4 Malfunction of low pressure equivalent saturated temperature sensor system",
+            "J5 Malfunction of suction pipe thermistor"
+          ]
+        }
+      ],
+      "desc": [
+        {
+          "type": "bullets",
+          "items": [
+            "AA0 External protection device activated",
+            "A1 Malfunction of indoor unit PCB",
+            "A3 Drain Level Control System Abnormality",
+            "A4 Malfunction of freezing protection",
+            "A5 High pressure control in heating, freeze-up protection control in cooling",
+            "E0 Protection devices activated (unified)",
+            "E1 Protection devices activated (unified)",
+            "E3 Actuation of high pressure switch (HPS)",
+            "E3 System No.1 Actuation of high pressure switch (HPS)",
+            "E4 Actuation of low pressure switch (LPS)",
+            "E5 Inverter compressor motor or overheat",
+            "J1 Malfunction of pressure sensor",
+            "J2 Malfunction of current sensor of compressor",
+            "J3 Malfunction of discharge pipe thermistor",
+            "J4 Malfunction of low pressure equivalent saturated temperature sensor system",
+            "J5 Malfunction of suction pipe thermistor"
+          ]
+        }
+      ]
+    },
+    {
+      "question": "How often should a Daikin air conditioner be serviced?",
+      "title": "How often should a Daikin air conditioner be serviced?",
+      "answer": "While regular maintenance checks are not mandatory, they can be beneficial. Even if there are no visible issues, we suggest having your air conditioner inspected at least once a year to ensure optimal performance.",
+      "desc": "While regular maintenance checks are not mandatory, they can be beneficial. Even if there are no visible issues, we suggest having your air conditioner inspected at least once a year to ensure optimal performance."
+    },
+    {
+      "question": "What is the common problem of Daikin air conditioner?",
+      "title": "What is the common problem of Daikin air conditioner?",
+      "answer": "The seven most common Daikin inverter problems that require air conditioning repair are: air conditioner not starting due to a blown fuse, refrigerant leaks, and dirty air filters causing the air conditioner to work slowly.",
+      "desc": "The seven most common Daikin inverter problems that require air conditioning repair are: air conditioner not starting due to a blown fuse, refrigerant leaks, and dirty air filters causing the air conditioner to work slowly."
+    },
+    {
+      "question": "Why is my Daikin AC running but not cooling?",
+      "title": "Why is my Daikin AC running but not cooling?",
+      "answer": "Check and adjust the thermostat: Ensure the thermostat is set to 'AUTO' instead of 'ON' so the fan operates only during cooling cycles. If changing the settings doesn’t solve the problem, replace the thermostat batteries.",
+      "desc": "Check and adjust the thermostat: Ensure the thermostat is set to 'AUTO' instead of 'ON' so the fan operates only during cooling cycles. If changing the settings doesn’t solve the problem, replace the thermostat batteries."
+    },
+    {
+      "question": "Can I change AC Gas R410A to Gas R32?",
+      "title": "Can I change AC Gas R410A to Gas R32?",
+      "answer": "Changing the refrigerant would directly violate the manufacturer's instructions and invalidate any associated warranty. Additionally, it would cause the system to be non-compliant with CE marking and the Pressure Equipment Directive, potentially leading to insurance issues.",
+      "desc": "Changing the refrigerant would directly violate the manufacturer's instructions and invalidate any associated warranty. Additionally, it would cause the system to be non-compliant with CE marking and the Pressure Equipment Directive, potentially leading to insurance issues."
+    },
+    {
+      "question": "How many times Daikin AC needs to be serviced in Dubai?",
+      "title": "How many times Daikin AC needs to be serviced in Dubai?",
+      "answer": "It is generally advisable to have your air conditioner serviced at least 2 times in year, particularly at the start of summer. This ensures that the unit operates efficiently when you need it the most. Air conditioners are made up of various complex electronic components that require regular maintenance to function optimally.",
+      "desc": "It is generally advisable to have your air conditioner serviced at least 2 times in year, particularly at the start of summer. This ensures that the unit operates efficiently when you need it the most. Air conditioners are made up of various complex electronic components that require regular maintenance to function optimally."
+    },
+    {
+      "question": "What happens if you Don't get aircon serviced every 3 months in Dubai?",
+      "title": "What happens if you Don't get aircon serviced every 3 months in Dubai?",
+      "answer": "If you neglect regular maintenance of your air conditioner, dust, rust, and other debris can accumulate in the system, leading to decreased functionality. Your air conditioner will not operate as efficiently as a new one.",
+      "desc": "If you neglect regular maintenance of your air conditioner, dust, rust, and other debris can accumulate in the system, leading to decreased functionality. Your air conditioner will not operate as efficiently as a new one."
+    }
+  ];
+
+const faqsData = {
+  id: "daikin-ac-faqs",
+  eyebrow: "Have Questions?",
+  title: "Daikin AC Repair and Maintenance FAQs",
+  description: "Answers to common questions about Daikin AC error codes, troubleshooting, cooling problems and maintenance.",
+  items,
+  faqs: items,
+};
+
+// --- Inlined from contractsData.js ---
+const contractsData = {
+  id: "amc-packages",
+  eyebrow: "Preventive Protection",
+  title: "Daikin Air Conditioning Maintenance Contracts",
+  description:
+    "Choose a planned AC maintenance schedule based on property size, unit type, operating hours and response priorities.",
+  featuredIndex: 0,
+  actionLabel: "Request AMC quote",
+  plans: [
+    {
+      title: "Yearly AC Maintenance Contract",
+      tagline: "Comprehensive year-round support for dependable cooling.",
+      badge: "Best Value",
+      features: [
+        "Scheduled preventive maintenance visits",
+        "Limited or unlimited breakdown call-out options",
+        "Indoor and outdoor unit condition reporting",
+        "Packages available with or without spare parts",
+      ],
+    },
+    {
+      title: "Six-Month AC Maintenance Contract",
+      tagline: "Balanced seasonal care before peak cooling demand.",
+      badge: "Popular",
+      features: [
+        "Planned inspection and cleaning visits",
+        "Drainage, airflow and electrical checks",
+        "Cooling-performance recommendations",
+        "Optional priority breakdown support",
+      ],
+    },
+    {
+      title: "Three-Month AC Maintenance Contract",
+      tagline: "Flexible short-term protection for immediate AC needs.",
+      badge: "Flexible",
+      features: [
+        "Targeted preventive maintenance visit",
+        "Filter, coil and drainage assessment",
+        "Thermostat and operating checks",
+        "Optional repair and call-out coverage",
+      ],
+    },
+  ],
+  footnote:
+    "Terms and conditions apply. Custom packages are available for villas, offices, commercial buildings and multi-site facilities.",
+};
+
+// --- Inlined from pricingData.js ---
+const pricingData = {
+  eyebrow: "Transparent Service Options",
+  title: "AC Inspection, Cleaning and Maintenance Prices",
+  description:
+    "Choose a starting service based on your air-conditioning system. Final quotations depend on unit type, condition and required work.",
+  defaultBadge: "Professional AC Care",
+  pricePrefix: "Starting from",
+  actionLabel: "Book now",
+
+  items: [
+    {
+      title: "AC Inspection Service",
+      badge: "Diagnostics",
+      price: "AED 215",
+      image: {
+        id: "ac-service-page/ac-inspection",
+        src: "/img/ac-service-page/ac-inspection.webp",
+      },
+      description:
+        "Is your AC not cooling your place? Is the AC thermostat broken, or is the fan making strange noises? Give us a call",
+      popup: {
+        title: "AC Call-Out (Technical Inspection) scope of works:",
+        sections: [
+          {
+            items: [
+              "Resolving air flow issues",
+              "AC thermostat check-up",
+              "Refrigerant Level check-up",
+              "Rectification of AC power trip",
+              "Rectification of AC water leakage",
+              "Fixing AC cooling/overcooling issues",
+              "Addressing sound problems from the AC",
+            ],
+          },
+          {
+            label: "Excluded",
+            text:
+              "Cost for any repair work, procurement cost, cost of any new parts and installation, if required.",
+          },
+          {
+            label: "Terms & Conditions",
+            text:
+              "Starting from AED 215 callout fee applies based on the type, capacity of the unit, and location for each diagnosis.",
+          },
+        ],
+      },
+    },
+
+    {
+      title: "Basic AC Cleaning",
+      subtitle: "Selected work includes a 60-day service warranty",
+      warranty: "60 - Days Warranty",
+      badge: "Popular",
+      price: "AED 280",
+      image: {
+        id: "ac-service-page/ac-cleaning-price",
+        src: "/img/ac-service-page/ac-cleaning-price.webp",
+      },
+      description:
+        "If your AC has reduced airflow or is leaking water, work quickly. Regularly clean filters and drain to provide efficiency and good air quality.",
+      popup: {
+        title: "AC Cleaning Service scope of works:",
+        sections: [
+          {
+            items: [
+              "AC filter cleaning",
+              "AC water leakage",
+              "Check AC components",
+              "Filter cleaning and replacement",
+              "Condenser coil cleaning",
+              "AC thermostat check-up",
+              "Refrigerant Level check-up",
+              "Addressing sound issues from the AC",
+            ],
+          },
+          {
+            label: "Excluded",
+            text:
+              "Cost for any repair work, procurement cost, cost of any new parts and installation, if required.",
+          },
+          {
+            label: "Terms & Conditions",
+            text:
+              "Starting from AED 280 basic cleaning service charge applies based on the type, capacity of the unit, and location for each diagnosis.",
+          },
+        ],
+      },
+    },
+
+    {
+      title: "AC Maintenance",
+      subtitle: "Selected work includes a 60-day service warranty",
+      warranty: "60 - Days Warranty",
+      badge: "Preventive Care",
+      price: "AED 325",
+      image: {
+        id: "ac-service-page/ac-maintenance-price",
+        src: "/img/ac-service-page/ac-maintenance-price.webp",
+      },
+      description:
+        "Relax and save money by keeping our expert technicians clean and maintain your AC, stopping unnecessary breakdowns.",
+      popup: {
+        title: "AC Maintenance scope of works",
+        sections: [
+          {
+            heading: "DX Unit AC",
+            items: [
+              "Clean the condenser coil",
+              "Check, clean and flush the drain line",
+              "Check the room and grill temperatures",
+              "Check and clean the filters and air valves",
+              "Check the vibration pads and vibration isolators",
+              "Check the blowers and clean if proper access is available",
+              "Check the conditions of contactors, relays, and capacitors",
+              "Check temperature controlled thermostat and pressure sensors",
+              "Check the electrical points in the outdoor unit and tighten, clean the electrical terminals",
+              "Check the insulation on the pipeline, if damaged, recommend for replacement (Additional cost for replacement of insulation)",
+            ],
+          },
+          {
+            heading: "Chiller FCU AC",
+            items: [
+              "Check the vibration isolators",
+              "Check, clean and flush the drain line",
+              "Check the room and grill temperatures",
+              "Check and clean the filters and air valves",
+              "Check temperature controlled thermostat",
+              "Check the functionality of actuator valves",
+              "Check the blowers and clean if proper access is available",
+              "Check the insulation on the pipeline; if damaged, recommend for replacement (Additional cost for replacement of insulation)",
+            ],
+          },
+          {
+            label: "Excluded",
+            text:
+              "Cost for any repair work, procurement cost, cost of any new parts and installation, if required.",
+          },
+          {
+            label: "Terms & Conditions",
+            text:
+              "Starting from AED 325 AC Maintenance charge applies based on the type, capacity of the unit, and location for each diagnosis.",
+          },
+        ],
+      },
+    },
+  ],
+};
+
+// --- Inlined from repairPriceData.js ---
+const repairPriceData = {
+  id: "daikin-ac-service-pricing",
+  eyebrow: "AC Service Pricing",
+  title:
+    "How much does it cost Premier AC Cleaning Service, AC Repair and AC Maintenance?",
+  actionLabel: "Check Here For Price",
+  actionHref: "/dubai-ac-service-price-list/",
+  openInNewTab: false,
+};
+
+// --- Inlined from energyTipsData.js ---
+const energyTipsData = {
+  id: "daikin-ac-energy-saving-tips",
+  eyebrow: "Energy Saving Tips",
+  title: "UAE: 7 Tips to Reduce AC Bills This Summer",
+  description:
+    "Learn easy and proven ways to save energy with your AC. Find tips to cut the cost and stay cool all summers!",
+  actionLabel: "Click Here to Save on Energy Bills",
+  actionHref:
+    "https://www.fajservices.ae/files/Practical%20Tips%20to%20Improve%20Energy%20Efficiency%20of%20Your%20AC%20Infographic.pdf",
+  openInNewTab: true,
+};
+
+// --- Inlined from testimonialsData.js ---
+const testimonialsData = {
+  id: "daikin-ac-testimonials",
+  eyebrow: "What Our Clients Say",
+  title: "Customer Reviews",
+  items: [
+    {
+      icon: "award",
+      title: "Alexander Pothen",
+      subtitle: "Expat",
+      description:
+        "An efficient team who could diagnose the fault and rectify the problem. They washed the indoor AC unit with water and took all the care not to mess up our office.",
+    },
+    {
+      icon: "award",
+      title: "Shehan Chanaka",
+      subtitle: "Resident",
+      description:
+        "Mr Adnan gives us the best service for AC Servicing. And he also repaired our AC and Refrigerator in limited price. Keep it up 👍👍",
+    },
+    {
+      icon: "award",
+      title: "Waseem Aqdas",
+      subtitle: "Homeowner",
+      description:
+        "Outstanding service from FAJ Technical! My AC wasn't cooling properly, but FAJ Technical came to the rescue. Quick response, friendly technician, and now my AC works perfectly. I highly recommend them!",
+    },
+    {
+      icon: "award",
+      title: "Arshad Iqbal",
+      subtitle: "Homeowner",
+      description:
+        "FAJ Technical Services really exceeded my expectations. I had my air conditioning unit repaired, and their service was exceptional. The team was very professional and supportive, and they resolved the issues quickly and effectively.",
+    },
+    {
+      icon: "award",
+      title: "Bilal Ahmad",
+      subtitle: "Resident",
+      description:
+        "I had an excellent experience with Easy AC for my recent AC repair. The team was incredibly professional and informative throughout the process. Their expertise in installing my air conditioner was evident, and the results exceeded my expectations. I highly recommend Easy AC for any AC repair needs. They truly deliver top quality service!",
+    },
+    {
+      icon: "award",
+      title: "Sumaira Kamboh",
+      subtitle: "Homeowner",
+      description:
+        "I recently hired this company for my AC maintenance and was thoroughly impressed! The technicians were professional, punctual, and did an excellent job. They explained everything they did and provided helpful tips for future maintenance. I highly recommend them!",
+    },
+    {
+      icon: "award",
+      title: "Yonis Khan.",
+      subtitle: "Resident",
+      description:
+        "I had my AC maintained by FAJ Technical Services, and they did a professional job. The team was friendly and quick, making the whole process easy. If you need AC maintenance, I definitely recommend them.",
+    },
+    {
+      icon: "award",
+      title: "Ahmad Alhemeiri",
+      subtitle: "Expat",
+      description:
+        "Its great place to have any spare part for AC Thanks to Ms Neha for her support and follow-up. She's really good representative of company",
+    },
+  ],
+};
+
 
 const seoData = {
   title: "Daikin Air Conditioning | Daikin AC Repair & Maintenance Services",

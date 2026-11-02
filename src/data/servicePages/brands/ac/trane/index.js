@@ -1,11 +1,399 @@
 import acCoverageLocations106 from "../../../acCoverageLocations106";
-import heroData from "./heroData";
-import faqsData from "./faqsData";
-import contractsData from "./contractsData";
-import pricingData from "./pricingData";
-import repairPriceData from "./repairPriceData";
-import energyTipsData from "./energyTipsData";
-import testimonialsData from "./testimonialsData";
+
+// --- Inlined from heroData.js ---
+const heroData = {
+  eyebrow: "Trane AC Specialists",
+  title: "Top-Quality Trane Air Conditioning Repair and Maintenance Services in Dubai, UAE",
+  paragraphs: [
+    "In the active and ever-changing climate of Dubai, a malfunctioning air conditioning system can greatly impact your comfort at home or in the workplace. To maintain a cool environment, trust FAJ Technical Services L.L.C and their team of expert Trane AC system.",
+  ],
+  paragraph: "In the active and ever-changing climate of Dubai, a malfunctioning air conditioning system can greatly impact your comfort at home or in the workplace. To maintain a cool environment, trust FAJ Technical Services L.L.C and their team of expert Trane AC system.",
+  highlights: [
+    {
+      icon: "award",
+      title: "Established Since 2010",
+      description: "Reliability, Diversity, Integrity, and Quality.",
+    },
+    {
+      icon: "shield-check",
+      title: "Workmanship Warranty",
+      description: "Repair and service warranty support.",
+    },
+    {
+      icon: "phone-support",
+      title: "7-Day Service Response",
+      description: "Fast assistance across Dubai.",
+    },
+  ],
+  primaryAction: "Book An Appointment",
+  secondaryAction: "Call Now",
+  showCall: true,
+  showPhone: true,
+  image: {
+    id: "ac-brand-logos/trane-logo",
+    src: "/img/ac-brand-logos/trane-logo.webp",
+    alt: "Trane Air Conditioning Repair and Maintenance in Dubai",
+    width: 600,
+    height: 400,
+    fit: "contain",
+    padding: "20px",
+    bg: "#ffffff",
+    hideOverlay: true,
+  },
+};
+
+// --- Inlined from faqsData.js ---
+const items = [
+    {
+      "question": "How to read Trane AC model numbers?",
+      "title": "How to read Trane AC model numbers?",
+      "answer": [
+        "Trane/American Standard uses two styles for their product identification.",
+        "Style 1 begins with a letter (manufacturing location), followed by two numbers (last two digits of the year from 2000). For example, 'C12A00152' means it was made at the Clarksville Plant.",
+        "Style 2 starts with numbers, and the first two digits represent the year of manufacture."
+      ],
+      "desc": [
+        "Trane/American Standard uses two styles for their product identification.",
+        "Style 1 begins with a letter (manufacturing location), followed by two numbers (last two digits of the year from 2000). For example, 'C12A00152' means it was made at the Clarksville Plant.",
+        "Style 2 starts with numbers, and the first two digits represent the year of manufacture."
+      ]
+    },
+    {
+      "question": "How do you tell the tonnage of a Trane AC unit?",
+      "title": "How do you tell the tonnage of a Trane AC unit?",
+      "answer": "Look for a plaque or sticker on the side of the unit with the model number. The tonnage is indicated as an even, two-digit number between 18 and 60, representing the BTU capacity. Divide this number by 12 to get the tonnage.",
+      "desc": "Look for a plaque or sticker on the side of the unit with the model number. The tonnage is indicated as an even, two-digit number between 18 and 60, representing the BTU capacity. Divide this number by 12 to get the tonnage."
+    },
+    {
+      "question": "How long does a Trane air conditioner last?",
+      "title": "How long does a Trane air conditioner last?",
+      "answer": "Trane AC units are built for durability, typically lasting 15 to 20 years. Lower-quality systems may only last about 10 years and often require costly repairs due to poor manufacturing.",
+      "desc": "Trane AC units are built for durability, typically lasting 15 to 20 years. Lower-quality systems may only last about 10 years and often require costly repairs due to poor manufacturing."
+    },
+    {
+      "question": "Why won't my Trane thermostat change temperature?",
+      "title": "Why won't my Trane thermostat change temperature?",
+      "answer": "It could be locked. Press the plus (“+”) and minus (“-”) keys at the same time for 3 to 4 seconds to unlock it, then try adjusting the temperature again.",
+      "desc": "It could be locked. Press the plus (“+”) and minus (“-”) keys at the same time for 3 to 4 seconds to unlock it, then try adjusting the temperature again."
+    },
+    {
+      "question": "How to maintain a Trane AC unit?",
+      "title": "How to maintain a Trane AC unit?",
+      "answer": "Shut off the power, remove debris, clean and straighten fins, clear the area around the unit, level the unit, clean the evaporator coil and drain. Regular maintenance helps keep the unit running efficiently.",
+      "desc": "Shut off the power, remove debris, clean and straighten fins, clear the area around the unit, level the unit, clean the evaporator coil and drain. Regular maintenance helps keep the unit running efficiently."
+    },
+    {
+      "question": "How do I reset a Trane air conditioner?",
+      "title": "How do I reset a Trane air conditioner?",
+      "answer": "Turn off the AC, locate the circuit breaker, identify and switch off the AC circuit, wait for 30 seconds, then switch it back on. This resets the system safely.",
+      "desc": "Turn off the AC, locate the circuit breaker, identify and switch off the AC circuit, wait for 30 seconds, then switch it back on. This resets the system safely."
+    },
+    {
+      "question": "How often should Trane AC filters be changed in Dubai?",
+      "title": "How often should Trane AC filters be changed in Dubai?",
+      "answer": "Change air filters every 90 days or 3 months. Frequency may vary due to climate, presence of pets, or system age. Dusty environments like Dubai may require more frequent changes.",
+      "desc": "Change air filters every 90 days or 3 months. Frequency may vary due to climate, presence of pets, or system age. Dusty environments like Dubai may require more frequent changes."
+    },
+    {
+      "question": "Do air conditioners need regassing?",
+      "title": "Do air conditioners need regassing?",
+      "answer": "Not under normal conditions. Re-gassing is only needed if there's a refrigerant leak. A qualified technician should inspect and repair leaks if required.",
+      "desc": "Not under normal conditions. Re-gassing is only needed if there's a refrigerant leak. A qualified technician should inspect and repair leaks if required."
+    },
+    {
+      "question": "How to reset Trane AC thermostat?",
+      "title": "How to reset Trane AC thermostat?",
+      "answer": "Ensure the HVAC system is idle. Locate and switch off the thermostat's circuit breaker for 20–30 seconds, then switch it back on. The reboot may take several minutes.",
+      "desc": "Ensure the HVAC system is idle. Locate and switch off the thermostat's circuit breaker for 20–30 seconds, then switch it back on. The reboot may take several minutes."
+    },
+    {
+      "question": "What is error 79 on Trane thermostat?",
+      "title": "What is error 79 on Trane thermostat?",
+      "answer": "Error 79 means the low-pressure switch detected low suction pressure, triggering a hard lockout. This safety feature prevents damage like compressor failure and needs technician attention.",
+      "desc": "Error 79 means the low-pressure switch detected low suction pressure, triggering a hard lockout. This safety feature prevents damage like compressor failure and needs technician attention."
+    }
+  ];
+
+const faqsData = {
+  id: "trane-ac-faqs",
+  eyebrow: "Clear Answers",
+  title: "Frequently Asked Questions",
+  description: "Find clear answers to common questions about Trane AC repair, preventative maintenance, fault diagnostics, and emergency servicing in Dubai.",
+  items,
+  faqs: items,
+};
+
+// --- Inlined from contractsData.js ---
+const contractsData = {
+  id: "trane-amc-packages",
+  eyebrow: "Preventive Protection",
+  title: "Trane Air Conditioning Maintenance Contracts",
+  description:
+    "Choose a planned AC maintenance schedule based on property size, unit type, operating hours and response priorities.",
+  featuredIndex: 0,
+  actionLabel: "Request AMC quote",
+  plans: [
+    {
+      title: "Yearly AC Maintenance Contract",
+      tagline: "Comprehensive year-round support for dependable cooling.",
+      badge: "Best Value",
+      features: [
+        "Scheduled preventive maintenance visits",
+        "Limited or unlimited breakdown call-out options",
+        "Indoor and outdoor unit condition reporting",
+        "Packages available with or without spare parts",
+      ],
+    },
+    {
+      title: "Six-Month AC Maintenance Contract",
+      tagline: "Balanced seasonal care before peak cooling demand.",
+      badge: "Popular",
+      features: [
+        "Planned inspection and cleaning visits",
+        "Drainage, airflow and electrical checks",
+        "Cooling-performance recommendations",
+        "Optional priority breakdown support",
+      ],
+    },
+    {
+      title: "Three-Month AC Maintenance Contract",
+      tagline: "Flexible short-term protection for immediate AC needs.",
+      badge: "Flexible",
+      features: [
+        "Targeted preventive maintenance visit",
+        "Filter, coil and drainage assessment",
+        "Thermostat and operating checks",
+        "Optional repair and call-out coverage",
+      ],
+    },
+  ],
+  footnote:
+    "Terms and conditions apply. Custom packages are available for villas, offices, commercial buildings and multi-site facilities.",
+};
+
+// --- Inlined from pricingData.js ---
+const pricingData = {
+  id: "pricing",
+  title: "AC Inspection, Cleaning and Maintenance Prices",
+  description:
+    "Choose a starting service based on your air-conditioning system. Final quotations depend on unit type, condition and required work.",
+  defaultBadge: "Professional AC Care",
+  pricePrefix: "Starting from",
+  actionLabel: "Book now",
+
+  items: [
+    {
+      title: "AC Inspection Service",
+      badge: "Diagnostics",
+      price: "AED 215",
+      image: {
+        id: "ac-service-page/ac-inspection",
+        src: "/img/ac-service-page/ac-inspection.webp",
+      },
+      description:
+        "Is your AC not cooling your place? Is the AC thermostat broken, or is the fan making strange noises? Give us a call",
+      popup: {
+        title: "AC Call-Out (Technical Inspection) scope of works:",
+        sections: [
+          {
+            items: [
+              "Resolving air flow issues",
+              "AC thermostat check-up",
+              "Refrigerant Level check-up",
+              "Rectification of AC power trip",
+              "Rectification of AC water leakage",
+              "Fixing AC cooling/overcooling issues",
+              "Addressing sound problems from the AC",
+            ],
+          },
+          {
+            label: "Excluded",
+            text:
+              "Cost for any repair work, procurement cost, cost of any new parts and installation, if required.",
+          },
+          {
+            label: "Terms & Conditions",
+            text:
+              "Starting from AED 215 callout fee applies based on the type, capacity of the unit, and location for each diagnosis.",
+          },
+        ],
+      },
+    },
+
+    {
+      title: "Basic AC Cleaning",
+      subtitle: "Selected work includes a 60-day service warranty",
+      warranty: "60 - Days Warranty",
+      badge: "Popular",
+      price: "AED 280",
+      image: {
+        id: "ac-service-page/ac-cleaning-price",
+        src: "/img/ac-service-page/ac-cleaning-price.webp",
+      },
+      description:
+        "If your AC has reduced airflow or is leaking water, work quickly. Regularly clean filters and drain to provide efficiency and good air quality.",
+      popup: {
+        title: "AC Filter Cleaning scope of works:",
+        sections: [
+          {
+            items: [
+              "Cleaning the AC filters",
+              "Checking the AC thermostat",
+              "Checking the Gas Pressure",
+              "Flushing the AC Drain line with water",
+              "Checking the unit noise and unusual sounds",
+              "Addressing minor water leaks found during servicing",
+            ],
+          },
+          {
+            label: "Excluded",
+            text:
+              "Any AC parts replacement, complex electrical repairs, major water leakage fixes, or full coil chemical overhauls.",
+          },
+          {
+            label: "Terms & Conditions",
+            text:
+              "Starting from AED 280 fee covers basic cleaning per single split or ducted unit indoor and outdoor filter/drain flush.",
+          },
+        ],
+      },
+    },
+
+    {
+      title: "AC Maintenance",
+      subtitle: "Selected work includes a 60-day service warranty",
+      warranty: "60 - Days Warranty",
+      badge: "Preventive Care",
+      price: "AED 325",
+      image: {
+        id: "ac-service-page/ac-maintenance-price",
+        src: "/img/ac-service-page/ac-maintenance-price.webp",
+      },
+      description:
+        "Relax and save money by keeping our expert technicians clean and maintain your AC, stopping unnecessary breakdowns.",
+      popup: {
+        title: "AC Full Maintenance (Service & Tune-up) scope of works:",
+        sections: [
+          {
+            items: [
+              "Full indoor & outdoor coil chemical wash",
+              "Fan blower deep cleaning and motor lubrication",
+              "Complete condensate tray disinfection & chemical flush",
+              "Capacitor, contractor, and compressor terminal tightening",
+              "Refrigerant top-up and operating temperature differential check",
+              "Thermostat recalibration and energy optimization test",
+            ],
+          },
+          {
+            label: "Excluded",
+            text:
+              "Major component rewinding, compressor replacement, or complete copper pipe retrofits.",
+          },
+          {
+            label: "Terms & Conditions",
+            text:
+              "Starting from AED 325 applies to comprehensive preventive maintenance tune-up per standard residential unit.",
+          },
+        ],
+      },
+    },
+  ],
+
+  notes: [
+    "Final pricing depends on unit type (Split, Ducted, Package, VRF), capacity, and accessibility.",
+    "Emergency call-outs and non-standard parts are quoted transparently before work begins.",
+  ],
+};
+
+// --- Inlined from repairPriceData.js ---
+const repairPriceData = {
+  id: "trane-ac-service-pricing",
+  eyebrow: "AC Service Pricing",
+  title:
+    "How much does it cost Premier AC Cleaning Service, AC Repair and AC Maintenance?",
+  actionLabel: "Check Here For Price",
+  actionHref: "/dubai-ac-service-price-list/",
+  openInNewTab: false,
+};
+
+// --- Inlined from energyTipsData.js ---
+const energyTipsData = {
+  id: "trane-ac-energy-saving-tips",
+  eyebrow: "Energy Saving Tips",
+  title: "UAE: 7 Tips to Reduce AC Bills This Summer",
+  description:
+    "Learn easy and proven ways to save energy with your AC. Find tips to cut the cost and stay cool all summers!",
+  actionLabel: "Click Here to Save on Energy Bills",
+  actionHref:
+    "https://www.fajservices.ae/files/Practical%20Tips%20to%20Improve%20Energy%20Efficiency%20of%20Your%20AC%20Infographic.pdf",
+  openInNewTab: true,
+};
+
+// --- Inlined from testimonialsData.js ---
+const testimonialsData = {
+  id: "trane-ac-testimonials",
+  eyebrow: "What Our Clients Say",
+  title: "Customer Reviews",
+  items: [
+    {
+      icon: "award",
+      title: "Alexander Pothen",
+      subtitle: "Expat",
+      description:
+        "An efficient team who could diagnose the fault and rectify the problem. They washed the indoor AC unit with water and took all the care not to mess up our office.",
+    },
+    {
+      icon: "award",
+      title: "Shehan Chanaka",
+      subtitle: "Resident",
+      description:
+        "Mr Adnan gives us the best service for AC Servicing. And he also repaired our AC and Refrigerator in limited price. Keep it up 👍👍",
+    },
+    {
+      icon: "award",
+      title: "Waseem Aqdas",
+      subtitle: "Homeowner",
+      description:
+        "Outstanding service from FAJ Technical! My AC wasn't cooling properly, but FAJ Technical came to the rescue. Quick response, friendly technician, and now my AC works perfectly. I highly recommend them!",
+    },
+    {
+      icon: "award",
+      title: "Arshad Iqbal",
+      subtitle: "Homeowner",
+      description:
+        "FAJ Technical Services really exceeded my expectations. I had my air conditioning unit repaired, and their service was exceptional. The team was very professional and supportive, and they resolved the issues quickly and effectively.",
+    },
+    {
+      icon: "award",
+      title: "Bilal Ahmad",
+      subtitle: "Resident",
+      description:
+        "I had an excellent experience with Easy AC for my recent AC repair. The team was incredibly professional and informative throughout the process. Their expertise in installing my air conditioner was evident, and the results exceeded my expectations. I highly recommend Easy AC for any AC repair needs. They truly deliver top quality service!",
+    },
+    {
+      icon: "award",
+      title: "Sumaira Kamboh",
+      subtitle: "Homeowner",
+      description:
+        "I recently hired this company for my AC maintenance and was thoroughly impressed! The technicians were professional, punctual, and did an excellent job. They explained everything they did and provided helpful tips for future maintenance. I highly recommend them!",
+    },
+    {
+      icon: "award",
+      title: "Yonis Khan.",
+      subtitle: "Resident",
+      description:
+        "I had my AC maintained by FAJ Technical Services, and they did a professional job. The team was friendly and quick, making the whole process easy. If you need AC maintenance, I definitely recommend them.",
+    },
+    {
+      icon: "award",
+      title: "Ahmad Alhemeiri",
+      subtitle: "Expat",
+      description:
+        "Its great place to have any spare part for AC Thanks to Ms Neha for her support and follow-up. She's really good representative of company",
+    },
+  ],
+};
+
 
 const seoData = {
   title: "Trane Air Conditioning | Trane AC Repair and Maintenance Service",

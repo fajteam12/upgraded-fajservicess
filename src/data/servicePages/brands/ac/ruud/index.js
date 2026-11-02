@@ -1,11 +1,558 @@
 import acCoverageLocations106 from "../../../acCoverageLocations106.js";
-import heroData from "./heroData";
-import faqsData from "./faqsData";
-import contractsData from "./contractsData";
-import pricingData from "./pricingData";
-import repairPriceData from "./repairPriceData";
-import energyTipsData from "./energyTipsData";
-import testimonialsData from "./testimonialsData";
+
+// --- Inlined from heroData.js ---
+const heroData = {
+  eyebrow: "Ruud AC Specialists",
+  title: "Cost-Effective Ruud HVAC Repair and AC Maintenance Service in Dubai, UAE",
+  paragraphs: [
+    "FAJ Technical Services L.L.C offers Ruud air conditioning repair in Dubai, providing comprehensive maintenance service to ensure your building remains cool or warm as needed. With experience dating back to 2010, we are equipped to handle every situation and can provide Ruud air conditioning services for buildings or villas of all shapes and sizes.",
+  ],
+  paragraph: "FAJ Technical Services L.L.C offers Ruud air conditioning repair in Dubai, providing comprehensive maintenance service to ensure your building remains cool or warm as needed. With experience dating back to 2010, we are equipped to handle every situation and can provide Ruud air conditioning services for buildings or villas of all shapes and sizes.",
+  highlights: [
+    {
+      icon: "award",
+      title: "Established Since 2010",
+      description: "Reliability, Diversity, Integrity, and Quality.",
+    },
+    {
+      icon: "shield-check",
+      title: "Workmanship Warranty",
+      description: "Repair and service warranty support.",
+    },
+    {
+      icon: "phone-support",
+      title: "7-Day Service Response",
+      description: "Fast assistance across Dubai.",
+    },
+  ],
+  primaryAction: "Book An Appointment",
+  secondaryAction: "Call Now",
+  showCall: true,
+  showPhone: true,
+  image: {
+    id: "ac-brand-logos/ruud-logo",
+    src: "/img/ac-brand-logos/ruud-logo.webp",
+    alt: "Ruud Air Conditioning Repair and Maintenance in Dubai",
+    width: 600,
+    height: 400,
+    fit: "contain",
+    padding: "20px",
+    bg: "#ffffff",
+    hideOverlay: true,
+  },
+};
+
+// --- Inlined from faqsData.js ---
+const items = [
+    {
+      "question": "What are the reasons for AC Ruud not cooling?",
+      "title": "What are the reasons for AC Ruud not cooling?",
+      "answer": [
+        "Common reasons include:",
+        {
+          "type": "bullets",
+          "items": [
+            "Thermostat is set incorrectly",
+            "Dirty air filter",
+            "Blocked outdoor condenser unit",
+            "Damaged heat pump",
+            "Frozen evaporator coil",
+            "Refrigerant leak",
+            "Undersized air conditioner"
+          ]
+        }
+      ],
+      "desc": [
+        "Common reasons include:",
+        {
+          "type": "bullets",
+          "items": [
+            "Thermostat is set incorrectly",
+            "Dirty air filter",
+            "Blocked outdoor condenser unit",
+            "Damaged heat pump",
+            "Frozen evaporator coil",
+            "Refrigerant leak",
+            "Undersized air conditioner"
+          ]
+        }
+      ]
+    },
+    {
+      "question": "Why is my central AC not working?",
+      "title": "Why is my central AC not working?",
+      "answer": "Check your main electrical panel for a tripped breaker or blown fuse. Also ensure your thermostat is set correctly, as incorrect settings can prevent the system from turning on.",
+      "desc": "Check your main electrical panel for a tripped breaker or blown fuse. Also ensure your thermostat is set correctly, as incorrect settings can prevent the system from turning on."
+    },
+    {
+      "question": "How to maintain an AC unit?",
+      "title": "How to maintain an AC unit?",
+      "answer": [
+        "Basic maintenance steps include:",
+        {
+          "type": "numbered",
+          "items": [
+            "Shut off power",
+            "Remove debris",
+            "Clean and straighten fins",
+            "Clean area around the unit",
+            "Level the unit",
+            "Clean evaporator coil and drain"
+          ]
+        }
+      ],
+      "desc": [
+        "Basic maintenance steps include:",
+        {
+          "type": "numbered",
+          "items": [
+            "Shut off power",
+            "Remove debris",
+            "Clean and straighten fins",
+            "Clean area around the unit",
+            "Level the unit",
+            "Clean evaporator coil and drain"
+          ]
+        }
+      ]
+    },
+    {
+      "question": "How much does AC maintenance cost in Dubai?",
+      "title": "How much does AC maintenance cost in Dubai?",
+      "answer": [
+        "Estimated maintenance costs:",
+        {
+          "type": "bullets",
+          "items": [
+            "AC Cleaning: AED 230+",
+            "Coil Cleaning: AED 250–680",
+            "Repairs: AED 1,000–4,000 depending on the issue"
+          ]
+        }
+      ],
+      "desc": [
+        "Estimated maintenance costs:",
+        {
+          "type": "bullets",
+          "items": [
+            "AC Cleaning: AED 230+",
+            "Coil Cleaning: AED 250–680",
+            "Repairs: AED 1,000–4,000 depending on the issue"
+          ]
+        }
+      ]
+    },
+    {
+      "question": "Is AC duct cleaning important in Dubai?",
+      "title": "Is AC duct cleaning important in Dubai?",
+      "answer": "Yes. In dusty climates like Dubai, clean ducts are essential for good indoor air quality. Dirty systems can lead to allergies, respiratory issues, and inefficient cooling.",
+      "desc": "Yes. In dusty climates like Dubai, clean ducts are essential for good indoor air quality. Dirty systems can lead to allergies, respiratory issues, and inefficient cooling."
+    },
+    {
+      "question": "How much is AC service in Dubai?",
+      "title": "How much is AC service in Dubai?",
+      "answer": [
+        "Typical service rates:",
+        {
+          "type": "bullets",
+          "items": [
+            "Regular Cleaning: AED 230",
+            "Duct Cleaning & Sanitization: from AED 550",
+            "Deep Coil Cleaning: AED 250–830",
+            "Repairs or Installation: AED 150/hour"
+          ]
+        }
+      ],
+      "desc": [
+        "Typical service rates:",
+        {
+          "type": "bullets",
+          "items": [
+            "Regular Cleaning: AED 230",
+            "Duct Cleaning & Sanitization: from AED 550",
+            "Deep Coil Cleaning: AED 250–830",
+            "Repairs or Installation: AED 150/hour"
+          ]
+        }
+      ]
+    },
+    {
+      "question": "How to check AC problems?",
+      "title": "How to check AC problems?",
+      "answer": [
+        "Troubleshooting tips:",
+        {
+          "type": "numbered",
+          "items": [
+            "Check thermostat settings",
+            "Close windows and doors",
+            "Check circuit breakers",
+            "Clean filters",
+            "Call technician for gas leak",
+            "Open air vents",
+            "Clean ducts",
+            "Inspect for water leaks"
+          ]
+        }
+      ],
+      "desc": [
+        "Troubleshooting tips:",
+        {
+          "type": "numbered",
+          "items": [
+            "Check thermostat settings",
+            "Close windows and doors",
+            "Check circuit breakers",
+            "Clean filters",
+            "Call technician for gas leak",
+            "Open air vents",
+            "Clean ducts",
+            "Inspect for water leaks"
+          ]
+        }
+      ]
+    },
+    {
+      "question": "Is AC included in Dewa?",
+      "title": "Is AC included in Dewa?",
+      "answer": "In chiller-free apartments, AC is included in the rent. In District Cooling setups, tenants pay separately based on usage, capacity, and metering charges.",
+      "desc": "In chiller-free apartments, AC is included in the rent. In District Cooling setups, tenants pay separately based on usage, capacity, and metering charges."
+    },
+    {
+      "question": "Can you turn AC off while on vacation?",
+      "title": "Can you turn AC off while on vacation?",
+      "answer": "Yes, if temperatures are mild. If it’s hot, set AC to around 80°F (27°C) to avoid heat damage to your home and electronics while saving energy.",
+      "desc": "Yes, if temperatures are mild. If it’s hot, set AC to around 80°F (27°C) to avoid heat damage to your home and electronics while saving energy."
+    },
+    {
+      "question": "How much is AC duct cleaning in Dubai?",
+      "title": "How much is AC duct cleaning in Dubai?",
+      "answer": "Duct cleaning typically costs between AED 500 and AED 1,740 in Dubai, depending on property size and system condition.",
+      "desc": "Duct cleaning typically costs between AED 500 and AED 1,740 in Dubai, depending on property size and system condition."
+    },
+    {
+      "question": "What is Ruud AC error code?",
+      "title": "What is Ruud AC error code?",
+      "answer": [
+        "Here are some common Ruud AC error codes:",
+        {
+          "type": "bullets",
+          "items": [
+            "E0: Indoor EEPROM error",
+            "E1: Communication failure",
+            "E3: Indoor fan issue",
+            "E4: Room temp sensor error",
+            "E5: Coil sensor error",
+            "EC: Refrigerant leak",
+            "EE: Water level alarm",
+            "F0–F5: Sensor or overload issues"
+          ]
+        }
+      ],
+      "desc": [
+        "Here are some common Ruud AC error codes:",
+        {
+          "type": "bullets",
+          "items": [
+            "E0: Indoor EEPROM error",
+            "E1: Communication failure",
+            "E3: Indoor fan issue",
+            "E4: Room temp sensor error",
+            "E5: Coil sensor error",
+            "EC: Refrigerant leak",
+            "EE: Water level alarm",
+            "F0–F5: Sensor or overload issues"
+          ]
+        }
+      ]
+    },
+    {
+      "question": "What is the 3 minute rule for air conditioners?",
+      "title": "What is the 3 minute rule for air conditioners?",
+      "answer": "Always wait at least 3 minutes after turning the AC off before turning it back on. This prevents damage and ensures optimal performance. Also, reset the circuit breaker 24 hours before first summer use.",
+      "desc": "Always wait at least 3 minutes after turning the AC off before turning it back on. This prevents damage and ensures optimal performance. Also, reset the circuit breaker 24 hours before first summer use."
+    }
+  ];
+
+const faqsData = {
+  id: "ruud-ac-faqs",
+  eyebrow: "Have Questions?",
+  title: "Ruud AC Repair and Maintenance FAQs",
+  description: "Find clear answers to common questions about Ruud AC repair, preventative maintenance, fault diagnostics, and emergency servicing in Dubai.",
+  items,
+  faqs: items,
+};
+
+// --- Inlined from contractsData.js ---
+const contractsData = {
+  id: "ruud-amc-packages",
+  eyebrow: "Preventive Protection",
+  title: "Ruud Air Conditioning Maintenance Contracts",
+  description:
+    "Choose a planned AC maintenance schedule based on property size, unit type, operating hours and response priorities.",
+  featuredIndex: 0,
+  actionLabel: "Request AMC quote",
+  plans: [
+    {
+      title: "Yearly AC Maintenance Contract",
+      tagline: "Comprehensive year-round support for dependable cooling.",
+      badge: "Best Value",
+      features: [
+        "Scheduled preventive maintenance visits",
+        "Limited or unlimited breakdown call-out options",
+        "Indoor and outdoor unit condition reporting",
+        "Packages available with or without spare parts",
+      ],
+    },
+    {
+      title: "Six-Month AC Maintenance Contract",
+      tagline: "Balanced seasonal care before peak cooling demand.",
+      badge: "Popular",
+      features: [
+        "Planned inspection and cleaning visits",
+        "Drainage, airflow and electrical checks",
+        "Cooling-performance recommendations",
+        "Optional priority breakdown support",
+      ],
+    },
+    {
+      title: "Three-Month AC Maintenance Contract",
+      tagline: "Flexible short-term protection for immediate AC needs.",
+      badge: "Flexible",
+      features: [
+        "Targeted preventive maintenance visit",
+        "Filter, coil and drainage assessment",
+        "Thermostat and operating checks",
+        "Optional repair and call-out coverage",
+      ],
+    },
+  ],
+  footnote:
+    "Terms and conditions apply. Custom packages are available for villas, offices, commercial buildings and multi-site facilities.",
+};
+
+// --- Inlined from pricingData.js ---
+const pricingData = {
+  eyebrow: "Transparent Service Options",
+  title: "AC Inspection, Cleaning and Maintenance Prices",
+  description:
+    "Choose a starting service based on your air-conditioning system. Final quotations depend on unit type, condition and required work.",
+  defaultBadge: "Professional AC Care",
+  pricePrefix: "Starting from",
+  actionLabel: "Book now",
+
+  items: [
+    {
+      title: "AC Inspection Service",
+      badge: "Diagnostics",
+      price: "AED 215",
+      image: {
+        id: "ac-service-page/ac-inspection",
+        src: "/img/ac-service-page/ac-inspection.webp",
+      },
+      description:
+        "Is your AC not cooling your place? Is the AC thermostat broken, or is the fan making strange noises? Give us a call",
+      popup: {
+        title: "AC Call-Out (Technical Inspection) scope of works:",
+        sections: [
+          {
+            items: [
+              "Resolving air flow issues",
+              "AC thermostat check-up",
+              "Refrigerant Level check-up",
+              "Rectification of AC power trip",
+              "Rectification of AC water leakage",
+              "Fixing AC cooling/overcooling issues",
+              "Addressing sound problems from the AC",
+            ],
+          },
+          {
+            label: "Excluded",
+            text:
+              "Cost for any repair work, procurement cost, cost of any new parts and installation, if required.",
+          },
+          {
+            label: "Terms & Conditions",
+            text:
+              "Starting from AED 215 callout fee applies based on the type, capacity of the unit, and location for each diagnosis.",
+          },
+        ],
+      },
+    },
+
+    {
+      title: "Basic AC Cleaning",
+      subtitle: "Selected work includes a 60-day service warranty",
+      warranty: "60 - Days Warranty",
+      badge: "Popular",
+      price: "AED 280",
+      image: {
+        id: "ac-service-page/ac-cleaning-price",
+        src: "/img/ac-service-page/ac-cleaning-price.webp",
+      },
+      description:
+        "If your AC has reduced airflow or is leaking water, work quickly. Regularly clean filters and drain to provide efficiency and good air quality.",
+      popup: {
+        title: "AC Cleaning Service scope of works:",
+        sections: [
+          {
+            items: [
+              "AC filter cleaning",
+              "AC water leakage",
+              "Check AC components",
+              "Filter cleaning and replacement",
+              "Condenser coil cleaning",
+              "AC thermostat check-up",
+              "Refrigerant Level check-up",
+              "Addressing sound issues from the AC",
+            ],
+          },
+          {
+            label: "Excluded",
+            text:
+              "Cost for any repair work, procurement cost, cost of any new parts and installation, if required.",
+          },
+          {
+            label: "Terms & Conditions",
+            text:
+              "Starting from AED 280 basic cleaning service charge applies based on the type, capacity of the unit, and location for each diagnosis.",
+          },
+        ],
+      },
+    },
+
+    {
+      title: "AC Maintenance",
+      subtitle: "Selected work includes a 60-day service warranty",
+      warranty: "60 - Days Warranty",
+      badge: "Preventive Care",
+      price: "AED 325",
+      image: {
+        id: "ac-service-page/ac-maintenance-price",
+        src: "/img/ac-service-page/ac-maintenance-price.webp",
+      },
+      description:
+        "Specialized maintenance for central and ducted split AC units. Regular maintenance keeps units running smoothly and prevents costly breakdowns.",
+      popup: {
+        title: "AC Maintenance Service scope of works:",
+        sections: [
+          {
+            items: [
+              "AC filter cleaning",
+              "AC water leakage",
+              "Check AC components",
+              "Filter cleaning and replacement",
+              "Condenser coil cleaning",
+              "AC thermostat check-up",
+              "Refrigerant Level check-up",
+              "Addressing sound issues from the AC",
+            ],
+          },
+          {
+            label: "Excluded",
+            text:
+              "Cost for any repair work, procurement cost, cost of any new parts and installation, if required.",
+          },
+          {
+            label: "Terms & Conditions",
+            text:
+              "Starting from AED 325 maintenance service charge applies based on the type, capacity of the unit, and location for each diagnosis.",
+          },
+        ],
+      },
+    },
+  ],
+};
+
+// --- Inlined from repairPriceData.js ---
+const repairPriceData = {
+  id: "ruud-ac-service-pricing",
+  eyebrow: "AC Service Pricing",
+  title:
+    "How much does it cost Premier AC Cleaning Service, AC Repair and AC Maintenance?",
+  actionLabel: "Check Here For Price",
+  actionHref: "/dubai-ac-service-price-list/",
+  openInNewTab: false,
+};
+
+// --- Inlined from energyTipsData.js ---
+const energyTipsData = {
+  id: "ruud-ac-energy-saving-tips",
+  eyebrow: "Energy Saving Tips",
+  title: "UAE: 7 Tips to Reduce AC Bills This Summer",
+  description:
+    "Learn easy and proven ways to save energy with your AC. Find tips to cut the cost and stay cool all summers!",
+  actionLabel: "Click Here to Save on Energy Bills",
+  actionHref:
+    "https://www.fajservices.ae/files/Practical%20Tips%20to%20Improve%20Energy%20Efficiency%20of%20Your%20AC%20Infographic.pdf",
+  openInNewTab: true,
+};
+
+// --- Inlined from testimonialsData.js ---
+const testimonialsData = {
+  id: "ruud-ac-testimonials",
+  eyebrow: "What Our Clients Say",
+  title: "Customer Reviews",
+  items: [
+    {
+      icon: "award",
+      title: "Alexander Pothen",
+      subtitle: "Expat",
+      description:
+        "An efficient team who could diagnose the fault and rectify the problem. They washed the indoor AC unit with water and took all the care not to mess up our office.",
+    },
+    {
+      icon: "award",
+      title: "Shehan Chanaka",
+      subtitle: "Resident",
+      description:
+        "Mr Adnan gives us the best service for AC Servicing. And he also repaired our AC and Refrigerator in limited price. Keep it up 👍👍",
+    },
+    {
+      icon: "award",
+      title: "Waseem Aqdas",
+      subtitle: "Homeowner",
+      description:
+        "Outstanding service from FAJ Technical! My AC wasn't cooling properly, but FAJ Technical came to the rescue. Quick response, friendly technician, and now my AC works perfectly. I highly recommend them!",
+    },
+    {
+      icon: "award",
+      title: "Arshad Iqbal",
+      subtitle: "Homeowner",
+      description:
+        "FAJ Technical Services really exceeded my expectations. I had my air conditioning unit repaired, and their service was exceptional. The team was very professional and supportive, and they resolved the issues quickly and effectively.",
+    },
+    {
+      icon: "award",
+      title: "Bilal Ahmad",
+      subtitle: "Resident",
+      description:
+        "I had an excellent experience with Easy AC for my recent AC repair. The team was incredibly professional and informative throughout the process. Their expertise in installing my air conditioner was evident, and the results exceeded my expectations. I highly recommend Easy AC for any AC repair needs. They truly deliver top quality service!",
+    },
+    {
+      icon: "award",
+      title: "Sumaira Kamboh",
+      subtitle: "Homeowner",
+      description:
+        "I recently hired this company for my AC maintenance and was thoroughly impressed! The technicians were professional, punctual, and did an excellent job. They explained everything they did and provided helpful tips for future maintenance. I highly recommend them!",
+    },
+    {
+      icon: "award",
+      title: "Yonis Khan.",
+      subtitle: "Resident",
+      description:
+        "I had my AC maintained by FAJ Technical Services, and they did a professional job. The team was friendly and quick, making the whole process easy. If you need AC maintenance, I definitely recommend them.",
+    },
+    {
+      icon: "award",
+      title: "Ahmad Alhemeiri",
+      subtitle: "Expat",
+      description:
+        "Its great place to have any spare part for AC Thanks to Ms Neha for her support and follow-up. She's really good representative of company",
+    },
+  ],
+};
+
 
 const seoData = {
   title: "Top Ruud AC Repair and Ruud AC Maintenance Services in Dubai",

@@ -1,11 +1,403 @@
 import acCoverageLocations106 from "../../../acCoverageLocations106";
-import heroData from "./heroData";
-import faqsData from "./faqsData";
-import contractsData from "./contractsData";
-import pricingData from "./pricingData";
-import repairPriceData from "./repairPriceData";
-import energyTipsData from "./energyTipsData";
-import testimonialsData from "./testimonialsData";
+
+// --- Inlined from heroData.js ---
+const heroData = {
+  eyebrow: "York AC Specialists",
+  title: "Top-Quality York Air Conditioning | York AC Repair and Maintenance Services in Dubai, UAE",
+  paragraphs: [
+    "Looking for reliable servicing and maintenance for your York air conditioning and refrigeration systems?",
+  ],
+  paragraph: "Looking for reliable servicing and maintenance for your York air conditioning and refrigeration systems?",
+  highlights: [
+    {
+      icon: "award",
+      title: "Established Since 2010",
+      description: "Reliability, Diversity, Integrity, and Quality.",
+    },
+    {
+      icon: "shield-check",
+      title: "Workmanship Warranty",
+      description: "Repair and service warranty support.",
+    },
+    {
+      icon: "phone-support",
+      title: "7-Day Service Response",
+      description: "Fast assistance across Dubai.",
+    },
+  ],
+  primaryAction: "Book An Appointment",
+  secondaryAction: "Call Now",
+  showCall: true,
+  showPhone: true,
+  image: {
+    id: "ac-brand-logos/york-logo",
+    src: "/img/ac-brand-logos/york-logo.webp",
+    alt: "York Air Conditioning Repair and Maintenance in Dubai",
+    width: 600,
+    height: 400,
+    fit: "contain",
+    padding: "20px",
+    bg: "#ffffff",
+    hideOverlay: true,
+  },
+};
+
+// --- Inlined from faqsData.js ---
+const items = [
+    {
+      "question": "What are the reasons AC York is not cooling?",
+      "title": "What are the reasons AC York is not cooling?",
+      "answer": "Reasons Why York AC Is Not Cooling Your House: Thermostat is Set Incorrectly, Dirty AC Air Filter, Blocked Outdoor Condenser Unit, Damaged Heat Pump, Frozen Evaporator Coil, Refrigerant Leak, and Undersized Air Conditioner.",
+      "desc": "Reasons Why York AC Is Not Cooling Your House: Thermostat is Set Incorrectly, Dirty AC Air Filter, Blocked Outdoor Condenser Unit, Damaged Heat Pump, Frozen Evaporator Coil, Refrigerant Leak, and Undersized Air Conditioner."
+    },
+    {
+      "question": "Why is my central AC not working?",
+      "title": "Why is my central AC not working?",
+      "answer": "If your central air conditioning isn't working at all, check the main electrical panel for a tripped breaker or blown fuse. Also, the thermostat setting might be the issue.",
+      "desc": "If your central air conditioning isn't working at all, check the main electrical panel for a tripped breaker or blown fuse. Also, the thermostat setting might be the issue."
+    },
+    {
+      "question": "How to maintain an AC unit?",
+      "title": "How to maintain an AC unit?",
+      "answer": "Easy steps include shutting off power, removing debris, cleaning and straightening fins, cleaning around the unit, leveling it, and cleaning both the evaporator coil and drain.",
+      "desc": "Easy steps include shutting off power, removing debris, cleaning and straightening fins, cleaning around the unit, leveling it, and cleaning both the evaporator coil and drain."
+    },
+    {
+      "question": "How much does AC maintenance cost in Dubai?",
+      "title": "How much does AC maintenance cost in Dubai?",
+      "answer": "AC Cleaning: AED 230++, Coil Cleaning: AED 250-680, Repair: AED 1,000-4,000, depending on unit capacity and location.",
+      "desc": "AC Cleaning: AED 230++, Coil Cleaning: AED 250-680, Repair: AED 1,000-4,000, depending on unit capacity and location."
+    },
+    {
+      "question": "Is AC duct cleaning important in Dubai?",
+      "title": "Is AC duct cleaning important in Dubai?",
+      "answer": "Yes. Poor indoor air quality can cause respiratory issues. Regular duct cleaning is crucial due to year-round AC usage in Dubai.",
+      "desc": "Yes. Poor indoor air quality can cause respiratory issues. Regular duct cleaning is crucial due to year-round AC usage in Dubai."
+    },
+    {
+      "question": "How much is AC service in Dubai?",
+      "title": "How much is AC service in Dubai?",
+      "answer": "Regular Cleaning: AED 230, Duct Cleaning & Sanitization: From AED 550, Deep Coil Cleaning: AED 250-830, AC Repair & Installation: AED 150 per hour.",
+      "desc": "Regular Cleaning: AED 230, Duct Cleaning & Sanitization: From AED 550, Deep Coil Cleaning: AED 250-830, AC Repair & Installation: AED 150 per hour."
+    },
+    {
+      "question": "How to check AC problems?",
+      "title": "How to check AC problems?",
+      "answer": "Check thermostat settings, close windows and doors, check for tripped breakers, clean filters, inspect for leaks, open vents, clean ducts, and call a technician if needed.",
+      "desc": "Check thermostat settings, close windows and doors, check for tripped breakers, clean filters, inspect for leaks, open vents, clean ducts, and call a technician if needed."
+    },
+    {
+      "question": "Is AC included in Dewa?",
+      "title": "Is AC included in Dewa?",
+      "answer": "In District Cooling, tenants are charged for cooling separately. In chiller-free apartments, AC costs are covered by the landlord and included in the rent.",
+      "desc": "In District Cooling, tenants are charged for cooling separately. In chiller-free apartments, AC costs are covered by the landlord and included in the rent."
+    },
+    {
+      "question": "Can you turn AC off while on vacation?",
+      "title": "Can you turn AC off while on vacation?",
+      "answer": "If temperatures are mild, turning it off is fine. Otherwise, set it to 80°F or lower to prevent damage from heat and humidity.",
+      "desc": "If temperatures are mild, turning it off is fine. Otherwise, set it to 80°F or lower to prevent damage from heat and humidity."
+    },
+    {
+      "question": "How much is AC duct cleaning in Dubai?",
+      "title": "How much is AC duct cleaning in Dubai?",
+      "answer": "Expect to pay between AED 500 and AED 1740 in 2025. Costs vary based on home size and specific requirements.",
+      "desc": "Expect to pay between AED 500 and AED 1740 in 2025. Costs vary based on home size and specific requirements."
+    },
+    {
+      "question": "What is York AC error code?",
+      "title": "What is York AC error code?",
+      "answer": "York AC error codes range from E0 to F5, indicating issues like sensor errors, communication faults, refrigerant leaks, fan malfunctions, and EEPROM failures.",
+      "desc": "York AC error codes range from E0 to F5, indicating issues like sensor errors, communication faults, refrigerant leaks, fan malfunctions, and EEPROM failures."
+    },
+    {
+      "question": "What is the 3 minute rule for air conditioners?",
+      "title": "What is the 3 minute rule for air conditioners?",
+      "answer": "Wait 3 minutes before restarting the AC after turning it off. It protects the system and improves functionality. Resetting the breaker 24 hours before summer startup is also advised.",
+      "desc": "Wait 3 minutes before restarting the AC after turning it off. It protects the system and improves functionality. Resetting the breaker 24 hours before summer startup is also advised."
+    }
+  ];
+
+const faqsData = {
+  id: "york-ac-faqs",
+  eyebrow: "Clear Answers",
+  title: "Frequently Asked Questions",
+  description: "Find clear answers to common questions about York AC repair, preventative maintenance, fault diagnostics, and emergency servicing in Dubai.",
+  items,
+  faqs: items,
+};
+
+// --- Inlined from contractsData.js ---
+const contractsData = {
+  id: "york-amc-packages",
+  eyebrow: "Preventive Protection",
+  title: "York Air Conditioning Maintenance Contracts",
+  description:
+    "Choose a planned AC maintenance schedule based on property size, unit type, operating hours and response priorities.",
+  featuredIndex: 0,
+  actionLabel: "Request AMC quote",
+  plans: [
+    {
+      title: "Yearly AC Maintenance Contract",
+      tagline: "Comprehensive year-round support for dependable cooling.",
+      badge: "Best Value",
+      features: [
+        "Scheduled preventive maintenance visits",
+        "Limited or unlimited breakdown call-out options",
+        "Indoor and outdoor unit condition reporting",
+        "Packages available with or without spare parts",
+      ],
+    },
+    {
+      title: "Six-Month AC Maintenance Contract",
+      tagline: "Balanced seasonal care before peak cooling demand.",
+      badge: "Popular",
+      features: [
+        "Planned inspection and cleaning visits",
+        "Drainage, airflow and electrical checks",
+        "Cooling-performance recommendations",
+        "Optional priority breakdown support",
+      ],
+    },
+    {
+      title: "Three-Month AC Maintenance Contract",
+      tagline: "Flexible short-term protection for immediate AC needs.",
+      badge: "Flexible",
+      features: [
+        "Targeted preventive maintenance visit",
+        "Filter, coil and drainage assessment",
+        "Thermostat and operating checks",
+        "Optional repair and call-out coverage",
+      ],
+    },
+  ],
+  footnote:
+    "Terms and conditions apply. Custom packages are available for villas, offices, commercial buildings and multi-site facilities.",
+};
+
+// --- Inlined from pricingData.js ---
+const pricingData = {
+  id: "pricing",
+  title: "AC Inspection, Cleaning and Maintenance Prices",
+  description:
+    "Choose a starting service based on your air-conditioning system. Final quotations depend on unit type, condition and required work.",
+  defaultBadge: "Professional AC Care",
+  pricePrefix: "Starting from",
+  actionLabel: "Book now",
+
+  items: [
+    {
+      title: "AC Inspection Service",
+      badge: "Diagnostics",
+      price: "AED 215",
+      image: {
+        id: "ac-service-page/ac-inspection",
+        src: "/img/ac-service-page/ac-inspection.webp",
+      },
+      description:
+        "Is your AC not cooling your place? Is the AC thermostat broken, or is the fan making strange noises? Give us a call",
+      popup: {
+        title: "AC Call-Out (Technical Inspection) scope of works:",
+        sections: [
+          {
+            items: [
+              "Resolving air flow issues",
+              "AC thermostat check-up",
+              "Refrigerant Level check-up",
+              "Rectification of AC power trip",
+              "Rectification of AC water leakage",
+              "Fixing AC cooling/overcooling issues",
+              "Addressing sound problems from the AC",
+            ],
+          },
+          {
+            label: "Excluded",
+            text:
+              "Cost for any repair work, procurement cost, cost of any new parts and installation, if required.",
+          },
+          {
+            label: "Terms & Conditions",
+            text:
+              "Starting from AED 215 callout fee applies based on the type, capacity of the unit, and location for each diagnosis.",
+          },
+        ],
+      },
+    },
+
+    {
+      title: "Basic AC Cleaning",
+      subtitle: "Selected work includes a 60-day service warranty",
+      warranty: "60 - Days Warranty",
+      badge: "Popular",
+      price: "AED 280",
+      image: {
+        id: "ac-service-page/ac-cleaning-price",
+        src: "/img/ac-service-page/ac-cleaning-price.webp",
+      },
+      description:
+        "If your AC has reduced airflow or is leaking water, work quickly. Regularly clean filters and drain to provide efficiency and good air quality.",
+      popup: {
+        title: "AC Filter Cleaning scope of works:",
+        sections: [
+          {
+            items: [
+              "Cleaning the AC filters",
+              "Checking the AC thermostat",
+              "Checking the Gas Pressure",
+              "Flushing the AC Drain line with water",
+              "Checking the unit noise and unusual sounds",
+              "Addressing minor water leaks found during servicing",
+            ],
+          },
+          {
+            label: "Excluded",
+            text:
+              "Any AC parts replacement, complex electrical repairs, major water leakage fixes, or full coil chemical overhauls.",
+          },
+          {
+            label: "Terms & Conditions",
+            text:
+              "Starting from AED 280 fee covers basic cleaning per single split or ducted unit indoor and outdoor filter/drain flush.",
+          },
+        ],
+      },
+    },
+
+    {
+      title: "AC Maintenance",
+      subtitle: "Selected work includes a 60-day service warranty",
+      warranty: "60 - Days Warranty",
+      badge: "Preventive Care",
+      price: "AED 325",
+      image: {
+        id: "ac-service-page/ac-maintenance-price",
+        src: "/img/ac-service-page/ac-maintenance-price.webp",
+      },
+      description:
+        "Relax and save money by keeping our expert technicians clean and maintain your AC, stopping unnecessary breakdowns.",
+      popup: {
+        title: "AC Full Maintenance (Service & Tune-up) scope of works:",
+        sections: [
+          {
+            items: [
+              "Full indoor & outdoor coil chemical wash",
+              "Fan blower deep cleaning and motor lubrication",
+              "Complete condensate tray disinfection & chemical flush",
+              "Capacitor, contractor, and compressor terminal tightening",
+              "Refrigerant top-up and operating temperature differential check",
+              "Thermostat recalibration and energy optimization test",
+            ],
+          },
+          {
+            label: "Excluded",
+            text:
+              "Major component rewinding, compressor replacement, or complete copper pipe retrofits.",
+          },
+          {
+            label: "Terms & Conditions",
+            text:
+              "Starting from AED 325 applies to comprehensive preventive maintenance tune-up per standard residential unit.",
+          },
+        ],
+      },
+    },
+  ],
+
+  notes: [
+    "Final pricing depends on unit type (Split, Ducted, Package, VRF), capacity, and accessibility.",
+    "Emergency call-outs and non-standard parts are quoted transparently before work begins.",
+  ],
+};
+
+// --- Inlined from repairPriceData.js ---
+const repairPriceData = {
+  id: "york-ac-service-pricing",
+  eyebrow: "AC Service Pricing",
+  title:
+    "How much does it cost Premier AC Cleaning Service, AC Repair and AC Maintenance?",
+  actionLabel: "Check Here For Price",
+  actionHref: "/dubai-ac-service-price-list/",
+  openInNewTab: false,
+};
+
+// --- Inlined from energyTipsData.js ---
+const energyTipsData = {
+  id: "york-ac-energy-saving-tips",
+  eyebrow: "Energy Saving Tips",
+  title: "UAE: 7 Tips to Reduce AC Bills This Summer",
+  description:
+    "Learn easy and proven ways to save energy with your AC. Find tips to cut the cost and stay cool all summers!",
+  actionLabel: "Click Here to Save on Energy Bills",
+  actionHref:
+    "https://www.fajservices.ae/files/Practical%20Tips%20to%20Improve%20Energy%20Efficiency%20of%20Your%20AC%20Infographic.pdf",
+  openInNewTab: true,
+};
+
+// --- Inlined from testimonialsData.js ---
+const testimonialsData = {
+  id: "york-ac-testimonials",
+  eyebrow: "What Our Clients Say",
+  title: "Customer Reviews",
+  items: [
+    {
+      icon: "award",
+      title: "Alexander Pothen",
+      subtitle: "Expat",
+      description:
+        "An efficient team who could diagnose the fault and rectify the problem. They washed the indoor AC unit with water and took all the care not to mess up our office.",
+    },
+    {
+      icon: "award",
+      title: "Shehan Chanaka",
+      subtitle: "Resident",
+      description:
+        "Mr Adnan gives us the best service for AC Servicing. And he also repaired our AC and Refrigerator in limited price. Keep it up 👍👍",
+    },
+    {
+      icon: "award",
+      title: "Waseem Aqdas",
+      subtitle: "Homeowner",
+      description:
+        "Outstanding service from FAJ Technical! My AC wasn't cooling properly, but FAJ Technical came to the rescue. Quick response, friendly technician, and now my AC works perfectly. I highly recommend them!",
+    },
+    {
+      icon: "award",
+      title: "Arshad Iqbal",
+      subtitle: "Homeowner",
+      description:
+        "FAJ Technical Services really exceeded my expectations. I had my air conditioning unit repaired, and their service was exceptional. The team was very professional and supportive, and they resolved the issues quickly and effectively.",
+    },
+    {
+      icon: "award",
+      title: "Bilal Ahmad",
+      subtitle: "Resident",
+      description:
+        "I had an excellent experience with Easy AC for my recent AC repair. The team was incredibly professional and informative throughout the process. Their expertise in installing my air conditioner was evident, and the results exceeded my expectations. I highly recommend Easy AC for any AC repair needs. They truly deliver top quality service!",
+    },
+    {
+      icon: "award",
+      title: "Sumaira Kamboh",
+      subtitle: "Homeowner",
+      description:
+        "I recently hired this company for my AC maintenance and was thoroughly impressed! The technicians were professional, punctual, and did an excellent job. They explained everything they did and provided helpful tips for future maintenance. I highly recommend them!",
+    },
+    {
+      icon: "award",
+      title: "Yonis Khan.",
+      subtitle: "Resident",
+      description:
+        "I had my AC maintained by FAJ Technical Services, and they did a professional job. The team was friendly and quick, making the whole process easy. If you need AC maintenance, I definitely recommend them.",
+    },
+    {
+      icon: "award",
+      title: "Ahmad Alhemeiri",
+      subtitle: "Expat",
+      description:
+        "Its great place to have any spare part for AC Thanks to Ms Neha for her support and follow-up. She's really good representative of company",
+    },
+  ],
+};
+
 
 const seoData = {
   title: "York Air Conditioning | York AC Repair and Maintenance Services",

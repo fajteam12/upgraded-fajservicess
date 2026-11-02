@@ -1,11 +1,413 @@
 import acCoverageLocations106 from "../../../acCoverageLocations106";
-import heroData from "./heroData";
-import faqsData from "./faqsData";
-import contractsData from "./contractsData";
-import pricingData from "./pricingData";
-import repairPriceData from "./repairPriceData";
-import energyTipsData from "./energyTipsData";
-import testimonialsData from "./testimonialsData";
+
+// --- Inlined from heroData.js ---
+const heroData = {
+  eyebrow: "Midea AC Specialists",
+  title: "Professional Midea Air Conditioning Repair and Maintenance Service Specialists in Dubai, UAE",
+  paragraphs: [
+    "FAJ Technical Services L.L.C Since 2010, we’ve proudly served our community! Our skilled facilities team brings a wealth of experience in Midea AC repair, maintenance, and installation for both homes and businesses across Dubai and Sharjah.",
+  ],
+  paragraph: "FAJ Technical Services L.L.C Since 2010, we’ve proudly served our community! Our skilled facilities team brings a wealth of experience in Midea AC repair, maintenance, and installation for both homes and businesses across Dubai and Sharjah.",
+  highlights: [
+    {
+      icon: "award",
+      title: "Established Since 2010",
+      description: "Reliability, Diversity, Integrity, and Quality.",
+    },
+    {
+      icon: "shield-check",
+      title: "Workmanship Warranty",
+      description: "Repair and service warranty support.",
+    },
+    {
+      icon: "phone-support",
+      title: "7-Day Service Response",
+      description: "Fast assistance across Dubai.",
+    },
+  ],
+  primaryAction: "Book An Appointment",
+  secondaryAction: "Call Now",
+  showCall: true,
+  showPhone: true,
+  image: {
+    id: "ac-brand-logos/midea-logo",
+    src: "/img/ac-brand-logos/midea-logo.webp",
+    alt: "Midea Air Conditioning Repair and Maintenance in Dubai",
+    width: 600,
+    height: 400,
+    fit: "contain",
+    padding: "20px",
+    bg: "#ffffff",
+    hideOverlay: true,
+  },
+};
+
+// --- Inlined from faqsData.js ---
+const items = [
+    {
+      "question": "How much is AC service in Dubai?",
+      "title": "How much is AC service in Dubai?",
+      "answer": "AC service in Dubai typically costs between AED 230 to AED 765 depending on the type of service. Prices vary based on the unit's size and condition, as well as the service provider.",
+      "desc": "AC service in Dubai typically costs between AED 230 to AED 765 depending on the type of service. Prices vary based on the unit's size and condition, as well as the service provider."
+    },
+    {
+      "question": "Why is my AC not cooling in Dubai?",
+      "title": "Why is my AC not cooling in Dubai?",
+      "answer": "Your AC may not be cooling due to dirty filters, low refrigerant levels, or a malfunctioning compressor. A professional technician can diagnose and resolve the issue quickly.",
+      "desc": "Your AC may not be cooling due to dirty filters, low refrigerant levels, or a malfunctioning compressor. A professional technician can diagnose and resolve the issue quickly."
+    },
+    {
+      "question": "Why is AC repair so expensive?",
+      "title": "Why is AC repair so expensive?",
+      "answer": "AC repairs can be expensive due to the high cost of parts (like compressors or coils) and specialized labor. The complexity of the repairs and Dubai’s climate, which demands frequent AC use, also adds to the cost.",
+      "desc": "AC repairs can be expensive due to the high cost of parts (like compressors or coils) and specialized labor. The complexity of the repairs and Dubai’s climate, which demands frequent AC use, also adds to the cost."
+    },
+    {
+      "question": "Why is my AC giving cool air but not cooling?",
+      "title": "Why is my AC giving cool air but not cooling?",
+      "answer": "If your AC is blowing cool air but not cooling the room, it could be due to issues like low refrigerant or clogged filters. A technician can fix this with a proper inspection and maintenance.",
+      "desc": "If your AC is blowing cool air but not cooling the room, it could be due to issues like low refrigerant or clogged filters. A technician can fix this with a proper inspection and maintenance."
+    },
+    {
+      "question": "How often should AC be cleaned in Dubai?",
+      "title": "How often should AC be cleaned in Dubai?",
+      "answer": "AC units in Dubai should be cleaned every 3-6 months due to high dust levels in the environment. More frequent cleaning may be necessary for homes in dusty areas or with heavy AC use.",
+      "desc": "AC units in Dubai should be cleaned every 3-6 months due to high dust levels in the environment. More frequent cleaning may be necessary for homes in dusty areas or with heavy AC use."
+    },
+    {
+      "question": "Which company is best for central AC?",
+      "title": "Which company is best for central AC?",
+      "answer": "FAJ Technical Services L.L.C. is one of the best companies for central AC services in Dubai. We offer reliable, professional services to ensure your system runs efficiently.",
+      "desc": "FAJ Technical Services L.L.C. is one of the best companies for central AC services in Dubai. We offer reliable, professional services to ensure your system runs efficiently."
+    },
+    {
+      "question": "What maintenance is needed for AC?",
+      "title": "What maintenance is needed for AC?",
+      "answer": "AC maintenance includes tasks like cleaning or replacing air filters, checking refrigerant levels, and cleaning coils and drain lines. Regular upkeep ensures your system runs efficiently and prolongs its lifespan.",
+      "desc": "AC maintenance includes tasks like cleaning or replacing air filters, checking refrigerant levels, and cleaning coils and drain lines. Regular upkeep ensures your system runs efficiently and prolongs its lifespan."
+    },
+    {
+      "question": "How can I maintain my AC?",
+      "title": "How can I maintain my AC?",
+      "answer": "Maintain your AC by regularly cleaning or replacing filters, checking for airflow issues, and scheduling professional servicing every 6 months. This helps to improve performance and prevent costly repairs.",
+      "desc": "Maintain your AC by regularly cleaning or replacing filters, checking for airflow issues, and scheduling professional servicing every 6 months. This helps to improve performance and prevent costly repairs."
+    },
+    {
+      "question": "What is routine AC maintenance?",
+      "title": "What is routine AC maintenance?",
+      "answer": "Routine AC maintenance typically involves cleaning filters, inspecting the refrigerant, cleaning the coils, and checking the system’s overall performance. Regular maintenance keeps your AC running smoothly.",
+      "desc": "Routine AC maintenance typically involves cleaning filters, inspecting the refrigerant, cleaning the coils, and checking the system’s overall performance. Regular maintenance keeps your AC running smoothly."
+    },
+    {
+      "question": "How do I fix my air conditioner that is not cooling?",
+      "title": "How do I fix my air conditioner that is not cooling?",
+      "answer": "To fix an AC not cooling, check the thermostat, clean or replace the air filter, and ensure the outdoor unit is clear. If issues persist, inspect refrigerant levels, ice buildup, or compressor issues—contact a professional if needed.",
+      "desc": "To fix an AC not cooling, check the thermostat, clean or replace the air filter, and ensure the outdoor unit is clear. If issues persist, inspect refrigerant levels, ice buildup, or compressor issues—contact a professional if needed."
+    },
+    {
+      "question": "How often should an air conditioner be serviced?",
+      "title": "How often should an air conditioner be serviced?",
+      "answer": "An air conditioner should be serviced at least once a year to maintain optimal performance. In hot climates like Dubai, servicing every 6 months is recommended to ensure efficiency and extend the unit's lifespan.",
+      "desc": "An air conditioner should be serviced at least once a year to maintain optimal performance. In hot climates like Dubai, servicing every 6 months is recommended to ensure efficiency and extend the unit's lifespan."
+    },
+    {
+      "question": "Is AC duct cleaning important in Dubai?",
+      "title": "Is AC duct cleaning important in Dubai?",
+      "answer": "Yes, AC duct cleaning is important in Dubai as it improves indoor air quality, increases system efficiency, and prevents the build-up of dust and allergens. Regular cleaning helps your AC perform better.",
+      "desc": "Yes, AC duct cleaning is important in Dubai as it improves indoor air quality, increases system efficiency, and prevents the build-up of dust and allergens. Regular cleaning helps your AC perform better."
+    },
+    {
+      "question": "Is AC duct cleaning worth it?",
+      "title": "Is AC duct cleaning worth it?",
+      "answer": "Yes, AC duct cleaning is worth it because it enhances air quality, improves the performance of your system, and helps extend the life of your AC unit. It’s a cost-effective investment for long-term benefits.",
+      "desc": "Yes, AC duct cleaning is worth it because it enhances air quality, improves the performance of your system, and helps extend the life of your AC unit. It’s a cost-effective investment for long-term benefits."
+    },
+    {
+      "question": "How often should AC ducts be cleaned?",
+      "title": "How often should AC ducts be cleaned?",
+      "answer": "AC ducts should be cleaned every 2-3 years, or more frequently if you notice dust accumulation, poor airflow, or a musty smell. Regular cleaning ensures better air quality and system efficiency.",
+      "desc": "AC ducts should be cleaned every 2-3 years, or more frequently if you notice dust accumulation, poor airflow, or a musty smell. Regular cleaning ensures better air quality and system efficiency."
+    }
+  ];
+
+const faqsData = {
+  id: "midea-ac-faqs",
+  eyebrow: "FAQS",
+  title: "Frequently Asked Questions",
+  description: "Find clear answers to common questions about Midea AC repair, preventative maintenance, fault diagnostics, and emergency servicing in Dubai.",
+  items,
+  faqs: items,
+};
+
+// --- Inlined from contractsData.js ---
+const contractsData = {
+  id: "midea-amc-packages",
+  eyebrow: "Preventive Protection",
+  title: "Midea Air Conditioning Maintenance Contracts",
+  description:
+    "Choose a planned AC maintenance schedule based on property size, unit type, operating hours and response priorities.",
+  featuredIndex: 0,
+  actionLabel: "Request AMC quote",
+  plans: [
+    {
+      title: "Yearly AC Maintenance Contract",
+      tagline: "Comprehensive year-round support for dependable cooling.",
+      badge: "Best Value",
+      features: [
+        "Scheduled preventive maintenance visits",
+        "Limited or unlimited breakdown call-out options",
+        "Indoor and outdoor unit condition reporting",
+        "Packages available with or without spare parts",
+      ],
+    },
+    {
+      title: "Six-Month AC Maintenance Contract",
+      tagline: "Balanced seasonal care before peak cooling demand.",
+      badge: "Popular",
+      features: [
+        "Planned inspection and cleaning visits",
+        "Drainage, airflow and electrical checks",
+        "Cooling-performance recommendations",
+        "Optional priority breakdown support",
+      ],
+    },
+    {
+      title: "Three-Month AC Maintenance Contract",
+      tagline: "Flexible short-term protection for immediate AC needs.",
+      badge: "Flexible",
+      features: [
+        "Targeted preventive maintenance visit",
+        "Filter, coil and drainage assessment",
+        "Thermostat and operating checks",
+        "Optional repair and call-out coverage",
+      ],
+    },
+  ],
+  footnote:
+    "Terms and conditions apply. Custom packages are available for villas, offices, commercial buildings and multi-site facilities.",
+};
+
+// --- Inlined from pricingData.js ---
+const pricingData = {
+  eyebrow: "Transparent Service Options",
+  title: "AC Inspection, Cleaning and Maintenance Prices",
+  description:
+    "Choose a starting service based on your air-conditioning system. Final quotations depend on unit type, condition and required work.",
+  defaultBadge: "Professional AC Care",
+  pricePrefix: "Starting from",
+  actionLabel: "Book now",
+
+  items: [
+    {
+      title: "AC Inspection Service",
+      badge: "Diagnostics",
+      price: "AED 215",
+      image: {
+        id: "ac-service-page/ac-inspection",
+        src: "/img/ac-service-page/ac-inspection.webp",
+      },
+      description:
+        "Is your AC not cooling your place? Is the AC thermostat broken, or is the fan making strange noises? Give us a call",
+      popup: {
+        title: "AC Call-Out (Technical Inspection) scope of works:",
+        sections: [
+          {
+            items: [
+              "Resolving air flow issues",
+              "AC thermostat check-up",
+              "Refrigerant Level check-up",
+              "Rectification of AC power trip",
+              "Rectification of AC water leakage",
+              "Fixing AC cooling/overcooling issues",
+              "Addressing sound problems from the AC",
+            ],
+          },
+          {
+            label: "Excluded",
+            text:
+              "Cost for any repair work, procurement cost, cost of any new parts and installation, if required.",
+          },
+          {
+            label: "Terms & Conditions",
+            text:
+              "Starting from AED 215 callout fee applies based on the type, capacity of the unit, and location for each diagnosis.",
+          },
+        ],
+      },
+    },
+
+    {
+      title: "Basic AC Cleaning",
+      subtitle: "Selected work includes a 60-day service warranty",
+      warranty: "60 - Days Warranty",
+      badge: "Popular",
+      price: "AED 280",
+      image: {
+        id: "ac-service-page/ac-cleaning-price",
+        src: "/img/ac-service-page/ac-cleaning-price.webp",
+      },
+      description:
+        "If your AC has reduced airflow or is leaking water, work quickly. Regularly clean filters and drain to provide efficiency and good air quality.",
+      popup: {
+        title: "AC Cleaning Service scope of works:",
+        sections: [
+          {
+            items: [
+              "AC filter cleaning",
+              "AC water leakage",
+              "Check AC components",
+              "Filter cleaning and replacement",
+              "Condenser coil cleaning",
+              "AC thermostat check-up",
+              "Refrigerant Level check-up",
+              "Addressing sound issues from the AC",
+            ],
+          },
+          {
+            label: "Excluded",
+            text:
+              "Cost for any repair work, procurement cost, cost of any new parts and installation, if required.",
+          },
+          {
+            label: "Terms & Conditions",
+            text:
+              "Starting from AED 280 basic cleaning service charge applies based on the type, capacity of the unit, and location for each diagnosis.",
+          },
+        ],
+      },
+    },
+
+    {
+      title: "AC Maintenance",
+      subtitle: "Selected work includes a 60-day service warranty",
+      warranty: "60 - Days Warranty",
+      badge: "Preventive Care",
+      price: "AED 325",
+      image: {
+        id: "ac-service-page/ac-maintenance-price",
+        src: "/img/ac-service-page/ac-maintenance-price.webp",
+      },
+      description:
+        "Relax and save money by keeping our expert technicians clean and maintain your AC, stopping unnecessary breakdowns.",
+      popup: {
+        title: "AC Maintenance Service scope of works:",
+        sections: [
+          {
+            items: [
+              "Full AC diagnostic & system health check",
+              "Coil and filter deep chemical sanitization",
+              "Motor bearings and blower wheel inspection",
+              "Refrigerant pressure and temperature verification",
+              "Electrical contactor and capacitor testing",
+              "Drain line vacuuming and pan disinfection",
+              "Thermostat sensor calibration check",
+            ],
+          },
+          {
+            label: "Excluded",
+            text:
+              "Cost for any repair work, procurement cost, cost of any new parts and installation, if required.",
+          },
+          {
+            label: "Terms & Conditions",
+            text:
+              "Starting from AED 325 maintenance service charge applies based on the type, capacity of the unit, and location for each diagnosis.",
+          },
+        ],
+      },
+    },
+  ],
+};
+
+// --- Inlined from repairPriceData.js ---
+const repairPriceData = {
+  id: "midea-ac-service-pricing",
+  eyebrow: "AC Service Pricing",
+  title:
+    "How much does it cost Premier AC Cleaning Service, AC Repair and AC Maintenance?",
+  actionLabel: "Check Here For Price",
+  actionHref: "/dubai-ac-service-price-list/",
+  openInNewTab: false,
+};
+
+// --- Inlined from energyTipsData.js ---
+const energyTipsData = {
+  id: "midea-ac-energy-saving-tips",
+  eyebrow: "Energy Saving Tips",
+  title: "UAE: 7 Tips to Reduce AC Bills This Summer",
+  description:
+    "Learn easy and proven ways to save energy with your AC. Find tips to cut the cost and stay cool all summers!",
+  actionLabel: "Click Here to Save on Energy Bills",
+  actionHref:
+    "https://www.fajservices.ae/files/Practical%20Tips%20to%20Improve%20Energy%20Efficiency%20of%20Your%20AC%20Infographic.pdf",
+  openInNewTab: true,
+};
+
+// --- Inlined from testimonialsData.js ---
+const testimonialsData = {
+  id: "midea-ac-testimonials",
+  eyebrow: "What Our Clients Say",
+  title: "Customer Reviews",
+  items: [
+    {
+      icon: "award",
+      title: "Alexander Pothen",
+      subtitle: "Expat",
+      description:
+        "An efficient team who could diagnose the fault and rectify the problem. They washed the indoor AC unit with water and took all the care not to mess up our office.",
+    },
+    {
+      icon: "award",
+      title: "Shehan Chanaka",
+      subtitle: "Resident",
+      description:
+        "Mr Adnan gives us the best service for AC Servicing. And he also repaired our AC and Refrigerator in limited price. Keep it up 👍👍",
+    },
+    {
+      icon: "award",
+      title: "Waseem Aqdas",
+      subtitle: "Homeowner",
+      description:
+        "Outstanding service from FAJ Technical! My AC wasn't cooling properly, but FAJ Technical came to the rescue. Quick response, friendly technician, and now my AC works perfectly. I highly recommend them!",
+    },
+    {
+      icon: "award",
+      title: "Arshad Iqbal",
+      subtitle: "Homeowner",
+      description:
+        "FAJ Technical Services really exceeded my expectations. I had my air conditioning unit repaired, and their service was exceptional. The team was very professional and supportive, and they resolved the issues quickly and effectively.",
+    },
+    {
+      icon: "award",
+      title: "Bilal Ahmad",
+      subtitle: "Resident",
+      description:
+        "I had an excellent experience with Easy AC for my recent AC repair. The team was incredibly professional and informative throughout the process. Their expertise in installing my air conditioner was evident, and the results exceeded my expectations. I highly recommend Easy AC for any AC repair needs. They truly deliver top quality service!",
+    },
+    {
+      icon: "award",
+      title: "Sumaira Kamboh",
+      subtitle: "Homeowner",
+      description:
+        "I recently hired this company for my AC maintenance and was thoroughly impressed! The technicians were professional, punctual, and did an excellent job. They explained everything they did and provided helpful tips for future maintenance. I highly recommend them!",
+    },
+    {
+      icon: "award",
+      title: "Yonis Khan.",
+      subtitle: "Resident",
+      description:
+        "I had my AC maintained by FAJ Technical Services, and they did a professional job. The team was friendly and quick, making the whole process easy. If you need AC maintenance, I definitely recommend them.",
+    },
+    {
+      icon: "award",
+      title: "Ahmad Alhemeiri",
+      subtitle: "Expat",
+      description:
+        "Its great place to have any spare part for AC Thanks to Ms Neha for her support and follow-up. She's really good representative of company",
+    },
+  ],
+};
+
 
 const seoData = {
   title: "Best Midea AC Repair & HVAC Maintenance Service in Dubai UAE",

@@ -1,11 +1,407 @@
 import acCoverageLocations106 from "../../../acCoverageLocations106";
-import heroData from "./heroData";
-import faqsData from "./faqsData";
-import contractsData from "./contractsData";
-import pricingData from "./pricingData";
-import repairPriceData from "./repairPriceData";
-import energyTipsData from "./energyTipsData";
-import testimonialsData from "./testimonialsData";
+
+// --- Inlined from heroData.js ---
+const heroData = {
+  eyebrow: "O General AC Specialists",
+  title: "Cost-Effective O General AC Repair and Maintenance Service in Dubai",
+  paragraphs: [
+    "O General AC Repair by FAJ Technical Services L.L.C , established in 2010, is your trusted solution for any issues with your O General air conditioning system. Our AC technicians are always available to assist you in Dubai and the surrounding areas. Contact us today to schedule a visit from one of our expert technicians at a time that is convenient for you.",
+  ],
+  paragraph: "O General AC Repair by FAJ Technical Services L.L.C , established in 2010, is your trusted solution for any issues with your O General air conditioning system. Our AC technicians are always available to assist you in Dubai and the surrounding areas. Contact us today to schedule a visit from one of our expert technicians at a time that is convenient for you.",
+  highlights: [
+    {
+      icon: "award",
+      title: "Established Since 2010",
+      description: "Reliability, Diversity, Integrity, and Quality.",
+    },
+    {
+      icon: "shield-check",
+      title: "Workmanship Warranty",
+      description: "Repair and service warranty support.",
+    },
+    {
+      icon: "phone-support",
+      title: "7-Day Service Response",
+      description: "Fast assistance across Dubai.",
+    },
+  ],
+  primaryAction: "Book An Appointment",
+  secondaryAction: "Call Now",
+  showCall: true,
+  showPhone: true,
+  image: {
+    id: "ac-brand-logos/o-general-logo",
+    src: "/img/ac-brand-logos/o-general-logo.webp",
+    alt: "OGeneral Air Conditioning Repair and Maintenance in Dubai",
+    width: 600,
+    height: 400,
+    fit: "contain",
+    padding: "20px",
+    bg: "#ffffff",
+    hideOverlay: true,
+  },
+};
+
+// --- Inlined from faqsData.js ---
+const items = [
+    {
+      "question": "What is the warranty maintenance period?",
+      "title": "What is the warranty maintenance period?",
+      "answer": "In most cases, the maintenance period lasts between thirteen weeks and six months or longer, as specified in the contract. This means that any maintenance issues or defects that arise during this time are the builder's responsibility to fix and repair at no additional cost to you.",
+      "desc": "In most cases, the maintenance period lasts between thirteen weeks and six months or longer, as specified in the contract. This means that any maintenance issues or defects that arise during this time are the builder's responsibility to fix and repair at no additional cost to you."
+    },
+    {
+      "question": "What is the E6 error in O General AC?",
+      "title": "What is the E6 error in O General AC?",
+      "answer": "The E6 error code in air conditioners usually indicates a communication failure between the indoor and outdoor units. This issue disrupts the synchronised operation of the system, leading to reduced cooling efficiency.",
+      "desc": "The E6 error code in air conditioners usually indicates a communication failure between the indoor and outdoor units. This issue disrupts the synchronised operation of the system, leading to reduced cooling efficiency."
+    },
+    {
+      "question": "What is the error code H3 on O General AC?",
+      "title": "What is the error code H3 on O General AC?",
+      "answer": "The H3 error code typically indicates a refrigerant leak in the AC system. Refrigerant is crucial for the cooling process, and a leak can lead to reduced cooling efficiency or even a total failure of the AC system.",
+      "desc": "The H3 error code typically indicates a refrigerant leak in the AC system. Refrigerant is crucial for the cooling process, and a leak can lead to reduced cooling efficiency or even a total failure of the AC system."
+    },
+    {
+      "question": "Why is my O General AC not cooling?",
+      "title": "Why is my O General AC not cooling?",
+      "answer": "If the O General air conditioner is not cooling, the compressor may be defective. The compressor is a motor that compresses the refrigerant and circulates it through the evaporator and condenser coils. If the compressor fails, the cooling cycle does not initiate, and the O General air conditioner will not cool properly.",
+      "desc": "If the O General air conditioner is not cooling, the compressor may be defective. The compressor is a motor that compresses the refrigerant and circulates it through the evaporator and condenser coils. If the compressor fails, the cooling cycle does not initiate, and the O General air conditioner will not cool properly."
+    },
+    {
+      "question": "How can I increase my AC cooling?",
+      "title": "How can I increase my AC cooling?",
+      "answer": "9 Ways to Maximize Your A/C Efficiency: Seal AC Ducts, Raise the Thermostat, Install a Programmable Thermostat, Insulate and Weatherize, Check and Change AC Filters, Install Your Room aircon in the Shade, Keep Your AC Compressor Cool and Clean, Get Air Conditioning Annual Inspections.",
+      "desc": "9 Ways to Maximize Your A/C Efficiency: Seal AC Ducts, Raise the Thermostat, Install a Programmable Thermostat, Insulate and Weatherize, Check and Change AC Filters, Install Your Room aircon in the Shade, Keep Your AC Compressor Cool and Clean, Get Air Conditioning Annual Inspections."
+    },
+    {
+      "question": "What are the reasons for the O General AC not cooling?",
+      "title": "What are the reasons for the O General AC not cooling?",
+      "answer": "Here are the five most common causes of not cooling the O General AC and how to solve it:<br/>Your outdoor unit requires additional maintenance due to exposure to sunlight, rain, and debris.<br/>Unfitted AC unit; AC Clogged filter; AC Low Gas;<br/>The broken thermistor on the outdoor aircon unit.",
+      "desc": "Here are the five most common causes of not cooling the O General AC and how to solve it:<br/>Your outdoor unit requires additional maintenance due to exposure to sunlight, rain, and debris.<br/>Unfitted AC unit; AC Clogged filter; AC Low Gas;<br/>The broken thermistor on the outdoor aircon unit."
+    },
+    {
+      "question": "How do I check my AC cooling capacity?",
+      "title": "How do I check my AC cooling capacity?",
+      "answer": "To find the tonnage of your AC unit, you can often just walk outside and check the label on the condenser unit.<br/> However, most manufacturers typically list the BTUs (British Thermal Units) instead of tons. Fortunately, you can easily convert BTUs to tons by dividing the BTUs by 12,000. This will give you the tonnage of your unit.",
+      "desc": "To find the tonnage of your AC unit, you can often just walk outside and check the label on the condenser unit.<br/> However, most manufacturers typically list the BTUs (British Thermal Units) instead of tons. Fortunately, you can easily convert BTUs to tons by dividing the BTUs by 12,000. This will give you the tonnage of your unit."
+    },
+    {
+      "question": "What is the benefit of VRF?",
+      "title": "What is the benefit of VRF?",
+      "answer": "With VRF technology, it's easy to heat and cool only the spaces that require it. These systems circulate just the right amount of refrigerant needed for each individual zone to meet the building's demands. Since they do not use ducts, this approach eliminates the energy waste typically associated with duct losses.",
+      "desc": "With VRF technology, it's easy to heat and cool only the spaces that require it. These systems circulate just the right amount of refrigerant needed for each individual zone to meet the building's demands. Since they do not use ducts, this approach eliminates the energy waste typically associated with duct losses."
+    },
+    {
+      "question": "How do I know the tonnage of my AC unit?",
+      "title": "How do I know the tonnage of my AC unit?",
+      "answer": "To estimate the air conditioning tonnage you need, start by multiplying the square footage of the space you want to cool by 25. This calculation will give you the total number of BTUs required for adequate cooling. Next, divide that number by 12,000 to determine the tonnage capacity necessary for your new air conditioning unit.",
+      "desc": "To estimate the air conditioning tonnage you need, start by multiplying the square footage of the space you want to cool by 25. This calculation will give you the total number of BTUs required for adequate cooling. Next, divide that number by 12,000 to determine the tonnage capacity necessary for your new air conditioning unit."
+    },
+    {
+      "question": "How to calculate AC tonnage from kW?",
+      "title": "How to calculate AC tonnage from kW?",
+      "answer": "To convert tons of air conditioning (AC) to kilowatts (kW), follow these steps: <br/>1 ton is equivalent to 12000 BTU (British Thermal Units).<br/>Additionally, 1 ton is equal to 0.0003929 horsepower (hp). <br/>Example: 1.5 tons = 1.5 x 12000 = 18000 BTU. hp = 18000 x 0.0003929 = 7.072 hp. 1 hp = 0.746 kW. Therefore, kW = 7.072 x 0.746 = 5.275 kW.<br/>This is a quick reference guide for converting tonnes to kilowatts in 2 seconds.",
+      "desc": "To convert tons of air conditioning (AC) to kilowatts (kW), follow these steps: <br/>1 ton is equivalent to 12000 BTU (British Thermal Units).<br/>Additionally, 1 ton is equal to 0.0003929 horsepower (hp). <br/>Example: 1.5 tons = 1.5 x 12000 = 18000 BTU. hp = 18000 x 0.0003929 = 7.072 hp. 1 hp = 0.746 kW. Therefore, kW = 7.072 x 0.746 = 5.275 kW.<br/>This is a quick reference guide for converting tonnes to kilowatts in 2 seconds."
+    },
+    {
+      "question": "What is the ideal temperature for a baby's / kids room?",
+      "title": "What is the ideal temperature for a baby's / kids room?",
+      "answer": "When it comes to room temperature, if you feel that it's too cold, your baby likely feels the same way, and the same goes for warmth. Therefore, it's advisable to maintain a temperature between 68 and 72 degrees Fahrenheit, which is comfortable for both summer and winter.",
+      "desc": "When it comes to room temperature, if you feel that it's too cold, your baby likely feels the same way, and the same goes for warmth. Therefore, it's advisable to maintain a temperature between 68 and 72 degrees Fahrenheit, which is comfortable for both summer and winter."
+    },
+    {
+      "question": "How do I know if my baby is cold at night?",
+      "title": "How do I know if my baby is cold at night?",
+      "answer": "Keep a close eye on your baby for signs of being too cold, such as cool skin, shivering, fussiness, or pale skin. To create an ideal sleep environment, maintain your baby’s room temperature between 68 and 72 degrees Fahrenheit and keep humidity levels around 40 to 60 percent. Dress your baby in layers to ensure they stay comfortable.",
+      "desc": "Keep a close eye on your baby for signs of being too cold, such as cool skin, shivering, fussiness, or pale skin. To create an ideal sleep environment, maintain your baby’s room temperature between 68 and 72 degrees Fahrenheit and keep humidity levels around 40 to 60 percent. Dress your baby in layers to ensure they stay comfortable."
+    },
+    {
+      "question": "What temperature should I set my AC in summer in Dubai, UAE?",
+      "title": "What temperature should I set my AC in summer in Dubai, UAE?",
+      "answer": "During the summer, the ideal room temperature is between 22 and 26 degrees Celsius. This range is considered comfortable for most people, as it helps keep the room cool while ensuring a pleasant living environment, as said by FAJ Engineer Malik Tayyeb.",
+      "desc": "During the summer, the ideal room temperature is between 22 and 26 degrees Celsius. This range is considered comfortable for most people, as it helps keep the room cool while ensuring a pleasant living environment, as said by FAJ Engineer Malik Tayyeb."
+    }
+  ];
+
+const faqsData = {
+  id: "o-general-ac-faqs",
+  eyebrow: "FAQS",
+  title: "Frequently Asked Questions",
+  description: "Find clear answers to common questions about O General AC repair, preventative maintenance, fault diagnostics, and emergency servicing in Dubai.",
+  items,
+  faqs: items,
+};
+
+// --- Inlined from contractsData.js ---
+const contractsData = {
+  id: "o-general-amc-packages",
+  eyebrow: "Preventive Protection",
+  title: "O General Air Conditioning Maintenance Contracts",
+  description:
+    "Choose a planned AC maintenance schedule based on property size, unit type, operating hours and response priorities.",
+  featuredIndex: 0,
+  actionLabel: "Request AMC quote",
+  plans: [
+    {
+      title: "Yearly AC Maintenance Contract",
+      tagline: "Comprehensive year-round support for dependable cooling.",
+      badge: "Best Value",
+      features: [
+        "Scheduled preventive maintenance visits",
+        "Limited or unlimited breakdown call-out options",
+        "Indoor and outdoor unit condition reporting",
+        "Packages available with or without spare parts",
+      ],
+    },
+    {
+      title: "Six-Month AC Maintenance Contract",
+      tagline: "Balanced seasonal care before peak cooling demand.",
+      badge: "Popular",
+      features: [
+        "Planned inspection and cleaning visits",
+        "Drainage, airflow and electrical checks",
+        "Cooling-performance recommendations",
+        "Optional priority breakdown support",
+      ],
+    },
+    {
+      title: "Three-Month AC Maintenance Contract",
+      tagline: "Flexible short-term protection for immediate AC needs.",
+      badge: "Flexible",
+      features: [
+        "Targeted preventive maintenance visit",
+        "Filter, coil and drainage assessment",
+        "Thermostat and operating checks",
+        "Optional repair and call-out coverage",
+      ],
+    },
+  ],
+  footnote:
+    "Terms and conditions apply. Custom packages are available for villas, offices, commercial buildings and multi-site facilities.",
+};
+
+// --- Inlined from pricingData.js ---
+const pricingData = {
+  eyebrow: "Transparent Service Options",
+  title: "AC Inspection, Cleaning and Maintenance Prices",
+  description:
+    "Choose a starting service based on your air-conditioning system. Final quotations depend on unit type, condition and required work.",
+  defaultBadge: "Professional AC Care",
+  pricePrefix: "Starting from",
+  actionLabel: "Book now",
+
+  items: [
+    {
+      title: "AC Inspection Service",
+      badge: "Diagnostics",
+      price: "AED 215",
+      image: {
+        id: "ac-service-page/ac-inspection",
+        src: "/img/ac-service-page/ac-inspection.webp",
+      },
+      description:
+        "Is your AC not cooling your place? Is the AC thermostat broken, or is the fan making strange noises? Give us a call",
+      popup: {
+        title: "AC Call-Out (Technical Inspection) scope of works:",
+        sections: [
+          {
+            items: [
+              "Resolving air flow issues",
+              "AC thermostat check-up",
+              "Refrigerant Level check-up",
+              "Rectification of AC power trip",
+              "Rectification of AC water leakage",
+              "Fixing AC cooling/overcooling issues",
+              "Addressing sound problems from the AC",
+            ],
+          },
+          {
+            label: "Excluded",
+            text:
+              "Cost for any repair work, procurement cost, cost of any new parts and installation, if required.",
+          },
+          {
+            label: "Terms & Conditions",
+            text:
+              "Starting from AED 215 callout fee applies based on the type, capacity of the unit, and location for each diagnosis.",
+          },
+        ],
+      },
+    },
+
+    {
+      title: "Basic AC Cleaning",
+      subtitle: "Selected work includes a 60-day service warranty",
+      warranty: "60 - Days Warranty",
+      badge: "Popular",
+      price: "AED 280",
+      image: {
+        id: "ac-service-page/ac-cleaning-price",
+        src: "/img/ac-service-page/ac-cleaning-price.webp",
+      },
+      description:
+        "If your AC has reduced airflow or is leaking water, work quickly. Regularly clean filters and drain to provide efficiency and good air quality.",
+      popup: {
+        title: "AC Cleaning Service scope of works:",
+        sections: [
+          {
+            items: [
+              "AC filter cleaning",
+              "AC water leakage",
+              "Check AC components",
+              "Filter cleaning and replacement",
+              "Condenser coil cleaning",
+              "AC thermostat check-up",
+              "Refrigerant Level check-up",
+              "Addressing sound issues from the AC",
+            ],
+          },
+          {
+            label: "Excluded",
+            text:
+              "Cost for any repair work, procurement cost, cost of any new parts and installation, if required.",
+          },
+          {
+            label: "Terms & Conditions",
+            text:
+              "Starting from AED 280 basic cleaning service charge applies based on the type, capacity of the unit, and location for each diagnosis.",
+          },
+        ],
+      },
+    },
+
+    {
+      title: "AC Maintenance",
+      subtitle: "Selected work includes a 60-day service warranty",
+      warranty: "60 - Days Warranty",
+      badge: "Preventive Care",
+      price: "AED 325",
+      image: {
+        id: "ac-service-page/ac-maintenance-price",
+        src: "/img/ac-service-page/ac-maintenance-price.webp",
+      },
+      description:
+        "Relax and save money by keeping our expert technicians clean and maintain your AC, stopping unnecessary breakdowns.",
+      popup: {
+        title: "AC Maintenance Service scope of works:",
+        sections: [
+          {
+            items: [
+              "Full AC diagnostic & system health check",
+              "Coil and filter deep chemical sanitization",
+              "Motor bearings and blower wheel inspection",
+              "Refrigerant pressure and temperature verification",
+              "Electrical contactor and capacitor testing",
+              "Drain line vacuuming and pan disinfection",
+              "Thermostat sensor calibration check",
+            ],
+          },
+          {
+            label: "Excluded",
+            text:
+              "Cost for any repair work, procurement cost, cost of any new parts and installation, if required.",
+          },
+          {
+            label: "Terms & Conditions",
+            text:
+              "Starting from AED 325 maintenance service charge applies based on the type, capacity of the unit, and location for each diagnosis.",
+          },
+        ],
+      },
+    },
+  ],
+};
+
+// --- Inlined from repairPriceData.js ---
+const repairPriceData = {
+  id: "o-general-ac-service-pricing",
+  eyebrow: "AC Service Pricing",
+  title:
+    "How much does it cost Premier AC Cleaning Service, AC Repair and AC Maintenance?",
+  actionLabel: "Check Here For Price",
+  actionHref: "/dubai-ac-service-price-list/",
+  openInNewTab: false,
+};
+
+// --- Inlined from energyTipsData.js ---
+const energyTipsData = {
+  id: "o-general-ac-energy-saving-tips",
+  eyebrow: "Energy Saving Tips",
+  title: "UAE: 7 Tips to Reduce AC Bills This Summer",
+  description:
+    "Learn easy and proven ways to save energy with your AC. Find tips to cut the cost and stay cool all summers!",
+  actionLabel: "Click Here to Save on Energy Bills",
+  actionHref:
+    "https://www.fajservices.ae/files/Practical%20Tips%20to%20Improve%20Energy%20Efficiency%20of%20Your%20AC%20Infographic.pdf",
+  openInNewTab: true,
+};
+
+// --- Inlined from testimonialsData.js ---
+const testimonialsData = {
+  id: "o-general-ac-testimonials",
+  eyebrow: "What Our Clients Say",
+  title: "Customer Reviews",
+  items: [
+    {
+      icon: "award",
+      title: "Alexander Pothen",
+      subtitle: "Expat",
+      description:
+        "An efficient team who could diagnose the fault and rectify the problem. They washed the indoor AC unit with water and took all the care not to mess up our office.",
+    },
+    {
+      icon: "award",
+      title: "Shehan Chanaka",
+      subtitle: "Resident",
+      description:
+        "Mr Adnan gives us the best service for AC Servicing. And he also repaired our AC and Refrigerator in limited price. Keep it up 👍👍",
+    },
+    {
+      icon: "award",
+      title: "Waseem Aqdas",
+      subtitle: "Homeowner",
+      description:
+        "Outstanding service from FAJ Technical! My AC wasn't cooling properly, but FAJ Technical came to the rescue. Quick response, friendly technician, and now my AC works perfectly. I highly recommend them!",
+    },
+    {
+      icon: "award",
+      title: "Arshad Iqbal",
+      subtitle: "Homeowner",
+      description:
+        "FAJ Technical Services really exceeded my expectations. I had my air conditioning unit repaired, and their service was exceptional. The team was very professional and supportive, and they resolved the issues quickly and effectively.",
+    },
+    {
+      icon: "award",
+      title: "Bilal Ahmad",
+      subtitle: "Resident",
+      description:
+        "I had an excellent experience with Easy AC for my recent AC repair. The team was incredibly professional and informative throughout the process. Their expertise in installing my air conditioner was evident, and the results exceeded my expectations. I highly recommend Easy AC for any AC repair needs. They truly deliver top quality service!",
+    },
+    {
+      icon: "award",
+      title: "Sumaira Kamboh",
+      subtitle: "Homeowner",
+      description:
+        "I recently hired this company for my AC maintenance and was thoroughly impressed! The technicians were professional, punctual, and did an excellent job. They explained everything they did and provided helpful tips for future maintenance. I highly recommend them!",
+    },
+    {
+      icon: "award",
+      title: "Yonis Khan.",
+      subtitle: "Resident",
+      description:
+        "I had my AC maintained by FAJ Technical Services, and they did a professional job. The team was friendly and quick, making the whole process easy. If you need AC maintenance, I definitely recommend them.",
+    },
+    {
+      icon: "award",
+      title: "Ahmad Alhemeiri",
+      subtitle: "Expat",
+      description:
+        "Its great place to have any spare part for AC Thanks to Ms Neha for her support and follow-up. She's really good representative of company",
+    },
+  ],
+};
+
 
 const seoData = {
   title: "O General AC| Best O General AC Repair & Service in Dubai",

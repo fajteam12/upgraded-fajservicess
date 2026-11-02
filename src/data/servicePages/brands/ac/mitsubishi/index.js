@@ -1,11 +1,497 @@
 import acCoverageLocations106 from "../../../acCoverageLocations106";
-import heroData from "./heroData";
-import faqsData from "./faqsData";
-import contractsData from "./contractsData";
-import pricingData from "./pricingData";
-import repairPriceData from "./repairPriceData";
-import energyTipsData from "./energyTipsData";
-import testimonialsData from "./testimonialsData";
+
+// --- Inlined from heroData.js ---
+const heroData = {
+  eyebrow: "Mitsubishi AC Specialists",
+  title: "Top-Quality Mitsubishi AC Repair and Maintenance Service in Dubai, UAE",
+  paragraphs: [
+    "Mitsubishi Air Conditioning repair by FAJ Technical Services L.L.C established in 2010, is your reliable solution for any issues you may encounter with your Mitsubishi air conditioning system. Our AC technicians are always available to assist you in Dubai and its surrounding areas. Contact us today to schedule a visit from one of our expert technicians at a time that is convenient for you.",
+  ],
+  paragraph: "Mitsubishi Air Conditioning repair by FAJ Technical Services L.L.C established in 2010, is your reliable solution for any issues you may encounter with your Mitsubishi air conditioning system. Our AC technicians are always available to assist you in Dubai and its surrounding areas. Contact us today to schedule a visit from one of our expert technicians at a time that is convenient for you.",
+  highlights: [
+    {
+      icon: "award",
+      title: "Established Since 2010",
+      description: "Reliability, Diversity, Integrity, and Quality.",
+    },
+    {
+      icon: "shield-check",
+      title: "Workmanship Warranty",
+      description: "Repair and service warranty support.",
+    },
+    {
+      icon: "phone-support",
+      title: "7-Day Service Response",
+      description: "Fast assistance across Dubai.",
+    },
+  ],
+  primaryAction: "Book An Appointment",
+  secondaryAction: "Call Now",
+  showCall: true,
+  showPhone: true,
+  image: {
+    id: "ac-brand-logos/mitsubishi-logo",
+    src: "/img/ac-brand-logos/mitsubishi-logo.webp",
+    alt: "Mitsubishi Air Conditioning Repair and Maintenance in Dubai",
+    width: 600,
+    height: 400,
+    fit: "contain",
+    padding: "20px",
+    bg: "#ffffff",
+    hideOverlay: true,
+  },
+};
+
+// --- Inlined from faqsData.js ---
+const items = [
+    {
+      "question": "Why is my Mitsubishi AC not cooling?",
+      "title": "Why is my Mitsubishi AC not cooling?",
+      "answer": "Common issues with air conditioners include blocked filters, low refrigerant levels, and malfunctioning components. Blocked filters are particularly frequent as air conditioners age. Over time, dust accumulates in the filters, which can restrict airflow and negatively impact cooling performance.",
+      "desc": "Common issues with air conditioners include blocked filters, low refrigerant levels, and malfunctioning components. Blocked filters are particularly frequent as air conditioners age. Over time, dust accumulates in the filters, which can restrict airflow and negatively impact cooling performance."
+    },
+    {
+      "question": "How do I troubleshoot my Mitsubishi AC unit?",
+      "title": "How do I troubleshoot my Mitsubishi AC unit?",
+      "answer": [
+        "If your Mitsubishi AC is not working, here are five solutions you can try out:",
+        {
+          "type": "numbered",
+          "items": [
+            "Keep a lookout for Mitsubishi error codes on your AC.",
+            "Reset your entire Mitsubishi A/C by switching it on and off.",
+            "Check your AC power supply.",
+            "There may be a fuse in your AC circuit breaker.",
+            "Your Mitsubishi aircon remote might have run out of power."
+          ]
+        }
+      ],
+      "desc": [
+        "If your Mitsubishi AC is not working, here are five solutions you can try out:",
+        {
+          "type": "numbered",
+          "items": [
+            "Keep a lookout for Mitsubishi error codes on your AC.",
+            "Reset your entire Mitsubishi A/C by switching it on and off.",
+            "Check your AC power supply.",
+            "There may be a fuse in your AC circuit breaker.",
+            "Your Mitsubishi aircon remote might have run out of power."
+          ]
+        }
+      ]
+    },
+    {
+      "question": "How to check AC Gas level in AC?",
+      "title": "How to check AC Gas level in AC?",
+      "answer": [
+        "Steps to Check Refrigerant Levels:",
+        {
+          "type": "numbered",
+          "items": [
+            "Turn off the AC and locate the service valves.",
+            "Attach the manifold gauge set to the service valves.",
+            "Turn on the air conditioner and observe the pressure readings, which should be between 30-40 PSI for most systems (though some may require higher or lower pressures)."
+          ]
+        }
+      ],
+      "desc": [
+        "Steps to Check Refrigerant Levels:",
+        {
+          "type": "numbered",
+          "items": [
+            "Turn off the AC and locate the service valves.",
+            "Attach the manifold gauge set to the service valves.",
+            "Turn on the air conditioner and observe the pressure readings, which should be between 30-40 PSI for most systems (though some may require higher or lower pressures)."
+          ]
+        }
+      ]
+    },
+    {
+      "question": "What is the error code on a Mitsubishi AC unit?",
+      "title": "What is the error code on a Mitsubishi AC unit?",
+      "answer": "A common issue observed in Mitsubishi Electric ducted systems is the UF, UP, or U6 error code. These codes typically indicate a fault in the Outdoor Power PCB, the compressor's electrical circuit, or the compressor bearings. Among these three error codes, the most frequently encountered is the U6 code, followed by UP and UF.",
+      "desc": "A common issue observed in Mitsubishi Electric ducted systems is the UF, UP, or U6 error code. These codes typically indicate a fault in the Outdoor Power PCB, the compressor's electrical circuit, or the compressor bearings. Among these three error codes, the most frequently encountered is the U6 code, followed by UP and UF."
+    },
+    {
+      "question": "How do I check my AC compressor?",
+      "title": "How do I check my AC compressor?",
+      "answer": [
+        "How to Check an Air Conditioner Compressor:",
+        {
+          "type": "numbered",
+          "items": [
+            "Turn off power. Unplug the Aircon unit to protect yourself from electrical shocks.",
+            "Remove the faceplates.",
+            "Look for visible damage.",
+            "Test the Air Conditioner compressor with a multimeter."
+          ]
+        }
+      ],
+      "desc": [
+        "How to Check an Air Conditioner Compressor:",
+        {
+          "type": "numbered",
+          "items": [
+            "Turn off power. Unplug the Aircon unit to protect yourself from electrical shocks.",
+            "Remove the faceplates.",
+            "Look for visible damage.",
+            "Test the Air Conditioner compressor with a multimeter."
+          ]
+        }
+      ]
+    },
+    {
+      "question": "What is EC error in Mitsubishi AC?",
+      "title": "What is EC error in Mitsubishi AC?",
+      "answer": "EC stands for 'Electronic Control.' An EC error on your air conditioner usually indicates a problem with the electronic control board, which is responsible for managing the various functions of the unit, including the compressor, fan, and other components.",
+      "desc": "EC stands for 'Electronic Control.' An EC error on your air conditioner usually indicates a problem with the electronic control board, which is responsible for managing the various functions of the unit, including the compressor, fan, and other components."
+    },
+    {
+      "question": "Can AC run without start capacitor?",
+      "title": "Can AC run without start capacitor?",
+      "answer": "These components are crucial for operating your air conditioner efficiently. Without capacitors, your system cannot function properly.",
+      "desc": "These components are crucial for operating your air conditioner efficiently. Without capacitors, your system cannot function properly."
+    },
+    {
+      "question": "How do I check fault AC codes?",
+      "title": "How do I check fault AC codes?",
+      "answer": [
+        "How to read diagnostic trouble error codes (DTCs):",
+        {
+          "type": "numbered",
+          "items": [
+            "Plug into the OBD port.",
+            "Turn on the ignition.",
+            "Enter necessary information.",
+            "Navigate the OBD codes.",
+            "Interpret the DTC."
+          ]
+        }
+      ],
+      "desc": [
+        "How to read diagnostic trouble error codes (DTCs):",
+        {
+          "type": "numbered",
+          "items": [
+            "Plug into the OBD port.",
+            "Turn on the ignition.",
+            "Enter necessary information.",
+            "Navigate the OBD codes.",
+            "Interpret the DTC."
+          ]
+        }
+      ]
+    },
+    {
+      "question": "What mode makes AC colder?",
+      "title": "What mode makes AC colder?",
+      "answer": "Cooling Mode. The main difference between dry mode and cooling mode is that cooling mode typically lowers the actual temperature in the room. In cooling mode, air is passed over the evaporator coils more quickly and powerfully, resulting in cooler air being produced.",
+      "desc": "Cooling Mode. The main difference between dry mode and cooling mode is that cooling mode typically lowers the actual temperature in the room. In cooling mode, air is passed over the evaporator coils more quickly and powerfully, resulting in cooler air being produced."
+    },
+    {
+      "question": "Is auto mode good for AC?",
+      "title": "Is auto mode good for AC?",
+      "answer": "Yes, Auto mode is designed to save energy. The air conditioner can help conserve energy and reduce your energy bills by automatically adjusting the temperature and fan speed depending on the room's ambient conditions and the presence of people.",
+      "desc": "Yes, Auto mode is designed to save energy. The air conditioner can help conserve energy and reduce your energy bills by automatically adjusting the temperature and fan speed depending on the room's ambient conditions and the presence of people."
+    },
+    {
+      "question": "Which mode is best for AC at night?",
+      "title": "Which mode is best for AC at night?",
+      "answer": "According to FAJ Engineer Malik Tayyeb, Sleep mode in an air conditioner (AC) is a low-power setting designed to enhance comfort while saving energy. In sleep mode, the air conditioner gradually increases the room temperature by 0.5 to 1 degree Celsius over the course of an hour, with a maximum increase of up to 3 degrees Celsius per hour. This feature allows the AC to maintain a cool and comfortable atmosphere throughout the night.",
+      "desc": "According to FAJ Engineer Malik Tayyeb, Sleep mode in an air conditioner (AC) is a low-power setting designed to enhance comfort while saving energy. In sleep mode, the air conditioner gradually increases the room temperature by 0.5 to 1 degree Celsius over the course of an hour, with a maximum increase of up to 3 degrees Celsius per hour. This feature allows the AC to maintain a cool and comfortable atmosphere throughout the night."
+    },
+    {
+      "question": "Can I sleep with AC on all night?",
+      "title": "Can I sleep with AC on all night?",
+      "answer": "According to FAJ Engineer Malik Tayyeb, the ideal setting for your air conditioner during the summer is 'Cool' mode. When you are home, set the temperature to a comfortable level around 78°F. This setting efficiently reduces indoor humidity and maintains a pleasant environment without putting too much strain on the air conditioning system.",
+      "desc": "According to FAJ Engineer Malik Tayyeb, the ideal setting for your air conditioner during the summer is 'Cool' mode. When you are home, set the temperature to a comfortable level around 78°F. This setting efficiently reduces indoor humidity and maintains a pleasant environment without putting too much strain on the air conditioning system."
+    },
+    {
+      "question": "Which AC mode is best in summer?",
+      "title": "Which AC mode is best in summer?",
+      "answer": "Cool. According to FAJ Engineer Malik Tayyeb, the ideal setting for your air conditioner during the summer is 'Cool' mode. When you are home, set the temperature to a comfortable level around 78°F. This setting efficiently reduces indoor humidity and maintains a pleasant environment without putting too much strain on the air conditioning system.",
+      "desc": "Cool. According to FAJ Engineer Malik Tayyeb, the ideal setting for your air conditioner during the summer is 'Cool' mode. When you are home, set the temperature to a comfortable level around 78°F. This setting efficiently reduces indoor humidity and maintains a pleasant environment without putting too much strain on the air conditioning system."
+    }
+  ];
+
+const faqsData = {
+  id: "mitsubishi-ac-faqs",
+  eyebrow: "FAQS",
+  title: "Frequently Asked Questions",
+  description: "Find clear answers to common questions about Mitsubishi AC repair, preventative maintenance, fault diagnostics, and emergency servicing in Dubai.",
+  items,
+  faqs: items,
+};
+
+// --- Inlined from contractsData.js ---
+const contractsData = {
+  id: "mitsubishi-amc-packages",
+  eyebrow: "Preventive Protection",
+  title: "Mitsubishi Air Conditioning Maintenance Contracts",
+  description:
+    "Choose a planned AC maintenance schedule based on property size, unit type, operating hours and response priorities.",
+  featuredIndex: 0,
+  actionLabel: "Request AMC quote",
+  plans: [
+    {
+      title: "Yearly AC Maintenance Contract",
+      tagline: "Comprehensive year-round support for dependable cooling.",
+      badge: "Best Value",
+      features: [
+        "Scheduled preventive maintenance visits",
+        "Limited or unlimited breakdown call-out options",
+        "Indoor and outdoor unit condition reporting",
+        "Packages available with or without spare parts",
+      ],
+    },
+    {
+      title: "Six-Month AC Maintenance Contract",
+      tagline: "Balanced seasonal care before peak cooling demand.",
+      badge: "Popular",
+      features: [
+        "Planned inspection and cleaning visits",
+        "Drainage, airflow and electrical checks",
+        "Cooling-performance recommendations",
+        "Optional priority breakdown support",
+      ],
+    },
+    {
+      title: "Three-Month AC Maintenance Contract",
+      tagline: "Flexible short-term protection for immediate AC needs.",
+      badge: "Flexible",
+      features: [
+        "Targeted preventive maintenance visit",
+        "Filter, coil and drainage assessment",
+        "Thermostat and operating checks",
+        "Optional repair and call-out coverage",
+      ],
+    },
+  ],
+  footnote:
+    "Terms and conditions apply. Custom packages are available for villas, offices, commercial buildings and multi-site facilities.",
+};
+
+// --- Inlined from pricingData.js ---
+const pricingData = {
+  eyebrow: "Transparent Service Options",
+  title: "AC Inspection, Cleaning and Maintenance Prices",
+  description:
+    "Choose a starting service based on your air-conditioning system. Final quotations depend on unit type, condition and required work.",
+  defaultBadge: "Professional AC Care",
+  pricePrefix: "Starting from",
+  actionLabel: "Book now",
+
+  items: [
+    {
+      title: "AC Inspection Service",
+      badge: "Diagnostics",
+      price: "AED 215",
+      image: {
+        id: "ac-service-page/ac-inspection",
+        src: "/img/ac-service-page/ac-inspection.webp",
+      },
+      description:
+        "Is your AC not cooling your place? Is the AC thermostat broken, or is the fan making strange noises? Give us a call",
+      popup: {
+        title: "AC Call-Out (Technical Inspection) scope of works:",
+        sections: [
+          {
+            items: [
+              "Resolving air flow issues",
+              "AC thermostat check-up",
+              "Refrigerant Level check-up",
+              "Rectification of AC power trip",
+              "Rectification of AC water leakage",
+              "Fixing AC cooling/overcooling issues",
+              "Addressing sound problems from the AC",
+            ],
+          },
+          {
+            label: "Excluded",
+            text:
+              "Cost for any repair work, procurement cost, cost of any new parts and installation, if required.",
+          },
+          {
+            label: "Terms & Conditions",
+            text:
+              "Starting from AED 215 callout fee applies based on the type, capacity of the unit, and location for each diagnosis.",
+          },
+        ],
+      },
+    },
+
+    {
+      title: "Basic AC Cleaning",
+      subtitle: "Selected work includes a 60-day service warranty",
+      warranty: "60 - Days Warranty",
+      badge: "Popular",
+      price: "AED 280",
+      image: {
+        id: "ac-service-page/ac-cleaning-price",
+        src: "/img/ac-service-page/ac-cleaning-price.webp",
+      },
+      description:
+        "If your AC has reduced airflow or is leaking water, work quickly. Regularly clean filters and drain to provide efficiency and good air quality.",
+      popup: {
+        title: "AC Cleaning Service scope of works:",
+        sections: [
+          {
+            items: [
+              "AC filter cleaning",
+              "AC water leakage",
+              "Check AC components",
+              "Filter cleaning and replacement",
+              "Condenser coil cleaning",
+              "AC thermostat check-up",
+              "Refrigerant Level check-up",
+              "Addressing sound issues from the AC",
+            ],
+          },
+          {
+            label: "Excluded",
+            text:
+              "Cost for any repair work, procurement cost, cost of any new parts and installation, if required.",
+          },
+          {
+            label: "Terms & Conditions",
+            text:
+              "Starting from AED 280 basic cleaning service charge applies based on the type, capacity of the unit, and location for each diagnosis.",
+          },
+        ],
+      },
+    },
+
+    {
+      title: "AC Maintenance",
+      subtitle: "Selected work includes a 60-day service warranty",
+      warranty: "60 - Days Warranty",
+      badge: "Preventive Care",
+      price: "AED 325",
+      image: {
+        id: "ac-service-page/ac-maintenance-price",
+        src: "/img/ac-service-page/ac-maintenance-price.webp",
+      },
+      description:
+        "Relax and save money by keeping our expert technicians clean and maintain your AC, stopping unnecessary breakdowns.",
+      popup: {
+        title: "AC Maintenance Service scope of works:",
+        sections: [
+          {
+            items: [
+              "Full AC diagnostic & system health check",
+              "Coil and filter deep chemical sanitization",
+              "Motor bearings and blower wheel inspection",
+              "Refrigerant pressure and temperature verification",
+              "Electrical contactor and capacitor testing",
+              "Drain line vacuuming and pan disinfection",
+              "Thermostat sensor calibration check",
+            ],
+          },
+          {
+            label: "Excluded",
+            text:
+              "Cost for any repair work, procurement cost, cost of any new parts and installation, if required.",
+          },
+          {
+            label: "Terms & Conditions",
+            text:
+              "Starting from AED 325 maintenance service charge applies based on the type, capacity of the unit, and location for each diagnosis.",
+          },
+        ],
+      },
+    },
+  ],
+};
+
+// --- Inlined from repairPriceData.js ---
+const repairPriceData = {
+  id: "mitsubishi-ac-service-pricing",
+  eyebrow: "AC Service Pricing",
+  title:
+    "How much does it cost Premier AC Cleaning Service, AC Repair and AC Maintenance?",
+  actionLabel: "Check Here For Price",
+  actionHref: "/dubai-ac-service-price-list/",
+  openInNewTab: false,
+};
+
+// --- Inlined from energyTipsData.js ---
+const energyTipsData = {
+  id: "mitsubishi-ac-energy-saving-tips",
+  eyebrow: "Energy Saving Tips",
+  title: "UAE: 7 Tips to Reduce AC Bills This Summer",
+  description:
+    "Learn easy and proven ways to save energy with your AC. Find tips to cut the cost and stay cool all summers!",
+  actionLabel: "Click Here to Save on Energy Bills",
+  actionHref:
+    "https://www.fajservices.ae/files/Practical%20Tips%20to%20Improve%20Energy%20Efficiency%20of%20Your%20AC%20Infographic.pdf",
+  openInNewTab: true,
+};
+
+// --- Inlined from testimonialsData.js ---
+const testimonialsData = {
+  id: "mitsubishi-ac-testimonials",
+  eyebrow: "What Our Clients Say",
+  title: "Customer Reviews",
+  items: [
+    {
+      icon: "award",
+      title: "Alexander Pothen",
+      subtitle: "Expat",
+      description:
+        "An efficient team who could diagnose the fault and rectify the problem. They washed the indoor AC unit with water and took all the care not to mess up our office.",
+    },
+    {
+      icon: "award",
+      title: "Shehan Chanaka",
+      subtitle: "Resident",
+      description:
+        "Mr Adnan gives us the best service for AC Servicing. And he also repaired our AC and Refrigerator in limited price. Keep it up 👍👍",
+    },
+    {
+      icon: "award",
+      title: "Waseem Aqdas",
+      subtitle: "Homeowner",
+      description:
+        "Outstanding service from FAJ Technical! My AC wasn't cooling properly, but FAJ Technical came to the rescue. Quick response, friendly technician, and now my AC works perfectly. I highly recommend them!",
+    },
+    {
+      icon: "award",
+      title: "Arshad Iqbal",
+      subtitle: "Homeowner",
+      description:
+        "FAJ Technical Services really exceeded my expectations. I had my air conditioning unit repaired, and their service was exceptional. The team was very professional and supportive, and they resolved the issues quickly and effectively.",
+    },
+    {
+      icon: "award",
+      title: "Bilal Ahmad",
+      subtitle: "Resident",
+      description:
+        "I had an excellent experience with Easy AC for my recent AC repair. The team was incredibly professional and informative throughout the process. Their expertise in installing my air conditioner was evident, and the results exceeded my expectations. I highly recommend Easy AC for any AC repair needs. They truly deliver top quality service!",
+    },
+    {
+      icon: "award",
+      title: "Sumaira Kamboh",
+      subtitle: "Homeowner",
+      description:
+        "I recently hired this company for my AC maintenance and was thoroughly impressed! The technicians were professional, punctual, and did an excellent job. They explained everything they did and provided helpful tips for future maintenance. I highly recommend them!",
+    },
+    {
+      icon: "award",
+      title: "Yonis Khan.",
+      subtitle: "Resident",
+      description:
+        "I had my AC maintained by FAJ Technical Services, and they did a professional job. The team was friendly and quick, making the whole process easy. If you need AC maintenance, I definitely recommend them.",
+    },
+    {
+      icon: "award",
+      title: "Ahmad Alhemeiri",
+      subtitle: "Expat",
+      description:
+        "Its great place to have any spare part for AC Thanks to Ms Neha for her support and follow-up. She's really good representative of company",
+    },
+  ],
+};
+
 
 const seoData = {
   title: "Best Mitsubishi AC Repair and Maintenance Services in Dubai",

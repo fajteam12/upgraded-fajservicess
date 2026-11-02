@@ -1,7 +1,188 @@
 import acCoverageLocations106 from "../../../acCoverageLocations106.js";
-import energyTipsData from "./energyTipsData";
-import testimonialsData from "./testimonialsData";
-import faqsData from "./faqsData";
+
+// --- Inlined from energyTipsData.js ---
+const energyTipsData = {
+  id: "fujitsu-ac-energy-saving-tips",
+  eyebrow: "Energy Saving Tips",
+  title: "UAE: 7 Tips to Reduce AC Bills This Summer",
+  description:
+    "Learn easy and proven ways to save energy with your AC. Find tips to cut the cost and stay cool all summers!",
+  actionLabel: "Click Here to Save on Energy Bills",
+  actionHref:
+    "https://www.fajservices.ae/files/Practical%20Tips%20to%20Improve%20Energy%20Efficiency%20of%20Your%20AC%20Infographic.pdf",
+  openInNewTab: true,
+};
+
+// --- Inlined from testimonialsData.js ---
+const testimonialsData = {
+  id: "fujitsu-ac-testimonials",
+  eyebrow: "What Our Clients Say",
+  title: "Customer Reviews",
+  items: [
+    {
+      icon: "award",
+      title: "Alexander Pothen",
+      subtitle: "Expat",
+      description:
+        "An efficient team who could diagnose the fault and rectify the problem. They washed the indoor AC unit with water and took all the care not to mess up our office.",
+    },
+    {
+      icon: "award",
+      title: "Shehan Chanaka",
+      subtitle: "Resident",
+      description:
+        "Mr Adnan gives us the best service for AC Servicing. And he also repaired our AC and Refrigerator in limited price. Keep it up 👍👍",
+    },
+    {
+      icon: "award",
+      title: "Waseem Aqdas",
+      subtitle: "Homeowner",
+      description:
+        "Outstanding service from FAJ Technical! My AC wasn't cooling properly, but FAJ Technical came to the rescue. Quick response, friendly technician, and now my AC works perfectly. I highly recommend them!",
+    },
+    {
+      icon: "award",
+      title: "Arshad Iqbal",
+      subtitle: "Homeowner",
+      description:
+        "FAJ Technical Services really exceeded my expectations. I had my air conditioning unit repaired, and their service was exceptional. The team was very professional and supportive, and they resolved the issues quickly and effectively.",
+    },
+    {
+      icon: "award",
+      title: "Bilal Ahmad",
+      subtitle: "Resident",
+      description:
+        "I had an excellent experience with Easy AC for my recent AC repair. The team was incredibly professional and informative throughout the process. Their expertise in installing my air conditioner was evident, and the results exceeded my expectations. I highly recommend Easy AC for any AC repair needs. They truly deliver top quality service!",
+    },
+    {
+      icon: "award",
+      title: "Sumaira Kamboh",
+      subtitle: "Homeowner",
+      description:
+        "I recently hired this company for my AC maintenance and was thoroughly impressed! The technicians were professional, punctual, and did an excellent job. They explained everything they did and provided helpful tips for future maintenance. I highly recommend them!",
+    },
+    {
+      icon: "award",
+      title: "Yonis Khan.",
+      subtitle: "Resident",
+      description:
+        "I had my AC maintained by FAJ Technical Services, and they did a professional job. The team was friendly and quick, making the whole process easy. If you need AC maintenance, I definitely recommend them.",
+    },
+    {
+      icon: "award",
+      title: "Ahmad Alhemeiri",
+      subtitle: "Expat",
+      description:
+        "Its great place to have any spare part for AC Thanks to Ms Neha for her support and follow-up. She's really good representative of company",
+    },
+  ],
+};
+
+// --- Inlined from faqsData.js ---
+const items = [
+    {
+      "question": "How do I clear Fujitsu AC error code?",
+      "title": "How do I clear Fujitsu AC error code?",
+      "answer": "To reset your Fujitsu AC unit: Press and hold the On/Off button on the remote for two seconds, release it, press it again once, and then press it a third time. The unit should reset and resume operation.",
+      "desc": "To reset your Fujitsu AC unit: Press and hold the On/Off button on the remote for two seconds, release it, press it again once, and then press it a third time. The unit should reset and resume operation."
+    },
+    {
+      "question": "What is E3 code on Fujitsu AC VRV?",
+      "title": "What is E3 code on Fujitsu AC VRV?",
+      "answer": "E3 indicates excessively high pressure due to activation of the high-pressure switch (HPS). Possible causes include an overloaded or short-circuited condenser or a dirty heat exchanger.",
+      "desc": "E3 indicates excessively high pressure due to activation of the high-pressure switch (HPS). Possible causes include an overloaded or short-circuited condenser or a dirty heat exchanger."
+    },
+    {
+      "question": "How do I troubleshoot my Fujitsu?",
+      "title": "How do I troubleshoot my Fujitsu?",
+      "answer": "Check if the unit is off, if the operation lamp is flashing, if the set temperature is correct, if the filters are clean, and ensure there are no obstructions. Also inspect doors, windows, and the sensor for proper function.",
+      "desc": "Check if the unit is off, if the operation lamp is flashing, if the set temperature is correct, if the filters are clean, and ensure there are no obstructions. Also inspect doors, windows, and the sensor for proper function."
+    },
+    {
+      "question": "What are Fujitsu AC Error codes?",
+      "title": "What are Fujitsu AC Error codes?",
+      "answer": [
+        "Common error codes:",
+        {
+          "type": "bullets",
+          "items": [
+            "AA0 – External protection activated",
+            "A1 – Indoor unit PCB malfunction",
+            "A3 – Drain level issue",
+            "A4 – Freezing protection fault",
+            "A5 – High pressure or freeze-up protection",
+            "E3 – High pressure switch activated",
+            "E4 – Low pressure switch activated",
+            "E5 – Compressor motor or overheat",
+            "J1–J5 – Various sensor and thermistor faults"
+          ]
+        }
+      ],
+      "desc": [
+        "Common error codes:",
+        {
+          "type": "bullets",
+          "items": [
+            "AA0 – External protection activated",
+            "A1 – Indoor unit PCB malfunction",
+            "A3 – Drain level issue",
+            "A4 – Freezing protection fault",
+            "A5 – High pressure or freeze-up protection",
+            "E3 – High pressure switch activated",
+            "E4 – Low pressure switch activated",
+            "E5 – Compressor motor or overheat",
+            "J1–J5 – Various sensor and thermistor faults"
+          ]
+        }
+      ]
+    },
+    {
+      "question": "How often should a Fujitsu air conditioner be serviced?",
+      "title": "How often should a Fujitsu air conditioner be serviced?",
+      "answer": "Although not mandatory, annual inspections are recommended even if the unit seems fine. Regular servicing ensures long-term efficiency and performance.",
+      "desc": "Although not mandatory, annual inspections are recommended even if the unit seems fine. Regular servicing ensures long-term efficiency and performance."
+    },
+    {
+      "question": "What is the common problem with Fujitsu air conditioner?",
+      "title": "What is the common problem with Fujitsu air conditioner?",
+      "answer": "Common issues include the unit not starting due to a blown fuse, refrigerant leaks, and dirty air filters that slow cooling performance.",
+      "desc": "Common issues include the unit not starting due to a blown fuse, refrigerant leaks, and dirty air filters that slow cooling performance."
+    },
+    {
+      "question": "Why is my Fujitsu AC running but not cooling?",
+      "title": "Why is my Fujitsu AC running but not cooling?",
+      "answer": "Ensure the thermostat is set to 'AUTO' instead of 'ON'. If the issue persists, try replacing the thermostat batteries.",
+      "desc": "Ensure the thermostat is set to 'AUTO' instead of 'ON'. If the issue persists, try replacing the thermostat batteries."
+    },
+    {
+      "question": "Can I change AC Gas R410A to Gas R32?",
+      "title": "Can I change AC Gas R410A to Gas R32?",
+      "answer": "No, switching refrigerants violates manufacturer instructions, voids warranties, and causes non-compliance with CE marking and safety regulations. It may also affect insurance validity.",
+      "desc": "No, switching refrigerants violates manufacturer instructions, voids warranties, and causes non-compliance with CE marking and safety regulations. It may also affect insurance validity."
+    },
+    {
+      "question": "How many times Fujitsu AC needs to be serviced in Dubai?",
+      "title": "How many times Fujitsu AC needs to be serviced in Dubai?",
+      "answer": "In Dubai, it’s recommended to service your Fujitsu AC at least twice a year—especially before the summer—to maintain optimal performance and avoid breakdowns during peak usage.",
+      "desc": "In Dubai, it’s recommended to service your Fujitsu AC at least twice a year—especially before the summer—to maintain optimal performance and avoid breakdowns during peak usage."
+    },
+    {
+      "question": "What happens if you Don't get aircon serviced every 3 months in Dubai?",
+      "title": "What happens if you Don't get aircon serviced every 3 months in Dubai?",
+      "answer": "Neglecting service can lead to dust, rust, and debris buildup, reducing your AC’s efficiency and performance. Over time, the system may deteriorate more quickly and cost more in repairs.",
+      "desc": "Neglecting service can lead to dust, rust, and debris buildup, reducing your AC’s efficiency and performance. Over time, the system may deteriorate more quickly and cost more in repairs."
+    }
+  ];
+
+const faqsData = {
+  id: "fujitsu-ac-faqs",
+  eyebrow: "Have Questions?",
+  title: "Fujitsu AC Repair and Maintenance FAQs",
+  description: "Find clear answers to common questions about Fujitsu AC repair, preventative maintenance, fault diagnostics, and emergency servicing in Dubai.",
+  items,
+  faqs: items,
+};
+
 
 const seoData = {
   title: "Best Fujitsu AC Repair and Maintenance Services Near You, Dubai",

@@ -1,8 +1,311 @@
 import acCoverageLocations106 from "../../../acCoverageLocations106.js";
-import pricingData from "./pricingData";
-import energyTipsData from "./energyTipsData";
-import testimonialsData from "./testimonialsData";
-import faqsData from "./faqsData";
+
+// --- Inlined from pricingData.js ---
+const pricingData = {
+  eyebrow: "Transparent Service Options",
+  title: "AC Inspection, Cleaning and Maintenance Prices",
+  description:
+    "Choose a starting service based on your air-conditioning system. Final quotations depend on unit type, condition and required work.",
+  defaultBadge: "Professional AC Care",
+  pricePrefix: "Starting from",
+  actionLabel: "Book now",
+
+  items: [
+    {
+      title: "AC Inspection Service",
+      badge: "Diagnostics",
+      price: "AED 215",
+      image: {
+        id: "ac-service-page/ac-inspection",
+        src: "/img/ac-service-page/ac-inspection.webp",
+      },
+      description:
+        "Is your AC not cooling your place? Is the AC thermostat broken, or is the fan making strange noises? Give us a call",
+      popup: {
+        title: "AC Call-Out (Technical Inspection) scope of works:",
+        sections: [
+          {
+            items: [
+              "Resolving air flow issues",
+              "AC thermostat check-up",
+              "Refrigerant Level check-up",
+              "Rectification of AC power trip",
+              "Rectification of AC water leakage",
+              "Fixing AC cooling/overcooling issues",
+              "Addressing sound problems from the AC",
+            ],
+          },
+          {
+            label: "Excluded",
+            text:
+              "Cost for any repair work, procurement cost, cost of any new parts and installation, if required.",
+          },
+          {
+            label: "Terms & Conditions",
+            text:
+              "Starting from AED 215 callout fee applies based on the type, capacity of the unit, and location for each diagnosis.",
+          },
+        ],
+      },
+    },
+
+    {
+      title: "Basic AC Cleaning",
+      subtitle: "Selected work includes a 60-day service warranty",
+      warranty: "60 - Days Warranty",
+      badge: "Popular",
+      price: "AED 280",
+      image: {
+        id: "ac-service-page/ac-cleaning-price",
+        src: "/img/ac-service-page/ac-cleaning-price.webp",
+      },
+      description:
+        "If your AC has reduced airflow or is leaking water, work quickly. Regularly clean filters and drain to provide efficiency and good air quality.",
+      popup: {
+        title: "AC Cleaning Service scope of works:",
+        sections: [
+          {
+            items: [
+              "AC filter cleaning",
+              "AC water leakage",
+              "Check AC components",
+              "Filter cleaning and replacement",
+              "Condenser coil cleaning",
+              "AC thermostat check-up",
+              "Refrigerant Level check-up",
+              "Addressing sound issues from the AC",
+            ],
+          },
+          {
+            label: "Excluded",
+            text:
+              "Cost for any repair work, procurement cost, cost of any new parts and installation, if required.",
+          },
+          {
+            label: "Terms & Conditions",
+            text:
+              "Starting from AED 280 basic cleaning service charge applies based on the type, capacity of the unit, and location for each diagnosis.",
+          },
+        ],
+      },
+    },
+
+    {
+      title: "AC Maintenance",
+      subtitle: "Selected work includes a 60-day service warranty",
+      warranty: "60 - Days Warranty",
+      badge: "Preventive Care",
+      price: "AED 325",
+      image: {
+        id: "ac-service-page/ac-maintenance-price",
+        src: "/img/ac-service-page/ac-maintenance-price.webp",
+      },
+      description:
+        "Relax and save money by keeping our expert technicians clean and maintain your AC, stopping unnecessary breakdowns.",
+      popup: {
+        title: "AC Maintenance scope of works",
+        sections: [
+          {
+            heading: "DX Unit AC",
+            items: [
+              "Clean the condenser coil",
+              "Check, clean and flush the drain line",
+              "Check the room and grill temperatures",
+              "Check and clean the filters and air valves",
+              "Check the vibration pads and vibration isolators",
+              "Check the blowers and clean if proper access is available",
+              "Check the conditions of contactors, relays, and capacitors",
+              "Check temperature controlled thermostat and pressure sensors",
+              "Check the electrical points in the outdoor unit and tighten, clean the electrical terminals",
+              "Check the insulation on the pipeline, if damaged, recommend for replacement (Additional cost for replacement of insulation)",
+            ],
+          },
+          {
+            heading: "Chiller FCU AC",
+            items: [
+              "Check the vibration isolators",
+              "Check, clean and flush the drain line",
+              "Check the room and grill temperatures",
+              "Check and clean the filters and air valves",
+              "Check temperature controlled thermostat",
+              "Check the functionality of actuator valves",
+              "Check the blowers and clean if proper access is available",
+              "Check the insulation on the pipeline; if damaged, recommend for replacement (Additional cost for replacement of insulation)",
+            ],
+          },
+          {
+            label: "Excluded",
+            text:
+              "Cost for any repair work, procurement cost, cost of any new parts and installation, if required.",
+          },
+          {
+            label: "Terms & Conditions",
+            text:
+              "Starting from AED 325 AC Maintenance charge applies based on the type, capacity of the unit, and location for each diagnosis.",
+          },
+        ],
+      },
+    },
+  ],
+};
+
+// --- Inlined from energyTipsData.js ---
+const energyTipsData = {
+  id: "skm-ac-energy-saving-tips",
+  eyebrow: "Energy Saving Tips",
+  title: "UAE: 7 Tips to Reduce AC Bills This Summer",
+  description:
+    "Learn easy and proven ways to save energy with your AC. Find tips to cut the cost and stay cool all summers!",
+  actionLabel: "Click Here to Save on Energy Bills",
+  actionHref:
+    "https://www.fajservices.ae/files/Practical%20Tips%20to%20Improve%20Energy%20Efficiency%20of%20Your%20AC%20Infographic.pdf",
+  openInNewTab: true,
+};
+
+// --- Inlined from testimonialsData.js ---
+const testimonialsData = {
+  id: "skm-ac-testimonials",
+  eyebrow: "What Our Clients Say",
+  title: "Customer Reviews",
+  items: [
+    {
+      icon: "award",
+      title: "Alexander Pothen",
+      subtitle: "Expat",
+      description:
+        "An efficient team who could diagnose the fault and rectify the problem. They washed the indoor AC unit with water and took all the care not to mess up our office.",
+    },
+    {
+      icon: "award",
+      title: "Shehan Chanaka",
+      subtitle: "Resident",
+      description:
+        "Mr Adnan gives us the best service for AC Servicing. And he also repaired our AC and Refrigerator in limited price. Keep it up 👍👍",
+    },
+    {
+      icon: "award",
+      title: "Waseem Aqdas",
+      subtitle: "Homeowner",
+      description:
+        "Outstanding service from FAJ Technical! My AC wasn't cooling properly, but FAJ Technical came to the rescue. Quick response, friendly technician, and now my AC works perfectly. I highly recommend them!",
+    },
+    {
+      icon: "award",
+      title: "Arshad Iqbal",
+      subtitle: "Homeowner",
+      description:
+        "FAJ Technical Services really exceeded my expectations. I had my air conditioning unit repaired, and their service was exceptional. The team was very professional and supportive, and they resolved the issues quickly and effectively.",
+    },
+    {
+      icon: "award",
+      title: "Bilal Ahmad",
+      subtitle: "Resident",
+      description:
+        "I had an excellent experience with Easy AC for my recent AC repair. The team was incredibly professional and informative throughout the process. Their expertise in installing my air conditioner was evident, and the results exceeded my expectations. I highly recommend Easy AC for any AC repair needs. They truly deliver top quality service!",
+    },
+    {
+      icon: "award",
+      title: "Sumaira Kamboh",
+      subtitle: "Homeowner",
+      description:
+        "I recently hired this company for my AC maintenance and was thoroughly impressed! The technicians were professional, punctual, and did an excellent job. They explained everything they did and provided helpful tips for future maintenance. I highly recommend them!",
+    },
+    {
+      icon: "award",
+      title: "Yonis Khan.",
+      subtitle: "Resident",
+      description:
+        "I had my AC maintained by FAJ Technical Services, and they did a professional job. The team was friendly and quick, making the whole process easy. If you need AC maintenance, I definitely recommend them.",
+    },
+    {
+      icon: "award",
+      title: "Ahmad Alhemeiri",
+      subtitle: "Expat",
+      description:
+        "Its great place to have any spare part for AC Thanks to Ms Neha for her support and follow-up. She's really good representative of company",
+    },
+  ],
+};
+
+// --- Inlined from faqsData.js ---
+const items = [
+    {
+      "question": "What is preventive maintenance service in SKM AC?",
+      "title": "What is preventive maintenance service in SKM AC?",
+      "answer": "A trained technician performs tasks like checking refrigerant levels, cleaning and straightening condenser coils, inspecting gas connections for leaks, and tightening electrical connections during preventive maintenance.",
+      "desc": "A trained technician performs tasks like checking refrigerant levels, cleaning and straightening condenser coils, inspecting gas connections for leaks, and tightening electrical connections during preventive maintenance."
+    },
+    {
+      "question": "Why is AC not cooling?",
+      "title": "Why is AC not cooling?",
+      "answer": "Possible reasons include dirty air filters, incorrect thermostat settings, refrigerant leaks, dirty condenser coils, blocked vents, faulty compressors, frozen evaporator coils, or electrical problems.",
+      "desc": "Possible reasons include dirty air filters, incorrect thermostat settings, refrigerant leaks, dirty condenser coils, blocked vents, faulty compressors, frozen evaporator coils, or electrical problems."
+    },
+    {
+      "question": "How many hours should AC run per day?",
+      "title": "How many hours should AC run per day?",
+      "answer": "Typically, an AC should run for 12 to 16 hours on a hot day, depending on factors such as outdoor and indoor temperatures, unit efficiency, and home insulation.",
+      "desc": "Typically, an AC should run for 12 to 16 hours on a hot day, depending on factors such as outdoor and indoor temperatures, unit efficiency, and home insulation."
+    },
+    {
+      "question": "What is the best temperature for AC to save electricity?",
+      "title": "What is the best temperature for AC to save electricity?",
+      "answer": "Set the thermostat between 24°C (75°F) and 26°C (78°F) to balance comfort and energy efficiency. Lower settings increase energy consumption without faster cooling.",
+      "desc": "Set the thermostat between 24°C (75°F) and 26°C (78°F) to balance comfort and energy efficiency. Lower settings increase energy consumption without faster cooling."
+    },
+    {
+      "question": "Can AC run continuously for 12 hours?",
+      "title": "Can AC run continuously for 12 hours?",
+      "answer": "Yes, air conditioners can run for 12 hours continuously. Window and wall units may need breaks, but most modern systems are built to handle extended operation.",
+      "desc": "Yes, air conditioners can run for 12 hours continuously. Window and wall units may need breaks, but most modern systems are built to handle extended operation."
+    },
+    {
+      "question": "What is sleep mode in AC?",
+      "title": "What is sleep mode in AC?",
+      "answer": "Sleep mode gradually increases the temperature by 0.5 to 1°C per hour (up to 3°C), helping save energy while maintaining comfort overnight.",
+      "desc": "Sleep mode gradually increases the temperature by 0.5 to 1°C per hour (up to 3°C), helping save energy while maintaining comfort overnight."
+    },
+    {
+      "question": "Which mode is best for AC in summer?",
+      "title": "Which mode is best for AC in summer?",
+      "answer": "The 'Cool' mode is ideal for summer. Setting the AC to around 78°F provides efficient cooling while minimizing energy use and humidity.",
+      "desc": "The 'Cool' mode is ideal for summer. Setting the AC to around 78°F provides efficient cooling while minimizing energy use and humidity."
+    },
+    {
+      "question": "What is the error code F1 on SKM air conditioner?",
+      "title": "What is the error code F1 on SKM air conditioner?",
+      "answer": "Error code F1 indicates a communication issue between the outdoor unit and the temperature sensor or between indoor and outdoor PCBs.",
+      "desc": "Error code F1 indicates a communication issue between the outdoor unit and the temperature sensor or between indoor and outdoor PCBs."
+    },
+    {
+      "question": "What is error code E7 on SKM split AC unit?",
+      "title": "What is error code E7 on SKM split AC unit?",
+      "answer": "E7 usually indicates a fault with the outdoor fan, such as a blocked port or a communication error. The severity varies depending on the model.",
+      "desc": "E7 usually indicates a fault with the outdoor fan, such as a blocked port or a communication error. The severity varies depending on the model."
+    },
+    {
+      "question": "What is the capacity of an SKM package unit AC?",
+      "title": "What is the capacity of an SKM package unit AC?",
+      "answer": "SKM packaged units range from 5 TR to 145 TR and are available in multiple series like PACVD, PACVS, APMR, and PACS, with microprocessor control and electronic expansion valves.",
+      "desc": "SKM packaged units range from 5 TR to 145 TR and are available in multiple series like PACVD, PACVS, APMR, and PACS, with microprocessor control and electronic expansion valves."
+    },
+    {
+      "question": "What is the VRF system in air conditioning?",
+      "title": "What is the VRF system in air conditioning?",
+      "answer": "A VRF system (Variable Refrigerant Flow) adjusts refrigerant flow to multiple indoor units, allowing individualized climate control across various zones.",
+      "desc": "A VRF system (Variable Refrigerant Flow) adjusts refrigerant flow to multiple indoor units, allowing individualized climate control across various zones."
+    }
+  ];
+
+const faqsData = {
+  id: "skm-ac-faqs",
+  eyebrow: "Have Questions?",
+  title: "SKM AC Repair and Maintenance FAQs",
+  description: "Find clear answers to common questions about SKM AC repair, preventative maintenance, fault diagnostics, and emergency servicing in Dubai.",
+  items,
+  faqs: items,
+};
+
 
 const seoData = {
   title: "SKM Air Conditioning | SKM AC Repair and Maintenance Services",

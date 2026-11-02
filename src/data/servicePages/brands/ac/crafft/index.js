@@ -1,7 +1,296 @@
 import acCoverageLocations106 from "../../../acCoverageLocations106.js";
-import energyTipsData from "./energyTipsData";
-import testimonialsData from "./testimonialsData";
-import faqsData from "./faqsData";
+
+// --- Inlined from energyTipsData.js ---
+const energyTipsData = {
+  id: "crafft-ac-energy-saving-tips",
+  eyebrow: "Energy Saving Tips",
+  title: "UAE: 7 Tips to Reduce AC Bills This Summer",
+  description:
+    "Learn easy and proven ways to save energy with your AC. Find tips to cut the cost and stay cool all summers!",
+  actionLabel: "Click Here to Save on Energy Bills",
+  actionHref:
+    "https://www.fajservices.ae/files/Practical%20Tips%20to%20Improve%20Energy%20Efficiency%20of%20Your%20AC%20Infographic.pdf",
+  openInNewTab: true,
+};
+
+// --- Inlined from testimonialsData.js ---
+const testimonialsData = {
+  id: "crafft-ac-testimonials",
+  eyebrow: "What Our Clients Say",
+  title: "Customer Reviews",
+  items: [
+    {
+      icon: "award",
+      title: "Alexander Pothen",
+      subtitle: "Expat",
+      description:
+        "An efficient team who could diagnose the fault and rectify the problem. They washed the indoor AC unit with water and took all the care not to mess up our office.",
+    },
+    {
+      icon: "award",
+      title: "Shehan Chanaka",
+      subtitle: "Resident",
+      description:
+        "Mr Adnan gives us the best service for AC Servicing. And he also repaired our AC and Refrigerator in limited price. Keep it up 👍👍",
+    },
+    {
+      icon: "award",
+      title: "Waseem Aqdas",
+      subtitle: "Homeowner",
+      description:
+        "Outstanding service from FAJ Technical! My AC wasn't cooling properly, but FAJ Technical came to the rescue. Quick response, friendly technician, and now my AC works perfectly. I highly recommend them!",
+    },
+    {
+      icon: "award",
+      title: "Arshad Iqbal",
+      subtitle: "Homeowner",
+      description:
+        "FAJ Technical Services really exceeded my expectations. I had my air conditioning unit repaired, and their service was exceptional. The team was very professional and supportive, and they resolved the issues quickly and effectively.",
+    },
+    {
+      icon: "award",
+      title: "Bilal Ahmad",
+      subtitle: "Resident",
+      description:
+        "I had an excellent experience with Easy AC for my recent AC repair. The team was incredibly professional and informative throughout the process. Their expertise in installing my air conditioner was evident, and the results exceeded my expectations. I highly recommend Easy AC for any AC repair needs. They truly deliver top quality service!",
+    },
+    {
+      icon: "award",
+      title: "Sumaira Kamboh",
+      subtitle: "Homeowner",
+      description:
+        "I recently hired this company for my AC maintenance and was thoroughly impressed! The technicians were professional, punctual, and did an excellent job. They explained everything they did and provided helpful tips for future maintenance. I highly recommend them!",
+    },
+    {
+      icon: "award",
+      title: "Yonis Khan.",
+      subtitle: "Resident",
+      description:
+        "I had my AC maintained by FAJ Technical Services, and they did a professional job. The team was friendly and quick, making the whole process easy. If you need AC maintenance, I definitely recommend them.",
+    },
+    {
+      icon: "award",
+      title: "Ahmad Alhemeiri",
+      subtitle: "Expat",
+      description:
+        "Its great place to have any spare part for AC Thanks to Ms Neha for her support and follow-up. She's really good representative of company",
+    },
+  ],
+};
+
+// --- Inlined from faqsData.js ---
+const items = [
+    {
+      "question": "What is the lifespan of a Crafft air conditioner?",
+      "title": "What is the lifespan of a Crafft air conditioner?",
+      "answer": "With proper maintenance, which includes regular cleaning, inspections, and timely repair by FAJ's professionals, a Crafft air conditioner can last 15 years or more. However, its lifespan can also be affected by factors such as usage patterns, environmental conditions, and the quality of installation.",
+      "desc": "With proper maintenance, which includes regular cleaning, inspections, and timely repair by FAJ's professionals, a Crafft air conditioner can last 15 years or more. However, its lifespan can also be affected by factors such as usage patterns, environmental conditions, and the quality of installation."
+    },
+    {
+      "question": "What is involved in servicing a Crafft air conditioner?",
+      "title": "What is involved in servicing a Crafft air conditioner?",
+      "answer": "The technician will inspect both units to ensure they operate smoothly. They will clean the filters and coils of the indoor unit, remove any dirt or dust, and check for proper airflow.",
+      "desc": "The technician will inspect both units to ensure they operate smoothly. They will clean the filters and coils of the indoor unit, remove any dirt or dust, and check for proper airflow."
+    },
+    {
+      "question": "How do you know Crafft AC needs servicing?",
+      "title": "How do you know Crafft AC needs servicing?",
+      "answer": "If your air conditioning unit is blowing warm air or not cooling properly, it's a clear sign that it needs maintenance. You may need to replace the air filters, refill the refrigerant, or have the Crafft AC coils professionally cleaned by a team from FAJ.",
+      "desc": "If your air conditioning unit is blowing warm air or not cooling properly, it's a clear sign that it needs maintenance. You may need to replace the air filters, refill the refrigerant, or have the Crafft AC coils professionally cleaned by a team from FAJ."
+    },
+    {
+      "question": "What is included in aircon servicing?",
+      "title": "What is included in aircon servicing?",
+      "answer": [
+        "FAJ Professional Air Conditioning Servicing Include:",
+        {
+          "type": "bullets",
+          "items": [
+            "Cleaning or Replacement of AC Air Filters",
+            "Checking and Cleaning the AC Evaporator Coils",
+            "Cleaning and Checking of AC Condenser Coil",
+            "Inspection of AC Refrigerant Levels",
+            "Checking of the AC Electrical Connections",
+            "Inspection of AC Fan and Blower Motor",
+            "Cleaning the AC Drainage System"
+          ]
+        }
+      ],
+      "desc": [
+        "FAJ Professional Air Conditioning Servicing Include:",
+        {
+          "type": "bullets",
+          "items": [
+            "Cleaning or Replacement of AC Air Filters",
+            "Checking and Cleaning the AC Evaporator Coils",
+            "Cleaning and Checking of AC Condenser Coil",
+            "Inspection of AC Refrigerant Levels",
+            "Checking of the AC Electrical Connections",
+            "Inspection of AC Fan and Blower Motor",
+            "Cleaning the AC Drainage System"
+          ]
+        }
+      ]
+    },
+    {
+      "question": "Is it necessary to service AC every year?",
+      "title": "Is it necessary to service AC every year?",
+      "answer": "While regular maintenance checks are not mandatory, they are advisable. We recommend having your air conditioner serviced at least once a year, even in the absence of noticeable defects, to ensure optimal performance.",
+      "desc": "While regular maintenance checks are not mandatory, they are advisable. We recommend having your air conditioner serviced at least once a year, even in the absence of noticeable defects, to ensure optimal performance."
+    },
+    {
+      "question": "How can I check my AC problem?",
+      "title": "How can I check my AC problem?",
+      "answer": [
+        "How to check if the AC is working properly:",
+        {
+          "type": "bullets",
+          "items": [
+            "Check the AC airflow.",
+            "Be aware of AC unusual noises.",
+            "Check the electricity Dewa bills.",
+            "Inspect any AC water leakage or ice buildup.",
+            "Sufficient AC refrigerant gas level.",
+            "Strange odours and AC hot outdoor unit."
+          ]
+        }
+      ],
+      "desc": [
+        "How to check if the AC is working properly:",
+        {
+          "type": "bullets",
+          "items": [
+            "Check the AC airflow.",
+            "Be aware of AC unusual noises.",
+            "Check the electricity Dewa bills.",
+            "Inspect any AC water leakage or ice buildup.",
+            "Sufficient AC refrigerant gas level.",
+            "Strange odours and AC hot outdoor unit."
+          ]
+        }
+      ]
+    },
+    {
+      "question": "What is the most common Crafft AC repair?",
+      "title": "What is the most common Crafft AC repair?",
+      "answer": [
+        "Most Common Crafft Air-Conditioning Problems and repair:",
+        {
+          "type": "bullets",
+          "items": [
+            "Most Common Air Conditioning Repair – Bad Capacitor.",
+            "Most Common Air Conditioning Repair – Low Gas.",
+            "Most Common Air Conditioning Repair – Clogged Condensate Drain Line.",
+            "Most Common Air Conditioning Repair – Failing Blower Motor"
+          ]
+        }
+      ],
+      "desc": [
+        "Most Common Crafft Air-Conditioning Problems and repair:",
+        {
+          "type": "bullets",
+          "items": [
+            "Most Common Air Conditioning Repair – Bad Capacitor.",
+            "Most Common Air Conditioning Repair – Low Gas.",
+            "Most Common Air Conditioning Repair – Clogged Condensate Drain Line.",
+            "Most Common Air Conditioning Repair – Failing Blower Motor"
+          ]
+        }
+      ]
+    },
+    {
+      "question": "How to know if a Crafft AC capacitor is bad?",
+      "title": "How to know if a Crafft AC capacitor is bad?",
+      "answer": [
+        "The short answer is that you may have a failing AC capacitor if you are experiencing any of the following symptoms:",
+        {
+          "type": "bullets",
+          "items": [
+            "Your AC system isn't blowing cold air.",
+            "You hear a humming noise coming from the outdoor or indoor unit.",
+            "Your monthly Dewa bills are rising unexpectedly.",
+            "Your air conditioner will shut off unexpectedly."
+          ]
+        }
+      ],
+      "desc": [
+        "The short answer is that you may have a failing AC capacitor if you are experiencing any of the following symptoms:",
+        {
+          "type": "bullets",
+          "items": [
+            "Your AC system isn't blowing cold air.",
+            "You hear a humming noise coming from the outdoor or indoor unit.",
+            "Your monthly Dewa bills are rising unexpectedly.",
+            "Your air conditioner will shut off unexpectedly."
+          ]
+        }
+      ]
+    },
+    {
+      "question": "What are the error codes for Crafft air conditioners (AC)?",
+      "title": "What are the error codes for Crafft air conditioners (AC)?",
+      "answer": [
+        {
+          "type": "bullets",
+          "items": [
+            "E 1 or 21: Defect in the room temperature sensor",
+            "E 1 or 22: Defect in the heat exchanger temperature sensor",
+            "E1 or 54: Defect in fan motor or capacitor",
+            "E1 or 63: Defect in the EEPROM",
+            "E5: Short of indoor heat exchanger sensor",
+            "E6: Short of the outdoor heat exchanger sensor",
+            "E7: Short of the heater temperature sensor"
+          ]
+        }
+      ],
+      "desc": [
+        {
+          "type": "bullets",
+          "items": [
+            "E 1 or 21: Defect in the room temperature sensor",
+            "E 1 or 22: Defect in the heat exchanger temperature sensor",
+            "E1 or 54: Defect in fan motor or capacitor",
+            "E1 or 63: Defect in the EEPROM",
+            "E5: Short of indoor heat exchanger sensor",
+            "E6: Short of the outdoor heat exchanger sensor",
+            "E7: Short of the heater temperature sensor"
+          ]
+        }
+      ]
+    },
+    {
+      "question": "Why is my AC showing error code?",
+      "title": "Why is my AC showing error code?",
+      "answer": [
+        "Frequently displayed error codes on the indoor unit:",
+        {
+          "type": "bullets",
+          "items": [
+            "The most common reason for this error is a blocked or kinked water supply hose. If the air filter inside your air conditioner is too dusty, it may not be able to draw in enough air. This could be causing issues with the temperature and noise levels."
+          ]
+        }
+      ],
+      "desc": [
+        "Frequently displayed error codes on the indoor unit:",
+        {
+          "type": "bullets",
+          "items": [
+            "The most common reason for this error is a blocked or kinked water supply hose. If the air filter inside your air conditioner is too dusty, it may not be able to draw in enough air. This could be causing issues with the temperature and noise levels."
+          ]
+        }
+      ]
+    }
+  ];
+
+const faqsData = {
+  id: "crafft-ac-faqs",
+  eyebrow: "Have Questions?",
+  title: "Crafft AC Repair and Maintenance FAQs",
+  description: "Find clear answers to common questions about Crafft AC repair, preventative maintenance, fault diagnostics, and emergency servicing in Dubai.",
+  items,
+  faqs: items,
+};
+
 
 const seoData = {
   title: "Affordable Crafft Air Conditioning Repair and Maintenance Dubai",

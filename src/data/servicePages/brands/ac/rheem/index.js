@@ -1,11 +1,390 @@
 import acCoverageLocations106 from "../../../acCoverageLocations106.js";
-import heroData from "./heroData";
-import faqsData from "./faqsData";
-import contractsData from "./contractsData";
-import pricingData from "./pricingData";
-import repairPriceData from "./repairPriceData";
-import energyTipsData from "./energyTipsData";
-import testimonialsData from "./testimonialsData";
+
+// --- Inlined from heroData.js ---
+const heroData = {
+  eyebrow: "Rheem AC Specialists",
+  title: "Top-Quality Rheem Air Conditioning Repair and Maintenance Service in Dubai, UAE",
+  paragraphs: [
+    "With over a decade of experience since 2010 in providing Rheem AC repair to make homes comfortable year-round, FAJ Technical Services L.L.C is your premier reference for HVAC systems, central air conditioning, VRF systems, ducted split AC unit maintenance services, and more. Our dedicated team is ready to deliver high-quality, professional service to ensure you and your family remain comfortable in both home and business environments.",
+  ],
+  paragraph: "With over a decade of experience since 2010 in providing Rheem AC repair to make homes comfortable year-round, FAJ Technical Services L.L.C is your premier reference for HVAC systems, central air conditioning, VRF systems, ducted split AC unit maintenance services, and more. Our dedicated team is ready to deliver high-quality, professional service to ensure you and your family remain comfortable in both home and business environments.",
+  highlights: [
+    {
+      icon: "award",
+      title: "Established Since 2010",
+      description: "Reliability, Diversity, Integrity, and Quality.",
+    },
+    {
+      icon: "shield-check",
+      title: "Workmanship Warranty",
+      description: "Repair and service warranty support.",
+    },
+    {
+      icon: "phone-support",
+      title: "7-Day Service Response",
+      description: "Fast assistance across Dubai.",
+    },
+  ],
+  primaryAction: "Book An Appointment",
+  secondaryAction: "Call Now",
+  showCall: true,
+  showPhone: true,
+  image: {
+    id: "ac-brand-logos/rheem-logo",
+    src: "/img/ac-brand-logos/rheem-logo.webp",
+    alt: "Rheem Air Conditioning Repair and Maintenance in Dubai",
+    width: 600,
+    height: 400,
+    fit: "contain",
+    padding: "20px",
+    bg: "#ffffff",
+    hideOverlay: true,
+  },
+};
+
+// --- Inlined from faqsData.js ---
+const items = [
+    {
+      "question": "How to maintain a Rheem AC?",
+      "title": "How to maintain a Rheem AC?",
+      "answer": "Tips on Maintaining Your Rheem Air Conditioner: <br/>1- Keep AC coils clean. <br/>2- The surrounding shrubbery is kept trimmed. <br/>3- Make sure to angle your dryer vent away from your air conditioning unit. <br/>4- Check AC duct and seal open spaces. <br/>5- Change AC air filter. <br/>6- Adjust AC thermostat. <br/>7- Last but definitely not least.",
+      "desc": "Tips on Maintaining Your Rheem Air Conditioner: <br/>1- Keep AC coils clean. <br/>2- The surrounding shrubbery is kept trimmed. <br/>3- Make sure to angle your dryer vent away from your air conditioning unit. <br/>4- Check AC duct and seal open spaces. <br/>5- Change AC air filter. <br/>6- Adjust AC thermostat. <br/>7- Last but definitely not least."
+    },
+    {
+      "question": "Why does my Rheem air conditioner keep shutting off?",
+      "title": "Why does my Rheem air conditioner keep shutting off?",
+      "answer": "When the condenser unit and coils become dirty, they operate less efficiently, which forces the entire system to work harder and may lead to overheating. This can cause the unit to shut off and restart repeatedly. To prevent this, make sure the area around the unit is clear of debris, such as leaves.",
+      "desc": "When the condenser unit and coils become dirty, they operate less efficiently, which forces the entire system to work harder and may lead to overheating. This can cause the unit to shut off and restart repeatedly. To prevent this, make sure the area around the unit is clear of debris, such as leaves."
+    },
+    {
+      "question": "How do you reset a Rheem AC thermostat?",
+      "title": "How do you reset a Rheem AC thermostat?",
+      "answer": "To reset certain models of Rheem thermostats, simultaneously press the up and down arrows. Please be aware that this action will restore the thermostat to its factory settings, meaning you will need to reprogram any customized settings you had previously set.",
+      "desc": "To reset certain models of Rheem thermostats, simultaneously press the up and down arrows. Please be aware that this action will restore the thermostat to its factory settings, meaning you will need to reprogram any customized settings you had previously set."
+    },
+    {
+      "question": "How often does my AC need maintenance?",
+      "title": "How often does my AC need maintenance?",
+      "answer": "To minimize the risk of damage or component failure, it is ideal to schedule two maintenance visits per year. This approach also enhances energy efficiency, leading to lower monthly bills. While you can request maintenance by calling us at +971 50 746 4712, certain seasons are more suitable for air conditioning maintenance.",
+      "desc": "To minimize the risk of damage or component failure, it is ideal to schedule two maintenance visits per year. This approach also enhances energy efficiency, leading to lower monthly bills. While you can request maintenance by calling us at +971 50 746 4712, certain seasons are more suitable for air conditioning maintenance."
+    },
+    {
+      "question": "How do I know if my AC needs maintenance?",
+      "title": "How do I know if my AC needs maintenance?",
+      "answer": "AC Signs You Should Schedule Maintenance for Your A/C Unit: <br/>1- Are you Noticing Strange Sounds Coming From AC Unit.<br/>2- YAC Unit is No Longer Cooling Home Like it Used To Dewa Bills Have Increased.<br/>3- AC Unit is Leaking Water.<br/>4- Are Noticing Excess Humidity Levels.<br/>5- Airflow Coming From the AC Unit is Weak.",
+      "desc": "AC Signs You Should Schedule Maintenance for Your A/C Unit: <br/>1- Are you Noticing Strange Sounds Coming From AC Unit.<br/>2- YAC Unit is No Longer Cooling Home Like it Used To Dewa Bills Have Increased.<br/>3- AC Unit is Leaking Water.<br/>4- Are Noticing Excess Humidity Levels.<br/>5- Airflow Coming From the AC Unit is Weak."
+    },
+    {
+      "question": "What is the internal control fault detected by Rheem?",
+      "title": "What is the internal control fault detected by Rheem?",
+      "answer": "Error Code: 93 – Internal Control Fault. The sensor detects an abnormal outdoor ambient temperature. The control system is malfunctioning.",
+      "desc": "Error Code: 93 – Internal Control Fault. The sensor detects an abnormal outdoor ambient temperature. The control system is malfunctioning."
+    },
+    {
+      "question": "What is Rheem AC error code E3 or F3?",
+      "title": "What is Rheem AC error code E3 or F3?",
+      "answer": "E3 or F3 - Faulty Thermostat / PCB. This error code suggests that the thermostat of your air conditioner is PCB malfunctioning, which impacts its ability to regulate temperature effectively.",
+      "desc": "E3 or F3 - Faulty Thermostat / PCB. This error code suggests that the thermostat of your air conditioner is PCB malfunctioning, which impacts its ability to regulate temperature effectively."
+    },
+    {
+      "question": "What is Rheem AC error code E1?",
+      "title": "What is Rheem AC error code E1?",
+      "answer": "If an E1 error code appears on your air handler, it indicates a communication error between the indoor unit and the outdoor unit. This issue may be caused by a wiring misstep or a faulty control board in either the indoor or outdoor unit.",
+      "desc": "If an E1 error code appears on your air handler, it indicates a communication error between the indoor unit and the outdoor unit. This issue may be caused by a wiring misstep or a faulty control board in either the indoor or outdoor unit."
+    },
+    {
+      "question": "What is Rheem Air Conditioner E4 code?",
+      "title": "What is Rheem Air Conditioner E4 code?",
+      "answer": "The E4 code usually indicates an issue with the outdoor temperature sensor or its wiring. Inspect both the sensor and wiring for any damage, and clean off any debris or corrosion. Ensure that all connections are secure. If these steps do not resolve the problem, it's advisable to contact an FAJ Rheem professional for assistance.",
+      "desc": "The E4 code usually indicates an issue with the outdoor temperature sensor or its wiring. Inspect both the sensor and wiring for any damage, and clean off any debris or corrosion. Ensure that all connections are secure. If these steps do not resolve the problem, it's advisable to contact an FAJ Rheem professional for assistance."
+    },
+    {
+      "question": "What is the error code E6 on a Rheem AC unit?",
+      "title": "What is the error code E6 on a Rheem AC unit?",
+      "answer": "An E6 error code in an air conditioning unit usually indicates a communication failure between the indoor and outdoor components. This disruption can occur due to problems such as faulty wiring, malfunctioning control boards, or power supply issues, all of which can lead to reduced system performance.",
+      "desc": "An E6 error code in an air conditioning unit usually indicates a communication failure between the indoor and outdoor components. This disruption can occur due to problems such as faulty wiring, malfunctioning control boards, or power supply issues, all of which can lead to reduced system performance."
+    }
+  ];
+
+const faqsData = {
+  id: "rheem-ac-faqs",
+  eyebrow: "Have Questions?",
+  title: "Rheem AC Repair and Maintenance FAQs",
+  description: "Find clear answers to common questions about Rheem AC repair, preventative maintenance, fault diagnostics, and emergency servicing in Dubai.",
+  items,
+  faqs: items,
+};
+
+// --- Inlined from contractsData.js ---
+const contractsData = {
+  id: "rheem-amc-packages",
+  eyebrow: "Preventive Protection",
+  title: "Rheem Air Conditioning Maintenance Contracts",
+  description:
+    "Choose a planned AC maintenance schedule based on property size, unit type, operating hours and response priorities.",
+  featuredIndex: 0,
+  actionLabel: "Request AMC quote",
+  plans: [
+    {
+      title: "Yearly AC Maintenance Contract",
+      tagline: "Comprehensive year-round support for dependable cooling.",
+      badge: "Best Value",
+      features: [
+        "Scheduled preventive maintenance visits",
+        "Limited or unlimited breakdown call-out options",
+        "Indoor and outdoor unit condition reporting",
+        "Packages available with or without spare parts",
+      ],
+    },
+    {
+      title: "Six-Month AC Maintenance Contract",
+      tagline: "Balanced seasonal care before peak cooling demand.",
+      badge: "Popular",
+      features: [
+        "Planned inspection and cleaning visits",
+        "Drainage, airflow and electrical checks",
+        "Cooling-performance recommendations",
+        "Optional priority breakdown support",
+      ],
+    },
+    {
+      title: "Three-Month AC Maintenance Contract",
+      tagline: "Flexible short-term protection for immediate AC needs.",
+      badge: "Flexible",
+      features: [
+        "Targeted preventive maintenance visit",
+        "Filter, coil and drainage assessment",
+        "Thermostat and operating checks",
+        "Optional repair and call-out coverage",
+      ],
+    },
+  ],
+  footnote:
+    "Terms and conditions apply. Custom packages are available for villas, offices, commercial buildings and multi-site facilities.",
+};
+
+// --- Inlined from pricingData.js ---
+const pricingData = {
+  eyebrow: "Transparent Service Options",
+  title: "AC Inspection, Cleaning and Maintenance Prices",
+  description:
+    "Choose a starting service based on your air-conditioning system. Final quotations depend on unit type, condition and required work.",
+  defaultBadge: "Professional AC Care",
+  pricePrefix: "Starting from",
+  actionLabel: "Book now",
+
+  items: [
+    {
+      title: "AC Inspection Service",
+      badge: "Diagnostics",
+      price: "AED 215",
+      image: {
+        id: "ac-service-page/ac-inspection",
+        src: "/img/ac-service-page/ac-inspection.webp",
+      },
+      description:
+        "Is your AC not cooling your place? Is the AC thermostat broken, or is the fan making strange noises? Give us a call",
+      popup: {
+        title: "AC Call-Out (Technical Inspection) scope of works:",
+        sections: [
+          {
+            items: [
+              "Resolving air flow issues",
+              "AC thermostat check-up",
+              "Refrigerant Level check-up",
+              "Rectification of AC power trip",
+              "Rectification of AC water leakage",
+              "Fixing AC cooling/overcooling issues",
+              "Addressing sound problems from the AC",
+            ],
+          },
+          {
+            label: "Excluded",
+            text:
+              "Cost for any repair work, procurement cost, cost of any new parts and installation, if required.",
+          },
+          {
+            label: "Terms & Conditions",
+            text:
+              "Starting from AED 215 callout fee applies based on the type, capacity of the unit, and location for each diagnosis.",
+          },
+        ],
+      },
+    },
+
+    {
+      title: "Basic AC Cleaning",
+      subtitle: "Selected work includes a 60-day service warranty",
+      warranty: "60 - Days Warranty",
+      badge: "Popular",
+      price: "AED 280",
+      image: {
+        id: "ac-service-page/ac-cleaning-price",
+        src: "/img/ac-service-page/ac-cleaning-price.webp",
+      },
+      description:
+        "If your AC has reduced airflow or is leaking water, work quickly. Regularly clean filters and drain to provide efficiency and good air quality.",
+      popup: {
+        title: "AC Cleaning Service scope of works:",
+        sections: [
+          {
+            items: [
+              "AC filter cleaning",
+              "AC water leakage",
+              "Check AC components",
+              "Filter cleaning and replacement",
+              "Condenser coil cleaning",
+              "AC thermostat check-up",
+              "Refrigerant Level check-up",
+              "Addressing sound issues from the AC",
+            ],
+          },
+          {
+            label: "Excluded",
+            text:
+              "Cost for any repair work, procurement cost, cost of any new parts and installation, if required.",
+          },
+          {
+            label: "Terms & Conditions",
+            text:
+              "Starting from AED 280 basic cleaning service charge applies based on the type, capacity of the unit, and location for each diagnosis.",
+          },
+        ],
+      },
+    },
+
+    {
+      title: "AC Maintenance",
+      subtitle: "Selected work includes a 60-day service warranty",
+      warranty: "60 - Days Warranty",
+      badge: "Preventive Care",
+      price: "AED 325",
+      image: {
+        id: "ac-service-page/ac-maintenance-price",
+        src: "/img/ac-service-page/ac-maintenance-price.webp",
+      },
+      description:
+        "Specialized maintenance for central and ducted split AC units. Regular maintenance keeps units running smoothly and prevents costly breakdowns.",
+      popup: {
+        title: "AC Maintenance Service scope of works:",
+        sections: [
+          {
+            items: [
+              "AC filter cleaning",
+              "AC water leakage",
+              "Check AC components",
+              "Filter cleaning and replacement",
+              "Condenser coil cleaning",
+              "AC thermostat check-up",
+              "Refrigerant Level check-up",
+              "Addressing sound issues from the AC",
+            ],
+          },
+          {
+            label: "Excluded",
+            text:
+              "Cost for any repair work, procurement cost, cost of any new parts and installation, if required.",
+          },
+          {
+            label: "Terms & Conditions",
+            text:
+              "Starting from AED 325 maintenance service charge applies based on the type, capacity of the unit, and location for each diagnosis.",
+          },
+        ],
+      },
+    },
+  ],
+};
+
+// --- Inlined from repairPriceData.js ---
+const repairPriceData = {
+  id: "rheem-ac-service-pricing",
+  eyebrow: "AC Service Pricing",
+  title:
+    "How much does it cost Premier AC Cleaning Service, AC Repair and AC Maintenance?",
+  actionLabel: "Check Here For Price",
+  actionHref: "/dubai-ac-service-price-list/",
+  openInNewTab: false,
+};
+
+// --- Inlined from energyTipsData.js ---
+const energyTipsData = {
+  id: "rheem-ac-energy-saving-tips",
+  eyebrow: "Energy Saving Tips",
+  title: "UAE: 7 Tips to Reduce AC Bills This Summer",
+  description:
+    "Learn easy and proven ways to save energy with your AC. Find tips to cut the cost and stay cool all summers!",
+  actionLabel: "Click Here to Save on Energy Bills",
+  actionHref:
+    "https://www.fajservices.ae/files/Practical%20Tips%20to%20Improve%20Energy%20Efficiency%20of%20Your%20AC%20Infographic.pdf",
+  openInNewTab: true,
+};
+
+// --- Inlined from testimonialsData.js ---
+const testimonialsData = {
+  id: "rheem-ac-testimonials",
+  eyebrow: "What Our Clients Say",
+  title: "Customer Reviews",
+  items: [
+    {
+      icon: "award",
+      title: "Alexander Pothen",
+      subtitle: "Expat",
+      description:
+        "An efficient team who could diagnose the fault and rectify the problem. They washed the indoor AC unit with water and took all the care not to mess up our office.",
+    },
+    {
+      icon: "award",
+      title: "Shehan Chanaka",
+      subtitle: "Resident",
+      description:
+        "Mr Adnan gives us the best service for AC Servicing. And he also repaired our AC and Refrigerator in limited price. Keep it up 👍👍",
+    },
+    {
+      icon: "award",
+      title: "Waseem Aqdas",
+      subtitle: "Homeowner",
+      description:
+        "Outstanding service from FAJ Technical! My AC wasn't cooling properly, but FAJ Technical came to the rescue. Quick response, friendly technician, and now my AC works perfectly. I highly recommend them!",
+    },
+    {
+      icon: "award",
+      title: "Arshad Iqbal",
+      subtitle: "Homeowner",
+      description:
+        "FAJ Technical Services really exceeded my expectations. I had my air conditioning unit repaired, and their service was exceptional. The team was very professional and supportive, and they resolved the issues quickly and effectively.",
+    },
+    {
+      icon: "award",
+      title: "Bilal Ahmad",
+      subtitle: "Resident",
+      description:
+        "I had an excellent experience with Easy AC for my recent AC repair. The team was incredibly professional and informative throughout the process. Their expertise in installing my air conditioner was evident, and the results exceeded my expectations. I highly recommend Easy AC for any AC repair needs. They truly deliver top quality service!",
+    },
+    {
+      icon: "award",
+      title: "Sumaira Kamboh",
+      subtitle: "Homeowner",
+      description:
+        "I recently hired this company for my AC maintenance and was thoroughly impressed! The technicians were professional, punctual, and did an excellent job. They explained everything they did and provided helpful tips for future maintenance. I highly recommend them!",
+    },
+    {
+      icon: "award",
+      title: "Yonis Khan.",
+      subtitle: "Resident",
+      description:
+        "I had my AC maintained by FAJ Technical Services, and they did a professional job. The team was friendly and quick, making the whole process easy. If you need AC maintenance, I definitely recommend them.",
+    },
+    {
+      icon: "award",
+      title: "Ahmad Alhemeiri",
+      subtitle: "Expat",
+      description:
+        "Its great place to have any spare part for AC Thanks to Ms Neha for her support and follow-up. She's really good representative of company",
+    },
+  ],
+};
+
 
 const seoData = {
   title: "Rheem AC Repair and Rheem AC Maintenance Services in Dubai",

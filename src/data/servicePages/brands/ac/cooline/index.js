@@ -1,11 +1,437 @@
 import acCoverageLocations106 from "../../../acCoverageLocations106";
-import heroData from "./heroData";
-import faqsData from "./faqsData";
-import contractsData from "./contractsData";
-import pricingData from "./pricingData";
-import repairPriceData from "./repairPriceData";
-import energyTipsData from "./energyTipsData";
-import testimonialsData from "./testimonialsData";
+
+// --- Inlined from heroData.js ---
+const heroData = {
+  eyebrow: "Cooline AC Specialists",
+  title: "Cost-Effective Cooline AC Repair and Maintenance Services in Dubai, UAE",
+  paragraphs: [
+    "Since 2010, FAJ Technical Services L.L.C has been a top provider of repair, maintenance, and installation services for Cooline air conditioning systems in Dubai and Sharjah, focusing on both residential and commercial properties.",
+  ],
+  paragraph: "Since 2010, FAJ Technical Services L.L.C has been a top provider of repair, maintenance, and installation services for Cooline air conditioning systems in Dubai and Sharjah, focusing on both residential and commercial properties.",
+  highlights: [
+    {
+      icon: "award",
+      title: "Established Since 2010",
+      description: "Reliability, Diversity, Integrity, and Quality.",
+    },
+    {
+      icon: "shield-check",
+      title: "Workmanship Warranty",
+      description: "Repair and service warranty support.",
+    },
+    {
+      icon: "phone-support",
+      title: "7-Day Service Response",
+      description: "Fast assistance across Dubai.",
+    },
+  ],
+  primaryAction: "Book An Appointment",
+  secondaryAction: "Call Now",
+  showCall: true,
+  showPhone: true,
+  image: {
+    id: "ac-brand-logos/cooline-logo",
+    src: "/img/ac-brand-logos/cooline-logo.webp",
+    alt: "Cooline Air Conditioning Repair and Maintenance in Dubai",
+    width: 600,
+    height: 400,
+    fit: "contain",
+    padding: "20px",
+    bg: "#ffffff",
+    hideOverlay: true,
+  },
+};
+
+// --- Inlined from faqsData.js ---
+const items = [
+    {
+      "question": "When should I do AC maintenance?",
+      "title": "When should I do AC maintenance?",
+      "answer": "According to FAJ Engineer Malik Tayyeb, it’s recommended to service your Cooline AC twice a year—once in the spring and once in the fall. This ensures the system is clean, efficient, and functioning properly.",
+      "desc": "According to FAJ Engineer Malik Tayyeb, it’s recommended to service your Cooline AC twice a year—once in the spring and once in the fall. This ensures the system is clean, efficient, and functioning properly."
+    },
+    {
+      "question": "How many times does Cooline AC need to be serviced?",
+      "title": "How many times does Cooline AC need to be serviced?",
+      "answer": "Service your Cooline air conditioner at least twice a year, especially before summer. Regular maintenance supports performance and prevents costly repairs due to wear or electronic faults.",
+      "desc": "Service your Cooline air conditioner at least twice a year, especially before summer. Regular maintenance supports performance and prevents costly repairs due to wear or electronic faults."
+    },
+    {
+      "question": "How do I reset my Cooline AC error?",
+      "title": "How do I reset my Cooline AC error?",
+      "answer": "Press the TEST button until you hear a click. Then press the RESET button to restore the unit to normal operation.",
+      "desc": "Press the TEST button until you hear a click. Then press the RESET button to restore the unit to normal operation."
+    },
+    {
+      "question": "Why is my Cooline air conditioner blinking?",
+      "title": "Why is my Cooline air conditioner blinking?",
+      "answer": "A blinking blue light often signals a temperature sensor issue. It may be malfunctioning or failing to accurately detect room temperature.",
+      "desc": "A blinking blue light often signals a temperature sensor issue. It may be malfunctioning or failing to accurately detect room temperature."
+    },
+    {
+      "question": "Why is my Cooline AC showing EL and OC?",
+      "title": "Why is my Cooline AC showing EL and OC?",
+      "answer": "The 'EC' or 'EL 0C' error typically points to low refrigerant levels. This can result from improperly opened outdoor unit valves, preventing proper refrigerant flow during a new installation.",
+      "desc": "The 'EC' or 'EL 0C' error typically points to low refrigerant levels. This can result from improperly opened outdoor unit valves, preventing proper refrigerant flow during a new installation."
+    },
+    {
+      "question": "What is the Cooline AC oC fault code?",
+      "title": "What is the Cooline AC oC fault code?",
+      "answer": "The oC code indicates an overcurrent fault, triggered when output current exceeds 180–200% of the rated level. This could be caused by an overloaded or overworked system.",
+      "desc": "The oC code indicates an overcurrent fault, triggered when output current exceeds 180–200% of the rated level. This could be caused by an overloaded or overworked system."
+    },
+    {
+      "question": "Why is my Cooline air conditioner not turning on?",
+      "title": "Why is my Cooline air conditioner not turning on?",
+      "answer": "Ensure the power cord is securely connected. If it's plugged in but not working, check the breaker box for tripped circuits and reset them if needed.",
+      "desc": "Ensure the power cord is securely connected. If it's plugged in but not working, check the breaker box for tripped circuits and reset them if needed."
+    },
+    {
+      "question": "What is the error EP in Cooline Air Conditioning?",
+      "title": "What is the error EP in Cooline Air Conditioning?",
+      "answer": "The EP code refers to a discharge temperature sensor fault on the copper pipe, indicating a failure in detecting or regulating the discharge temperature.",
+      "desc": "The EP code refers to a discharge temperature sensor fault on the copper pipe, indicating a failure in detecting or regulating the discharge temperature."
+    },
+    {
+      "question": "How to fix Cooline aircon?",
+      "title": "How to fix Cooline aircon?",
+      "answer": [
+        {
+          "type": "numbered",
+          "items": [
+            "Turn off power for a few minutes and restart.",
+            "Clean or replace dirty air filters.",
+            "Inspect wiring and sensor connections between units.",
+            "Check temperature sensors for proper function."
+          ]
+        }
+      ],
+      "desc": [
+        {
+          "type": "numbered",
+          "items": [
+            "Turn off power for a few minutes and restart.",
+            "Clean or replace dirty air filters.",
+            "Inspect wiring and sensor connections between units.",
+            "Check temperature sensors for proper function."
+          ]
+        }
+      ]
+    },
+    {
+      "question": "What does AC fault mean?",
+      "title": "What does AC fault mean?",
+      "answer": "An AC fault refers to abnormal current flow from an electrical source. Even without direct connection, alternating current can affect nearby structures, such as pipelines close to power lines.",
+      "desc": "An AC fault refers to abnormal current flow from an electrical source. Even without direct connection, alternating current can affect nearby structures, such as pipelines close to power lines."
+    },
+    {
+      "question": "What are error codes in AC?",
+      "title": "What are error codes in AC?",
+      "answer": [
+        "Example AC error codes:",
+        {
+          "type": "bullets",
+          "items": [
+            "3-0: Temporary stop due to dehumidifying",
+            "5-0: Heat exchanger thermistor open",
+            "5-1: Outdoor temperature thermistor open",
+            "5-2: Suction thermistor open"
+          ]
+        }
+      ],
+      "desc": [
+        "Example AC error codes:",
+        {
+          "type": "bullets",
+          "items": [
+            "3-0: Temporary stop due to dehumidifying",
+            "5-0: Heat exchanger thermistor open",
+            "5-1: Outdoor temperature thermistor open",
+            "5-2: Suction thermistor open"
+          ]
+        }
+      ]
+    }
+  ];
+
+const faqsData = {
+  id: "cooline-ac-faqs",
+  eyebrow: "FAQS",
+  title: "Frequently Asked Questions",
+  description: "Find clear answers to common questions about Cooline AC repair, preventative maintenance, fault diagnostics, and emergency servicing in Dubai.",
+  items,
+  faqs: items,
+};
+
+// --- Inlined from contractsData.js ---
+const contractsData = {
+  id: "cooline-amc-packages",
+  eyebrow: "Preventive Protection",
+  title: "Cooline Air Conditioning Maintenance Contracts",
+  description:
+    "Choose a planned AC maintenance schedule based on property size, unit type, operating hours and response priorities.",
+  featuredIndex: 0,
+  actionLabel: "Request AMC quote",
+  plans: [
+    {
+      title: "Yearly AC Maintenance Contract",
+      tagline: "Comprehensive year-round support for dependable cooling.",
+      badge: "Best Value",
+      features: [
+        "Scheduled preventive maintenance visits",
+        "Limited or unlimited breakdown call-out options",
+        "Indoor and outdoor unit condition reporting",
+        "Packages available with or without spare parts",
+      ],
+    },
+    {
+      title: "Six-Month AC Maintenance Contract",
+      tagline: "Balanced seasonal care before peak cooling demand.",
+      badge: "Popular",
+      features: [
+        "Planned inspection and cleaning visits",
+        "Drainage, airflow and electrical checks",
+        "Cooling-performance recommendations",
+        "Optional priority breakdown support",
+      ],
+    },
+    {
+      title: "Three-Month AC Maintenance Contract",
+      tagline: "Flexible short-term protection for immediate AC needs.",
+      badge: "Flexible",
+      features: [
+        "Targeted preventive maintenance visit",
+        "Filter, coil and drainage assessment",
+        "Thermostat and operating checks",
+        "Optional repair and call-out coverage",
+      ],
+    },
+  ],
+  footnote:
+    "Terms and conditions apply. Custom packages are available for villas, offices, commercial buildings and multi-site facilities.",
+};
+
+// --- Inlined from pricingData.js ---
+const pricingData = {
+  eyebrow: "Transparent Service Options",
+  title: "AC Inspection, Cleaning and Maintenance Prices",
+  description:
+    "Choose a starting service based on your air-conditioning system. Final quotations depend on unit type, condition and required work.",
+  defaultBadge: "Professional AC Care",
+  pricePrefix: "Starting from",
+  actionLabel: "Book now",
+
+  items: [
+    {
+      title: "AC Inspection Service",
+      badge: "Diagnostics",
+      price: "AED 215",
+      image: {
+        id: "ac-service-page/ac-inspection",
+        src: "/img/ac-service-page/ac-inspection.webp",
+      },
+      description:
+        "Is your AC not cooling your place? Is the AC thermostat broken, or is the fan making strange noises? Give us a call",
+      popup: {
+        title: "AC Call-Out (Technical Inspection) scope of works:",
+        sections: [
+          {
+            items: [
+              "Resolving air flow issues",
+              "AC thermostat check-up",
+              "Refrigerant Level check-up",
+              "Rectification of AC power trip",
+              "Rectification of AC water leakage",
+              "Fixing AC cooling/overcooling issues",
+              "Addressing sound problems from the AC",
+            ],
+          },
+          {
+            label: "Excluded",
+            text:
+              "Cost for any repair work, procurement cost, cost of any new parts and installation, if required.",
+          },
+          {
+            label: "Terms & Conditions",
+            text:
+              "Starting from AED 215 callout fee applies based on the type, capacity of the unit, and location for each diagnosis.",
+          },
+        ],
+      },
+    },
+
+    {
+      title: "Basic AC Cleaning",
+      subtitle: "Selected work includes a 60-day service warranty",
+      warranty: "60 - Days Warranty",
+      badge: "Popular",
+      price: "AED 280",
+      image: {
+        id: "ac-service-page/ac-cleaning-price",
+        src: "/img/ac-service-page/ac-cleaning-price.webp",
+      },
+      description:
+        "If your AC has reduced airflow or is leaking water, work quickly. Regularly clean filters and drain to provide efficiency and good air quality.",
+      popup: {
+        title: "AC Cleaning Service scope of works:",
+        sections: [
+          {
+            items: [
+              "AC filter cleaning",
+              "AC water leakage",
+              "Check AC components",
+              "Filter cleaning and replacement",
+              "Condenser coil cleaning",
+              "AC thermostat check-up",
+              "Refrigerant Level check-up",
+              "Addressing sound issues from the AC",
+            ],
+          },
+          {
+            label: "Excluded",
+            text:
+              "Cost for any repair work, procurement cost, cost of any new parts and installation, if required.",
+          },
+          {
+            label: "Terms & Conditions",
+            text:
+              "Starting from AED 280 basic cleaning service charge applies based on the type, capacity of the unit, and location for each diagnosis.",
+          },
+        ],
+      },
+    },
+
+    {
+      title: "AC Maintenance",
+      subtitle: "Selected work includes a 60-day service warranty",
+      warranty: "60 - Days Warranty",
+      badge: "Preventive Care",
+      price: "AED 325",
+      image: {
+        id: "ac-service-page/ac-maintenance-price",
+        src: "/img/ac-service-page/ac-maintenance-price.webp",
+      },
+      description:
+        "Relax and save money by keeping our expert technicians clean and maintain your AC, stopping unnecessary breakdowns.",
+      popup: {
+        title: "AC Maintenance Service scope of works:",
+        sections: [
+          {
+            items: [
+              "Full AC diagnostic & system health check",
+              "Coil and filter deep chemical sanitization",
+              "Motor bearings and blower wheel inspection",
+              "Refrigerant pressure and temperature verification",
+              "Electrical contactor and capacitor testing",
+              "Drain line vacuuming and pan disinfection",
+              "Thermostat sensor calibration check",
+            ],
+          },
+          {
+            label: "Excluded",
+            text:
+              "Cost for any repair work, procurement cost, cost of any new parts and installation, if required.",
+          },
+          {
+            label: "Terms & Conditions",
+            text:
+              "Starting from AED 325 maintenance service charge applies based on the type, capacity of the unit, and location for each diagnosis.",
+          },
+        ],
+      },
+    },
+  ],
+};
+
+// --- Inlined from repairPriceData.js ---
+const repairPriceData = {
+  id: "cooline-ac-service-pricing",
+  eyebrow: "AC Service Pricing",
+  title:
+    "How much does it cost Premier AC Cleaning Service, AC Repair and AC Maintenance?",
+  actionLabel: "Check Here For Price",
+  actionHref: "/dubai-ac-service-price-list/",
+  openInNewTab: false,
+};
+
+// --- Inlined from energyTipsData.js ---
+const energyTipsData = {
+  id: "cooline-ac-energy-saving-tips",
+  eyebrow: "Energy Saving Tips",
+  title: "UAE: 7 Tips to Reduce AC Bills This Summer",
+  description:
+    "Learn easy and proven ways to save energy with your AC. Find tips to cut the cost and stay cool all summers!",
+  actionLabel: "Click Here to Save on Energy Bills",
+  actionHref:
+    "https://www.fajservices.ae/files/Practical%20Tips%20to%20Improve%20Energy%20Efficiency%20of%20Your%20AC%20Infographic.pdf",
+  openInNewTab: true,
+};
+
+// --- Inlined from testimonialsData.js ---
+const testimonialsData = {
+  id: "cooline-ac-testimonials",
+  eyebrow: "What Our Clients Say",
+  title: "Customer Reviews",
+  items: [
+    {
+      icon: "award",
+      title: "Alexander Pothen",
+      subtitle: "Expat",
+      description:
+        "An efficient team who could diagnose the fault and rectify the problem. They washed the indoor AC unit with water and took all the care not to mess up our office.",
+    },
+    {
+      icon: "award",
+      title: "Shehan Chanaka",
+      subtitle: "Resident",
+      description:
+        "Mr Adnan gives us the best service for AC Servicing. And he also repaired our AC and Refrigerator in limited price. Keep it up 👍👍",
+    },
+    {
+      icon: "award",
+      title: "Waseem Aqdas",
+      subtitle: "Homeowner",
+      description:
+        "Outstanding service from FAJ Technical! My AC wasn't cooling properly, but FAJ Technical came to the rescue. Quick response, friendly technician, and now my AC works perfectly. I highly recommend them!",
+    },
+    {
+      icon: "award",
+      title: "Arshad Iqbal",
+      subtitle: "Homeowner",
+      description:
+        "FAJ Technical Services really exceeded my expectations. I had my air conditioning unit repaired, and their service was exceptional. The team was very professional and supportive, and they resolved the issues quickly and effectively.",
+    },
+    {
+      icon: "award",
+      title: "Bilal Ahmad",
+      subtitle: "Resident",
+      description:
+        "I had an excellent experience with Easy AC for my recent AC repair. The team was incredibly professional and informative throughout the process. Their expertise in installing my air conditioner was evident, and the results exceeded my expectations. I highly recommend Easy AC for any AC repair needs. They truly deliver top quality service!",
+    },
+    {
+      icon: "award",
+      title: "Sumaira Kamboh",
+      subtitle: "Homeowner",
+      description:
+        "I recently hired this company for my AC maintenance and was thoroughly impressed! The technicians were professional, punctual, and did an excellent job. They explained everything they did and provided helpful tips for future maintenance. I highly recommend them!",
+    },
+    {
+      icon: "award",
+      title: "Yonis Khan.",
+      subtitle: "Resident",
+      description:
+        "I had my AC maintained by FAJ Technical Services, and they did a professional job. The team was friendly and quick, making the whole process easy. If you need AC maintenance, I definitely recommend them.",
+    },
+    {
+      icon: "award",
+      title: "Ahmad Alhemeiri",
+      subtitle: "Expat",
+      description:
+        "Its great place to have any spare part for AC Thanks to Ms Neha for her support and follow-up. She's really good representative of company",
+    },
+  ],
+};
+
 
 const seoData = {
   title: "Best Cooline Air Conditioning Repair and Maintenance Service",

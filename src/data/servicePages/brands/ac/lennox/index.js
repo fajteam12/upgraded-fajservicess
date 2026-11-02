@@ -1,11 +1,427 @@
 import acCoverageLocations106 from "../../../acCoverageLocations106.js";
-import heroData from "./heroData";
-import faqsData from "./faqsData";
-import contractsData from "./contractsData";
-import pricingData from "./pricingData";
-import repairPriceData from "./repairPriceData";
-import energyTipsData from "./energyTipsData";
-import testimonialsData from "./testimonialsData";
+
+// --- Inlined from heroData.js ---
+const heroData = {
+  eyebrow: "Lennox AC Specialists",
+  title: "Top- Rated Lennox Air Conditioning Repair and Lennox AC Maintenance Services in Dubai, UAE",
+  paragraphs: [
+    "Are you in need of reliable and professional Lennox AC repair, service, or maintenance? Whether for routine maintenance or a new system, local Lennox AC experts are available to keep your home comfortable year-round.",
+    "Effectively addressing challenges like high humidity, warm nights, and indoor allergens is crucial for ensuring indoor comfort.",
+  ],
+  paragraph: "Are you in need of reliable and professional Lennox AC repair, service, or maintenance? Whether for routine maintenance or a new system, local Lennox AC experts are available to keep your home comfortable year-round.",
+  highlights: [
+    {
+      icon: "award",
+      title: "Established Since 2010",
+      description: "Reliability, Diversity, Integrity, and Quality.",
+    },
+    {
+      icon: "shield-check",
+      title: "Workmanship Warranty",
+      description: "Repair and service warranty support.",
+    },
+    {
+      icon: "phone-support",
+      title: "7-Day Service Response",
+      description: "Fast assistance across Dubai.",
+    },
+  ],
+  primaryAction: "Book An Appointment",
+  secondaryAction: "Call Now",
+  showCall: true,
+  showPhone: true,
+  image: {
+    id: "ac-brand-logos/lennox-logo",
+    src: "/img/ac-brand-logos/lennox-logo.webp",
+    alt: "Lennox Air Conditioning Repair and Maintenance in Dubai",
+    width: 600,
+    height: 400,
+    fit: "contain",
+    padding: "20px",
+    bg: "#ffffff",
+    hideOverlay: true,
+  },
+};
+
+// --- Inlined from faqsData.js ---
+const items = [
+    {
+      "question": "Why is my Lennox AC not cooling?",
+      "title": "Why is my Lennox AC not cooling?",
+      "answer": "A dirty or incorrectly placed air filter can restrict airflow, causing the fan to run without cooling. Additionally, debris like dust, leaves, and sap can dirty the unit and coils, leading to malfunctions.",
+      "desc": "A dirty or incorrectly placed air filter can restrict airflow, causing the fan to run without cooling. Additionally, debris like dust, leaves, and sap can dirty the unit and coils, leading to malfunctions."
+    },
+    {
+      "question": "Why does my Lennox air conditioner keep shutting off?",
+      "title": "Why does my Lennox air conditioner keep shutting off?",
+      "answer": "Overheating due to dirt buildup in the compressor or a refrigerant leak can cause shutdowns. Faulty thermostat wiring or electrical issues may also be responsible.",
+      "desc": "Overheating due to dirt buildup in the compressor or a refrigerant leak can cause shutdowns. Faulty thermostat wiring or electrical issues may also be responsible."
+    },
+    {
+      "question": "What happens if AC is not serviced?",
+      "title": "What happens if AC is not serviced?",
+      "answer": "Lack of regular servicing reduces efficiency, raises energy costs, and increases the risk of breakdowns. Dust and debris buildup in filters and coils impairs cooling performance.",
+      "desc": "Lack of regular servicing reduces efficiency, raises energy costs, and increases the risk of breakdowns. Dust and debris buildup in filters and coils impairs cooling performance."
+    },
+    {
+      "question": "How much is AC duct cleaning in Dubai?",
+      "title": "How much is AC duct cleaning in Dubai?",
+      "answer": "In 2025, the cost of AC duct cleaning in Dubai typically ranges from AED 500 to AED 1780, depending on your home's specific requirements.",
+      "desc": "In 2025, the cost of AC duct cleaning in Dubai typically ranges from AED 500 to AED 1780, depending on your home's specific requirements."
+    },
+    {
+      "question": "How to maintain an AC unit?",
+      "title": "How to maintain an AC unit?",
+      "answer": [
+        {
+          "type": "numbered",
+          "items": [
+            "Shut off the power.",
+            "Remove debris.",
+            "Clean and straighten the fins.",
+            "Clean the surrounding area.",
+            "Level the unit.",
+            "Clean the evaporator coil and drain."
+          ]
+        },
+        "Regular maintenance ensures smooth operation."
+      ],
+      "desc": [
+        {
+          "type": "numbered",
+          "items": [
+            "Shut off the power.",
+            "Remove debris.",
+            "Clean and straighten the fins.",
+            "Clean the surrounding area.",
+            "Level the unit.",
+            "Clean the evaporator coil and drain."
+          ]
+        },
+        "Regular maintenance ensures smooth operation."
+      ]
+    },
+    {
+      "question": "Is it OK to run AC all night?",
+      "title": "Is it OK to run AC all night?",
+      "answer": "Running your AC all day and night is generally not recommended. Continuous operation can lead to wear and reduced efficiency. it's better to allow rest periods for your system.",
+      "desc": "Running your AC all day and night is generally not recommended. Continuous operation can lead to wear and reduced efficiency. it's better to allow rest periods for your system."
+    },
+    {
+      "question": "How long can an inverter AC run continuously?",
+      "title": "How long can an inverter AC run continuously?",
+      "answer": "Inverter AC units are built for long operation and maintain stable performance. You can safely run them 24 hours a day without concern for overheating.",
+      "desc": "Inverter AC units are built for long operation and maintain stable performance. You can safely run them 24 hours a day without concern for overheating."
+    },
+    {
+      "question": "What is routine maintenance for AC?",
+      "title": "What is routine maintenance for AC?",
+      "answer": "Routine maintenance includes cleaning components, inspecting the system, and doing a test run. Scheduling service in spring prepares the AC for efficient summer performance.",
+      "desc": "Routine maintenance includes cleaning components, inspecting the system, and doing a test run. Scheduling service in spring prepares the AC for efficient summer performance."
+    },
+    {
+      "question": "How to fix Lennox E6 error code?",
+      "title": "How to fix Lennox E6 error code?",
+      "answer": "Try power cycling the system, checking wiring between units, and confirming the condensate pump is working. If the issue remains, contact a professional technician.",
+      "desc": "Try power cycling the system, checking wiring between units, and confirming the condensate pump is working. If the issue remains, contact a professional technician."
+    },
+    {
+      "question": "What is E5 error on Lennox?",
+      "title": "What is E5 error on Lennox?",
+      "answer": "E5 indicates a voltage protection or temperature sensor error. It may result from unusually high or low voltage, especially in mini-split systems.",
+      "desc": "E5 indicates a voltage protection or temperature sensor error. It may result from unusually high or low voltage, especially in mini-split systems."
+    },
+    {
+      "question": "What is E3 error on Lennox?",
+      "title": "What is E3 error on Lennox?",
+      "answer": "E3 signifies a problem with the indoor unit’s drain pump. If you're also seeing an E2 code, it points to an outdoor temperature sensor issue that may require replacement.",
+      "desc": "E3 signifies a problem with the indoor unit’s drain pump. If you're also seeing an E2 code, it points to an outdoor temperature sensor issue that may require replacement."
+    }
+  ];
+
+const faqsData = {
+  id: "lennox-ac-faqs",
+  eyebrow: "Have Questions?",
+  title: "Lennox AC Repair and Maintenance FAQs",
+  description: "Find clear answers to common questions about Lennox AC repair, preventative maintenance, fault diagnostics, and emergency servicing in Dubai.",
+  items,
+  faqs: items,
+};
+
+// --- Inlined from contractsData.js ---
+const contractsData = {
+  id: "lennox-amc-packages",
+  eyebrow: "Preventive Protection",
+  title: "Lennox Air Conditioning Maintenance Contracts",
+  description:
+    "Choose a planned AC maintenance schedule based on property size, unit type, operating hours and response priorities.",
+  featuredIndex: 0,
+  actionLabel: "Request AMC quote",
+  plans: [
+    {
+      title: "Yearly AC Maintenance Contract",
+      tagline: "Comprehensive year-round support for dependable cooling.",
+      badge: "Best Value",
+      features: [
+        "Scheduled preventive maintenance visits",
+        "Limited or unlimited breakdown call-out options",
+        "Indoor and outdoor unit condition reporting",
+        "Packages available with or without spare parts",
+      ],
+    },
+    {
+      title: "Six-Month AC Maintenance Contract",
+      tagline: "Balanced seasonal care before peak cooling demand.",
+      badge: "Popular",
+      features: [
+        "Planned inspection and cleaning visits",
+        "Drainage, airflow and electrical checks",
+        "Cooling-performance recommendations",
+        "Optional priority breakdown support",
+      ],
+    },
+    {
+      title: "Three-Month AC Maintenance Contract",
+      tagline: "Flexible short-term protection for immediate AC needs.",
+      badge: "Flexible",
+      features: [
+        "Targeted preventive maintenance visit",
+        "Filter, coil and drainage assessment",
+        "Thermostat and operating checks",
+        "Optional repair and call-out coverage",
+      ],
+    },
+  ],
+  footnote:
+    "Terms and conditions apply. Custom packages are available for villas, offices, commercial buildings and multi-site facilities.",
+};
+
+// --- Inlined from pricingData.js ---
+const pricingData = {
+  eyebrow: "Transparent Service Options",
+  title: "AC Inspection, Cleaning and Maintenance Prices",
+  description:
+    "Choose a starting service based on your air-conditioning system. Final quotations depend on unit type, condition and required work.",
+  defaultBadge: "Professional AC Care",
+  pricePrefix: "Starting from",
+  actionLabel: "Book now",
+
+  items: [
+    {
+      title: "AC Inspection Service",
+      badge: "Diagnostics",
+      price: "AED 215",
+      image: {
+        id: "ac-service-page/ac-inspection",
+        src: "/img/ac-service-page/ac-inspection.webp",
+      },
+      description:
+        "Is your AC not cooling your place? Is the AC thermostat broken, or is the fan making strange noises? Give us a call",
+      popup: {
+        title: "AC Call-Out (Technical Inspection) scope of works:",
+        sections: [
+          {
+            items: [
+              "Resolving air flow issues",
+              "AC thermostat check-up",
+              "Refrigerant Level check-up",
+              "Rectification of AC power trip",
+              "Rectification of AC water leakage",
+              "Fixing AC cooling/overcooling issues",
+              "Addressing sound problems from the AC",
+            ],
+          },
+          {
+            label: "Excluded",
+            text:
+              "Cost for any repair work, procurement cost, cost of any new parts and installation, if required.",
+          },
+          {
+            label: "Terms & Conditions",
+            text:
+              "Starting from AED 215 callout fee applies based on the type, capacity of the unit, and location for each diagnosis.",
+          },
+        ],
+      },
+    },
+
+    {
+      title: "Basic AC Cleaning",
+      subtitle: "Selected work includes a 60-day service warranty",
+      warranty: "60 - Days Warranty",
+      badge: "Popular",
+      price: "AED 280",
+      image: {
+        id: "ac-service-page/ac-cleaning-price",
+        src: "/img/ac-service-page/ac-cleaning-price.webp",
+      },
+      description:
+        "If your AC has reduced airflow or is leaking water, work quickly. Regularly clean filters and drain to provide efficiency and good air quality.",
+      popup: {
+        title: "AC Cleaning Service scope of works:",
+        sections: [
+          {
+            items: [
+              "AC filter cleaning",
+              "AC water leakage",
+              "Check AC components",
+              "Filter cleaning and replacement",
+              "Condenser coil cleaning",
+              "AC thermostat check-up",
+              "Refrigerant Level check-up",
+              "Addressing sound issues from the AC",
+            ],
+          },
+          {
+            label: "Excluded",
+            text:
+              "Cost for any repair work, procurement cost, cost of any new parts and installation, if required.",
+          },
+          {
+            label: "Terms & Conditions",
+            text:
+              "Starting from AED 280 basic cleaning service charge applies based on the type, capacity of the unit, and location for each diagnosis.",
+          },
+        ],
+      },
+    },
+
+    {
+      title: "AC Maintenance",
+      subtitle: "Selected work includes a 60-day service warranty",
+      warranty: "60 - Days Warranty",
+      badge: "Preventive Care",
+      price: "AED 325",
+      image: {
+        id: "ac-service-page/ac-maintenance-price",
+        src: "/img/ac-service-page/ac-maintenance-price.webp",
+      },
+      description:
+        "Regular AC maintenance is essential for optimal performance. Clean coils, clear drains, and a tuned system ensure lower bills, better cooling, and clean air.",
+      popup: {
+        title: "AC Maintenance Service scope of works:",
+        sections: [
+          {
+            items: [
+              "Cleaning the indoor filters",
+              "Flushing the drain line",
+              "Checking the suction pressure",
+              "Checking the discharge pressure",
+              "Checking the indoor fan blower",
+              "Checking the outdoor fan motor",
+              "Cleaning the indoor evaporator coil",
+              "Checking the electrical connections",
+              "Cleaning the outdoor condenser coil",
+              "Checking the indoor unit control PCB",
+              "Checking the outdoor unit control PCB",
+              "Checking the amp draw of the compressor",
+            ],
+          },
+          {
+            label: "Excluded",
+            text:
+              "Cost for any repair work, procurement cost, cost of any new parts and installation, if required.",
+          },
+          {
+            label: "Terms & Conditions",
+            text:
+              "Starting from AED 325 maintenance service charge applies based on the type, capacity of the unit, and location for each diagnosis.",
+          },
+        ],
+      },
+    },
+  ],
+};
+
+// --- Inlined from repairPriceData.js ---
+const repairPriceData = {
+  id: "lennox-ac-service-pricing",
+  eyebrow: "AC Service Pricing",
+  title:
+    "How much does it cost Premier AC Cleaning Service, AC Repair and AC Maintenance?",
+  actionLabel: "Check Here For Price",
+  actionHref: "/dubai-ac-service-price-list/",
+  openInNewTab: false,
+};
+
+// --- Inlined from energyTipsData.js ---
+const energyTipsData = {
+  id: "lennox-ac-energy-saving-tips",
+  eyebrow: "Energy Saving Tips",
+  title: "UAE: 7 Tips to Reduce AC Bills This Summer",
+  description:
+    "Learn easy and proven ways to save energy with your AC. Find tips to cut the cost and stay cool all summers!",
+  actionLabel: "Click Here to Save on Energy Bills",
+  actionHref:
+    "https://www.fajservices.ae/files/Practical%20Tips%20to%20Improve%20Energy%20Efficiency%20of%20Your%20AC%20Infographic.pdf",
+  openInNewTab: true,
+};
+
+// --- Inlined from testimonialsData.js ---
+const testimonialsData = {
+  id: "lennox-ac-testimonials",
+  eyebrow: "What Our Clients Say",
+  title: "Customer Reviews",
+  items: [
+    {
+      icon: "award",
+      title: "Alexander Pothen",
+      subtitle: "Expat",
+      description:
+        "An efficient team who could diagnose the fault and rectify the problem. They washed the indoor AC unit with water and took all the care not to mess up our office.",
+    },
+    {
+      icon: "award",
+      title: "Shehan Chanaka",
+      subtitle: "Resident",
+      description:
+        "Mr Adnan gives us the best service for AC Servicing. And he also repaired our AC and Refrigerator in limited price. Keep it up 👍👍",
+    },
+    {
+      icon: "award",
+      title: "Waseem Aqdas",
+      subtitle: "Homeowner",
+      description:
+        "Outstanding service from FAJ Technical! My AC wasn't cooling properly, but FAJ Technical came to the rescue. Quick response, friendly technician, and now my AC works perfectly. I highly recommend them!",
+    },
+    {
+      icon: "award",
+      title: "Arshad Iqbal",
+      subtitle: "Homeowner",
+      description:
+        "FAJ Technical Services really exceeded my expectations. I had my air conditioning unit repaired, and their service was exceptional. The team was very professional and supportive, and they resolved the issues quickly and effectively.",
+    },
+    {
+      icon: "award",
+      title: "Bilal Ahmad",
+      subtitle: "Resident",
+      description:
+        "I had an excellent experience with Easy AC for my recent AC repair. The team was incredibly professional and informative throughout the process. Their expertise in installing my air conditioner was evident, and the results exceeded my expectations. I highly recommend Easy AC for any AC repair needs. They truly deliver top quality service!",
+    },
+    {
+      icon: "award",
+      title: "Sumaira Kamboh",
+      subtitle: "Homeowner",
+      description:
+        "I recently hired this company for my AC maintenance and was thoroughly impressed! The technicians were professional, punctual, and did an excellent job. They explained everything they did and provided helpful tips for future maintenance. I highly recommend them!",
+    },
+    {
+      icon: "award",
+      title: "Yonis Khan.",
+      subtitle: "Resident",
+      description:
+        "I had my AC maintained by FAJ Technical Services, and they did a professional job. The team was friendly and quick, making the whole process easy. If you need AC maintenance, I definitely recommend them.",
+    },
+    {
+      icon: "award",
+      title: "Ahmad Alhemeiri",
+      subtitle: "Expat",
+      description:
+        "Its great place to have any spare part for AC Thanks to Ms Neha for her support and follow-up. She's really good representative of company",
+    },
+  ],
+};
+
 
 const seoData = {
   title: "Expert Lennox AC Repair & Maintenance Services in Dubai",

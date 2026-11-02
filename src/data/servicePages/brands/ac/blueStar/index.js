@@ -1,11 +1,498 @@
 import acCoverageLocations106 from "../../../acCoverageLocations106";
-import heroData from "./heroData";
-import faqsData from "./faqsData";
-import contractsData from "./contractsData";
-import pricingData from "./pricingData";
-import repairPriceData from "./repairPriceData";
-import energyTipsData from "./energyTipsData";
-import testimonialsData from "./testimonialsData";
+
+// --- Inlined from heroData.js ---
+const heroData = {
+  eyebrow: "Blue Star AC Specialists",
+  title: "Blue Star AC Repair and Maintenance Service in Dubai",
+  paragraphs: [
+    "Achieving year-round comfort involves effectively addressing challenges like summer humidity, warm nights, and indoor allergens.",
+    "Since its inception in 2010, FAJ Technical Services L.L.C , has been a reliable provider of Blue Star air conditioner solutions in Dubai and Sharjah.",
+  ],
+  paragraph: "Achieving year-round comfort involves effectively addressing challenges like summer humidity, warm nights, and indoor allergens.",
+  highlights: [
+    {
+      icon: "award",
+      title: "Established Since 2010",
+      description: "Reliability, Diversity, Integrity, and Quality.",
+    },
+    {
+      icon: "shield-check",
+      title: "Workmanship Warranty",
+      description: "Repair and service warranty support.",
+    },
+    {
+      icon: "phone-support",
+      title: "7-Day Service Response",
+      description: "Fast assistance across Dubai.",
+    },
+  ],
+  primaryAction: "Book An Appointment",
+  secondaryAction: "Call Now",
+  showCall: true,
+  showPhone: true,
+  image: {
+    id: "ac-brand-logos/blue-star-logo",
+    src: "/img/ac-brand-logos/blue-star-logo.webp",
+    alt: "BlueStar Air Conditioning Repair and Maintenance in Dubai",
+    width: 600,
+    height: 400,
+    fit: "contain",
+    padding: "20px",
+    bg: "#ffffff",
+    hideOverlay: true,
+  },
+};
+
+// --- Inlined from faqsData.js ---
+const items = [
+    {
+      "question": "What is the lifespan of a Blue Star air conditioner?",
+      "title": "What is the lifespan of a Blue Star air conditioner?",
+      "answer": "With proper maintenance, which includes regular cleaning, inspections, and timely repairs by FAJ's professionals, a Blue Star air conditioner can last 15 years or more. However, its lifespan can also be affected by factors such as usage patterns, environmental conditions, and the quality of installation.",
+      "desc": "With proper maintenance, which includes regular cleaning, inspections, and timely repairs by FAJ's professionals, a Blue Star air conditioner can last 15 years or more. However, its lifespan can also be affected by factors such as usage patterns, environmental conditions, and the quality of installation."
+    },
+    {
+      "question": "What is involved in servicing a Blue Star air conditioner?",
+      "title": "What is involved in servicing a Blue Star air conditioner?",
+      "answer": "The technician will inspect both units to ensure they operate smoothly. They will clean the filters and coils of the indoor unit, remove any dirt or dust, and check for proper airflow.",
+      "desc": "The technician will inspect both units to ensure they operate smoothly. They will clean the filters and coils of the indoor unit, remove any dirt or dust, and check for proper airflow."
+    },
+    {
+      "question": "How do you know Blue Star AC needs servicing?",
+      "title": "How do you know Blue Star AC needs servicing?",
+      "answer": "If your air conditioning unit is blowing warm air or not cooling properly, it's a clear sign that it needs maintenance. You may need to replace the air filters, refill the refrigerant, or have the Blue Star AC coils professionally cleaned by a team from FAJ.",
+      "desc": "If your air conditioning unit is blowing warm air or not cooling properly, it's a clear sign that it needs maintenance. You may need to replace the air filters, refill the refrigerant, or have the Blue Star AC coils professionally cleaned by a team from FAJ."
+    },
+    {
+      "question": "What is included in aircon servicing?",
+      "title": "What is included in aircon servicing?",
+      "answer": [
+        "FAJ Professional Air Conditioning Servicing Include:",
+        {
+          "type": "bullets",
+          "items": [
+            "Cleaning or Replacement of AC Air Filters",
+            "Checking and Cleaning the AC Evaporator Coils",
+            "Cleaning and Checking of AC Condenser Coil",
+            "Inspection of AC Refrigerant Levels",
+            "Checking of the AC Electrical Connections",
+            "Inspection of AC Fan and Blower Motor",
+            "Cleaning the AC Drainage System"
+          ]
+        }
+      ],
+      "desc": [
+        "FAJ Professional Air Conditioning Servicing Include:",
+        {
+          "type": "bullets",
+          "items": [
+            "Cleaning or Replacement of AC Air Filters",
+            "Checking and Cleaning the AC Evaporator Coils",
+            "Cleaning and Checking of AC Condenser Coil",
+            "Inspection of AC Refrigerant Levels",
+            "Checking of the AC Electrical Connections",
+            "Inspection of AC Fan and Blower Motor",
+            "Cleaning the AC Drainage System"
+          ]
+        }
+      ]
+    },
+    {
+      "question": "Is it necessary to service AC every year?",
+      "title": "Is it necessary to service AC every year?",
+      "answer": "While regular aircon maintenance checks are not mandatory, they are advisable. We recommend having your air conditioner serviced at least once a year, even in the absence of noticeable defects, to ensure optimal performance.",
+      "desc": "While regular aircon maintenance checks are not mandatory, they are advisable. We recommend having your air conditioner serviced at least once a year, even in the absence of noticeable defects, to ensure optimal performance."
+    },
+    {
+      "question": "How can I check my AC problem?",
+      "title": "How can I check my AC problem?",
+      "answer": [
+        {
+          "type": "bullets",
+          "items": [
+            "Check the AC airflow.",
+            "Be aware of AC unusual noises.",
+            "Check the electricity Dewa bills.",
+            "Inspect any AC water leakage or ice buildup.",
+            "Sufficient AC refrigerant gas level.",
+            "Strange odours and AC hot outdoor unit."
+          ]
+        }
+      ],
+      "desc": [
+        {
+          "type": "bullets",
+          "items": [
+            "Check the AC airflow.",
+            "Be aware of AC unusual noises.",
+            "Check the electricity Dewa bills.",
+            "Inspect any AC water leakage or ice buildup.",
+            "Sufficient AC refrigerant gas level.",
+            "Strange odours and AC hot outdoor unit."
+          ]
+        }
+      ]
+    },
+    {
+      "question": "What is the most common Blue Star AC repair?",
+      "title": "What is the most common Blue Star AC repair?",
+      "answer": [
+        "Most Common Blue Star Air-Conditioning Problems and Repairs:",
+        {
+          "type": "bullets",
+          "items": [
+            "Bad Capacitor",
+            "Low Gas",
+            "Clogged Condensate Drain Line",
+            "Failing Blower Motor"
+          ]
+        }
+      ],
+      "desc": [
+        "Most Common Blue Star Air-Conditioning Problems and Repairs:",
+        {
+          "type": "bullets",
+          "items": [
+            "Bad Capacitor",
+            "Low Gas",
+            "Clogged Condensate Drain Line",
+            "Failing Blower Motor"
+          ]
+        }
+      ]
+    },
+    {
+      "question": "How to know if a Blue Star AC capacitor is bad?",
+      "title": "How to know if a Blue Star AC capacitor is bad?",
+      "answer": [
+        "The short answer is that you may have a failing AC capacitor if you are experiencing any of the following symptoms:",
+        {
+          "type": "bullets",
+          "items": [
+            "Your AC system isn't blowing cold air.",
+            "You hear a humming noise coming from the outdoor or indoor unit.",
+            "Your monthly Dewa bills are rising unexpectedly.",
+            "Your air conditioner will shut off unexpectedly."
+          ]
+        }
+      ],
+      "desc": [
+        "The short answer is that you may have a failing AC capacitor if you are experiencing any of the following symptoms:",
+        {
+          "type": "bullets",
+          "items": [
+            "Your AC system isn't blowing cold air.",
+            "You hear a humming noise coming from the outdoor or indoor unit.",
+            "Your monthly Dewa bills are rising unexpectedly.",
+            "Your air conditioner will shut off unexpectedly."
+          ]
+        }
+      ]
+    },
+    {
+      "question": "What is E2 error on Blue Star inverter AC?",
+      "title": "What is E2 error on Blue Star inverter AC?",
+      "answer": [
+        "If your air conditioning system displays an E2 error, it indicates an issue with the outdoor unit sensor.",
+        "You can identify this error by a small LED light on your air conditioner. This problem occurs when the evaporation temperature is lower than the temperature in cooling or dry mode."
+      ],
+      "desc": [
+        "If your air conditioning system displays an E2 error, it indicates an issue with the outdoor unit sensor.",
+        "You can identify this error by a small LED light on your air conditioner. This problem occurs when the evaporation temperature is lower than the temperature in cooling or dry mode."
+      ]
+    },
+    {
+      "question": "Why Blue Star AC is not working?",
+      "title": "Why Blue Star AC is not working?",
+      "answer": [
+        "If the Blue Star AC is not cooling, the problem may lie with the compressor.",
+        "The compressor is a motor that compresses the refrigerant and circulates it through the evaporator and condenser coils. When the compressor malfunctions, the cooling cycle cannot initiate, causing the Blue Star AC to fail in cooling effectively."
+      ],
+      "desc": [
+        "If the Blue Star AC is not cooling, the problem may lie with the compressor.",
+        "The compressor is a motor that compresses the refrigerant and circulates it through the evaporator and condenser coils. When the compressor malfunctions, the cooling cycle cannot initiate, causing the Blue Star AC to fail in cooling effectively."
+      ]
+    }
+  ];
+
+const faqsData = {
+  id: "blue-star-ac-faqs",
+  eyebrow: "FAQS",
+  title: "Frequently Asked Questions",
+  description: "Find clear answers to common questions about Blue Star AC repair, preventative maintenance, fault diagnostics, and emergency servicing in Dubai.",
+  items,
+  faqs: items,
+};
+
+// --- Inlined from contractsData.js ---
+const contractsData = {
+  id: "blue-start-amc-packages",
+  eyebrow: "Preventive Protection",
+  title: "Blue Star Air Conditioning Maintenance Contracts",
+  description:
+    "Choose a planned AC maintenance schedule based on property size, unit type, operating hours and response priorities.",
+  featuredIndex: 0,
+  actionLabel: "Request AMC quote",
+  plans: [
+    {
+      title: "Yearly AC Maintenance Contract",
+      tagline: "Comprehensive year-round support for dependable cooling.",
+      badge: "Best Value",
+      features: [
+        "Scheduled preventive maintenance visits",
+        "Limited or unlimited breakdown call-out options",
+        "Indoor and outdoor unit condition reporting",
+        "Packages available with or without spare parts",
+      ],
+    },
+    {
+      title: "Six-Month AC Maintenance Contract",
+      tagline: "Balanced seasonal care before peak cooling demand.",
+      badge: "Popular",
+      features: [
+        "Planned inspection and cleaning visits",
+        "Drainage, airflow and electrical checks",
+        "Cooling-performance recommendations",
+        "Optional priority breakdown support",
+      ],
+    },
+    {
+      title: "Three-Month AC Maintenance Contract",
+      tagline: "Flexible short-term protection for immediate AC needs.",
+      badge: "Flexible",
+      features: [
+        "Targeted preventive maintenance visit",
+        "Filter, coil and drainage assessment",
+        "Thermostat and operating checks",
+        "Optional repair and call-out coverage",
+      ],
+    },
+  ],
+  footnote:
+    "Terms and conditions apply. Custom packages are available for villas, offices, commercial buildings and multi-site facilities.",
+};
+
+// --- Inlined from pricingData.js ---
+const pricingData = {
+  eyebrow: "Transparent Service Options",
+  title: "AC Inspection, Cleaning and Maintenance Prices",
+  description:
+    "Choose a starting service based on your air-conditioning system. Final quotations depend on unit type, condition and required work.",
+  defaultBadge: "Professional AC Care",
+  pricePrefix: "Starting from",
+  actionLabel: "Book now",
+
+  items: [
+    {
+      title: "AC Inspection Service",
+      badge: "Diagnostics",
+      price: "AED 215",
+      image: {
+        id: "ac-service-page/ac-inspection",
+        src: "/img/ac-service-page/ac-inspection.webp",
+      },
+      description:
+        "Is your AC not cooling your place? Is the AC thermostat broken, or is the fan making strange noises? Give us a call",
+      popup: {
+        title: "AC Call-Out (Technical Inspection) scope of works:",
+        sections: [
+          {
+            items: [
+              "Resolving air flow issues",
+              "AC thermostat check-up",
+              "Refrigerant Level check-up",
+              "Rectification of AC power trip",
+              "Rectification of AC water leakage",
+              "Fixing AC cooling/overcooling issues",
+              "Addressing sound problems from the AC",
+            ],
+          },
+          {
+            label: "Excluded",
+            text:
+              "Cost for any repair work, procurement cost, cost of any new parts and installation, if required.",
+          },
+          {
+            label: "Terms & Conditions",
+            text:
+              "Starting from AED 215 callout fee applies based on the type, capacity of the unit, and location for each diagnosis.",
+          },
+        ],
+      },
+    },
+
+    {
+      title: "Basic AC Cleaning",
+      subtitle: "Selected work includes a 60-day service warranty",
+      warranty: "60 - Days Warranty",
+      badge: "Popular",
+      price: "AED 280",
+      image: {
+        id: "ac-service-page/ac-cleaning-price",
+        src: "/img/ac-service-page/ac-cleaning-price.webp",
+      },
+      description:
+        "If your AC has reduced airflow or is leaking water, work quickly. Regularly clean filters and drain to provide efficiency and good air quality.",
+      popup: {
+        title: "AC Cleaning Service scope of works:",
+        sections: [
+          {
+            items: [
+              "AC filter cleaning",
+              "AC water leakage",
+              "Check AC components",
+              "Filter cleaning and replacement",
+              "Condenser coil cleaning",
+              "AC thermostat check-up",
+              "Refrigerant Level check-up",
+              "Addressing sound issues from the AC",
+            ],
+          },
+          {
+            label: "Excluded",
+            text:
+              "Cost for any repair work, procurement cost, cost of any new parts and installation, if required.",
+          },
+          {
+            label: "Terms & Conditions",
+            text:
+              "Starting from AED 280 basic cleaning service charge applies based on the type, capacity of the unit, and location for each diagnosis.",
+          },
+        ],
+      },
+    },
+
+    {
+      title: "AC Maintenance",
+      subtitle: "Selected work includes a 60-day service warranty",
+      warranty: "60 - Days Warranty",
+      badge: "Preventive Care",
+      price: "AED 325",
+      image: {
+        id: "ac-service-page/ac-maintenance-price",
+        src: "/img/ac-service-page/ac-maintenance-price.webp",
+      },
+      description:
+        "Relax and save money by keeping our expert technicians clean and maintain your AC, stopping unnecessary breakdowns.",
+      popup: {
+        title: "AC Maintenance Service scope of works:",
+        sections: [
+          {
+            items: [
+              "Full AC diagnostic & system health check",
+              "Coil and filter deep chemical sanitization",
+              "Motor bearings and blower wheel inspection",
+              "Refrigerant pressure and temperature verification",
+              "Electrical contactor and capacitor testing",
+              "Drain line vacuuming and pan disinfection",
+              "Thermostat sensor calibration check",
+            ],
+          },
+          {
+            label: "Excluded",
+            text:
+              "Cost for any repair work, procurement cost, cost of any new parts and installation, if required.",
+          },
+          {
+            label: "Terms & Conditions",
+            text:
+              "Starting from AED 325 maintenance service charge applies based on the type, capacity of the unit, and location for each diagnosis.",
+          },
+        ],
+      },
+    },
+  ],
+};
+
+// --- Inlined from repairPriceData.js ---
+const repairPriceData = {
+  id: "blue-star-ac-service-pricing",
+  eyebrow: "AC Service Pricing",
+  title:
+    "How much does it cost Premier AC Cleaning Service, AC Repair and AC Maintenance?",
+  actionLabel: "Check Here For Price",
+  actionHref: "/dubai-ac-service-price-list/",
+  openInNewTab: false,
+};
+
+// --- Inlined from energyTipsData.js ---
+const energyTipsData = {
+  id: "blue-star-ac-energy-saving-tips",
+  eyebrow: "Energy Saving Tips",
+  title: "UAE: 7 Tips to Reduce AC Bills This Summer",
+  description:
+    "Learn easy and proven ways to save energy with your AC. Find tips to cut the cost and stay cool all summers!",
+  actionLabel: "Click Here to Save on Energy Bills",
+  actionHref:
+    "https://www.fajservices.ae/files/Practical%20Tips%20to%20Improve%20Energy%20Efficiency%20of%20Your%20AC%20Infographic.pdf",
+  openInNewTab: true,
+};
+
+// --- Inlined from testimonialsData.js ---
+const testimonialsData = {
+  id: "blue-star-ac-testimonials",
+  eyebrow: "What Our Clients Say",
+  title: "Customer Reviews",
+  items: [
+    {
+      icon: "award",
+      title: "Alexander Pothen",
+      subtitle: "Expat",
+      description:
+        "An efficient team who could diagnose the fault and rectify the problem. They washed the indoor AC unit with water and took all the care not to mess up our office.",
+    },
+    {
+      icon: "award",
+      title: "Shehan Chanaka",
+      subtitle: "Resident",
+      description:
+        "Mr Adnan gives us the best service for AC Servicing. And he also repaired our AC and Refrigerator in limited price. Keep it up 👍👍",
+    },
+    {
+      icon: "award",
+      title: "Waseem Aqdas",
+      subtitle: "Homeowner",
+      description:
+        "Outstanding service from FAJ Technical! My AC wasn't cooling properly, but FAJ Technical came to the rescue. Quick response, friendly technician, and now my AC works perfectly. I highly recommend them!",
+    },
+    {
+      icon: "award",
+      title: "Arshad Iqbal",
+      subtitle: "Homeowner",
+      description:
+        "FAJ Technical Services really exceeded my expectations. I had my air conditioning unit repaired, and their service was exceptional. The team was very professional and supportive, and they resolved the issues quickly and effectively.",
+    },
+    {
+      icon: "award",
+      title: "Bilal Ahmad",
+      subtitle: "Resident",
+      description:
+        "I had an excellent experience with Easy AC for my recent AC repair. The team was incredibly professional and informative throughout the process. Their expertise in installing my air conditioner was evident, and the results exceeded my expectations. I highly recommend Easy AC for any AC repair needs. They truly deliver top quality service!",
+    },
+    {
+      icon: "award",
+      title: "Sumaira Kamboh",
+      subtitle: "Homeowner",
+      description:
+        "I recently hired this company for my AC maintenance and was thoroughly impressed! The technicians were professional, punctual, and did an excellent job. They explained everything they did and provided helpful tips for future maintenance. I highly recommend them!",
+    },
+    {
+      icon: "award",
+      title: "Yonis Khan.",
+      subtitle: "Resident",
+      description:
+        "I had my AC maintained by FAJ Technical Services, and they did a professional job. The team was friendly and quick, making the whole process easy. If you need AC maintenance, I definitely recommend them.",
+    },
+    {
+      icon: "award",
+      title: "Ahmad Alhemeiri",
+      subtitle: "Expat",
+      description:
+        "Its great place to have any spare part for AC Thanks to Ms Neha for her support and follow-up. She's really good representative of company",
+    },
+  ],
+};
+
 
 const seoData = {
   title: "Low Prices Service | Blue Star AC Repair and Maintenance Dubai",

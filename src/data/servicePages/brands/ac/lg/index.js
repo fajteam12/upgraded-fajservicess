@@ -1,11 +1,418 @@
 import acCoverageLocations106 from "../../../acCoverageLocations106.js";
-import heroData from "./heroData";
-import faqsData from "./faqsData";
-import contractsData from "./contractsData";
-import pricingData from "./pricingData";
-import repairPriceData from "./repairPriceData";
-import energyTipsData from "./energyTipsData";
-import testimonialsData from "./testimonialsData";
+
+// --- Inlined from heroData.js ---
+const heroData = {
+  eyebrow: "LG AC Specialists",
+  title: "Top-Quality LG AC Repair and LG AC Maintenance Services in Dubai, UAE",
+  paragraphs: [
+    "For year-round comfort, it's essential to address issues such as sticky summer days, stuffy nights, and allergens in the air.",
+  ],
+  paragraph: "For year-round comfort, it's essential to address issues such as sticky summer days, stuffy nights, and allergens in the air.",
+  highlights: [
+    {
+      icon: "award",
+      title: "Established Since 2010",
+      description: "Reliability, Diversity, Integrity, and Quality.",
+    },
+    {
+      icon: "shield-check",
+      title: "Workmanship Warranty",
+      description: "Repair and service warranty support.",
+    },
+    {
+      icon: "phone-support",
+      title: "7-Day Service Response",
+      description: "Fast assistance across Dubai.",
+    },
+  ],
+  primaryAction: "Book An Appointment",
+  secondaryAction: "Call Now",
+  showCall: true,
+  showPhone: true,
+  image: {
+    id: "ac-brand-logos/lg-logo",
+    src: "/img/ac-brand-logos/lg-logo.webp",
+    alt: "Lg Air Conditioning Repair and Maintenance in Dubai",
+    width: 600,
+    height: 400,
+    fit: "contain",
+    padding: "20px",
+    bg: "#ffffff",
+    hideOverlay: true,
+  },
+};
+
+// --- Inlined from faqsData.js ---
+const items = [
+    {
+      "question": "What is F1, F2, F3 in LG AC?",
+      "title": "What is F1, F2, F3 in LG AC?",
+      "answer": "F1, F2, F3 Error Codes: If you see the unit displaying F1, F2, or F3, it means the air conditioner is in FAN mode, and the number shown indicates the set fan speed. This is normal operation, and the air conditioner is functioning properly. If you encounter an error code that is not listed here, please refer to your owner's manual for guidance on resolving model-specific error codes.",
+      "desc": "F1, F2, F3 Error Codes: If you see the unit displaying F1, F2, or F3, it means the air conditioner is in FAN mode, and the number shown indicates the set fan speed. This is normal operation, and the air conditioner is functioning properly. If you encounter an error code that is not listed here, please refer to your owner's manual for guidance on resolving model-specific error codes."
+    },
+    {
+      "question": "What does E4 mean on an LG air conditioner?",
+      "title": "What does E4 mean on an LG air conditioner?",
+      "answer": "The E4 code is not technically an error; instead, it indicates that your unit is entering defrost mode. However, this also suggests that something has caused your unit to become too cold. Additionally, a malfunctioning temperature sensor can lead your air conditioning unit to go into defrost mode.",
+      "desc": "The E4 code is not technically an error; instead, it indicates that your unit is entering defrost mode. However, this also suggests that something has caused your unit to become too cold. Additionally, a malfunctioning temperature sensor can lead your air conditioning unit to go into defrost mode."
+    },
+    {
+      "question": "What is the common problem of an LG air conditioner?",
+      "title": "What is the common problem of an LG air conditioner?",
+      "answer": "Common issues with air conditioning units include cooling inefficiency, unusual noises, water leaks, and error codes appearing on the unit or remote. These error codes assist in diagnosing problems like sensor failures, refrigerant leaks, or compressor malfunctions.",
+      "desc": "Common issues with air conditioning units include cooling inefficiency, unusual noises, water leaks, and error codes appearing on the unit or remote. These error codes assist in diagnosing problems like sensor failures, refrigerant leaks, or compressor malfunctions."
+    },
+    {
+      "question": "Why is my LG AC suddenly not cooling?",
+      "title": "Why is my LG AC suddenly not cooling?",
+      "answer": "There are several factors that can cause this problem:<br/>Dirty Air Filters: Clogged air filters obstruct airflow, which reduces the cooling efficiency of the unit.<br/>Regularly cleaning or replacing the filters can resolve this issue.<br/>Thermostat Settings: Make sure that the thermostat is set to your desired temperature.",
+      "desc": "There are several factors that can cause this problem:<br/>Dirty Air Filters: Clogged air filters obstruct airflow, which reduces the cooling efficiency of the unit.<br/>Regularly cleaning or replacing the filters can resolve this issue.<br/>Thermostat Settings: Make sure that the thermostat is set to your desired temperature."
+    },
+    {
+      "question": "How do I troubleshoot my LG air conditioner?",
+      "title": "How do I troubleshoot my LG air conditioner?",
+      "answer": "First, check the thermostat to ensure it is set to \"cool\" mode. If it is, the next step is to examine the air filter. A dirty filter can restrict airflow and prevent the unit from cooling effectively. If the filter appears clean, the issue may lie with the air conditioner itself.",
+      "desc": "First, check the thermostat to ensure it is set to \"cool\" mode. If it is, the next step is to examine the air filter. A dirty filter can restrict airflow and prevent the unit from cooling effectively. If the filter appears clean, the issue may lie with the air conditioner itself."
+    },
+    {
+      "question": "What happens if air conditioner is not serviced?",
+      "title": "What happens if air conditioner is not serviced?",
+      "answer": "If an air conditioner is not regularly serviced, it can experience reduced efficiency, higher energy consumption, and frequent breakdowns. Common problems like clogged filters, refrigerant leaks, and electrical failures can occur, resulting in costly repairs and a shortened lifespan for the unit.",
+      "desc": "If an air conditioner is not regularly serviced, it can experience reduced efficiency, higher energy consumption, and frequent breakdowns. Common problems like clogged filters, refrigerant leaks, and electrical failures can occur, resulting in costly repairs and a shortened lifespan for the unit."
+    },
+    {
+      "question": "How do you know AC needs servicing?",
+      "title": "How do you know AC needs servicing?",
+      "answer": "If your air conditioner is blowing warm air or not cooling properly, it's a clear indication that it needs maintenance. You may need to replace the air filters, gas / refrigerant top up , or have the AC coils cleaned by the professional team at FAJ.",
+      "desc": "If your air conditioner is blowing warm air or not cooling properly, it's a clear indication that it needs maintenance. You may need to replace the air filters, gas / refrigerant top up , or have the AC coils cleaned by the professional team at FAJ."
+    },
+    {
+      "question": "Why is my AC not cooling after service?",
+      "title": "Why is my AC not cooling after service?",
+      "answer": "If your air conditioning unit is running but not providing cool air, several issues could be the cause. These may include a dirty air filter, incorrect thermostat settings, a malfunctioning thermostat, a refrigerant leak, dirty condenser coils, blocked vents or ducts, a faulty compressor, frozen evaporator coils, or electrical problems.",
+      "desc": "If your air conditioning unit is running but not providing cool air, several issues could be the cause. These may include a dirty air filter, incorrect thermostat settings, a malfunctioning thermostat, a refrigerant leak, dirty condenser coils, blocked vents or ducts, a faulty compressor, frozen evaporator coils, or electrical problems."
+    },
+    {
+      "question": "How much does it cost to clean AC in Dubai?",
+      "title": "How much does it cost to clean AC in Dubai?",
+      "answer": "Cost of AC Maintenance and Factors Affecting It:<br/>Regular AC basic cleaning starting from AED 230 to 580 per unit, based on the capacity of the AC unit.<br/>AC deep cleaning service starting from AED 380 to 830 per unit, based on the capacity of the AC unit.<br/>AC Duct Cleaning & Sanitization starting from AED 580 per unit.<br/>AC Installation starting AED 175 per hour. AC Repair starting from AED 150 per hour.",
+      "desc": "Cost of AC Maintenance and Factors Affecting It:<br/>Regular AC basic cleaning starting from AED 230 to 580 per unit, based on the capacity of the AC unit.<br/>AC deep cleaning service starting from AED 380 to 830 per unit, based on the capacity of the AC unit.<br/>AC Duct Cleaning & Sanitization starting from AED 580 per unit.<br/>AC Installation starting AED 175 per hour. AC Repair starting from AED 150 per hour."
+    },
+    {
+      "question": "How often should AC be cleaned in Dubai?",
+      "title": "How often should AC be cleaned in Dubai?",
+      "answer": "3 to 5 times annually: In Dubai, air conditioners are used frequently, so it is professionally advised to schedule AC maintenance services 2 to 3 times a year. it's recommended to conduct one major maintenance service and four minor ones annually.",
+      "desc": "3 to 5 times annually: In Dubai, air conditioners are used frequently, so it is professionally advised to schedule AC maintenance services 2 to 3 times a year. it's recommended to conduct one major maintenance service and four minor ones annually."
+    },
+    {
+      "question": "Is AC duct cleaning important in Dubai?",
+      "title": "Is AC duct cleaning important in Dubai?",
+      "answer": "Poor indoor air quality can significantly affect our health, leading to respiratory issues, allergies, and potentially more serious health problems over time. In Dubai, where the climate often requires the use of air conditioning systems year-round, it is essential to keep these systems clean to maintain good indoor air quality.",
+      "desc": "Poor indoor air quality can significantly affect our health, leading to respiratory issues, allergies, and potentially more serious health problems over time. In Dubai, where the climate often requires the use of air conditioning systems year-round, it is essential to keep these systems clean to maintain good indoor air quality."
+    },
+    {
+      "question": "Why is AC repair so expensive?",
+      "title": "Why is AC repair so expensive?",
+      "answer": "In addition to the costs associated with the HVAC technician, there are also labor costs for support roles such as customer service representatives, accountants, and business managers. These labor costs can vary depending on the specifics of each project and the time required to complete the job. For instance, if the air conditioning unit is difficult to access for repairs, the labor cost may be higher.",
+      "desc": "In addition to the costs associated with the HVAC technician, there are also labor costs for support roles such as customer service representatives, accountants, and business managers. These labor costs can vary depending on the specifics of each project and the time required to complete the job. For instance, if the air conditioning unit is difficult to access for repairs, the labor cost may be higher."
+    },
+    {
+      "question": "Can I sleep with wet hair in AC?",
+      "title": "Can I sleep with wet hair in AC?",
+      "answer": "In short, it's not a good idea to <a href=\"https://prose.com/blog/sleep-with-wet-hair#:~:text=The%20short%20answer%20is%2C%20not,should%20be%20avoided%20whenever%20possible\" rel=\"noopener\" target=\"_blank\">sleep with wet hair</a>. Hair is more fragile and prone to breakage when it's wet. Additionally, wet hair can create a breeding ground for bacteria and worsen dandruff and other scalp issues. Therefore, it's best to avoid sleeping with wet hair whenever possible.",
+      "desc": "In short, it's not a good idea to <a href=\"https://prose.com/blog/sleep-with-wet-hair#:~:text=The%20short%20answer%20is%2C%20not,should%20be%20avoided%20whenever%20possible\" rel=\"noopener\" target=\"_blank\">sleep with wet hair</a>. Hair is more fragile and prone to breakage when it's wet. Additionally, wet hair can create a breeding ground for bacteria and worsen dandruff and other scalp issues. Therefore, it's best to avoid sleeping with wet hair whenever possible."
+    },
+    {
+      "question": "Is it OK for an air conditioner to get wet?",
+      "title": "Is it OK for an air conditioner to get wet?",
+      "answer": "Yes, air conditioners are designed to withstand normal weather conditions, including rain. The outdoor components of most <a href=\"https://www.thecomfortauthority.com/can-ac-units-get-wet/#:~:text=The%20answer%20is%20yes.,even%20when%20exposed%20to%20water.\" target=\"_blank\" rel=\"noopener\">AC systems</a> are constructed to endure exposure to water and operate effectively.",
+      "desc": "Yes, air conditioners are designed to withstand normal weather conditions, including rain. The outdoor components of most <a href=\"https://www.thecomfortauthority.com/can-ac-units-get-wet/#:~:text=The%20answer%20is%20yes.,even%20when%20exposed%20to%20water.\" target=\"_blank\" rel=\"noopener\">AC systems</a> are constructed to endure exposure to water and operate effectively."
+    }
+  ];
+
+const faqsData = {
+  id: "lg-ac-faqs",
+  eyebrow: "Have Questions?",
+  title: "LG AC Repair and Maintenance FAQs",
+  description: "Find clear answers to common questions about LG AC repair, preventative maintenance, fault diagnostics, and emergency servicing in Dubai.",
+  items,
+  faqs: items,
+};
+
+// --- Inlined from contractsData.js ---
+const contractsData = {
+  id: "lg-amc-packages",
+  eyebrow: "Preventive Protection",
+  title: "LG Air Conditioning Maintenance Contracts",
+  description:
+    "Choose a planned AC maintenance schedule based on property size, unit type, operating hours and response priorities.",
+  featuredIndex: 0,
+  actionLabel: "Request AMC quote",
+  plans: [
+    {
+      title: "Yearly AC Maintenance Contract",
+      tagline: "Comprehensive year-round support for dependable cooling.",
+      badge: "Best Value",
+      features: [
+        "Scheduled preventive maintenance visits",
+        "Limited or unlimited breakdown call-out options",
+        "Indoor and outdoor unit condition reporting",
+        "Packages available with or without spare parts",
+      ],
+    },
+    {
+      title: "Six-Month AC Maintenance Contract",
+      tagline: "Balanced seasonal care before peak cooling demand.",
+      badge: "Popular",
+      features: [
+        "Planned inspection and cleaning visits",
+        "Drainage, airflow and electrical checks",
+        "Cooling-performance recommendations",
+        "Optional priority breakdown support",
+      ],
+    },
+    {
+      title: "Three-Month AC Maintenance Contract",
+      tagline: "Flexible short-term protection for immediate AC needs.",
+      badge: "Flexible",
+      features: [
+        "Targeted preventive maintenance visit",
+        "Filter, coil and drainage assessment",
+        "Thermostat and operating checks",
+        "Optional repair and call-out coverage",
+      ],
+    },
+  ],
+  footnote:
+    "Terms and conditions apply. Custom packages are available for villas, offices, commercial buildings and multi-site facilities.",
+};
+
+// --- Inlined from pricingData.js ---
+const pricingData = {
+  eyebrow: "Transparent Service Options",
+  title: "AC Inspection, Cleaning and Maintenance Prices",
+  description:
+    "Choose a starting service based on your air-conditioning system. Final quotations depend on unit type, condition and required work.",
+  defaultBadge: "Professional AC Care",
+  pricePrefix: "Starting from",
+  actionLabel: "Book now",
+
+  items: [
+    {
+      title: "AC Inspection Service",
+      badge: "Diagnostics",
+      price: "AED 215",
+      image: {
+        id: "ac-service-page/ac-inspection",
+        src: "/img/ac-service-page/ac-inspection.webp",
+      },
+      description:
+        "Is your AC not cooling your place? Is the AC thermostat broken, or is the fan making strange noises? Give us a call",
+      popup: {
+        title: "AC Call-Out (Technical Inspection) scope of works:",
+        sections: [
+          {
+            items: [
+              "Resolving air flow issues",
+              "AC thermostat check-up",
+              "Refrigerant Level check-up",
+              "Rectification of AC power trip",
+              "Rectification of AC water leakage",
+              "Fixing AC cooling/overcooling issues",
+              "Addressing sound problems from the AC",
+            ],
+          },
+          {
+            label: "Excluded",
+            text:
+              "Cost for any repair work, procurement cost, cost of any new parts and installation, if required.",
+          },
+          {
+            label: "Terms & Conditions",
+            text:
+              "Starting from AED 215 callout fee applies based on the type, capacity of the unit, and location for each diagnosis.",
+          },
+        ],
+      },
+    },
+
+    {
+      title: "Basic AC Cleaning",
+      subtitle: "Selected work includes a 60-day service warranty",
+      warranty: "60 - Days Warranty",
+      badge: "Popular",
+      price: "AED 280",
+      image: {
+        id: "ac-service-page/ac-cleaning-price",
+        src: "/img/ac-service-page/ac-cleaning-price.webp",
+      },
+      description:
+        "If your AC has reduced airflow or is leaking water, work quickly. Regularly clean filters and drain to provide efficiency and good air quality.",
+      popup: {
+        title: "AC Cleaning Service scope of works:",
+        sections: [
+          {
+            items: [
+              "AC filter cleaning",
+              "AC water leakage",
+              "Check AC components",
+              "Filter cleaning and replacement",
+              "Condenser coil cleaning",
+              "AC thermostat check-up",
+              "Refrigerant Level check-up",
+              "Addressing sound issues from the AC",
+            ],
+          },
+          {
+            label: "Excluded",
+            text:
+              "Cost for any repair work, procurement cost, cost of any new parts and installation, if required.",
+          },
+          {
+            label: "Terms & Conditions",
+            text:
+              "Starting from AED 280 basic cleaning service charge applies based on the type, capacity of the unit, and location for each diagnosis.",
+          },
+        ],
+      },
+    },
+
+    {
+      title: "AC Maintenance",
+      subtitle: "Selected work includes a 60-day service warranty",
+      warranty: "60 - Days Warranty",
+      badge: "Preventive Care",
+      price: "AED 325",
+      image: {
+        id: "ac-service-page/ac-maintenance-price",
+        src: "/img/ac-service-page/ac-maintenance-price.webp",
+      },
+      description:
+        "Regular AC maintenance is essential for optimal performance. Clean coils, clear drains, and a tuned system ensure lower bills, better cooling, and clean air.",
+      popup: {
+        title: "AC Maintenance Service scope of works:",
+        sections: [
+          {
+            items: [
+              "Cleaning the indoor filters",
+              "Flushing the drain line",
+              "Checking the suction pressure",
+              "Checking the discharge pressure",
+              "Checking the indoor fan blower",
+              "Checking the outdoor fan motor",
+              "Cleaning the indoor evaporator coil",
+              "Checking the electrical connections",
+              "Cleaning the outdoor condenser coil",
+              "Checking the indoor unit control PCB",
+              "Checking the outdoor unit control PCB",
+              "Checking the amp draw of the compressor",
+            ],
+          },
+          {
+            label: "Excluded",
+            text:
+              "Cost for any repair work, procurement cost, cost of any new parts and installation, if required.",
+          },
+          {
+            label: "Terms & Conditions",
+            text:
+              "Starting from AED 325 maintenance service charge applies based on the type, capacity of the unit, and location for each diagnosis.",
+          },
+        ],
+      },
+    },
+  ],
+};
+
+// --- Inlined from repairPriceData.js ---
+const repairPriceData = {
+  id: "lg-ac-service-pricing",
+  eyebrow: "AC Service Pricing",
+  title:
+    "How much does it cost Premier AC Cleaning Service, AC Repair and AC Maintenance?",
+  actionLabel: "Check Here For Price",
+  actionHref: "/dubai-ac-service-price-list/",
+  openInNewTab: false,
+};
+
+// --- Inlined from energyTipsData.js ---
+const energyTipsData = {
+  id: "lg-ac-energy-saving-tips",
+  eyebrow: "Energy Saving Tips",
+  title: "UAE: 7 Tips to Reduce AC Bills This Summer",
+  description:
+    "Learn easy and proven ways to save energy with your AC. Find tips to cut the cost and stay cool all summers!",
+  actionLabel: "Click Here to Save on Energy Bills",
+  actionHref:
+    "https://www.fajservices.ae/files/Practical%20Tips%20to%20Improve%20Energy%20Efficiency%20of%20Your%20AC%20Infographic.pdf",
+  openInNewTab: true,
+};
+
+// --- Inlined from testimonialsData.js ---
+const testimonialsData = {
+  id: "lg-ac-testimonials",
+  eyebrow: "What Our Clients Say",
+  title: "Customer Reviews",
+  items: [
+    {
+      icon: "award",
+      title: "Alexander Pothen",
+      subtitle: "Expat",
+      description:
+        "An efficient team who could diagnose the fault and rectify the problem. They washed the indoor AC unit with water and took all the care not to mess up our office.",
+    },
+    {
+      icon: "award",
+      title: "Shehan Chanaka",
+      subtitle: "Resident",
+      description:
+        "Mr Adnan gives us the best service for AC Servicing. And he also repaired our AC and Refrigerator in limited price. Keep it up 👍👍",
+    },
+    {
+      icon: "award",
+      title: "Waseem Aqdas",
+      subtitle: "Homeowner",
+      description:
+        "Outstanding service from FAJ Technical! My AC wasn't cooling properly, but FAJ Technical came to the rescue. Quick response, friendly technician, and now my AC works perfectly. I highly recommend them!",
+    },
+    {
+      icon: "award",
+      title: "Arshad Iqbal",
+      subtitle: "Homeowner",
+      description:
+        "FAJ Technical Services really exceeded my expectations. I had my air conditioning unit repaired, and their service was exceptional. The team was very professional and supportive, and they resolved the issues quickly and effectively.",
+    },
+    {
+      icon: "award",
+      title: "Bilal Ahmad",
+      subtitle: "Resident",
+      description:
+        "I had an excellent experience with Easy AC for my recent AC repair. The team was incredibly professional and informative throughout the process. Their expertise in installing my air conditioner was evident, and the results exceeded my expectations. I highly recommend Easy AC for any AC repair needs. They truly deliver top quality service!",
+    },
+    {
+      icon: "award",
+      title: "Sumaira Kamboh",
+      subtitle: "Homeowner",
+      description:
+        "I recently hired this company for my AC maintenance and was thoroughly impressed! The technicians were professional, punctual, and did an excellent job. They explained everything they did and provided helpful tips for future maintenance. I highly recommend them!",
+    },
+    {
+      icon: "award",
+      title: "Yonis Khan.",
+      subtitle: "Resident",
+      description:
+        "I had my AC maintained by FAJ Technical Services, and they did a professional job. The team was friendly and quick, making the whole process easy. If you need AC maintenance, I definitely recommend them.",
+    },
+    {
+      icon: "award",
+      title: "Ahmad Alhemeiri",
+      subtitle: "Expat",
+      description:
+        "Its great place to have any spare part for AC Thanks to Ms Neha for her support and follow-up. She's really good representative of company",
+    },
+  ],
+};
+
 
 const seoData = {
   title: "Expert LG AC Repair and LG AC Maintenance Service in Dubai",

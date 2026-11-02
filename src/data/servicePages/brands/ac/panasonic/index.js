@@ -1,11 +1,438 @@
 import acCoverageLocations106 from "../../../acCoverageLocations106.js";
-import heroData from "./heroData";
-import faqsData from "./faqsData";
-import contractsData from "./contractsData";
-import pricingData from "./pricingData";
-import repairPriceData from "./repairPriceData";
-import energyTipsData from "./energyTipsData";
-import testimonialsData from "./testimonialsData";
+
+// --- Inlined from heroData.js ---
+const heroData = {
+  eyebrow: "Panasonic AC Specialists",
+  title: "High-Quality Panasonic AC Repair and Maintenance Services in Dubai",
+  paragraphs: [
+    "Are you looking for reliable Panasonic AC repair and service in Dubai? FAJ Technical Services L.L.C has been the top choice for Panasonic air conditioning solutions in Dubai and Sharjah since 2010. Our experienced technicians are equipped to repair your air conditioning unit on the same day, ensuring optimal cooling.",
+  ],
+  paragraph: "Are you looking for reliable Panasonic AC repair and service in Dubai? FAJ Technical Services L.L.C has been the top choice for Panasonic air conditioning solutions in Dubai and Sharjah since 2010. Our experienced technicians are equipped to repair your air conditioning unit on the same day, ensuring optimal cooling.",
+  highlights: [
+    {
+      icon: "award",
+      title: "Established Since 2010",
+      description: "Reliability, Diversity, Integrity, and Quality.",
+    },
+    {
+      icon: "shield-check",
+      title: "Workmanship Warranty",
+      description: "Repair and service warranty support.",
+    },
+    {
+      icon: "phone-support",
+      title: "7-Day Service Response",
+      description: "Fast assistance across Dubai.",
+    },
+  ],
+  primaryAction: "Book An Appointment",
+  secondaryAction: "Call Now",
+  showCall: true,
+  showPhone: true,
+  image: {
+    id: "ac-brand-logos/panasonic-logo",
+    src: "/img/ac-brand-logos/panasonic-logo.webp",
+    alt: "Panasonic Air Conditioning Repair and Maintenance in Dubai",
+    width: 600,
+    height: 400,
+    fit: "contain",
+    padding: "20px",
+    bg: "#ffffff",
+    hideOverlay: true,
+  },
+};
+
+// --- Inlined from faqsData.js ---
+const items = [
+    {
+      "question": "What are F1, F2, and F3 in Panasonic AC?",
+      "title": "What are F1, F2, and F3 in Panasonic AC?",
+      "answer": "These are not error codes. If the unit displays F1, F2, or F3, it means the AC is in FAN mode, and the number represents the set fan speed. This is a normal operating condition.",
+      "desc": "These are not error codes. If the unit displays F1, F2, or F3, it means the AC is in FAN mode, and the number represents the set fan speed. This is a normal operating condition."
+    },
+    {
+      "question": "What does E4 mean on a Panasonic air conditioner?",
+      "title": "What does E4 mean on a Panasonic air conditioner?",
+      "answer": "E4 indicates that the unit is in defrost mode, which is normal during low-temperature operation. However, it could also point to a faulty temperature sensor if it occurs too frequently.",
+      "desc": "E4 indicates that the unit is in defrost mode, which is normal during low-temperature operation. However, it could also point to a faulty temperature sensor if it occurs too frequently."
+    },
+    {
+      "question": "What is the common problem of a Panasonic air conditioner?",
+      "title": "What is the common problem of a Panasonic air conditioner?",
+      "answer": "Frequent issues include cooling inefficiency, water leaks, strange noises, and error codes. These can be caused by refrigerant leaks, sensor faults, or compressor problems.",
+      "desc": "Frequent issues include cooling inefficiency, water leaks, strange noises, and error codes. These can be caused by refrigerant leaks, sensor faults, or compressor problems."
+    },
+    {
+      "question": "Why is my Panasonic AC suddenly not cooling?",
+      "title": "Why is my Panasonic AC suddenly not cooling?",
+      "answer": "This could be due to dirty air filters, incorrect thermostat settings, or other internal faults. Clean or replace the filters and ensure the thermostat is set correctly.",
+      "desc": "This could be due to dirty air filters, incorrect thermostat settings, or other internal faults. Clean or replace the filters and ensure the thermostat is set correctly."
+    },
+    {
+      "question": "How do I troubleshoot my Panasonic air conditioner?",
+      "title": "How do I troubleshoot my Panasonic air conditioner?",
+      "answer": "Start by verifying the thermostat is set to cool mode. Then check and clean the air filter. If problems persist, it may require a professional inspection.",
+      "desc": "Start by verifying the thermostat is set to cool mode. Then check and clean the air filter. If problems persist, it may require a professional inspection."
+    },
+    {
+      "question": "What happens if an air conditioner is not serviced?",
+      "title": "What happens if an air conditioner is not serviced?",
+      "answer": "Neglecting AC servicing leads to reduced performance, higher electricity bills, and potential breakdowns. It may also shorten the lifespan of the unit.",
+      "desc": "Neglecting AC servicing leads to reduced performance, higher electricity bills, and potential breakdowns. It may also shorten the lifespan of the unit."
+    },
+    {
+      "question": "How do you know AC needs servicing?",
+      "title": "How do you know AC needs servicing?",
+      "answer": "Signs include blowing warm air, poor airflow, strange noises, and visible dirt on filters or coils. Professional inspection may be required for refrigerant or electrical issues.",
+      "desc": "Signs include blowing warm air, poor airflow, strange noises, and visible dirt on filters or coils. Professional inspection may be required for refrigerant or electrical issues."
+    },
+    {
+      "question": "Why is my AC not cooling after service?",
+      "title": "Why is my AC not cooling after service?",
+      "answer": "This may happen due to remaining issues like clogged filters, refrigerant leaks, faulty thermostat, dirty coils, frozen components, or blocked air ducts.",
+      "desc": "This may happen due to remaining issues like clogged filters, refrigerant leaks, faulty thermostat, dirty coils, frozen components, or blocked air ducts."
+    },
+    {
+      "question": "How much does it cost to clean AC in Dubai?",
+      "title": "How much does it cost to clean AC in Dubai?",
+      "answer": [
+        "Costs range based on unit size:",
+        {
+          "type": "bullets",
+          "items": [
+            "Regular Cleaning: AED 230–580",
+            "Deep Cleaning: AED 380–830",
+            "Duct Cleaning & Sanitization: from AED 580",
+            "Installation: AED 175/hour",
+            "Repair: AED 150/hour"
+          ]
+        }
+      ],
+      "desc": [
+        "Costs range based on unit size:",
+        {
+          "type": "bullets",
+          "items": [
+            "Regular Cleaning: AED 230–580",
+            "Deep Cleaning: AED 380–830",
+            "Duct Cleaning & Sanitization: from AED 580",
+            "Installation: AED 175/hour",
+            "Repair: AED 150/hour"
+          ]
+        }
+      ]
+    },
+    {
+      "question": "How often should AC be cleaned in Dubai?",
+      "title": "How often should AC be cleaned in Dubai?",
+      "answer": "Due to constant use, it is recommended to clean your AC 3 to 5 times a year. One major and up to four minor maintenance sessions annually are advised.",
+      "desc": "Due to constant use, it is recommended to clean your AC 3 to 5 times a year. One major and up to four minor maintenance sessions annually are advised."
+    },
+    {
+      "question": "Is AC duct cleaning important in Dubai?",
+      "title": "Is AC duct cleaning important in Dubai?",
+      "answer": "Yes. Clean ducts improve air quality and prevent health issues. In Dubai’s dusty climate, duct cleaning is essential for maintaining a healthy indoor environment.",
+      "desc": "Yes. Clean ducts improve air quality and prevent health issues. In Dubai’s dusty climate, duct cleaning is essential for maintaining a healthy indoor environment."
+    },
+    {
+      "question": "Why is AC repair so expensive?",
+      "title": "Why is AC repair so expensive?",
+      "answer": "High repair costs include technician labor and backend support (e.g., customer service, scheduling, admin). Difficult-to-access units also increase the job's complexity and time.",
+      "desc": "High repair costs include technician labor and backend support (e.g., customer service, scheduling, admin). Difficult-to-access units also increase the job's complexity and time."
+    },
+    {
+      "question": "Can I sleep with wet hair in AC?",
+      "title": "Can I sleep with wet hair in AC?",
+      "answer": "Sleeping with wet hair under AC is not recommended. It can lead to hair breakage, bacterial growth on the scalp, and worsened dandruff. Always dry your hair before sleeping.",
+      "desc": "Sleeping with wet hair under AC is not recommended. It can lead to hair breakage, bacterial growth on the scalp, and worsened dandruff. Always dry your hair before sleeping."
+    },
+    {
+      "question": "Is it OK for an air conditioner to get wet?",
+      "title": "Is it OK for an air conditioner to get wet?",
+      "answer": "Yes. Outdoor AC units are designed to handle rain and moisture. Their components are weather-resistant and can function normally under standard outdoor conditions.",
+      "desc": "Yes. Outdoor AC units are designed to handle rain and moisture. Their components are weather-resistant and can function normally under standard outdoor conditions."
+    }
+  ];
+
+const faqsData = {
+  id: "panasonic-ac-faqs",
+  eyebrow: "Have Questions?",
+  title: "Panasonic AC Repair and Maintenance FAQs",
+  description: "Find clear answers to common questions about Panasonic AC repair, preventative maintenance, fault diagnostics, and emergency servicing in Dubai.",
+  items,
+  faqs: items,
+};
+
+// --- Inlined from contractsData.js ---
+const contractsData = {
+  id: "panasonic-amc-packages",
+  eyebrow: "Preventive Protection",
+  title: "Panasonic Air Conditioning Maintenance Contracts",
+  description:
+    "Choose a planned AC maintenance schedule based on property size, unit type, operating hours and response priorities.",
+  featuredIndex: 0,
+  actionLabel: "Request AMC quote",
+  plans: [
+    {
+      title: "Yearly AC Maintenance Contract",
+      tagline: "Comprehensive year-round support for dependable cooling.",
+      badge: "Best Value",
+      features: [
+        "Scheduled preventive maintenance visits",
+        "Limited or unlimited breakdown call-out options",
+        "Indoor and outdoor unit condition reporting",
+        "Packages available with or without spare parts",
+      ],
+    },
+    {
+      title: "Six-Month AC Maintenance Contract",
+      tagline: "Balanced seasonal care before peak cooling demand.",
+      badge: "Popular",
+      features: [
+        "Planned inspection and cleaning visits",
+        "Drainage, airflow and electrical checks",
+        "Cooling-performance recommendations",
+        "Optional priority breakdown support",
+      ],
+    },
+    {
+      title: "Three-Month AC Maintenance Contract",
+      tagline: "Flexible short-term protection for immediate AC needs.",
+      badge: "Flexible",
+      features: [
+        "Targeted preventive maintenance visit",
+        "Filter, coil and drainage assessment",
+        "Thermostat and operating checks",
+        "Optional repair and call-out coverage",
+      ],
+    },
+  ],
+  footnote:
+    "Terms and conditions apply. Custom packages are available for villas, offices, commercial buildings and multi-site facilities.",
+};
+
+// --- Inlined from pricingData.js ---
+const pricingData = {
+  eyebrow: "Transparent Service Options",
+  title: "AC Inspection, Cleaning and Maintenance Prices",
+  description:
+    "Choose a starting service based on your air-conditioning system. Final quotations depend on unit type, condition and required work.",
+  defaultBadge: "Professional AC Care",
+  pricePrefix: "Starting from",
+  actionLabel: "Book now",
+
+  items: [
+    {
+      title: "AC Inspection Service",
+      badge: "Diagnostics",
+      price: "AED 215",
+      image: {
+        id: "ac-service-page/ac-inspection",
+        src: "/img/ac-service-page/ac-inspection.webp",
+      },
+      description:
+        "Is your AC not cooling your place? Is the AC thermostat broken, or is the fan making strange noises? Give us a call",
+      popup: {
+        title: "AC Call-Out (Technical Inspection) scope of works:",
+        sections: [
+          {
+            items: [
+              "Resolving air flow issues",
+              "AC thermostat check-up",
+              "Refrigerant Level check-up",
+              "Rectification of AC power trip",
+              "Rectification of AC water leakage",
+              "Fixing AC cooling/overcooling issues",
+              "Addressing sound problems from the AC",
+            ],
+          },
+          {
+            label: "Excluded",
+            text:
+              "Cost for any repair work, procurement cost, cost of any new parts and installation, if required.",
+          },
+          {
+            label: "Terms & Conditions",
+            text:
+              "Starting from AED 215 callout fee applies based on the type, capacity of the unit, and location for each diagnosis.",
+          },
+        ],
+      },
+    },
+
+    {
+      title: "Basic AC Cleaning",
+      subtitle: "Selected work includes a 60-day service warranty",
+      warranty: "60 - Days Warranty",
+      badge: "Popular",
+      price: "AED 280",
+      image: {
+        id: "ac-service-page/ac-cleaning-price",
+        src: "/img/ac-service-page/ac-cleaning-price.webp",
+      },
+      description:
+        "If your AC has reduced airflow or is leaking water, work quickly. Regularly clean filters and drain to provide efficiency and good air quality.",
+      popup: {
+        title: "AC Cleaning Service scope of works:",
+        sections: [
+          {
+            items: [
+              "AC filter cleaning",
+              "AC water leakage",
+              "Check AC components",
+              "Filter cleaning and replacement",
+              "Condenser coil cleaning",
+              "AC thermostat check-up",
+              "Refrigerant Level check-up",
+              "Addressing sound issues from the AC",
+            ],
+          },
+          {
+            label: "Excluded",
+            text:
+              "Cost for any repair work, procurement cost, cost of any new parts and installation, if required.",
+          },
+          {
+            label: "Terms & Conditions",
+            text:
+              "Starting from AED 280 basic cleaning service charge applies based on the type, capacity of the unit, and location for each diagnosis.",
+          },
+        ],
+      },
+    },
+
+    {
+      title: "AC Maintenance",
+      subtitle: "Selected work includes a 60-day service warranty",
+      warranty: "60 - Days Warranty",
+      badge: "Preventive Care",
+      price: "AED 325",
+      image: {
+        id: "ac-service-page/ac-maintenance-price",
+        src: "/img/ac-service-page/ac-maintenance-price.webp",
+      },
+      description:
+        "Specialized maintenance for central and ducted split AC units. Regular maintenance keeps units running smoothly and prevents costly breakdowns.",
+      popup: {
+        title: "AC Maintenance Service scope of works:",
+        sections: [
+          {
+            items: [
+              "AC filter cleaning",
+              "AC water leakage",
+              "Check AC components",
+              "Filter cleaning and replacement",
+              "Condenser coil cleaning",
+              "AC thermostat check-up",
+              "Refrigerant Level check-up",
+              "Addressing sound issues from the AC",
+            ],
+          },
+          {
+            label: "Excluded",
+            text:
+              "Cost for any repair work, procurement cost, cost of any new parts and installation, if required.",
+          },
+          {
+            label: "Terms & Conditions",
+            text:
+              "Starting from AED 325 maintenance service charge applies based on the type, capacity of the unit, and location for each diagnosis.",
+          },
+        ],
+      },
+    },
+  ],
+};
+
+// --- Inlined from repairPriceData.js ---
+const repairPriceData = {
+  id: "panasonic-ac-service-pricing",
+  eyebrow: "AC Service Pricing",
+  title:
+    "How much does it cost Premier AC Cleaning Service, AC Repair and AC Maintenance?",
+  actionLabel: "Check Here For Price",
+  actionHref: "/dubai-ac-service-price-list/",
+  openInNewTab: false,
+};
+
+// --- Inlined from energyTipsData.js ---
+const energyTipsData = {
+  id: "panasonic-ac-energy-saving-tips",
+  eyebrow: "Energy Saving Tips",
+  title: "UAE: 7 Tips to Reduce AC Bills This Summer",
+  description:
+    "Learn easy and proven ways to save energy with your AC. Find tips to cut the cost and stay cool all summers!",
+  actionLabel: "Click Here to Save on Energy Bills",
+  actionHref:
+    "https://www.fajservices.ae/files/Practical%20Tips%20to%20Improve%20Energy%20Efficiency%20of%20Your%20AC%20Infographic.pdf",
+  openInNewTab: true,
+};
+
+// --- Inlined from testimonialsData.js ---
+const testimonialsData = {
+  id: "panasonic-ac-testimonials",
+  eyebrow: "What Our Clients Say",
+  title: "Customer Reviews",
+  items: [
+    {
+      icon: "award",
+      title: "Alexander Pothen",
+      subtitle: "Expat",
+      description:
+        "An efficient team who could diagnose the fault and rectify the problem. They washed the indoor AC unit with water and took all the care not to mess up our office.",
+    },
+    {
+      icon: "award",
+      title: "Shehan Chanaka",
+      subtitle: "Resident",
+      description:
+        "Mr Adnan gives us the best service for AC Servicing. And he also repaired our AC and Refrigerator in limited price. Keep it up 👍👍",
+    },
+    {
+      icon: "award",
+      title: "Waseem Aqdas",
+      subtitle: "Homeowner",
+      description:
+        "Outstanding service from FAJ Technical! My AC wasn't cooling properly, but FAJ Technical came to the rescue. Quick response, friendly technician, and now my AC works perfectly. I highly recommend them!",
+    },
+    {
+      icon: "award",
+      title: "Arshad Iqbal",
+      subtitle: "Homeowner",
+      description:
+        "FAJ Technical Services really exceeded my expectations. I had my air conditioning unit repaired, and their service was exceptional. The team was very professional and supportive, and they resolved the issues quickly and effectively.",
+    },
+    {
+      icon: "award",
+      title: "Bilal Ahmad",
+      subtitle: "Resident",
+      description:
+        "I had an excellent experience with Easy AC for my recent AC repair. The team was incredibly professional and informative throughout the process. Their expertise in installing my air conditioner was evident, and the results exceeded my expectations. I highly recommend Easy AC for any AC repair needs. They truly deliver top quality service!",
+    },
+    {
+      icon: "award",
+      title: "Sumaira Kamboh",
+      subtitle: "Homeowner",
+      description:
+        "I recently hired this company for my AC maintenance and was thoroughly impressed! The technicians were professional, punctual, and did an excellent job. They explained everything they did and provided helpful tips for future maintenance. I highly recommend them!",
+    },
+    {
+      icon: "award",
+      title: "Yonis Khan.",
+      subtitle: "Resident",
+      description:
+        "I had my AC maintained by FAJ Technical Services, and they did a professional job. The team was friendly and quick, making the whole process easy. If you need AC maintenance, I definitely recommend them.",
+    },
+    {
+      icon: "award",
+      title: "Ahmad Alhemeiri",
+      subtitle: "Expat",
+      description:
+        "Its great place to have any spare part for AC Thanks to Ms Neha for her support and follow-up. She's really good representative of company",
+    },
+  ],
+};
+
 
 const seoData = {
   title: "Panasonic AC Repair and Maintenance Service Near You, Dubai",
