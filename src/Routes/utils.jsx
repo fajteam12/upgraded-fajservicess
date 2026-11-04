@@ -460,6 +460,82 @@ export const HomeHeroSkeleton = () => (
 HomeHeroSkeleton.displayName = 'HomeHeroSkeleton';
 
 
+
+/* 4. Text Page Skeleton for Policy and Text-Only Pages (White, centered title + paragraph bones) */
+export const TextPageSkeleton = () => (
+  <div className="faj-text-page-skeleton" aria-hidden="true">
+    <style>{`
+      @keyframes faj-text-shimmer {
+        0% { background-position: 200% 0; }
+        100% { background-position: -200% 0; }
+      }
+      @keyframes faj-text-fade {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      .faj-text-page-skeleton {
+        width: 100%;
+        min-height: calc(100vh - 80px);
+        background: #ffffff;
+        padding-top: 36px;
+        padding-bottom: 60px;
+        box-sizing: border-box;
+        animation: faj-text-fade 0.2s ease 0.08s both;
+      }
+      .faj-text-container {
+        width: min(100% - 32px, 1140px);
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .faj-text-bone {
+        background: linear-gradient(90deg, #edf2f5 25%, #f7f9fa 50%, #edf2f5 75%);
+        background-size: 200% 100%;
+        animation: faj-text-shimmer 1.6s ease-in-out infinite;
+        border-radius: 6px;
+      }
+      .faj-text-title {
+        width: 240px;
+        height: 36px;
+        border-radius: 8px;
+        margin-bottom: 36px;
+      }
+      .faj-text-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+      .faj-text-line {
+        height: 14px;
+        border-radius: 4px;
+      }
+    `}</style>
+
+    <div className="faj-text-container">
+      <div className="faj-text-bone faj-text-title" />
+      <div className="faj-text-content">
+        <div className="faj-text-bone faj-text-line" style={{ width: '100%' }} />
+        <div className="faj-text-bone faj-text-line" style={{ width: '97%' }} />
+        <div className="faj-text-bone faj-text-line" style={{ width: '94%' }} />
+        <div className="faj-text-bone faj-text-line" style={{ width: '72%', marginBottom: '16px' }} />
+
+        <div className="faj-text-bone faj-text-line" style={{ width: '98%' }} />
+        <div className="faj-text-bone faj-text-line" style={{ width: '95%' }} />
+        <div className="faj-text-bone faj-text-line" style={{ width: '88%', marginBottom: '16px' }} />
+
+        <div className="faj-text-bone" style={{ width: '220px', height: '20px', marginBottom: '10px' }} />
+        <div className="faj-text-bone faj-text-line" style={{ width: '100%' }} />
+        <div className="faj-text-bone faj-text-line" style={{ width: '96%' }} />
+        <div className="faj-text-bone faj-text-line" style={{ width: '65%' }} />
+      </div>
+    </div>
+  </div>
+);
+
+TextPageSkeleton.displayName = 'TextPageSkeleton';
+
 export function isServiceOrLocationOrBrandRoute(pathname = '') {
   if (!pathname) return false;
   const path = pathname.toLowerCase();
@@ -502,25 +578,31 @@ export function isServiceOrLocationOrBrandRoute(pathname = '') {
   return false;
 }
 
+export function isTextPageRoute(pathname = '') {
+  if (!pathname) return false;
+  const path = pathname.toLowerCase();
+  return (
+    path.startsWith('/privacy') ||
+    path.startsWith('/refund') ||
+    path.startsWith('/terms')
+  );
+}
+
 export function isPageHeroRoute(pathname = '') {
   if (!pathname) return false;
   const path = pathname.toLowerCase();
 
   return (
-    path.startsWith('/about') ||
     path.startsWith('/who-we-are') ||
-    path.startsWith('/our-') ||
+    path.startsWith('/our-vision') ||
+    path.startsWith('/our-history') ||
     path.startsWith('/career') ||
-    path.startsWith('/blog') ||
+    path.startsWith('/blogs') ||
     path.startsWith('/contact') ||
-    path.startsWith('/portfolio') ||
-    path.startsWith('/privacy') ||
-    path.startsWith('/refund') ||
-    path.startsWith('/terms') ||
-    path.startsWith('/ac-tonnage-calculator') ||
-    path.startsWith('/faqs') ||
-    path.startsWith('/faj-price-list') ||
-    path.startsWith('/b2b-services')
+    path.startsWith('/our-portfolio') ||
+    path.startsWith('/b2b-services') ||
+    path === '/services' ||
+    path === '/services/'
   );
 }
 
@@ -528,6 +610,9 @@ export const AdaptiveFallback = () => {
   const pathname = typeof window !== 'undefined' ? window.location.pathname : '';
   if (pathname === '/' || pathname === '') {
     return <HomeHeroSkeleton />;
+  }
+  if (isTextPageRoute(pathname)) {
+    return <TextPageSkeleton />;
   }
   if (isServiceOrLocationOrBrandRoute(pathname)) {
     return <HeroSkeleton />;
