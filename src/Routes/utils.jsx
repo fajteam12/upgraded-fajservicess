@@ -32,7 +32,7 @@ export const LoadingSpinner = () => (
 
 LoadingSpinner.displayName = 'LoadingSpinner';
 
-/* Global Shimmer Styles for Skeletons */
+/* Global Shimmer Styles & Critical Skeleton Layout (Self-contained so it never waits for async CSS) */
 const ShimmerStyles = () => (
   <style>{`
     @keyframes faj-shimmer {
@@ -51,53 +51,117 @@ const ShimmerStyles = () => (
       animation: faj-shimmer 1.5s ease-in-out infinite;
       border-radius: 6px;
     }
+    .faj-service-skel-hero {
+      width: 100%;
+      background: #ffffff;
+      padding-block: clamp(1.75rem, 3.2vw, 2.75rem);
+      position: relative;
+      overflow: hidden;
+      box-sizing: border-box;
+    }
+    .faj-service-skel-container {
+      width: 100%;
+      max-width: 1440px;
+      margin-inline: auto;
+      padding-inline: 32px;
+      box-sizing: border-box;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      align-items: center;
+      gap: clamp(2rem, 4.5vw, 4rem);
+    }
+    .faj-service-skel-content {
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+    }
+    .faj-service-skel-media-wrap {
+      width: 100%;
+      display: flex;
+      justifyContent: center;
+    }
+    .faj-service-skel-media {
+      width: 100%;
+      max-width: 600px;
+      aspect-ratio: 4 / 3;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .faj-service-skel-highlights {
+      display: flex;
+      gap: 16px;
+      margin-top: 14px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+    .faj-service-skel-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    @media (max-width: 991px) {
+      .faj-service-skel-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+      .faj-service-skel-media {
+        max-width: 650px;
+        margin-inline: auto;
+      }
+    }
+    @media (max-width: 768px) {
+      .faj-service-skel-hero {
+        padding-block: clamp(1.25rem, 3vw, 2rem);
+      }
+      .faj-service-skel-container {
+        padding-inline: 16px;
+        gap: 1.5rem;
+      }
+    }
   `}</style>
 );
 
 /* 1. Service, Repair, Brand, & Location Pages: Zero-CLS Skeleton matching AboutHeroSection */
 export const ServiceHeroSkeleton = () => (
-  <section className="service-landing__section service-about-hero is-white" aria-hidden="true" style={{ overflow: 'hidden' }}>
+  <section className="faj-service-skel-hero" aria-hidden="true">
     <ShimmerStyles />
-    <div className="service-about-hero__container">
-      <div className="service-about-hero__content">
+    <div className="faj-service-skel-container">
+      <div className="faj-service-skel-content">
         {/* Title */}
-        <div className="faj-bone" style={{ width: '85%', height: '36px', marginBottom: '16px' }} />
-        <div className="faj-bone" style={{ width: '60%', height: '36px', marginBottom: '22px' }} />
-
-        {/* Paragraphs */}
-        <div className="faj-bone" style={{ width: '98%', height: '15px', marginBottom: '10px' }} />
-        <div className="faj-bone" style={{ width: '92%', height: '15px', marginBottom: '10px' }} />
-        <div className="faj-bone" style={{ width: '86%', height: '15px', marginBottom: '24px' }} />
+        <div className="faj-bone" style={{ width: '85%', maxWidth: '480px', height: '36px', marginBottom: '14px', borderRadius: '6px' }} />
+        
+        {/* Paragraph (matches 1-paragraph real content) */}
+        <div className="faj-bone" style={{ width: '96%', maxWidth: '540px', height: '16px', marginBottom: '10px', borderRadius: '4px' }} />
+        <div className="faj-bone" style={{ width: '82%', maxWidth: '440px', height: '16px', marginBottom: '18px', borderRadius: '4px' }} />
 
         {/* Highlights Row */}
-        <div className="service-about-hero__highlights">
-          <div className="service-about-hero__highlight-item">
-            <div className="service-about-hero__highlight-icon faj-bone" style={{ width: '36px', height: '36px', borderRadius: '8px' }} />
-            <div className="service-about-hero__highlight-text" style={{ flex: 1 }}>
-              <div className="faj-bone" style={{ width: '130px', height: '14px', marginBottom: '6px' }} />
-              <div className="faj-bone" style={{ width: '170px', height: '12px' }} />
+        <div className="faj-service-skel-highlights">
+          <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+            <div className="faj-bone" style={{ width: '32px', height: '32px', borderRadius: '6px', flexShrink: 0 }} />
+            <div>
+              <div className="faj-bone" style={{ width: '120px', height: '13px', marginBottom: '4px', borderRadius: '3px' }} />
+              <div className="faj-bone" style={{ width: '140px', height: '11px', borderRadius: '3px' }} />
             </div>
           </div>
-          <div className="service-about-hero__highlight-item">
-            <div className="service-about-hero__highlight-icon faj-bone" style={{ width: '36px', height: '36px', borderRadius: '8px' }} />
-            <div className="service-about-hero__highlight-text" style={{ flex: 1 }}>
-              <div className="faj-bone" style={{ width: '140px', height: '14px', marginBottom: '6px' }} />
-              <div className="faj-bone" style={{ width: '160px', height: '12px' }} />
+          <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+            <div className="faj-bone" style={{ width: '32px', height: '32px', borderRadius: '6px', flexShrink: 0 }} />
+            <div>
+              <div className="faj-bone" style={{ width: '125px', height: '13px', marginBottom: '4px', borderRadius: '3px' }} />
+              <div className="faj-bone" style={{ width: '135px', height: '11px', borderRadius: '3px' }} />
             </div>
           </div>
         </div>
 
-        {/* Actions */}
-        <div className="service-about-hero__actions" style={{ marginTop: '20px' }}>
-          <div className="faj-bone" style={{ width: '150px', height: '48px', borderRadius: '30px' }} />
-          <div className="faj-bone" style={{ width: '160px', height: '48px', borderRadius: '30px' }} />
+        {/* Actions (WhatsApp button) */}
+        <div className="faj-service-skel-actions">
+          <div className="faj-bone" style={{ width: '160px', height: '46px', borderRadius: '24px' }} />
         </div>
       </div>
 
       {/* Media Box matching exact 4:3 aspect ratio */}
-      <div className="service-about-hero__media-wrapper">
-        <div className="service-about-hero__media">
-          <div className="faj-bone" style={{ width: '100%', height: '100%', borderRadius: 'inherit' }} />
+      <div className="faj-service-skel-media-wrap">
+        <div className="faj-service-skel-media">
+          <div className="faj-bone" style={{ width: '100%', height: '100%', borderRadius: '12px' }} />
         </div>
       </div>
     </div>
