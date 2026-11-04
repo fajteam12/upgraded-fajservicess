@@ -1,6 +1,6 @@
 import { useEffect, useState, useCallback, useMemo } from 'react';
 import { Link } from 'react-router-dom';
-import Nav from './Nav';
+import Nav, { activateNavIcons } from './Nav';
 import BookingFormModal from '../BookingFormModal';
 import PhoneIcon from '../../icons/PhoneIcon';
 import WhatsappIcon from '../../icons/WhatsappIcon';
@@ -59,6 +59,7 @@ export default function ClassicHeader({ variant = '' }) {
   }, [handleScroll]);
 
   const toggleMobileMenu = useCallback(() => {
+    activateNavIcons?.();
     setMobileToggle(prev => !prev);
   }, []);
 
@@ -74,7 +75,7 @@ export default function ClassicHeader({ variant = '' }) {
   }, []);
 
   const headerStyles = useMemo(() => ({
-    position: isSticky ? 'fixed' : 'relative',
+    position: 'sticky',
     top: 0,
     zIndex: '9999',
     width: '100%',
@@ -93,7 +94,7 @@ export default function ClassicHeader({ variant = '' }) {
   ].filter(Boolean).join(' '), [variant, mobileToggle, isSticky]);
 
   return (
-    <div className='header-area2 header_nav_03'>
+    <>
       <header className={headerClasses} style={headerStyles}>
         <div className="cs_main_header">
           <div className="container-fluidd">
@@ -140,9 +141,7 @@ export default function ClassicHeader({ variant = '' }) {
         </div>
       </header>
 
-      <div className="cs_site_header_spacing_140" aria-hidden="true"></div>
-
       <BookingFormModal isOpen={isModalOpen} onClose={closeModal} />
-    </div>
+    </>
   );
 }

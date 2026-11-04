@@ -1,3 +1,4 @@
+import { preloadRouteByPath } from "./Routes.jsx";
 const routePreloaders = {
   "/": () => import("../Pages/Home"),
   "/services/": () => import("../Pages/ServicesPage"),
@@ -56,12 +57,16 @@ export const preloadRoute = (path) => {
   const normalizedPath = normalizePath(path);
   const preload = routePreloaders[normalizedPath];
 
-  if (!preload || preloadedRoutes.has(normalizedPath)) return;
+  if (!normalizedPath || preloadedRoutes.has(normalizedPath)) return;
 
   preloadedRoutes.add(normalizedPath);
-  preload().catch(() => {
-    preloadedRoutes.delete(normalizedPath);
-  });
+  if (preload) {
+    preload().catch(() => {
+      preloadedRoutes.delete(normalizedPath);
+    });
+  } else {
+    preloadRouteByPath(normalizedPath);
+  }
 };
 
 export const preloadCommonRoutes = () => {

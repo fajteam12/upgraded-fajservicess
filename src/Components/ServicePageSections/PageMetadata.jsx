@@ -7,6 +7,7 @@ function PageMetadata({
   contact,
   faqItems = [],
   structuredData,
+  preloadImage,
 }) {
   const generatedStructuredData = useMemo(
     () =>
@@ -80,6 +81,15 @@ function PageMetadata({
         rel="canonical"
         href={seo.url || seo.canonical}
       />
+
+      {preloadImage && (
+        <link
+          rel="preload"
+          as="image"
+          href={typeof preloadImage === 'string' ? preloadImage : preloadImage.src}
+          fetchPriority="high"
+        />
+      )}
 
       <meta
         property="og:type"

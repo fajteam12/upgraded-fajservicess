@@ -1,43 +1,36 @@
-// Nav icons are lazy-loaded from one shared module to avoid one request per icon.
+// Nav icons code-split individually to avoid monolithic bundle bloat
 import { lazy } from 'react';
 
-const lazyNavIcon = (exportName) =>
-  lazy(() =>
-    import('./components/index.jsx').then((module) => ({
-      default: module[exportName],
-    }))
-  );
-
-export const ACIcon = lazyNavIcon('ACIcon');
-export const MACIcon = lazyNavIcon('MACIcon');
-export const ApplianceAmcIcon = lazyNavIcon('ApplianceAmcIcon');
-export const Bbqcon = lazyNavIcon('Bbqcon');
-export const CdishwasherIcon = lazyNavIcon('CdishwasherIcon');
-export const CigarIcon = lazyNavIcon('CigarIcon');
-export const CLaundryIcon = lazyNavIcon('CLaundryIcon');
-export const CoffeeMachineIcon = lazyNavIcon('CoffeeMachineIcon');
-export const DCoffeeMachineIcon = lazyNavIcon('DCoffeeMachineIcon');
-export const CommercialOvenIcon = lazyNavIcon('CommercialOvenIcon');
-export const CommercialRefrigerationIcon = lazyNavIcon('CommercialRefrigerationIcon');
-export const DishwasherIcon = lazyNavIcon('DishwasherIcon');
-export const FreestandApplianceIcon = lazyNavIcon('FreestandApplianceIcon');
-export const GasRangeIcon = lazyNavIcon('GasRangeIcon');
-export const HobIcon = lazyNavIcon('HobIcon');
-export const HomeApplianceIcon = lazyNavIcon('HomeApplianceIcon');
-export const IntegeratedApplianceIcon = lazyNavIcon('IntegeratedApplianceIcon');
-export const KitchenEqIcon = lazyNavIcon('KitchenEqIcon');
-export const KitchenEqRepairIcon = lazyNavIcon('KitchenEqRepairIcon');
-export const KitchenEquipmentAMCIcon = lazyNavIcon('KitchenEquipmentAMCIcon');
-export const KitchenEquipmentIcon = lazyNavIcon('KitchenEquipmentIcon');
-export const MeatGrinderIcon = lazyNavIcon('MeatGrinderIcon');
-export const ovenIcon = lazyNavIcon('ovenIcon');
-export const PcbBoardIcon = lazyNavIcon('PcbBoardIcon');
-export const RefrigerationIcon = lazyNavIcon('RefrigerationIcon');
-export const SmallApplianceIcon = lazyNavIcon('SmallApplianceIcon');
-export const VacuumIcon = lazyNavIcon('VacuumIcon');
-export const WashingMachineIcon = lazyNavIcon('WashingMachineIcon');
-export const CommercialRefrigerationIco = lazyNavIcon('CommercialRefrigerationIco');
-export const ComercialcoffeeIcon = lazyNavIcon('ComercialcoffeeIcon');
-export const CookingEquipmentServiceIcon = lazyNavIcon('CookingEquipmentServiceIcon');
-export const IceMachineIcon = lazyNavIcon('IceMachineIcon');
-export const AmcAcIcon = lazyNavIcon('AmcAcIcon');
+export const ACIcon = lazy(() => import('./components/ACIcon.jsx').then(m => ({ default: m.ACIcon })));
+export const MACIcon = lazy(() => import('./components/MACIcon.jsx').then(m => ({ default: m.MACIcon })));
+export const ApplianceAmcIcon = lazy(() => import('./components/ApplianceAmcIcon.jsx').then(m => ({ default: m.ApplianceAmcIcon })));
+export const Bbqcon = lazy(() => import('./components/Bbqcon.jsx').then(m => ({ default: m.Bbqcon })));
+export const CdishwasherIcon = lazy(() => import('./components/CdishwasherIcon.jsx').then(m => ({ default: m.CdishwasherIcon })));
+export const CigarIcon = lazy(() => import('./components/CigarIcon.jsx').then(m => ({ default: m.CigarIcon })));
+export const CLaundryIcon = lazy(() => import('./components/CLaundryIcon.jsx').then(m => ({ default: m.CLaundryIcon })));
+export const CoffeeMachineIcon = lazy(() => import('./components/CoffeeMachineIcon.jsx').then(m => ({ default: m.CoffeeMachineIcon })));
+export const DCoffeeMachineIcon = lazy(() => import('./components/DCoffeeMachineIcon.jsx').then(m => ({ default: m.DCoffeeMachineIcon })));
+export const CommercialOvenIcon = lazy(() => import('./components/CommercialOvenIcon.jsx').then(m => ({ default: m.CommercialOvenIcon })));
+export const CommercialRefrigerationIcon = lazy(() => import('./components/CommercialRefrigerationIcon.jsx').then(m => ({ default: m.CommercialRefrigerationIcon })));
+export const DishwasherIcon = lazy(() => import('./components/DishwasherIcon.jsx').then(m => ({ default: m.DishwasherIcon })));
+export const FreestandApplianceIcon = lazy(() => import('./components/FreestandApplianceIcon.jsx').then(m => ({ default: m.FreestandApplianceIcon })));
+export const GasRangeIcon = lazy(() => import('./components/GasRangeIcon.jsx').then(m => ({ default: m.GasRangeIcon })));
+export const HobIcon = lazy(() => import('./components/HobIcon.jsx').then(m => ({ default: m.HobIcon })));
+export const HomeApplianceIcon = lazy(() => import('./components/HomeApplianceIcon.jsx').then(m => ({ default: m.HomeApplianceIcon })));
+export const IntegeratedApplianceIcon = lazy(() => import('./components/IntegeratedApplianceIcon.jsx').then(m => ({ default: m.IntegeratedApplianceIcon })));
+export const KitchenEqIcon = lazy(() => import('./components/KitchenEqIcon.jsx').then(m => ({ default: m.KitchenEqIcon })));
+export const KitchenEqRepairIcon = lazy(() => import('./components/KitchenEqRepairIcon.jsx').then(m => ({ default: m.KitchenEqRepairIcon })));
+export const KitchenEquipmentAMCIcon = lazy(() => import('./components/KitchenEquipmentAMCIcon.jsx').then(m => ({ default: m.KitchenEquipmentAMCIcon })));
+export const KitchenEquipmentIcon = lazy(() => import('./components/KitchenEquipmentIcon.jsx').then(m => ({ default: m.KitchenEquipmentIcon })));
+export const MeatGrinderIcon = lazy(() => import('./components/MeatGrinderIcon.jsx').then(m => ({ default: m.MeatGrinderIcon })));
+export const ovenIcon = lazy(() => import('./components/ovenIcon.jsx').then(m => ({ default: m.ovenIcon })));
+export const PcbBoardIcon = lazy(() => import('./components/PcbBoardIcon.jsx').then(m => ({ default: m.PcbBoardIcon })));
+export const RefrigerationIcon = lazy(() => import('./components/RefrigerationIcon.jsx').then(m => ({ default: m.RefrigerationIcon })));
+export const SmallApplianceIcon = lazy(() => import('./components/SmallApplianceIcon.jsx').then(m => ({ default: m.SmallApplianceIcon })));
+export const VacuumIcon = lazy(() => import('./components/VacuumIcon.jsx').then(m => ({ default: m.VacuumIcon })));
+export const WashingMachineIcon = lazy(() => import('./components/WashingMachineIcon.jsx').then(m => ({ default: m.WashingMachineIcon })));
+export const CommercialRefrigerationIco = lazy(() => import('./components/CommercialRefrigerationIco.jsx').then(m => ({ default: m.CommercialRefrigerationIco })));
+export const ComercialcoffeeIcon = lazy(() => import('./components/ComercialcoffeeIcon.jsx').then(m => ({ default: m.ComercialcoffeeIcon })));
+export const CookingEquipmentServiceIcon = lazy(() => import('./components/CookingEquipmentServiceIcon.jsx').then(m => ({ default: m.CookingEquipmentServiceIcon })));
+export const IceMachineIcon = lazy(() => import('./components/IceMachineIcon.jsx').then(m => ({ default: m.IceMachineIcon })));
+export const AmcAcIcon = lazy(() => import('./components/AmcAcIcon.jsx').then(m => ({ default: m.AmcAcIcon })));

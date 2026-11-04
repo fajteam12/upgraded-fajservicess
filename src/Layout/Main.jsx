@@ -74,7 +74,7 @@ const Main = () => {
 
         <main
           className="page-content-loader"
-          style={{ minHeight: "70vh" }}
+          style={{ minHeight: "calc(100vh - 80px)" }}
         >
           <Outlet />
         </main>

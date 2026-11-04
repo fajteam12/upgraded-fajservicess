@@ -63,6 +63,9 @@ export default defineConfig(({ mode }) => {
       rollupOptions: {
         output: {
           manualChunks(id) {
+            if (id.includes('src/icons/components')) {
+              return 'nav-icons';
+            }
             if (id.includes('node_modules')) {
               if (id.includes('react-dom')) return 'react-dom';
               if (id.includes('react') && !id.includes('react-router') && !id.includes('react-helmet')) return 'react';

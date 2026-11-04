@@ -195,6 +195,13 @@ const Home = ({
 					href={canonicalUrl}
 				/>
 
+				<link
+					rel="preload"
+					as="image"
+					href="https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/new-homepage-design-images/hero-image-desktop/full"
+					fetchPriority="high"
+				/>
+
 				<meta
 					property="og:type"
 					content="website"

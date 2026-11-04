@@ -1956,3 +1956,9 @@ img.ac-bordered-img{
 }
 
 
+
+/* Sticky header stabilization to prevent layout shift */
+.cs_site_header.cs_sticky_header {
+  position: sticky !important;
+  top: 0;
+}

@@ -6,6 +6,13 @@
   contain-intrinsic-size: auto 720px;
 }
 
+/* Ensure above-the-fold hero renders immediately without intersection delay */
+.service-landing__section.service-about-hero,
+.service-about-hero {
+  content-visibility: visible;
+  contain-intrinsic-size: none;
+}
+
 .service-landing__button-icon {
   width: 18px;
   height: 18px;
@@ -3158,8 +3165,8 @@
 .service-about-hero__container {
   display: grid;
   grid-template-columns:
-    var(--about-hero-text-width, minmax(0, 1.18fr))
-    var(--about-hero-image-width, minmax(320px, 0.82fr));
+    var(--about-hero-text-width, minmax(0, 1fr))
+    var(--about-hero-image-width, minmax(0, 1fr));
   align-items: center;
   gap: clamp(2rem, 4.5vw, 4rem);
   width: 100%;

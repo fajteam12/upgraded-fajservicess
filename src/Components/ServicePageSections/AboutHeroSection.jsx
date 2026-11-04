@@ -1,13 +1,10 @@
 import { memo, useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import {
   getCloudflareImageSrcSet,
   getCloudflareImageUrl,
 } from "../../utils/cloudflareImages";
-import {
-  ScrollSlide,
-  ScrollZoomText,
-} from "../Animations/ScrollAnimation";
 import WhatsAppIcon from "./WhatsAppIcon";
 import CallNowButton from "../Buttons/CallNowButton";
 import WhatsappIconButton from "../Buttons/WhatsappIconButton";
@@ -345,114 +342,117 @@ function AboutHeroSection({
     textPercent = 100 - imgPercent;
   }
 
-  let customStyle = undefined;
+    let customStyle = undefined;
   if (textPercent != null && imgPercent != null) {
-    customStyle = {
-      "--about-hero-text-width": `${textPercent}fr`,
-      "--about-hero-image-width": `${imgPercent}fr`,
-    };
+    if (textPercent === 50 && imgPercent === 50) {
+      customStyle = undefined; // Matches CSS default (1fr 1fr) with zero layout shift
+    } else {
+      customStyle = {
+        "--about-hero-text-width": `${textPercent}fr`,
+        "--about-hero-image-width": `${imgPercent}fr`,
+      };
+    }
   }
 
   return (
-    <section
-      className={`service-landing__section service-about-hero is-${effectiveTone}`}
-      id={content.id}
-    >
+    <>
+      {imageSrc && (
+        <Helmet>
+          <link
+            rel="preload"
+            as="image"
+            href={imageSrc}
+            imageSrcSet={imageSrcSet}
+            imageSizes="(max-width: 639px) calc(100vw - 32px), (max-width: 991px) calc(100vw - 48px), 58vw"
+            fetchPriority="high"
+          />
+        </Helmet>
+      )}
+      <section
+        className={`service-landing__section service-about-hero is-${effectiveTone}`}
+        id={content.id}
+      >
       <div className="service-about-hero__container" style={customStyle}>
         <div className="service-about-hero__content">
-          <ScrollZoomText as="div" delay={0.08}>
-            <h1 className="service-about-hero__title">{content.title}</h1>
-          </ScrollZoomText>
+          <h1 className="service-about-hero__title">{content.title}</h1>
 
           {content.subtitle && !content.hideSubtitle && (
-            <ScrollSlide direction="up" delay={0.16}>
-              <h2 className="service-about-hero__subtitle">
-                {content.subtitle}
-              </h2>
-            </ScrollSlide>
+            <h2 className="service-about-hero__subtitle">
+              {content.subtitle}
+            </h2>
           )}
 
           {paragraphs.map((para, index) => (
-            <ScrollSlide key={index} direction="up" delay={0.22 + index * 0.04}>
-              <p className="service-about-hero__paragraph">
-                <RichText content={para} />
-              </p>
-            </ScrollSlide>
+            <p key={index} className="service-about-hero__paragraph">
+              <RichText content={para} />
+            </p>
           ))}
 
           {highlights && highlights.length > 0 && (
-            <ScrollSlide direction="up" delay={0.28}>
-              <div className="service-about-hero__highlights">
-                {highlights.map((item, index) => (
-                  <div key={index} className="service-about-hero__highlight-item">
-                    <div
-                      className="service-about-hero__highlight-icon"
-                      aria-hidden="true"
-                    >
-                      {renderHighlightIcon(item.icon)}
-                    </div>
-                    <div className="service-about-hero__highlight-text">
-                      <strong className="service-about-hero__highlight-title">
-                        {item.title}
-                      </strong>
-                      {item.description && (
-                        <span className="service-about-hero__highlight-desc">
-                          {item.description}
-                        </span>
-                      )}
-                    </div>
+            <div className="service-about-hero__highlights">
+              {highlights.map((item, index) => (
+                <div key={index} className="service-about-hero__highlight-item">
+                  <div
+                    className="service-about-hero__highlight-icon"
+                    aria-hidden="true"
+                  >
+                    {renderHighlightIcon(item.icon)}
                   </div>
-                ))}
-              </div>
-            </ScrollSlide>
+                  <div className="service-about-hero__highlight-text">
+                    <strong className="service-about-hero__highlight-title">
+                      {item.title}
+                    </strong>
+                    {item.description && (
+                      <span className="service-about-hero__highlight-desc">
+                        {item.description}
+                      </span>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
           )}
 
           {hasActions && (
-            <ScrollSlide direction="up" delay={0.34}>
-              <div className="service-about-hero__actions">
-                {buttonStyle === "classic" ? (
-                  <>
-                    {isPhoneEnabled && <CallNowButton phone={phoneLink} />}
-                    {isWhatsappEnabled && (
-                      <WhatsappIconButton whatsapp={whatsappLink} />
-                    )}
-                  </>
-                ) : (
-                  <>
-                    {hasPrimaryAction && (
-                      <button
-                        type="button"
-                        className="service-landing__button is-cyan"
-                        onClick={() => onPrimaryAction(content.bookingLabel)}
-                      >
-                        {content.primaryAction}
-                      </button>
-                    )}
+            <div className="service-about-hero__actions">
+              {buttonStyle === "classic" ? (
+                <>
+                  {isPhoneEnabled && <CallNowButton phone={phoneLink} />}
+                  {isWhatsappEnabled && (
+                    <WhatsappIconButton whatsapp={whatsappLink} />
+                  )}
+                </>
+              ) : (
+                <>
+                  {hasPrimaryAction && (
+                    <button
+                      type="button"
+                      className="service-landing__button is-cyan"
+                      onClick={() => onPrimaryAction(content.bookingLabel)}
+                    >
+                      {content.primaryAction}
+                    </button>
+                  )}
 
-                    {hasSecondaryAction && (
-                      <a
-                        className="service-landing__button is-whatsapp"
-                        href={`https://wa.me/${contact.whatsapp}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <WhatsAppIcon className="service-landing__button-icon" />
-                        {content.secondaryAction}
-                      </a>
-                    )}
-                  </>
-                )}
-              </div>
-            </ScrollSlide>
+                  {hasSecondaryAction && (
+                    <a
+                      className="service-landing__button is-whatsapp"
+                      href={`https://wa.me/${contact.whatsapp}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <WhatsAppIcon className="service-landing__button-icon" />
+                      {content.secondaryAction}
+                    </a>
+                  )}
+                </>
+              )}
+            </div>
           )}
         </div>
 
         {imageSrc && (
-          <ScrollSlide
-            direction="left"
-            delay={0.18}
-            className="service-about-hero__media-wrapper"
-          >
+          <div className="service-about-hero__media-wrapper">
             <div
               className="service-about-hero__media"
               style={image.bg ? { background: image.bg } : undefined}
@@ -463,8 +463,8 @@ function AboutHeroSection({
                 srcSet={imageSrcSet}
                 sizes="(max-width: 639px) calc(100vw - 32px), (max-width: 991px) calc(100vw - 48px), 58vw"
                 alt={image.alt || ""}
-                width={image.width || 853}
-                height={image.height || 853}
+                width={image.width || 800}
+                height={image.height || 600}
                 loading="eager"
                 fetchPriority="high"
                 decoding="async"
@@ -488,10 +488,11 @@ function AboutHeroSection({
                 />
               )}
             </div>
-          </ScrollSlide>
+          </div>
         )}
       </div>
     </section>
+    </>
   );
 }
 

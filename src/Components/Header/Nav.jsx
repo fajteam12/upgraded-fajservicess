@@ -185,11 +185,54 @@ const mobileLinkStyle = (level, hasChildren) => ({
   padding: level > 0 ? '8px 8px 8px 16px' : '8px 8px',
 });
 
-const IconSlot = ({ icon }) => (
-  <Suspense fallback={null}>
-    {icon}
-  </Suspense>
-);
+let navIconsActivated = false;
+const navIconListeners = new Set();
+
+export function activateNavIcons() {
+  if (!navIconsActivated) {
+    navIconsActivated = true;
+    navIconListeners.forEach((fn) => fn());
+    navIconListeners.clear();
+  }
+}
+
+const IconSlot = ({ icon }) => {
+  const [ready, setReady] = useState(() => navIconsActivated);
+
+  useEffect(() => {
+    if (navIconsActivated) {
+      setReady(true);
+      return;
+    }
+
+    const onActivate = () => setReady(true);
+    navIconListeners.add(onActivate);
+
+    let idleId;
+    if ('requestIdleCallback' in window) {
+      idleId = window.requestIdleCallback(activateNavIcons, { timeout: 3500 });
+    } else {
+      idleId = window.setTimeout(activateNavIcons, 2500);
+    }
+
+    return () => {
+      navIconListeners.delete(onActivate);
+      if ('cancelIdleCallback' in window && typeof idleId === 'number') {
+        window.cancelIdleCallback(idleId);
+      } else {
+        window.clearTimeout(idleId);
+      }
+    };
+  }, []);
+
+  if (!ready) return null;
+
+  return (
+    <Suspense fallback={null}>
+      {icon}
+    </Suspense>
+  );
+};
 
 const MobileItemLabel = ({ icon, label }) => (
   <span style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
@@ -483,7 +526,7 @@ export default function Nav({ setMobileToggle }) {
   }, [openMobileSubmenus, renderMobileLink]);
 
   return (
-    <ul ref={navRef} className="cs_nav_list cs_medium">
+    <ul ref={navRef} className="cs_nav_list cs_medium" onMouseEnter={activateNavIcons} onTouchStart={activateNavIcons} onFocus={activateNavIcons}>
       {isMobile ? renderMobileNavItems(navItems) : renderDesktopNavItems(navItems)}
     </ul>
   );

@@ -1,6 +1,6 @@
-import { createBrowserRouter, Navigate } from "react-router-dom";
+import { createBrowserRouter, Navigate, matchRoutes } from "react-router-dom";
 import * as Components from "./allComponents.jsx";
-export const router = createBrowserRouter([
+export const routes = [
   {
     path: "/",
     element: <Components.Main />,
@@ -3560,4 +3560,28 @@ export const router = createBrowserRouter([
       },
     ],
   }
-]);
+];
+
+export const router = createBrowserRouter(routes);
+
+export const preloadRouteByPath = (pathname) => {
+  if (!pathname) return;
+  try {
+    const matches = matchRoutes(routes, pathname);
+    if (matches && matches.length) {
+      for (const match of matches) {
+        const comp = match.route?.element?.type;
+        if (comp && typeof comp.preload === "function") {
+          comp.preload();
+        }
+      }
+    }
+  } catch {
+    // Non-blocking fallback
+  }
+};
+
+if (typeof window !== "undefined" && window.location?.pathname) {
+  preloadRouteByPath(window.location.pathname);
+}
+
