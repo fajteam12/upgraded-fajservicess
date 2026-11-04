@@ -30,6 +30,7 @@ function GalleryImage({ image }) {
       width={image.width}
       height={image.height}
       loading="lazy"
+      fetchPriority="low"
       decoding="async"
       onError={() => setCloudflareFailed(true)}
     />

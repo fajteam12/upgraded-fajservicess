@@ -98,6 +98,7 @@ function BeforeAfterSection({ content, tone = "soft" }) {
                   src={afterImageSrc}
                   alt={content.afterAlt || "After service"}
                   loading="lazy"
+                  fetchPriority="low"
                   decoding="async"
                 />
                 <span className="service-landing__before-after-badge is-after">
@@ -114,6 +115,7 @@ function BeforeAfterSection({ content, tone = "soft" }) {
                   src={beforeImageSrc}
                   alt={content.beforeAlt || "Before service"}
                   loading="lazy"
+                  fetchPriority="low"
                   decoding="async"
                 />
                 <span className="service-landing__before-after-badge is-before">

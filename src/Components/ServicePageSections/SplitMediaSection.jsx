@@ -251,6 +251,7 @@ function SplitMediaSection({
                   width={image.width}
                   height={image.height}
                   loading="lazy"
+                  fetchPriority="low"
                   decoding="async"
                   style={{ objectPosition: image.position || "top center" }}
                   onError={() => {

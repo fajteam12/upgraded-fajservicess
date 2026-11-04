@@ -281,6 +281,7 @@ function ActionCardsSection({
                     width="1290"
                     height="530"
                     loading="lazy"
+                    fetchPriority="low"
                     decoding="async"
                   />
                   {item.badge && (
@@ -303,6 +304,7 @@ function ActionCardsSection({
                     width="1290"
                     height="530"
                     loading="lazy"
+                    fetchPriority="low"
                     decoding="async"
                   />
                   {item.badge && (
@@ -322,6 +324,7 @@ function ActionCardsSection({
                   width="1290"
                   height="530"
                   loading="lazy"
+                  fetchPriority="low"
                   decoding="async"
                 />
                 {item.badge && (

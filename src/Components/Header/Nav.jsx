@@ -208,11 +208,20 @@ const IconSlot = ({ icon }) => {
     const onActivate = () => setReady(true);
     navIconListeners.add(onActivate);
 
+    // On mobile screens, do NOT auto-load nav icons while the menu is closed;
+    // only activate on explicit user interaction (touch/click/open).
+    const isSmallScreen = typeof window !== 'undefined' && window.innerWidth < 1200;
+    if (isSmallScreen) {
+      return () => {
+        navIconListeners.delete(onActivate);
+      };
+    }
+
     let idleId;
     if ('requestIdleCallback' in window) {
-      idleId = window.requestIdleCallback(activateNavIcons, { timeout: 3500 });
+      idleId = window.requestIdleCallback(activateNavIcons, { timeout: 7000 });
     } else {
-      idleId = window.setTimeout(activateNavIcons, 2500);
+      idleId = window.setTimeout(activateNavIcons, 7000);
     }
 
     return () => {

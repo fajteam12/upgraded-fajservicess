@@ -415,7 +415,7 @@ function EmbeddedVideoSection({ content, tone = "dark", showCta, cta, contact, v
                         srcSet={posterSrcSet}
                         sizes="(max-width: 900px) 100vw, 46vw"
                         alt={image.alt || content?.title || "Video thumbnail"}
-                        loading="lazy"
+                        loading="lazy" fetchPriority="low"
                         decoding="async"
                         className="service-landing__video-poster"
                         onError={handlePosterError}

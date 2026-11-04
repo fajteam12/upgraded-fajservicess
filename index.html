@@ -11,11 +11,39 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://imagedelivery.net" crossorigin />
   <link rel="dns-prefetch" href="https://imagedelivery.net" />
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" media="print" onload="this.media='all'" />
-  <noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" />
-  </noscript>
+  <script>
+    (function() {
+      try {
+        var p = (window.location.pathname || '').toLowerCase();
+        var id = '';
+        if (p === '/' || p === '' || p === '/home') {
+          id = 'new-homepage-design-images/hero-image-desktop';
+        } else if (p.indexOf('ac-') !== -1 || p.indexOf('air-conditioning') !== -1) {
+          id = 'ac-service-page/ac-repair-top-hero-banner';
+        } else if (p.indexOf('vacuum') !== -1) {
+          id = 'home-appliances-repair-new-design-images/vacuum-cleaner-services-top';
+        } else if (p.indexOf('washing-machine') !== -1) {
+          id = 'home-appliances-repair-new-design-images/washing-machine-repair-service-top';
+        } else if (p.indexOf('refrigerator') !== -1 || p.indexOf('fridge') !== -1) {
+          id = 'home-appliances-repair-new-design-images/refrigerator-repair-top';
+        } else if (p.indexOf('coffee-machine') !== -1) {
+          id = 'coffee-machine/coffee-machine-repair-top';
+        }
+        if (id) {
+          var b = 'https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/' + id;
+          var link = document.createElement('link');
+          link.rel = 'preload';
+          link.as = 'image';
+          link.href = b + '/public';
+          link.setAttribute('imagesrcset', b + '/mobile 480w, ' + b + '/tablet 768w, ' + b + '/full 1200w, ' + b + '/large 1600w');
+          link.setAttribute('imagesizes', '(max-width: 639px) calc(100vw - 32px), (max-width: 991px) calc(100vw - 48px), 58vw');
+          link.setAttribute('fetchpriority', 'high');
+          document.head.appendChild(link);
+        }
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&display=swap" />
  
   <script type="application/ld+json" defer>
   [
@@ -143,23 +171,26 @@
     function scheduleThirdPartyScripts() {
       function runWhenIdle() {
         if ('requestIdleCallback' in window) {
-          window.requestIdleCallback(loadThirdPartyScripts, { timeout: 5000 });
+          window.requestIdleCallback(loadThirdPartyScripts, { timeout: 6000 });
         } else {
-          window.setTimeout(loadThirdPartyScripts, 5000);
+          window.setTimeout(loadThirdPartyScripts, 6000);
         }
       }
 
       function onFirstInteraction() {
         if ('requestIdleCallback' in window) {
-          window.requestIdleCallback(loadThirdPartyScripts, { timeout: 1000 });
+          window.requestIdleCallback(loadThirdPartyScripts, { timeout: 1200 });
         } else {
-          window.setTimeout(loadThirdPartyScripts, 80);
+          window.setTimeout(loadThirdPartyScripts, 150);
         }
       }
 
-      window.setTimeout(runWhenIdle, 3500);
+      // Allow 7s idle before background analytics to give mobile hydration & LCP full CPU priority
+      window.setTimeout(runWhenIdle, 7000);
+      window.addEventListener('scroll', onFirstInteraction, { once: true, passive: true });
+      window.addEventListener('touchstart', onFirstInteraction, { once: true, passive: true });
       window.addEventListener('pointerdown', onFirstInteraction, { once: true, passive: true });
-      window.addEventListener('keydown', onFirstInteraction, { once: true });
+      window.addEventListener('keydown', onFirstInteraction, { once: true, passive: true });
     }
 
     if (document.readyState === 'complete') {

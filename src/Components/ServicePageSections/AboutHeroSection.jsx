@@ -355,23 +355,10 @@ function AboutHeroSection({
   }
 
   return (
-    <>
-      {imageSrc && (
-        <Helmet>
-          <link
-            rel="preload"
-            as="image"
-            href={imageSrc}
-            imageSrcSet={imageSrcSet}
-            imageSizes="(max-width: 639px) calc(100vw - 32px), (max-width: 991px) calc(100vw - 48px), 58vw"
-            fetchPriority="high"
-          />
-        </Helmet>
-      )}
-      <section
-        className={`service-landing__section service-about-hero is-${effectiveTone}`}
-        id={content.id}
-      >
+    <section
+      className={`service-landing__section service-about-hero is-${effectiveTone}`}
+      id={content.id}
+    >
       <div className="service-about-hero__container" style={customStyle}>
         <div className="service-about-hero__content">
           <h1 className="service-about-hero__title">{content.title}</h1>
@@ -492,7 +479,6 @@ function AboutHeroSection({
         )}
       </div>
     </section>
-    </>
   );
 }
 

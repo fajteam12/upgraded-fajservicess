@@ -97,6 +97,8 @@ function PricingCardsSection({ content, onAction, tone = "white" }) {
 													sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
 													alt={item.title}
 													loading="lazy"
+													fetchPriority="low"
+													decoding="async"
 													width={400}
 													height={220}
 												/>
