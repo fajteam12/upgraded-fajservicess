@@ -1,20 +1,33 @@
+import { lazy, Suspense } from "react";
 import BreadCumb from "../../Components/Common/BreadCumb";
+
+const MaintenanceBenefitsLazy = lazy(() =>
+  import("../../Components/MaintenanceBenefits/MaintenanceBenefits")
+);
+const MaintenanceBenefits = (props) => (
+  <Suspense fallback={null}>
+    <MaintenanceBenefitsLazy {...props} />
+  </Suspense>
+);
+
 import {
   AboutHeroSection,
   AccordionSection,
   ActionCardsSection,
+  BeforeAfterSection,
   BookingModal,
-  BookingSection,
   ContentCardSection,
   EmbeddedVideoSection,
+  MediaGallerySection,
+  ModernBookingSection,
   NumberedGridSection,
   PageMetadata,
   PlanCardsSection,
   PricingCardsSection,
   SearchableDirectorySection,
-  TwoColumnInfoSection,
-  useBookingRequest,
+  SplitMediaSection,
   TestimonialsSection,
+  useBookingRequest,
 } from "../../Components/ServicePageSections";
 import "../../Components/ServicePageSections/ServicePageSections.css";
 import pageData from "../../data/servicePages/homeApplianceRepair";
@@ -31,106 +44,158 @@ export default function FreestandingHomeAppliancesRepairService() {
     contact: pageData.contact,
   });
 
+  const whatsappCta = {
+    phone: "",
+    whatsapp: `https://api.whatsapp.com/send?phone=+${pageData.contact.whatsapp}&text=Hello`,
+  };
+
   return (
     <>
       <PageMetadata
         seo={pageData.seo}
         contact={pageData.contact}
         faqItems={pageData.faqs.items}
+        structuredData={pageData.structuredData}
       />
 
       <main className="service-landing">
+        {/* Section 1: Hero */}
         <AboutHeroSection
           content={pageData.hero}
           contact={pageData.contact}
-          onPrimaryAction={openBooking}
+          buttonStyle="classic"
           contentWidth={pageData.hero.contentWidth || "50%"}
           showPhone={false}
           showCall={false}
+          showWhatsapp={true}
           tone="white"
         />
 
         <BreadCumb />
 
-        <ContentCardSection content={pageData.overview} tone="soft" />
-
+        {/* Pricing Cards Section (Directly under Breadcrumbs) */}
         <PricingCardsSection
           content={pageData.pricing}
           onAction={openBooking}
           tone="white"
         />
 
-        <TwoColumnInfoSection
-          content={pageData.serviceCenter}
+        {/* Section 2: Service Video */}
+        <EmbeddedVideoSection
+          content={pageData.video}
+          videoSide="left"
+          showCta={true}
+          showPhone={false}
+          showWhatsapp={true}
+          contact={pageData.contact}
           tone="soft"
         />
 
-        <EmbeddedVideoSection content={pageData.video} tone="white" />
+        {/* Section 3: Professional Care / Workshop Drop-off Banner */}
+        <ContentCardSection
+          content={pageData.serviceCenter}
+          tone="white"
+        />
 
+        {/* Section 9: Inspection and Cleaning (3+2 Card Grid with Corner Accent) */}
         <ActionCardsSection
           content={pageData.maintenanceImportance}
-          columns="three"
           tone="soft"
+          columns="three"
         />
 
+        {/* Section 10: Warning Signals / Problems Grid (4x2 Numbered Grid) */}
         <NumberedGridSection
           content={pageData.commonProblems}
           showCta={true}
-          cta={{
-            phone: "",
-            whatsapp: `https://api.whatsapp.com/send?phone=+${pageData.contact.whatsapp}&text=Hello`,
-          }}
+          cta={whatsappCta}
+          showPhone={false}
+          showWhatsapp={true}
           tone="white"
           columns="four"
         />
 
+        {/* Section 27: Services Offered (4 Cards, Static Grid) */}
         <ActionCardsSection
           content={pageData.servicesOffered}
           onAction={openBooking}
-          columns="four"
           tone="soft"
+          columns="four"
+          slider={false}
+          showCta={true}
+          cta={whatsappCta}
+          showPhone={false}
+          showWhatsapp={true}
         />
 
-        <ActionCardsSection
-          content={pageData.benefits}
+        {/* Section 15: Premium Outcomes / Key Benefits */}
+        <MaintenanceBenefits
+          {...pageData.benefits}
           tone="white"
-          columns="three"
         />
 
+        {/* Section 18: Why Choose FAJ */}
         <ActionCardsSection
           content={pageData.whyChooseUs}
-          columns="three"
           tone="soft"
+          columns="three"
         />
 
+        {/* Section 18: Approved Brand Partners */}
         <SearchableDirectorySection
-          content={pageData.featuredBrands}
+          content={pageData.brands}
           onAction={openBooking}
+          showCta={true}
+          cta={whatsappCta}
           tone="white"
         />
 
-        <SearchableDirectorySection
-          content={pageData.otherBrands}
-          onAction={openBooking}
+        {/* Section 21: Terms & Warranty */}
+        <ContentCardSection
+          content={pageData.repairOverview}
           tone="soft"
-          showCta={true}
-          cta={{
-            phone: `tel:+${pageData.contact.phone}`,
-            whatsapp: "",
-          }}
         />
 
-        <TestimonialsSection content={pageData.testimonials} tone="white" />
+        {/* Section 22: Before & After Comparison Slider */}
+        {/* <BeforeAfterSection
+          content={pageData.beforeAfter}
+          tone="white"
+        /> */}
 
+        {/* Section 23: Media Gallery 3x2 Grid */}
+        <MediaGallerySection
+          content={pageData.gallery}
+          tone="soft"
+        />
+
+        {/* Section 24: Maintenance Contracts */}
         <PlanCardsSection
           content={pageData.contracts}
           onAction={openBooking}
           tone="dark"
         />
 
-        <AccordionSection content={pageData.faqs} tone="soft" />
+        {/* Section: News & Updates / Blogs (Right above Testimonials) */}
+        <ActionCardsSection
+          content={pageData.blogs}
+          tone="white"
+          columns="three"
+        />
 
-        <BookingSection
+        {/* Section 25: Customer Testimonials Carousel */}
+        <TestimonialsSection
+          content={pageData.testimonials}
+          tone="soft"
+        />
+
+        {/* Section 26: FAQs — MUST BE 2nd TO LAST! */}
+        <AccordionSection
+          content={pageData.faqs}
+          tone="soft"
+        />
+
+        {/* Section 27: Booking Form — MUST BE AT THE VERY END! */}
+        <ModernBookingSection
           content={pageData.booking}
           bookingState={bookingState}
           tone="white"

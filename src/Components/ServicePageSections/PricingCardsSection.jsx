@@ -7,6 +7,16 @@ import {
 import { ScrollSlide } from "../Animations/ScrollAnimation";
 import SectionHeader from "./SectionHeader";
 
+
+function renderSafeText(val) {
+	if (val === null || val === undefined) return null;
+	if (typeof val === 'string' || typeof val === 'number') return val;
+	if (Array.isArray(val.parts)) {
+		return val.parts.map((p) => (typeof p === 'string' ? p : p.text || '')).join('');
+	}
+	return val.text || String(val);
+}
+
 function PricingCardsSection({ content, onAction, tone = "white" }) {
 	const [activeItem, setActiveItem] = useState(null);
 
@@ -142,7 +152,7 @@ function PricingCardsSection({ content, onAction, tone = "white" }) {
 												<div className="service-landing__price-card-divider" aria-hidden="true" />
 											)}
 
-											<p>{item.description}</p>
+											<p>{renderSafeText(item.description)}</p>
 										</div>
 
 										<div className="service-landing__price-card-actions">
@@ -228,7 +238,7 @@ function PricingCardsSection({ content, onAction, tone = "white" }) {
 										{section.label && section.text && (
 											<div className="service-landing__pricing-modal-note">
 												<strong>{section.label}</strong>
-												<p>{section.text}</p>
+												<p>{renderSafeText(section.text)}</p>
 											</div>
 										)}
 									</section>

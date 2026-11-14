@@ -1,8 +1,83 @@
 import { memo } from "react";
+import { Link } from "react-router-dom";
 import { ScrollSlide } from "../Animations/ScrollAnimation";
 import SectionHeader from "./SectionHeader";
 import CallNowButton from "../Buttons/CallNowButton";
 import WhatsappIconButton from "../Buttons/WhatsappIconButton";
+
+function RichText({ content }) {
+  if (typeof content === "string") return content;
+  if (!content) return null;
+
+  if (content.href && content.text) {
+    const isExternal =
+      content.external === true || /^https?:\/\//i.test(content.href);
+
+    return isExternal ? (
+      <a
+        className="service-landing__inline-link"
+        href={content.href}
+        target={content.newTab === false ? undefined : "_blank"}
+        rel={content.newTab === false ? undefined : "noopener noreferrer"}
+      >
+        {content.strong ? <strong>{content.text}</strong> : content.text}
+      </a>
+    ) : (
+      <Link className="service-landing__inline-link" to={content.href}>
+        {content.strong ? <strong>{content.text}</strong> : content.text}
+      </Link>
+    );
+  }
+
+  if (Array.isArray(content.parts)) {
+    return content.parts.map((part, index) => {
+      if (typeof part === "string") {
+        return <span key={index}>{part}</span>;
+      }
+
+      if (!part) return null;
+
+      if (part.strong && !part.href) {
+        return <strong key={index}>{part.text}</strong>;
+      }
+
+      if (part.href) {
+        const isExternal =
+          part.external === true || /^https?:\/\//i.test(part.href);
+
+        const linkContent = part.strong ? (
+          <strong>{part.text}</strong>
+        ) : (
+          part.text
+        );
+
+        return isExternal ? (
+          <a
+            key={index}
+            className="service-landing__inline-link"
+            href={part.href}
+            target={part.newTab === false ? undefined : "_blank"}
+            rel={part.newTab === false ? undefined : "noopener noreferrer"}
+          >
+            {linkContent}
+          </a>
+        ) : (
+          <Link
+            key={index}
+            className="service-landing__inline-link"
+            to={part.href}
+          >
+            {linkContent}
+          </Link>
+        );
+      }
+
+      return <span key={index}>{part.text}</span>;
+    });
+  }
+
+  return content.text || null;
+}
 
 function ContentCardSection({
   content,
@@ -10,6 +85,7 @@ function ContentCardSection({
   showCta,
   cta,
   contact,
+  plain = false,
 }) {
   if (!content) return null;
 
@@ -70,19 +146,35 @@ function ContentCardSection({
   const hasPhone = Boolean(phoneUrl);
   const hasWhatsapp = Boolean(whatsappUrl);
   const showAnyCta = isCtaEnabled && (hasPhone || hasWhatsapp);
+  const isPlain = Boolean(content.plain || plain);
 
   return (
-    <section className={`service-landing__section is-${tone}`}>
+    <section className={`service-landing__section is-${tone}`} id={content.id}>
       <div className="service-landing__narrow">
         <SectionHeader content={content} light={tone === "dark"} />
-        <ScrollSlide direction="up">
-          <article className="service-landing__statement-card">
-            {content.lead && <strong>{content.lead}</strong>}
-            {content.paragraphs?.map((paragraph) => (
-              <p key={paragraph}>{paragraph}</p>
-            ))}
-          </article>
-        </ScrollSlide>
+        {isPlain ? (
+          <ScrollSlide direction="up">
+            <div className="service-landing__center-copy">
+              {content.lead && <strong><RichText content={content.lead} /></strong>}
+              {content.paragraphs?.map((paragraph, index) => (
+                <p key={index}>
+                  <RichText content={paragraph} />
+                </p>
+              ))}
+            </div>
+          </ScrollSlide>
+        ) : (
+          <ScrollSlide direction="up">
+            <article className="service-landing__statement-card">
+              {content.lead && <strong><RichText content={content.lead} /></strong>}
+              {content.paragraphs?.map((paragraph, index) => (
+                <p key={index}>
+                  <RichText content={paragraph} />
+                </p>
+              ))}
+            </article>
+          </ScrollSlide>
+        )}
 
         {showAnyCta && (
           <ScrollSlide direction="up" delay={0.24}>

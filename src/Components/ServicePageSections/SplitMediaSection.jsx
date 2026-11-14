@@ -46,12 +46,19 @@ function SplitMediaSection({
   cta,
   contact,
   imageSide,
+  stickyImage = false,
   showPhone,
   showWhatsapp,
+  onAction,
+  headerAbove,
+  checklistColumns,
 }) {
   const [failedSources, setFailedSources] = useState(() => new Set());
 
   if (!content) return null;
+
+  const isSticky = Boolean(stickyImage || content?.stickyImage);
+  const isHeaderAbove = Boolean(headerAbove || content?.headerAbove);
 
   const hasExplicitShowCta = typeof showCta === "boolean";
   const isCtaEnabled = hasExplicitShowCta
@@ -119,12 +126,18 @@ function SplitMediaSection({
   const hasWhatsapp = Boolean(whatsappUrl);
   const showAnyCta = isCtaEnabled && (hasPhone || hasWhatsapp);
 
-  const image = content.image || {};
-  const cloudflareSrc = image.id
-    ? getCloudflareImageUrl(image.id, "public")
+  const rawImage = content.image;
+  const image = typeof rawImage === "string" ? { id: rawImage } : (rawImage || {});
+  const imageId =
+    image.id ||
+    (typeof image.src === "string" && image.src.startsWith("/img/")
+      ? image.src.replace(/^\/img\//, "").replace(/\.[^/.]+$/, "")
+      : "");
+  const cloudflareSrc = imageId
+    ? getCloudflareImageUrl(imageId, "public")
     : "";
-  const cloudflareSrcSet = image.id
-    ? getCloudflareImageSrcSet(image.id)
+  const cloudflareSrcSet = imageId
+    ? getCloudflareImageSrcSet(imageId)
     : undefined;
   const fallbackSrc = image.src || "";
   const canUseCloudflare =
@@ -147,19 +160,32 @@ function SplitMediaSection({
     (Array.isArray(content.bullets) && content.bullets) ||
     (Array.isArray(content.items) && typeof content.items[0] === "string" ? content.items : null);
 
+  const isSingleColChecklist = Boolean(
+    checklistColumns === 1 ||
+      content.checklistColumns === 1 ||
+      checklistItems?.some(
+        (item) => typeof item === "object" && item !== null && item.description
+      )
+  );
+
   return (
     <section
       className={`service-landing__section service-landing__media-section is-${tone}`}
       id={content.id}
     >
       <div className="service-landing__container">
+        {isHeaderAbove && (
+          <SectionHeader content={content} light={tone === "dark"} />
+        )}
         <div
           className={`service-landing__media-split is-image-${effectiveImageSide} ${
             imageSrc ? "has-media" : "is-text-only"
-          }`}
+          } ${isSticky ? "is-sticky-image" : ""}`}
         >
         <div className="service-landing__media-copy">
-          <SectionHeader content={content} light={tone === "dark"} />
+          {!isHeaderAbove && (
+            <SectionHeader content={content} light={tone === "dark"} />
+          )}
 
           {content.paragraphs?.map((paragraph, idx) => (
             <p className="service-landing__media-paragraph" key={idx}>
@@ -180,15 +206,34 @@ function SplitMediaSection({
           )}
 
           {checklistItems?.length > 0 && (
-            <ul className="service-landing__media-checklist">
-              {checklistItems.map((item, idx) => (
-                <li key={idx}>
-                  <span className="service-landing__media-check" aria-hidden="true">
-                    {"\u2713"}
-                  </span>
-                  <span>{typeof item === "string" ? item : item.title || item.text}</span>
-                </li>
-              ))}
+            <ul
+              className={`service-landing__media-checklist${
+                isSingleColChecklist ? " is-single-col" : ""
+              }`}
+            >
+              {checklistItems.map((item, idx) => {
+                const isRichItem =
+                  typeof item === "object" && item !== null && item.description;
+                return (
+                  <li key={idx} className={isRichItem ? "is-rich-item" : undefined}>
+                    <span className="service-landing__media-check" aria-hidden="true">
+                      {"\u2713"}
+                    </span>
+                    <span>
+                      {typeof item === "string" ? (
+                        item
+                      ) : isRichItem ? (
+                        <>
+                          {item.title && <strong>{item.title} </strong>}
+                          {renderParagraphContent(item.description, `bullet-${idx}`)}
+                        </>
+                      ) : (
+                        item.title || item.text
+                      )}
+                    </span>
+                  </li>
+                );
+              })}
             </ul>
           )}
 
@@ -207,7 +252,9 @@ function SplitMediaSection({
 
           {content.items?.length > 0 && typeof content.items[0] === "object" && content.items[0].description && (
             <div
-              className="service-landing__media-items"
+              className={`service-landing__media-items ${
+                Number(content.columns) === 1 ? "is-single-col" : ""
+              }`}
               style={{ "--service-media-columns": content.columns || 2 }}
             >
               {content.items.map((item, index) => (
@@ -216,12 +263,30 @@ function SplitMediaSection({
                   delay={(index % 4) * 0.05}
                   key={item.title}
                 >
-                  <article>
-                    <span aria-hidden="true">
-                      {String(index + 1).padStart(2, "0")}
-                    </span>
+                  <article className="service-landing__media-item-card">
+                    {item.icon ? (
+                      <span className="service-landing__action-icon" aria-hidden="true">
+                        <ServiceIcon name={item.icon} />
+                      </span>
+                    ) : (
+                      <span aria-hidden="true">
+                        {item.number || String(index + 1).padStart(2, "0")}
+                      </span>
+                    )}
                     <h3>{item.title}</h3>
-                    <p>{item.description}</p>
+                    <p>{renderParagraphContent(item.description, 'item-desc-' + index)}</p>
+                    {item.actionLabel && (
+                      <button
+                        type="button"
+                        className="service-landing__action-link"
+                        onClick={() =>
+                          onAction && onAction(item.bookingLabel || item.title)
+                        }
+                      >
+                        {item.actionLabel}
+                        <span aria-hidden="true">{"\u2192"}</span>
+                      </button>
+                    )}
                   </article>
                 </ScrollSlide>
               ))}
@@ -238,32 +303,58 @@ function SplitMediaSection({
           </div>
 
           {imageSrc && (
-            <ScrollSlide
-              className="service-landing__media-animation"
-              direction={imageSide === "left" ? "left" : "right"}
-            >
-              <div className="service-landing__media-image">
-                <img
-                  src={imageSrc}
-                  srcSet={imageSrcSet}
-                  sizes="(max-width: 900px) 100vw, 46vw"
-                  alt={image.alt || ""}
-                  width={image.width}
-                  height={image.height}
-                  loading="lazy"
-                  fetchPriority="low"
-                  decoding="async"
-                  style={{ objectPosition: image.position || "top center" }}
-                  onError={() => {
-                    setFailedSources((currentSources) => {
-                      const nextSources = new Set(currentSources);
-                      nextSources.add(imageSrc);
-                      return nextSources;
-                    });
-                  }}
-                />
+            isSticky ? (
+              <div className="service-landing__media-animation is-sticky">
+                <div className="service-landing__media-image">
+                  <img
+                    src={imageSrc}
+                    srcSet={imageSrcSet}
+                    sizes="(max-width: 900px) 100vw, 46vw"
+                    alt={image.alt || ""}
+                    width={image.width}
+                    height={image.height}
+                    loading="lazy"
+                    fetchPriority="low"
+                    decoding="async"
+                    style={{ objectPosition: image.position || "center" }}
+                    onError={() => {
+                      setFailedSources((currentSources) => {
+                        const nextSources = new Set(currentSources);
+                        nextSources.add(imageSrc);
+                        return nextSources;
+                      });
+                    }}
+                  />
+                </div>
               </div>
-            </ScrollSlide>
+            ) : (
+              <ScrollSlide
+                className="service-landing__media-animation"
+                direction={imageSide === "left" ? "left" : "right"}
+              >
+                <div className="service-landing__media-image">
+                  <img
+                    src={imageSrc}
+                    srcSet={imageSrcSet}
+                    sizes="(max-width: 900px) 100vw, 46vw"
+                    alt={image.alt || ""}
+                    width={image.width}
+                    height={image.height}
+                    loading="lazy"
+                    fetchPriority="low"
+                    decoding="async"
+                    style={{ objectPosition: image.position || "top center" }}
+                    onError={() => {
+                      setFailedSources((currentSources) => {
+                        const nextSources = new Set(currentSources);
+                        nextSources.add(imageSrc);
+                        return nextSources;
+                      });
+                    }}
+                  />
+                </div>
+              </ScrollSlide>
+            )
           )}
         </div>
       </div>

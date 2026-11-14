@@ -461,6 +461,33 @@ function ServiceIcon({ name = "wrench" }) {
           <line x1="2" y1="2" x2="22" y2="22" />
         </svg>
       );
+    case "vacuum-lifespan":
+    case "arrow-down-left-box":
+      return (
+        <svg {...commonProps}>
+          <rect x="3" y="3" width="18" height="18" rx="3" />
+          <line x1="16" y1="8" x2="8" y2="16" />
+          <polyline points="14 16 8 16 8 10" />
+        </svg>
+      );
+    case "vacuum-performance":
+    case "cube":
+      return (
+        <svg {...commonProps}>
+          <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+          <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+          <line x1="12" y1="22.08" x2="12" y2="12" />
+        </svg>
+      );
+    case "coins-stack":
+    case "database":
+      return (
+        <svg {...commonProps}>
+          <ellipse cx="12" cy="5" rx="9" ry="3" />
+          <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+          <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+        </svg>
+      );
     default:
       return (
         <svg {...commonProps}>

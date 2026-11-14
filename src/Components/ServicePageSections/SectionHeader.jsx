@@ -4,6 +4,15 @@ import {
   ScrollZoomText,
 } from "../Animations/ScrollAnimation";
 
+function renderSafeText(val) {
+  if (val === null || val === undefined) return null;
+  if (typeof val === "string" || typeof val === "number") return val;
+  if (Array.isArray(val.parts)) {
+    return val.parts.map((p) => (typeof p === "string" ? p : p.text || "")).join("");
+  }
+  return val.text || String(val);
+}
+
 function SectionHeader({ content, light = false, headingLevel = 2 }) {
   if (!content?.title) return null;
 
@@ -18,16 +27,16 @@ function SectionHeader({ content, light = false, headingLevel = 2 }) {
       {content.eyebrow && (
         <ScrollSlide direction="down">
           <span className="service-landing__eyebrow">
-            {content.eyebrow}
+            {renderSafeText(content.eyebrow)}
           </span>
         </ScrollSlide>
       )}
 
       <ScrollZoomText as="div" delay={0.08}>
-        <Heading>{content.title}</Heading>
+        <Heading>{renderSafeText(content.title)}</Heading>
       </ScrollZoomText>
 
-      {content.description && <p>{content.description}</p>}
+      {content.description && <p>{renderSafeText(content.description)}</p>}
 
       <span
         className="service-landing__heading-line"

@@ -135,7 +135,7 @@ function NumberedGridSection({
 	const showAnyCta = isCtaEnabled && (hasPhone || hasWhatsapp);
 
 	return (
-		<section className={`service-landing__section is-${tone}`}>
+		<section className={`service-landing__section is-${tone}`} id={content?.id}>
 			<div className="service-landing__container">
 				<SectionHeader content={content} light={tone === "dark"} />
 

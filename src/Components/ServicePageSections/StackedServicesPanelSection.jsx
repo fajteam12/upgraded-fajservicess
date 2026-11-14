@@ -2,6 +2,16 @@ import { memo } from "react";
 import { ScrollSlide } from "../Animations/ScrollAnimation";
 import SectionHeader from "./SectionHeader";
 
+
+function renderSafeText(val) {
+	if (val === null || val === undefined) return null;
+	if (typeof val === 'string' || typeof val === 'number') return val;
+	if (Array.isArray(val.parts)) {
+		return val.parts.map((p) => (typeof p === 'string' ? p : p.text || '')).join('');
+	}
+	return val.text || String(val);
+}
+
 function StackedServicesPanelSection({ content, onAction, tone = "soft" }) {
   if (!content?.items?.length) return null;
 
@@ -23,7 +33,7 @@ function StackedServicesPanelSection({ content, onAction, tone = "soft" }) {
                   <span aria-hidden="true">{"\u2713"}</span>
                   <div>
                     <h4>{item.title}</h4>
-                    <p>{item.description}</p>
+                    <p>{renderSafeText(item.description)}</p>
                   </div>
                 </div>
               ))}
@@ -31,7 +41,7 @@ function StackedServicesPanelSection({ content, onAction, tone = "soft" }) {
 
             {(content.footerText || content.actionLabel) && (
               <footer className="service-landing__stacked-services-footer">
-                {content.footerText && <p>{content.footerText}</p>}
+                {content.footerText && <p>{renderSafeText(content.footerText)}</p>}
                 {content.actionLabel && onAction && (
                   <button
                     type="button"

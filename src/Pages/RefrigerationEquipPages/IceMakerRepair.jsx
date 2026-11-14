@@ -1,21 +1,29 @@
+import { lazy, Suspense } from "react";
 import BreadCumb from "../../Components/Common/BreadCumb";
-import MaintenanceBenefits from "../../Components/MaintenanceBenefits/MaintenanceBenefits";
+
+const MaintenanceBenefitsLazy = lazy(() =>
+  import("../../Components/MaintenanceBenefits/MaintenanceBenefits")
+);
+const MaintenanceBenefits = (props) => (
+  <Suspense fallback={null}>
+    <MaintenanceBenefitsLazy {...props} />
+  </Suspense>
+);
+
 import {
   AboutHeroSection,
   AccordionSection,
   ActionCardsSection,
   BookingModal,
-  BookingSection,
   ContentCardSection,
   EmbeddedVideoSection,
-  MetricCardsSection,
+  ModernBookingSection,
   NumberedGridSection,
   PageMetadata,
   PlanCardsSection,
   SearchableDirectorySection,
-  TwoColumnInfoSection,
-  useBookingRequest,
   TestimonialsSection,
+  useBookingRequest,
 } from "../../Components/ServicePageSections";
 import "../../Components/ServicePageSections/ServicePageSections.css";
 import pageData from "../../data/servicePages/iceMakerRepair";
@@ -32,94 +40,141 @@ export default function IceMakerRepair() {
     contact: pageData.contact,
   });
 
+  const whatsappCta = {
+    phone: "",
+    whatsapp: `https://api.whatsapp.com/send?phone=+${pageData.contact.whatsapp}&text=Hello`,
+  };
+
+  const scrollToServices = () => {
+    const target = document.getElementById("ice-maker-services");
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
       <PageMetadata
         seo={pageData.seo}
         contact={pageData.contact}
         faqItems={pageData.faqs.items}
+        structuredData={pageData.structuredData}
       />
 
       <main className="service-landing">
+        {/* Section 1: Hero */}
         <AboutHeroSection
           content={pageData.hero}
           contact={pageData.contact}
-          onPrimaryAction={openBooking}
+          buttonStyle="classic"
           contentWidth={pageData.hero.contentWidth || "50%"}
           showPhone={false}
           showCall={false}
+          showWhatsapp={true}
           tone="white"
         />
 
         <BreadCumb />
 
-        <ContentCardSection content={pageData.overview} tone="soft" />
-
-        <TwoColumnInfoSection
-          content={pageData.serviceOverview}
-          tone="white"
+        {/* Section 2: Professional Care / Ice Machine Service and Maintenance */}
+        <ContentCardSection
+          content={pageData.serviceCenter}
+          tone="soft"
         />
 
+        {/* Section 3: Service Video (Video left + copy & WhatsApp CTA right) */}
         <EmbeddedVideoSection
           content={pageData.video}
-          tone="soft"
-        />
-
-        <MetricCardsSection
-          content={pageData.maintenanceImportance}
+          videoSide="left"
+          showCta={true}
+          showPhone={false}
+          showWhatsapp={true}
+          contact={pageData.contact}
           tone="white"
         />
 
-        <NumberedGridSection
-          content={pageData.commonProblems}
+        {/* Section 4: Why is Ice Maker Machine Maintenance Service Important in Dubai? */}
+        <ActionCardsSection
+          content={pageData.maintenanceImportance}
           tone="soft"
-          columns="four"
-          showCta={true}
-          cta={{
-            phone: "",
-            whatsapp: `https://api.whatsapp.com/send?phone=+${pageData.contact.whatsapp}&text=Hello`,
-          }}
+          columns="three"
         />
 
+        {/* Section 5: Warning Signals / Most Common Problems */}
+        <NumberedGridSection
+          content={pageData.commonProblems}
+          tone="white"
+          columns="four"
+          showCta={true}
+          cta={whatsappCta}
+          showPhone={false}
+          showWhatsapp={true}
+        />
+
+        {/* Section 6: Services Offered (4 Cards, Static Grid) */}
         <ActionCardsSection
           content={pageData.servicesOffered}
           onAction={openBooking}
-          tone="white"
-          columns="three"
+          tone="soft"
+          columns="four"
+          slider={false}
         />
 
-        <MaintenanceBenefits {...pageData.benefits} tone="soft" />
+        {/* Section 7: The Benefits of Ice Maker Service Dubai */}
+        <MaintenanceBenefits {...pageData.benefits} tone="white" />
 
+        {/* Section 8: Why Choose FAJ */}
         <ActionCardsSection
           content={pageData.whyChooseUs}
-          tone="white"
+          tone="soft"
           columns="three"
+          showCta={true}
+          cta={whatsappCta}
+          showPhone={false}
+          showWhatsapp={true}
         />
 
+        {/* Section 9: Brands Directory */}
         <SearchableDirectorySection
           content={pageData.brands}
           onAction={openBooking}
-          tone="soft"
           showCta={true}
-          cta={{
-            phone: `tel:+${pageData.contact.phone}`,
-            whatsapp: "",
-          }}
+          cta={whatsappCta}
+          tone="white"
         />
 
-        <TestimonialsSection content={pageData.testimonials} tone="white" />
-
+        {/* Section 10: Service Contracts */}
         <PlanCardsSection
           content={pageData.contracts}
           onAction={openBooking}
           tone="dark"
         />
 
-        <AccordionSection content={pageData.faqs} tone="soft" />
+        {/* Section 11: News & Updates / Blogs (Right above Testimonials) */}
+        <ActionCardsSection
+          content={pageData.blogs}
+          tone="white"
+          columns="three"
+        />
 
-        <BookingSection
+        {/* Section 12: Customer Testimonials */}
+        <TestimonialsSection
+          content={pageData.testimonials}
+          tone="soft"
+        />
+
+        {/* Section 13: FAQs (2nd to last) */}
+        <AccordionSection
+          content={pageData.faqs}
+          contact={pageData.contact}
+          tone="soft"
+        />
+
+        {/* Section 14: Booking Form (Very last) */}
+        <ModernBookingSection
           content={pageData.booking}
           bookingState={bookingState}
+          onOurServices={scrollToServices}
           tone="white"
         />
       </main>

@@ -1,16 +1,12 @@
-// ==========================================================================
-// Freestanding Home Appliances Repair Service - Consolidated Page Data
-// ==========================================================================
-
 const seoData = {
-  "title": "Home Appliances Repair | Appliances Service Center Near You",
-  "description": "Top-rated home appliances repair and service in Dubai, UAE. Get FAJ experts for tumble dryer, stove, dish washer, fridge & oven service center nearby",
-  "keywords": "appliance repair Dubai, home appliance service Dubai, appliance repair near me, washing machine repair Dubai, refrigerator repair Dubai, dishwasher repair Dubai, oven repair Dubai, dryer repair Dubai",
-  "author": "FAJ Technical Services L.L.C.",
-  "businessName": "FAJ Home Appliance Repair and Maintenance Services",
-  "url": "https://www.fajservices.ae/services/home-appliances-repair/appliances-repair-service/",
-  "image": "https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/appliance-repair-new-design-images/appliances-repair-service-top/public",
-  "serviceType": [
+  title: "Home Appliances Repair | Appliances Service Center Near You",
+  description: "Top-rated home appliances repair and service in Dubai, UAE. Get FAJ experts for tumble dryer, stove, dish washer, fridge & oven service center nearby",
+  keywords: "Appliances Repair Dubai, Appliance Service Dubai, Appliance Repair Near Me, Home Appliances Repair Dubai, Washing Machine Repair Dubai, Refrigerator Repair Dubai, Dishwasher Repair Dubai, Oven Repair Dubai, Dryer Repair Dubai",
+  author: "FAJ Technical Services L.L.C.",
+  businessName: "Best Home Appliances Repair and Maintenance Service in Dubai - FAJ Technical Services L.L.C",
+  url: "https://www.fajservices.ae/services/home-appliances-repair/appliances-repair-service/",
+  image: "https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/home-appliances-repair-new-design-images/appliances-repair-service-top/public",
+  serviceType: [
     "Home Appliance Repair",
     "Refrigerator Repair",
     "Washing Machine Repair",
@@ -20,79 +16,261 @@ const seoData = {
     "Home Appliance Installation",
     "Home Appliance Annual Maintenance Contract"
   ],
-  "areaServed": [
+  areaServed: [
     "Dubai",
     "Sharjah",
     "Abu Dhabi"
   ],
-  "breadcrumbs": [
+  breadcrumbs: [
     {
-      "name": "Home",
-      "url": "https://www.fajservices.ae/"
+      name: "Home",
+      url: "https://www.fajservices.ae/"
     },
     {
-      "name": "Services",
-      "url": "https://www.fajservices.ae/services/"
+      name: "Services",
+      url: "https://www.fajservices.ae/services/"
     },
     {
-      "name": "Home Appliances Repair",
-      "url": "https://www.fajservices.ae/services/home-appliances-repair/"
+      name: "Home Appliances Repair",
+      url: "https://www.fajservices.ae/services/home-appliances-repair/"
     },
     {
-      "name": "Appliances Repair Service",
-      "url": "https://www.fajservices.ae/services/home-appliances-repair/appliances-repair-service/"
+      name: "Appliances Repair Service",
+      url: "https://www.fajservices.ae/services/home-appliances-repair/appliances-repair-service/"
+    }
+  ]
+};
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "name": "Best Home Appliances Repair and Maintenance Service in Dubai - FAJ Technical Services L.L.C",
+      "image": [
+        "https://www.fajservices.ae/img/FajLogo.svg"
+      ],
+      "url": "https://www.fajservices.ae/services/home-appliances-repair/appliances-repair-service/",
+      "telephone": "+971 4 330 0002",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "3426",
+        "bestRating": "5"
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Dubai" },
+        { "@type": "City", "name": "Sharjah" },
+        { "@type": "City", "name": "Abu Dhabi" }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Home Appliances Repair Services",
+        "itemListElement": [
+          {
+            "@type": "OfferCatalog",
+            "name": "Appliance Repair Services",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": { "@type": "Service", "name": "Refrigerator Repair" }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": { "@type": "Service", "name": "Washing Machine Repair" }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": { "@type": "Service", "name": "Oven Repair" }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": { "@type": "Service", "name": "Dishwasher Repair" }
+              }
+            ]
+          }
+        ]
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Haris M" },
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "reviewBody": "We're facing the issue with our franke coffee machine and we reached the correct service centre FAJ done a good job now thr coffee machine is working fine thank you team FAJ and technician Que"
+        },
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Janson Miller" },
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "reviewBody": "I had my nine year Jura Z6 coffee machine repaired by Q. He was super friendly and knowledgeable and repaired my machine with no problem. I highly recommend FAJ."
+        },
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Bassam SH" },
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "reviewBody": "I am very satisfied with their prompt, efficient & cordial service from Technician Abdullah, as he was very professional, on time, responsive and reasonably priced."
+        },
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Gintarė Sutkauskaitė" },
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "reviewBody": "Technician Que was fantastic, fixed both of my coffee machines and been very thorough in explaining what preventative actions to take in the future, highly recommend their service!"
+        },
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Alexander Burger" },
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "reviewBody": "Fantastic service in cleaning our BBQ. Abdullah and his team member did a great job with their pick up from home and delivery back to home again."
+        }
+      ]
+    },
+    {
+      "@type": "VideoObject",
+      "name": "Home Appliances Repair & Maintenance Service in Dubai",
+      "description": "Expert home appliances repair, installation, and maintenance across Dubai. Watch our certified technicians service refrigerators, washing machines, ovens, and dishwashers.",
+      "thumbnailUrl": "https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/home-appliances-repair-new-design-images/appliances-repair-service-top/public",
+      "uploadDate": "2024-01-15T08:00:00+04:00",
+      "contentUrl": "https://www.youtube.com/watch?v=45IUOnKHjKw",
+      "embedUrl": "https://www.youtube.com/embed/45IUOnKHjKw"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.fajservices.ae/services/home-appliances-repair/appliances-repair-service/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "When is the best time to have my appliance repaired?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "When you see a problem, contact our experts right away. If you suspect a problem, such as an appliance not working properly or performing poorly, it may require repair."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What kinds of appliances does FAJ repair, replace, maintain, and install?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our skilled experts repair freezers, refrigerators, dryers, ovens, stoves, microwaves, washers, dishwashers, ranges, and more."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should I do when my appliance breaks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Unplug it immediately and turn off the main power circuit. Clean any leaks and contact our appliance repair specialist as soon as possible."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does FAJ take for an appliance to be repaired?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our repair experts provide an estimated completion time before starting the job so you know what to expect."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it better to repair or replace an appliance?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If the repair costs less than half the price of a new one and the appliance isn’t too old, repair it. Otherwise, replace it."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.fajservices.ae/services/home-appliances-repair/appliances-repair-service/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.fajservices.ae/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://www.fajservices.ae/services/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Home Appliances Repair",
+          "item": "https://www.fajservices.ae/services/home-appliances-repair/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Appliances Repair Service",
+          "item": "https://www.fajservices.ae/services/home-appliances-repair/appliances-repair-service/"
+        }
+      ]
     }
   ]
 };
 
 const contactData = {
-  "phone": "971507464712",
-  "phoneDisplay": "+971 50 746 4712",
-  "whatsapp": "971507464712",
-  "email": "info@fajservices.ae"
+  phone: "97143300002",
+  phoneDisplay: "+971 4 330 0002",
+  whatsapp: "971507464712",
+  whatsappDisplay: "+971 50 746 4712",
+  email: "info@fajservices.ae",
+  address: "Warehouse No - S-02 Gate 35 Street 18b - Al Quoz - Al Quoz Industrial Area 4 - Dubai - UAE",
+  hours: "Monday to Sunday: 8:00 AM - 8:00 PM"
 };
 
 const heroData = {
-  "title": "Expert Home Appliances Repair and Service Center Near You in Dubai",
-  "subtitle": "Freestanding Appliance Specialists Since 2010",
-  "paragraphs": [
-    "Since 2010, we have been providing reliable appliance repair services."
-  ],
-  "primaryAction": "Book Appliance Repair",
-  "secondaryAction": "WhatsApp Now",
-  "bookingLabel": "Freestanding Appliance Diagnostics",
-  "image": {
-    "id": "appliance-repair-new-design-images/appliances-repair-service-top",
-    "src": "/img/appliance-repair-new-design-images/appliances-repair-service-top.webp",
-    "alt": "FAJ technician providing home appliance repair service in Dubai",
-    "width": 853,
-    "height": 853
+  eyebrow: "EXPERT APPLIANCE SERVICE",
+  title: "Expert Home Appliances Repair and Service Center Near You in Dubai",
+  subtitle: "Freestanding Appliance Specialists Since 2010",
+  description: "When your daily household appliances fail, FAJ Technical Services provides prompt, reliable same-day repair and diagnostic solutions across Dubai. Our certified technicians service refrigerators, washing machines, dryers, dishwashers, cooking ranges, and ovens with genuine spare parts and up to 3 months warranty.",
+  badge: "Since 2010",
+  warrantyBadge: "Up to 3-Month Warranty",
+  supportBadge: "7-Day Service Support",
+  contentWidth: "50%",
+  buttonStyle: "classic",
+  showPhone: false,
+  showCall: false,
+  showWhatsapp: true,
+  image: {
+    id: "home-appliances-repair-new-design-images/appliances-repair-service-top",
+    src: "https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/home-appliances-repair-new-design-images/appliances-repair-service-top/public",
+    alt: "Expert Home Appliances Repair and Service in Dubai",
+    width: 900,
+    height: 600
+  },
+  primaryAction: {
+    label: "BOOK APPLIANCE REPAIR",
+    action: "openBooking"
+  },
+  secondaryAction: {
+    label: "WHATSAPP US",
+    href: "https://api.whatsapp.com/send?phone=+971507464712&text=Hello%20FAJ%20Technical%20Services,%20I%20would%20like%20to%20inquire%20about%20Home%20Appliances%20Repair"
   }
 };
 
-const overviewData = {
-  "paragraphs": [
-    "We understand that appliances can break down unexpectedly, which is why we offer quality and affordable solutions. Our trained technicians are available throughout Dubai, Sharjah, and Abu Dhabi to repair large appliances at your location."
-  ]
-};
-
 const pricingData = {
-  "eyebrow": "Service Prices",
-  "title": "Our Primary Appliance Service Rates",
-  "description": "Transparent inspection, professional cleaning and secure installation pricing across Dubai.",
-  "defaultBadge": "Professional Care",
-  "pricePrefix": "Starting from",
-  "actionLabel": "Book now",
-  "items": [
+  eyebrow: "TRANSPARENT RATES",
+  title: "AFFORDABLE HOME APPLIANCES SERVICE PRICING",
+  description: "Book certified appliance technicians with transparent starting rates for technical inspection, deep cleaning, and installation across Dubai.",
+  actionLabel: "Book Now",
+  items: [
     {
-      "title": "Inspection / Check-Up Cost",
-      "price": "AED 173",
-      "description": "Just tell us about your faulty appliance, and we will provide a quote for repair / parts. Our technician will arrive at a time that is suitable for you.",
-      "popup": {
-        "title": "Inspection / Check-Up Cost scope of work",
-        "sections": [
+      badge: "Technical Diagnosis",
+      title: "Inspection / Check-Up Cost",
+      price: "AED 173",
+      image: "appliance-repair-new-design-images/appliances-repair-service-top",
+      actionLabel: "Book Now",
+      bookingLabel: "Appliance Technical Inspection",
+      description: "Just tell us about your faulty appliance, and we will provide a quote for repair / parts. Our technician will arrive at a time that is suitable for you.",
+      popup: {
+        title: "Inspection / Check-Up Cost Scope of Work",
+        sections: [
           {
-            "items": [
+            items: [
               "Inspection visit fee",
               "Rectification of faults",
               "Cost of minor repair work",
@@ -104,27 +282,30 @@ const pricingData = {
             ]
           },
           {
-            "label": "Excluded",
-            "text": "Cost for any repair work, procurement cost, cost of any new parts and installation, if required."
+            label: "Excluded",
+            text: "Cost for any repair work, procurement cost, cost of any new parts and installation, if required."
           },
           {
-            "label": "Terms & Conditions",
-            "text": "*Starting from AED 173, callout fee applies based on the type, brand, capacity of the appliance unit, and location for each diagnosis."
+            label: "Terms & Conditions",
+            text: "*Starting from AED 173, callout fee applies based on the type, brand, capacity of the appliance unit, and location for each diagnosis."
           }
         ]
       }
     },
     {
-      "title": "Appliance Cleaning",
-      "subtitle": "50-Day Service Warranty",
-      "badge": "Popular",
-      "price": "AED 340",
-      "description": "Book reliable appliance cleaning professionals for your equipment. Our teams offer competitive pricing & limited-time availability across Dubai.",
-      "popup": {
-        "title": "Depending on quantities, capacity, type, model, and area",
-        "sections": [
+      badge: "Popular",
+      title: "Appliance Cleaning",
+      price: "AED 340",
+      image: "The-Most-Common-Reasons-for-Appliance-Breakdowns",
+      actionLabel: "Book Now",
+      bookingLabel: "Appliance Deep Cleaning",
+      description: "Book reliable appliance cleaning professionals for your equipment. Our teams offer competitive pricing & limited-time availability across Dubai.",
+      popup: {
+        title: "Cleaning Appliances Scope of Work",
+        sections: [
           {
-            "items": [
+            heading: "Scope depends on quantities, capacity, type, model, and area:",
+            items: [
               "Hob Cleaning",
               "Oven Cleaning",
               "Freezer Cleaning",
@@ -136,25 +317,30 @@ const pricingData = {
             ]
           },
           {
-            "label": "Excluded",
-            "text": "Cost for any repair work, procurement cost, cost of any new parts and installation, if required."
+            label: "Excluded",
+            text: "Cost for any repair work, procurement cost, cost of any new parts and installation, if required."
           },
           {
-            "label": "Terms & Conditions",
-            "text": "*Starting from AED 340 fee applies based on the Capacity: Based on Type, Model, and Area for each unit."
+            label: "Terms & Conditions",
+            text: "*Starting from AED 340 fee applies based on the Capacity: Based on Type, Model, and Area for each unit."
           }
         ]
       }
     },
     {
-      "title": "Home Appliances Installation",
-      "price": "AED 280",
-      "description": "FAJ expert technicians will provide assistance to install home appliances. Upgrade your kitchen with professional appliance installations!",
-      "popup": {
-        "title": "Depending on quantities, capacity, type, model, and area",
-        "sections": [
+      badge: "Professional Setup",
+      title: "Home Appliances Installation",
+      price: "AED 280",
+      image: "dishwasher-repair-service",
+      actionLabel: "Book Now",
+      bookingLabel: "Appliance Professional Installation",
+      description: "FAJ expert technicians will provide assistance to install home appliances. Upgrade your kitchen with professional appliance installations!",
+      popup: {
+        title: "Appliances Installation Scope of Work",
+        sections: [
           {
-            "items": [
+            heading: "Scope depends on quantities, capacity, type, model, and area:",
+            items: [
               "Refrigerator Installation",
               "Dish Washer Installation",
               "Electric Cooker Installation",
@@ -165,12 +351,12 @@ const pricingData = {
             ]
           },
           {
-            "label": "Excluded",
-            "text": "Costs related to MEP, carpentry, gypsum ceilings, painting, repair work, procurement-related installation parts / materials, and installation as needed."
+            label: "Excluded",
+            text: "Costs related to MEP, carpentry, gypsum ceilings, painting, repair work, procurement-related installation parts / materials, and installation as needed."
           },
           {
-            "label": "Terms & Conditions",
-            "text": "*Starting from AED 280 fee applies based on the Capacity: Based on Type, Model, and Area for each unit."
+            label: "Terms & Conditions",
+            text: "*Starting from AED 280 fee applies based on the Capacity: Based on Type, Model, and Area for each unit."
           }
         ]
       }
@@ -178,717 +364,723 @@ const pricingData = {
   ]
 };
 
-const contractsData = {
-  "eyebrow": "Preventive Protection",
-  "title": "Flexible Home Appliance Maintenance Plans",
-  "description": "Choose scheduled preventive care and breakdown support suited to your appliances, property and service priorities.",
-  "featuredIndex": 0,
-  "actionLabel": "Get a quick quote",
-  "plans": [
-    {
-      "title": "Maintenance Contract (Yearly)",
-      "tagline": "Comprehensive year-round appliance protection and priority support.",
-      "badge": "Best Value",
-      "features": [
-        "Limited or unlimited breakdown callouts",
-        "Two or three preventive maintenance visits",
-        "Options with included or excluded spare parts",
-        "Packages with or without additional MEP services"
-      ]
-    },
-    {
-      "title": "Maintenance Contract (6 Months)",
-      "tagline": "Balanced scheduled coverage for frequently used home appliances.",
-      "badge": "Popular",
-      "features": [
-        "Limited or unlimited breakdown callouts",
-        "One or two preventive maintenance visits",
-        "Electrical, cooling and mechanical checks",
-        "Condition reports and repair recommendations"
-      ]
-    },
-    {
-      "title": "Maintenance Contract (3 Months)",
-      "tagline": "Flexible short-term support for immediate appliance-care needs.",
-      "badge": "Flexible",
-      "features": [
-        "One preventive maintenance visit",
-        "Operating and safety inspection",
-        "Cleaning and performance checks",
-        "Optional emergency and parts coverage"
-      ]
-    }
-  ],
-  "footnote": "Terms and conditions apply. Custom packages are available for villas, apartments, landlords and multi-property customers."
-};
-
-const serviceCenterData = {
-  "eyebrow": "Expert Freestanding Care",
-  "title": "Best Home Appliance Service Center",
-  "description": "If you need appliance repair, FAJ is your best choice for fast and affordable service in Dubai and Sharjah.",
-  "paragraphs": [
-    "Our expert team is ready to tackle any issue, whether it's a washing machine that won't drain, refrigerator that's not working, an oven that isn't heating, or a dishwasher that won't switch on.",
-    "We're nearby and can get your appliances fixed quickly and efficiently."
-  ],
-  "cards": [
-    {
-      "title": "Fast and Reliable Appliance Service",
-      "featured": true,
-      "paragraphs": [
-        "At FAJ Technical Services L.L.C, we understand that appliance breakdowns never happen at a convenient time. That's why our trained and qualified technicians are here to provide you with reliable appliance repair services. With our help, you can avoid the expense of purchasing a new appliance and get your appliance up and running again before you even have a chance to stress about it."
-      ]
-    },
-    {
-      "title": "FAJ Technical Workshop",
-      "paragraphs": [
-        "If you require repairs for your coffee machine, stand mixer, vacuum cleaner, or other domestic appliances or commercial equipment, please contact us. The FAJ workshop is located near the Umm Suqeim road and is easily accessible from Al Khail Road and Sheikh Zayed Road.",
-        "When you drop off your appliance at the workshop, you will receive a discount on the technical inspection fee and other services."
-      ]
-    }
-  ]
-};
-
 const videoData = {
-  "id": "home-appliance-service-video",
-  "eyebrow": "Professional Appliance Support",
-  "title": "Home Appliance Repair and Maintenance in Dubai",
-  "description": "Professional inspection and repair help restore appliance safety, performance and everyday reliability.",
-  "videoId": "45IUOnKHjKw",
-  "variant": "framed",
-  "blockInteraction": false,
-  "allowFullScreen": true,
-  "parameters": {
-    "si": "2x6Q4RPxVZUtOVKy",
-    "autoplay": "1",
-    "mute": "0",
-    "controls": "1",
-    "modestbranding": "1",
-    "rel": "0",
-    "playsinline": "1"
+  eyebrow: "SERVICE IN ACTION",
+  title: "WATCH OUR CERTIFIED TECHNICIANS AT WORK",
+  description: "See how our factory-trained appliance specialists conduct on-site diagnostics, component-level repairs, and preventive servicing across Dubai households.",
+  videoId: "45IUOnKHjKw",
+  videoSide: "left",
+  showCta: true,
+  showPhone: false,
+  showWhatsapp: true,
+  contactCTA: {
+    text: "Consult via WhatsApp",
+    href: "https://api.whatsapp.com/send?phone=+971507464712&text=Hello%20FAJ%20Technical%20Services,%20I%20saw%20your%20video%20and%20need%20appliance%20repair%20assistance"
   }
 };
 
+const serviceCenterData = {
+  id: "home-appliance-service-center",
+  eyebrow: "PROFESSIONAL CARE",
+  title: "FAST AND RELIABLE APPLIANCES SERVICE",
+  plain: true,
+  paragraphs: [
+    {
+      parts: [
+        "At ",
+        {
+          text: "FAJ Technical Services L.L.C",
+          strong: true,
+          href: "https://maps.app.goo.gl/soNMACLuaHwdCzKx7",
+          external: true
+        },
+        ", we understand that appliance breakdowns never happen at a convenient time. That's why our trained and qualified technicians are here to provide you with reliable appliance repair services. With our help, you can avoid the expense of purchasing a new appliance and get your appliance up and running again before you even have a chance to stress about it."
+      ]
+    },
+    {
+      parts: [
+        "If you require repairs for your refrigerator, washing machine, dryer, dishwasher, cooker, oven, or other domestic equipment, please contact us. The ",
+        {
+          text: "FAJ workshop",
+          strong: true,
+          href: "https://www.google.com/maps/dir//Warehouse+No+-+S-02+Gate+35+Street+18b+-+Al+Quoz+-+Al+Quoz+Industrial+Area+4+-+Dubai+-+United+Arab+Emirates/@25.1105958,55.1452595,22158m/data=!3m1!1e3!4m8!4m7!1m0!1m5!1m1!1s0x3e5f699a600aceeb:0xa6121b25d557aa94!2m2!1d55.227661!2d25.1106186?entry=ttu&g_ep=EgoyMDI1MDQyOS4wIKXMDSoASAFQAw%3D%3D",
+          external: true
+        },
+        " is located near the Umm Suqeim road and is easily accessible from Al Khail Road and Sheikh Zayed Road."
+      ]
+    },
+    "When you drop off your appliance at the workshop, you will receive a discount on the technical inspection fee and other services."
+  ]
+};
+
 const maintenanceImportanceData = {
-  "eyebrow": "Preventive Diagnostics",
-  "title": "Why is Appliance Maintenance Service Important in Dubai?",
-  "description": "Proper appliance maintenance is essential for extending lifespan and enhancing efficiency, especially in Dubai's climate. Here are the main benefits:",
-  "items": [
+  id: "appliance-maintenance-importance",
+  eyebrow: "INSPECTION AND CLEANING",
+  title: "WHY IS APPLIANCE MAINTENANCE SERVICE IMPORTANT IN DUBAI?",
+  description: "Proper appliance maintenance is essential for extending lifespan and enhancing efficiency, especially in Dubai's climate. Here are the main benefits:",
+  items: [
     {
-      "icon": "lifespan",
-      "title": "Extended Lifespan",
-      "description": "Regular maintenance helps appliances last longer, saving on replacement costs."
+      icon: "lifespan",
+      title: "EXTENDED LIFESPAN:",
+      description: "Regular maintenance helps appliances last longer, saving significantly on premature replacement costs."
     },
     {
-      "icon": "zap",
-      "title": "Improved Efficiency",
-      "description": "Well-maintained appliances use less energy, leading to lower utility bills, which is essential in Dubai."
+      icon: "zap",
+      title: "IMPROVED EFFICIENCY:",
+      description: "Well-maintained appliances use less electricity and water, leading to lower monthly utility bills in Dubai."
     },
     {
-      "icon": "dollar-savings",
-      "title": "Preventing Costly Repair",
-      "description": "Catching minor issues early prevents them from escalating into expensive repair."
+      icon: "dollar-savings",
+      title: "PREVENTING COSTLY REPAIRS:",
+      description: "Catching minor wear and sensor faults early prevents them from escalating into expensive emergency breakdowns."
     },
     {
-      "icon": "wrench",
-      "title": "Preserving Appliance Integrity",
-      "description": "Regular cleaning prevents dust buildup that affects performance."
+      icon: "wrench",
+      title: "PRESERVING APPLIANCE INTEGRITY:",
+      description: "Regular deep cleaning prevents dust, lint, and grease buildup that degrade internal electrical and mechanical parts."
     },
     {
-      "icon": "diagnostics",
-      "title": "Early Problem Detection",
-      "description": "Routine checks help identify potential issues before they become serious."
-    },
-    {
-      "icon": "budget-check",
-      "title": "Cost-Effective",
-      "description": "Maintenance costs are lower than early replacements or major repair. Investing in appliance care ensures safety and efficiency and is a smart economic choice in Dubai."
-    },
-    {
-      "icon": "thermometer",
-      "title": "Energy Efficiency",
-      "description": "Regularly maintaining your appliances, can improve their efficiency and save you money."
+      icon: "diagnostics",
+      title: "EARLY PROBLEM DETECTION:",
+      description: "Routine diagnostic checks identify potential bearing, compressor, and PCB issues before complete failure occurs."
     }
   ]
 };
 
 const commonProblemsData = {
-  "eyebrow": "Troubleshooting Guide",
-  "title": "The Most Common Problems with Home Appliances",
-  "description": "",
-  "items": [
+  id: "appliance-common-problems",
+  eyebrow: "WARNING SIGNALS",
+  title: "THE MOST COMMON PROBLEMS WITH HOME APPLIANCES",
+  items: [
     {
-      "title": "Refrigerator Problem",
-      "description": "Most fridge malfunctions are related to cooling issues, including problems with the defrost system, fan motor, compressor, or condenser coils."
+      number: "01",
+      title: "REFRIGERATOR COOLING FAULTS",
+      description: "Most fridge malfunctions stem from faulty defrost heaters, defective condenser fan motors, gas leaks, or failing compressors."
     },
     {
-      "title": "Dishwashers Problem",
-      "description": "The most issues with dishwashers are bad cleaning and drying. Common water leaks and drainage. Some electrical issues or PCB failures."
+      number: "02",
+      title: "DISHWASHER DRAINAGE & LEAKS",
+      description: "Clogged drain pumps, deteriorated door seals, spray arm blockages, and PCB controller failures result in poor washing and standing water."
     },
     {
-      "title": "Washing Machine Problem",
-      "description": "A common issue with washing machines is drainage problems, leaks, and PCB faulty. Also, broken belt or faulty door switch or drum from spinning."
+      number: "03",
+      title: "WASHING MACHINE SPIN ISSUES",
+      description: "Drainage failures, worn motor drive belts, broken door interlocks, or electronic sensor issues prevent the drum from spinning properly."
     },
     {
-      "title": "Tumble Dryer Problem",
-      "description": "Dryers can stop the drum from spinning and often make noise without drying clothes properly. Common issues are a broken heating element or control board."
+      number: "04",
+      title: "TUMBLE DRYER HEATING FAILURES",
+      description: "Dryers stopping drum rotation, emitting burning smells, or failing to heat are commonly caused by blown heating elements or thermostats."
     },
     {
-      "title": "Stove Problem",
-      "description": "Uneven heating or flame issues, such as a broken burner element, bad switch, or electric gas, are the most common problems with stoves."
+      number: "05",
+      title: "STOVE & COOKER IGNITION FAULTS",
+      description: "Uneven flame distribution, broken spark plugs, clogged gas jets, and faulty safety thermocouple valves affect cooking range operation."
     },
     {
-      "title": "Ovens Problems",
-      "description": "Most ovens have common problems like not heating properly, burners not igniting, ignition issues on gas models, broken knobs, and faulty controllers or valves."
+      number: "06",
+      title: "OVEN TEMPERATURE INACCURACY",
+      description: "Ovens that do not heat, fail to ignite, have broken thermostat knobs, or suffer from electronic controller malfunctions."
     },
     {
-      "title": "Freezer Problem",
-      "description": "Common issues with a freezer include water leaks, no ice, a malfunctioning ice maker, a malfunctioning PCB, motor, or compressor, and less cooling."
+      number: "07",
+      title: "FREEZER EXCESSIVE FROST BUILDUP",
+      description: "Defrost timer failures, faulty temperature sensors, and worn door gaskets cause heavy frost buildup, ice maker failure, and cooling loss."
     },
     {
-      "title": "Coffee Machine Problem",
-      "description": "Whether they are drip or single-serve coffee makers, there are a few reasons why water flow in coffee makers is often slow or nonexistent."
+      number: "08",
+      title: "COFFEE MACHINE FLOW OBSTRUCTION",
+      description: "Scale buildup, solenoid valve clogs, defective brewing group motors, and failing thermoblocks impede proper water flow and pressure."
     }
   ]
 };
 
+// Section 27: Services Offered (4 Cards, Static Grid)
 const servicesOfferedData = {
-  "id": "home-appliance-services",
-  "eyebrow": "Freestanding Solutions",
-  "title": "HERE ARE THE SERVICES WE OFFER FOR HOME APPLIANCES",
-  "description": "We specialize in all types and brands of home appliances, including built-in units.",
-  "items": [
+  id: "appliance-services-offered",
+  eyebrow: "PROFESSIONAL SOLUTIONS",
+  title: "HERE ARE THE SERVICES WE OFFER FOR HOME APPLIANCES",
+  description: "We specialize in all types and brands of freestanding and integrated home appliances. Here's a detailed overview of our primary services in Dubai, UAE:",
+  bottomTitle: "Schedule Your FAJ Appliance Cleaning, Appliance Repair & Maintenance Services Today!",
+  bottomDescription: "Regular maintenance is essential for the optimal performance, efficiency, and longevity of your home appliances. Feel free to reach out if you need specific services or have any questions!",
+  cta: {
+    whatsapp: "https://api.whatsapp.com/send?phone=+971507464712&text=Hello",
+  },
+  items: [
     {
-      "icon": "tool",
-      "title": "Installation",
-      "description": "Expert installation of various types and brands of home appliances, ensuring optimal performance and efficiency.",
-      "actionLabel": "Book Installation",
-      "bookingLabel": "Home Appliance Installation"
+      icon: "tool",
+      title: "APPLIANCE INSTALLATION:",
+      description: "Professional installation and alignment of all freestanding and built-in home appliances, ensuring safe electrical, gas, and plumbing connections.",
+      actionLabel: "REQUEST INSTALLATION",
+      bookingLabel: "Home Appliance Installation"
     },
     {
-      "icon": "diagnostics",
-      "title": "Diagnostics",
-      "description": "Comprehensive fault-finding services to effectively diagnose issues. We provide eligibility assessments and detailed quotations to address any concerns with your system.",
-      "actionLabel": "Book Diagnostics",
-      "bookingLabel": "Home Appliance Diagnostics"
+      icon: "diagnostics",
+      title: "COMPREHENSIVE DIAGNOSTICS:",
+      description: "In-depth fault-finding and precision testing to effectively diagnose electronic board, motor, and mechanical component issues.",
+      actionLabel: "REQUEST DIAGNOSTICS",
+      bookingLabel: "Home Appliance Diagnostics"
     },
     {
-      "icon": "repair",
-      "title": "Repair Service",
-      "description": "Efficient repair services for all appliance components, ensuring a quick resolution to issues such as leaks, electrical failures, and system malfunctions. Feel free to reach out if you need specific services or have any questions!",
-      "actionLabel": "Book Repair",
-      "bookingLabel": "Home Appliance Repair Service"
+      icon: "repair",
+      title: "ON-SITE REPAIR SERVICE:",
+      description: "Prompt on-site repair services for all household appliances, resolving water leaks, cooling faults, heating issues, and electrical failures.",
+      actionLabel: "REQUEST REPAIR",
+      bookingLabel: "Home Appliance Repair Service"
     },
     {
-      "icon": "amc-contract",
-      "title": "Annual Maintenance Contract",
-      "description": "This contract outlines the terms and services covered for the annual maintenance of your appliances. Regular maintenance is essential for optimal performance, efficiency, and longevity of your home appliances.",
-      "actionLabel": "Request AMC Quote",
-      "bookingLabel": "Home Appliance AMC"
+      icon: "amc-contract",
+      title: "ANNUAL MAINTENANCE CONTRACT:",
+      description: "Comprehensive annual maintenance contracts (AMC) for villas, apartments, and residential properties to guarantee year-round appliance reliability.",
+      actionLabel: "REQUEST AMC",
+      bookingLabel: "Home Appliance Annual Maintenance Contract"
     }
   ]
 };
 
 const benefitsData = {
-  "eyebrow": "Service Deliverables",
-  "title": "The Benefits of Appliances Service Dubai",
-  "description": "",
-  "items": [
+  eyebrow: "PREMIUM OUTCOMES",
+  title: "The Benefits of Appliance Service Dubai",
+  description: "Routine care keeps your home appliances operating safely and efficiently while protecting against sudden breakdowns.",
+  stats: [
     {
-      "icon": "safety-compliance",
-      "title": "Ensuring Safety",
-      "description": "Routine checks reduce the risk of electrical faults, gas leaks, and other hazards, keeping your home and family safe."
+      value: "2010",
+      label: "SERVING THE UAE SINCE"
     },
     {
-      "icon": "gear-precision",
-      "title": "Optimal Performance",
-      "description": "Regular maintenance helps your appliances run smoothly and efficiently, delivering the best results every time."
+      value: "7 DAY",
+      label: "SUPPORT AVAILABLE"
+    }
+  ],
+  benefits: [
+    {
+      id: "appliance-service-safety",
+      number: "01",
+      title: "Ensuring Safety",
+      description: "Routine checks reduce the risk of electrical short circuits, gas leaks, and water damage, keeping your family and home safe.",
+      icon: "safety-compliance"
     },
     {
-      "icon": "zap",
-      "title": "Lower Energy Bills",
-      "description": "Energy efficient appliances translate to monthly savings on utility bills, putting more money back in your pocket."
+      id: "appliance-service-performance",
+      number: "02",
+      title: "Optimal Performance",
+      description: "Regular servicing ensures your appliances run at peak factory efficiency, delivering consistent, dependable results every day.",
+      icon: "gear-precision"
     },
     {
-      "icon": "dollar-savings",
-      "title": "Saving Money on Repair",
-      "description": "Preventive maintenance catches issues early, reducing the risk of major breakdowns and expensive repair costs."
+      id: "appliance-service-energy",
+      number: "03",
+      title: "Lower Energy Bills",
+      description: "Clean condenser coils and calibrated heating elements consume significantly less electricity, reducing your monthly DEWA bill.",
+      icon: "zap"
     },
     {
-      "icon": "lifespan",
-      "title": "Extending Appliance Lifespan",
-      "description": "Proper care and timely servicing can significantly increase life of your home appliances, delaying the need for replacements."
+      id: "appliance-service-repair-savings",
+      number: "04",
+      title: "Saving Money on Repair",
+      description: "Preventive maintenance detects component wear early, avoiding catastrophic breakdowns and costly emergency part replacements.",
+      icon: "dollar-savings"
     },
     {
-      "icon": "peace-of-mind",
-      "title": "Peace of Mind",
-      "description": "Knowing your appliances are in top condition gives you confidence and removes the stress of unexpected failures."
+      id: "appliance-service-lifespan",
+      number: "05",
+      title: "Extending Appliance Lifespan",
+      description: "Proper care and timely servicing can add years of reliable life to your appliances, postponing the expense of buying new ones.",
+      icon: "lifespan"
+    },
+    {
+      id: "appliance-service-confidence",
+      number: "06",
+      title: "Peace of Mind",
+      description: "Knowing all your essential home equipment is inspected and backed by FAJ warranty brings complete confidence and convenience.",
+      icon: "peace-of-mind"
     }
   ]
 };
 
 const whyChooseUsData = {
-  "eyebrow": "Guaranteed Satisfaction",
-  "title": "CHOOSE US FOR RELIABLE, EXCEPTIONAL SERVICE TAILORED TO YOUR NEEDS!",
-  "description": "",
-  "items": [
+  id: "appliance-why-choose-us",
+  eyebrow: "WHY CHOOSE FAJ ?",
+  title: "CHOOSE US FOR RELIABLE, EXCEPTIONAL SERVICE TAILORED TO YOUR NEEDS!",
+  items: [
     {
-      "icon": "fast-response",
-      "title": "Reliable, Priority, and Quick",
-      "subtitle": "Priority and Quick",
-      "description": "You can count on efficient service! Our same-day repair or next-day service visits ensure that your needs are met quickly."
+      icon: "fast-response",
+      badge: "PRIORITY SUPPORT",
+      title: "Reliable, Priority, and Quick",
+      description: "You can count on efficient service! Our same-day repair or next-day service visits ensure that your urgent appliance needs are met quickly."
     },
     {
-      "icon": "peace-of-mind",
-      "title": "Feeling Of Calm",
-      "subtitle": "Peace of Mind",
-      "description": "With a maintenance contract, you get a full year of service, ensuring your appliance runs smoothly and providing peace of mind."
+      icon: "peace-of-mind",
+      badge: "ANNUAL CONTRACT",
+      title: "Feeling Of Calm",
+      description: "With an annual maintenance contract, you get year-round service, ensuring your appliances run smoothly with guaranteed peace of mind."
     },
     {
-      "icon": "calendar",
-      "title": "You Are in Control",
-      "subtitle": "Convenient Scheduling",
-      "description": "Choose a day and time for your appliance repair in Dubai or Sharjah. With a 3-4 hour window for when our technician will arrive."
+      icon: "calendar-clock",
+      badge: "FLEXIBLE SLOTS",
+      title: "You Are in Control",
+      description: "Choose a convenient day and time for your appliance repair across Dubai and Sharjah, with a clear 3-4 hour arrival window."
     },
     {
-      "icon": "award-expert",
-      "title": "We Are Experts",
-      "subtitle": "Technical Experience",
-      "description": "We are experts in appliance repair this is why most major brands trust us to handle their service and maintenance needs."
+      icon: "gear-precision",
+      badge: "TRUSTED EXPERTISE",
+      title: "We Are Experts",
+      description: "Over 15 years of appliance engineering expertise is why leading residential communities and luxury brands trust FAJ technicians."
     },
     {
-      "icon": "dollar-savings",
-      "title": "Great Value",
-      "subtitle": "Clear Inspection",
-      "description": "Inspection fee includes diagnosis, transport, and reinstallation upto two appliances at the same location in Dubai."
+      icon: "coins-stack",
+      badge: "TRANSPARENT VALUE",
+      title: "Great Value",
+      description: "Our call-out diagnosis fee covers transport, fault analysis, and reinstallation for up to two appliances at the same location."
     },
     {
-      "icon": "guarantee-seal",
-      "title": "Trustworthy",
-      "subtitle": "Trusted Since 2010",
-      "description": "Our skilled appliance technicians are highly trained, and we provide excellent service for a variety of major brands."
+      icon: "shield",
+      badge: "CERTIFIED PROS",
+      title: "Trustworthy",
+      description: "Our licensed technicians carry genuine OEM replacement parts and deliver workmanship backed by an official guarantee."
     }
   ]
 };
 
-const featuredBrandsData = {
-  "eyebrow": "Brand Service Specialists",
-  "title": "Featured Home Appliance Brands We Service",
-  "description": "Select a linked brand title to visit its dedicated service page, or book brand-specific diagnosis directly.",
-  "searchLabel": "Search featured home appliance brands",
-  "searchPlaceholder": "Search featured brands",
-  "emptyMessage": "No matching featured brand was found.",
-  "showAllLabel": "Show all featured brands",
-  "showLessLabel": "Show fewer brands",
-  "initialCount": 8,
-  "actionLabel": "Book Brand Service",
-  "items": [
+const brandsData = {
+  eyebrow: "APPROVED BRAND PARTNERS",
+  title: "FEATURED HOME APPLIANCE BRANDS WE SERVICE",
+  description: "Select a linked brand title to visit its dedicated service page, or book brand-specific diagnosis directly.",
+  searchLabel: "Search featured home appliance brands",
+  searchPlaceholder: "Search brands: LG, Samsung, Bosch, Siemens, Miele, Electrolux...",
+  emptyMessage: "No matching featured brand was found. Contact our team for assistance with any brand.",
+  showAllLabel: "Show all brands",
+  showLessLabel: "Show fewer brands",
+  initialCount: 12,
+  actionLabel: "Book Brand Service",
+  items: [
     {
-      "name": "LG Appliance Service",
-      "description": "FAJ is here to support you when things go wrong. We understand that your LG appliances are essential for daily life, keeping your food fresh and meals cooked."
+      name: "LG Appliance Service",
+      description: "Expert diagnostic, cooling, and electronic repair services for LG refrigerators, washing machines, dryers, and dishwashers in Dubai.",
+      href: "/services/home-appliances-repair/brands/lg/"
     },
     {
-      "name": "Samsung Appliance Service",
-      "description": "If you are facing any problems with your Samsung refrigerator, washer dryer, or dishwasher, contact the FAJ team for same-day repair service in Dubai."
+      name: "Samsung Appliance Service",
+      description: "Same-day repair and maintenance for Samsung digital inverter refrigerators, EcoBubble washers, dryers, and microwave ovens.",
+      href: "/services/home-appliances-repair/brands/samsung/"
     },
     {
-      "name": "Electrolux Appliance Service",
-      "description": "When you need Electrolux appliance repair in Dubai, we have a team of professional and qualified technicians available throughout the UAE."
+      name: "Bosch Appliance Service",
+      description: "Factory-trained service for German-engineered Bosch home appliances, Series 4/6/8 washing machines, dishwashers, and ovens.",
+      href: "/services/home-appliances-repair/brands/bosch/"
     },
     {
-      "name": "Bosch Appliance Service",
-      "description": "If you are looking for the best Bosch refrigerator repair company in Dubai, FAJ is the ideal choice. They are known for providing exceptional service for all Bosch home appliance repair and are recognized as the leading Bosch cooking range, Washing machine, refrigerator service provider in the area."
+      name: "Siemens Appliance Service",
+      description: "Specialized service and genuine spare parts for Siemens iQ500 and iQ700 washing machines, refrigerators, and built-in ovens.",
+      href: "/services/home-appliances-repair/brands/siemens/"
     },
     {
-      "name": "Viking Appliance Service",
-      "description": "Your Viking appliances may require repair or maintenance and we can help. For high-quality Viking refrigerator, range or oven repair in Dubai, rely on FAJ."
+      name: "Miele Appliance Service",
+      description: "Premium maintenance and precision component calibration for luxury Miele washing machines, dishwashers, and refrigerators.",
+      href: "/services/home-appliances-repair/brands/miele/"
     },
     {
-      "name": "Daewoo Appliance Service",
-      "description": "We provide expert services for Daewoo appliance repair in Dubai. Our skilled technicians have the knowledge and expertise to diagnose and fix issues with Daewoo refrigerator, dishwasher, dryer and more."
+      name: "Electrolux Appliance Service",
+      description: "Qualified repair support and preventive care for Electrolux front-load washers, condenser dryers, and kitchen appliances.",
+      href: "/services/home-appliances-repair/brands/electrolux/"
     },
     {
-      "name": "Siemens Appliance Service",
-      "description": "Are you concerned about your Siemens washing machine malfunctioning and searching for a reliable Siemens appliances company in Dubai? Contact us for same-day service!"
+      name: "Whirlpool Appliance Service",
+      description: "Comprehensive repair solutions for Whirlpool 6th Sense washing machines, tumble dryers, and American-style refrigerators.",
+      href: "/services/home-appliances-repair/brands/whirlpool/"
     },
     {
-      "name": "Teka Appliance Service",
-      "description": "If you're searching for the best Teka appliances repair company in Dubai, FAJ is the ideal choice. They are renowned for delivering exceptional service for Teka refrigerators, washing machines, and oven repairs. FAJ is recognized as the leading Teka appliance service provider in the area."
+      name: "Smeg Appliance Service",
+      description: "Aesthetic and technical repairs for vintage and modern Smeg 50's Style refrigerators, cookers, dishwashers, and ovens.",
+      href: "/services/home-appliances-repair/brands/smeg/"
+    },
+    {
+      name: "Teka Appliance Service",
+      description: "Reliable maintenance and genuine spare parts for Teka built-in ovens, induction hobs, range hoods, and dishwashers.",
+      href: "/services/home-appliances-repair/brands/teka/"
+    },
+    {
+      name: "Gaggenau Appliance Service",
+      description: "Specialized luxury technician support for Gaggenau 400 and 200 series refrigeration, cooking suites, and dishwashers.",
+      href: "/services/home-appliances-repair/brands/gaggenau/"
+    },
+    {
+      name: "Ariston Appliance Service",
+      description: "Prompt on-site servicing for Ariston Hotpoint washing machines, condenser tumble dryers, and kitchen cooking appliances.",
+      href: "/services/home-appliances-repair/brands/ariston/"
+    },
+    {
+      name: "Sub-Zero Appliance Service",
+      description: "Factory-grade refrigeration diagnostics, dual-compressor repair, and precision temperature calibration for Sub-Zero units.",
+      href: "/services/home-appliances-repair/brands/sub-zero/"
     }
   ]
 };
 
-const otherBrandsData = {
-  "eyebrow": "Wider Brand Coverage",
-  "title": "Other Supported Home Appliance Brands",
-  "description": "Search the wider brand directory. Linked titles open an existing dedicated brand page.",
-  "searchLabel": "Search supported home appliance brands",
-  "searchPlaceholder": "Search by brand name",
-  "emptyMessage": "No matching brand was found. Contact us with the manufacturer and model number.",
-  "showAllLabel": "Show all brands",
-  "showLessLabel": "Show fewer brands",
-  "initialCount": 12,
-  "actionLabel": "Book Service",
-  "items": [
+const repairOverviewData = {
+  id: "appliance-repair-overview",
+  eyebrow: "TERMS & WARRANTY",
+  title: "PROFESSIONAL APPLIANCE REPAIR & SERVICE WARRANTY",
+  paragraphs: [
+    "At FAJ Technical Services L.L.C, our certified appliance technicians follow comprehensive manufacturer diagnostic and service protocols. Every appliance repair includes thorough technical inspection, genuine replacement parts, safety leak and electrical checks, and a comprehensive service warranty.",
+    "Whether your unit requires compressor replacement, drum belt realignment, heating element repair, electronic PCB troubleshooting, or motor maintenance, our teams guarantee reliable execution with full customer transparency throughout Dubai and Sharjah."
+  ]
+};
+
+const beforeAfterData = {
+  id: "appliance-before-after",
+  eyebrow: "PROVEN RESULTS",
+  title: "Before and After Appliance Servicing & Restoration",
+  description: "Witness the remarkable transformation of neglected and malfunctioning appliances restored to safe, immaculate, peak-efficiency performance.",
+  beforeImage: {
+    id: "before_img_1",
+    src: "https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/before_img_1/public",
+    alt: "Home appliance before servicing and repair",
+    width: 660,
+    height: 450
+  },
+  afterImage: {
+    id: "after_img_1",
+    src: "https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/after_img_1/public",
+    alt: "Home appliance after thorough service, cleaning and restoration",
+    width: 660,
+    height: 450
+  },
+  beforeAlt: "Before service",
+  afterAlt: "After service"
+};
+
+const galleryData = {
+  id: "appliance-gallery",
+  eyebrow: "OUR GALLERY",
+  title: "Home Appliance Service & Repair Gallery",
+  description: "A glimpse into our professional home appliance maintenance, repair, and cleaning services delivered across Dubai.",
+  items: [
     {
-      "name": "AEG",
-      "description": "AEG home appliance inspection, maintenance and repair support in Dubai."
+      id: "The-Most-Common-Reasons-for-Appliance-Breakdowns",
+      title: "Inspection & Diagnostics",
+      eyebrow: "Field Service",
+      alt: "Appliance Inspection & Diagnostics in Dubai",
+      width: 420,
+      height: 360
     },
     {
-      "name": "Ariston",
-      "description": "Ariston home appliance inspection, maintenance and repair support in Dubai."
+      id: "fridgerepair",
+      title: "Refrigerator Diagnostics",
+      eyebrow: "Cooling & Defrost",
+      alt: "Refrigerator cooling and compressor repair",
+      width: 420,
+      height: 360
     },
     {
-      "name": "Beko",
-      "description": "Beko home appliance inspection, maintenance and repair support in Dubai."
+      id: "washing-machine-repair",
+      title: "Washing Machine Service",
+      eyebrow: "Drum & Motor",
+      alt: "Washing machine repair and motor calibration",
+      width: 420,
+      height: 360
     },
     {
-      "name": "Blomberg",
-      "description": "Blomberg home appliance inspection, maintenance and repair support in Dubai."
+      id: "dishwasher-repair",
+      title: "Dishwasher Restoration",
+      eyebrow: "Pump & Hydraulics",
+      alt: "Dishwasher pump and seal restoration",
+      width: 420,
+      height: 360
     },
     {
-      "name": "Faber",
-      "description": "Faber home appliance inspection, maintenance and repair support in Dubai."
+      id: "gas-cooker-repair-services",
+      title: "Cooking Range Tuning",
+      eyebrow: "Burners & Ignition",
+      alt: "Cooking range and oven burner maintenance",
+      width: 420,
+      height: 360
     },
     {
-      "name": "Fagor",
-      "description": "Fagor home appliance inspection, maintenance and repair support in Dubai."
+      id: "fajteam-1-new",
+      title: "Certified FAJ Technicians",
+      eyebrow: "Quality Check",
+      alt: "FAJ technical team testing household appliances",
+      width: 420,
+      height: 360
+    }
+  ]
+};
+
+const contractsData = {
+  id: "appliance-maintenance-contracts",
+  eyebrow: "Service Contracts",
+  title: "Home Appliance Maintenance Contracts",
+  description: "Flexible preventive-care plans for frequently used appliances, villa kitchens and multi-property residential setups.",
+  featuredIndex: 0,
+  actionLabel: "Get a quick quote",
+  plans: [
+    {
+      title: "Maintenance Contract (Yearly)",
+      tagline: "Comprehensive year-round care with priority support options.",
+      badge: "Best Value",
+      features: [
+        "Limited or unlimited breakdown call-outs",
+        "Two or three planned preventive services",
+        "Options with included or excluded spare parts",
+        "Custom coverage for homes, villas and managed properties"
+      ]
     },
     {
-      "name": "Fisher & Paykel",
-      "description": "Fisher & Paykel home appliance inspection, maintenance and repair support in Dubai."
+      title: "Six-Month Maintenance Contract",
+      tagline: "Balanced preventive coverage for frequently used household equipment.",
+      badge: "Popular",
+      features: [
+        "Limited or unlimited breakdown call-outs",
+        "One or two preventive maintenance services",
+        "Cleaning, sensor and electrical safety checks",
+        "Equipment condition reporting"
+      ]
     },
     {
-      "name": "Foster",
-      "description": "Foster home appliance inspection, maintenance and repair support in Dubai."
+      title: "Three-Month Maintenance Contract",
+      tagline: "Flexible short-term support for immediate household appliance needs.",
+      badge: "Flexible",
+      features: [
+        "One preventive maintenance service",
+        "Operating and electrical-safety inspection",
+        "Motor, cooling, heating and sensor checks",
+        "Optional repair and parts coverage"
+      ]
+    }
+  ],
+  footnote: "Terms and conditions apply. Contract scope is confirmed after the equipment and usage requirements are assessed."
+};
+
+const blogsData = {
+  id: "appliance-blogs",
+  eyebrow: "LATEST INSIGHTS",
+  title: "NEWS & MAINTENANCE GUIDES",
+  description: "Helpful advice and guides from our appliance service engineers on keeping your home equipment running at peak performance.",
+  actionLabel: "View All Insights",
+  actionHref: "/blog/",
+  posts: [
+    {
+      image: "How-to-Ensure",
+      title: "How to Ensure a Safe, Successful Installation and Upgradation of Kitchen Appliances",
+      meta: {
+        comments: "5 comments",
+        author: "Admin"
+      },
+      description: "Learn how to ensure safe and successful installation and upgradation of freestanding and built-in kitchen appliances with expert technician guidance.",
+      href: "/blog/safe-successful-kitchen-appliance-installation/"
     },
     {
-      "name": "Gaggenau",
-      "description": "Gaggenau home appliance inspection, maintenance and repair support in Dubai."
+      image: "blogs/gas-cooker",
+      title: "The Gas Cooker: A Reliable Appliance for Modern Kitchens",
+      meta: {
+        comments: "5 comments",
+        author: "Admin"
+      },
+      description: "The gas cooker is well-known and dependable among kitchen appliances. Explore its features, benefits, and safety aspects for modern kitchens.",
+      href: "/blog/the-gas-cooker-a-reliable-appliance-for-modern-kitchens/"
     },
     {
-      "name": "Hitachi",
-      "description": "Hitachi home appliance inspection, maintenance and repair support in Dubai."
-    },
-    {
-      "name": "Hoover",
-      "description": "Hoover home appliance inspection, maintenance and repair support in Dubai."
-    },
-    {
-      "name": "Indesit",
-      "description": "Indesit home appliance inspection, maintenance and repair support in Dubai."
-    },
-    {
-      "name": "Neff",
-      "description": "Neff home appliance inspection, maintenance and repair support in Dubai."
-    },
-    {
-      "name": "Smeg",
-      "description": "Smeg home appliance inspection, maintenance and repair support in Dubai."
-    },
-    {
-      "name": "Sub-Zero",
-      "description": "Sub-Zero home appliance inspection, maintenance and repair support in Dubai."
-    },
-    {
-      "name": "Terim",
-      "description": "Terim home appliance inspection, maintenance and repair support in Dubai."
-    },
-    {
-      "name": "Whirlpool",
-      "description": "Whirlpool home appliance inspection, maintenance and repair support in Dubai."
-    },
-    {
-      "name": "Zanussi",
-      "description": "Zanussi home appliance inspection, maintenance and repair support in Dubai."
-    },
-    {
-      "name": "De Dietrich",
-      "description": "De Dietrich home appliance inspection, maintenance and repair support in Dubai."
-    },
-    {
-      "name": "Baumatic",
-      "description": "Baumatic home appliance inspection, maintenance and repair support in Dubai."
-    },
-    {
-      "name": "Bertazzoni",
-      "description": "Bertazzoni home appliance inspection, maintenance and repair support in Dubai."
-    },
-    {
-      "name": "Bompani",
-      "description": "Bompani home appliance inspection, maintenance and repair support in Dubai."
-    },
-    {
-      "name": "Boston",
-      "description": "Boston home appliance inspection, maintenance and repair support in Dubai."
-    },
-    {
-      "name": "Brandt",
-      "description": "Brandt home appliance inspection, maintenance and repair support in Dubai."
-    },
-    {
-      "name": "Gibson",
-      "description": "Gibson home appliance inspection, maintenance and repair support in Dubai."
-    },
-    {
-      "name": "Gorenje",
-      "description": "Gorenje home appliance inspection, maintenance and repair support in Dubai."
-    },
-    {
-      "name": "Hisense",
-      "description": "Hisense home appliance inspection, maintenance and repair support in Dubai."
-    },
-    {
-      "name": "Kelvinator",
-      "description": "Kelvinator home appliance inspection, maintenance and repair support in Dubai."
-    },
-    {
-      "name": "Kenmore",
-      "description": "Kenmore home appliance inspection, maintenance and repair support in Dubai."
-    },
-    {
-      "name": "Panasonic",
-      "description": "Panasonic home appliance inspection, maintenance and repair support in Dubai."
-    },
-    {
-      "name": "Sanyo",
-      "description": "Sanyo home appliance inspection, maintenance and repair support in Dubai."
-    },
-    {
-      "name": "Sears",
-      "description": "Sears home appliance inspection, maintenance and repair support in Dubai."
-    },
-    {
-      "name": "Wolf",
-      "description": "Wolf home appliance inspection, maintenance and repair support in Dubai."
-    },
-    {
-      "name": "Haier",
-      "description": "Haier home appliance inspection, maintenance and repair support in Dubai."
-    },
-    {
-      "name": "Elica",
-      "description": "Elica home appliance inspection, maintenance and repair support in Dubai."
-    },
-    {
-      "name": "Marvel",
-      "description": "Marvel home appliance inspection, maintenance and repair support in Dubai."
-    },
-    {
-      "name": "Miele",
-      "description": "Miele home appliance inspection, maintenance and repair support in Dubai."
-    },
-    {
-      "name": "Maytag",
-      "description": "Maytag home appliance inspection, maintenance and repair support in Dubai."
-    },
-    {
-      "name": "Toshiba",
-      "description": "Toshiba home appliance inspection, maintenance and repair support in Dubai."
-    },
-    {
-      "name": "Thermador",
-      "description": "Thermador home appliance inspection, maintenance and repair support in Dubai."
-    },
-    {
-      "name": "Sharp",
-      "description": "Sharp home appliance inspection, maintenance and repair support in Dubai."
-    },
-    {
-      "name": "Admiral",
-      "description": "Admiral home appliance inspection, maintenance and repair support in Dubai."
-    },
-    {
-      "name": "Aftron",
-      "description": "Aftron home appliance inspection, maintenance and repair support in Dubai."
-    },
-    {
-      "name": "UniMac",
-      "description": "UniMac home appliance inspection, maintenance and repair support in Dubai."
+      image: "How-to-Clean-Your-Oven",
+      title: "How to Clean Your Oven: Tips for Domestic and Commercial Kitchens",
+      meta: {
+        comments: "5 comments",
+        author: "Admin"
+      },
+      description: "Discover expert tips and proven methods for cleaning appliances, removing tough grease, and keeping equipment in pristine condition.",
+      href: "/blog/how-to-clean-your-oven/"
     }
   ]
 };
 
 const testimonialsData = {
-  "eyebrow": "Customer Reviews",
-  "title": "What Our Clients Say",
-  "description": "Feedback from customers who booked freestanding appliance repair in Dubai.",
-  "items": [
+  id: "appliance-testimonials",
+  eyebrow: "CUSTOMER REVIEWS",
+  title: "WHAT OUR CLIENTS SAY ABOUT US",
+  description: "Customer feedback from home appliance repair and maintenance services in Dubai.",
+  items: [
     {
-      "icon": "award",
-      "title": "Shehla Shabbie",
-      "subtitle": "Dubai Marina",
-      "description": "FAJ really impressed me. Their home appliance repair Dubai team fixed my dryer quickly, and the price was fair. I’ll definitely call them again for future appliance issues."
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Haris M",
+      subtitle: "Resident",
+      description: "We're facing the issue with our franke coffee machine and we reached the correct service centre FAJ done a good job now the coffee machine is working fine thank you team FAJ and technician Que."
     },
     {
-      "icon": "award",
-      "title": "Max Rowe",
-      "subtitle": "Expat",
-      "description": "Finding trustworthy appliance repair services can be tricky, but FAJ made it easy. Their technician was professional, on time, and solved my fridge problem in one visit in Dubai."
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Janson Miller",
+      subtitle: "Resident",
+      description: "I had my nine year Jura Z6 coffee machine repaired by Q. He was super friendly and knowledgeable and repaired my machine with no problem. I highly recommend FAJ."
     },
     {
-      "icon": "award",
-      "title": "Taranpal Gralla",
-      "subtitle": "Homeowner",
-      "description": "I contacted FAJ for home appliances repair in Dubai, and I’m glad I did. My oven and washing machine are working perfectly now. Excellent communication and quick turnaround!"
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Bassam SH",
+      subtitle: "Resident",
+      description: "I am very satisfied with their prompt, efficient & cordial service from Technician Abdullah, as he was very professional, on time, responsive and reasonably priced."
     },
     {
-      "icon": "award",
-      "title": "George Frost",
-      "subtitle": "Expat",
-      "description": "Superb experience with FAJ. Their team handled my home appliance repair in Dubai very efficiently, from diagnosing to fixing. They also explained the issue clearly, which I really appreciated."
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Gintarė Sutkauskaitė",
+      subtitle: "Resident",
+      description: "Technician Que was fantastic, fixed both of my coffee machines and been very thorough in explaining what preventative actions to take in the future, highly recommend their service!"
     },
     {
-      "icon": "award",
-      "title": "Michael Lee",
-      "subtitle": "Resident",
-      "description": "Whenever I need home appliance repair, FAJ is my go-to. Their technicians are always polite, knowledgeable, and deliver same-day service. Very reliable company for household appliances."
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Alexander Burger",
+      subtitle: "Resident",
+      description: "Fantastic service in cleaning our BBQ. Abdullah and his team member did a great job with their pick up from home and delivery back to home again."
     },
     {
-      "icon": "award",
-      "title": "Amina Sehar",
-      "subtitle": "Homeowner",
-      "description": "I had a wonderful experience with FAJ. Their appliance repair in Dubai service was fast and stress-free. They repaired my dishwasher within an hour, and it’s been working great since."
-    },
-    {
-      "icon": "award",
-      "title": "Malik Fazain",
-      "subtitle": "Homeowner",
-      "description": "FAJ provides excellent home appliance repair services. My washing machine stopped mid-cycle, but their technician fixed it right away. Friendly staff, fair pricing, and very dependable."
+      icon: "award",
+      badge: "5-Star Review",
+      title: "Dunja Lazovic",
+      subtitle: "Resident",
+      description: "Fast and reliable services. Our washing machine broke down, the team came same day, gave a clear quote, and completed fast reinstallation without any issues."
     }
   ]
 };
 
 const faqsData = {
-  "eyebrow": "Got Questions?",
-  "title": "Home Appliance Repair FAQs",
-  "description": "Answers about appliance faults, repair decisions, safety and expected service requirements.",
-  "items": [
+  id: "appliance-faqs",
+  eyebrow: "FREQUENTLY ASKED QUESTIONS",
+  title: "FREQUENTLY ASKED QUESTIONS ABOUT HOME APPLIANCE REPAIR",
+  description: "Find clear answers to common questions about repairing, maintaining, and installing home appliances in Dubai.",
+  items: [
     {
-      "question": "When is the best time to have my appliance repaired?",
-      "answer": "When you see a problem, contact our experts right away. If you suspect a problem, such as an appliance not working properly or performing poorly, it may require repair. You don’t have to wait till your appliance breaks to contact our repair service."
+      question: "When is the best time to have my appliance repaired?",
+      answer: "When you see a problem, contact our experts right away. If you suspect a problem, such as an appliance not working properly or performing poorly, it may require repair."
     },
     {
-      "question": "What kinds of appliances does FAJ repair, replace, maintain, and install?",
-      "answer": "Our skilled experts have repaired a wide range of appliances, including freezers, refrigerators, dryers, ovens, stoves, microwaves, washers, dish washers, ranges, and trash compactors."
+      question: "What kinds of appliances does FAJ repair, replace, maintain, and install?",
+      answer: "Our skilled experts repair freezers, refrigerators, dryers, ovens, stoves, microwaves, washers, dishwashers, ranges, and more across all major brands."
     },
     {
-      "question": "What should I do when my appliance breaks?",
-      "answer": "If your appliance suddenly stops working and you’re not sure why, unplug it straight away. To be safe, you should turn off the main power circuit. Wipe up any leaks that may have happened, such as with a refrigerator or washing machine, but turn it off first. It’s critical to fix the problem as soon as possible, so contact our appliance repair Dubai specialist who can respond quickly."
+      question: "What should I do when my appliance breaks?",
+      answer: "Unplug it immediately and turn off the main power circuit. Clean any leaks and contact our appliance repair specialist as soon as possible."
     },
     {
-      "question": "How long does FAJ take For an appliance to be repaired?",
-      "answer": "Our appliance repair experts can provide an approximate completion time for the job before we start working on it, so you know what to expect."
+      question: "How long does FAJ take for an appliance to be repaired?",
+      answer: "Our repair experts provide an estimated completion time before starting the job so you know what to expect. Most routine on-site repairs are completed on the same day within 1 to 2 hours."
     },
     {
-      "question": "Is it better to repair or replace an appliance?",
-      "answer": "If the repair costs less than half the price of a new one and the appliance isn’t too old, repair it. Otherwise, replace it."
+      question: "Is it better to repair or replace an appliance?",
+      answer: "If the repair costs less than half the price of a new one and the appliance isn’t too old, repair it. Otherwise, replace it."
     },
     {
-      "question": "Is it worth it to repair a refrigerator?",
-      "answer": "Yes, if it’s under 10 years old and the repair isn’t too expensive. Older models may be better replaced."
+      question: "How can I book an appointment with FAJ Technical Services?",
+      answer: "You can book easily by calling +971 4 330 0002, messaging us on WhatsApp at +971 50 746 4712, or filling out the service booking form on our website."
     },
     {
-      "question": "How can I improve the life of my refrigerator?",
-      "answer": "Clean the coils, keep door seals tight, don’t overload it, set the right temperature, and make sure it’s level."
+      question: "Do you use genuine spare parts for appliance repairs?",
+      answer: "Yes, we exclusively use original equipment manufacturer (OEM) replacement parts to ensure long-term reliability and preserve your appliance's performance and warranty."
     },
     {
-      "question": "Why is the dishwasher not working properly?",
-      "answer": "It could be due to clogged filters, blocked spray arms, or drainage issues. Regular cleaning helps prevent problems."
+      question: "Does FAJ offer a warranty on home appliance repairs?",
+      answer: "Yes, we provide up to 3 months warranty on workmanship and fitted replacement parts for your complete peace of mind."
     },
     {
-      "question": "Do ovens need servicing?",
-      "answer": "Yes, occasional servicing keeps them safe and efficient. Check heating elements and clean regularly."
+      question: "Do you service appliances on weekends and holidays in Dubai?",
+      answer: "Yes, our technicians are available 7 days a week, from 8:00 AM to 8:00 PM, providing same-day response for urgent breakdown situations."
     },
     {
-      "question": "Is it easy to fix an oven?",
-      "answer": "Some fixes are simple, like replacing a heating element. For gas or electrical issues, call F A J."
+      question: "What areas of Dubai do your technicians cover?",
+      answer: "We cover all residential areas across Dubai, including Dubai Marina, Palm Jumeirah, Arabian Ranches, Downtown Dubai, Jumeirah, Emirates Hills, Al Barsha, and surrounding Emirates including Sharjah and Abu Dhabi."
     }
   ]
 };
 
 const bookingData = {
-  "eyebrow": "Book an Appointment",
-  "title": "Book Your Home Appliance Service",
-  "description": "Share your preferred date and location, then continue through WhatsApp to send the request directly to the FAJ scheduling team.",
-  "submitLabel": "Continue with booking request",
-  "successMessage": "Your booking details are ready. Continue in the WhatsApp window to send your request.",
-  "defaultService": "Home Appliance Repair and Maintenance",
-  "locations": [
+  eyebrow: "DIRECT APPOINTMENT",
+  title: "Book a Home Appliance Service Appointment",
+  description: "Share your preferred date and location, then continue through WhatsApp to request inspection, cleaning, installation or repair.",
+  submitLabel: "Continue with booking request",
+  successMessage: "Your booking details are ready. Continue in WhatsApp to send the request to the FAJ scheduling team.",
+  defaultService: "Home Appliance Repair General Diagnostics",
+  locations: [
     "Dubai",
     "Sharjah",
     "Abu Dhabi"
   ],
-  "fields": {
-    "name": {
-      "label": "Full name",
-      "placeholder": "e.g. John Doe"
+  fields: {
+    name: {
+      label: "Full name",
+      placeholder: "e.g. John Doe"
     },
-    "phone": {
-      "label": "Phone number (UAE)",
-      "placeholder": "e.g. +971 50 123 4567"
+    phone: {
+      label: "Phone number (UAE)",
+      placeholder: "e.g. +971 50 123 4567"
     },
-    "location": {
-      "label": "Your location / city"
+    location: {
+      label: "Service location / city"
     },
-    "date": {
-      "label": "Preferred appointment date"
+    date: {
+      label: "Preferred service date"
     }
   },
-  "modal": {
-    "eyebrow": "Book service / request quote",
-    "description": "Enter your details and continue through WhatsApp to request appliance inspection, cleaning, installation, repair or maintenance.",
-    "submitLabel": "Continue with booking request",
-    "closeLabel": "Close booking dialog"
+  modal: {
+    eyebrow: "Request appliance service",
+    description: "Enter your details and continue through WhatsApp to request appliance inspection, cleaning, installation or repair.",
+    submitLabel: "Continue with booking request",
+    closeLabel: "Close booking dialog"
   },
-  "messageGreeting": "Hello FAJ Technical Services, I would like to book:",
-  "messageLabels": {
-    "name": "Name",
-    "phone": "Phone",
-    "location": "Location",
-    "date": "Preferred date",
-    "page": "Page"
+  messageGreeting: "Hello FAJ Technical Services, I would like to request home appliance service:",
+  messageLabels: {
+    name: "Name",
+    phone: "Phone",
+    location: "Location",
+    date: "Preferred date",
+    page: "Page"
   }
 };
 
+export const seo = seoData;
+export { structuredData };
+export const contact = contactData;
+export const hero = heroData;
+export const pricing = pricingData;
+export const video = videoData;
+export const serviceCenter = serviceCenterData;
+export const maintenanceImportance = maintenanceImportanceData;
+export const commonProblems = commonProblemsData;
+export const servicesOffered = servicesOfferedData;
+export const benefits = benefitsData;
+export const whyChooseUs = whyChooseUsData;
+export const brands = brandsData;
+export const repairOverview = repairOverviewData;
+export const beforeAfter = beforeAfterData;
+export const gallery = galleryData;
+export const contracts = contractsData;
+export const blogs = blogsData;
+export const testimonials = testimonialsData;
+export const faqs = faqsData;
+export const booking = bookingData;
+
 const homeApplianceRepairData = {
   seo: seoData,
+  structuredData,
   contact: contactData,
   hero: heroData,
-  overview: overviewData,
   pricing: pricingData,
-  contracts: contractsData,
-  serviceCenter: serviceCenterData,
   video: videoData,
+  serviceCenter: serviceCenterData,
   maintenanceImportance: maintenanceImportanceData,
   commonProblems: commonProblemsData,
   servicesOffered: servicesOfferedData,
   benefits: benefitsData,
   whyChooseUs: whyChooseUsData,
-  featuredBrands: featuredBrandsData,
-  otherBrands: otherBrandsData,
+  brands: brandsData,
+  repairOverview: repairOverviewData,
+  beforeAfter: beforeAfterData,
+  gallery: galleryData,
+  contracts: contractsData,
+  blogs: blogsData,
   testimonials: testimonialsData,
   faqs: faqsData,
-  booking: bookingData,
-};
-
-export {
-  benefitsData,
-  bookingData,
-  commonProblemsData,
-  contactData,
-  contractsData,
-  faqsData,
-  featuredBrandsData,
-  heroData,
-  maintenanceImportanceData,
-  otherBrandsData,
-  pricingData,
-  seoData,
-  serviceCenterData,
-  servicesOfferedData,
-  testimonialsData,
-  videoData,
-  whyChooseUsData,
+  booking: bookingData
 };
 
 export default homeApplianceRepairData;

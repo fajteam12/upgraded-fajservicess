@@ -352,6 +352,23 @@ function ActionCardsSection({
             </div>
           )}
 
+          {hasImage && (item.meta || item.subtitle) && (
+            <div className="service-landing__card-meta">
+              <span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                </svg>{" "}
+                {item.meta?.comments || item.comments || "5 comments"}
+              </span>
+              <span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>{" "}
+                {item.meta?.author || item.author || "Admin"}
+              </span>
+            </div>
+          )}
+
           <h3>
             {item.href ? (
               item.external ? (
@@ -376,7 +393,7 @@ function ActionCardsSection({
             )}
           </h3>
 
-          {item.subtitle && <strong>{item.subtitle}</strong>}
+          {!hasImage && item.subtitle && <strong>{item.subtitle}</strong>}
 
           <RichText value={item.description} />
 
@@ -434,7 +451,7 @@ function ActionCardsSection({
           <div className="service-landing__action-intro-copy">
             {content.lead && (
               <p>
-                <strong>{content.lead}</strong>
+                <strong><RichText as="span" value={content.lead} /></strong>
               </p>
             )}
 
@@ -572,6 +589,41 @@ function ActionCardsSection({
                 </button>
               )}
             </aside>
+          </ScrollSlide>
+        )}
+
+        {(content.button || content.viewAll) && (
+          <ScrollSlide direction="up" delay={0.16}>
+            <div className="service-landing__action-bottom-btn">
+              {(content.button || content.viewAll)?.href ? (
+                <Link
+                  to={(content.button || content.viewAll).href}
+                  className="service-landing__button is-dark"
+                >
+                  {(content.button || content.viewAll).label ||
+                    (content.button || content.viewAll).text ||
+                    "VIEW ALL ARTICLES"}
+                  <span aria-hidden="true">{"\u2192"}</span>
+                </Link>
+              ) : (
+                <button
+                  type="button"
+                  className="service-landing__button is-dark"
+                  onClick={() =>
+                    onAction &&
+                    onAction(
+                      (content.button || content.viewAll).label ||
+                        "VIEW ALL ARTICLES"
+                    )
+                  }
+                >
+                  {(content.button || content.viewAll).label ||
+                    (content.button || content.viewAll).text ||
+                    "VIEW ALL ARTICLES"}
+                  <span aria-hidden="true">{"\u2192"}</span>
+                </button>
+              )}
+            </div>
           </ScrollSlide>
         )}
 
