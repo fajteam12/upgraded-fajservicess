@@ -1,6 +1,7 @@
 import BreadCumb from "../../../Components/Common/BreadCumb";
 
 import {
+  AboutHeroSection,
   AccordionSection,
   ActionCardsSection,
   BookingModal,
@@ -13,7 +14,6 @@ import {
   PlanCardsSection,
   PricingCardsSection,
   SearchableDirectorySection,
-  SplitHeroSection,
   useBookingRequest,
   TestimonialsSection
 } from "../../../Components/ServicePageSections";
@@ -43,10 +43,13 @@ export default function BrandsPage() {
       />
 
       <main className="service-landing">
-        <SplitHeroSection
+        <AboutHeroSection
           content={pageData.hero}
           contact={pageData.contact}
-          onPrimaryAction={openBooking} tone="white" />
+          onPrimaryAction={openBooking}
+          contentWidth={pageData.hero.contentWidth || "50%"}
+          tone="white"
+        />
 
         <BreadCumb />
 

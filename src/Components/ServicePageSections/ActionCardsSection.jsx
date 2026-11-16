@@ -143,7 +143,7 @@ function ActionCardsSection({
   const sliderRef = useRef(null);
   const autoplayPausedRef = useRef(false);
 
-  const items = content?.items || content?.cards || [];
+  const items = content?.items || content?.cards || content?.reasons || content?.articles || [];
   const itemCount = items.length;
 
   const scrollSlider = useCallback(

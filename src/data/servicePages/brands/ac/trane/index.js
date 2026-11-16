@@ -799,35 +799,87 @@ const benefitsData = {
 };
 
 const whyChooseUsData = {
-  id: "why-choose-us",
-  eyebrow: "The FAJ Advantage",
+  id: "why-choose-trane-ac-service",
   title: "CHOOSE US FOR RELIABLE, EXCEPTIONAL SERVICE TAILORED TO YOUR NEEDS!",
-  reasons: [
+  description: "",
+  items: [
     {
-        "title": "Reliable, Priority, and Quick",
-        "description": "You can count on efficient service ! Our same-day repair or next-day service visits ensure that your needs are met quickly."
+      icon: "shield-check",
+      badge: "Fast, Reliable Service",
+      title: "Reliable, Priority, and Quick",
+      description: {
+        parts: [
+          "You can count on ",
+          {
+            text: "efficient service",
+            strong: true,
+            href: "https://www.instagram.com/fajtechnicalservicesllc/",
+            external: true,
+          },
+          "! Our same-day repair or next-day service visits ensure that your needs are met quickly.",
+        ],
+      },
     },
     {
-        "title": "Feeling Of Calm",
-        "description": "With annual maintenance contract , you get a full year of service, ensuring your AC runs smoothly and providing peace of mind."
+      icon: "peace-of-mind",
+      badge: "Expert Planned Care",
+      title: "Feeling Of Calm",
+      description: {
+        parts: [
+          "With ",
+          {
+            text: "annual maintenance contract",
+            strong: true,
+            href: "/services/air-conditioning-repair/ac-annual-maintenance-contract/",
+          },
+          ", you get a full year of service, ensuring your AC runs smoothly and providing peace of mind.",
+        ],
+      },
     },
     {
-        "title": "You Are in Control",
-        "description": "Choose a day and time for your Trane AC repair in Dubai or Sharjah. With a 3-4 hour window for when our technician will arrive."
+      icon: "git-branch",
+      badge: "Flexible Scheduling",
+      title: "You Are in Control",
+      description:
+        "Choose a day and time for your Trane AC repair in Dubai or Sharjah. With a 3-4 hour window for when our technician will arrive.",
     },
     {
-        "title": "We Are Experts",
-        "description": "We are experts in Trane AC repair. This is why most major brands trust us to handle their service and maintenance needs."
+      icon: "rosette-check",
+      badge: "System Experience",
+      title: "We Are Experts",
+      description:
+        "We are experts in Trane AC repair. This is why most major brands trust us to handle their service and maintenance needs.",
     },
     {
-        "title": "Great Value",
-        "description": "We are dedicated to ensuring customer satisfaction with timely service, prompt issue resolution, and affordable prices."
+      icon: "shield-dollar",
+      badge: "Customer Value",
+      title: "Great Value",
+      description:
+        "We are dedicated to ensuring customer satisfaction with timely service, prompt issue resolution, and affordable prices.",
     },
     {
-        "title": "Trustworthy",
-        "description": "Our skilled AC technicians are highly trained, and we provide excellent service for a variety of major AC brands efficiently."
-    }
-],
+      icon: "clean-handshake",
+      badge: "Dependable Care",
+      title: "Trustworthy",
+      description: {
+        parts: [
+          "Our ",
+          {
+            text: "skilled AC technicians",
+            strong: true,
+            href: "https://www.facebook.com/acrepairservices",
+            external: true,
+          },
+          " are highly trained, and we provide excellent service for a variety of major AC brands efficiently.",
+        ],
+      },
+    },
+  ],
+  showCta: false,
+  cta: {
+    phone: "",
+    whatsapp: "",
+  },
 };
 
 const beforeAfterData = {
@@ -902,12 +954,18 @@ const sparePartsRepairData = {
 };
 
 const coverageData = {
-  id: "service-coverage",
-  eyebrow: "Serving All Dubai Communities",
-  title: "Our Trane AC Service Coverage Areas Across Dubai",
+  id: "trane-ac-service-coverage",
+  eyebrow: "Service Coverage",
+  title: "Trane AC Service Coverage Across Dubai",
   description:
-    "FAJ provides fast mobile AC repair teams across every major Dubai district, villa community, commercial free zone, and residential tower.",
-  locations: acCoverageLocations106,
+    "Prompt Trane air conditioning repair, cleaning, and maintenance in all 106 communities across Dubai.",
+  searchLabel: "Search service areas",
+  searchPlaceholder: "Search Dubai areas...",
+  initialCount: 12,
+  showAllLabel: "Show All Areas",
+  showLessLabel: "Show Less",
+  emptyMessage: "No service areas found.",
+  items: acCoverageLocations106,
 };
 
 const galleryData = {
@@ -968,6 +1026,57 @@ const galleryData = {
 };
 
 
+const newsData = {
+  id: "trane-ac-news",
+  title: "NEWS & UPDATES",
+  description:
+    "Explore the latest expert insights, practical advice, and maintenance tips from our certified AC specialists in Dubai.",
+  items: [
+    {
+      icon: "certified-expert",
+      badge: "28 May",
+      image: "blogs/AC-problems-and-how-to-fix-them",
+      title: "10 Common AC Problems and How to Fix Them - Expert Guide",
+      subtitle: "Admin • 5 Comments",
+      description:
+        "A properly functioning air conditioning system is essential in Dubai. Discover how to identify common AC issues and when to call certified technicians.",
+      href: "/blog/10-common-ac-problems-and-how-to-fix-them/",
+      actionLabel: "Read More",
+    },
+    {
+      icon: "dollar-savings",
+      badge: "19 June",
+      image: "blogs/ac-tips-and-tricks",
+      title: "Best Ways For How To Save Money On AC Bill In 2024",
+      subtitle: "Admin • 4 Comments",
+      description:
+        "Air conditioning is essential in the UAE summer but can raise electricity costs. Learn smart ways to reduce your DEWA AC bill without sacrificing comfort.",
+      href: "/blog/how-to-save-money-on-ac/",
+      actionLabel: "Read More",
+    },
+    {
+      icon: "wind",
+      badge: "19 June",
+      image: "blogs/how-to-choose-the-best-air-conditioner-for-home",
+      title: "How to Choose Best Air Conditioner for Home | Top Factors",
+      subtitle: "Admin • 0 Comments",
+      description:
+        "Choosing between split, ducted, and inverter AC systems? Read our comprehensive guide on selecting the best cooling solution for your property.",
+      href: "/blog/how-to-choose-the-best-air-conditioner-for-home/",
+      actionLabel: "Read More",
+    },
+  ],
+  footer: {
+    parts: [
+      "Explore more expert tips, seasonal maintenance guides, and HVAC advice in our blog. ",
+      {
+        text: "Visit our blog",
+        href: "/blog/",
+      },
+    ],
+  },
+};
+
 const bookingData = {
   id: "booking-section",
   title: "Schedule Your Trane AC Service",
@@ -1007,8 +1116,10 @@ const pageData = {
   coverage: coverageData,
   sparePartsRepair: sparePartsRepairData,
   gallery: galleryData,
+  energyTips: energyTipsData,
   repairPrice: repairPriceData,
   testimonials: testimonialsData,
+  news: newsData,
   faqs: faqsNormalized,
   booking: bookingData,
 
@@ -1034,6 +1145,8 @@ const pageData = {
   sparePartsRepairData,
   coverageData,
   galleryData,
+  energyTipsData,
+  newsData,
   testimonialsData,
   faqsData: faqsNormalized,
   bookingData,

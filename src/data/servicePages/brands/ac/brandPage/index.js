@@ -31,13 +31,36 @@ const heroData = {
   paragraphs: [
     "Expert HVAC maintenance when you need it most for your home or business. FAJ Technical Services L.L.C. is ready to help when your system experiences issues. Our team of skilled HVAC technicians specialises in top-brand air conditioning maintenance. We are on call to quickly diagnose and fix errors or any problems, confirming your space remains cool, comfortable, and running smoothly.",
   ],
+  paragraph:
+    "Expert HVAC maintenance when you need it most for your home or business. FAJ Technical Services L.L.C. is ready to help when your system experiences issues. Our team of skilled HVAC technicians specialises in top-brand air conditioning maintenance. We are on call to quickly diagnose and fix errors or any problems, confirming your space remains cool, comfortable, and running smoothly.",
+  highlights: [
+    {
+      icon: "award",
+      title: "Established Since 2010",
+      description: "Reliability, Diversity, Integrity, and Quality.",
+    },
+    {
+      icon: "shield-check",
+      title: "Workmanship Warranty",
+      description: "Repair and service warranty support.",
+    },
+    {
+      icon: "phone-support",
+      title: "7-Day Service Response",
+      description: "Fast assistance across Dubai.",
+    },
+  ],
   primaryAction: "Book An Appointment",
-  secondaryAction: "Call +971 4 330 0002",
+  secondaryAction: "Call Now",
+  showCall: true,
+  showPhone: true,
   bookingLabel: "AC Repair",
   image: {
-    id: "brands/ac/ac-brand-top",
-    src: "/img/brands/ac/ac-brand-top.webp",
+    id: "ac-service-page/ac-repair-top-hero-banner",
+    src: "/img/ac-service-page/ac-repair-top-hero-banner.webp",
     alt: "AC Maintenance and Servicing in Dubai",
+    width: 600,
+    height: 400,
   },
 };
 

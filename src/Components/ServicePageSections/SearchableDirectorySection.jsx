@@ -18,23 +18,25 @@ function SearchableDirectorySection({
   const [query, setQuery] = useState("");
   const [showAll, setShowAll] = useState(false);
 
+  const rawItems = content?.items || content?.locations || [];
+
   const filteredItems = useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase();
 
-    if (!normalizedQuery) return content?.items || [];
+    if (!normalizedQuery) return rawItems;
 
-    return content.items.filter((item) => {
+    return rawItems.filter((item) => {
       const itemDescription =
-        item.description || content.defaultItemDescription || "";
+        item.description || content?.defaultItemDescription || "";
 
       const itemName = item.name || item.title || "";
       return `${itemName} ${itemDescription}`
         .toLowerCase()
         .includes(normalizedQuery);
     });
-  }, [content, query]);
+  }, [content?.defaultItemDescription, query, rawItems]);
 
-  if (!content?.items?.length) return null;
+  if (!rawItems.length) return null;
 
   const initialCount = content.initialCount || 12;
 
