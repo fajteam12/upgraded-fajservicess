@@ -4,14 +4,13 @@ import {
   getCloudflareImageUrl,
 } from "../../utils/cloudflareImages";
 
-const getImageData = (image = {}) => ({
-  src: image.id
-    ? getCloudflareImageUrl(image.id, "public")
-    : image.src || "",
-  srcSet: image.id
-    ? getCloudflareImageSrcSet(image.id)
-    : image.srcSet,
-});
+const getImageData = (image = {}) => {
+  const imageKey = image.id || image.src;
+  return {
+    src: imageKey ? getCloudflareImageUrl(imageKey, "public") : (image.src || ""),
+    srcSet: imageKey ? getCloudflareImageSrcSet(imageKey) : image.srcSet,
+  };
+};
 
 function FeatureDetailSection({ content }) {
   if (!content?.items?.length) return null;

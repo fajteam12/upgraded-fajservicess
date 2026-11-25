@@ -40,16 +40,17 @@ function ProcessCardsSection({ content }) {
               content.image ||
               {};
 
-            const cloudflareSrc = image.id
+            const imageKey = typeof image === "string" ? image : (image.id || image.src);
+            const cloudflareSrc = imageKey
               ? getCloudflareImageUrl(
-                  image.id,
+                  imageKey,
                   "public"
                 )
               : "";
 
-            const cloudflareSrcSet = image.id
+            const cloudflareSrcSet = imageKey
               ? getCloudflareImageSrcSet(
-                  image.id
+                  imageKey
                 )
               : undefined;
 

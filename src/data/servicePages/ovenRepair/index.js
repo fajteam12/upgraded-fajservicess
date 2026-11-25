@@ -3,596 +3,731 @@
 // ==========================================================================
 
 const seoData = {
-  "title": "Commercial Oven Repair | Best Pizza Oven Services in Dubai",
-  "description": "High-rated commercial oven repair in Dubai. FAJ expert deck, convection, conveyor, bakery, combi gas & electric ovens maintenance services near you",
-  "keywords": "commercial oven repair Dubai, pizza oven maintenance, combi oven repair, commercial kitchen oven service, Rational oven repair Dubai",
-  "author": "FAJ Technical Services L.L.C.",
-  "businessName": "FAJ Commercial Oven Repair Services",
-  "url": "https://www.fajservices.ae/services/kitchen-equipment-maintenance/oven-repair/",
-  "image": "https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/kitchen-equipment-service-page-new-design-images/commercial-oven-repair-top-hero/public",
-  "serviceType": [
+  title: "Commercial Oven Repair | Best Pizza Oven Services in Dubai",
+  description:
+    "High-rated commercial oven repair in Dubai. FAJ expert deck, convection, conveyor, bakery, combi gas & electric ovens maintenance services near you",
+  keywords:
+    "Rational Oven Repair Service, Combi Oven Repair Service, Commercial Oven Repair Service",
+  author: "FAJ Technical Services L.L.C",
+  businessName: "FAJ Technical Services L.L.C",
+  url: "https://www.fajservices.ae/services/kitchen-equipment-maintenance/oven-repair/",
+  image:
+    "https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/Camercial-Kitchen-Equipment/public",
+  serviceType: [
     "Commercial Oven Repair",
-    "Pizza Oven Maintenance",
-    "Combi Oven Service",
+    "Commercial Kitchen Oven Repair",
+    "Pizza Oven Repair",
     "Convection Oven Repair",
-    "Commercial Oven AMC"
+    "Deck Oven Repair",
+    "Commercial Oven not heating",
+    "Commercial Oven Thermostat Repair",
+    "Commercial Oven Service Dubai",
+    "Commercial Oven Maintenance",
+    "Commercial Oven Repair near me",
+    "Bakery Oven Repair",
+    "Commercial Cooking Equipment Repair",
+    "Restaurant Oven Repair",
+    "Commercial Oven Technician"
   ],
-  "areaServed": [
-    "Dubai",
-    "Sharjah",
-    "Abu Dhabi"
-  ],
-  "breadcrumbs": [
+  areaServed: ["Dubai", "Sharjah", "Abu Dhabi"],
+  rating: {
+    ratingValue: "4.9",
+    reviewCount: "2952"
+  },
+  breadcrumbs: [
     {
-      "name": "Home",
-      "url": "https://www.fajservices.ae/"
+      name: "Home",
+      url: "https://www.fajservices.ae/"
     },
     {
-      "name": "Services",
-      "url": "https://www.fajservices.ae/services/"
+      name: "Services",
+      url: "https://www.fajservices.ae/services/"
     },
     {
-      "name": "Kitchen Equipment Maintenance",
-      "url": "https://www.fajservices.ae/services/kitchen-equipment-maintenance/"
+      name: "Kitchen Equipment Maintenance",
+      url: "https://www.fajservices.ae/services/kitchen-equipment-maintenance/"
     },
     {
-      "name": "Commercial Oven Repair",
-      "url": "https://www.fajservices.ae/services/kitchen-equipment-maintenance/oven-repair/"
+      name: "Commercial Oven Repair",
+      url: "https://www.fajservices.ae/services/kitchen-equipment-maintenance/oven-repair/"
     }
   ]
 };
 
 const contactData = {
-  "phone": "971507464712",
-  "phoneDisplay": "+971 50 746 4712",
-  "whatsapp": "971507464712",
-  "email": "info@fajservices.ae"
+  phone: "971507484712",
+  phoneDisplay: "+971 50 748 4712",
+  whatsapp: "971507484712",
+  whatsappDisplay: "+971 50 748 4712",
+  email: "info@fajservices.ae"
 };
 
 const heroData = {
-  "title": "Top-Rated Commercial Oven Repair and Pizza Oven Maintenance Services Near You, Dubai, UAE",
-  "subtitle": "Commercial Kitchen Oven Repair",
-  "paragraphs": [
-    "Looking for affordable oven repair? At FAJ Technical Services L.L.C, we've been serving Dubai since 2010, offering trustworthy repair solutions. Our skilled technicians can handle various oven issues, including electric, gas range, and electric ovens."
-  ],
-  "primaryAction": "Book Onsite Repair",
-  "secondaryAction": "WhatsApp Now",
-  "bookingLabel": "Commercial Oven Repair",
-  "image": {
-    "id": "kitchen-equipment-service-page-new-design-images/commercial-over-repair-top-hero",
-    "src": "/img/kitchen-equipment-service-page-new-design-images/commercial-over-repair-top-hero.webp",
-    "alt": "Commercial oven repair and maintenance service in Dubai",
-    "width": 1024,
-    "height": 1024
-  },
-  "contentWidth": "50%"
-};
-
-const overviewData = {
-  "paragraphs": [
+  title:
+    "TOP-RATED COMMERCIAL OVEN REPAIR AND PIZZA OVEN MAINTENANCE SERVICES NEAR YOU, DUBAI, UAE",
+  paragraphs: [
+    "Looking for affordable oven repair? At FAJ Technical Services L.L.C, we've been serving Dubai since 2010, offering trustworthy repair solutions. Our skilled technicians can handle various oven issues, including electric, gas range, and electric ovens.",
     "We provide prompt and cost-effective service tailored to your needs, ensuring reliable repairs right at your door."
-  ]
-};
-
-const serviceOverviewData = {
-  "eyebrow": "Commercial Cooking Specialists",
-  "title": "Commercial Combi Oven Maintenance",
-  "description": "We repair all types of commercial kitchen ovens, including gas and electric models. Our specialised team of commercial oven technicians carries essential spare parts, enabling us to assist you whenever you need it. Our goal is to help keep your business running smoothly. We offer commercial oven repair services in Dubai.",
-  "lead": "EXPRESS & EMERGENCY OVEN REPAIR SERVICE",
-  "paragraphs": [
-    "Terms & Conditions: There is a callout fee that appliesfor each diagnosis, depending on the capacity applied. Same-day visits are available for bookings made before *12:00 PM. For bookings made after 12:00 PM, next-day visits may be arranged, subject to availability.",
-    "CHOOSE FAJ FOR YOUR PEACE OF MIND",
-    "We provide 2-month repair warranty and 3-month parts warranty as standard."
-  ]
-};
-
-const contractsData = {
-  "id": "commercial-oven-maintenance-contracts",
-  "eyebrow": "Maintenance Contracts",
-  "title": "Commercial Oven Maintenance Plans",
-  "description": "Flexible preventative agreements for hotels, restaurants, bakeries, canteens and dark kitchens.",
-  "featuredIndex": 0,
-  "actionLabel": "Get a quick quote",
-  "plans": [
+  ],
+  badges: [
     {
-      "title": "Maintenance Contract (Yearly)",
-      "tagline": "Comprehensive year-round care for demanding commercial ovens.",
-      "badge": "Best Value",
-      "features": [
-        "Limited or unlimited breakdown callouts",
-        "Two or three PPM services",
-        "Included or excluded spare parts and materials",
-        "Available with or without MEP services"
-      ]
+      title: "Established Since 2010",
+      text: "Reliability, Diversity, Integrity, and Quality."
     },
     {
-      "title": "Maintenance Contract (6 Months)",
-      "tagline": "Balanced preventative coverage for high-use cooking equipment.",
-      "badge": "Popular",
-      "features": [
-        "Limited or unlimited breakdown callouts",
-        "One or two PPM services",
-        "Included or excluded spare parts and materials",
-        "Available with or without MEP services"
-      ]
+      title: "Workmanship Warranty",
+      text: "Repair and service warranty support."
     },
     {
-      "title": "Maintenance Contract (3 Months)",
-      "tagline": "Short-term support for immediate commercial kitchen needs.",
-      "badge": "Flexible",
-      "features": [
-        "Limited or unlimited breakdown callouts",
-        "One PPM service",
-        "Included or excluded spare parts and materials",
-        "Available with or without MEP services"
-      ]
+      title: "7-Day Service Response",
+      text: "Fast assistance across Dubai"
     }
   ],
-  "footnote": "Contract scope is confirmed after assessing oven type, quantity, condition, operating hours and kitchen environment. Terms and conditions apply."
+  primaryAction: "CHAT NOW",
+  bookingLabel: "Commercial Oven Repair",
+  image: {
+    id: "commercial-oven-repair/commercial-over-repair-top-hero",
+    src: "/img/commercial-oven-repair/commercial-over-repair-top-hero.webp",
+    alt: "Top-Rated Commercial Oven Repair And Pizza Oven Maintenance Services Near You, Dubai, UAE",
+    width: 1024,
+    height: 1024
+  },
+  contentWidth: "50%"
 };
 
-const inspectionPolicyData = {
-  "eyebrow": "Prompt and Cost-Effective",
-  "title": "Express and Emergency Oven Repair Service",
-  "description": "Clear callout terms, responsive scheduling and practical warranty coverage.",
-  "cards": [
-    {
-      "title": "Inspection and Callout Terms",
-      "paragraphs": [
-        "A callout fee applies to each diagnosis depending on oven capacity. Same-day visits may be available for bookings made before 12:00 PM.",
-        "Bookings made after 12:00 PM may be arranged for the next day, subject to technician availability."
-      ]
-    },
-    {
-      "title": "Choose FAJ for Peace of Mind",
-      "featured": true,
-      "paragraphs": [
-        "Our standard coverage includes a two-month repair warranty and a three-month warranty on supplied replacement parts."
-      ]
-    }
-  ]
-};
-
-const videoData = {
-  "id": "commercial-oven-repair-video",
-  "eyebrow": "Service Video",
-  "title": "Our Professional Commercial Oven Service in Dubai",
-  "description": "See how FAJ technicians approach commercial oven inspection, diagnosis and repair.",
-  "frameTitle": "Commercial oven repair service video",
-  "videoId": "boj7h-gOf7M",
-  "variant": "framed",
-  "blockInteraction": true,
-  "allowFullScreen": false,
-  "parameters": {
-    "autoplay": "1",
-    "mute": "0",
-    "controls": "0",
-    "modestbranding": "1",
-    "rel": "0",
-    "showinfo": "0",
-    "loop": "1",
-    "playlist": "boj7h-gOf7M",
-    "playsinline": "1",
-    "cc_load_policy": "0",
-    "disablekb": "1"
+const calloutsData = {
+  express: {
+    title: "EXPRESS & EMERGENCY OVEN REPAIR SERVICE",
+    termsLabel: "TERMS & CONDITIONS:",
+    termsText:
+      "There is a callout fee that applies for each diagnosis, depending on the capacity applied. Same-day visits are available for bookings made before *12:00 PM. For bookings made after 12:00 PM, next-day visits may be arranged, subject to availability.",
+    peaceLabel: "CHOOSE FAJ FOR YOUR PEACE OF MIND",
+    peaceText:
+      "We provide 2-month repair warranty and 3-month parts warranty as standard."
+  },
+  ppm: {
+    title: "PLANNED PREVENTIVE MAINTENANCE (PPM) SERVICES",
+    paragraphs: [
+      "Our catering equipment technician offers a customized Planned Preventive Maintenance Package created to keep your Combi ovens, Convection ovens, High-Speed ovens, Compact ovens, Pizza ovens, Rational ovens, Commercial ovens, Duck ovens, and Steamers running efficiently and compliant with standards.",
+      "This proactive approach helps reduce the likelihood of unexpected breakdowns and the associated costs. Our Planned Preventive Maintenance Package includes maintenance, repair services, and testing. It is ideal for hotels, restaurants, canteens, and other venues in the hospitality and education sectors that want to ensure their equipment operates smoothly and prevent breakdowns."
+    ]
   }
 };
 
-const ppmServicesData = {
-  "eyebrow": "Preventative Oven Care",
-  "title": "Planned Preventive Maintenance (PPM) Services",
-  "description": "Our catering equipment technician offers a customized Planned Preventive Maintenance Package created to keep your Combi ovens, Convection ovens, High-Speed ovens, Compact ovens, Pizza ovens, Rational ovens, Commercial ovens, Duck ovens, and Steamers running efficiently and compliant with standards.",
-  "lead": "Keep commercial ovens efficient, compliant and ready for service.",
-  "paragraphs": [
-    "This proactive approach helps reduce the likelihood of unexpected breakdowns and the associated costs. Our Planned Preventive Maintenance Package includes maintenance, repair services, and testing. It is ideal for hotels, restaurants, canteens, and other venues in the hospitality and education sectors that want to ensure their equipment operates smoothly and prevent breakdowns."
-  ]
+const videoData = {
+  id: "commercial-oven-repair-video",
+  eyebrow: "SERVICE VIDEO",
+  title: "COMMERCIAL COMBI OVEN MAINTENANCE",
+  description: [
+    "We repair all types of commercial kitchen ovens, including gas and electric models. Our specialised team of commercial oven technicians carries essential spare parts, enabling us to assist you whenever you need it.",
+    "Our goal is to help keep your business running smoothly. We offer commercial oven repair services in Dubai."
+  ],
+  frameTitle: "Commercial Combi Oven Maintenance Service Video",
+  videoId: "SLGpswtzn-w",
+  image: {
+    id: "commercial-oven-repair/commercial-over-repair-top-hero",
+    alt: "Commercial Combi Oven Maintenance"
+  }
 };
 
 const maintenanceImportanceData = {
-  "id": "why-commercial-oven-maintenance-matters",
-  "eyebrow": "Safe and Efficient Operation",
-  "title": "Why is Oven Maintenance Service Important in Dubai?",
-  "description": "Regular maintenance of commercial ovens is essential for safe and efficient operation.",
-  "items": [
+  id: "why-commercial-oven-maintenance-matters",
+  eyebrow: "PREVENTATIVE OVEN CARE",
+  title: "WHY IS OVEN MAINTENANCE SERVICE IMPORTANT IN DUBAI?",
+  description:
+    "Regular maintenance of commercial ovens is essential for safe and efficient operation.",
+  items: [
     {
-      "icon": "zap",
-      "title": "Efficiency",
-      "description": "Regular maintenance ensures the oven heats evenly and accurately, which reduces energy waste and provides consistent baking results."
+      icon: "zap",
+      title: "EFFICIENCY:",
+      description:
+        "Regular maintenance ensures the oven heats evenly and accurately, which reduces energy waste and provides consistent baking results."
     },
     {
-      "icon": "shield-check",
-      "title": "Food Quality",
-      "description": "A clean oven prevents unwanted flavors and ensures proper baking, essential for a positive customer experience."
+      icon: "shield-check",
+      title: "FOOD QUALITY:",
+      description:
+        "A clean oven prevents unwanted flavors and ensures proper baking, essential for a positive customer experience."
     },
     {
-      "icon": "fast-response",
-      "title": "Reduced Downtime",
-      "description": "Preventive maintenance can help identify potential issues before they lead to expensive repairs or breakdowns."
+      icon: "fast-response",
+      title: "REDUCED DOWNTIME:",
+      description:
+        "Preventive maintenance can help identify potential issues before they lead to expensive repairs or breakdowns."
     },
     {
-      "icon": "dollar-savings",
-      "title": "Cost Savings",
-      "description": "Regular maintenance can extend the oven's lifespan and lower repair costs, ultimately saving businesses money over time."
+      icon: "dollar-savings",
+      title: "COST SAVINGS WITH MAINTENANCE CONTRACT:",
+      description:
+        "Regular maintenance can extend the oven's lifespan and lower repair costs, ultimately saving businesses money over time."
     },
     {
-      "icon": "safety-compliance",
-      "title": "Hygiene",
-      "description": "Regular cleaning prevents bacteria and other contaminants, ensuring a safe cooking environment."
+      icon: "safety-compliance",
+      title: "HYGIENE:",
+      description:
+        "Regular cleaning prevents bacteria and other contaminants, ensuring a safe cooking environment."
     }
   ]
 };
 
 const commonProblemsData = {
-  "eyebrow": "Troubleshooting Guide",
-  "title": "Common Commercial Oven Problems That May Require Maintenance",
-  "description": "",
-  "items": [
+  id: "common-oven-problems",
+  eyebrow: "TROUBLESHOOTING GUIDE",
+  title: "THE MOST COMMON PROBLEMS WITH OVEN",
+  items: [
     {
-      "title": "Broken Oven Door",
-      "description": "If your food is not cooking evenly or is undercooked, the issue may be related to the door of your commercial oven. For optimal cooking."
+      number: "01",
+      title: "BROKEN OVEN DOOR",
+      description:
+        "If your food is not cooking evenly or is undercooked, the issue may be related to the door of your commercial oven. For optimal cooking."
     },
     {
-      "title": "Oven Not Heating",
-      "description": "You guessed it! The most obvious issue is that it may not heat to the desired temperature, even when switched on and fully powered up properly and consistently."
+      number: "02",
+      title: "OVEN NOT HEATING",
+      description:
+        "You guessed it! The most obvious issue is that it may not heat to the desired temperature, even when switched on and fully powered up properly and consistently."
     },
     {
-      "title": "Uneven Cooking",
-      "description": "Food often cooks unevenly, scorching on one side while staying undercooked on the other due to uneven heat distribution problems."
+      number: "03",
+      title: "UNEVEN COOKING",
+      description:
+        "Food often cooks unevenly, scorching on one side while staying undercooked on the other due to uneven heat distribution problems."
     },
     {
-      "title": "Oven Keeps Sparking",
-      "description": "If you hear continuous clicking and your gas oven is sparking, the problem might be the ignition dial needing immediate professional repair service."
+      number: "04",
+      title: "OVEN KEEPS SPARKING",
+      description:
+        "If you hear continuous clicking and your gas oven is sparking, the problem might be the ignition dial needing immediate professional repair service."
     },
     {
-      "title": "Broken Oven Thermostat",
-      "description": "Cooking at the right temperature is absolutely vital for delicious meals, as incorrect temperatures can often lead to overcooking or undercooking."
+      number: "05",
+      title: "BROKEN OVEN THERMOSTAT",
+      description:
+        "Cooking at the right temperature is absolutely vital for delicious meals, as incorrect temperatures can often lead to overcooking or undercooking."
     },
     {
-      "title": "Broken Heating Elements",
-      "description": "Possible causes include faulty heating elements, a broken thermostat, clogged burners, or electrical issues. For gas ovens, it may be the igniter."
+      number: "06",
+      title: "BROKEN HEATING ELEMENTS",
+      description:
+        "Possible causes include faulty heating elements, a broken thermostat, clogged burners, or electrical issues. For gas ovens, it may be the igniter."
     },
     {
-      "title": "Broken Oven Fan",
-      "description": "A malfunctioning electric oven fan can lead to uneven cooking. Oven fans circulate heated air around the oven cavity to ensure even cooking."
+      number: "07",
+      title: "BROKEN OVEN FAN",
+      description:
+        "A malfunctioning electric oven fan can lead to uneven cooking. Oven fans circulate heated air around the oven cavity to ensure even cooking."
     },
     {
-      "title": "Broken Door Seal",
-      "description": "The oven door seal, also known as a gasket, creates an airtight seal between oven door and the oven cavity, preventing heat loss and ensuring even cooking."
+      number: "08",
+      title: "BROKEN DOOR SEAL",
+      description:
+        "The oven door seal, also known as a gasket, creates an airtight seal between oven door and the oven cavity, preventing heat loss and ensuring even cooking."
     }
   ]
 };
 
 const servicesOfferedData = {
-  "id": "commercial-oven-services",
-  "eyebrow": "Oven Repair Services and Diagnostics",
-  "title": "Comprehensive Commercial Oven Repair Services in Dubai",
-  "description": "We provide repair services for a wide range of commercial ovens.",
-  "items": [
+  id: "commercial-oven-services",
+  eyebrow: "COMPLETE OVEN SUPPORT",
+  title: "COMPREHENSIVE COMMERCIAL OVEN REPAIR SERVICES IN DUBAI",
+  description:
+    "We provide repair services for a wide range of commercial ovens.\nOur services include:",
+  bottomTitle:
+    "Schedule Your FAJ Oven Cleaning, Oven Repair & Maintenance Services Today!",
+  bottomDescription:
+    "Regular commercial oven maintenance is essential for optimal performance, efficiency, and longevity.",
+  items: [
     {
-      "icon": "oven-install",
-      "title": "Oven Installation",
-      "description": "Professional installation of various types and brands of gas and electric ovens, ensuring optimal performance and efficiency.",
-      "actionLabel": "Request Installation"
+      icon: "oven-install",
+      title: "OVEN INSTALLATION:",
+      description:
+        "Expert installation of various types and brands of ovens, ensuring optimal performance and efficiency.",
+      actionLabel: "REQUEST INSTALLATION"
     },
     {
-      "icon": "diagnostics",
-      "title": "Oven Diagnostics",
-      "description": "We perform thorough diagnostics and provide eligibility assessments and detailed quotes to address any oven issues.",
-      "actionLabel": "Book Diagnostics"
+      icon: "diagnostics",
+      title: "OVEN DIAGNOSTICS:",
+      description:
+        "We perform thorough diagnostics and provide eligibility assessments and detailed quotes to address any oven issues.",
+      actionLabel: "BOOK DIAGNOSTICS"
     },
     {
-      "icon": "oven-repair",
-      "title": "Oven Repair Service",
-      "description": "Reliable professional oven repair services for all components, ensuring quick resolution of issues like leaks, electrical failures, and malfunctions. Feel free to contact us for specific services or any questions!",
-      "actionLabel": "Request Repair"
+      icon: "oven-repair",
+      title: "OVEN REPAIR SERVICE:",
+      description:
+        "Reliable professional oven repair services for all components, ensuring quick resolution of issues like leaks, electrical failures, and malfunctions. Feel free to contact us for specific services or any questions!",
+      actionLabel: "REQUEST REPAIR"
     },
     {
-      "icon": "amc-contract",
-      "title": "Oven Annual Maintenance Contract",
-      "description": "This contract outlines the terms and services covered for the annual maintenance of catering ovens. Regular commercial oven maintenance is essential for optimal performance, efficiency, and longevity.",
-      "actionLabel": "Request AMC"
+      icon: "amc-contract",
+      title: "OVEN ANNUAL MAINTENANCE CONTRACT:",
+      description:
+        "This contract outlines the terms and services covered for the annual maintenance of catering ovens.",
+      actionLabel: "REQUEST MAINTENANCE"
     }
   ]
 };
 
 const benefitsData = {
-  "eyebrow": "Preventative Maintenance Outcomes",
-  "title": "Benefits Of Regular Oven Service and Maintenance in Dubai",
-  "description": "",
-  "stats": [
+  eyebrow: "SERVICE DELIVERABLES",
+  title: "BENEFITS OF REGULAR OVEN SERVICE AND MAINTENANCE IN DUBAI",
+  stats: [
     {
-      "value": "2010",
-      "label": "Serving the UAE Since"
+      value: "2010",
+      label: "SERVING THE UAE SINCE"
     },
     {
-      "value": "7-Day",
-      "label": "Support Available"
+      value: "7 DAY",
+      label: "SUPPORT AVAILABLE"
     }
   ],
-  "benefits": [
+  benefits: [
     {
-      "id": "oven-heating-efficiency",
-      "number": "01",
-      "title": "Heating Efficiency",
-      "description": "We conduct a thorough assessment of heating efficiency using a temperature gun.",
-      "icon": "zap"
+      id: "oven-heating-efficiency",
+      number: "01",
+      title: "HEATING EFFICIENCY",
+      description:
+        "We conduct a thorough assessment of heating efficiency using a temperature gun.",
+      icon: "zap"
     },
     {
-      "id": "oven-disinfect-components",
-      "number": "02",
-      "title": "Disinfect Components",
-      "description": "All components and oven parts are thoroughly tested, disinfected to ensure safety and reliability.",
-      "icon": "ac-cleaning"
+      id: "oven-disinfect-components",
+      number: "02",
+      title: "DISINFECT COMPONENTS",
+      description:
+        "All components and oven parts are thoroughly tested, disinfected to ensure safety and reliability.",
+      icon: "ac-cleaning"
     },
     {
-      "id": "oven-fan-assessment",
-      "number": "03",
-      "title": "Fan Assessment",
-      "description": "We ensure the fan operates properly and has no blockages in the burner or heating element.",
-      "icon": "wind"
+      id: "oven-fan-assessment",
+      number: "03",
+      title: "FAN ASSESSMENT",
+      description:
+        "We ensure the fan operates properly and has no blockages in the burner or heating element.",
+      icon: "wind"
     },
     {
-      "id": "oven-thermostat-check",
-      "number": "04",
-      "title": "Thermostat Check",
-      "description": "We use a laser temperature gauge to confirm that thermostats are functioning properly.",
-      "icon": "ac-thermostat"
+      id: "oven-thermostat-check",
+      number: "04",
+      title: "THERMOSTAT CHECK",
+      description:
+        "We use a laser temperature gauge to confirm that thermostats are functioning properly.",
+      icon: "ac-thermostat"
     },
     {
-      "id": "oven-airflow-balance",
-      "number": "05",
-      "title": "Airflow Balance",
-      "description": "We ensure that you receive optimal airflow around each oven part as required.",
-      "icon": "ac-air-filter"
+      id: "airflow-balance",
+      number: "05",
+      title: "AIRFLOW BALANCE",
+      description:
+        "We ensure that you receive optimal airflow around each oven part as required.",
+      icon: "wind"
     },
     {
-      "id": "oven-customer-feedback",
-      "number": "06",
-      "title": "Customer Feedback",
-      "description": "Our team offers essential feedback on the condition of your oven and any necessary repair.",
-      "icon": "customer-feedback"
+      id: "customer-feedback",
+      number: "06",
+      title: "CUSTOMER FEEDBACK",
+      description:
+        "Our team offers essential feedback on the condition of your oven and any necessary repair.",
+      icon: "customer-feedback"
     }
   ]
 };
 
 const whyChooseUsData = {
-  "id": "why-choose-faj-oven-repair",
-  "eyebrow": "Peace of Mind Support",
-  "title": "CHOOSE US FOR RELIABLE, EXCEPTIONAL SERVICE TAILORED TO YOUR NEEDS!",
-  "description": "",
-  "items": [
+  id: "why-choose-faj-oven-repair",
+  eyebrow: "FAJ SERVICE PROMISE",
+  title: "CHOOSE US FOR RELIABLE, EXCEPTIONAL SERVICE TAILORED TO YOUR NEEDS!",
+  items: [
     {
-      "icon": "fast-response",
-      "badge": "Fast, Reliable Service",
-      "title": "Reliable, Priority and Quick",
-      "description": "You can rely on prompt service! Our same-day repairs or next-day visits ensure that your needs are addressed swiftly."
+      icon: "fast-response",
+      title: "RELIABLE, PRIORITY AND QUICK",
+      description:
+        "You can rely on prompt service! Our same-day repairs or next-day visits ensure that your needs are addressed swiftly."
     },
     {
-      "icon": "peace-of-mind",
-      "badge": "We Are Experts",
-      "title": "Confidence",
-      "description": "With an oven annual maintenance contract, you receive a year of service, ensuring smooth operation and peace of mind."
+      icon: "certified-expert",
+      title: "WE ARE EXPERTS",
+      description:
+        "We specialise in oven repair, which is why most major brands rely on us for their service and maintenance needs."
     },
     {
-      "icon": "calendar",
-      "badge": "Flexible Scheduling",
-      "title": "You Are in Control",
-      "description": "Schedule your oven repair in Dubai or Sharjah by choosing a specific day and time. Our technician will arrive within a 3-4 hour window."
+      icon: "calendar",
+      title: "CONFIDENCE",
+      description:
+        "With an oven annual maintenance contract, you receive a year of service, ensuring smooth operation and peace of mind."
     },
     {
-      "icon": "certified-expert",
-      "badge": "Specialist Engineering",
-      "title": "We Are Experts",
-      "description": "We specialise in oven repair, which is why most major brands rely on us for their service and maintenance needs."
+      icon: "dollar-savings",
+      title: "GREAT VALUE",
+      description:
+        "We are committed to providing customer satisfaction through timely service, quick issue resolution, and competitive pricing."
     },
     {
-      "icon": "dollar-savings",
-      "badge": "Customer Value",
-      "title": "Great Value",
-      "description": "We are committed to providing customer satisfaction through timely service, quick issue resolution, and competitive pricing."
+      icon: "peace-of-mind",
+      title: "YOU ARE IN CONTROL",
+      description:
+        "Schedule your oven repair in Dubai or Sharjah by choosing a specific day and time. Our technician will arrive within a 3-4 hour window."
     },
     {
-      "icon": "guarantee-seal",
-      "badge": "Dependable Support",
-      "title": "Trustworthy",
-      "description": "Our expert oven technicians are well-trained, providing efficient service for various major oven brands."
+      icon: "guarantee-seal",
+      title: "TRUSTWORTHY",
+      description:
+        "Our expert oven technicians are well-trained, providing efficient service for various major oven brands."
     }
   ]
 };
 
 const brandsData = {
-  "eyebrow": "Brand-Specific Expertise",
-  "title": "We specialize in commercial oven services for the following brands",
-  "description": "",
-  "searchLabel": "Search commercial oven brands",
-  "searchPlaceholder": "Search oven brand or model type",
-  "actionLabel": "Request brand service",
-  "initialCount": 8,
-  "showAllLabel": "Show all brands",
-  "showLessLabel": "Show fewer brands",
-  "emptyMessage": "No matching oven brand was found. Contact us for model-specific support.",
-  "items": [
+  eyebrow: "APPROVED BRAND PARTNERS",
+  title: "WE SPECIALIZE IN COMMERCIAL OVEN SERVICES FOR THE FOLLOWING BRANDS",
+  searchPlaceholder: "Search cooker or hob brand",
+  actionLabel: "BOOK BRAND SERVICE",
+  initialCount: 8,
+  showAllLabel: "Show all brands",
+  showLessLabel: "Show fewer brands",
+  emptyMessage:
+    "No matching oven brand was found. Contact us for model-specific support.",
+  items: [
     {
-      "name": "Rational Oven Combi Repair and Service",
-      "href": "/services/kitchen-equipment-maintenance/rational-commercial-kitchen-equipment-repair-and-maintenance-service-dubai/",
-      "description": "FAJ offers reliable Rational Oven repair and services in Dubai, with professionals who are experts in Rational professional oven maintenance."
+      name: "RATIONAL OVEN COMBI REPAIR AND SERVICE:",
+      href: "/services/kitchen-equipment-maintenance/rational-commercial-kitchen-equipment-repair-and-maintenance-service-dubai/",
+      description:
+        "FAJ offers reliable Rational Oven repair and services in Dubai, with professionals who are experts in Rational professional oven maintenance."
     },
     {
-      "name": "Capinox Gas Oven Maintenance Service",
-      "description": "Discover FAJ in Dubai, your go-to solution for Capinox Gas Oven repair and maintenance! We proudly specialize in Capinox Gas Ovens, ensuring top-notch service and expertise for all your needs. We're here to help you!"
+      name: "CAPINOX GAS OVEN MAINTENANCE SERVICE:",
+      description:
+        "FAJ Dubai offers expert Capinox Gas Oven repair and maintenance services, ensuring reliable performance and professional care."
     },
     {
-      "name": "Forni Fiorini Rack Oven Service and Repair",
-      "description": "The Forni Fiorini Rack Oven service and repair ensures you Don't have to worry because you are in the right place. FAJ is where efficiency and reliability are prioritized."
+      name: "FORNI FIORINI RACK OVEN SERVICING AND REPAIR:",
+      description:
+        "The Forni Fiorini Rack Oven service and repair ensures you Don't have to worry because you are in the right place. FAJ is where efficiency and reliability are prioritized."
     },
     {
-      "name": "Tecnodom Steam Convection Oven Repair",
-      "description": "Depend on our skilled team to quickly resolve any issues with your Tecnodom Steam Convection Oven, restoring it to optimal performance."
+      name: "TECNODOM STEAM CONVECTION OVEN REPAIR NEAR YOU:",
+      description:
+        "Depend on our skilled team to quickly resolve any issues with your Tecnodom Steam Convection Oven, restoring it to optimal performance."
     },
     {
-      "name": "Krystal Convection Oven Repair and Service",
-      "description": "With our expert understanding of the Convection Oven Krystal, we deliver reliable repairs that will have your unit functioning flawlessly. Trust us to enhance your cooking experience by ensuring your oven performs at its best every time."
+      name: "CONVECTION OVEN KRYSTAL REPAIR AND SERVICE:",
+      description:
+        "Our expert Krystal Convection Oven repair services ensure reliable performance and hassle-free cooking every time."
     },
     {
-      "name": "Commercial Cake, Bakery and Pizza Oven Service",
-      "description": "No matter the challenges with your commercial cake bakery pizza oven—whether it's a single-layer cake or a stunning three-layer creation—our experienced team is here to help! We'll identify maintenance needs and provide tailored solutions to ensure your baked goods shine and bring joy to all."
+      name: "COMMERCIAL CAKE BAKERY PIZZA ONE LAYER TWO LAYERS OVEN SERVICE:",
+      description:
+        "Our expert team provides reliable commercial bakery and pizza oven repair and maintenance services, ensuring smooth operation and perfect baking results."
     },
     {
-      "name": "Convotherm Combi Oven Service and Maintenance",
-      "description": "Is your Convotherm Combi Oven not working? You don't have to endure uncomfortable temperatures or suffer losses due to faulty equipment – FAJ will get your Convotherm Combi Oven back up and running quickly!"
+      name: "CONVOTHERM COMBI OVEN - PROFESSIONAL SERVICE AND MAINTENANCE:",
+      description:
+        "FAJ offers fast, reliable Convotherm Combi Oven repair services, restoring your equipment quickly to minimize downtime and business losses."
     },
     {
-      "name": "Tecnoeka Electric Combi Oven Service and Repair",
-      "description": "Tecnoeka Electric Combi Oven service in Dubai requires expert help, as only specialists know how to address its issues. We offer hassle-free oven repair service."
+      name: "TECNOEKA ELECTRIC COMBI OVEN SERVICE AND REPAIR:",
+      description:
+        "Tecnoeka Electric Combi Oven service in Dubai requires expert help, as only specialists know how to address its issues. We offer hassle-free oven repair service."
+    }
+  ]
+};
+
+const contractsData = {
+  id: "commercial-oven-maintenance-contracts",
+  eyebrow: "PREVENTIVE PROTECTION",
+  title: "FLEXIBLE COMMERCIAL OVEN MAINTENANCE PLANS",
+  description:
+    "Choose scheduled preventive care and breakdown support suited to your commercial kitchen, bakery and restaurant priorities.",
+  featuredIndex: 1,
+  actionLabel: "GET A QUICK QUOTE",
+  plans: [
+    {
+      title: "MAINTENANCE CONTRACT (YEARLY)",
+      badge: "BEST VALUE",
+      features: [
+        "Limited and Unlimited Callout Or Breakdown Attending",
+        "2 and 3 Times PPM Services",
+        "Included and Excluded Spare Parts / Materials",
+        "With MEP and without MEP Services"
+      ]
+    },
+    {
+      title: "MAINTENANCE CONTRACT (6 MONTHS)",
+      badge: "POPULAR",
+      features: [
+        "Limited and Unlimited Callout Or Breakdown Attending",
+        "1 and 2 Times PPM Services",
+        "Included and Excluded Spare Parts / Materials",
+        "With MEP and without MEP Services"
+      ]
+    },
+    {
+      title: "MAINTENANCE CONTRACT (3 MONTHS)",
+      badge: "FLEXIBLE",
+      features: [
+        "Limited and Unlimited Callout Or Breakdown Attending",
+        "1 Times PPM Services",
+        "Included and Excluded Spare Parts / Materials",
+        "With MEP and without MEP Services"
+      ]
+    }
+  ]
+};
+
+const galleryData = {
+  id: "commercial-oven-gallery",
+  eyebrow: "",
+  title: "GALLERY",
+  description:
+    "A glimpse into our professional Oven maintenance, repair, and cleaning services delivered across Dubai.",
+  items: [
+    {
+      id: "oven-gallery/oven repair service",
+      title: "Oven Repair Service Dubai",
+      src: "https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/oven-gallery/oven%20repair%20service/public",
+      alt: "Oven Repair Service Dubai"
+    },
+    {
+      id: "oven-gallery/rational oven repairs",
+      title: "Rational Oven Repairs",
+      src: "https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/oven-gallery/rational%20oven%20repairs/public",
+      alt: "Rational Oven Repairs"
+    },
+    {
+      id: "oven-gallery/rational oven service",
+      title: "Rational Oven Service",
+      src: "https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/oven-gallery/rational%20oven%20service/public",
+      alt: "Rational Oven Service"
+    },
+    {
+      id: "oven-gallery/oven repair",
+      title: "Oven Repair",
+      src: "https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/oven-gallery/oven%20repair/public",
+      alt: "Oven Repair"
+    },
+    {
+      id: "oven-gallery/over repair maintenance",
+      title: "Oven Repair Maintenance",
+      src: "https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/oven-gallery/over%20repair%20maintenance/public",
+      alt: "Oven Repair Maintenance"
+    },
+    {
+      id: "oven-gallery/rational oven repair",
+      title: "Rational Oven Repair",
+      src: "https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/oven-gallery/rational%20oven%20repair/public",
+      alt: "Rational Oven Repair"
+    }
+  ]
+};
+
+const articlesData = {
+  eyebrow: "NEWS & UPDATES",
+  title:
+    "WE DELIVER RELIABLE, AFFORDABLE SERVICES WITH DEDICATED SUPPORT FOR SATISFACTION",
+  description:
+    "Installation, repair, or maintenance service agreement for your home, office, or commercial needs in Dubai, Sharjah and Abu Dhabi, offers expert and affordable solutions.",
+  button: {
+    label: "VIEW ALL ARTICLES →",
+    href: "/blogs/"
+  },
+  items: [
+    {
+      title: "10 COMMON PROBLEMS AND HOW TO FIX THEM",
+      image: "blogs/gas-cooker",
+      comments: "5 comments",
+      author: "Admin",
+      description:
+        "Discover common oven issues and expert solutions to keep your equipment...",
+      actionLabel: "READ MORE",
+      href: "/blogs/"
+    },
+    {
+      title: "BEST WAYS FOR HOW TO SAVE MONEY",
+      image: "How-to-Clean-Your-Oven",
+      comments: "5 comments",
+      author: "Admin",
+      description:
+        "Learn essential maintenance tips to improve performance, prevent breakdowns,...",
+      actionLabel: "READ MORE",
+      href: "/blogs/"
+    },
+    {
+      title: "HOW TO CHOOSE BEST OVEN REPAIR SERVICES",
+      image: "oven-repair-service",
+      comments: "5 comments",
+      author: "Admin",
+      description:
+        "As oven equipment issues arise, professional repair and maintenance services ensure...",
+      actionLabel: "READ MORE",
+      href: "/blogs/"
     }
   ]
 };
 
 const testimonialsData = {
-  "id": "commercial-oven-reviews",
-  "eyebrow": "What Our Clients Say",
-  "title": "Customer Reviews",
-  "description": "Feedback from Dubai culinary teams using FAJ commercial oven services.",
-  "items": [
+  id: "commercial-oven-reviews",
+  eyebrow: "CUSTOMER TESTIMONIALS",
+  title: "WHAT OUR CLIENTS SAY",
+  description:
+    "Feedback from homeowners using FAJ Oven services across Dubai.",
+  items: [
     {
-      "icon": "award",
-      "badge": "5-Star Review",
-      "title": "Jack Ung",
-      "subtitle": "Business Owner",
-      "description": "FAJ repaired our Rational oven after repeated breakdowns. The technician was skilled, polite, and completed the repair quickly. Impressed with their professional commercial oven repair service in Dubai."
+      author: "HASSAN MALIK",
+      role: "Expat",
+      rating: 5,
+      text: "I was looking for oven repair near me and came across FAJ. Their service was quick, affordable, and the technicians knew what they were doing. Very happy with the results.",
+      verified: true
     },
     {
-      "icon": "award",
-      "badge": "5-Star Review",
-      "title": "Pietro Parisi",
-      "subtitle": "Expat",
-      "description": "Our industrial oven suddenly stopped mid-shift. FAJ sent a team immediately, diagnosed the fault, and fixed it the same day. Excellent service and quick response."
+      author: "ZAINAB KHAN",
+      role: "Resident",
+      rating: 5,
+      text: "I booked FAJ for oven repair. The staff was efficient and repaired my appliance without delay. They even tested it multiple times before leaving, which gave me peace of mind.",
+      verified: true
     },
     {
-      "icon": "award",
-      "badge": "5-Star Review",
-      "title": "Ram Kanta",
-      "subtitle": "Business Owner",
-      "description": "We struggled with combi oven heating issues for weeks. FAJ technicians explained everything clearly, repaired it fast, and tested thoroughly. Reliable combi oven repair service is worth recommending."
+      author: "ARJUN K.",
+      role: "Homeowner",
+      rating: 5,
+      text: "The service was excellent. I first searched for oven repair, and FAJ provided the best solution. Quick, professional, and very reliable service provider in Dubai.",
+      verified: true
     },
     {
-      "icon": "award",
-      "badge": "5-Star Review",
-      "title": "Jirsha Murshi",
-      "subtitle": "Business Owner",
-      "description": "The commercial oven in our café wasn’t holding temperature. FAJ engineers sorted it efficiently, pricing was transparent, and downtime was minimal. Grateful for their prompt commercial oven repair service."
+      author: "KATRYNA VERA",
+      role: "Expat",
+      rating: 5,
+      text: "The team from FAJ came for oven maintenance at my apartment. They inspected thoroughly, explained the issue clearly, and ensured my oven was safe and reliable again.",
+      verified: true
     },
     {
-      "icon": "award",
-      "badge": "5-Star Review",
-      "title": "Hamza Butt",
-      "subtitle": "Expat",
-      "description": "I contacted FAJ for Rational oven repair in Dubai. They brought genuine parts, restored performance, and ensured no recurrence. Professional and trustworthy team.."
+      author: "BILAL KHAN",
+      role: "Homeowner",
+      rating: 5,
+      text: "Excellent service by FAJ. I needed electric oven repair, and they responded quickly. The technician was polite, professional, and fixed the issue perfectly.",
+      verified: true
     },
     {
-      "icon": "award",
-      "badge": "5-Star Review",
-      "title": "Dewald Pieters",
-      "subtitle": "Expat",
-      "description": "Our bakery combi oven wasn’t steaming properly. FAJ provided quick repair, thorough cleaning, and checked safety too. Very happy with their expertise in industrial ovens."
+      author: "SALMAN SHAIKH",
+      role: "Business Owner",
+      rating: 5,
+      text: "I searched oven stove repair and FAJ came right away. The technicians arrived on time, were professional, and restored my oven’s performance without hassle.",
+      verified: true
+    },
+    {
+      author: "INFO TSVEPL",
+      role: "Expat",
+      rating: 5,
+      text: "My gas oven wasn’t heating properly, and FAJ did a great job fixing oven issues quickly. Their team explained everything clearly and made sure it was safe to use again.",
+      verified: true
     }
   ]
 };
 
 const faqsData = {
-  "id": "commercial-oven-repair-faqs",
-  "eyebrow": "Help Center",
-  "title": "Commercial Oven Repair FAQs",
-  "description": "Answers to common questions about commercial oven types, maintenance, cleaning and operating requirements.",
-  "items": [
+  id: "commercial-oven-repair-faqs",
+  eyebrow: "HAVE QUESTIONS?",
+  title: "OVEN REPAIR FAQS",
+  description:
+    "Answers about electricity use, ventilation, safety, heating faults and expected oven lifespan.",
+  items: [
     {
-      "question": "What are the different types of commercial ovens?",
-      "answer": "Types of Commercial Ovens – Commercial ovens are available in several varieties, including convection ovens, deck ovens, conveyor ovens, and combination ovens. Each type has its own unique features and advantages, so it's important to select the one that best fits your menu and cooking needs."
+      question: "What are the different types of commercial ovens?",
+      answer:
+        "Types of Commercial Ovens – Commercial ovens are available in several varieties, including convection ovens, deck ovens, conveyor ovens, and combination ovens. Each type has its own unique features and advantages, so it's important to select the one that best fits your menu and cooking needs."
     },
     {
-      "question": "What is the function of commercial oven?",
-      "answer": "Commercial ovens are used by large restaurants to cook food more consistently and at lower temperatures than standard ovens. Unlike a typical oven that provides basic cooking capabilities, a commercial convection oven cooks food more evenly and quickly."
+      question: "What is the function of commercial oven?",
+      answer:
+        "Commercial ovens are used by large restaurants to cook food more consistently and at lower temperatures than standard ovens. Unlike a typical oven that provides basic cooking capabilities, a commercial convection oven cooks food more evenly and quickly."
     },
     {
-      "question": "What is the useful life of a commercial oven?",
-      "answer": "Cooking equipment such as ovens, ranges, and stovetops play a crucial role in food production, typically lasting between 10 to 15 years. Their longevity is greatly affected by how often they are used and the level of maintenance they receive."
+      question: "What is the useful life of a commercial oven?",
+      answer:
+        "Cooking equipment such as ovens, ranges, and stovetops play a crucial role in food production, typically lasting between 10 to 15 years. Their longevity is greatly affected by how often they are used and the level of maintenance they receive."
     },
     {
-      "question": "What is the duty cycle of an oven?",
-      "answer": "The duty cycle, often referred to as the 'duty factor,' is expressed as a percentage representing the amount of time a signal is ON. For example, a 60% duty cycle indicates that the signal is ON for 60% of the time and OFF for the remaining 40%. In the context of an oven's duty cycle, this term refers to the frequency with which the oven is used."
+      question: "What is the duty cycle of an oven?",
+      answer:
+        "The duty cycle, often referred to as the 'duty factor,' is expressed as a percentage representing the amount of time a signal is ON. For example, a 60% duty cycle indicates that the signal is ON for 60% of the time and OFF for the remaining 40%. In the context of an oven's duty cycle, this term refers to the frequency with which the oven is used."
     },
     {
-      "question": "Why are commercial ovens so expensive?",
-      "answer": "Commercial stoves are generally more expensive than residential stoves because of their larger size, advanced features, and heavy-duty construction. They represent an investment for commercial kitchens that need high-performance cooking equipment to meet their operational demands."
+      question: "Why are commercial ovens so expensive?",
+      answer:
+        "Commercial stoves are generally more expensive than residential stoves because of their larger size, advanced features, and heavy-duty construction. They represent an investment for commercial kitchens that need high-performance cooking equipment to meet their operational demands."
     },
     {
-      "question": "How often should a commercial oven be cleaned?",
-      "answer": "Perform monthly deep cleaning for both the interior and exterior of your commercial oven to maintain its appearance and functioning."
+      question: "How often should a commercial oven be cleaned?",
+      answer:
+        "Perform monthly deep cleaning for both the interior and exterior of your commercial oven to maintain its appearance and functioning."
     },
     {
-      "question": "Are all commercial ovens convection?",
-      "answer": "There are various types of commercial ovens available, including traditional convection ovens, oven-and-range combinations, specialty countertop ovens, and more. This guide will explain each type of commercial oven and assist you in selecting the best option for your foodservice business."
+      question: "Are all commercial ovens convection?",
+      answer:
+        "There are various types of commercial ovens available, including traditional convection ovens, oven-and-range combinations, specialty countertop ovens, and more. This guide will explain each type of commercial oven and assist you in selecting the best option for your foodservice business."
     },
     {
-      "question": "Do commercial ovens bake faster?",
-      "answer": "Commercial convection ovens maintain a consistent temperature throughout the baking process, ensuring that your food cooks evenly without the need to adjust anything. Because convection ovens are more efficient than traditional ovens and experience less heat loss, they usually cook food faster."
+      question: "Do commercial ovens bake faster?",
+      answer:
+        "Commercial convection ovens maintain a consistent temperature throughout the baking process, ensuring that your food cooks evenly without the need to adjust anything. Because convection ovens are more efficient than traditional ovens and experience less heat loss, they usually cook food faster."
     },
     {
-      "question": "What is the difference between a commercial oven and a regular oven?",
-      "answer": "Commercial ovens provide higher heating power and faster preheating times, quickly reaching and maintaining the desired temperature, making them ideal for busy kitchens. Home ovens have lower heating power and longer preheating times, but are more energy-efficient and suitable for small-scale cooking."
+      question:
+        "What is the difference between a commercial oven and a regular oven?",
+      answer:
+        "Commercial ovens provide higher heating power and faster preheating times, quickly reaching and maintaining the desired temperature, making them ideal for busy kitchens. Home ovens have lower heating power and longer preheating times, but are more energy-efficient and suitable for small-scale cooking."
     },
     {
-      "question": "How to calculate gas load?",
-      "answer": "To determine the cubic feet per hour of gas required, divide the input of the appliances by the average BTU heating value per cubic foot of gas. The average BTU per cubic foot is 1,100."
+      question: "How to calculate gas load?",
+      answer:
+        "To determine the cubic feet per hour of gas required, divide the input of the appliances by the average BTU heating value per cubic foot of gas. The average BTU per cubic foot is 1,100."
     },
     {
-      "question": "How deep is a commercial oven?",
-      "answer": "These Gas and Dual Fuel Ranges have an impressive 27-inch depth, providing a peak culinary experience with up to an incredible 10.6 cubic feet of oven cavity space. Available in various widths, you can easily find the Commercial Depth Gas Range that best fits your kitchen layout and cooking style."
+      question: "How deep is a commercial oven?",
+      answer:
+        "These Gas and Dual Fuel Ranges have an impressive 27-inch depth, providing a peak culinary experience with up to an incredible 10.6 cubic feet of oven cavity space. Available in various widths, you can easily find the Commercial Depth Gas Range that best fits your kitchen layout and cooking style."
     }
   ]
 };
 
 const bookingData = {
-  "eyebrow": "Book an Appointment",
-  "title": "Request Commercial Oven Repair",
-  "description": "Share your preferred date and location, then continue through WhatsApp to request onsite commercial oven support.",
-  "submitLabel": "Continue with booking request",
-  "successMessage": "Your booking details are ready. Continue in WhatsApp to send the request to the FAJ scheduling team.",
-  "defaultService": "Commercial Oven Repair",
-  "locations": [
-    "Dubai",
-    "Sharjah",
-    "Abu Dhabi"
-  ],
-  "fields": {
-    "name": {
-      "label": "Company / full name",
-      "placeholder": "e.g. Restaurant name / John Doe"
+  eyebrow: "BOOK YOUR SERVICE",
+  title: "BOOK AN OVEN SERVICE APPOINTMENT",
+  description:
+    "Book your Oven service appointment with our expert team. We provide professional oven installation, cleaning, maintenance, and repair services to keep your kitchen safe and your cooking appliances running efficiently.",
+  submitLabel: "CONTINUE WITH BOOKING REQUEST",
+  defaultService: "Commercial Oven Repair",
+  locations: ["Dubai", "Sharjah", "Abu Dhabi"],
+  fields: {
+    name: {
+      label: "Full Name",
+      placeholder: "e.g. John Doe"
     },
-    "phone": {
-      "label": "Phone number (UAE)",
-      "placeholder": "e.g. +971 50 123 4567"
+    phone: {
+      label: "Phone Number (UAE)",
+      placeholder: "e.g. +971 50 123 4567"
     },
-    "location": {
-      "label": "Service location / city"
+    location: {
+      label: "Property Location / City"
     },
-    "date": {
-      "label": "Preferred service date"
+    date: {
+      label: "Preferred Appointment Date"
     }
   },
-  "modal": {
-    "eyebrow": "Request oven service",
-    "description": "Enter your details and continue through WhatsApp to request inspection, repair or a maintenance-plan quotation.",
-    "submitLabel": "Continue with booking request",
-    "closeLabel": "Close booking dialog"
+  modal: {
+    eyebrow: "Request oven service",
+    description:
+      "Enter your details and continue through WhatsApp to request inspection, repair or a maintenance-plan quotation.",
+    submitLabel: "CONTINUE WITH BOOKING REQUEST",
+    closeLabel: "Close booking dialog"
   },
-  "messageGreeting": "Hello FAJ Technical Services, I would like to request commercial oven service:",
-  "messageLabels": {
-    "name": "Name / company",
-    "phone": "Phone",
-    "location": "Location",
-    "date": "Preferred date",
-    "page": "Page"
+  messageGreeting:
+    "Hello FAJ Technical Services, I would like to request commercial oven maintenance service:",
+  messageLabels: {
+    name: "Name / company",
+    phone: "Phone",
+    location: "Location",
+    date: "Preferred date",
+    page: "Page"
   }
 };
 
@@ -600,42 +735,40 @@ const ovenRepairData = {
   seo: seoData,
   contact: contactData,
   hero: heroData,
-  overview: overviewData,
-  serviceOverview: serviceOverviewData,
-  contracts: contractsData,
-  inspectionPolicy: inspectionPolicyData,
+  callouts: calloutsData,
   video: videoData,
-  ppmServices: ppmServicesData,
   maintenanceImportance: maintenanceImportanceData,
   commonProblems: commonProblemsData,
   servicesOffered: servicesOfferedData,
   benefits: benefitsData,
   whyChooseUs: whyChooseUsData,
   brands: brandsData,
+  contracts: contractsData,
+  gallery: galleryData,
+  articles: articlesData,
   testimonials: testimonialsData,
   faqs: faqsData,
-  booking: bookingData,
+  booking: bookingData
 };
 
 export {
+  articlesData,
   benefitsData,
   bookingData,
   brandsData,
+  calloutsData,
   commonProblemsData,
   contactData,
   contractsData,
   faqsData,
+  galleryData,
   heroData,
-  overviewData,
-  inspectionPolicyData,
   maintenanceImportanceData,
-  ppmServicesData,
   seoData,
-  serviceOverviewData,
   servicesOfferedData,
   testimonialsData,
   videoData,
-  whyChooseUsData,
+  whyChooseUsData
 };
 
 export default ovenRepairData;

@@ -1,21 +1,20 @@
 import BreadCumb from "../../Components/Common/BreadCumb";
 import MaintenanceBenefits from "../../Components/MaintenanceBenefits/MaintenanceBenefits";
+import KitchenEmergencyPpmSection from "../../Components/Services/kitchenequipment/KitchenEmergencyPpmSection";
 import {
   AboutHeroSection,
   AccordionSection,
   ActionCardsSection,
   BookingModal,
-  BookingSection,
-  ChecklistSection,
-  ContentCardSection,
   EmbeddedVideoSection,
+  MediaGallerySection,
+  ModernBookingSection,
   NumberedGridSection,
   PageMetadata,
   PlanCardsSection,
-  SplitHeroSection,
-  TwoColumnInfoSection,
-  useBookingRequest,
+  SearchableDirectorySection,
   TestimonialsSection,
+  useBookingRequest,
 } from "../../Components/ServicePageSections";
 import "../../Components/ServicePageSections/ServicePageSections.css";
 import pageData from "../../data/servicePages/meatGrinderRepair";
@@ -41,35 +40,50 @@ export default function MeatGrinderRepair() {
       />
 
       <main className="service-landing">
+        {/* Section 1: Hero */}
         <AboutHeroSection
           content={pageData.hero}
           contact={pageData.contact}
           onPrimaryAction={openBooking}
           contentWidth={pageData.hero.contentWidth || "50%"}
+          tone="white"
           showPhone={false}
           showCall={false}
-          tone="white"
+          badges={pageData.hero.badges}
         />
 
+        {/* Breadcrumb navigation */}
         <BreadCumb />
 
-        <ContentCardSection content={pageData.overview} tone="soft" />
-
-        <TwoColumnInfoSection
-          content={pageData.repairOverview}
-          tone="white"
+        {/* Section 2: Express Grinder Repair & PPM Callouts */}
+        <KitchenEmergencyPpmSection
+          tone="soft"
+          expressContent={pageData.callouts.express}
+          ppmContent={pageData.callouts.ppm}
         />
 
-        <EmbeddedVideoSection content={pageData.video} tone="soft" />
-
-        <ChecklistSection
-          content={pageData.maintenanceChecks}
+        {/* Section 3: Service Video */}
+        <EmbeddedVideoSection
+          content={pageData.video}
           tone="white"
+          showCta={true}
+          cta={{
+            phone: `tel:+${pageData.contact.phone}`,
+            whatsapp: `https://api.whatsapp.com/send?phone=+${pageData.contact.whatsapp}&text=Hello`,
+          }}
         />
 
+        {/* Section 4: Why Grinder Maintenance Important (5 cards: 3 on top, 2 on bottom) */}
+        <ActionCardsSection
+          content={pageData.maintenanceImportance}
+          tone="soft"
+          columns="three"
+        />
+
+        {/* Section 5: Troubleshooting Guide (01-08) */}
         <NumberedGridSection
           content={pageData.commonProblems}
-          tone="soft"
+          tone="white"
           columns="four"
           showCta={true}
           cta={{
@@ -78,38 +92,75 @@ export default function MeatGrinderRepair() {
           }}
         />
 
+        {/* Section 6: Comprehensive Repair Services for Meat Grinder in Dubai (4 cards + banner) */}
         <ActionCardsSection
           content={pageData.servicesOffered}
+          tone="soft"
+          columns="four"
           onAction={openBooking}
-          tone="white"
-          columns="two"
         />
 
-        <MaintenanceBenefits {...pageData.benefits} tone="soft" />
+        {/* Section 7: Service Deliverables / Benefits */}
+        <MaintenanceBenefits {...pageData.benefits} tone="white" />
 
+        {/* Section 8: FAJ Service Promise (6 cards) */}
         <ActionCardsSection
           content={pageData.whyChooseUs}
-          tone="white"
+          tone="soft"
           columns="three"
         />
 
-        <TestimonialsSection content={pageData.testimonials} tone="soft" />
+        {/* Section 9: Approved Brand Partners */}
+        <SearchableDirectorySection
+          content={pageData.brands}
+          tone="white"
+          onAction={openBooking}
+          showCta={false}
+        />
 
+        {/* Section 10: Maintenance Plans (Dark Section) */}
         <PlanCardsSection
           content={pageData.contracts}
           onAction={openBooking}
           tone="dark"
         />
 
-        <AccordionSection content={pageData.faqs} tone="soft" />
+        {/* Section 11: Gallery (6 photos) */}
+        <MediaGallerySection
+          content={pageData.gallery}
+          tone="soft"
+        />
 
-        <BookingSection
-          content={pageData.booking}
-          bookingState={bookingState}
+        {/* Section 12: News & Updates (3 blog articles) */}
+        <ActionCardsSection
+          content={pageData.articles}
+          columns="three"
           tone="white"
+        />
+
+        {/* Section 13: Customer Testimonials (3 reviews) */}
+        <TestimonialsSection
+          content={pageData.testimonials}
+          tone="soft"
+        />
+
+        {/* Section 14: Meat Grinder Repair FAQs (Second to last) */}
+        <AccordionSection
+          content={pageData.faqs}
+          contact={pageData.contact}
+          tone="white"
+        />
+
+        {/* Section 15: Modern Booking Form (Bottom) */}
+        <ModernBookingSection
+          content={pageData.booking}
+          contact={pageData.contact}
+          bookingState={bookingState}
+          tone="soft"
         />
       </main>
 
+      {/* Booking Modal */}
       <BookingModal
         content={pageData.booking}
         open={modalOpen}
@@ -120,3 +171,4 @@ export default function MeatGrinderRepair() {
     </>
   );
 }
+

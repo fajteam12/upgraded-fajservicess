@@ -81,17 +81,19 @@ function CalloutBannerSection({
       >
         <ScrollSlide direction="left">
           <div className="service-landing__callout-copy">
-            {content.eyebrow && (
-              <span>{content.eyebrow}</span>
-            )}
+            <div className="service-landing__callout-text">
+              {content.eyebrow && (
+                <span>{content.eyebrow}</span>
+              )}
 
-            {content.title && (
-              <h2>{content.title}</h2>
-            )}
+              {content.title && (
+                <h2>{content.title}</h2>
+              )}
 
-            {content.description && (
-              <p>{content.description}</p>
-            )}
+              {content.description && (
+                <p>{content.description}</p>
+              )}
+            </div>
 
             {hasAction && (
               <div className="service-landing__callout-action">

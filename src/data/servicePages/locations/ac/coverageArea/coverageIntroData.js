@@ -1,6 +1,6 @@
 const coverageIntroData = {
   title:
-    "Where Does FAJ Operate in Dubai?\nComprehensive Coverage Across Prime Dubai Locations",
+    "WHERE DOES FAJ OPERATE IN DUBAI?\nCOMPREHENSIVE COVERAGE ACROSS PRIME DUBAI LOCATIONS",
 
   paragraphs: [
     {

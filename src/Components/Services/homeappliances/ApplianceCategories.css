@@ -1,0 +1,101 @@
+.appliance-categories-section {
+  padding: 60px 0 40px 0;
+  background-color: #ffffff;
+}
+
+.appliance-pills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px 14px;
+  max-width: 1240px;
+  margin: 30px auto 0 auto;
+  padding: 0 16px;
+}
+
+.appliance-pill-card {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 16px 8px 10px;
+  background: rgba(237, 246, 248, 0.7);
+  border: 1px solid var(--secondary-color, #0a84a6);
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--secondary-color, #0a84a6);
+  font-size: 14.5px;
+  font-weight: 600;
+  box-shadow: inset 0px 0px 4px 0px rgba(237, 246, 248, 0.8);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+.appliance-pill-card:hover {
+  background: #ffffff;
+  border-color: #086d8a;
+  color: #086d8a;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(10, 132, 166, 0.16);
+}
+
+.appliance-pill-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  background: #e8f3f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background 0.2s ease;
+}
+
+.appliance-pill-card:hover .appliance-pill-icon {
+  background: #ddedf3;
+}
+
+.appliance-pill-icon img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.appliance-pill-text {
+  white-space: nowrap;
+  font-weight: 600;
+  color: var(--secondary-color, #0a84a6);
+  transition: color 0.2s ease;
+}
+
+.appliance-pill-card:hover .appliance-pill-text {
+  color: #086d8a;
+}
+
+@media (max-width: 768px) {
+  .appliance-categories-section {
+    padding: 40px 0 30px 0;
+  }
+
+  .appliance-pills-grid {
+    gap: 8px 10px;
+    margin-top: 20px;
+  }
+
+  .appliance-pill-card {
+    padding: 6px 12px 6px 8px;
+    font-size: 13px;
+    gap: 8px;
+    border-radius: 6px;
+  }
+
+  .appliance-pill-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+  }
+
+  .appliance-pill-icon img {
+    width: 18px;
+    height: 18px;
+  }
+}

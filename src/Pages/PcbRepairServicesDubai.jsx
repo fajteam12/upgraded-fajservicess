@@ -1,17 +1,85 @@
 import BreadCumb from "../Components/Common/BreadCumb";
+import { ScrollSlide } from "../Components/Animations/ScrollAnimation";
+import SectionHeader from "../Components/ServicePageSections/SectionHeader";
+import {
+  getCloudflareImageSrcSet,
+  getCloudflareImageUrl,
+} from "../utils/cloudflareImages";
 import {
   AboutHeroSection,
   AccordionSection,
   ActionCardsSection,
   BookingModal,
-  BookingSection,
   ContentCardSection,
+  ModernBookingSection,
   NumberedGridSection,
   PageMetadata,
+  SplitMediaSection,
+  TestimonialsSection,
   useBookingRequest,
 } from "../Components/ServicePageSections";
 import "../Components/ServicePageSections/ServicePageSections.css";
 import pageData from "../data/servicePages/pcbRepair";
+
+function PcbSpecialistsSection({ content, tone = "soft" }) {
+  if (!content?.cards?.length) return null;
+
+  return (
+    <section className={`service-landing__section is-${tone}`} id={content.id}>
+      <div className="service-landing__container">
+        <SectionHeader content={content} light={tone === "dark"} />
+
+        <div className="service-landing__pcb-cards-stack">
+          {content.cards.map((card, idx) => {
+            const imageSrc = getCloudflareImageUrl(card.image, "tablet");
+            const imageSrcSet = getCloudflareImageSrcSet(card.image);
+
+            return (
+              <ScrollSlide direction="up" delay={idx * 0.08} key={card.title}>
+                <article
+                  className={`service-landing__pcb-split-card ${
+                    card.imageSide === "right"
+                      ? "is-image-right"
+                      : "is-image-left"
+                  }`}
+                >
+                  <div className="service-landing__pcb-card-media">
+                    <img
+                      src={imageSrc}
+                      srcSet={imageSrcSet}
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      alt={card.alt || card.title}
+                      loading="lazy"
+                      decoding="async"
+                      width="600"
+                      height="400"
+                    />
+                  </div>
+
+                  <div className="service-landing__pcb-card-copy">
+                    <h3 className="service-landing__pcb-card-title">
+                      {card.title}
+                    </h3>
+                    {card.subtitle && (
+                      <div className="service-landing__pcb-card-subtitle">
+                        {card.subtitle}
+                      </div>
+                    )}
+                    <ul className="service-landing__pcb-card-bullets">
+                      {card.bullets.map((bullet, bIdx) => (
+                        <li key={bIdx}>{bullet}</li>
+                      ))}
+                    </ul>
+                  </div>
+                </article>
+              </ScrollSlide>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+}
 
 export default function PcbRepairServicesDubai() {
   const {
@@ -34,6 +102,7 @@ export default function PcbRepairServicesDubai() {
       />
 
       <main className="service-landing">
+        {/* Section 1: Hero (Screenshot 1) */}
         <AboutHeroSection
           content={pageData.hero}
           contact={pageData.contact}
@@ -46,50 +115,70 @@ export default function PcbRepairServicesDubai() {
 
         <BreadCumb />
 
+        {/* Section 2: Terms & Conditions Inspection Fee (Screenshot 2) */}
         <ContentCardSection
-          content={pageData.overview}
+          content={pageData.terms}
           tone="soft"
+          plain={false}
         />
 
-        <ContentCardSection
+        {/* Section 3: Affordable Electronics PCB Repair / Split Media (Screenshot 3) */}
+        <SplitMediaSection
           content={pageData.serviceOverview}
+          imageSide="left"
+          showPhone={false}
+          showWhatsapp={true}
+          showCta={true}
           tone="white"
         />
 
+        {/* Section 4: Why Choose Our PCB Repair Services (Screenshot 4) */}
         <ActionCardsSection
           content={pageData.whyChooseUs}
           tone="soft"
           columns="three"
         />
 
+        {/* Section 5: Our Repair Process (Screenshot 5) */}
         <NumberedGridSection
           content={pageData.repairProcess}
-          tone="white"
           columns="three"
-        />
-
-        <ContentCardSection
-          content={pageData.industrialPcb}
-          tone="soft"
-        />
-
-        <ContentCardSection
-          content={pageData.commercialPcb}
+          showPhone={false}
+          showWhatsapp={true}
+          showCta={true}
           tone="white"
         />
 
-        <ContentCardSection
-          content={pageData.consumerPcb}
+        {/* Section 6: PCB Specialists Cards - Industrial, Commercial, Consumer (Screenshots 6, 7, 8) */}
+        <PcbSpecialistsSection
+          content={pageData.pcbSpecialists}
           tone="soft"
         />
 
+        {/* Section 7: News & Updates / Blogs (Screenshot 9) */}
+        <ActionCardsSection
+          content={pageData.blogs}
+          columns="three"
+          tone="white"
+        />
+
+        {/* Section 8: Customer Testimonials (Screenshot 10) */}
+        <TestimonialsSection
+          content={pageData.testimonials}
+          tone="soft"
+        />
+
+        {/* Section 9: PCB Repair FAQs (Screenshot 11 — Second Last) */}
         <AccordionSection
           content={pageData.faqs}
+          contact={pageData.contact}
           tone="white"
         />
 
-        <BookingSection
+        {/* Section 10: Book A PCB Repair Service Appointment Form (Screenshot 12 — Bottom) */}
+        <ModernBookingSection
           content={pageData.booking}
+          contact={pageData.contact}
           bookingState={bookingState}
           tone="soft"
         />

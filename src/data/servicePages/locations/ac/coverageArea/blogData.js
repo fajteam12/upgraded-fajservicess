@@ -1,6 +1,8 @@
 const blogData = {
   id: "ac-coverage-blog",
 
+  eyebrow: "NEWS & UPDATES",
+
   title:
     "WE DELIVER RELIABLE, AFFORDABLE SERVICES WITH DEDICATED SUPPORT FOR SATISFACTION",
 

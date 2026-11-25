@@ -1,15 +1,14 @@
 import BreadCumb from "../Components/Common/BreadCumb";
 import HeaderForm from "../Components/Headeform/HeaderForm";
 import {
+  AboutHeroSection,
   AccordionSection,
   ActionCardsSection,
   BookingModal,
-  BookingSection,
-  EmbeddedVideoSection,
-  PageMetadata,
-  PlanCardsSection,
-  AboutHeroSection,
   ContentCardSection,
+  EmbeddedVideoSection,
+  ModernBookingSection,
+  PageMetadata,
   SearchableDirectorySection,
   TestimonialsSection,
   useBookingRequest,
@@ -38,8 +37,7 @@ export default function AirConditioning() {
       />
 
       <main className="service-landing">
-        <HeaderForm />
-
+        {/* Section 1: Hero with Highlights and Explore Our Services */}
         <AboutHeroSection
           content={pageData.hero}
           contact={pageData.contact}
@@ -50,48 +48,58 @@ export default function AirConditioning() {
 
         <BreadCumb />
 
-        <ContentCardSection content={pageData.overview} tone="soft" />
+        {/* Section 2: Best Commercial Air Conditioning Maintenance Services in Dubai */}
+        <ContentCardSection
+          content={pageData.commercialMaintenance}
+          contact={pageData.contact}
+          tone="soft"
+          plain={true}
+        />
 
-        <ContentCardSection content={pageData.introduction} contact={pageData.contact} tone="white" />
+        {/* Section 3: Professional AC Maintenance & Video Showcase */}
+        <EmbeddedVideoSection
+          content={pageData.video}
+          contact={pageData.contact}
+          videoSide="left"
+          tone="white"
+        />
 
-        <EmbeddedVideoSection content={pageData.video} tone="white" />
-
-        <ContentCardSection content={pageData.professionalMaintenance} contact={pageData.contact} tone="soft" />
-
+        {/* Section 4: Shop for Air Conditioner, Spare Parts and Accessories (9 Cards) */}
         <SearchableDirectorySection
           content={pageData.shop}
           contact={pageData.contact}
-          tone="white"
-          variant="compact"
-        />
-
-        <TestimonialsSection
-          content={pageData.testimonials}
           tone="soft"
-        />
-
-        <ActionCardsSection
-          content={pageData.news}
-          tone="white"
+          variant="compact"
           columns="three"
         />
 
-        <PlanCardsSection
-          content={pageData.contracts}
-          onAction={openBooking}
-          tone="dark"
+        {/* Section 5: Customer Testimonials */}
+        <TestimonialsSection
+          content={pageData.testimonials}
+          tone="white"
         />
 
+        {/* Section 6: News & Updates (3 Blog Cards) */}
+        <ActionCardsSection
+          content={pageData.news}
+          tone="soft"
+          columns="three"
+        />
+
+        {/* Section 7: FAQs & Contact Channels (Second-to-Last) */}
         <AccordionSection
           content={pageData.faqs}
           contact={pageData.contact}
-          tone="soft"
+          tone="white"
         />
 
-        <BookingSection
+        {/* Section 8: Booking Appointment Form (Bottom) */}
+        <ModernBookingSection
           content={pageData.booking}
+          contact={pageData.contact}
           bookingState={bookingState}
-          tone="white"
+          onAction={openBooking}
+          tone="soft"
         />
       </main>
 

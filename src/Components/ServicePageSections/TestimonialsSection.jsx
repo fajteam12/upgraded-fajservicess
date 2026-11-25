@@ -49,8 +49,10 @@ function TestimonialsSection({
   const items =
     Array.isArray(content?.items) && content.items.length > 0
       ? content.items
-      : Array.isArray(content?.reviews)
+      : Array.isArray(content?.reviews) && content.reviews.length > 0
       ? content.reviews
+      : Array.isArray(content?.testimonials) && content.testimonials.length > 0
+      ? content.testimonials
       : [];
   const itemCount = items.length;
 

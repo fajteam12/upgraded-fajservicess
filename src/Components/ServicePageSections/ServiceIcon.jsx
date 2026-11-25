@@ -203,6 +203,10 @@ function ServiceIcon({ name = "wrench" }) {
     case "calendar":
       return <svg {...commonProps}><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/></svg>;
     case "peace-of-mind":
+    case "Peace-of-Mind":
+    case "Feeling-Of-Calm":
+    case "feeling-of-calm":
+    case "calm":
     case "smile":
       return <svg {...commonProps}><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/><path d="M12 5l-4 4"/></svg>;
     case "damage-control":
@@ -219,6 +223,8 @@ function ServiceIcon({ name = "wrench" }) {
       return <svg {...commonProps}><path d="m3 9 9-6 9 6v12H3V9Z"/><path d="M7 21v-8h10v8M7 17h10"/></svg>;
     case "lifespan":
     case "trending-up":
+    case "Extending-Appliance-Lifespan":
+    case "extending-appliance-lifespan":
       return <svg {...commonProps}><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/><circle cx="6" cy="6" r="3"/></svg>;
     case "cleaning":
       return <svg {...commonProps}><path d="M14 8V5a2 2 0 0 0-2-2H9v7l-2 2v10a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V10l-3-2z"/><path d="M7 5h5M17 7l2-1"/><circle cx="19" cy="11" r="1.5"/><circle cx="20" cy="16" r="1"/></svg>;
@@ -231,6 +237,9 @@ function ServiceIcon({ name = "wrench" }) {
     case "award-expert":
     case "certified-expert":
     case "experts":
+    case "We-Are-Experts":
+    case "we-are-experts":
+    case "experience":
       return <svg {...commonProps}><circle cx="12" cy="9" r="6"/><path d="m9 9 2 2 4-4"/><path d="M8.5 14.5 7 22l5-3 5 3-1.5-7.5"/></svg>;
     case "gear-precision":
     case "genuine-parts":
@@ -240,13 +249,24 @@ function ServiceIcon({ name = "wrench" }) {
     case "ac-odour":
       return <svg {...commonProps}><rect x="2" y="4" width="20" height="9" rx="2"/><path d="M6 17c1-1.5 2-1.5 3 0s2 1.5 3 0 2-1.5 3 0M6 20c1-1.5 2-1.5 3 0s2 1.5 3 0 2-1.5 3 0"/><circle cx="18" cy="7" r="0.75" fill="currentColor"/></svg>;
     case "eco-leaf":
+    case "Lower-Energy-Bills":
+    case "lower-energy-bills":
+    case "energy":
       return <svg {...commonProps}><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>;
     case "ice-crusher":
       return <svg {...commonProps}><path d="M12 2v20M4.2 6.5l15.6 11M4.2 17.5l15.6-11"/><rect x="8" y="8" width="8" height="8" rx="2"/></svg>;
     case "trust-shield":
+    case "safety":
+    case "Ensuring-Safety":
+    case "ensuring-safety":
+    case "You-Are-in-Control":
+    case "in-control":
       return <svg {...commonProps}><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>;
     case "quality-badge":
     case "guarantee-seal":
+    case "Optimal-Performance":
+    case "optimal-performance":
+    case "performance":
       return <svg {...commonProps}><circle cx="12" cy="9" r="6"/><path d="M8.21 13.89 7 22l5-3 5 3-1.21-8.12"/><path d="m9.5 9 1.5 1.5 3.5-3.5"/></svg>;
     case "clean-handshake":
       return <svg {...commonProps}><path d="m11 17 2 2a1 1 0 0 0 1.4 0l4.3-4.3a1 1 0 0 0 0-1.4l-2.6-2.6"/><path d="m13 7-2-2a1 1 0 0 0-1.4 0L5.3 9.3a1 1 0 0 0 0 1.4l2.6 2.6"/><path d="m8 13 4 4"/><path d="m16 9-4-4"/></svg>;
@@ -312,6 +332,8 @@ function ServiceIcon({ name = "wrench" }) {
       );
     case "rosette-check":
     case "award-check":
+    case "Trustworthy":
+    case "trustworthy":
       return (
         <svg {...commonProps}>
           <path d="M12 2l2.4 2.4 3.4-.4 1.4 3.1 3.2 1.2-.4 3.4 2.4 2.4-2.4 2.4.4 3.4-3.2 1.2-1.4 3.1-3.4-.4L12 22l-2.4-2.4-3.4.4-1.4-3.1-3.2-1.2.4-3.4L2 12l2.4-2.4-.4-3.4 3.2-1.2 1.4-3.1 3.4.4L12 2z" />
@@ -373,6 +395,12 @@ function ServiceIcon({ name = "wrench" }) {
         </svg>
       );
     case "coins":
+    case "Saving-Money-on-Repair":
+    case "saving-money-on-repair":
+    case "savings":
+    case "Great-Value":
+    case "great-value":
+    case "value":
       return (
         <svg {...commonProps}>
           <circle cx="8" cy="8" r="6" />

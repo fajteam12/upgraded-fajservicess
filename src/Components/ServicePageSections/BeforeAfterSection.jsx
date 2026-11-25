@@ -8,13 +8,11 @@ function BeforeAfterSection({ content, tone = "soft" }) {
   const [isDragging, setIsDragging] = useState(false);
   const containerRef = useRef(null);
 
-  const beforeImageSrc = content?.beforeImage?.id
-    ? getCloudflareImageUrl(content.beforeImage.id, "public")
-    : content?.beforeImage?.src || "";
+  const beforeKey = content?.beforeImage?.id || content?.beforeImage?.src;
+  const beforeImageSrc = beforeKey ? getCloudflareImageUrl(beforeKey, "public") : "";
 
-  const afterImageSrc = content?.afterImage?.id
-    ? getCloudflareImageUrl(content.afterImage.id, "public")
-    : content?.afterImage?.src || "";
+  const afterKey = content?.afterImage?.id || content?.afterImage?.src;
+  const afterImageSrc = afterKey ? getCloudflareImageUrl(afterKey, "public") : "";
 
   const handleMove = useCallback((clientX) => {
     if (!containerRef.current) return;

@@ -54,7 +54,7 @@ const contactData = {
 
 const heroData = {
   title: "Affordable Meraki Coffee Machine Service Center and Repair in Dubai, Sharjah & Abu Dhabi, UAE",
-  subtitle: "",
+  subtitle: "AUTHORIZED COFFEE MACHINE CARE & SERVICE IN DUBAI",
   paragraphs: [
     "Since 2010, FAJ has been providing reliable and trusted expertise in installation, best Meraki coffee machine service and maintenance, specialising in Meraki coffee machine repair in Dubai, serving home Meraki coffee machine service, office Meraki coffee machine repair, restaurant Meraki coffee machine maintenance, and cafes."
   ],
@@ -87,7 +87,7 @@ const overviewData = {
   showCta: true,
   cta: {
     whatsapp: "971507464712",
-    phone: ""
+    phone: "+971507464712"
   }
 };
 
@@ -165,7 +165,7 @@ const pricingData = {
     {
       title: "Meraki Coffee Machine Installation",
       badge: "Professional Setup",
-      pricePrefix: "",
+      pricePrefix: "Starting from",
       price: "Custom Quote",
       description: "Correct installation, connection and setup based on the Meraki coffee-machine type and premises requirements.",
       popup: {
@@ -354,7 +354,7 @@ const maintenanceImportanceData = {
 const commonProblemsData = {
   eyebrow: "Warning Signals",
   title: "The Most Common Problems of Meraki Coffee Machines",
-  description: "",
+  description: "Expert diagnostics and component repair for common espresso machine issues across Dubai.",
   items: [
     {
       title: "Water Leaking",
@@ -400,7 +400,7 @@ const commonProblemsData = {
   showCta: true,
   cta: {
     whatsapp: "971507464712",
-    phone: ""
+    phone: "+971507464712"
   }
 };
 
@@ -501,7 +501,7 @@ const whyChooseUsData = {
   id: "why-choose-faj-meraki-coffee-machine-service-center",
   eyebrow: "Why Choose FAJ?",
   title: "CHOOSE US FOR RELIABLE, EXCEPTIONAL SERVICE TAILORED TO YOUR NEEDS!",
-  description: "",
+  description: "Expert diagnostics and component repair for common espresso machine issues across Dubai.",
   items: [
     {
       icon: "trust-shield",
@@ -742,7 +742,7 @@ const brandsData = {
   showCta: true,
   cta: {
     whatsapp: "971507464712",
-    phone: ""
+    phone: "+971507464712"
   }
 };
 

@@ -134,6 +134,68 @@ function renderHighlightIcon(type) {
   }
 }
 
+function renderExploreIcon(type) {
+  switch (type) {
+    case "ac":
+    case "smart-ac":
+    case "repair":
+      return (
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <rect x="2" y="4" width="20" height="12" rx="2" />
+          <path d="M6 12h12" />
+          <path d="M6 16v2" />
+          <path d="M10 16v2" />
+          <path d="M14 16v2" />
+          <path d="M18 16v2" />
+        </svg>
+      );
+    case "amc":
+    case "contract":
+    case "maintenance":
+      return (
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+          <polyline points="14 2 14 8 20 8" />
+          <path d="m9 15 2 2 4-4" />
+        </svg>
+      );
+    default:
+      return (
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <circle cx="12" cy="12" r="10" />
+          <path d="m9 12 2 2 4-4" />
+        </svg>
+      );
+  }
+}
+
 function RichText({ content }) {
   if (typeof content === "string") return content;
   if (!content) return null;
@@ -238,11 +300,7 @@ function AboutHeroSection({
   if (!content) return null;
 
   const image = content.image || {};
-  const imageId =
-    image.id ||
-    (typeof image.src === "string" && image.src.startsWith("/img/")
-      ? image.src.replace(/^\/img\//, "").replace(/\.[^/.]+$/, "")
-      : "");
+  const imageId = image.id || image.src || "";
   const cloudflareSrc = imageId
     ? getCloudflareImageUrl(imageId, "public")
     : "";
@@ -317,7 +375,11 @@ function AboutHeroSection({
       ? content.paragraphs
       : content.paragraph
         ? [content.paragraph]
-        : [];
+        : Array.isArray(content.intro) && content.intro.length > 0
+          ? content.intro
+          : content.intro
+            ? [content.intro]
+            : [];
 
   // Mutual automatic calculation: setting contentWidth calculates imageWidth and vice-versa
   const rawContentWidth =
@@ -438,7 +500,7 @@ function AboutHeroSection({
           )}
         </div>
 
-        {imageSrc && (
+        {imageSrc ? (
           <div className="service-about-hero__media-wrapper">
             <div
               className="service-about-hero__media"
@@ -476,8 +538,59 @@ function AboutHeroSection({
               )}
             </div>
           </div>
-        )}
+        ) : (content.brandName || image.brandName) ? (
+          <div className="service-about-hero__media-wrapper">
+            <div className="service-about-hero__brand-placeholder">
+              <div className="service-about-hero__brand-badge">
+                <span className="service-about-hero__brand-title">
+                  {content.brandName || image.brandName}
+                </span>
+                <span className="service-about-hero__brand-tag">
+                  Appliance Care &amp; Repair Specialists
+                </span>
+              </div>
+            </div>
+          </div>
+        ) : null}
       </div>
+
+      {content.exploreServices && (
+        <div className="service-about-hero__explore-wrapper">
+          <div className="service-about-hero__explore-container">
+            <div className="service-about-hero__explore-divider" aria-hidden="true" />
+            <h3 className="service-about-hero__explore-title">
+              {content.exploreServices.title || "Explore Our Services"}
+            </h3>
+            <div className="service-about-hero__explore-grid">
+              {content.exploreServices.items?.map((item, index) => {
+                const isExternal = item.href?.startsWith("http");
+                const CardTag = item.href ? (isExternal ? "a" : Link) : "div";
+                const cardProps = item.href
+                  ? isExternal
+                    ? { href: item.href, target: "_blank", rel: "noopener noreferrer" }
+                    : { to: item.href }
+                  : {};
+
+                return (
+                  <CardTag
+                    key={index}
+                    className={`service-about-hero__explore-card${item.active ? " is-active" : ""}`}
+                    {...cardProps}
+                  >
+                    <div className="service-about-hero__explore-icon" aria-hidden="true">
+                      {renderExploreIcon(item.icon)}
+                    </div>
+                    <div className="service-about-hero__explore-text">
+                      <span className="service-about-hero__explore-name">{item.title}</span>
+                      <span className="service-about-hero__explore-desc">{item.description}</span>
+                    </div>
+                  </CardTag>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 }

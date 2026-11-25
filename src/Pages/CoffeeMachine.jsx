@@ -4,13 +4,10 @@ import {
   AccordionSection,
   ActionCardsSection,
   BookingModal,
-  BookingSection,
   ChecklistSection,
-  ContentCardSection,
-  EmbeddedVideoSection,
+  ModernBookingSection,
   NumberedGridSection,
   PageMetadata,
-  PlanCardsSection,
   useBookingRequest,
   TestimonialsSection,
 } from "../Components/ServicePageSections";
@@ -38,6 +35,7 @@ export default function CoffeeMachine() {
       />
 
       <main className="service-landing">
+        {/* Section 1: Hero with Explore Services Bar (Screenshots 1 & 2) */}
         <AboutHeroSection
           content={pageData.hero}
           contact={pageData.contact}
@@ -48,23 +46,22 @@ export default function CoffeeMachine() {
 
         <BreadCumb />
 
-        <ContentCardSection content={pageData.overview} tone="soft" />
-
+        {/* Section 2: Cleaning & Descaling (Screenshot 2) */}
         <ChecklistSection
           content={pageData.cleaningDescaling}
           contact={pageData.contact}
-          tone="white"
+          tone="soft"
         />
 
+        {/* Section 3: Shop for Coffee Machines, Equipment, and Accessories (Screenshot 3) */}
         <ActionCardsSection
           content={pageData.shop}
           contact={pageData.contact}
-          tone="soft"
-          columns="four"
+          tone="white"
+          columns="three"
         />
 
-        <EmbeddedVideoSection content={pageData.video} tone="white" />
-
+        {/* Section 4: Why Choose Our Coffee Machine Maintenance Services (Screenshot 4) */}
         <ActionCardsSection
           content={pageData.whyChooseUs}
           contact={pageData.contact}
@@ -72,6 +69,7 @@ export default function CoffeeMachine() {
           columns="three"
         />
 
+        {/* Section 5: The Most Common Problems of Coffee Machines (Screenshot 5) */}
         <NumberedGridSection
           content={pageData.commonProblems}
           contact={pageData.contact}
@@ -79,28 +77,29 @@ export default function CoffeeMachine() {
           columns="four"
         />
 
+        {/* Section 6: News & Updates (Screenshot 6) */}
         <ActionCardsSection
           content={pageData.news}
           tone="soft"
           columns="three"
         />
 
+        {/* Section 7: Customer Testimonials (Screenshot 7) */}
         <TestimonialsSection content={pageData.testimonials} tone="white" />
 
-        <PlanCardsSection
-          content={pageData.contracts}
-          onAction={openBooking}
-          tone="dark"
-        />
-
+        {/* Section 8: Coffee Machine FAQs (Second Last) */}
         <AccordionSection 
           content={pageData.faqs} 
+          contact={pageData.contact}
           tone="soft" 
         />
 
-        <BookingSection
+        {/* Section 9: Book Coffee Machine Appointment (Bottom Form) */}
+        <ModernBookingSection
           content={pageData.booking}
+          contact={pageData.contact}
           bookingState={bookingState}
+          onAction={openBooking}
           tone="white"
         />
       </main>

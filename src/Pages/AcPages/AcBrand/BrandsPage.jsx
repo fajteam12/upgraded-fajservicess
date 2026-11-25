@@ -5,17 +5,18 @@ import {
   AccordionSection,
   ActionCardsSection,
   BookingModal,
-  BookingSection,
   CalloutBannerSection,
   ChecklistSection,
   ContentCardSection,
+  MediaGallerySection,
+  ModernBookingSection,
   NumberedGridSection,
   PageMetadata,
   PlanCardsSection,
   PricingCardsSection,
   SearchableDirectorySection,
+  TestimonialsSection,
   useBookingRequest,
-  TestimonialsSection
 } from "../../../Components/ServicePageSections";
 
 import "../../../Components/ServicePageSections/ServicePageSections.css";
@@ -80,6 +81,8 @@ export default function BrandsPage() {
           content={pageData.services}
           tone="white"
           columns="three"
+          showCta={true}
+          cta={pageData.services.cta}
         />
 
         <ActionCardsSection
@@ -104,11 +107,29 @@ export default function BrandsPage() {
           columns="four"
         />
 
-        <TestimonialsSection content={pageData.testimonials} tone="white" />
+        {pageData.gallery && (
+          <MediaGallerySection
+            content={pageData.gallery}
+            tone="white"
+          />
+        )}
+
+        <TestimonialsSection
+          content={pageData.testimonials}
+          tone="soft"
+        />
+
+        {pageData.news && (
+          <ActionCardsSection
+            content={pageData.news}
+            tone="white"
+            columns="three"
+          />
+        )}
 
         <SearchableDirectorySection
           content={pageData.brandsDirectory}
-          tone="white"
+          tone="soft"
           variant="compact"
         />
 
@@ -120,13 +141,13 @@ export default function BrandsPage() {
 
         <AccordionSection
           content={pageData.faqs}
-          tone="soft"
+          tone="white"
         />
 
-        <BookingSection
+        <ModernBookingSection
           content={pageData.booking}
           bookingState={bookingState}
-          tone="white"
+          tone="soft"
         />
       </main>
 

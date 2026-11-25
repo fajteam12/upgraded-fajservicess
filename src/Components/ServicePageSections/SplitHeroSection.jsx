@@ -22,13 +22,13 @@ function SplitHeroSection({
   if (!content) return null;
 
   const image = content.image || {};
-
-  const cloudflareSrc = image.id
-    ? getCloudflareImageUrl(image.id, "public")
+  const imageKey = image.id || image.src;
+  const cloudflareSrc = imageKey
+    ? getCloudflareImageUrl(imageKey, "public")
     : "";
 
-  const cloudflareSrcSet = image.id
-    ? getCloudflareImageSrcSet(image.id)
+  const cloudflareSrcSet = imageKey
+    ? getCloudflareImageSrcSet(imageKey)
     : undefined;
 
   const fallbackSrc = image.src || "";

@@ -131,7 +131,14 @@
   display: grid;
   grid-template-columns:
     repeat(2, minmax(0, 1fr));
+  grid-auto-rows: 1fr;
   gap: 16px;
+}
+
+.maintenance-benefits__grid > * {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .maintenance-benefits__card {
@@ -139,6 +146,9 @@
   isolation: isolate;
   display: flex;
   flex-direction: column;
+  width: 100%;
+  height: 100%;
+  flex: 1 1 auto;
   min-height: 210px;
   padding: 24px;
   overflow: hidden;
@@ -233,6 +243,7 @@
   color: #1e293b;
   font-size: 1rem;
   line-height: 1.65;
+  flex-grow: 1;
 }
 
 .maintenance-benefits__accent {
@@ -352,6 +363,7 @@
 
   .maintenance-benefits__grid {
     grid-template-columns: 1fr;
+    grid-auto-rows: auto;
     gap: 14px;
   }
 

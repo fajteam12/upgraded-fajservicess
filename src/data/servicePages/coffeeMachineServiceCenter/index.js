@@ -5,11 +5,15 @@
 const seoData = {
   "title": "Best Coffee Machine Service Center | Coffee Machine Repair UAE",
   "description": "Fast Coffee Machine service centre. Call FAJ for home / office espresso repair & top coffee maker maintenance near you Dubai. خدمات صيانة وإصلاح آلات القهو",
-  "keywords": "coffee machine service center Dubai, coffee machine repair, espresso machine maintenance, coffee machine cleaning, descaling Dubai",
+  "keywords": "Coffee Machine Repair, Coffee Machine Service, Coffee Machine Descaling, Coffee Machine Service Center",
   "author": "FAJ Technical Services L.L.C.",
   "businessName": "FAJ Coffee Machine Service Center",
   "url": "https://www.fajservices.ae/services/coffee-machine/coffee-machine-service-center/",
-  "image": "https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/coffee-machine-service-page-new-design-images/coffee-machine-service-center-top-image/public",
+  "image": "https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/Coffee-machine-servicing-title-image/public",
+  "rating": {
+    "ratingValue": "4.9",
+    "reviewCount": "3450"
+  },
   "serviceType": [
     "Coffee Machine Repair",
     "Espresso Machine Service",
@@ -49,13 +53,38 @@ const contactData = {
 };
 
 const heroData = {
-  "title": "Affordable Coffee Machine Service Center and Repair in Dubai, Sharjah & Abu Dhabi, UAE",
+  "title": "AFFORDABLE COFFEE MACHINE SERVICE CENTER AND REPAIR IN DUBAI, SHARJAH & ABU DHABI, UAE",
   "subtitle": "",
   "paragraphs": [
-    "Since 2010, FAJ has been providing reliable and trusted expertise in installation, best coffee machine service and maintenance, specialising in coffee machine repair in Dubai, serving home coffee machine service, office coffee machine repair, restaurant coffee machine maintenance, and cafes."
+    "Since 2010, FAJ has been providing reliable and trusted expertise in installation, best coffee machine service and maintenance, specialising in coffee machine repair in Dubai, serving home coffee machine service, office coffee machine repair, restaurant coffee machine maintenance, and cafes.",
+    "We work with a variety of coffee equipment, including tea & coffee vending machine repair, espresso machine maintenance, coffee grinders cleaning service, descaling professional coffee machine and automatic coffee machine error fix."
   ],
-  "primaryAction": "Get a Quick Quote",
-  "secondaryAction": "WhatsApp Expert",
+  "highlights": [
+    {
+      "icon": "award",
+      "title": "Established Since 2010",
+      "description": "Reliability, Diversity, Integrity, and Quality."
+    },
+    {
+      "icon": "shield",
+      "title": "Workmanship Warranty",
+      "description": "Repair and service warranty support."
+    },
+    {
+      "icon": "phone-support",
+      "title": "7-Day Service Response",
+      "description": "Fast assistance across Dubai"
+    }
+  ],
+  "showPhone": false,
+  "showCall": false,
+  "showWhatsapp": true,
+  "cta": {
+    "whatsapp": "971507464712",
+    "phone": ""
+  },
+  "primaryAction": "",
+  "secondaryAction": "",
   "bookingLabel": "Coffee Machine Technical Inspection",
   "image": {
     "id": "coffee-machine-service-page-new-design-images/coffee-machine-service-center-top-image",
@@ -67,39 +96,27 @@ const heroData = {
 };
 
 const overviewData = {
-  "cards": [
-    {
-      "paragraphs": [
-        "We work with a variety of coffee equipment, including tea & coffee vending machine repair, espresso machine maintenance, coffee grinders cleaning service, descaling professional coffee machine and automatic coffee machine error fix."
-      ]
-    },
-    {
-      "featured": true,
-      "paragraphs": [
-        "Our expert team understands the importance of functioning coffee machine servicing, and we prioritise timely maintenance. As specialists in espresso machines, we are committed to managing and maintaining your equipment throughout its lifespan, ensuring that you enjoy reliable, great-tasting coffee every day."
-      ]
-    }
-  ],
-  "showCta": true,
-  "cta": {
-    "whatsapp": "971507464712",
-    "phone": ""
-  }
+  "id": "coffee-machine-priority",
+  "title": "YOUR COFFEE MACHINE, OUR PRIORITY",
+  "paragraphs": [
+    "Our expert team understands the importance of functioning coffee machine servicing, and we prioritise timely maintenance. As specialists in espresso machines, we are committed to managing and maintaining your equipment throughout its lifespan, ensuring that you enjoy reliable, great-tasting coffee every day."
+  ]
 };
 
 const pricingData = {
-  "eyebrow": "Inspection and Servicing Prices",
-  "title": "Coffee Machine Pricing Plans",
-  "description": "Transparent starting prices for inspection and cleaning, with installation quoted for the selected machine and site.",
+  "eyebrow": "TRANSPARENT SERVICE OPTIONS",
+  "title": "COFFEE MACHINE TECHNICAL INSPECTION PRICE",
+  "description": "Choose a starting service based on your coffee machine system. Final quotations depend on unit type, condition and required spare parts.",
   "defaultBadge": "Professional Care",
   "pricePrefix": "Starting from",
-  "actionLabel": "Book now",
+  "actionLabel": "BOOK NOW",
   "items": [
     {
-      "title": "Coffee Machine Technical Inspection",
+      "image": "coffee-machine-service-page-new-design-images/coffee-machine-service-repair-top-image",
+      "title": "COFFEE MACHINE TECHNICAL INSPECTION PRICE",
       "badge": "Diagnostics Check",
       "price": "AED 187",
-      "description": "A technician inspects the reported fault and provides a quotation for repair work and required parts.",
+      "description": "Just tell us about your faulty coffee machine, and we will provide a quote for repair / parts. Our technician will arrive at a time that is suitable for you.",
       "popup": {
         "title": "Coffee Machine Inspection scope of work",
         "sections": [
@@ -127,11 +144,46 @@ const pricingData = {
       }
     },
     {
-      "title": "Coffee Machine Cleaning",
-      "subtitle": "Selected work includes a 50-day service warranty",
+      "image": "Coffee-machine-servicing-title-image",
+      "title": "COFFEE MACHINE INSTALLATION",
+      "badge": "Professional Setup",
+      "pricePrefix": "Starting from",
+      "price": "Custom Quote",
+      "description": "FAJ expert technicians will provide assistance to install coffee machines. Upgrade your kitchen with professional coffee machine installations!",
+      "popup": {
+        "title": "Coffee Machine Installation",
+        "sections": [
+          {
+            "items": [
+              "Coffee Maker Installation",
+              "Coffee Brewer Installation",
+              "Coffee Grinder Installation",
+              "Coffee Machine Installation",
+              "Vending Machine Installation",
+              "Espresso Machine Installation",
+              "Automatic Coffee Machine Installation",
+              "Commercial Coffee Machine Installation"
+            ]
+          },
+          {
+            "label": "Excluded",
+            "text": "Cost for any repair work, procurement cost, cost of any new parts and installation, if required."
+          },
+          {
+            "label": "Terms & Conditions",
+            "text": "*Starting from AED fee applies based on the Capacity: Based on Type, Model, and Area for each unit."
+          }
+        ]
+      }
+    },
+    {
+      "image": "CoffeeMachinesImages/commercial-coffee-machine-repairs-service",
+      "title": "COFFEE MACHINE CLEANING",
+      "subtitle": "",
       "badge": "Popular",
       "price": "AED 340",
-      "description": "Professional coffee-machine cleaning and maintenance, subject to machine condition and service scope.",
+      "warranty": "50-Days Warranty",
+      "description": "Book reliable coffee machine cleaning professionals for your equipment. Our teams offer competitive pricing & limited-time availability across Dubai.",
       "popup": {
         "title": "Coffee Machine Cleaning",
         "sections": [
@@ -157,44 +209,12 @@ const pricingData = {
           }
         ]
       }
-    },
-    {
-      "title": "Coffee Machine Installation",
-      "badge": "Professional Setup",
-      "pricePrefix": "",
-      "price": "Custom Quote",
-      "description": "Correct installation, connection and setup based on the coffee-machine type and premises requirements.",
-      "popup": {
-        "title": "Coffee Machine Installation",
-        "sections": [
-          {
-            "items": [
-              "Coffee Maker Installation",
-              "Coffee Brewer Installation",
-              "Coffee Grinder Installation",
-              "Coffee Machine Installation",
-              "Vending Machine Installation",
-              "Espresso Machine Installation",
-              "Automatic Coffee Machine Installation",
-              "Commercial Coffee Machine Installation"
-            ]
-          },
-          {
-            "label": "Excluded",
-            "text": "Costs related to MEP, carpentry, gypsum ceilings, painting, repair work, procurement-related installation parts / materials, and installation as needed."
-          },
-          {
-            "label": "Terms & Conditions",
-            "text": "*Starting from AED XXX fee applies based on the Capacity: Based on Type, Model, and Area for each unit."
-          }
-        ]
-      }
     }
   ]
 };
 
 const contractsData = {
-  "eyebrow": "Service Contracts",
+  "eyebrow": "SERVICE CONTRACTS",
   "title": "COFFEE MACHINE SERVICE CONTRACTS & AMC PLANS",
   "description": "Comprehensive preventive maintenance agreements, emergency repair callouts, and tailored service level contracts for coffee machines across Dubai, Sharjah, and Abu Dhabi.",
   "featuredIndex": 0,
@@ -238,31 +258,14 @@ const contractsData = {
 };
 
 const serviceOverviewData = {
-  "eyebrow": "Optimal Extraction",
-  "title": "Coffee Machine Repair and Service",
-  "description": "When your coffee machine breaks down or stops working, it can disrupt your daily routine.",
+  "id": "coffee-machine-servicing-contract",
+  "title": "COFFEE MACHINE SERVICING AND MAINTENANCE CONTRACT",
   "paragraphs": [
-    "That's where our expert technician comes in. FAJ expert offers fast and efficient services near you to restore optimal performance. We handle issues like coffee machine descaling, cleaning service, water leakage, Steam wand, noise, poor coffee quality, and grinding problems. Let us help get your coffee machine back on track."
-  ],
-  "cards": [
-    {
-      "title": "Coffee Machine Servicing and Maintenance Contract",
-      "paragraphs": [
-        "Whatever you need, whenever you need it. A scheduled AMC service contract for your coffee machine, which includes cleaning and descaling, is essential for smooth operation throughout the year.",
-        "Regular maintenance is key whether your coffee machine is for home, commercial use, an office, café shop, or a restaurant—be it an espresso machine, automatic coffee machine, coffee maker, or coffee grinder. We are always here to help make life easier for you."
-      ],
-      "featured": true
-    },
-    {
-      "title": "Same-Day Service Availability",
-      "featured": true,
-      "paragraphs": [
-        "If you require a same-day visit, please book before 12 PM. Appointments made after 12 PM will be scheduled for the next day based on availability.",
-        "Timing: Mon-Sat 8:00 AM to 6:00 PM - Sunday 12:00 PM to 6:00 PM. To book an appointment, you can call or reach us on WhatsApp at +971 50 746 4712.",
-        "The FAJ workshop is located near the Umm Suqeim road and is easily accessible from Al Khail Road and Sheikh Zayed Road.",
-        "When you drop off your appliance at the workshop, you will receive a discount on the technical inspection fee and other services."
-      ]
-    }
+    "Whatever you need, whenever you need it. A scheduled AMC service contract for your coffee machine, which includes cleaning and descaling, is essential for smooth operation throughout the year.",
+    "Regular maintenance is key whether your coffee machine is for home, commercial use, an office, café shop, or a restaurant—be it an espresso machine, automatic coffee machine, coffee maker, or coffee grinder. We are always here to help make life easier for you.",
+    "If you require a same-day visit, please book before 12 PM. Appointments made after 12 PM will be scheduled for the next day based on availability.",
+    "Timing: Mon-Sat 8:00 AM to 6:00 PM - Sunday 12:00 PM to 6:00 PM. To book an appointment, you can call or reach us on WhatsApp at +971 50 746 4712.",
+    "The FAJ workshop is located near the Umm Suqeim road and is easily accessible from Al Khail Road and Sheikh Zayed Road. When you drop off your appliance at the workshop, you will receive a discount on the technical inspection fee and other services."
   ],
   "showCta": true,
   "cta": {
@@ -273,9 +276,12 @@ const serviceOverviewData = {
 
 const videoData = {
   "id": "coffee-machine-service-center-video",
-  "eyebrow": "Service Video",
-  "title": "Coffee Machine Service in Dubai",
-  "description": "See how professional coffee-machine inspection, cleaning and maintenance protect extraction quality and equipment reliability.",
+  "eyebrow": "SERVICE VIDEO",
+  "title": "COFFEE MACHINE REPAIR AND SERVICE",
+  "description": [
+    "When your coffee machine breaks down or stops working, it can disrupt your daily routine.",
+    "That's where our expert technician comes in, FAJ expert offers fast and efficient services near you to restore optimal performance. We handle issues like coffee machine descaling, cleaning service, water leakage, Steam wand, noise, poor coffee quality, and grinding problems. Let us help get your coffee machine back on track."
+  ],
   "frameTitle": "Coffee machine service center and repair video",
   "videoId": "IjckdZLs_Qg",
   "variant": "framed",
@@ -298,8 +304,8 @@ const videoData = {
 
 const maintenanceImportanceData = {
   "id": "coffee-machine-maintenance-importance",
-  "eyebrow": "Value Upkeep",
-  "title": "Why Coffee Machine Maintenance Important in Dubai?",
+  "eyebrow": "VALUE UPKEEP",
+  "title": "WHY COFFEE MACHINE MAINTENANCE IMPORTANT IN DUBAI?",
   "description": "Regular maintenance of coffee machine is essential for business. It ensures the quality of coffee, extends the machine's lifespan, and reduces repair costs.",
   "items": [
     {
@@ -341,15 +347,15 @@ const maintenanceImportanceData = {
     {
       "icon": "coffee-espresso",
       "badge": "Preventive Coffee Care",
-      "title": "Home Use",
+      "title": "Home Usage",
       "description": "Regular maintenance improves coffee machine quality and lifespan. Professional servicing benefits home and business users in Dubai."
     }
   ]
 };
 
 const commonProblemsData = {
-  "eyebrow": "Warning Signals",
-  "title": "The Most Common Problems of Coffee Machines",
+  "eyebrow": "WARNING SIGNALS",
+  "title": "THE MOST COMMON PROBLEMS OF COFFEE MACHINES",
   "description": "",
   "items": [
     {
@@ -402,7 +408,7 @@ const commonProblemsData = {
 
 const servicesOfferedData = {
   "id": "coffee-machine-service-center-services",
-  "eyebrow": "FAJ Technical Services L.L.C",
+  "eyebrow": "FAJ TECHNICAL SERVICES L.L.C",
   "title": "HERE ARE THE SERVICES WE OFFER FOR COFFEE MACHINES AND ESPRESSO MACHINES",
   "description": "We specialise in all types and brands of Coffee Machines, including espresso machine",
   "items": [
@@ -410,32 +416,34 @@ const servicesOfferedData = {
       "icon": "coffee-install",
       "title": "Installation",
       "description": " Expert installation of various types and brands of coffee machines, ensuring optimal performance and efficiency.",
-      "actionLabel": "Request Installation"
+      "actionLabel": "REQUEST INSTALLATION"
     },
     {
       "icon": "diagnostics",
       "title": "Diagnostics",
       "description": "Thorough fault finding to diagnose issues effectively. We provide eligibility assessments and detailed quotations to address any concerns with your system.",
-      "actionLabel": "Book Inspection"
+      "actionLabel": "BOOK DIAGNOSTICS"
     },
     {
       "icon": "coffee-repair",
       "title": "Repair Service",
       "description": "Efficient repair services for all coffee machine components, ensuring quick resolution of any issues, such as leaks, electrical failures, and system malfunctions.",
-      "actionLabel": "Request Repair"
+      "actionLabel": "REQUEST REPAIR"
     },
     {
       "icon": "amc-contract",
       "title": "Annual Maintenance Contract",
       "description": "This contract outlines the terms and services covered for the annual maintenance of the espresso machine.",
-      "actionLabel": "Request Maintenance"
+      "actionLabel": "REQUEST MAINTENANCE"
     }
-  ]
+  ],
+  "bottomTitle": "Schedule Your FAJ Coffee Machine Cleaning, Repair & Maintenance Services Today!",
+  "bottomDescription": "Regular commercial coffee machine maintenance is essential for optimal performance, efficiency, and longevity."
 };
 
 const benefitsData = {
-  "eyebrow": "High Performance",
-  "title": "The Benefits Of Coffee Machines Service Dubai",
+  "eyebrow": "HIGH PERFORMANCE",
+  "title": "THE BENEFITS OF COFFEE MACHINES SERVICE DUBAI",
   "description": "Preventive care supports consistent taste, safe operation, energy efficiency and longer equipment life.",
   "stats": [
     {
@@ -452,7 +460,7 @@ const benefitsData = {
       "id": "coffee-safety",
       "number": "01",
       "title": "Ensuring Safety",
-      "description": "Routine checks reduce the risk of electrical faults, gas leaks, and other hazards, keeping your home and family safe..",
+      "description": "Routine checks reduce the risk of electrical faults, gas leaks, and other hazards, keeping your home and family safe.",
       "icon": "safety-compliance"
     },
     {
@@ -495,7 +503,7 @@ const benefitsData = {
 
 const whyChooseUsData = {
   "id": "why-choose-faj-coffee-machine-service-center",
-  "eyebrow": "Why Choose FAJ?",
+  "eyebrow": "WHY CHOOSE FAJ ?",
   "title": "CHOOSE US FOR RELIABLE, EXCEPTIONAL SERVICE TAILORED TO YOUR NEEDS!",
   "description": "",
   "items": [
@@ -506,22 +514,16 @@ const whyChooseUsData = {
       "description": "You can count on efficient service! Our same-day repair or next-day service visits ensure that your needs are met quickly."
     },
     {
-      "icon": "peace-of-mind",
-      "badge": "Preventive Care",
-      "title": "Feeling Of Calm",
-      "description": "With a maintenance contract, you get a full year of service, ensuring your coffee machine runs smoothly and providing peace of mind."
-    },
-    {
-      "icon": "calendar",
-      "badge": "Flexible Scheduling",
-      "title": "You Are in Control",
-      "description": "Choose a day and time for your coffee machine repair in Dubai or Sharjah. With a 3-4 hour window for when our technician will arrive."
-    },
-    {
       "icon": "certified-expert",
       "badge": "Technical Expertise",
       "title": "We Are Experts",
       "description": "We are experts in coffee machine repair this is why most major brands trust us to handle their service and maintenance needs."
+    },
+    {
+      "icon": "peace-of-mind",
+      "badge": "Preventive Care",
+      "title": "Feeling Of Calm",
+      "description": "With a maintenance contract, you get a full year of service, ensuring your coffee machine runs smoothly and providing peace of mind."
     },
     {
       "icon": "dollar-savings",
@@ -530,16 +532,27 @@ const whyChooseUsData = {
       "description": "Inspection fee includes diagnosis, transport, and reinstallation upto two coffee machines at the same location in Dubai."
     },
     {
+      "icon": "calendar",
+      "badge": "Flexible Scheduling",
+      "title": "You Are in Control",
+      "description": "Choose a day and time for your coffee machine repair in Dubai or Sharjah. With a 3-4 hour window for when our technician will arrive."
+    },
+    {
       "icon": "guarantee-seal",
       "badge": "Since 2010",
       "title": "Trustworthy",
       "description": "Our skilled coffee machine technicians are highly trained, and we provide excellent service for a variety of major brands."
     }
-  ]
+  ],
+  "showCta": true,
+  "cta": {
+    "whatsapp": "971507464712",
+    "phone": ""
+  }
 };
 
 const brandsData = {
-  "eyebrow": "Supported Brands Portfolio",
+  "eyebrow": "APPROVED BRAND PARTNERS",
   "title": "CHOOSE DOMESTIC OR PROFESSIONAL COFFEE MACHINE REPAIR SERVICE",
   "description": "Search supported manufacturers. Available dedicated service pages are linked from their titles.",
   "searchLabel": "Search coffee machine brands",
@@ -744,10 +757,38 @@ const brandsData = {
 
 const testimonialsData = {
   "id": "coffee-machine-service-center-reviews",
-  "eyebrow": "Customer Reviews",
-  "title": "What Our Clients Say",
+  "eyebrow": "CUSTOMER TESTIMONIALS",
+  "title": "WHAT OUR CLIENTS SAY",
   "description": "Feedback from homes, offices, restaurants and cafes using FAJ coffee-equipment service.",
   "items": [
+    {
+      "icon": "award",
+      "badge": "5-Star Review",
+      "title": "Haris M",
+      "subtitle": "Franke Coffee Machine Owner",
+      "description": "We were facing an issue with our Franke coffee machine and we reached the correct service centre. FAJ did a good job, now the coffee machine is working fine. Thank you team FAJ and technician Que."
+    },
+    {
+      "icon": "award",
+      "badge": "5-Star Review",
+      "title": "Janson Miller",
+      "subtitle": "Jura Z6 Coffee Machine Owner",
+      "description": "I had my nine year Jura Z6 coffee machine repaired by Q. He was super friendly and knowledgeable and repaired my machine with no problem. I highly recommend FAJ."
+    },
+    {
+      "icon": "award",
+      "badge": "5-Star Review",
+      "title": "Bassam SH",
+      "subtitle": "Verified Customer",
+      "description": "I am very satisfied with their prompt, efficient & cordial service from Technician Abdullah, as he was very professional, on time, responsive and reasonably priced. I would definitely recommend them."
+    },
+    {
+      "icon": "award",
+      "badge": "5-Star Review",
+      "title": "Gintarė Sutkauskaitė",
+      "subtitle": "Verified Customer",
+      "description": "Technician Que was fantastic, fixed both of my coffee machines and been very thorough in explaining what preventative actions to take in the future, highly recommend their service!"
+    },
     {
       "icon": "award",
       "badge": "5-Star Review",
@@ -781,7 +822,7 @@ const testimonialsData = {
       "badge": "5-Star Review",
       "title": "Maria Thomas",
       "subtitle": "Resident",
-      "description": "FAJ provided excellent coffee machine repair service. The team was skilled, professional, and polite. They restored my machine’s performance the same day. Highly recommended for coffee machine repairs in Dubai!"
+      "description": "I’m very happy with FAJ’s coffee machine repair. They identified the problem quickly, replaced the faulty part, and explained everything clearly. Great service at affordable pricing in Dubai."
     },
     {
       "icon": "award",
@@ -822,8 +863,8 @@ const testimonialsData = {
 };
 
 const galleryData = {
-  eyebrow: "Our Gallery",
-  title: "Coffee Machine Service & Repair Gallery",
+  eyebrow: "OUR GALLERY",
+  title: "COFFEE MACHINE SERVICE & REPAIR GALLERY",
   description: "A snapshot of professional maintenance, component rebuilds, and repairs performed on coffee machines in Dubai.",
   items: [
     {
@@ -877,10 +918,70 @@ const galleryData = {
   ]
 };
 
+const beforeAfterData = {
+  id: "coffee-machine-before-after",
+  eyebrow: "RECENT COMPLETED REPAIR & SERVICE",
+  title: "BEFORE & AFTER",
+  description: "See the transformation after our comprehensive coffee machine inspection, descaling, component rebuild, and deep cleaning.",
+  beforeImage: {
+    id: "coffee-machine-before-image",
+    alt: "Coffee machine before repair and descaling"
+  },
+  afterImage: {
+    id: "coffee-machine-after-image",
+    alt: "Coffee machine after professional service and cleaning"
+  },
+  beforeLabel: "Before",
+  afterLabel: "After"
+};
+
+const blogsData = {
+  id: "coffee-machine-blogs",
+  eyebrow: "NEWS & UPDATES",
+  title: "WE DELIVER RELIABLE, AFFORDABLE COFFEE MACHINE SERVICES WITH EXPERT SUPPORT",
+  description: "Professional coffee machine installation, repair, and maintenance services for cafés, restaurants, hotels, and commercial businesses.",
+  button: {
+    label: "VIEW ALL ARTICLES",
+    href: "/blogs/"
+  },
+  items: [
+    {
+      image: "blogs/10-Coffee-Machine-Problems-and-How-to-DIY-Fix-Them-Like-a-Pro",
+      title: "10 COMMON COFFEE MACHINE PROBLEMS AND HOW TO FIX THEM",
+      meta: {
+        comments: "5 comments",
+        author: "Admin"
+      },
+      description: "Discover common coffee machine issues and expert solutions to keep your equipment running reliably.",
+      href: "/blog/10-coffee-machine-problems-and-how-to-diy-fix-them-like-a-pro/"
+    },
+    {
+      image: "blogs/automatic-office-coffee-machines",
+      title: "BEST WAYS FOR HOW TO SAVE MONEY ON COFFEE MACHINE BILL",
+      meta: {
+        comments: "5 comments",
+        author: "Admin"
+      },
+      description: "Learn essential maintenance tips to improve performance, prevent breakdowns, and reduce operational energy costs.",
+      href: "/blog/ai-made-automatic-office-coffee-machines-are-future/"
+    },
+    {
+      image: "blogs/DeLonghi-Coffee-Machine-FAQs",
+      title: "HOW TO CHOOSE BEST COFFEE MACHINE FOR HOME",
+      meta: {
+        comments: "5 comments",
+        author: "Admin"
+      },
+      description: "Explore expert tips for selecting the right coffee machine for your café, restaurant, or home setup.",
+      href: "/blogs/delonghi-coffee-machine-faqs-answered/"
+    }
+  ]
+};
+
 const faqsData = {
   "id": "coffee-machine-service-center-faqs",
-  "eyebrow": "Expert Answers",
-  "title": "Coffee Machine Service FAQs",
+  "eyebrow": "HAVE QUESTIONS?",
+  "title": "COFFEE MACHINE FAQS",
   "description": "Frequently asked questions about coffee-machine operation, cleaning and maintenance in the UAE.",
   "items": [
     {
@@ -927,10 +1028,14 @@ const faqsData = {
 };
 
 const bookingData = {
-  "eyebrow": "Book an Appointment",
-  "title": "Request Coffee Machine Service",
-  "description": "Share your preferred date and location, then continue through WhatsApp to send the request to the FAJ scheduling team.",
-  "submitLabel": "Continue with booking request",
+  "eyebrow": "BOOK YOUR SERVICE",
+  "title": "BOOK COFFEE MACHINE APPOINTMENT",
+  "description": "Book your Coffee Machine Service appointment with our expert team. We provide professional coffee machine installation, cleaning, maintenance, and repair services to ensure optimal performance, consistent coffee quality, and a longer lifespan for your coffee machine.",
+  "primaryAction": "BOOK NOW",
+  "secondaryAction": "OUR SERVICES",
+  "cardTitle": "IT'S QUICK & EASY",
+  "cardDescription": "Share your preferred date and location, then continue through WhatsApp to request inspection, cleaning, repair, maintenance or a contract quotation.",
+  "submitLabel": "CONTINUE WITH BOOKING REQUEST",
   "successMessage": "Your booking details are ready. Continue in WhatsApp to send the request.",
   "defaultService": "Coffee Machine Technical Inspection",
   "locations": [
@@ -940,18 +1045,18 @@ const bookingData = {
   ],
   "fields": {
     "name": {
-      "label": "Full name",
+      "label": "FULL NAME",
       "placeholder": "e.g. John Doe"
     },
     "phone": {
-      "label": "Phone number (UAE)",
+      "label": "PHONE NUMBER (UAE)",
       "placeholder": "e.g. +971 50 123 4567"
     },
     "location": {
-      "label": "Service location / city"
+      "label": "PROPERTY LOCATION / CITY"
     },
     "date": {
-      "label": "Preferred appointment date"
+      "label": "PREFERRED APPOINTMENT DATE"
     }
   },
   "modal": {
@@ -985,8 +1090,10 @@ const coffeeMachineServiceCenterData = {
   benefits: benefitsData,
   whyChooseUs: whyChooseUsData,
   brands: brandsData,
-  testimonials: testimonialsData,
+  beforeAfter: beforeAfterData,
   gallery: galleryData,
+  blogs: blogsData,
+  testimonials: testimonialsData,
   faqs: faqsData,
   booking: bookingData,
 };
@@ -1006,8 +1113,10 @@ export {
   benefitsData,
   whyChooseUsData,
   brandsData,
-  testimonialsData,
+  beforeAfterData,
   galleryData,
+  blogsData,
+  testimonialsData,
   faqsData,
   bookingData,
 };

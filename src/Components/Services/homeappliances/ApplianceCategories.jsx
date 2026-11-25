@@ -1,64 +1,57 @@
-import '../../../assets/main.css';
-
-const CDN = 'https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA';
-
-const getImageSrc = (imgPath) => {
-  if (!imgPath) return '';
-  if (imgPath.startsWith('https')) return imgPath;
-  let variant = 'mobile';
-  if (typeof window !== 'undefined') {
-    const width = window.innerWidth;
-    const realWidth = width;
-    if (realWidth > 1200) {
-      variant = 'large';
-    } else if (realWidth > 768) {
-      variant = 'desktop';
-    } else if (realWidth > 480) {
-      variant = 'tablet';
-    } else {
-      variant = 'mobile';
-    }
-  }
-  return `${CDN}/${imgPath}/${variant}`;
-};
+import { memo } from 'react';
+import { Link } from 'react-router-dom';
+import { getCloudflareImageUrl } from '../../../utils/cloudflareImages';
+import SectionHeader from '../../ServicePageSections/SectionHeader';
+import './ApplianceCategories.css';
 
 const categories = [
-  { name: 'Hob Repair', icon: getImageSrc('hobrepaircat'), link: '/services/home-appliances-repair/hob-repair-service/' },
-  { name: 'Oven Repair', icon: getImageSrc('ovenrepaircat'), link: '/services/home-appliances-repair/oven-repair-service/' },
-  { name: 'Gas Range Repair', icon: getImageSrc('gasrangerepaircat'), link: '/services/home-appliances-repair/gas-cooker-repair-service/' },
-  { name: 'Refrigerator Repair', icon: getImageSrc('fridgecat'), link: '/services/home-appliances-repair/refrigerator-repair-service/' },
-  { name: 'Dishwasher Repair', icon: getImageSrc('dishwasherrepaircat'), link: '/services/home-appliances-repair/dishwasher-repair-service/' },
-  { name: 'BBQ Repair Service', icon: getImageSrc('bbqrepairrcat'), link: '/services/home-appliances-repair/barbeque-repair-in-dubai-barbeque-maintenance-in-dubai-bbq-service-in-dubai/' },
-  { name: 'Cigar Humidor Repair', icon: getImageSrc('cigarhumidorcat'), link: '/services/home-appliances-repair/cigar-humidor-repair/' },
-  { name: 'Vacuum Repair', icon: getImageSrc('vacuumcleanercat'), link: '/services/home-appliances-repair/robot-vacuum-cleaner-repair/' },
-  { name: 'Small Appliances Repair', icon: getImageSrc('smallappliancesrepair'), link: '/services/home-appliances-repair/small-home-appliances-service-center-in-dubai/' },
-  { name: 'Washing Machine Repair', icon: getImageSrc('washingmachinerepair'), link: '/services/home-appliances-repair/washing-machine-repair-service-dubai/' },
-  { name: 'Integrated Appliances Repair', icon: getImageSrc('integratedappliancesrepair'), link: '/services/home-appliances-repair/built-in-appliances-repair-service/' },
-  { name: 'Free Standing Appliances Repair', icon: getImageSrc('freestandingappliancesrepair'), link: '/services/home-appliances-repair/appliances-repair-service/' },
-  { name: 'AMC Contract', icon: getImageSrc('amccontractcat'), link: '/services/home-appliances-repair/appliances-amc-service/' },
+  { name: 'Hob Repair', icon: 'hobrepaircat', link: '/services/home-appliances-repair/hob-repair-service/' },
+  { name: 'Oven Repair', icon: 'ovenrepaircat', link: '/services/home-appliances-repair/oven-repair-service/' },
+  { name: 'Gas Range Repair', icon: 'gasrangerepaircat', link: '/services/home-appliances-repair/gas-cooker-repair-service/' },
+  { name: 'Refrigerator Repair', icon: 'fridgecat', link: '/services/home-appliances-repair/refrigerator-repair-service/' },
+  { name: 'Dishwasher Repair', icon: 'dishwasherrepaircat', link: '/services/home-appliances-repair/dishwasher-repair-service/' },
+  { name: 'BBQ Repair Service', icon: 'bbqrepairrcat', link: '/services/home-appliances-repair/barbeque-repair-in-dubai-barbeque-maintenance-in-dubai-bbq-service-in-dubai/' },
+  { name: 'Cigar Humidor Repair', icon: 'cigarhumidorcat', link: '/services/home-appliances-repair/cigar-humidor-repair/' },
+  { name: 'Vacuum Repair', icon: 'vacuumcleanercat', link: '/services/home-appliances-repair/robot-vacuum-cleaner-repair/' },
+  { name: 'Small Appliances Repair', icon: 'smallappliancesrepair', link: '/services/home-appliances-repair/small-home-appliances-service-center-in-dubai/' },
+  { name: 'Washing Machine Repair', icon: 'washingmachinerepair', link: '/services/home-appliances-repair/washing-machine-repair-service-dubai/' },
+  { name: 'Integrated Appliances Repair', icon: 'integratedappliancesrepair', link: '/services/home-appliances-repair/built-in-appliances-repair-service/' },
+  { name: 'AMC Contract', icon: 'amccontractcat', link: '/services/home-appliances-repair/appliances-amc-service/' },
+  { name: 'Free Standing Appliances Repair', icon: 'freestandingappliancesrepair', link: '/services/home-appliances-repair/appliances-repair-service/' },
 ];
 
-const ApplianceCategories = () => {
+function ApplianceCategories() {
   return (
-    <section className="section cs_py_30">
-      <div className="container">
-        <div className="appliance-categories-grid">
+    <section className="service-landing__section is-white" id="explore-services">
+      <div className="service-landing__container">
+        <SectionHeader
+          content={{
+            title: "EXPLORE OUR SERVICES",
+          }}
+        />
+        <div className="appliance-pills-grid">
           {categories.map((category, index) => (
-            <a href={category.link} key={index} className="appliance-category-card">
-              <div className="appliance-category-icon">
-                <img 
-                  src={category.icon} 
+            <Link
+              to={category.link}
+              key={index}
+              className="appliance-pill-card"
+            >
+              <span className="appliance-pill-icon">
+                <img
+                  src={getCloudflareImageUrl(category.icon, "mobile")}
                   alt={category.name}
-                  className="appliance-category-icon-img"
+                  width="26"
+                  height="26"
+                  loading="lazy"
                 />
-              </div>
-              <span className="appliance-category-name">{category.name}</span>
-            </a>
+              </span>
+              <span className="appliance-pill-text">{category.name}</span>
+            </Link>
           ))}
         </div>
       </div>
     </section>
   );
-};
+}
 
-export default ApplianceCategories;
+export default memo(ApplianceCategories);

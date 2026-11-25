@@ -154,11 +154,12 @@ function EmbeddedVideoSection({ content, tone = "dark", showCta, cta, contact, v
     return {};
   }, [content?.image, content?.posterImage]);
 
-  const cloudflareSrc = image.id
-    ? getCloudflareImageUrl(image.id, "public")
+  const imageKey = image.id || image.src;
+  const cloudflareSrc = imageKey
+    ? getCloudflareImageUrl(imageKey, "public")
     : "";
-  const cloudflareSrcSet = image.id
-    ? getCloudflareImageSrcSet(image.id)
+  const cloudflareSrcSet = imageKey
+    ? getCloudflareImageSrcSet(imageKey)
     : undefined;
   const fallbackSrc = image.src || "";
 
@@ -317,7 +318,13 @@ function EmbeddedVideoSection({ content, tone = "dark", showCta, cta, contact, v
             ) : null}
 
             {!content?.lead && !content?.items && (
-              Array.isArray(content?.description) ? (
+              Array.isArray(content?.paragraphs) ? (
+                content.paragraphs.map((desc, idx) => (
+                  <ScrollSlide key={idx} direction="up" delay={0.12 + idx * 0.04}>
+                    <p className="service-landing__video-description">{desc}</p>
+                  </ScrollSlide>
+                ))
+              ) : Array.isArray(content?.description) ? (
                 content.description.map((desc, idx) => (
                   <ScrollSlide key={idx} direction="up" delay={0.12 + idx * 0.04}>
                     <p className="service-landing__video-description">{desc}</p>

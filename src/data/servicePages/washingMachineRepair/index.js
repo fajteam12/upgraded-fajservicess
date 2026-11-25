@@ -534,7 +534,6 @@ const whyChooseUsData = {
   items: [
     {
       icon: "fast-response",
-      badge: "FAST, RELIABLE SERVICE",
       title: "Reliable, Priority, and Quick",
       description: {
         parts: [
@@ -551,7 +550,6 @@ const whyChooseUsData = {
     },
     {
       icon: "peace-of-mind",
-      badge: "PLANNED EXPERT CARE",
       title: "Feeling Of Calm",
       description: {
         parts: [
@@ -567,25 +565,21 @@ const whyChooseUsData = {
     },
     {
       icon: "clock-urgent",
-      badge: "FLEXIBLE SCHEDULING",
       title: "You Are in Control",
       description: "Choose a day and time for your washing machine repair in Dubai or Sharjah. With a 3-4 hour window for when our technician will arrive.",
     },
     {
       icon: "certified-experts",
-      badge: "BRAND EXPERIENCE",
       title: "We Are Experts",
       description: "We are experts in washing machine repair this is why most major brands trust us to handle their service and maintenance needs.",
     },
     {
       icon: "transparent-quote",
-      badge: "CUSTOMER VALUE",
       title: "Great Value",
       description: "Inspection fee includes diagnosis, transport, and reinstallation upto two washing machine at the same location in Dubai.",
     },
     {
       icon: "shield",
-      badge: "DEPENDABLE CARE",
       title: "Trustworthy",
       description: "Our skilled washing machine technicians are highly trained, and we provide excellent service for a variety of major brands.",
     },

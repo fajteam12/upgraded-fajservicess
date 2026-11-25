@@ -566,25 +566,21 @@ const whyChooseUsData = {
   items: [
     {
       icon: "trust-shield",
-      badge: "FAST, RELIABLE SERVICE",
       title: "Reliable, Priority, and Quick",
       description: "You can count on efficient service! Our same-day repair or next-day service visits ensure that your needs are met quickly."
     },
     {
       icon: "wrench",
-      badge: "PREVENTIVE PROTECTION",
       title: "Confidence & Warranty",
       description: "With a maintenance contract, you get a year of service, ensuring your cigar humidor operates smoothly and providing peace of mind."
     },
     {
       icon: "guarantee-seal",
-      badge: "TRUSTED SUPPORT",
       title: "Trustworthy Specialists",
       description: "Our experienced technicians for cigar humidors provide exceptional service for several leading luxury storage brands."
     },
     {
       icon: "certified-expert",
-      badge: "EXPERIENCED TEAM",
       title: "We Are Experts",
       description: "We specialize in repairing cigar humidor cabinets, which is why major brands trust us for their service and maintenance needs."
     }

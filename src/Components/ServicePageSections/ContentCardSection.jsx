@@ -152,7 +152,28 @@ function ContentCardSection({
     <section className={`service-landing__section is-${tone}`} id={content.id}>
       <div className="service-landing__narrow">
         <SectionHeader content={content} light={tone === "dark"} />
-        {isPlain ? (
+        {Array.isArray(content.cards) && content.cards.length > 0 ? (
+          <div className="service-landing__action-grid is-two">
+            {content.cards.map((card, index) => (
+              <ScrollSlide key={index} direction="up" delay={index * 0.1}>
+                <article className="service-landing__action-card">
+                  <div className="service-landing__action-card-content">
+                    {card.title && (
+                      <h3 style={{ fontSize: "1.25rem", fontWeight: 700, marginBottom: "0.75rem", color: "#111827" }}>
+                        {card.title}
+                      </h3>
+                    )}
+                    {card.description && (
+                      <p style={{ margin: 0, color: "#374151", lineHeight: 1.65 }}>
+                        <RichText content={card.description} />
+                      </p>
+                    )}
+                  </div>
+                </article>
+              </ScrollSlide>
+            ))}
+          </div>
+        ) : isPlain ? (
           <ScrollSlide direction="up">
             <div className="service-landing__center-copy">
               {content.lead && <strong><RichText content={content.lead} /></strong>}

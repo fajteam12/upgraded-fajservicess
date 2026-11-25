@@ -178,7 +178,7 @@ export default function RefrigerationAMCServices() {
         <AccordionSection
           content={pageData.faqs}
           contact={pageData.contact}
-          tone="soft"
+          tone="white"
         />
 
         {/* Section 15: Booking Section */}
@@ -186,7 +186,7 @@ export default function RefrigerationAMCServices() {
           content={pageData.booking}
           bookingState={bookingState}
           onOurServices={scrollToServices}
-          tone="white"
+          tone="soft"
         />
       </main>
 

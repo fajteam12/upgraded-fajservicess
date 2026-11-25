@@ -1,35 +1,37 @@
+import BreadCumb from "../Components/Common/BreadCumb";
+import MaintenanceBenefits from "../Components/MaintenanceBenefits/MaintenanceBenefits";
 import {
   AboutHeroSection,
   AccordionSection,
+  ActionCardsSection,
   BookingModal,
-  BookingSection,
-  ChecklistSection,
   ContentCardSection,
-  ContentGridSection,
   EmbeddedVideoSection,
+  MediaGallerySection,
+  ModernBookingSection,
   NumberedGridSection,
   PageMetadata,
   PlanCardsSection,
   PricingCardsSection,
   SearchableDirectorySection,
-  TwoColumnInfoSection,
   useBookingRequest,
+  TestimonialsSection,
 } from "../Components/ServicePageSections";
-import BreadCumb from "../Components/Common/BreadCumb";
 import "../Components/ServicePageSections/ServicePageSections.css";
 import pageData from "../data/servicePages/commercialCoffeeMachineRepair";
 
 export default function CommercialCoffeeMachineRepair() {
-  const {
-    modalOpen,
-    selectedItem,
-    openBooking,
-    closeBooking,
-    bookingState,
-  } = useBookingRequest({
-    content: pageData.booking,
-    contact: pageData.contact,
-  });
+  const { modalOpen, selectedItem, openBooking, closeBooking, bookingState } =
+    useBookingRequest({ content: pageData.booking, contact: pageData.contact });
+
+  const scrollToServices = () => {
+    const target =
+      document.getElementById("commercial-coffee-machine-services-offered") ||
+      document.getElementById("services-offered");
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <>
@@ -38,8 +40,8 @@ export default function CommercialCoffeeMachineRepair() {
         contact={pageData.contact}
         faqItems={pageData.faqs.items}
       />
-
       <main className="service-landing">
+        {/* Section 1: Hero (Screenshot 1) */}
         <AboutHeroSection
           content={pageData.hero}
           contact={pageData.contact}
@@ -50,67 +52,109 @@ export default function CommercialCoffeeMachineRepair() {
 
         <BreadCumb />
 
-        <ContentCardSection content={pageData.overview} tone="soft" />
+        {/* Section 2: Priority Overview (Screenshot 2) */}
+        <ContentCardSection content={pageData.overview} tone="soft" plain={true} />
 
+        {/* Section 3: Transparent Pricing (Screenshot 3 - Retaining Upgraded Prices: AED 320, On request, AED 320) */}
         <PricingCardsSection
           content={pageData.pricing}
           onAction={openBooking}
           tone="white"
         />
 
-        <TwoColumnInfoSection
-          content={pageData.repairOverview}
+        {/* Section 4: Service Video (Screenshot 4) */}
+        <EmbeddedVideoSection content={pageData.video} tone="soft" />
+
+        {/* Section 5: Servicing and AMC Contract (Screenshot 5) */}
+        <ContentCardSection
+          content={pageData.serviceOverview}
           contact={pageData.contact}
-          tone="soft"
+          tone="white"
         />
 
-        <EmbeddedVideoSection content={pageData.video} tone="white" />
+        {/* Section 6: Value Upkeep / Importance of Maintenance (Screenshot 6) */}
+        <ActionCardsSection
+          content={pageData.maintenanceImportance}
+          tone="soft"
+          columns="four"
+        />
 
-        <ChecklistSection content={pageData.maintenanceImportance} tone="soft" />
-
+        {/* Section 7: Common Problems / Warning Signals (Screenshot 7) */}
         <NumberedGridSection
           content={pageData.commonProblems}
           contact={pageData.contact}
+          tone="white"
           columns="four"
-          tone="white"
         />
 
-        <ContentGridSection content={pageData.servicesOffered} tone="soft" />
-
-        <NumberedGridSection
-          content={pageData.benefits}
-          columns="three"
-          tone="white"
-        />
-
-        <NumberedGridSection
-          content={pageData.whyChooseUs}
-          columns="three"
+        {/* Section 8: Services Offered (Screenshot 8) */}
+        <ActionCardsSection
+          content={pageData.servicesOffered}
           tone="soft"
+          columns="three"
+          onAction={openBooking}
         />
 
+        {/* Section 9: Maintenance Benefits (Screenshot 9) */}
+        <MaintenanceBenefits {...pageData.benefits} tone="white" />
+
+        {/* Section 10: Why Choose FAJ (Screenshot 10) */}
+        <ActionCardsSection
+          content={pageData.whyChooseUs}
+          contact={pageData.contact}
+          tone="soft"
+          columns="three"
+        />
+
+        {/* Section 11: Approved Brand Partners (Screenshot 11) */}
         <SearchableDirectorySection
           content={pageData.brands}
           contact={pageData.contact}
-          onAction={openBooking}
           tone="white"
+          onAction={openBooking}
         />
 
+        {/* Section 12: Our Gallery */}
+        {pageData.gallery && (
+          <MediaGallerySection content={pageData.gallery} tone="white" />
+        )}
+
+        {/* Section 14: Service Contracts AMC Plans (Screenshot 14) */}
         <PlanCardsSection
           content={pageData.contracts}
           onAction={openBooking}
           tone="dark"
         />
 
-        <AccordionSection content={pageData.faqs} tone="soft" />
+        {/* Section 15: News & Updates / Blogs (Screenshot 15) */}
+        {pageData.blogs && (
+          <ActionCardsSection
+            content={pageData.blogs}
+            tone="soft"
+            columns="three"
+          />
+        )}
 
-        <BookingSection
+        {/* Section 16: Customer Testimonials (Screenshot 16) */}
+        <TestimonialsSection content={pageData.testimonials} tone="white" />
+
+        {/* Section 17: FAQs (Screenshot 17) */}
+        <AccordionSection 
+          content={pageData.faqs} 
+          contact={pageData.contact}
+          tone="soft" 
+        />
+
+        {/* Section 18: Modern Booking Section (Screenshot 18) */}
+        <ModernBookingSection
           content={pageData.booking}
+          contact={pageData.contact}
           bookingState={bookingState}
+          onAction={openBooking}
+          onOurServices={scrollToServices}
           tone="white"
         />
       </main>
-
       <BookingModal
         content={pageData.booking}
         open={modalOpen}

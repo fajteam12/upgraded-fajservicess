@@ -643,25 +643,21 @@ const whyChooseUsData = {
   items: [
     {
       icon: "fast-response",
-      badge: "FAST, RELIABLE SERVICE",
       title: "Reliable, Priority, and Quick",
       description: "You can count on efficient service! Our same-day repair or next-day service visits ensure that your kitchen needs are met quickly."
     },
     {
       icon: "peace-of-mind",
-      badge: "PLANNED EXPERT CARE",
       title: "Feeling Of Calm",
       description: "With a dedicated maintenance contract, you get a full year of service, ensuring your cooking range runs smoothly with peace of mind."
     },
     {
       icon: "clock-urgent",
-      badge: "FLEXIBLE SCHEDULING",
       title: "You Are in Control",
       description: "Choose a day and time for your cooking range repair in Dubai or Sharjah with a clear 3-4 hour arrival window from our technician."
     },
     {
       icon: "certified-experts",
-      badge: "BRAND EXPERIENCE",
       title: "We Are Experts",
       description: "We are experts in gas cooker and cooking range repair—this is why most major brands trust us to handle their service needs."
     }

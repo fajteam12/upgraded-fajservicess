@@ -8,12 +8,13 @@ import SectionHeader from "./SectionHeader";
 
 function GalleryImage({ image }) {
   const [cloudflareFailed, setCloudflareFailed] = useState(false);
-  const cloudflareSrc = image.id
-    ? getCloudflareImageUrl(image.id, "public")
+  const imageKey = image.id || image.src;
+  const cloudflareSrc = imageKey
+    ? getCloudflareImageUrl(imageKey, "public")
     : "";
-  const imageSrc = cloudflareSrc && !cloudflareFailed
+  const imageSrc = !cloudflareFailed && cloudflareSrc
     ? cloudflareSrc
-    : image.src;
+    : (image.src || "");
 
   if (!imageSrc) return null;
 
@@ -22,7 +23,7 @@ function GalleryImage({ image }) {
       src={imageSrc}
       srcSet={
         cloudflareSrc && !cloudflareFailed
-          ? getCloudflareImageSrcSet(image.id)
+          ? getCloudflareImageSrcSet(imageKey)
           : undefined
       }
       sizes="(max-width: 640px) 100vw, (max-width: 900px) 50vw, 33vw"

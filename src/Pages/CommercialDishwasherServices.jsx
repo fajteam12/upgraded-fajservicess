@@ -1,20 +1,19 @@
 import BreadCumb from "../Components/Common/BreadCumb";
+import MaintenanceBenefits from "../Components/MaintenanceBenefits/MaintenanceBenefits";
 import {
   AboutHeroSection,
   AccordionSection,
   ActionCardsSection,
   BookingModal,
-  BookingSection,
-  CalloutBannerSection,
   ContentCardSection,
   EmbeddedVideoSection,
+  ModernBookingSection,
+  NumberedGridSection,
   PageMetadata,
   PlanCardsSection,
   SearchableDirectorySection,
-  SplitMediaSection,
-  useBookingRequest,
-  TwoColumnInfoSection,
   TestimonialsSection,
+  useBookingRequest,
 } from "../Components/ServicePageSections";
 import "../Components/ServicePageSections/ServicePageSections.css";
 import pageData from "../data/servicePages/commercialDishwasher";
@@ -40,6 +39,7 @@ export default function CommercialDishwasherServices() {
       />
 
       <main className="service-landing">
+        {/* Section 1: Hero (Screenshot 1) */}
         <AboutHeroSection
           content={pageData.hero}
           contact={pageData.contact}
@@ -52,82 +52,93 @@ export default function CommercialDishwasherServices() {
 
         <BreadCumb />
 
-        <ContentCardSection content={pageData.overview} tone="soft" />
-
-        <TwoColumnInfoSection
-          content={pageData.serviceOverview}
-          tone="white"
+        {/* Section 2: Dishwasher Technical Inspection Fee (Screenshot 2) */}
+        <ContentCardSection
+          content={pageData.inspectionFee}
+          tone="soft"
+          plain={false}
         />
 
+        {/* Section 3: Dishwasher Repair and Service Near You / Video (Screenshot 3) */}
         <EmbeddedVideoSection
           content={pageData.video}
-          tone="soft"
+          tone="white"
+          videoSide="left"
         />
 
+        {/* Section 4: Why is Dishwasher Maintenance Service Important in Dubai? (Screenshot 4) */}
         <ActionCardsSection
           content={pageData.maintenanceImportance}
-          tone="white"
-          columns="three"
-        />
-
-        <SplitMediaSection
-          content={pageData.commonProblems}
           tone="soft"
+          columns="four"
         />
 
+        {/* Section 5: The Most Common Problems with Dishwashers (Screenshot 5) */}
+        <NumberedGridSection
+          content={pageData.commonProblems}
+          tone="white"
+          columns="four"
+        />
+
+        {/* Section 6: Here Are The Services We Offer for the Dishwasher (Screenshot 6) */}
         <ActionCardsSection
           content={pageData.servicesOffered}
           onAction={openBooking}
-          columns="two"
-          tone="white"
-        />
-
-        <CalloutBannerSection
-          content={pageData.serviceNotice}
+          columns="four"
           tone="soft"
         />
 
-        <ActionCardsSection
-          content={pageData.benefits}
+        {/* Section 7: The Benefits of Appliances Service Dubai (Screenshot 7) */}
+        <MaintenanceBenefits
+          {...pageData.benefits}
           tone="white"
-          columns="three"
         />
 
+        {/* Section 8: Choose Us for Reliable, Exceptional Service (Screenshot 8) */}
         <ActionCardsSection
           content={pageData.whyChooseUs}
           columns="three"
           tone="soft"
         />
 
+        {/* Section 9: We Specialise in Dishwasher Services for the Following Brands (Screenshot 9) */}
         <SearchableDirectorySection
-          content={pageData.featuredBrands}
+          content={pageData.brands}
           onAction={openBooking}
           tone="white"
         />
 
-        <SearchableDirectorySection
-          content={pageData.otherBrands}
-          onAction={openBooking}
-          tone="soft"
-          showCta={true}
-          cta={{
-            phone: `tel:+${pageData.contact.phone}`,
-            whatsapp: "",
-          }}
-        />
-
-        <TestimonialsSection content={pageData.testimonials} tone="white" />
-
+        {/* Section 10: Commercial Dishwasher Maintenance Contracts (Screenshot 10) */}
         <PlanCardsSection
           content={pageData.contracts}
           onAction={openBooking}
           tone="dark"
         />
 
-        <AccordionSection content={pageData.faqs} tone="soft" />
+        {/* Section 11: News & Updates (Screenshot 11) */}
+        <ActionCardsSection
+          content={pageData.blogs}
+          columns="three"
+          tone="soft"
+        />
 
-        <BookingSection
+        {/* Section 12: Customer Testimonials (Screenshot 12) */}
+        <TestimonialsSection
+          content={pageData.testimonials}
+          tone="white"
+        />
+
+        {/* Section 13: Commercial Dishwasher FAQs (Screenshot 13 — Second Last) */}
+        <AccordionSection
+          content={pageData.faqs}
+          contact={pageData.contact}
+          tone="soft"
+        />
+
+        {/* Section 14: Book A Dishwasher Service Appointment Form (Screenshot 14 — Bottom) */}
+        <ModernBookingSection
           content={pageData.booking}
+          contact={pageData.contact}
           bookingState={bookingState}
           tone="white"
         />

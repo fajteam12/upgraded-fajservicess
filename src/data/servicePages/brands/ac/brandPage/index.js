@@ -429,6 +429,11 @@ const servicesData = {
       " For reliable AC service and repair in Dubai, choose FAJ. Our experienced technicians deliver exceptional service every time. Book now by calling, emailing, chatting on WhatsApp, or visiting our website to experience the difference!",
     ],
   },
+  showCta: true,
+  cta: {
+    whatsapp:
+      "https://api.whatsapp.com/send?phone=+971507464712&text=Hello%20FAJ%20Technical%20Services%2C%20I%20would%20like%20to%20schedule%20AC%20Cleaning%2C%20Repair%20or%20Maintenance.",
+  },
 };
 
 // --- Inlined from benefitsData.js ---
@@ -484,6 +489,7 @@ const inspectionData = {
   title: "Importance of Air Conditioning Inspection",
   description:
     "Regular inspections of AC systems help identify potential issues early, ensuring optimal performance and extending the lifespan of your AC unit. They improve energy efficiency, reduce energy bills, and improve AC indoor air quality by removing dust and mold, making a healthier climate.",
+  listTitle: "Terms and Conditions of Technical Inspection",
   items: [
     {
       description:
@@ -771,36 +777,143 @@ const brandsDirectoryData = {
 
 // --- Inlined from bookingData.js ---
 const bookingData = {
-  eyebrow: "Book an Appointment",
-  title: "Book Your AC Repair Service",
+  eyebrow: "Book Your Service",
+  title: "Book An Appointment",
   description:
-    "Share your preferred date and location, then continue through WhatsApp to send the request directly to the FAJ scheduling team.",
+    "Book your appointment with our expert team. We provide professional inspection, fault diagnosis, component-level repair, and maintenance services to restore functionality, ensure reliable performance, and extend the lifespan of your equipment.",
+  cardTitle: "IT'S QUICK & EASY",
+  cardDescription:
+    "Share your preferred date and location, then continue through WhatsApp to request inspection, cleaning, repair, maintenance or a contract quotation.",
+  primaryAction: "Book Now",
+  secondaryAction: "Our Services",
   submitLabel: "Continue with booking request",
   successMessage:
     "Your booking details are ready. Continue in the WhatsApp window to send your request.",
   defaultService: "AC Repair and Maintenance Service",
   locations: ["Dubai", "Sharjah", "Abu Dhabi"],
   fields: {
-    name: { label: "Company / full name", placeholder: "e.g. ABC Trading / John Doe" },
-    phone: { label: "Phone number (UAE)", placeholder: "e.g. +971 50 123 4567" },
-    location: { label: "Your location / city" },
-    date: { label: "Preferred appointment date" },
+    name: { label: "Full Name", placeholder: "e.g. John Doe" },
+    phone: { label: "Phone Number (UAE)", placeholder: "e.g. +971 50 123 4567" },
+    location: { label: "Property Location / City" },
+    date: { label: "Preferred Appointment Date" },
   },
   modal: {
     eyebrow: "Book service / request quote",
     description:
-      "Enter your details and continue through WhatsApp to confirm your preferred PCB repair appointment.",
+      "Enter your details and continue through WhatsApp to confirm your preferred AC repair appointment.",
     submitLabel: "Continue with booking request",
     closeLabel: "Close booking dialog",
   },
   messageGreeting: "Hello FAJ Technical Services, I would like to book:",
   messageLabels: {
-    name: "Company / name",
+    name: "Full Name",
     phone: "Phone",
     location: "Location",
     date: "Preferred date",
     page: "Page",
   },
+};
+
+// --- Inlined from galleryData.js ---
+const galleryData = {
+  id: "ac-brands-gallery",
+  title: "Gallery",
+  description:
+    "A glimpse into our professional AC maintenance, repair, and cleaning services delivered across Dubai.",
+  items: [
+    {
+      title: "AC Maintenance Service Dubai",
+      id: "AcService/slide1",
+      src: "https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/AcService/slide1/public",
+      alt: "FAJ Technical Services L.L.C - AC Maintenance Service Dubai",
+      width: 400,
+      height: 300,
+    },
+    {
+      title: "AC Repair Service Dubai",
+      id: "AcService/slide2",
+      src: "https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/AcService/slide2/public",
+      alt: "FAJ Technical Services L.L.C - AC Repair Service Dubai",
+      width: 400,
+      height: 300,
+    },
+    {
+      title: "AC Cleaning Service Dubai",
+      id: "AcService/slide3",
+      src: "https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/AcService/slide3/public",
+      alt: "FAJ Technical Services L.L.C - AC Cleaning Service Dubai",
+      width: 400,
+      height: 300,
+    },
+    {
+      title: "HVAC Duct Cleaning Dubai",
+      id: "AcService/slide4",
+      src: "https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/AcService/slide4/public",
+      alt: "FAJ Technical Services L.L.C - HVAC Duct Cleaning Dubai",
+      width: 400,
+      height: 300,
+    },
+    {
+      title: "AC Inspection & Diagnostics",
+      id: "AcService/slide5",
+      src: "https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/AcService/slide5/public",
+      alt: "FAJ Technical Services L.L.C - AC Inspection & Diagnostics",
+      width: 400,
+      height: 300,
+    },
+    {
+      title: "AC Coil Cleaning Dubai",
+      id: "AcService/slide6",
+      src: "https://imagedelivery.net/7jVKF8FS0aEmjeSSRZqLyA/AcService/slide6/public",
+      alt: "FAJ Technical Services L.L.C - AC Coil Cleaning Dubai",
+      width: 400,
+      height: 300,
+    },
+  ],
+};
+
+// --- Inlined from newsData.js ---
+const newsData = {
+  id: "ac-brands-news",
+  eyebrow: "News & Updates",
+  title: "We Deliver Reliable, Affordable Services with Dedicated Support for Satisfaction",
+  description:
+    "Installation, repair, or maintenance service agreement for your home, office, or commercial needs in Dubai, Sharjah and Abu Dhabi, offers expert and affordable solutions.",
+  items: [
+    {
+      icon: "certified-expert",
+      badge: "28 May",
+      image: "blogs/AC-problems-and-how-to-fix-them",
+      title: "10 Common AC Problems and How to Fix Them - Expert Guide",
+      subtitle: "05 Comments, Admin",
+      description:
+        "A properly functioning air conditioning system is essential in Dubai. Discover how to identify common AC issues and when to call certified technicians.",
+      href: "/blog/10-common-ac-problems-and-how-to-fix-them/",
+      actionLabel: "Read More",
+    },
+    {
+      icon: "dollar-savings",
+      badge: "19 June",
+      image: "blogs/ac-tips-and-tricks",
+      title: "Top 5 Signs You Need AC Repair in Dubai Before Summer Hits",
+      subtitle: "03 Comments, Admin",
+      description:
+        "Summer in Dubai puts intense demand on cooling systems. Learn the top warning signs indicating your AC unit needs immediate professional servicing.",
+      href: "/blog/top-5-signs-you-need-ac-repair-in-dubai-before-summer-hits/",
+      actionLabel: "Read More",
+    },
+    {
+      icon: "wind",
+      badge: "15 July",
+      image: "blogs/how-to-choose-the-best-air-conditioner-for-home",
+      title: "How to Choose Best Air Conditioner for Home | Top Factors",
+      subtitle: "05 Comments, Admin",
+      description:
+        "As the temperatures rise and summer approaches, finding the right cooling solution is essential. Explore top factors for choosing the ideal AC for your home.",
+      href: "/blog/how-to-choose-the-best-air-conditioner-for-home/",
+      actionLabel: "Read More",
+    },
+  ],
 };
 
 // --- Inlined from faqsData.js ---
@@ -878,7 +991,9 @@ const pageData = {
   inspection: inspectionData,
   practicalTips: practicalTipsData,
   acProperties: acPropertiesData,
+  gallery: galleryData,
   testimonials: testimonialsData,
+  news: newsData,
   brandsDirectory: brandsDirectoryData,
   booking: bookingData,
   faqs: faqsData,

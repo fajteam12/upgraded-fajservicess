@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet-async";
 import BreadCumb from "../../../Common/BreadCumb";
 
 import {
+  AboutHeroSection,
   AccordionSection,
   ActionCardsSection,
   ContentGridSection,
@@ -11,10 +12,9 @@ import {
   ProblemSolutionSection,
   ProcessCardsSection,
   SearchableDirectorySection,
-  SplitHeroSection,
   TwoColumnInfoSection,
   BookingModal,
-  BookingSection,
+  ModernBookingSection,
   useBookingRequest,
 } from "../../../ServicePageSections";
 
@@ -143,17 +143,22 @@ const CoverageArea = ({
       </Helmet>
 
       <main className="service-landing">
-        <SplitHeroSection
+        <AboutHeroSection
           content={pageData.heroData}
           contact={pageData.contactData}
-          onPrimaryAction={openBooking}
+          buttonStyle="classic"
+          contentWidth={pageData.heroData.contentWidth || "52%"}
+          showPhone={false}
+          showCall={false}
+          showWhatsapp={true}
+          tone="white"
         />
 
         <BreadCumb />
 
         <TwoColumnInfoSection
           content={pageData.coverageIntroData}
-          tone="white"
+          tone="soft"
         />
 
         <ProcessCardsSection
@@ -179,13 +184,13 @@ const CoverageArea = ({
 
         <SearchableDirectorySection
           content={pageData.serviceAreasData}
-          tone="white"
-          variant="compact"
+          tone="soft"
+          columns="three"
         />
 
         <ActionCardsSection
           content={pageData.testimonialsData}
-          tone="dark"
+          tone="white"
           columns="three"
           slider
           autoplay
@@ -200,12 +205,23 @@ const CoverageArea = ({
 
         <AccordionSection
           content={pageData.faqsData}
+          contact={pageData.contactData}
           tone="white"
         />
 
-        <BookingSection
+        <ModernBookingSection
           content={pageData.bookingData}
           bookingState={bookingState}
+          onBookNow={openBooking}
+          tone="soft"
+        />
+
+        <BookingModal
+          isOpen={modalOpen}
+          onClose={closeBooking}
+          item={selectedItem}
+          content={pageData.bookingData}
+          contact={pageData.contactData}
         />
       </main>
     </>

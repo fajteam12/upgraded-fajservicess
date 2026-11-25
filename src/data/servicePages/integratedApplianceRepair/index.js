@@ -608,25 +608,21 @@ const whyChooseUsData = {
   items: [
     {
       icon: "fast-response",
-      badge: "FAST, RELIABLE SERVICE",
       title: "Reliable, Priority, and Quick",
       description: "You can count on efficient service! Our same-day repair or next-day service visits ensure that your needs are met quickly."
     },
     {
       icon: "peace-of-mind",
-      badge: "PLANNED EXPERT CARE",
       title: "Peace of Mind & Calm",
       description: "With a maintenance contract, you get a full year of service, ensuring your appliance runs smoothly and providing peace of mind."
     },
     {
       icon: "calendar",
-      badge: "FLEXIBLE SCHEDULING",
       title: "You Are in Control",
       description: "Choose a day and time for your appliance repair in Dubai or Sharjah with a convenient technician arrival window."
     },
     {
       icon: "award-expert",
-      badge: "BRAND EXPERIENCE",
       title: "We Are Experts",
       description: "We are experts in built-in appliance repair, which is why most major luxury brands trust us to handle their service and maintenance."
     }

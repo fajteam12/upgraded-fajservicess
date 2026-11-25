@@ -11,6 +11,7 @@ function SearchableDirectorySection({
   onAction,
   tone = "white",
   variant = "default",
+  columns,
   showCta,
   cta,
   contact,
@@ -141,6 +142,12 @@ function SearchableDirectorySection({
         <div
           className={`service-landing__brand-grid${
             isCompact ? " is-compact" : ""
+          }${
+            content?.columns === "four" || columns === "four" || (!isCompact && visibleItems.length === 4 && !columns && !content?.columns)
+              ? " is-four-columns"
+              : content?.columns === "three" || columns === "three"
+              ? " is-three-columns"
+              : ""
           }`}
         >
           {visibleItems.map((item, index) => {
@@ -284,9 +291,11 @@ function SearchableDirectorySection({
             >
               {showAll
                 ? content.showLessLabel || "Show Less"
-                : `${
-                    content.showAllLabel || "Show All"
-                  } (${filteredItems.length})`}
+                : /\(\d+\)/.test(content.showAllLabel || "")
+                  ? content.showAllLabel
+                  : `${
+                      content.showAllLabel || "Show All"
+                    } (${filteredItems.length})`}
             </button>
           </div>
         )}

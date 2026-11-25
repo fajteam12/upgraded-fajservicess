@@ -251,6 +251,41 @@ function ActionCardsSection({
   };
 
   const renderCard = (item) => {
+    if (content?.isChecklist) {
+      return (
+        <article className="service-landing__action-card is-checklist">
+          <div className="service-landing__action-card-checklist-inner">
+            <span className="service-landing__action-card-check-icon" aria-hidden="true">
+              &#x2713;
+            </span>
+            <span className="service-landing__action-card-check-title">
+              {item.href ? (
+                item.external ? (
+                  <a
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="service-landing__action-title-link"
+                  >
+                    {item.title}
+                  </a>
+                ) : (
+                  <Link
+                    to={item.href}
+                    className="service-landing__action-title-link"
+                  >
+                    {item.title}
+                  </Link>
+                )
+              ) : (
+                item.title
+              )}
+            </span>
+          </div>
+        </article>
+      );
+    }
+
     const hasImage = Boolean(item.image || item.img);
     const imageKey = item.image || item.img;
     const imageSrc = hasImage ? getCloudflareImageUrl(imageKey, "tablet") : "";
@@ -283,6 +318,15 @@ function ActionCardsSection({
                     loading="lazy"
                     fetchPriority="low"
                     decoding="async"
+                    onError={(e) => {
+                      if (e.currentTarget.srcset) {
+                        e.currentTarget.srcset = "";
+                      }
+                      const fallback = getCloudflareImageUrl(imageKey, "public");
+                      if (e.currentTarget.src !== fallback) {
+                        e.currentTarget.src = fallback;
+                      }
+                    }}
                   />
                   {item.badge && (
                     <span className="service-landing__action-badge is-overlay">
@@ -306,6 +350,15 @@ function ActionCardsSection({
                     loading="lazy"
                     fetchPriority="low"
                     decoding="async"
+                    onError={(e) => {
+                      if (e.currentTarget.srcset) {
+                        e.currentTarget.srcset = "";
+                      }
+                      const fallback = getCloudflareImageUrl(imageKey, "public");
+                      if (e.currentTarget.src !== fallback) {
+                        e.currentTarget.src = fallback;
+                      }
+                    }}
                   />
                   {item.badge && (
                     <span className="service-landing__action-badge is-overlay">
@@ -326,6 +379,15 @@ function ActionCardsSection({
                   loading="lazy"
                   fetchPriority="low"
                   decoding="async"
+                  onError={(e) => {
+                    if (e.currentTarget.srcset) {
+                      e.currentTarget.srcset = "";
+                    }
+                    const fallback = getCloudflareImageUrl(imageKey, "public");
+                    if (e.currentTarget.src !== fallback) {
+                      e.currentTarget.src = fallback;
+                    }
+                  }}
                 />
                 {item.badge && (
                   <span className="service-landing__action-badge is-overlay">

@@ -84,7 +84,7 @@ const pricingData = {
             "There is a callout fee that applies each diagnosis.",
 
           price:
-            "215 AED+VAT",
+            "195 AED+VAT",
 
           warranty:
             "-",
@@ -161,7 +161,7 @@ const pricingData = {
             "There is a callout fee that applies each diagnosis.",
 
           price:
-            "215 AED+VAT",
+            "195 AED+VAT",
 
           warranty:
             "-",
@@ -315,7 +315,7 @@ const pricingData = {
             "There is a callout fee that applies each diagnosis.",
 
           price:
-            "215 AED+VAT",
+            "195 AED+VAT",
 
           warranty:
             "-",

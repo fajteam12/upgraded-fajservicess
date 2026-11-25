@@ -45,7 +45,17 @@ export default function buildPageStructuredData({
       name: seo.businessName,
       image: seo.image,
       url: seo.url,
-      telephone: contact.phoneDisplay,
+      telephone: contact?.phoneDisplay || "+971 4 330 0002",
+      ...(seo.rating
+        ? {
+            aggregateRating: {
+              "@type": "AggregateRating",
+              ratingValue: String(seo.rating.ratingValue || "4.9"),
+              reviewCount: String(seo.rating.reviewCount || "3450"),
+              bestRating: String(seo.rating.bestRating || "5"),
+            },
+          }
+        : {}),
       areaServed: seo.areaServed?.map((name) => ({
         "@type": "City",
         name,

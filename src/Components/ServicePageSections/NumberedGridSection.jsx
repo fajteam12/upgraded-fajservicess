@@ -139,7 +139,7 @@ function NumberedGridSection({
 			<div className="service-landing__container">
 				<SectionHeader content={content} light={tone === "dark"} />
 
-				<div className={`service-landing__number-grid is-${columns}`}>
+				<div className={`service-landing__number-grid is-${columns}${content.items?.length === 5 ? " has-5-items" : ""}`}>
 					{content.items.map((item, index) => (
 						<ScrollSlide
 							direction="up"

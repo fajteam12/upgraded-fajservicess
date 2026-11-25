@@ -59,6 +59,7 @@ function SplitMediaSection({
 
   const isSticky = Boolean(stickyImage || content?.stickyImage);
   const isHeaderAbove = Boolean(headerAbove || content?.headerAbove);
+  const isCard = Boolean(content?.cardBox || content?.variant === "card");
 
   const hasExplicitShowCta = typeof showCta === "boolean";
   const isCtaEnabled = hasExplicitShowCta
@@ -128,11 +129,7 @@ function SplitMediaSection({
 
   const rawImage = content.image;
   const image = typeof rawImage === "string" ? { id: rawImage } : (rawImage || {});
-  const imageId =
-    image.id ||
-    (typeof image.src === "string" && image.src.startsWith("/img/")
-      ? image.src.replace(/^\/img\//, "").replace(/\.[^/.]+$/, "")
-      : "");
+  const imageId = image.id || image.src || "";
   const cloudflareSrc = imageId
     ? getCloudflareImageUrl(imageId, "public")
     : "";
@@ -180,11 +177,17 @@ function SplitMediaSection({
         <div
           className={`service-landing__media-split is-image-${effectiveImageSide} ${
             imageSrc ? "has-media" : "is-text-only"
-          } ${isSticky ? "is-sticky-image" : ""}`}
+          } ${isSticky ? "is-sticky-image" : ""} ${isCard ? "is-card" : ""}`}
         >
         <div className="service-landing__media-copy">
           {!isHeaderAbove && (
             <SectionHeader content={content} light={tone === "dark"} />
+          )}
+
+          {content.innerTitle && (
+            <h3 className="service-landing__media-inner-title">
+              {content.innerTitle}
+            </h3>
           )}
 
           {content.paragraphs?.map((paragraph, idx) => (

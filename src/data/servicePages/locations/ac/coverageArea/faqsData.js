@@ -1,45 +1,49 @@
 const faqsData = {
   id: "ac-coverage-area-faqs",
 
-  eyebrow: "Help Center",
+  eyebrow: "HAVE QUESTIONS?",
 
-  title: "FAQ's",
+  title: "FAQS",
 
   description: "",
+
+  cta: {
+    eyebrow: "Still Need Assistance?",
+    title: "Our professional technical team is ready to help!",
+  },
 
   items: [
     {
       question:
-        "How much does ac systems repair cost in Business Bay?",
+        "Can AC cleaning improve cooling performance?",
 
       answer:
-        "The cost is based on the type of issue, the air conditioning system, and any replacement parts required. A professional inspection helps to establish the final repair cost.",
+        "Yes, it can. Cleaning removes dust and blockages that restrict airflow. The AC unit cools more effectively.",
     },
 
     {
       question:
-        "How many times should AC systems be serviced in Dubai?",
-
-      answer:
-        "Most domestic systems benefit from regular maintenance every three to six months. Commercial units may need more frequent servicing.",
-    },
-
-    {
-      question:
-        "What are the warning indications that my air conditioner needs quick attention?",
+        "What happens if I skip AC servicing for a year?",
 
       answer: [
         {
           type: "bullets",
           items: [
-            "Weak cooling",
-            "Water leakage",
-            "Strange noises",
-            "Burning smell",
-            "Frequent shutdowns",
+            "Your AC's efficiency drops",
+            "Your bills go up",
+            "Parts wear out faster",
+            "Small problems become expensive repairs",
           ],
         },
       ],
+    },
+
+    {
+      question:
+        "Why does my AC smell bad when I turn it on?",
+
+      answer:
+        "Mold or bacteria inside the AC cause smells. Professional cleaning removes the source completely.",
     },
 
     {
@@ -62,14 +66,6 @@ const faqsData = {
 
     {
       question:
-        "Can AC cleaning improve cooling performance?",
-
-      answer:
-        "Yes, it can. Cleaning removes dust and blockages that restrict airflow. The AC unit cools more effectively.",
-    },
-
-    {
-      question:
         "Why is my AC leaking water?",
 
       answer:
@@ -78,10 +74,28 @@ const faqsData = {
 
     {
       question:
-        "Do you provide same-day AC service in Business Bay?",
+        "What are the warning indications that my air conditioner needs quick attention?",
+
+      answer: [
+        {
+          type: "bullets",
+          items: [
+            "Weak cooling",
+            "Water leakage",
+            "Strange noises",
+            "Burning smell",
+            "Frequent shutdowns",
+          ],
+        },
+      ],
+    },
+
+    {
+      question:
+        "How many times should AC systems be serviced in Dubai?",
 
       answer:
-        "At FAJ Technical Services L.L.C, we offer same-day services. Small issues are fixed immediately, while larger problems may take more time.",
+        "Most domestic systems benefit from regular maintenance every three to six months. Commercial units may need more frequent servicing.",
     },
 
     {
@@ -105,31 +119,6 @@ const faqsData = {
             "Clean the filters",
             "Keep the unit clear",
             "Set the thermostat to a temperature",
-          ],
-        },
-      ],
-    },
-
-    {
-      question:
-        "Why does my AC smell bad when I turn it on?",
-
-      answer:
-        "Mold or bacteria inside the AC cause smells. Professional cleaning removes the source completely.",
-    },
-
-    {
-      question:
-        "What happens if I skip AC servicing for a year?",
-
-      answer: [
-        {
-          type: "bullets",
-          items: [
-            "Your AC's efficiency drops",
-            "Your bills go up",
-            "Parts wear out faster",
-            "Small problems become expensive repairs",
           ],
         },
       ],

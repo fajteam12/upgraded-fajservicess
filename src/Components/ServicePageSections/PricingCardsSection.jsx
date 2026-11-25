@@ -81,16 +81,9 @@ function PricingCardsSection({ content, onAction, tone = "white" }) {
 							const hasAnySubtitle = content.items?.some((i) => Boolean(i.subtitle));
 
 							const imgObj = typeof item.image === "object" && item.image ? item.image : null;
-							const imgSrc = imgObj
-								? (imgObj.id ? getCloudflareImageUrl(imgObj.id, "public") : imgObj.src)
-								: (typeof item.image === "string"
-									? (item.image.startsWith("http") || item.image.startsWith("/")
-										? item.image
-										: getCloudflareImageUrl(item.image, "public"))
-									: "");
-							const imgSrcSet = imgObj?.id
-								? getCloudflareImageSrcSet(imgObj.id)
-								: undefined;
+							const imageKey = imgObj ? (imgObj.id || imgObj.src) : item.image;
+							const imgSrc = imageKey ? getCloudflareImageUrl(imageKey, "public") : "";
+							const imgSrcSet = imageKey ? getCloudflareImageSrcSet(imageKey) : undefined;
 
 							return (
 								<ScrollSlide

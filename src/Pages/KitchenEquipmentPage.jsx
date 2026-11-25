@@ -1,19 +1,17 @@
 import BreadCumb from "../Components/Common/BreadCumb";
 import MaintenanceBenefits from "../Components/MaintenanceBenefits/MaintenanceBenefits";
+import KitchenEquipmentCategories from "../Components/Services/kitchenequipment/KitchenEquipmentCategories";
 import {
   AboutHeroSection,
   AccordionSection,
   ActionCardsSection,
   BookingModal,
-  BookingSection,
   ContentCardSection,
-  EmbeddedVideoSection,
+  ModernBookingSection,
   NumberedGridSection,
   PageMetadata,
-  PlanCardsSection,
-  TwoColumnInfoSection,
-  useBookingRequest,
   TestimonialsSection,
+  useBookingRequest,
 } from "../Components/ServicePageSections";
 import "../Components/ServicePageSections/ServicePageSections.css";
 import pageData from "../data/servicePages/kitchenEquipmentMaintenance";
@@ -39,58 +37,74 @@ export default function KitchenEquipmentPage() {
       />
 
       <main className="service-landing">
+        {/* Section 1: Hero */}
         <AboutHeroSection
           content={pageData.hero}
           contact={pageData.contact}
           onPrimaryAction={openBooking}
           contentWidth={pageData.hero.contentWidth || "50%"}
-          showPhone={false}
-          showCall={false}
           tone="white"
+          showPhone={false}
+          showWhatsapp={true}
         />
 
+        {/* Section 2: Breadcrumb */}
         <BreadCumb />
 
-        <ContentCardSection content={pageData.overview} tone="soft" />
+        {/* Section 3: Explore Our Services (5 Pills) */}
+        <KitchenEquipmentCategories tone="soft" />
 
-        <TwoColumnInfoSection
-          content={pageData.serviceOverview}
-          tone="white"
-        />
+        {/* Section 4: Operational Continuity / B2B Overview */}
+        <ContentCardSection content={pageData.overview} tone="white" />
 
-        <EmbeddedVideoSection
-          content={pageData.video}
-          tone="soft"
-        />
-
+        {/* Section 5: Essential Kitchen Longevity (4 Cards) */}
         <ActionCardsSection
           content={pageData.maintenanceImportance}
-          columns="three"
-          tone="white"
-        />
-
-        <NumberedGridSection
-          content={pageData.commonProblems}
+          columns="four"
           tone="soft"
-          columns="three"
         />
 
+        {/* Section 6: Service Deliverables / Benefits */}
         <MaintenanceBenefits {...pageData.benefits} tone="white" />
 
-        <TestimonialsSection content={pageData.testimonials} tone="soft" />
-
-        <PlanCardsSection
-          content={pageData.contracts}
-          onAction={openBooking}
-          tone="dark"
+        {/* Section 7: Troubleshooting Guide (Numbered Grid 01-06) */}
+        <NumberedGridSection
+          content={pageData.commonProblems}
+          contact={pageData.contact}
+          tone="soft"
+          columns="three"
+          showCta={true}
+          cta={{
+            phone: `+${pageData.contact.phone}`,
+            whatsapp: `https://api.whatsapp.com/send?phone=+${pageData.contact.whatsapp}&text=Hello`,
+          }}
         />
 
-        <AccordionSection content={pageData.faqs} tone="soft" />
+        {/* Section 8: Customer Testimonials */}
+        <TestimonialsSection
+          content={pageData.testimonials}
+          tone="white"
+        />
 
-        <BookingSection
+        {/* Section 9: News & Updates */}
+        <ActionCardsSection
+          content={pageData.articles}
+          columns="three"
+          tone="soft"
+        />
+
+        {/* Section 10: FAQs (Second Last) */}
+        <AccordionSection
+          content={pageData.faqs}
+          contact={pageData.contact}
+          tone="white"
+        />
+
+        {/* Section 11: Modern Booking Form (Bottom) */}
+        <ModernBookingSection
           content={pageData.booking}
           bookingState={bookingState}
-          tone="white"
+          tone="soft"
         />
       </main>
 

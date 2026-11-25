@@ -1,0 +1,83 @@
+.oven-callouts-section {
+  padding: 60px 0;
+}
+
+.oven-callouts-section.is-white {
+  background-color: #ffffff;
+}
+
+.oven-callouts-section.is-soft {
+  background-color: #f8fafc;
+}
+
+.oven-callout-block {
+  margin-bottom: 40px;
+}
+
+.oven-callout-block:last-child {
+  margin-bottom: 0;
+}
+
+.oven-callout-card {
+  background: #ffffff;
+  border: 1.5px solid #bae6fd;
+  border-radius: 16px;
+  padding: 28px 36px;
+  box-shadow: 0 4px 20px rgba(0, 48, 72, 0.05);
+}
+
+.oven-callout-card__label {
+  color: #0284c7;
+  font-size: 14.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0 0 12px 0;
+}
+
+.oven-callout-card__text {
+  color: #334155;
+  font-size: 14.5px;
+  line-height: 1.7;
+  margin: 0 0 14px 0;
+}
+
+.oven-callout-card__text:last-child {
+  margin-bottom: 0;
+}
+
+.oven-callout-card__divider {
+  height: 1px;
+  background-color: #e2e8f0;
+  margin: 18px 0;
+}
+
+.oven-callout-card__sublabel {
+  color: #0284c7;
+  font-size: 13.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0 0 8px 0;
+}
+
+.oven-callout-card__subtext {
+  color: #475569;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .oven-callouts-section {
+    padding: 40px 0;
+  }
+
+  .oven-callout-card {
+    padding: 20px 22px;
+  }
+
+  .oven-callout-card__text {
+    font-size: 13.5px;
+  }
+}

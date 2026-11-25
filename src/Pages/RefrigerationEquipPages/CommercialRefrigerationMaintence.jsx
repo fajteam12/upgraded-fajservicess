@@ -171,7 +171,7 @@ export default function CommercialRefrigerationMaintence() {
         <AccordionSection
           content={pageData.faqs}
           contact={pageData.contact}
-          tone="soft"
+          tone="white"
         />
 
         {/* Section 14: Booking Form (Very last) */}
@@ -179,7 +179,7 @@ export default function CommercialRefrigerationMaintence() {
           content={pageData.booking}
           bookingState={bookingState}
           onOurServices={scrollToServices}
-          tone="white"
+          tone="soft"
         />
       </main>
 

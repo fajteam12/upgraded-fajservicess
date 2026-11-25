@@ -167,7 +167,7 @@ export default function IceMakerRepair() {
         <AccordionSection
           content={pageData.faqs}
           contact={pageData.contact}
-          tone="soft"
+          tone="white"
         />
 
         {/* Section 14: Booking Form (Very last) */}
@@ -175,7 +175,7 @@ export default function IceMakerRepair() {
           content={pageData.booking}
           bookingState={bookingState}
           onOurServices={scrollToServices}
-          tone="white"
+          tone="soft"
         />
       </main>
 
