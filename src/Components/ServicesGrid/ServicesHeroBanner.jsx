@@ -2,7 +2,7 @@ import React, { memo } from "react";
 import { getCloudflareImageUrl } from "../../utils/cloudflareImages";
 import "./ServicesGrid.css";
 
-function ServicesHeroBanner({ title = "SERVICES", bgImage = "/img/services/hero-services.png" }) {
+function ServicesHeroBanner({ title = "SERVICES", bgImage = "services/hero-services" }) {
   const bgUrl = getCloudflareImageUrl(bgImage, "large") || bgImage;
 
   return (
