@@ -22,7 +22,7 @@ const seoData = {
 const contactData = { phone: "971507464712", phoneDisplay: "+971 50 746 4712", whatsapp: "971507464712", email: "info@fajservices.ae" };
 
 const heroData = {
-  title: "BEST AC REPAIR AND MAINTENANCE SERVICES",
+  title: "Best AC Repair and Maintenance Services",
   subtitle: "",
   paragraphs: [
     "Improve the comfort of your home and business premises with air conditioning cooling system. Maintain a perfect temperature year-round with our expert AC technicians.",

@@ -10,6 +10,42 @@ import CallNowButton from "../Buttons/CallNowButton";
 import WhatsappIconButton from "../Buttons/WhatsappIconButton";
 import ServiceIcon from "./ServiceIcon";
 
+const heroTitleAcronyms = new Map([
+  ["AC", "AC"],
+  ["AMC", "AMC"],
+  ["B2B", "B2B"],
+  ["DIY", "DIY"],
+  ["FAJ", "FAJ"],
+  ["FAQS", "FAQs"],
+  ["GCC", "GCC"],
+  ["GE", "GE"],
+  ["HVAC", "HVAC"],
+  ["LED", "LED"],
+  ["LG", "LG"],
+  ["MEP", "MEP"],
+  ["PPM", "PPM"],
+  ["TCL", "TCL"],
+  ["TV", "TV"],
+  ["UAE", "UAE"],
+  ["UK", "UK"],
+  ["USA", "USA"],
+  ["VRF", "VRF"],
+  ["VRV", "VRV"],
+]);
+
+function formatHeroTitle(title) {
+  if (typeof title !== "string" || title !== title.toUpperCase()) {
+    return title;
+  }
+
+  return title.toLowerCase().replace(/\b[a-z0-9]+\b/g, (word) => {
+    return (
+      heroTitleAcronyms.get(word.toUpperCase()) ||
+      word.charAt(0).toUpperCase() + word.slice(1)
+    );
+  });
+}
+
 function renderHighlightIcon(type) {
   switch (type) {
     case "home":
@@ -423,7 +459,9 @@ function AboutHeroSection({
     >
       <div className="service-about-hero__container" style={customStyle}>
         <div className="service-about-hero__content">
-          <h1 className="service-about-hero__title">{content.title}</h1>
+          <h1 className="service-about-hero__title">
+            {formatHeroTitle(content.title)}
+          </h1>
 
           {content.subtitle && !content.hideSubtitle && (
             <h2 className="service-about-hero__subtitle">
