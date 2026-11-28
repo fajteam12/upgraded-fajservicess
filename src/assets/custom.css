@@ -1962,3 +1962,11 @@ img.ac-bordered-img{
   position: sticky !important;
   top: 0;
 }
+.main-page-area--title-case h1,
+.main-page-area--title-case h2,
+.main-page-area--title-case h3,
+.main-page-area--title-case h4,
+.main-page-area--title-case h5,
+.main-page-area--title-case h6 {
+  text-transform: none !important;
+}
