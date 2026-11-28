@@ -12,13 +12,31 @@
 .services-hero-banner {
   position: relative;
   width: 100%;
-  min-height: 480px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  aspect-ratio: 16 / 5;
+  height: auto;
+  min-height: unset;
+  max-height: unset;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #0b1f2a;
+}
+
+.services-hero-banner__picture {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.services-hero-banner__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
 }
 
 .services-hero-banner__overlay {
@@ -28,6 +46,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1;
 }
 
 .services-hero-banner__band {
@@ -52,9 +71,43 @@
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.65);
 }
 
+@media (max-width: 768px) {
+  .services-hero-banner {
+    aspect-ratio: 4 / 5;
+    width: 100%;
+    height: auto;
+    min-height: unset;
+    max-height: unset;
+  }
+
+  .services-hero-banner__band {
+    padding: 20px 16px;
+  }
+
+  .services-hero-banner__title {
+    font-size: 38px;
+    letter-spacing: 1.5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-hero-banner {
+    aspect-ratio: 4 / 5;
+    width: 100%;
+    height: auto;
+    min-height: unset;
+    max-height: unset;
+  }
+
+  .services-hero-banner__title {
+    font-size: 30px;
+    letter-spacing: 1px;
+  }
+}
+
 /* ── Section Header ── */
 .services-header-intro {
-  padding: 60px 20px 40px;
+  padding: 20px 20px 40px;
   text-align: center;
   max-width: 1280px;
   margin: 0 auto;
@@ -274,16 +327,8 @@
 }
 
 @media (max-width: 768px) {
-  .services-hero-banner {
-    min-height: 320px;
-  }
-
-  .services-hero-banner__title {
-    font-size: 38px;
-  }
-
   .services-header-intro {
-    padding: 40px 16px 30px;
+    padding: 16px 16px 28px;
   }
 
   .services-intro-title {

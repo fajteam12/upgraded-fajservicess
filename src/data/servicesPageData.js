@@ -23,6 +23,7 @@ export const seoData = {
 export const heroData = {
   title: "SERVICES",
   bgImage: "services/hero-services",
+  mobileBgImage: "services/hero-services-mobile",
 };
 
 export const introData = {

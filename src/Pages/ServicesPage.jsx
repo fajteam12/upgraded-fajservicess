@@ -70,6 +70,7 @@ function ServicesPage({
         <ServicesHeroBanner
           title={servicesPageData.hero.title}
           bgImage={servicesPageData.hero.bgImage}
+          mobileBgImage={servicesPageData.hero.mobileBgImage}
         />
 
         {/* Breadcrumb Navigation */}
